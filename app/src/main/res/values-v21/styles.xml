@@ -1,6 +1,9 @@
 <resources> 
 	<style name="AppTheme.NoActionBar"> 
 		<item name="windowActionBar">false</item> 
-		<item name="windowNoTitle">true</item> 
+		<item name="windowNoTitle">true</item>
+		<item name="colorPrimary">#0090FD</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
 	</style>	
 </resources>
