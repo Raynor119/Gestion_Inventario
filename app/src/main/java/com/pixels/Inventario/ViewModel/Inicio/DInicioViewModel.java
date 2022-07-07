@@ -5,7 +5,7 @@ import android.content.Context;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
-import com.pixels.Inventario.Model.Basededatos.DatosInicio;
+import com.pixels.Inventario.Model.Basededatos.SQLite.DatosInicio;
 import com.pixels.Inventario.Model.DatosE.datosI;
 
 import java.util.List;

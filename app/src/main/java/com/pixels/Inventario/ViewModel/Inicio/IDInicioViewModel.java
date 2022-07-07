@@ -4,7 +4,7 @@ import android.content.Context;
 
 import androidx.lifecycle.ViewModel;
 
-import com.pixels.Inventario.Model.Basededatos.DatosInicio;
+import com.pixels.Inventario.Model.Basededatos.SQLite.DatosInicio;
 
 public class IDInicioViewModel extends ViewModel {
     private DatosInicio datosInicio;

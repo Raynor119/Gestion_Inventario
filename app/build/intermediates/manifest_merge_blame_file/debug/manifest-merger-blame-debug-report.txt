@@ -31,8 +31,8 @@
 21        android:supportsRtl="true"
 21-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:13:9-35
 22        android:testOnly="true"
-23        android:theme="@style/AppTheme" >
-23-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:14:9-40
+23        android:theme="@style/Theme.MyApplication" >
+23-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:14:9-51
 24        <activity
 24-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:15:9-17:40
 25            android:name="com.pixels.Inventario.View.Activity.ConfiguracionInicial.configuracionI"
@@ -45,8 +45,8 @@
 28-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:19:13-49
 29            android:exported="true"
 29-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:20:13-36
-30            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
-30-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:21:13-69
+30            android:theme="@style/Theme.MyApplication.NoActionBar" >
+30-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:21:13-67
 31            <intent-filter>
 31-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:22:13-26:29
 32                <action android:name="android.intent.action.MAIN" />

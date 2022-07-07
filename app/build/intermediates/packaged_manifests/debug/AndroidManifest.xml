@@ -20,14 +20,14 @@
         android:resizeableActivity="true"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/Theme.MyApplication" >
         <activity
             android:name="com.pixels.Inventario.View.Activity.ConfiguracionInicial.configuracionI"
             android:exported="false" />
         <activity
             android:name="com.pixels.Inventario.View.Activity.Inicio"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            android:theme="@style/Theme.MyApplication.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,4 +1,4 @@
-package com.pixels.Inventario.Model.Basededatos;
+package com.pixels.Inventario.Model.Basededatos.SQLite;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -54,7 +54,7 @@ public class DatosInicio extends SQLiteOpenHelper {
         SQLiteDatabase bd=getWritableDatabase();
         if(bd!=null)
         {
-            bd.execSQL("UPDATE MATERIAS SET FINALIZO='"+finalizo+"',CONTRA='"+contra+"',CONTRASENA='"+contrasena+"',BASEDATOS='"+basedatos+"',IP='"+ip+"',USUARIO='"+usuario+"',UCONTRA='"+ucontra+"'");
+            bd.execSQL("UPDATE INICIO SET FINALIZO='"+finalizo+"',CONTRA='"+contra+"',CONTRASENA='"+contrasena+"',BASEDATOS='"+basedatos+"',IP='"+ip+"',USUARIO='"+usuario+"',UCONTRA='"+ucontra+"'");
             bd.close();
         }
     }

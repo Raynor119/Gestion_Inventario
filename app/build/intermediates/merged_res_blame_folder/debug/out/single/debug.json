@@ -1,9 +1,5 @@
 [
     {
-        "merged": "com.pixels.Inventario.app-merged_res-25:/layout_fragment_agsinarcontrasena.xml.flat",
-        "source": "com.pixels.Inventario.app-main-27:/layout/fragment_agsinarcontrasena.xml"
-    },
-    {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.4.2\\com.pixels.Inventario.app-merged_res-25:\\layout_fragment_agsinarcontrasena.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.4.2\\com.pixels.Inventario.app-main-27:\\layout\\fragment_agsinarcontrasena.xml"
     },
@@ -14,6 +10,10 @@
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.4.2\\com.pixels.Inventario.app-merged_res-25:\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.4.2\\com.pixels.Inventario.app-main-27:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.pixels.Inventario.app-merged_res-25:/layout_fragment_registrar_base_datos.xml.flat",
+        "source": "com.pixels.Inventario.app-main-27:/layout/fragment_registrar_base_datos.xml"
     },
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.4.2\\com.pixels.Inventario.app-merged_res-25:\\layout_fragment_registrar_base_datos.xml.flat",
@@ -34,5 +34,9 @@
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.4.2\\com.pixels.Inventario.app-merged_res-25:\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.4.2\\com.pixels.Inventario.app-main-27:\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.4.2\\com.pixels.Inventario.app-merged_res-25:\\layout_fragment_inicio_blanco.xml.flat",
+        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.4.2\\com.pixels.Inventario.app-main-27:\\layout\\fragment_inicio_blanco.xml"
     }
 ]

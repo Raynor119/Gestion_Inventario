@@ -44,13 +44,19 @@ public class Inicio extends AppCompatActivity {
                             @Override
                             public void onChanged(List<datosI> datosIS) {
                                 String Finalizo=datosIS.get(0).getFinalizo();
+                                String contra=datosIS.get(0).getContra();
+                                String contrasena=datosIS.get(0).getContrasena();
+                                String basedatos=datosIS.get(0).getBasedatos();
+                                String ip=datosIS.get(0).getIp();
+                                String usuario=datosIS.get(0).getUsuario();
+                                String ucontra=datosIS.get(0).getUcontra();
                                 if(Finalizo.equals("0")){
                                     Intent intent = new Intent(Inicio.this, configuracionI.class);
                                     startActivity(intent);
                                     finish();
                                 }else
                                 {
-                                    Toast.makeText(getApplicationContext(), "Finalizo: "+Finalizo , Toast.LENGTH_LONG).show();
+                                    Toast.makeText(getApplicationContext(), "Finalizo: "+Finalizo+" contra: "+contra+" contrasena: "+contrasena+" basedatos: "+basedatos+" ip: "+ip+" usuario: "+usuario+" ucontra: "+ucontra, Toast.LENGTH_LONG).show();
                                 }
                             }
                         };
