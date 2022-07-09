@@ -1,18 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "com.pixels.Inventario.app-mergeDebugResources-23:/values-v16/values-v16.xml",
+            "outputFile": "com.pixels.Inventario.app-mergeDebugResources-42:/values-v16/values-v16.xml",
             "map": [
-                {
-                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-3\\a8ae712879ce8c88a52d8e9788344966\\transformed\\core-1.7.0\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
                 {
                     "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-3\\974c8c08dcb0f7e262991c2b1d176fe5\\transformed\\appcompat-1.4.2\\res\\values-v16\\values-v16.xml",
                     "from": {
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-3\\2647c6f9e207279b3fe6085096ed5274\\transformed\\core-1.8.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

@@ -56,7 +56,10 @@ public class Inicio extends AppCompatActivity {
                                     finish();
                                 }else
                                 {
-                                    Toast.makeText(getApplicationContext(), "Finalizo: "+Finalizo+" contra: "+contra+" contrasena: "+contrasena+" basedatos: "+basedatos+" ip: "+ip+" usuario: "+usuario+" ucontra: "+ucontra, Toast.LENGTH_LONG).show();
+                                   // Intent intent = new Intent(Inicio.this, MenuInicio.class);
+                                    //startActivity(intent);
+                                    //finish();
+                                    //Toast.makeText(getApplicationContext(), "Finalizo: "+Finalizo+" contra: "+contra+" contrasena: "+contrasena+" basedatos: "+basedatos+" ip: "+ip+" usuario: "+usuario+" ucontra: "+ucontra, Toast.LENGTH_LONG).show();
                                 }
                             }
                         };

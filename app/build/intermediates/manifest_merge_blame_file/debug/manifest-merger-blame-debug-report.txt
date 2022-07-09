@@ -19,7 +19,7 @@
 14        android:allowBackup="true"
 14-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:9:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.7.0] C:\Users\saibo\.gradle\caches\transforms-3\a8ae712879ce8c88a52d8e9788344966\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+15-->[androidx.core:core:1.8.0] C:\Users\saibo\.gradle\caches\transforms-3\2647c6f9e207279b3fe6085096ed5274\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 16        android:debuggable="true"
 17        android:extractNativeLibs="false"
 18        android:icon="@mipmap/ic_launcher"
@@ -80,6 +80,19 @@
 47                android:value="androidx.startup" />
 47-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\saibo\.gradle\caches\transforms-3\711f0ca417a7aa98e20b5ffd6ab7f839\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
 48        </provider>
-49    </application>
-50
-51</manifest>
+49
+50        <uses-library
+50-->[androidx.window:window:1.0.0] C:\Users\saibo\.gradle\caches\transforms-3\bbf04aaa88d730b0203d9d6769160490\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+51            android:name="androidx.window.extensions"
+51-->[androidx.window:window:1.0.0] C:\Users\saibo\.gradle\caches\transforms-3\bbf04aaa88d730b0203d9d6769160490\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+52            android:required="false" />
+52-->[androidx.window:window:1.0.0] C:\Users\saibo\.gradle\caches\transforms-3\bbf04aaa88d730b0203d9d6769160490\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+53        <uses-library
+53-->[androidx.window:window:1.0.0] C:\Users\saibo\.gradle\caches\transforms-3\bbf04aaa88d730b0203d9d6769160490\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+54            android:name="androidx.window.sidecar"
+54-->[androidx.window:window:1.0.0] C:\Users\saibo\.gradle\caches\transforms-3\bbf04aaa88d730b0203d9d6769160490\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+55            android:required="false" />
+55-->[androidx.window:window:1.0.0] C:\Users\saibo\.gradle\caches\transforms-3\bbf04aaa88d730b0203d9d6769160490\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+56    </application>
+57
+58</manifest>
