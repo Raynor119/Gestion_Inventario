@@ -11,7 +11,8 @@ import android.widget.Toast;
 
 import com.pixels.Inventario.Model.DatosE.datosI;
 import com.pixels.Inventario.R;
-import com.pixels.Inventario.View.Activity.ConfiguracionInicial.configuracionI;
+import com.pixels.Inventario.View.Activity.Configuracion_Inicial.configuracionI;
+import com.pixels.Inventario.View.Activity.Menu_Inicio.MenuInicio;
 import com.pixels.Inventario.ViewModel.Inicio.DInicioViewModel;
 import com.pixels.Inventario.ViewModel.Inicio.IDInicioViewModel;
 
@@ -56,9 +57,9 @@ public class Inicio extends AppCompatActivity {
                                     finish();
                                 }else
                                 {
-                                   // Intent intent = new Intent(Inicio.this, MenuInicio.class);
-                                    //startActivity(intent);
-                                    //finish();
+                                   Intent intent = new Intent(Inicio.this, MenuInicio.class);
+                                   startActivity(intent);
+                                   finish();
                                     //Toast.makeText(getApplicationContext(), "Finalizo: "+Finalizo+" contra: "+contra+" contrasena: "+contrasena+" basedatos: "+basedatos+" ip: "+ip+" usuario: "+usuario+" ucontra: "+ucontra, Toast.LENGTH_LONG).show();
                                 }
                             }
