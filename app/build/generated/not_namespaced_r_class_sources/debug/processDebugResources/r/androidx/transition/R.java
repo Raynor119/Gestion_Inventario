@@ -95,27 +95,27 @@ public final class R {
         public static final int italic = 0x7f0800ca;
         public static final int line1 = 0x7f0800d2;
         public static final int line3 = 0x7f0800d3;
-        public static final int normal = 0x7f080116;
-        public static final int notification_background = 0x7f080117;
-        public static final int notification_main_column = 0x7f080118;
-        public static final int notification_main_column_container = 0x7f080119;
-        public static final int parent_matrix = 0x7f080126;
-        public static final int right_icon = 0x7f080139;
-        public static final int right_side = 0x7f08013a;
-        public static final int save_non_transition_alpha = 0x7f08013d;
-        public static final int save_overlay_view = 0x7f08013e;
-        public static final int tag_transition_group = 0x7f080182;
-        public static final int tag_unhandled_key_event_manager = 0x7f080183;
-        public static final int tag_unhandled_key_listeners = 0x7f080184;
-        public static final int text = 0x7f08018a;
-        public static final int text2 = 0x7f08018b;
-        public static final int time = 0x7f08019a;
-        public static final int title = 0x7f08019b;
-        public static final int transition_current_scene = 0x7f0801a6;
-        public static final int transition_layout_save = 0x7f0801a7;
-        public static final int transition_position = 0x7f0801a8;
-        public static final int transition_scene_layoutid_cache = 0x7f0801a9;
-        public static final int transition_transform = 0x7f0801aa;
+        public static final int normal = 0x7f080117;
+        public static final int notification_background = 0x7f080118;
+        public static final int notification_main_column = 0x7f080119;
+        public static final int notification_main_column_container = 0x7f08011a;
+        public static final int parent_matrix = 0x7f080127;
+        public static final int right_icon = 0x7f08013a;
+        public static final int right_side = 0x7f08013b;
+        public static final int save_non_transition_alpha = 0x7f08013e;
+        public static final int save_overlay_view = 0x7f08013f;
+        public static final int tag_transition_group = 0x7f080183;
+        public static final int tag_unhandled_key_event_manager = 0x7f080184;
+        public static final int tag_unhandled_key_listeners = 0x7f080185;
+        public static final int text = 0x7f08018b;
+        public static final int text2 = 0x7f08018c;
+        public static final int time = 0x7f08019b;
+        public static final int title = 0x7f08019c;
+        public static final int transition_current_scene = 0x7f0801a7;
+        public static final int transition_layout_save = 0x7f0801a8;
+        public static final int transition_position = 0x7f0801a9;
+        public static final int transition_scene_layoutid_cache = 0x7f0801aa;
+        public static final int transition_transform = 0x7f0801ab;
     }
     public static final class integer {
         private integer() {}
@@ -125,12 +125,12 @@ public final class R {
     public static final class layout {
         private layout() {}
 
-        public static final int notification_action = 0x7f0b0060;
-        public static final int notification_action_tombstone = 0x7f0b0061;
-        public static final int notification_template_custom_big = 0x7f0b0068;
-        public static final int notification_template_icon_group = 0x7f0b0069;
-        public static final int notification_template_part_chronometer = 0x7f0b006d;
-        public static final int notification_template_part_time = 0x7f0b006e;
+        public static final int notification_action = 0x7f0b0061;
+        public static final int notification_action_tombstone = 0x7f0b0062;
+        public static final int notification_template_custom_big = 0x7f0b0069;
+        public static final int notification_template_icon_group = 0x7f0b006a;
+        public static final int notification_template_part_chronometer = 0x7f0b006e;
+        public static final int notification_template_part_time = 0x7f0b006f;
     }
     public static final class string {
         private string() {}

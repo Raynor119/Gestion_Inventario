@@ -11,6 +11,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.pixels.Inventario.Model.Basededatos.MYSQL.Conexion;
+import com.pixels.Inventario.Model.Basededatos.MYSQL.Consultas;
 import com.pixels.Inventario.R;
 
 import com.pixels.Inventario.View.Activity.Gestion_Productos.Fragment.VerInventarioFragment;
@@ -55,6 +58,8 @@ public class MenuInicio extends AppCompatActivity {
         View recyclerView = findViewById(R.id.opcion_list);
         assert recyclerView != null;
         setupRecyclerView((RecyclerView) recyclerView);
+        Conexion consultas=new Conexion(MenuInicio.this);
+        consultas.execute("");
     }
 
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {

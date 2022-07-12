@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".View.Activity.Configuracion_Inicial.configuracionI">
+    tools:context=".View.Activity.InicioA.Configuracion_Inicial.configuracionI">
     <FrameLayout
         android:id="@+id/contenedirFragments"
         android:layout_width="match_parent"

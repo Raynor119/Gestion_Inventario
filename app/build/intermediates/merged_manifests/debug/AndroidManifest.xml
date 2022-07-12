@@ -5,8 +5,8 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="24"
-        android:targetSdkVersion="28" />
+        android:minSdkVersion="26"
+        android:targetSdkVersion="32" />
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -35,10 +35,10 @@
                 android:value="com.pixels.Inventario.View.Activity.Menu_Inicio.MenuInicio" />
         </activity>
         <activity
-            android:name="com.pixels.Inventario.View.Activity.Configuracion_Inicial.configuracionI"
+            android:name="com.pixels.Inventario.View.Activity.InicioA.Configuracion_Inicial.configuracionI"
             android:exported="false" />
         <activity
-            android:name="com.pixels.Inventario.View.Activity.Inicio"
+            android:name="com.pixels.Inventario.View.Activity.InicioA.Inicio"
             android:exported="true"
             android:theme="@style/Theme.MyApplication.NoActionBar" >
             <intent-filter>

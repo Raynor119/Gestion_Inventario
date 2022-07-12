@@ -2104,6 +2104,7 @@ id navigation_bar_item_labels_group
 id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
 id navigation_header_container
+id nbasedatos
 id never
 id noScroll
 id none
@@ -2344,6 +2345,7 @@ layout activity_configuracion_i
 layout activity_inicio
 layout activity_menuinicio
 layout activity_opcion_detail
+layout alertdialogcontra
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

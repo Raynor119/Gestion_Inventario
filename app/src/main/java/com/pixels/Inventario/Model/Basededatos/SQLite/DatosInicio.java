@@ -11,7 +11,7 @@ import java.util.List;
 public class DatosInicio extends SQLiteOpenHelper {
     private static final String NOMBRE_BD="DatosdeInicio";
     private static final int VERSION_BD=1;
-    private static final String TABLAS="CREATE TABLE INICIO(FINALIZO TEXT , CONTRA TEXT, CONTRASENA TEXT, BASEDATOS TEXT, IP TEXT, USUARIO TEXT, UCONTRA TEXT)";
+    private static final String TABLAS="CREATE TABLE INICIO(FINALIZO TEXT , CONTRA TEXT, CONTRASENA TEXT, BASEDATOS TEXT, IP TEXT, NBASEDATOS TEXT, USUARIO TEXT, UCONTRA TEXT)";
 
     public DatosInicio(Context context) {
         super(context, NOMBRE_BD, null, VERSION_BD);
@@ -32,7 +32,7 @@ public class DatosInicio extends SQLiteOpenHelper {
         if(bd!=null)
         {
             String nada="";
-            bd.execSQL("INSERT INTO INICIO VALUES('"+"0"+"','"+nada+"','"+nada+"','"+nada+"','"+nada+"','"+nada+"','"+nada+"')");
+            bd.execSQL("INSERT INTO INICIO VALUES('"+"0"+"','"+nada+"','"+nada+"','"+nada+"','"+nada+"','"+nada+"','"+nada+"','"+nada+"')");
             bd.close();
         }
     }
@@ -42,7 +42,7 @@ public class DatosInicio extends SQLiteOpenHelper {
         List<datosI> datos=new ArrayList<>();
         if(cursor.moveToFirst()){
             do{
-                datos.add(new datosI(cursor.getString(0),cursor.getString(1),cursor.getString(2),cursor.getString(3),cursor.getString(4),cursor.getString(5),cursor.getString(6)));
+                datos.add(new datosI(cursor.getString(0),cursor.getString(1),cursor.getString(2),cursor.getString(3),cursor.getString(4),cursor.getString(5),cursor.getString(6), cursor.getString(7)));
 
 
             }while(cursor.moveToNext());
@@ -50,11 +50,11 @@ public class DatosInicio extends SQLiteOpenHelper {
         return datos;
     }
 
-    public void Imodificar(String finalizo ,String contra,String contrasena,String basedatos,String ip,String usuario,String ucontra){
+    public void Imodificar(String finalizo ,String contra,String contrasena,String basedatos,String ip,String nbasedatos,String usuario,String ucontra){
         SQLiteDatabase bd=getWritableDatabase();
         if(bd!=null)
         {
-            bd.execSQL("UPDATE INICIO SET FINALIZO='"+finalizo+"',CONTRA='"+contra+"',CONTRASENA='"+contrasena+"',BASEDATOS='"+basedatos+"',IP='"+ip+"',USUARIO='"+usuario+"',UCONTRA='"+ucontra+"'");
+            bd.execSQL("UPDATE INICIO SET FINALIZO='"+finalizo+"',CONTRA='"+contra+"',CONTRASENA='"+contrasena+"',BASEDATOS='"+basedatos+"',IP='"+ip+"',NBASEDATOS='"+nbasedatos+"',USUARIO='"+usuario+"',UCONTRA='"+ucontra+"'");
             bd.close();
         }
     }
