@@ -13,8 +13,11 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.MyApplication">
         <activity
+                android:name=".View.Activity.Ajustes.Ajustes"
+                android:theme="@style/Theme.MyApplication.NoActionBar">
+        </activity>
+        <activity
                 android:name=".View.Activity.Menu_Inicio.MenuInicio"
-                android:label="@string/title_opcion_list"
                 android:theme="@style/Theme.MyApplication.NoActionBar">
         </activity>
         <activity

@@ -10,8 +10,9 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.pixels.Inventario.Model.opciones.OpcionesContent;
+import com.pixels.Inventario.Model.DatosE.OpcionesContent;
 import com.pixels.Inventario.R;
+import com.pixels.Inventario.View.Activity.Ajustes.Ajustes;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.Fragment.VerInventarioFragment;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.VerInventario;
 import com.pixels.Inventario.View.Activity.Menu_Inicio.MenuInicio;
@@ -26,12 +27,11 @@ public class SimpleItemRecyclerViewAdapter extends RecyclerView.Adapter<SimpleIt
     private final View.OnClickListener mOnClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-
-
-            if((view.getTag()+"").equals("Caja")){
+            int Id=Integer.parseInt((view.getTag()+""));
+            if(Id==1){
 
             }
-            if((view.getTag()+"").equals("Ver Inventario de Productos")){
+            if(Id==2){
                 if (mTwoPane) {
                     VerInventarioFragment fragment = new VerInventarioFragment();
                     mParentActivity.getSupportFragmentManager().beginTransaction()
@@ -43,13 +43,15 @@ public class SimpleItemRecyclerViewAdapter extends RecyclerView.Adapter<SimpleIt
                     context.startActivity(intent);
                 }
             }
-            if((view.getTag()+"").equals("Ventas Realizadas")){
+            if(Id==3){
 
             }
-            if((view.getTag()+"").equals("Ajustes")){
-
+            if(Id==4){
+                Context context = view.getContext();
+                Intent intent = new Intent(context, Ajustes.class);
+                context.startActivity(intent);
             }
-            if((view.getTag()+"").equals("Salir")){
+            if(Id==5){
                 mParentActivity.finish();
             }
         }
@@ -72,23 +74,23 @@ public class SimpleItemRecyclerViewAdapter extends RecyclerView.Adapter<SimpleIt
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
-        if(mValues.get(position).getOpcion().equals("Caja")){
+        if(mValues.get(position).getId()==1){
             holder.imagen.setImageResource(R.mipmap.caja);
         }
-        if(mValues.get(position).getOpcion().equals("Ver Inventario de Productos")){
+        if(mValues.get(position).getId()==2){
             holder.imagen.setImageResource(R.mipmap.productos);
         }
-        if(mValues.get(position).getOpcion().equals("Ventas Realizadas")){
+        if(mValues.get(position).getId()==3){
             holder.imagen.setImageResource(R.mipmap.ventas);
         }
-        if(mValues.get(position).getOpcion().equals("Ajustes")){
+        if(mValues.get(position).getId()==4){
             holder.imagen.setImageResource(R.mipmap.ajustes);
         }
-        if(mValues.get(position).getOpcion().equals("Salir")){
+        if(mValues.get(position).getId()==5){
             holder.imagen.setImageResource(R.mipmap.salir);
         }
         holder.mContentView.setText(mValues.get(position).getOpcion());
-        holder.itemView.setTag(mValues.get(position).getOpcion());
+        holder.itemView.setTag(mValues.get(position).getId());
         holder.itemView.setOnClickListener(mOnClickListener);
     }
 

@@ -1,23 +1,18 @@
 package com.pixels.Inventario.View.Activity.InicioA.Configuracion_Inicial.Fragment;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProviders;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.InicioA.Configuracion_Inicial.configuracionI;
-import com.pixels.Inventario.View.Activity.InicioA.Inicio;
 import com.pixels.Inventario.ViewModel.InicioA.ConfiguracionInicial.VerificarConexionViewModel;
-import com.pixels.Inventario.ViewModel.InicioA.Datos.DInicioViewModel;
 
 
 public class RegistrarBaseDatos extends Fragment {
@@ -29,6 +24,9 @@ public class RegistrarBaseDatos extends Fragment {
 
     public RegistrarBaseDatos(configuracionI context) {
         this.Context=context;
+    }
+    public RegistrarBaseDatos() {
+
     }
 
     @Override
@@ -46,19 +44,15 @@ public class RegistrarBaseDatos extends Fragment {
             public void onClick(View view) {
                 if(ip.getText().toString().equals("")){
                     ip.setError("Digite la Ip de la Base de datos");
-                    Toast.makeText(getActivity(), "Digite la Ip de la Base de datos" , Toast.LENGTH_LONG).show();
                 }else{
                     if(Nbasedatos.getText().toString().equals("")){
                         Nbasedatos.setError("Digite el Nombre de la Base de datos");
-                        Toast.makeText(getActivity(), "Digite el Nombre de la Base de datos" , Toast.LENGTH_LONG).show();
                     }else {
                         if (username.getText().toString().equals("")) {
                             username.setError("Digite el Usuario de la Base de datos");
-                            Toast.makeText(getActivity(), "Digite el Usuario de la Base de datos", Toast.LENGTH_LONG).show();
                         } else {
                             if (password.getText().toString().equals("")) {
                                 password.setError("Digite la Contraseña de la Base de datos");
-                                Toast.makeText(getActivity(), "Digite la Contraseña de la Base de datos", Toast.LENGTH_LONG).show();
                             } else {
                                 veriMYSQL.reset();
                                 veriMYSQL.VerificarConexion(ip.getText().toString(),Nbasedatos.getText().toString(),username.getText().toString(),password.getText().toString());

@@ -11,7 +11,6 @@ import android.widget.TextView;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.VerInventario;
 import com.pixels.Inventario.View.Activity.Menu_Inicio.MenuInicio;
-import com.pixels.Inventario.Model.opciones.OpcionesContent;
 
 /**
  * A fragment representing a single opcion detail screen.

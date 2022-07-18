@@ -96,12 +96,12 @@
         "source": "/home/raynor/.gradle/caches/transforms-2/files-2.1/09cf357d60339753cae56e3001d53287/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "/home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/res/merged/debug/color_material_cursor_color.xml.flat",
-        "source": "/home/raynor/.gradle/caches/transforms-2/files-2.1/0433a4a0bd1fa66275f006c00ccad5a7/res/color/material_cursor_color.xml"
-    },
-    {
         "merged": "/home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/res/merged/debug/color_material_on_primary_emphasis_high_type.xml.flat",
         "source": "/home/raynor/.gradle/caches/transforms-2/files-2.1/0433a4a0bd1fa66275f006c00ccad5a7/res/color/material_on_primary_emphasis_high_type.xml"
+    },
+    {
+        "merged": "/home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/res/merged/debug/color_material_cursor_color.xml.flat",
+        "source": "/home/raynor/.gradle/caches/transforms-2/files-2.1/0433a4a0bd1fa66275f006c00ccad5a7/res/color/material_cursor_color.xml"
     },
     {
         "merged": "/home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/res/merged/debug/layout_design_text_input_end_icon.xml.flat",
@@ -402,6 +402,10 @@
     {
         "merged": "/home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/res/merged/debug/layout_test_design_checkbox.xml.flat",
         "source": "/home/raynor/.gradle/caches/transforms-2/files-2.1/0433a4a0bd1fa66275f006c00ccad5a7/res/layout/test_design_checkbox.xml"
+    },
+    {
+        "merged": "/home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/res/merged/debug/layout_activity_ajustes.xml.flat",
+        "source": "/home/raynor/Documentos/Gestion_Inventario/app/src/main/res/layout/activity_ajustes.xml"
     },
     {
         "merged": "/home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
@@ -1950,6 +1954,10 @@
     {
         "merged": "/home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
         "source": "/home/raynor/.gradle/caches/transforms-2/files-2.1/09cf357d60339753cae56e3001d53287/res/drawable-xxhdpi-v4/abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "/home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/res/merged/debug/layout_ajustes_list_content.xml.flat",
+        "source": "/home/raynor/Documentos/Gestion_Inventario/app/src/main/res/layout/ajustes_list_content.xml"
     },
     {
         "merged": "/home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/res/merged/debug/anim-v21_mtrl_bottom_sheet_slide_out.xml.flat",

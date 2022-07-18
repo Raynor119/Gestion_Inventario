@@ -6,7 +6,7 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
-import com.pixels.Inventario.Model.opciones.OpcionesContent;
+import com.pixels.Inventario.Model.DatosE.OpcionesContent;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.VerInventario;
 import com.pixels.Inventario.View.Activity.Menu_Inicio.RecyclerViewAdaptador.SimpleItemRecyclerViewAdapter;
@@ -30,7 +30,7 @@ public class MenuInicio extends AppCompatActivity {
      * device.
      */
     private boolean mTwoPane;
-    List<OpcionesContent> menuopciones= new ArrayList<>();
+    private List<OpcionesContent> menuopciones= new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,11 +50,11 @@ public class MenuInicio extends AppCompatActivity {
         setupRecyclerView((RecyclerView) recyclerView);
     }
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
-        menuopciones.add(new OpcionesContent("Caja"));
-        menuopciones.add(new OpcionesContent("Ver Inventario de Productos"));
-        menuopciones.add(new OpcionesContent("Ventas Realizadas"));
-        menuopciones.add(new OpcionesContent("Ajustes"));
-        menuopciones.add(new OpcionesContent("Salir"));
+        menuopciones.add(new OpcionesContent(1,"Caja"));
+        menuopciones.add(new OpcionesContent(2,"Ver Inventario de Productos"));
+        menuopciones.add(new OpcionesContent(3,"Ventas Realizadas"));
+        menuopciones.add(new OpcionesContent(4,"Ajustes"));
+        menuopciones.add(new OpcionesContent(5,"Salir"));
         recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(this, menuopciones, mTwoPane));
     }
 
