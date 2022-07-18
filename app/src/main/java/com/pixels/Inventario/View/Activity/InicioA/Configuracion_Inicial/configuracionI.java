@@ -32,7 +32,6 @@ public class configuracionI extends AppCompatActivity {
         fragmentAContrasena= new AsignarContrasena(configuracionI.this);
         fragmentRBaseDatos= new RegistrarBaseDatos(configuracionI.this);
         Inicio= new InicioBlanco();
-        //getSupportFragmentManager().beginTransaction().replace(R.id.contenedirFragments,Inicio).commit();
         PreguntarContrasena();
     }
     public void PreguntarContrasena(){

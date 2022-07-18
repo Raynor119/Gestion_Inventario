@@ -35,9 +35,11 @@ public class AsignarContrasena extends Fragment {
             @Override
             public void onClick(View view) {
                 if(password.getText().toString().equals("")){
+                    password.setError("Digite la Contraseña");
                     Toast.makeText(getActivity(), "Digite la Contraseña" , Toast.LENGTH_LONG).show();
                 }else {
                     if(password.getText().toString().length()<4){
+                        password.setError("La contraseña debe ser de 4 o mas digitos");
                         Toast.makeText(getActivity(), "La contraseña debe ser de 4 o mas digitos" , Toast.LENGTH_LONG).show();
                     }else {
                         Context.contrasena = password.getText().toString();

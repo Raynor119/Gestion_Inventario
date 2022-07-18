@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw360dp-v13\\values-sw360dp-v13.xml",
+            "outputFile": "/home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw360dp-v13/values-sw360dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\4b0f29621cbfcfa29a9123fa25b89cce\\res\\values-sw360dp-v13\\values-sw360dp-v13.xml",
+                    "source": "/home/raynor/.gradle/caches/transforms-2/files-2.1/7232691b6efb95a7de7d69ee65ab53f2/res/values-sw360dp-v13/values-sw360dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

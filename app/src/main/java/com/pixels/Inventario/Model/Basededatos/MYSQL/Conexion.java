@@ -48,7 +48,4 @@ public class Conexion extends AsyncTask<String, Void , String> {
         Toast.makeText(Context, result, Toast.LENGTH_LONG).show();
 
     }
-
-
-
 }

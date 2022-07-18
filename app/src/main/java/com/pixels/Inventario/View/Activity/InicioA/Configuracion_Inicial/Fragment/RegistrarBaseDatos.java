@@ -45,15 +45,19 @@ public class RegistrarBaseDatos extends Fragment {
             @Override
             public void onClick(View view) {
                 if(ip.getText().toString().equals("")){
+                    ip.setError("Digite la Ip de la Base de datos");
                     Toast.makeText(getActivity(), "Digite la Ip de la Base de datos" , Toast.LENGTH_LONG).show();
                 }else{
                     if(Nbasedatos.getText().toString().equals("")){
-                        Toast.makeText(getActivity(), "Digite la Ip de la Base de datos" , Toast.LENGTH_LONG).show();
+                        Nbasedatos.setError("Digite el Nombre de la Base de datos");
+                        Toast.makeText(getActivity(), "Digite el Nombre de la Base de datos" , Toast.LENGTH_LONG).show();
                     }else {
                         if (username.getText().toString().equals("")) {
+                            username.setError("Digite el Usuario de la Base de datos");
                             Toast.makeText(getActivity(), "Digite el Usuario de la Base de datos", Toast.LENGTH_LONG).show();
                         } else {
                             if (password.getText().toString().equals("")) {
+                                password.setError("Digite la Contraseña de la Base de datos");
                                 Toast.makeText(getActivity(), "Digite la Contraseña de la Base de datos", Toast.LENGTH_LONG).show();
                             } else {
                                 veriMYSQL.reset();
@@ -69,6 +73,7 @@ public class RegistrarBaseDatos extends Fragment {
                                             veriMYSQL.TerminarProceso();
                                             Context.guardarDatos();
                                         }else{
+                                            ip.setError("No se puede conectar a La Base Datos");
                                             Toast.makeText(getActivity(), "No se puede conectar a La Base Datos", Toast.LENGTH_LONG).show();
                                         }
                                     }

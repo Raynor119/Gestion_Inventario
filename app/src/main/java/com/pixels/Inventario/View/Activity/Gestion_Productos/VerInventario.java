@@ -55,11 +55,8 @@ public class VerInventario extends AppCompatActivity {
         if (savedInstanceState == null) {
             // Create the detail fragment and add it to the activity
             // using a fragment transaction.
-            Bundle arguments = new Bundle();
-            arguments.putString(VerInventarioFragment.ARG_ITEM_ID,
-                    getIntent().getStringExtra(VerInventarioFragment.ARG_ITEM_ID));
+
             VerInventarioFragment fragment = new VerInventarioFragment();
-            fragment.setArguments(arguments);
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.opcion_detail_container, fragment)
                     .commit();
