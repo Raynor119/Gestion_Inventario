@@ -763,43 +763,6 @@
             ]
         },
         {
-            "outputFile": "/home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/res/merged/debug/values-w1240dp-v13_values-w1240dp-v13.arsc.flat",
-            "map": [
-                {
-                    "source": "/home/raynor/Documentos/Gestion_Inventario/app/src/main/res/values-w1240dp/dimens.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "42",
-                        "endOffsets": "54"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "42",
-                        "endOffsets": "93"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/res/merged/debug/values-h320dp-port-v13_values-h320dp-port-v13.arsc.flat",
-            "map": [
-                {
-                    "source": "/home/raynor/.gradle/caches/transforms-2/files-2.1/0433a4a0bd1fa66275f006c00ccad5a7/res/values-h320dp-port-v13/values-h320dp-port-v13.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "75",
-                        "endOffsets": "126"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/res/merged/debug/values-ne_values-ne.arsc.flat",
             "map": [
                 {
@@ -870,6 +833,43 @@
                         "startOffsets": "267,378,489,597,688,795,922,1006,1085,1176,1269,1364,1458,1558,1651,1746,1840,1931,2022,2108,2221,2322,2418,2531,2641,2765,2939,7851",
                         "endColumns": "110,110,107,90,106,126,83,78,90,92,94,93,99,92,94,93,90,90,85,112,100,95,112,109,123,173,110,79",
                         "endOffsets": "373,484,592,683,790,917,1001,1080,1171,1264,1359,1453,1553,1646,1741,1835,1926,2017,2103,2216,2317,2413,2526,2636,2760,2934,3045,7926"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/res/merged/debug/values-h320dp-port-v13_values-h320dp-port-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/raynor/.gradle/caches/transforms-2/files-2.1/0433a4a0bd1fa66275f006c00ccad5a7/res/values-h320dp-port-v13/values-h320dp-port-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "75",
+                        "endOffsets": "126"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/res/merged/debug/values-w1240dp-v13_values-w1240dp-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/raynor/Documentos/Gestion_Inventario/app/src/main/res/values-w1240dp/dimens.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "42",
+                        "endOffsets": "54"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "42",
+                        "endOffsets": "93"
                     }
                 }
             ]

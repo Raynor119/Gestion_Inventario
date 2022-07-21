@@ -12,6 +12,8 @@
             android:resizeableActivity="true"
             android:supportsRtl="true"
             android:theme="@style/Theme.MyApplication">
+        <activity android:name=".View.Activity.Ajustes.ConfiguracionContra.configContra">
+        </activity>
         <activity
                 android:name=".View.Activity.Ajustes.Ajustes"
                 android:theme="@style/Theme.MyApplication.NoActionBar">

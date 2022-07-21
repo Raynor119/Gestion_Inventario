@@ -2,7 +2,6 @@ package com.pixels.Inventario.View.Activity.Ajustes;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
@@ -17,24 +16,34 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Ajustes extends AppCompatActivity {
+    public Ajustes Context=Ajustes.this;
     private List<AjustesContent> ajustes= new ArrayList<>();
     public VerificacionContraViewModel verificacion;
-
+    public RecyclerView reci;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ajustes);
         View recyclerView = findViewById(R.id.ajustes_list);
         assert recyclerView != null;
-        setupRecyclerView((RecyclerView) recyclerView);
+        reci=(RecyclerView) recyclerView;
+        setupRecyclerView(reci);
+
     }
-    private void setupRecyclerView(@NonNull final RecyclerView recyclerView) {
+    public void reiniciarRecyclerView(){
+        reci.setAdapter(null);
+        setupRecyclerView(reci);
+    }
+
+    public void setupRecyclerView(@NonNull final RecyclerView recyclerView) {
+        ajustes=new ArrayList<>();
         verificacion = ViewModelProviders.of(Ajustes.this).get(VerificacionContraViewModel.class);
+        verificacion.reset();
         verificacion.VerificarContra(getApplicationContext());
+
         final Observer<String> observer =new Observer<String>() {
             @Override
             public void onChanged(String s) {
-                Toast.makeText(getApplicationContext(), s, Toast.LENGTH_LONG).show();
                 if(s.equals("si")){
                     ajustes.add(new AjustesContent(1,"Configuracion de la Contraseña","Permite cambiar o eliminar la contraseña que se tiene guardada"));
 

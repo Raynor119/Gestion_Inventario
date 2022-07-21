@@ -3,17 +3,11 @@ package com.pixels.Inventario.Model.Basededatos.MYSQL;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.widget.Toast;
-
-import com.pixels.Inventario.Model.Basededatos.SQLite.DatosInicio;
+import com.pixels.Inventario.Model.Basededatos.SQLite.DatosInicio.consultasDatos;
 import com.pixels.Inventario.Model.DatosE.datosI;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
 import java.util.List;
 
 public class Conexion extends AsyncTask<String, Void , String> {
@@ -22,7 +16,7 @@ public class Conexion extends AsyncTask<String, Void , String> {
     public Context Context;
 
     public Conexion(Context context){
-        DatosInicio datosI=new DatosInicio(context);
+        consultasDatos datosI=new consultasDatos(context);
         this.datosIS=datosI.obtenerD();
         this.Url="jdbc:mysql://"+datosIS.get(0).getIp()+":3306/"+datosIS.get(0).getNbasedatos();
         this.Usuario=datosIS.get(0).getUsuario();

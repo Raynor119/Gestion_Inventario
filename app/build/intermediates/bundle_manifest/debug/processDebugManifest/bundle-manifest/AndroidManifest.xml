@@ -18,7 +18,10 @@
         android:label="@string/app_name"
         android:resizeableActivity="true"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.MyApplication" >
+        <activity android:name="com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionContra.configContra" >
+        </activity>
         <activity
             android:name="com.pixels.Inventario.View.Activity.Ajustes.Ajustes"
             android:theme="@style/Theme.MyApplication.NoActionBar" >

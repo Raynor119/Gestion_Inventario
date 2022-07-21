@@ -1,5 +1,7 @@
 package com.pixels.Inventario.View.Activity.Ajustes.RecyclerViewAdapter;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.pixels.Inventario.Model.DatosE.AjustesContent;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Ajustes.Ajustes;
+import com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionContra.configContra;
 
 import java.util.List;
 
@@ -19,7 +22,11 @@ public class AjustesRecyclerViewAdapter extends RecyclerView.Adapter<AjustesRecy
         public void onClick(View view) {
             int Id=Integer.parseInt((view.getTag()+""));
             if(Id==1){
-
+                Context context = view.getContext();
+                Intent intent = new Intent(context,configContra.class);
+                intent.putExtra("fragment","1");
+                context.startActivity(intent);
+                configContra.Context=mParentActivity;
             }
             if(Id==2){
 
@@ -34,7 +41,11 @@ public class AjustesRecyclerViewAdapter extends RecyclerView.Adapter<AjustesRecy
 
             }
             if(Id==6){
-
+                Context context = view.getContext();
+                Intent intent = new Intent(context,configContra.class);
+                intent.putExtra("fragment","6");
+                context.startActivity(intent);
+                configContra.Context=mParentActivity;
             }
         }
     };

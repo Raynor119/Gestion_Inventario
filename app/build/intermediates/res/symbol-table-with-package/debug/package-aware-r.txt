@@ -1946,6 +1946,7 @@ id clip_horizontal
 id clip_vertical
 id clockwise
 id collapseActionView
+id configFragments
 id confirm_button
 id container
 id contenedirFragments
@@ -2130,6 +2131,7 @@ id parentPanel
 id parentRelative
 id parent_matrix
 id password
+id password2
 id password_toggle
 id path
 id pathRelative
@@ -2346,6 +2348,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_ajustes
+layout activity_config_contra
 layout activity_configuracion_i
 layout activity_inicio
 layout activity_menuinicio
@@ -2371,6 +2374,7 @@ layout design_text_input_start_icon
 layout expand_button
 layout fragment_agsinarcontrasena
 layout fragment_inicio_blanco
+layout fragment_modificarcontra
 layout fragment_registrar_base_datos
 layout image_frame
 layout material_chip_input_combo

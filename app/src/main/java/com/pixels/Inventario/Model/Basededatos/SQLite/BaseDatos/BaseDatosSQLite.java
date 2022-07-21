@@ -8,8 +8,8 @@ public class BaseDatosSQLite extends SQLiteOpenHelper {
     private static final String NOMBRE_BD="Inventario";
     private static final int VERSION_BD=1;
     private static final String TABLAProducto="CREATE TABLE Producto(codigo VARCHAR(255) PRIMARY KEY NOT NULL,nombre VARCHAR(255) NOT NULL,cantidad INT NOT NULL,CosteP BIGINT NOT NULL,precio BIGINT NOT NULL)";
-    private static final String TABLAVenta="CREATE TABLE Venta(codigo SERIAL NOT NULL,Fecha TEXT NOT NULL,TotalV BIGINT NOT NULL,PRIMARY KEY (codigo))";
-    private static final String TABLAVentasProductos="CREATE TABLE VentasProductos(codigoV SERIAL NOT NULL,codigoP VARCHAR(255) NOT NULL,PRIMARY KEY (codigoV,codigoP),FOREIGN KEY (codigoV) REFERENCES Venta(codigo),FOREIGN KEY (codigoP) REFERENCES Producto(codigo))";
+    private static final String TABLAVenta="CREATE TABLE Venta(codigo SERIAL NOT NULL,Fecha TEXT NOT NULL,Efectivo BIGINT NOT NULL,TotalV BIGINT NOT NULL,PRIMARY KEY (codigo))";
+    private static final String TABLAVentasProductos="CREATE TABLE VentasProductos(codigoV SERIAL NOT NULL,codigoP VARCHAR(255) NOT NULL,CantidadV INT NOT NULL,PRIMARY KEY (codigoV,codigoP),FOREIGN KEY (codigoV) REFERENCES Venta(codigo),FOREIGN KEY (codigoP) REFERENCES Producto(codigo))";
 
     public BaseDatosSQLite(Context context) {
         super(context, NOMBRE_BD, null, VERSION_BD);
