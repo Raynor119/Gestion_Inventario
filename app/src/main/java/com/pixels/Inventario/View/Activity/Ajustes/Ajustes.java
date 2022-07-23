@@ -9,6 +9,7 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.RecyclerView;
 import com.pixels.Inventario.Model.DatosE.AjustesContent;
 import com.pixels.Inventario.R;
+import com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionBaseDatos.alertcambiarbasedatos;
 import com.pixels.Inventario.View.Activity.Ajustes.RecyclerViewAdapter.AjustesRecyclerViewAdapter;
 import com.pixels.Inventario.ViewModel.Ajustes.VerificacionContraViewModel;
 
@@ -34,13 +35,11 @@ public class Ajustes extends AppCompatActivity {
         reci.setAdapter(null);
         setupRecyclerView(reci);
     }
-
     public void setupRecyclerView(@NonNull final RecyclerView recyclerView) {
         ajustes=new ArrayList<>();
         verificacion = ViewModelProviders.of(Ajustes.this).get(VerificacionContraViewModel.class);
         verificacion.reset();
         verificacion.VerificarContra(getApplicationContext());
-
         final Observer<String> observer =new Observer<String>() {
             @Override
             public void onChanged(String s) {

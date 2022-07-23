@@ -1,269 +1,277 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-49:12
-INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-49:12
-INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-49:12
-INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-49:12
-MERGED from [com.google.android.material:material:1.4.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/0433a4a0bd1fa66275f006c00ccad5a7/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.cardview:cardview:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/f7231cc086c1353f0d709fc8f24841e2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.preference:preference:1.1.1] /home/raynor/.gradle/caches/transforms-2/files-2.1/7232691b6efb95a7de7d69ee65ab53f2/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/raynor/.gradle/caches/transforms-2/files-2.1/b1b6a2d19eac07d6f842a2790ad36a04/AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.appcompat:appcompat:1.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/09cf357d60339753cae56e3001d53287/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/13c11f4a2497dc452a37ba930d54abe0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/c3abd142ef78b01039f1375780084dae/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/f7a885b993ecc48c1ddb961a2ed0aeaf/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/357f15cfc9b4461fe2714438e9ec866b/AndroidManifest.xml:17:1-25:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/616092023d472dbf41d686c850115025/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/95a0c9edc66e1141631a4baf1a9b5dfd/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/522617f1fed8554c38baeadca6814f01/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.transition:transition:1.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/215a5f9b55ea0e2f74a0d4c548591180/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/fd509d583441cada64f3346e1da4f75d/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/94d27c66754f1f5ac740d00843de517e/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/ed471db17eaeb1d8048f07e847954963/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.media:media:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/7d4123a7dfe4d8c8bc6d313d36dd0a9b/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/6fbad5bc7eac88adceadaae8990f59c4/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.fragment:fragment:1.2.4] /home/raynor/.gradle/caches/transforms-2/files-2.1/dcf88a3512288d268e7e1e44fa3516cd/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/bd8d6d95f407c670dec1307e9935d7fa/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/fb4a263120ea40142fd8d7f2eda15c33/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/6fa8cc669ee3bd64282b97380ffbd169/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/0363d0501fba399c7886cf726d786982/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/43fad1e42292cc359ce84be33c9a2e3e/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/06b1d86724b178bed9d8ec27dec037d1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/b0262b72f1d1098388df0a4edd4ede12/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.1.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/d82962fbf6d09798b88445f8d4b9fe73/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core:1.5.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/9272d62af0887dc1ad8d957de139c908/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/3885641693a9f7567a48a613f011a282/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/raynor/.gradle/caches/transforms-2/files-2.1/421772ebae7ef76fdc74c459f5224e2a/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/7d03c370365fe1c94d09aaaaa39479c6/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/e679acd0e459dfdd110593dcb997bb51/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/c0f36c1d563735b4e38e2cd840030f06/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/1bb11ac9d7de9567445cbc913ce5a9ef/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/6ac9a595f97a364d79c26c0a547b61bd/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/fb9f68b81f5ce6593d08a8478f8f2fa6/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/a8fd1836fae1e81dc8f440a019ebae3d/AndroidManifest.xml:17:1-30:12
-MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/acb3cdaa24e4f2f75dd0fe3d8696097b/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/ca8c3436da15e84ba593efdad9a34063/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/c2bd9e05cdf713e5057a98262860e918/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/2fa33bab9af8d7610e6a1355e4c9100f/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/eb194e1ecebf718b37903c71c1837c40/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/602f19e4b25245c6311ed5f8a04ff3a4/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/00bc71151281060bc1009babc95ab62d/AndroidManifest.xml:17:1-24:12
-INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-49:12
-INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-49:12
-INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-49:12
+ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:2:1-54:12
+MERGED from [com.google.android.material:material:1.4.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\a0b4829f79a9091f49df706138bd64da\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\54422fed22a191ef8c8a3e9ec7eb1c00\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.preference:preference:1.1.1] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\4b0f29621cbfcfa29a9123fa25b89cce\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\7450966e9f8dee08f8a46c63e8d7d03f\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\6fe03f181cc7e0255ad77a7dc1e28616\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\9ce1a2182404918a2eded992eebaeb39\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\67fe21b144edd7305d9708e7b856e614\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\5bdd3b67de612ce19d6a3cab62167c96\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\9ab8edf374e98f94ba00c752c5813f32\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\4fdd75794d625ee0491b7079c641f8d7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\d226b44625e067cef49d42c7ae22cd25\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\77b2ae39d6f6f897f8ec5e14b18547f9\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\69a1879e8736248727a68a36a34b3e6f\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\baa430f2b45ed6ebd6dfe414e18fed24\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\ac29b6f872351593e28dd2debfa05efc\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\9860fec602d240bb70fe2ee9ebf14b22\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\0ca05b377013adedb1207c137263427d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\356099973cb717bb73eca416d31deb1e\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.2.4] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\2ebd0fd1eef34703d507c1c45ab1c39f\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\525a309b65380c7a43cdbcdd2d9d775a\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\61e7b347e695240bba4c02eaff80a2c2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\22e67a80d27fa0d2121650b4141571ae\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\65874220439d2ff6e8d101f70f7007f4\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\d0310b2a0e706a696061f80ee4c0b264\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\e1f4bc4d146635f4ab130308751b23b2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\8ad1765229617d79028ce00246bbe07d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\1cb1e98873223906282eed7f83ec402f\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.5.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\6d5ebbb28d26e3b58c4db7cc5bf8d1fa\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\6b8f7c07e9d5cf6b5e0a732a87d292ea\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\9b85ae257d00f6d0e209c4d43ae790af\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\123a7002a2642efc1f7021bf1280ead3\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\d7f04eeceb2689b6625e770e70c2289d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\3b8ca1436591918673a16ae38e9a538c\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\0b2320087a970e7501ba3c3a9b2febbc\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\7e1bd65335acce305eec6e9d42dfb998\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\5c11429a13d7826bc247dd5eae31da46\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\f36fe067ebf3e78d2f6af70720084fc5\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\9393e666bc171e55a3476f86f842ebef\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\2402fbae9b1144853bdcdc591a9ab669\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\e398496ea00d944aba382d7216c18bee\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\690b55775349c0ba2445af2eed17f214\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\177ea1b87d1b5e614ff9daefc804bd97\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\0c809b7c8347a4101f04841a4d30ea23\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\e865ab9a37d86c43ad56b343dc37df7a\AndroidManifest.xml:17:1-24:12
+INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:2:1-54:12
 	package
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:4:11-42
-		INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml
-		INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:4:5-36
+		INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-49:12
-		INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:2:1-54:12
+		INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:3:11-57
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-49:12
-		INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:2:1-54:12
+		INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:6:5-66
+ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:6:5-67
 	android:name
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:6:22-64
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:6:22-64
 application
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:8:5-47:19
-MERGED from [com.google.android.material:material:1.4.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/0433a4a0bd1fa66275f006c00ccad5a7/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.4.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/0433a4a0bd1fa66275f006c00ccad5a7/AndroidManifest.xml:22:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/raynor/.gradle/caches/transforms-2/files-2.1/b1b6a2d19eac07d6f842a2790ad36a04/AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/raynor/.gradle/caches/transforms-2/files-2.1/b1b6a2d19eac07d6f842a2790ad36a04/AndroidManifest.xml:9:5-20
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/357f15cfc9b4461fe2714438e9ec866b/AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/357f15cfc9b4461fe2714438e9ec866b/AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.core:core:1.5.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/9272d62af0887dc1ad8d957de139c908/AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.5.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/9272d62af0887dc1ad8d957de139c908/AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/raynor/.gradle/caches/transforms-2/files-2.1/421772ebae7ef76fdc74c459f5224e2a/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/raynor/.gradle/caches/transforms-2/files-2.1/421772ebae7ef76fdc74c459f5224e2a/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/a8fd1836fae1e81dc8f440a019ebae3d/AndroidManifest.xml:22:5-28:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/a8fd1836fae1e81dc8f440a019ebae3d/AndroidManifest.xml:22:5-28:19
+ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:8:5-52:19
+MERGED from [com.google.android.material:material:1.4.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\a0b4829f79a9091f49df706138bd64da\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.4.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\a0b4829f79a9091f49df706138bd64da\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\7450966e9f8dee08f8a46c63e8d7d03f\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\7450966e9f8dee08f8a46c63e8d7d03f\AndroidManifest.xml:9:5-20
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\9ab8edf374e98f94ba00c752c5813f32\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\9ab8edf374e98f94ba00c752c5813f32\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.core:core:1.5.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\6d5ebbb28d26e3b58c4db7cc5bf8d1fa\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.5.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\6d5ebbb28d26e3b58c4db7cc5bf8d1fa\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\9b85ae257d00f6d0e209c4d43ae790af\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\9b85ae257d00f6d0e209c4d43ae790af\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\f36fe067ebf3e78d2f6af70720084fc5\AndroidManifest.xml:22:5-28:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\f36fe067ebf3e78d2f6af70720084fc5\AndroidManifest.xml:22:5-28:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.5.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/9272d62af0887dc1ad8d957de139c908/AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.5.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\6d5ebbb28d26e3b58c4db7cc5bf8d1fa\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:13:13-39
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:11:13-45
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:11:9-41
 	android:resizeableActivity
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:12:13-46
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:12:9-42
 	android:icon
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:10:13-47
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:10:9-43
 	android:allowBackup
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:9:13-39
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:14:13-55
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:14:9-51
+activity#com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionBaseDatos.cambiarMySQL
+ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:15:9-18:40
+	android:exported
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:18:13-37
+	android:theme
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:17:13-67
+	android:name
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:16:13-86
 activity#com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionContra.configContra
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:15:9-16:20
+ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:19:9-23:20
 	android:name
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:15:19-89
-activity#com.pixels.Inventario.View.Activity.Ajustes.Ajustes
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:17:9-20:20
-	android:theme
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:19:17-71
-	android:name
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:18:17-62
-activity#com.pixels.Inventario.View.Activity.Menu_Inicio.MenuInicio
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:21:9-24:20
-	android:theme
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:23:17-71
-	android:name
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:22:17-69
-activity#com.pixels.Inventario.View.Activity.Gestion_Productos.VerInventario
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:25:9-33:20
-	android:parentActivityName
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:28:17-83
-	android:label
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:27:17-60
-	android:theme
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:29:17-71
-	android:name
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:26:17-78
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:19:19-89
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:30:13-32:97
+ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:20:13-22:65
 	android:value
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:32:21-95
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:22:17-63
 	android:name
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:31:21-67
-activity#com.pixels.Inventario.View.Activity.InicioA.Configuracion_Inicial.configuracionI
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:34:9-36:43
-	android:exported
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:36:17-41
-	android:name
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:35:17-91
-activity#com.pixels.Inventario.View.Activity.InicioA.Inicio
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:37:9-46:20
-	android:exported
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:39:17-40
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:21:17-63
+activity#com.pixels.Inventario.View.Activity.Ajustes.Ajustes
+ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:24:9-26:79
 	android:theme
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:40:17-71
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:26:13-67
 	android:name
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:38:17-61
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:41:13-45:29
-action#android.intent.action.MAIN
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:42:17-68
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:25:13-58
+activity#com.pixels.Inventario.View.Activity.Menu_Inicio.MenuInicio
+ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:27:9-29:79
+	android:theme
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:29:13-67
 	android:name
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:42:25-66
-category#android.intent.category.LAUNCHER
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:44:17-76
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:28:13-65
+activity#com.pixels.Inventario.View.Activity.Gestion_Productos.VerInventario
+ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:30:9-38:20
+	android:parentActivityName
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:33:13-79
+	android:label
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:32:13-56
+	android:theme
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:34:13-67
 	android:name
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:44:27-74
-uses-sdk
-INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml
-INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml
-MERGED from [com.google.android.material:material:1.4.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/0433a4a0bd1fa66275f006c00ccad5a7/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.4.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/0433a4a0bd1fa66275f006c00ccad5a7/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/f7231cc086c1353f0d709fc8f24841e2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/f7231cc086c1353f0d709fc8f24841e2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.preference:preference:1.1.1] /home/raynor/.gradle/caches/transforms-2/files-2.1/7232691b6efb95a7de7d69ee65ab53f2/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.preference:preference:1.1.1] /home/raynor/.gradle/caches/transforms-2/files-2.1/7232691b6efb95a7de7d69ee65ab53f2/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/raynor/.gradle/caches/transforms-2/files-2.1/b1b6a2d19eac07d6f842a2790ad36a04/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/raynor/.gradle/caches/transforms-2/files-2.1/b1b6a2d19eac07d6f842a2790ad36a04/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.appcompat:appcompat:1.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/09cf357d60339753cae56e3001d53287/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/09cf357d60339753cae56e3001d53287/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/13c11f4a2497dc452a37ba930d54abe0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/13c11f4a2497dc452a37ba930d54abe0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/c3abd142ef78b01039f1375780084dae/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/c3abd142ef78b01039f1375780084dae/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/f7a885b993ecc48c1ddb961a2ed0aeaf/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/f7a885b993ecc48c1ddb961a2ed0aeaf/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/357f15cfc9b4461fe2714438e9ec866b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/357f15cfc9b4461fe2714438e9ec866b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/616092023d472dbf41d686c850115025/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/616092023d472dbf41d686c850115025/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/95a0c9edc66e1141631a4baf1a9b5dfd/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/95a0c9edc66e1141631a4baf1a9b5dfd/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/522617f1fed8554c38baeadca6814f01/AndroidManifest.xml:20:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/522617f1fed8554c38baeadca6814f01/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/215a5f9b55ea0e2f74a0d4c548591180/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/215a5f9b55ea0e2f74a0d4c548591180/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/fd509d583441cada64f3346e1da4f75d/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/fd509d583441cada64f3346e1da4f75d/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/94d27c66754f1f5ac740d00843de517e/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/94d27c66754f1f5ac740d00843de517e/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/ed471db17eaeb1d8048f07e847954963/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/ed471db17eaeb1d8048f07e847954963/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.media:media:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/7d4123a7dfe4d8c8bc6d313d36dd0a9b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/7d4123a7dfe4d8c8bc6d313d36dd0a9b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/6fbad5bc7eac88adceadaae8990f59c4/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/6fbad5bc7eac88adceadaae8990f59c4/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.2.4] /home/raynor/.gradle/caches/transforms-2/files-2.1/dcf88a3512288d268e7e1e44fa3516cd/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.2.4] /home/raynor/.gradle/caches/transforms-2/files-2.1/dcf88a3512288d268e7e1e44fa3516cd/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/bd8d6d95f407c670dec1307e9935d7fa/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/bd8d6d95f407c670dec1307e9935d7fa/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/fb4a263120ea40142fd8d7f2eda15c33/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/fb4a263120ea40142fd8d7f2eda15c33/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/6fa8cc669ee3bd64282b97380ffbd169/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/6fa8cc669ee3bd64282b97380ffbd169/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/0363d0501fba399c7886cf726d786982/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/0363d0501fba399c7886cf726d786982/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/43fad1e42292cc359ce84be33c9a2e3e/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/43fad1e42292cc359ce84be33c9a2e3e/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/06b1d86724b178bed9d8ec27dec037d1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/06b1d86724b178bed9d8ec27dec037d1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/b0262b72f1d1098388df0a4edd4ede12/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/b0262b72f1d1098388df0a4edd4ede12/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.1.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/d82962fbf6d09798b88445f8d4b9fe73/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.1.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/d82962fbf6d09798b88445f8d4b9fe73/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.5.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/9272d62af0887dc1ad8d957de139c908/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.5.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/9272d62af0887dc1ad8d957de139c908/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/3885641693a9f7567a48a613f011a282/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/3885641693a9f7567a48a613f011a282/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/raynor/.gradle/caches/transforms-2/files-2.1/421772ebae7ef76fdc74c459f5224e2a/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/raynor/.gradle/caches/transforms-2/files-2.1/421772ebae7ef76fdc74c459f5224e2a/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/7d03c370365fe1c94d09aaaaa39479c6/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/7d03c370365fe1c94d09aaaaa39479c6/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/e679acd0e459dfdd110593dcb997bb51/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/e679acd0e459dfdd110593dcb997bb51/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/c0f36c1d563735b4e38e2cd840030f06/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/c0f36c1d563735b4e38e2cd840030f06/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/1bb11ac9d7de9567445cbc913ce5a9ef/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/1bb11ac9d7de9567445cbc913ce5a9ef/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/6ac9a595f97a364d79c26c0a547b61bd/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/6ac9a595f97a364d79c26c0a547b61bd/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/fb9f68b81f5ce6593d08a8478f8f2fa6/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/fb9f68b81f5ce6593d08a8478f8f2fa6/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/a8fd1836fae1e81dc8f440a019ebae3d/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/a8fd1836fae1e81dc8f440a019ebae3d/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/acb3cdaa24e4f2f75dd0fe3d8696097b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/acb3cdaa24e4f2f75dd0fe3d8696097b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/ca8c3436da15e84ba593efdad9a34063/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/ca8c3436da15e84ba593efdad9a34063/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/c2bd9e05cdf713e5057a98262860e918/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/c2bd9e05cdf713e5057a98262860e918/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/2fa33bab9af8d7610e6a1355e4c9100f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/2fa33bab9af8d7610e6a1355e4c9100f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/eb194e1ecebf718b37903c71c1837c40/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/eb194e1ecebf718b37903c71c1837c40/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/602f19e4b25245c6311ed5f8a04ff3a4/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/602f19e4b25245c6311ed5f8a04ff3a4/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/00bc71151281060bc1009babc95ab62d/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/00bc71151281060bc1009babc95ab62d/AndroidManifest.xml:20:5-22:41
-INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml
-INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml
-	android:targetSdkVersion
-		INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml
-		INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml
-	android:minSdkVersion
-		INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml
-		INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml
-provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
-ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/a8fd1836fae1e81dc8f440a019ebae3d/AndroidManifest.xml:23:9-27:43
-	android:authorities
-		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/a8fd1836fae1e81dc8f440a019ebae3d/AndroidManifest.xml:25:13-69
-	android:multiprocess
-		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/a8fd1836fae1e81dc8f440a019ebae3d/AndroidManifest.xml:27:13-40
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:31:13-74
+activity#com.pixels.Inventario.View.Activity.InicioA.Configuracion_Inicial.configuracionI
+ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:39:9-41:40
 	android:exported
-		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/a8fd1836fae1e81dc8f440a019ebae3d/AndroidManifest.xml:26:13-37
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:41:13-37
 	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/a8fd1836fae1e81dc8f440a019ebae3d/AndroidManifest.xml:24:13-79
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:40:13-87
+activity#com.pixels.Inventario.View.Activity.InicioA.Inicio
+ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:42:9-51:20
+	android:exported
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:44:13-36
+	android:theme
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:45:13-67
+	android:name
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:43:13-57
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:46:13-50:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:47:17-69
+	android:name
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:47:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:49:17-77
+	android:name
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:49:27-74
+uses-sdk
+INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.4.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\a0b4829f79a9091f49df706138bd64da\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.4.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\a0b4829f79a9091f49df706138bd64da\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\54422fed22a191ef8c8a3e9ec7eb1c00\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\54422fed22a191ef8c8a3e9ec7eb1c00\AndroidManifest.xml:20:5-44
+MERGED from [androidx.preference:preference:1.1.1] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\4b0f29621cbfcfa29a9123fa25b89cce\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.preference:preference:1.1.1] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\4b0f29621cbfcfa29a9123fa25b89cce\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\7450966e9f8dee08f8a46c63e8d7d03f\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\7450966e9f8dee08f8a46c63e8d7d03f\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\6fe03f181cc7e0255ad77a7dc1e28616\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\6fe03f181cc7e0255ad77a7dc1e28616\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\9ce1a2182404918a2eded992eebaeb39\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\9ce1a2182404918a2eded992eebaeb39\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\67fe21b144edd7305d9708e7b856e614\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\67fe21b144edd7305d9708e7b856e614\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\5bdd3b67de612ce19d6a3cab62167c96\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\5bdd3b67de612ce19d6a3cab62167c96\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\9ab8edf374e98f94ba00c752c5813f32\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\9ab8edf374e98f94ba00c752c5813f32\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\4fdd75794d625ee0491b7079c641f8d7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\4fdd75794d625ee0491b7079c641f8d7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\d226b44625e067cef49d42c7ae22cd25\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\d226b44625e067cef49d42c7ae22cd25\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\77b2ae39d6f6f897f8ec5e14b18547f9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\77b2ae39d6f6f897f8ec5e14b18547f9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\69a1879e8736248727a68a36a34b3e6f\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\69a1879e8736248727a68a36a34b3e6f\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\baa430f2b45ed6ebd6dfe414e18fed24\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\baa430f2b45ed6ebd6dfe414e18fed24\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\ac29b6f872351593e28dd2debfa05efc\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\ac29b6f872351593e28dd2debfa05efc\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\9860fec602d240bb70fe2ee9ebf14b22\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\9860fec602d240bb70fe2ee9ebf14b22\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\0ca05b377013adedb1207c137263427d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\0ca05b377013adedb1207c137263427d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\356099973cb717bb73eca416d31deb1e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\356099973cb717bb73eca416d31deb1e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.2.4] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\2ebd0fd1eef34703d507c1c45ab1c39f\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.4] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\2ebd0fd1eef34703d507c1c45ab1c39f\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\525a309b65380c7a43cdbcdd2d9d775a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\525a309b65380c7a43cdbcdd2d9d775a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\61e7b347e695240bba4c02eaff80a2c2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\61e7b347e695240bba4c02eaff80a2c2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\22e67a80d27fa0d2121650b4141571ae\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\22e67a80d27fa0d2121650b4141571ae\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\65874220439d2ff6e8d101f70f7007f4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\65874220439d2ff6e8d101f70f7007f4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\d0310b2a0e706a696061f80ee4c0b264\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\d0310b2a0e706a696061f80ee4c0b264\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\e1f4bc4d146635f4ab130308751b23b2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\e1f4bc4d146635f4ab130308751b23b2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\8ad1765229617d79028ce00246bbe07d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\8ad1765229617d79028ce00246bbe07d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\1cb1e98873223906282eed7f83ec402f\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\1cb1e98873223906282eed7f83ec402f\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.5.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\6d5ebbb28d26e3b58c4db7cc5bf8d1fa\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.5.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\6d5ebbb28d26e3b58c4db7cc5bf8d1fa\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\6b8f7c07e9d5cf6b5e0a732a87d292ea\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\6b8f7c07e9d5cf6b5e0a732a87d292ea\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\9b85ae257d00f6d0e209c4d43ae790af\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\9b85ae257d00f6d0e209c4d43ae790af\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\123a7002a2642efc1f7021bf1280ead3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\123a7002a2642efc1f7021bf1280ead3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\d7f04eeceb2689b6625e770e70c2289d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\d7f04eeceb2689b6625e770e70c2289d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\3b8ca1436591918673a16ae38e9a538c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\3b8ca1436591918673a16ae38e9a538c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\0b2320087a970e7501ba3c3a9b2febbc\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\0b2320087a970e7501ba3c3a9b2febbc\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\7e1bd65335acce305eec6e9d42dfb998\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\7e1bd65335acce305eec6e9d42dfb998\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\5c11429a13d7826bc247dd5eae31da46\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\5c11429a13d7826bc247dd5eae31da46\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\f36fe067ebf3e78d2f6af70720084fc5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\f36fe067ebf3e78d2f6af70720084fc5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\9393e666bc171e55a3476f86f842ebef\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\9393e666bc171e55a3476f86f842ebef\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\2402fbae9b1144853bdcdc591a9ab669\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\2402fbae9b1144853bdcdc591a9ab669\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\e398496ea00d944aba382d7216c18bee\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\e398496ea00d944aba382d7216c18bee\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\690b55775349c0ba2445af2eed17f214\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\690b55775349c0ba2445af2eed17f214\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\177ea1b87d1b5e614ff9daefc804bd97\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\177ea1b87d1b5e614ff9daefc804bd97\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\0c809b7c8347a4101f04841a4d30ea23\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\0c809b7c8347a4101f04841a4d30ea23\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\e865ab9a37d86c43ad56b343dc37df7a\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\e865ab9a37d86c43ad56b343dc37df7a\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\f36fe067ebf3e78d2f6af70720084fc5\AndroidManifest.xml:23:9-27:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\f36fe067ebf3e78d2f6af70720084fc5\AndroidManifest.xml:25:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\f36fe067ebf3e78d2f6af70720084fc5\AndroidManifest.xml:27:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\f36fe067ebf3e78d2f6af70720084fc5\AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\saibo\.gradle\caches\transforms-2\files-2.1\f36fe067ebf3e78d2f6af70720084fc5\AndroidManifest.xml:24:13-79

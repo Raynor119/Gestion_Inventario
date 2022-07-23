@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.pixels.Inventario.Model.DatosE.AjustesContent;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Ajustes.Ajustes;
+import com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionBaseDatos.alertcambiarbasedatos;
 import com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionContra.configContra;
 
 import java.util.List;
@@ -29,7 +30,8 @@ public class AjustesRecyclerViewAdapter extends RecyclerView.Adapter<AjustesRecy
                 configContra.Context=mParentActivity;
             }
             if(Id==2){
-
+                alertcambiarbasedatos alert=new alertcambiarbasedatos(mParentActivity);
+                alert.CambiarBaseDatos();
             }
             if(Id==3){
 

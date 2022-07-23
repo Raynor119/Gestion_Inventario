@@ -1839,6 +1839,8 @@ id CTRL
 id FUNCTION
 id META
 id NO_DEBUG
+id RadioMysqlButton
+id RadioSQLiteButton
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -2143,6 +2145,7 @@ id postLayout
 id progress_circular
 id progress_horizontal
 id radio
+id radiogroup
 id ratio
 id rectangles
 id recycler_view
@@ -2348,12 +2351,14 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_ajustes
+layout activity_cambiar_my_sql
 layout activity_config_contra
 layout activity_configuracion_i
 layout activity_inicio
 layout activity_menuinicio
 layout activity_opcion_detail
 layout ajustes_list_content
+layout alertcambiobasedatos
 layout alertdialogcontra
 layout custom_dialog
 layout design_bottom_navigation_item

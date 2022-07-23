@@ -20,16 +20,21 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.MyApplication" >
+        <activity
+            android:name="com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionBaseDatos.cambiarMySQL"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity android:name="com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionContra.configContra" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.Activity.Ajustes.Ajustes" />
         </activity>
         <activity
             android:name="com.pixels.Inventario.View.Activity.Ajustes.Ajustes"
-            android:theme="@style/Theme.MyApplication.NoActionBar" >
-        </activity>
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
             android:name="com.pixels.Inventario.View.Activity.Menu_Inicio.MenuInicio"
-            android:theme="@style/Theme.MyApplication.NoActionBar" >
-        </activity>
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
             android:name="com.pixels.Inventario.View.Activity.Gestion_Productos.VerInventario"
             android:label="@string/title_opcion_detail"

@@ -67,4 +67,12 @@ public class consultasDatos extends DatosInicio{
             bd.close();
         }
     }
+    public void modificarbasedatos(String basedatos,String ip,String nbasedatos,String usuario,String ucontra){
+        SQLiteDatabase bd=getWritableDatabase();
+        if(bd!=null)
+        {
+            bd.execSQL("UPDATE INICIO SET BASEDATOS='"+basedatos+"',IP='"+ip+"',NBASEDATOS='"+nbasedatos+"',USUARIO='"+usuario+"',UCONTRA='"+ucontra+"' WHERE FINALIZO = '1'");
+            bd.close();
+        }
+    }
 }

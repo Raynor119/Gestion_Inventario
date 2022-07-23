@@ -18,7 +18,7 @@ import com.pixels.Inventario.ViewModel.InicioA.ConfiguracionInicial.VerificarCon
 public class RegistrarBaseDatos extends Fragment {
 
     private EditText ip,Nbasedatos,username,password;
-    VerificarConexionViewModel veriMYSQL;
+    private VerificarConexionViewModel veriMYSQL;
     private Button boton;
     private configuracionI Context;
 
