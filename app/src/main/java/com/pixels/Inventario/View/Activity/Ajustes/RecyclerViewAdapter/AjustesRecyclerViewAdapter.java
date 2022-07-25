@@ -6,12 +6,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.pixels.Inventario.Model.DatosE.AjustesContent;
+
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Ajustes.Ajustes;
 import com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionBaseDatos.alertcambiarbasedatos;
 import com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionContra.configContra;
+import com.pixels.Inventario.View.Activity.Ajustes.EliminarBaseDatos.alertEliminarBD;
+import com.pixels.Inventario.View.Activity.Ajustes.ImportarDatos.ImportarDatos;
 
 import java.util.List;
 
@@ -34,13 +39,16 @@ public class AjustesRecyclerViewAdapter extends RecyclerView.Adapter<AjustesRecy
                 alert.CambiarBaseDatos();
             }
             if(Id==3){
-
+                Context context = view.getContext();
+                Intent intent= new Intent(context, ImportarDatos.class);
+                context.startActivity(intent);
             }
             if(Id==4){
 
             }
             if(Id==5){
-
+                alertEliminarBD alert= new alertEliminarBD(mParentActivity);
+                alert.EliminarBaseDatos();
             }
             if(Id==6){
                 Context context = view.getContext();
@@ -56,7 +64,6 @@ public class AjustesRecyclerViewAdapter extends RecyclerView.Adapter<AjustesRecy
                                          List<AjustesContent> items) {
         mValues = items;
         mParentActivity = parent;
-
     }
 
     @Override

@@ -2354,6 +2354,7 @@ layout activity_ajustes
 layout activity_cambiar_my_sql
 layout activity_config_contra
 layout activity_configuracion_i
+layout activity_importar_datos
 layout activity_inicio
 layout activity_menuinicio
 layout activity_opcion_detail

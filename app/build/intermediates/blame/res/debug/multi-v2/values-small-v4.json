@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
+            "outputFile": "/home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\a0b4829f79a9091f49df706138bd64da\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "/home/raynor/.gradle/caches/transforms-2/files-2.1/f20abe635ba1d2a3c90de0ef8b45c104/res/values-small-v4/values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

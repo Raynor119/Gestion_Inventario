@@ -40,6 +40,5 @@ public class Conexion extends AsyncTask<String, Void , String> {
     @Override
     protected void onPostExecute(String result) {
         Toast.makeText(Context, result, Toast.LENGTH_LONG).show();
-
     }
 }

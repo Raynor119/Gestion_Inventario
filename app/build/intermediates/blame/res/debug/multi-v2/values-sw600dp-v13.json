@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "outputFile": "/home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\a0b4829f79a9091f49df706138bd64da\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "/home/raynor/.gradle/caches/transforms-2/files-2.1/f20abe635ba1d2a3c90de0ef8b45c104/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\6fe03f181cc7e0255ad77a7dc1e28616\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "/home/raynor/.gradle/caches/transforms-2/files-2.1/e1c03b27460d232f833f77289f16a818/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
