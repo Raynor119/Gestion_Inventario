@@ -1,13 +1,22 @@
 package com.pixels.Inventario.Model.DatosE;
 
 public class VentasProductos {
-    private int CodigoV,CantidadV;
+    private int Id,CodigoV,CantidadV;
     private String CodigoP;
 
-    public VentasProductos(int codigoV,String codigoP, int cantidadV) {
+    public VentasProductos(int id,int codigoV,String codigoP, int cantidadV) {
+        this.Id=id;
         this.CodigoV = codigoV;
         this.CantidadV = cantidadV;
         this.CodigoP = codigoP;
+    }
+
+    public int getId() {
+        return Id;
+    }
+
+    public void setId(int id) {
+        Id = id;
     }
 
     public int getCodigoV() {

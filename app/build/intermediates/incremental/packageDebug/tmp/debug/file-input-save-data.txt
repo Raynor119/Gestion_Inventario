@@ -1,11 +1,11 @@
 #Internal package file, do not edit.
-#Sun Jul 24 22:29:03 COT 2022
-0.base=/home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/dex/debug/mergeExtDexDebug/out
+#Mon Jul 25 02:09:26 COT 2022
+0.base=C\:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
 0.path=classes.dex
 1.baseType=DIRECTORY
 count=2
 1.path=classes.dex
 0.baseType=DIRECTORY
 1.set=DEX
-1.base=/home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/dex/debug/mergeProjectDexDebug/out
+1.base=C\:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
 0.set=DEX

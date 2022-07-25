@@ -41,7 +41,7 @@ public class ConexionSQLiteImportacionDatos extends BaseDatosSQLite {
                 try {
                     bd.execSQL("INSERT INTO Venta VALUES("+ventas.get(i).getCodigo()+",'"+ventas.get(i).getFecha()+"',"+ventas.get(i).getEfectivo()+","+ventas.get(i).getTotalV()+")");
                 }catch (Exception e){
-                    //Toast.makeText(Context, "Error al Importar los Datos de las Ventas", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Context, "Error al Importar los Datos de las Ventas", Toast.LENGTH_LONG).show();
                 }
             }
             bd.close();
@@ -53,11 +53,10 @@ public class ConexionSQLiteImportacionDatos extends BaseDatosSQLite {
         {
             for(int i=0;i< VentasProductos.size();i++){
                 try {
-                    bd.execSQL("INSERT INTO VentasProductos VALUES("+VentasProductos.get(i).getCodigoV()+",'"+VentasProductos.get(i).getCodigoP()+"',"+VentasProductos.get(i).getCantidadV()+")");
+                    bd.execSQL("INSERT INTO VentasProductos VALUES("+VentasProductos.get(i).getId()+","+VentasProductos.get(i).getCodigoV()+",'"+VentasProductos.get(i).getCodigoP()+"',"+VentasProductos.get(i).getCantidadV()+")");
                 }catch (Exception e){
-                    Toast.makeText(Context, "Error al Importar los Datos la tabla VentasProductos"+e, Toast.LENGTH_LONG).show();
+                    Toast.makeText(Context, "Error al Importar los Datos la tabla VentasProductos", Toast.LENGTH_LONG).show();
                 }
-
             }
             bd.close();
         }
