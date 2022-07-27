@@ -19,7 +19,7 @@ public class ImportarDatosSQLite extends AsyncTask<String, Void , List<ImportDat
     private String Url,Usuario,Contra;
     private Context Context;
     public ImportarDatosSQLite(String ip, String nbasedatos, String usuario, String contra, Context context){
-        this.Url="jdbc:mysql://"+ip+":3306/"+nbasedatos;
+        this.Url="jdbc:mysql://"+ip+"/"+nbasedatos;
         this.Usuario=usuario;
         this.Contra=contra;
         this.Context=context;
@@ -38,7 +38,7 @@ public class ImportarDatosSQLite extends AsyncTask<String, Void , List<ImportDat
             ResultSet rs = st.executeQuery("SELECT * FROM Producto");
             List<Producto> productos=new ArrayList<>();
             while (rs.next()) {
-                productos.add(new Producto(rs.getString(1),rs.getString(2),rs.getInt(3),rs.getInt(4),rs.getInt(5)));
+                productos.add(new Producto(rs.getString(1),rs.getString(2),rs.getDouble(3),rs.getString(4),rs.getInt(5),rs.getInt(6)));
             }
             rs = st.executeQuery("SELECT * FROM Venta");
             List<Venta> ventas=new ArrayList<>();
@@ -48,7 +48,7 @@ public class ImportarDatosSQLite extends AsyncTask<String, Void , List<ImportDat
             rs = st.executeQuery("SELECT * FROM VentasProductos");
             List<VentasProductos> ventasProductos=new ArrayList<>();
             while (rs.next()) {
-                ventasProductos.add(new VentasProductos(rs.getInt(1),rs.getInt(2),rs.getString(3),rs.getInt(4)));
+                ventasProductos.add(new VentasProductos(rs.getInt(1),rs.getInt(2),rs.getString(3),rs.getDouble(4)));
             }
             resul.add(new ImportDatos(productos,ventas,ventasProductos));
             return resul;

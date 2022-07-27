@@ -13,7 +13,7 @@ public class VerificarConexion extends  AsyncTask<String, Void , Boolean> {
     private VerificarConexionViewModel Context;
 
     public VerificarConexion(String Ip,String NBasedatos,String usuario,String contra,VerificarConexionViewModel context){
-        this.Url="jdbc:mysql://"+Ip+":3306/"+NBasedatos;
+        this.Url="jdbc:mysql://"+Ip+"/"+NBasedatos;
         this.Usuario=usuario;
         this.Contra=contra;
         this.Context=context;

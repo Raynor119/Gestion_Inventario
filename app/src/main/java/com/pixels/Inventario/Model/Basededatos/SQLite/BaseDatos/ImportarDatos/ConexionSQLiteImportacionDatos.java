@@ -1,16 +1,15 @@
 package com.pixels.Inventario.Model.Basededatos.SQLite.BaseDatos.ImportarDatos;
 
 import android.content.Context;
-import android.database.Cursor;
+
 import android.database.sqlite.SQLiteDatabase;
 import android.widget.Toast;
+
 import com.pixels.Inventario.Model.Basededatos.SQLite.BaseDatos.BaseDatosSQLite;
 import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.Model.DatosE.Venta;
 import com.pixels.Inventario.Model.DatosE.VentasProductos;
-import com.pixels.Inventario.Model.DatosE.datosI;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ConexionSQLiteImportacionDatos extends BaseDatosSQLite {
@@ -25,7 +24,7 @@ public class ConexionSQLiteImportacionDatos extends BaseDatosSQLite {
         {
             for(int i=0;i< productos.size();i++){
                 try {
-                    bd.execSQL("INSERT INTO Producto VALUES('"+productos.get(i).getCodigo()+"','"+productos.get(i).getNombre()+"',"+productos.get(i).getCantidad()+","+productos.get(i).getCosteP()+","+productos.get(i).getPrecio()+")");
+                    bd.execSQL("INSERT INTO Producto VALUES('"+productos.get(i).getCodigo()+"','"+productos.get(i).getNombre()+"',"+productos.get(i).getCantidad()+",'"+productos.get(i).getTipoC()+"',"+productos.get(i).getCosteP()+","+productos.get(i).getPrecio()+")");
                 }catch (Exception e){
                     Toast.makeText(Context, "Error al Importar los Datos de los Productos \n"+e, Toast.LENGTH_LONG).show();
                 }

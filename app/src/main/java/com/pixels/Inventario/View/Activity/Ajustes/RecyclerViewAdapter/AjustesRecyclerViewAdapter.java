@@ -16,6 +16,7 @@ import com.pixels.Inventario.View.Activity.Ajustes.Ajustes;
 import com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionBaseDatos.alertcambiarbasedatos;
 import com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionContra.configContra;
 import com.pixels.Inventario.View.Activity.Ajustes.EliminarBaseDatos.alertEliminarBD;
+import com.pixels.Inventario.View.Activity.Ajustes.ExportarDatos.ExportarDatos;
 import com.pixels.Inventario.View.Activity.Ajustes.ImportarDatos.ImportarDatos;
 
 import java.util.List;
@@ -44,7 +45,9 @@ public class AjustesRecyclerViewAdapter extends RecyclerView.Adapter<AjustesRecy
                 context.startActivity(intent);
             }
             if(Id==4){
-
+                Context context = view.getContext();
+                Intent intent= new Intent(context, ExportarDatos.class);
+                context.startActivity(intent);
             }
             if(Id==5){
                 alertEliminarBD alert= new alertEliminarBD(mParentActivity);

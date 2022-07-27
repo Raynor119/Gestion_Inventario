@@ -20,6 +20,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.MyApplication" >
+        <activity android:name="com.pixels.Inventario.View.Activity.Ajustes.ExportarDatos.ExportarDatos" >
+        </activity>
         <activity android:name="com.pixels.Inventario.View.Activity.Ajustes.ImportarDatos.ImportarDatos" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

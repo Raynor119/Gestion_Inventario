@@ -1,13 +1,15 @@
 package com.pixels.Inventario.Model.DatosE;
 
 public class Producto {
-    private String Codigo,Nombre;
-    private int Cantidad,CosteP,Precio;
+    private String Codigo,Nombre,TipoC;
+    private int CosteP,Precio;
+    private double Cantidad;
 
-    public Producto(String codigo, String nombre, int cantidad, int costeP, int precio) {
+    public Producto(String codigo, String nombre, double cantidad,String tipoC, int costeP, int precio) {
         this.Codigo = codigo;
         this.Nombre = nombre;
         this.Cantidad = cantidad;
+        this.TipoC=tipoC;
         this.CosteP = costeP;
         this.Precio = precio;
     }
@@ -28,12 +30,12 @@ public class Producto {
         Nombre = nombre;
     }
 
-    public int getCantidad() {
-        return Cantidad;
+    public String getTipoC() {
+        return TipoC;
     }
 
-    public void setCantidad(int cantidad) {
-        Cantidad = cantidad;
+    public void setTipoC(String tipoC) {
+        TipoC = tipoC;
     }
 
     public int getCosteP() {
@@ -50,5 +52,13 @@ public class Producto {
 
     public void setPrecio(int precio) {
         Precio = precio;
+    }
+
+    public double getCantidad() {
+        return Cantidad;
+    }
+
+    public void setCantidad(double cantidad) {
+        Cantidad = cantidad;
     }
 }

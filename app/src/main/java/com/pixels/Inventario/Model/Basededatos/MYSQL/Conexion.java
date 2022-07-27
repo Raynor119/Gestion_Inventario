@@ -18,7 +18,7 @@ public class Conexion extends AsyncTask<String, Void , String> {
     public Conexion(Context context){
         consultasDatos datosI=new consultasDatos(context);
         this.datosIS=datosI.obtenerD();
-        this.Url="jdbc:mysql://"+datosIS.get(0).getIp()+":3306/"+datosIS.get(0).getNbasedatos();
+        this.Url="jdbc:mysql://"+datosIS.get(0).getIp()+"/"+datosIS.get(0).getNbasedatos();
         this.Usuario=datosIS.get(0).getUsuario();
         this.Contra=datosIS.get(0).getUcontra();
         this.Context=context;
