@@ -24,7 +24,7 @@ public class ExportarDatos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exportar_datos);
-        this.setTitle("Importar datos de la Aplicacion");
+        this.setTitle("Exportar datos de la Aplicacion");
         ip=(EditText) findViewById(R.id.ip);
         Nbasedatos=(EditText) findViewById(R.id.nbasedatos);
         username=(EditText) findViewById(R.id.username);

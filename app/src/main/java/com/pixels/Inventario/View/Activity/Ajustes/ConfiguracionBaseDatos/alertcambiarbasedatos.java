@@ -61,12 +61,10 @@ public class alertcambiarbasedatos {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if(i == R.id.RadioMysqlButton){
-                    //dialog.cancel();
-                    Intent intent=new Intent(Context,cambiarMySQL.class);
-                    Context.startActivity(intent);
-                    cambiarMySQL.alert=dialog;
                     mysql.setChecked(false);
                     sqlite.setChecked(true);
+                    dialog.cancel();
+                    PreguntarBaseDatosMYSQL(dialog);
                 }else if(i == R.id.RadioSQLiteButton){
                     modificarbasedatosViewModel modificar= ViewModelProviders.of(Context).get(modificarbasedatosViewModel.class);
                     modificar.ModificarBaseDatos(Context,"SQLITE","","","","");
@@ -74,5 +72,29 @@ public class alertcambiarbasedatos {
                 }
             }
         });
+    }
+    public void PreguntarBaseDatosMYSQL(final AlertDialog dialog){
+        AlertDialog.Builder builder = new AlertDialog.Builder(Context);
+        builder.setCancelable(false);
+        builder.setTitle("Configuracion de la Base de Datos MYSQL");
+        builder.setMessage("Si en el servidor de base de datos MYSQL ya tienes una base de datos creada con sus tablas puedes seleccionar guardar conexion si no selecciona crear base de datos");
+        builder.setPositiveButton("Guardar Conexion", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Intent intent=new Intent(Context,cambiarMySQL.class);
+                Context.startActivity(intent);
+                cambiarMySQL.alert=dialog;
+            }
+        });
+        builder.setNegativeButton("Crear Base de Datos", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Intent intent=new Intent(Context,CrearBaseDatosMYSQL.class);
+                Context.startActivity(intent);
+                CrearBaseDatosMYSQL.alert=dialog;
+            }
+        });
+        AlertDialog dialog2 = builder.create();
+        dialog2.show();
     }
 }

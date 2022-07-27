@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-61:12
-INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-61:12
-INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-61:12
-INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-61:12
+ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-68:12
 MERGED from [com.google.android.material:material:1.4.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/f20abe635ba1d2a3c90de0ef8b45c104/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/4fa33541d0cb72b6b989d9907d196d04/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.preference:preference:1.1.1] /home/raynor/.gradle/caches/transforms-2/files-2.1/9d83948620594338fc98ab062225a13b/AndroidManifest.xml:17:1-24:12
@@ -48,22 +48,22 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/raynor/.gradle/c
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/44a78eaa1acdaaa9aa9cdecd6c8b8889/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/a6e2a86a8060094ffea95071d47c2a7c/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/9eee15f9a6f81e563bd8e04612ee2062/AndroidManifest.xml:17:1-24:12
-INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-61:12
-INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-61:12
-INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-61:12
+INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-68:12
 	package
 		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:4:11-42
 		INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml
 		INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-61:12
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-68:12
 		INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:3:11-57
 	android:versionCode
 		INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-61:12
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:1-68:12
 		INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:2:11-69
@@ -72,7 +72,7 @@ ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManife
 	android:name
 		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:6:22-64
 application
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:8:5-59:19
+ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:8:5-66:19
 MERGED from [com.google.android.material:material:1.4.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/f20abe635ba1d2a3c90de0ef8b45c104/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] /home/raynor/.gradle/caches/transforms-2/files-2.1/f20abe635ba1d2a3c90de0ef8b45c104/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/raynor/.gradle/caches/transforms-2/files-2.1/5e5913cf506c48a121b0569b6c7bed0d/AndroidManifest.xml:9:5-20
@@ -99,78 +99,86 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /home/raynor/.gradle/ca
 		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:9:13-39
 	android:theme
 		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:14:13-55
+activity#com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionBaseDatos.CrearBaseDatosMYSQL
+ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:15:9-18:20
+	android:exported
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:16:19-43
+	android:theme
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:17:19-73
+	android:name
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:15:19-99
 activity#com.pixels.Inventario.View.Activity.Ajustes.ExportarDatos.ExportarDatos
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:15:9-16:20
+ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:19:9-23:20
 	android:name
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:15:19-84
-activity#com.pixels.Inventario.View.Activity.Ajustes.ImportarDatos.ImportarDatos
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:17:9-21:20
-	android:name
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:17:19-84
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:19:19-84
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:18:13-20:69
+ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:20:13-22:69
 	android:value
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:20:21-67
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:22:21-67
 	android:name
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:19:21-67
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:21:21-67
+activity#com.pixels.Inventario.View.Activity.Ajustes.ImportarDatos.ImportarDatos
+ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:24:9-28:20
+	android:name
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:24:19-84
 activity#com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionBaseDatos.cambiarMySQL
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:22:9-25:73
+ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:29:9-32:73
 	android:exported
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:24:17-41
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:31:17-41
 	android:theme
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:25:17-71
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:32:17-71
 	android:name
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:23:17-90
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:30:17-90
 activity#com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionContra.configContra
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:26:9-30:20
+ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:33:9-37:20
 	android:name
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:26:19-89
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:33:19-89
 activity#com.pixels.Inventario.View.Activity.Ajustes.Ajustes
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:31:9-33:73
+ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:38:9-40:73
 	android:theme
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:33:17-71
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:40:17-71
 	android:name
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:32:17-62
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:39:17-62
 activity#com.pixels.Inventario.View.Activity.Menu_Inicio.MenuInicio
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:34:9-36:73
+ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:41:9-43:73
 	android:theme
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:36:17-71
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:43:17-71
 	android:name
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:35:17-69
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:42:17-69
 activity#com.pixels.Inventario.View.Activity.Gestion_Productos.VerInventario
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:37:9-45:20
+ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:44:9-52:20
 	android:parentActivityName
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:40:17-83
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:47:17-83
 	android:label
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:39:17-60
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:46:17-60
 	android:theme
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:41:17-71
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:48:17-71
 	android:name
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:38:17-78
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:45:17-78
 activity#com.pixels.Inventario.View.Activity.InicioA.Configuracion_Inicial.configuracionI
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:46:9-48:43
+ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:53:9-55:43
 	android:exported
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:48:17-41
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:55:17-41
 	android:name
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:47:17-91
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:54:17-91
 activity#com.pixels.Inventario.View.Activity.InicioA.Inicio
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:49:9-58:20
+ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:56:9-65:20
 	android:exported
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:51:17-40
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:58:17-40
 	android:theme
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:52:17-71
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:59:17-71
 	android:name
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:50:17-61
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:57:17-61
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:53:13-57:29
+ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:60:13-64:29
 action#android.intent.action.MAIN
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:54:17-68
+ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:61:17-68
 	android:name
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:54:25-66
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:61:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:56:17-76
+ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:63:17-76
 	android:name
-		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:56:27-74
+		ADDED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:63:27-74
 uses-sdk
 INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/raynor/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml

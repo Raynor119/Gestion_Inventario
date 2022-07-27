@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProviders;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.InicioA.Configuracion_Inicial.Fragment.AsignarContrasena;
+import com.pixels.Inventario.View.Activity.InicioA.Configuracion_Inicial.Fragment.CrearBaseDatos;
 import com.pixels.Inventario.View.Activity.InicioA.Configuracion_Inicial.Fragment.InicioBlanco;
 import com.pixels.Inventario.View.Activity.InicioA.Configuracion_Inicial.Fragment.RegistrarBaseDatos;
 import com.pixels.Inventario.View.Activity.Menu_Inicio.MenuInicio;
@@ -15,7 +16,7 @@ import com.pixels.Inventario.ViewModel.InicioA.ConfiguracionInicial.datosInicioV
 
 public class configuracionI extends AppCompatActivity {
     private FragmentTransaction transaction;
-    private Fragment fragmentAContrasena,fragmentRBaseDatos,Inicio;
+    private Fragment fragmentAContrasena,fragmentRBaseDatos,Inicio,fragmentCrear;
     private datosInicioViewModel Mdatosincio;
     public AlertConfiguracion alert;
 
@@ -41,6 +42,11 @@ public class configuracionI extends AppCompatActivity {
         fragmentRBaseDatos= new RegistrarBaseDatos(configuracionI.this);
         transaction=getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.contenedirFragments,fragmentRBaseDatos).commit();
+    }
+    public void AparecerFragmentCrearBase(){
+        fragmentCrear= new CrearBaseDatos(configuracionI.this);
+        transaction=getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.contenedirFragments,fragmentCrear).commit();
     }
     public void guardarDatos(){
         Mdatosincio.mandarDatos(configuracionI.this,contra,contrasena,basedatos,ip,nbasedatos,usuario,ucontra);

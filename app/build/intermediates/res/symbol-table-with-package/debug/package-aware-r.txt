@@ -2354,6 +2354,7 @@ layout activity_ajustes
 layout activity_cambiar_my_sql
 layout activity_config_contra
 layout activity_configuracion_i
+layout activity_crear_base_datos_mysql
 layout activity_exportar_datos
 layout activity_importar_datos
 layout activity_inicio
@@ -2380,6 +2381,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout expand_button
 layout fragment_agsinarcontrasena
+layout fragment_crear_base_datos
 layout fragment_inicio_blanco
 layout fragment_modificarcontra
 layout fragment_registrar_base_datos

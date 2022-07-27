@@ -39,7 +39,7 @@ public class AlertConfiguracion {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 Context.basedatos="MYSQL";
-                Context.AparecerFragmentBase();
+                PreguntarBaseDatosMYSQL();
             }
         });
         builder.setNegativeButton("SQLITE", new DialogInterface.OnClickListener() {
@@ -50,6 +50,26 @@ public class AlertConfiguracion {
             }
         });
 
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+    public void PreguntarBaseDatosMYSQL(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(Context);
+        builder.setCancelable(false);
+        builder.setTitle("Configuracion de la Base de Datos MYSQL");
+        builder.setMessage("Si en el servidor de base de datos MYSQL ya tienes una base de datos creada con sus tablas puedes seleccionar guardar conexion si no selecciona crear base de datos");
+        builder.setPositiveButton("Guardar Conexion", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Context.AparecerFragmentBase();
+            }
+        });
+        builder.setNegativeButton("Crear Base de Datos", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Context.AparecerFragmentCrearBase();
+            }
+        });
         AlertDialog dialog = builder.create();
         dialog.show();
     }

@@ -12,7 +12,14 @@
             android:resizeableActivity="true"
             android:supportsRtl="true"
             android:theme="@style/Theme.MyApplication">
+        <activity android:name=".View.Activity.Ajustes.ConfiguracionBaseDatos.CrearBaseDatosMYSQL"
+                  android:exported="false"
+                  android:theme="@style/Theme.MyApplication.NoActionBar">
+        </activity>
         <activity android:name=".View.Activity.Ajustes.ExportarDatos.ExportarDatos">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".View.Activity.Ajustes.Ajustes"/>
         </activity>
         <activity android:name=".View.Activity.Ajustes.ImportarDatos.ImportarDatos">
             <meta-data
