@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt/values-pt.xml",
+            "outputFile": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt\\values-pt.xml",
             "map": [
                 {
-                    "source": "/home/raynor/.gradle/caches/transforms-2/files-2.1/9d83948620594338fc98ab062225a13b/res/values-pt/values-pt.xml",
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\72e668ba98e8f48540142398664d29aa\\res\\values-pt\\values-pt.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/raynor/.gradle/caches/transforms-2/files-2.1/0a55dc226bc3c17f25a698028571c5aa/res/values-pt/values-pt.xml",
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\7ae703092afe87e2fb924c9a8ebcf05e\\res\\values-pt\\values-pt.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/home/raynor/.gradle/caches/transforms-2/files-2.1/e1c03b27460d232f833f77289f16a818/res/values-pt/values-pt.xml",
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\f4b8d3cf6d52b7c97b7366689d2a7314\\res\\values-pt\\values-pt.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

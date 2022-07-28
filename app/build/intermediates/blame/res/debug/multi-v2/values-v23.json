@@ -1,29 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "/home/raynor/.gradle/caches/transforms-2/files-2.1/4fa33541d0cb72b6b989d9907d196d04/res/values-v23/values-v23.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "4",
-                        "endColumns": "12",
-                        "endOffsets": "200"
-                    },
-                    "to": {
-                        "startLines": "50",
-                        "startColumns": "4",
-                        "startOffsets": "3524",
-                        "endLines": "52",
-                        "endColumns": "12",
-                        "endOffsets": "3669"
-                    }
-                },
-                {
-                    "source": "/home/raynor/.gradle/caches/transforms-2/files-2.1/e1c03b27460d232f833f77289f16a818/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\f4b8d3cf6d52b7c97b7366689d2a7314\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -34,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "/home/raynor/.gradle/caches/transforms-2/files-2.1/f20abe635ba1d2a3c90de0ef8b45c104/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\0e371a18df9b4005d8622373386a955f\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,6",
                         "startColumns": "4,4",
@@ -50,6 +31,25 @@
                         "endLines": "56,60",
                         "endColumns": "10,10",
                         "endOffsets": "3934,4207"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\eabbb2ddb3f3994ee664648dfeeb579e\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "200"
+                    },
+                    "to": {
+                        "startLines": "50",
+                        "startColumns": "4",
+                        "startOffsets": "3524",
+                        "endLines": "52",
+                        "endColumns": "12",
+                        "endOffsets": "3669"
                     }
                 }
             ]

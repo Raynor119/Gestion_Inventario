@@ -1,16 +1,16 @@
 {
     "logs": [
         {
-            "outputFile": "/home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w600dp-v13/values-w600dp-v13.xml",
+            "outputFile": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w600dp-v13\\values-w600dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/raynor/Documentos/Gestion_Inventario/app/src/main/res/values-w600dp/dimens.xml",
+                    "source": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
-                        "startOffsets": "16",
+                        "startOffsets": "17",
                         "endColumns": "41",
-                        "endOffsets": "53"
+                        "endOffsets": "54"
                     },
                     "to": {
                         "startLines": "2",
