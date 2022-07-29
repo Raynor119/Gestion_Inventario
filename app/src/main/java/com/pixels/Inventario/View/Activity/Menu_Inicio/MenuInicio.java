@@ -36,7 +36,6 @@ public class MenuInicio extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menuinicio);
-
         if (findViewById(R.id.opcion_detail_container) != null) {
             // The detail container view will be present only in the
             // large-screen layouts (res/values-w900dp).
@@ -44,7 +43,6 @@ public class MenuInicio extends AppCompatActivity {
             // activity should be in two-pane mode.
             mTwoPane = true;
         }
-
         View recyclerView = findViewById(R.id.opcion_list);
         assert recyclerView != null;
         setupRecyclerView((RecyclerView) recyclerView);

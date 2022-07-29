@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Jul 28 16:33:20 COT 2022
+#Thu Jul 28 17:08:00 COT 2022
 0.base=C\:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
 0.path=classes.dex
 1.baseType=DIRECTORY

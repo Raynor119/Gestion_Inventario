@@ -1929,6 +1929,7 @@ id bounce
 id buttonPanel
 id cancel_action
 id cancel_button
+id cantidad
 id center
 id center_horizontal
 id center_vertical
@@ -1947,6 +1948,7 @@ id clear_text
 id clip_horizontal
 id clip_vertical
 id clockwise
+id codigo
 id collapseActionView
 id configFragments
 id confirm_button
@@ -1957,6 +1959,7 @@ id contentPanel
 id contiguous
 id coordinator
 id cos
+id costeP
 id counterclockwise
 id custom
 id customPanel
@@ -2114,6 +2117,7 @@ id navigation_header_container
 id nbasedatos
 id never
 id noScroll
+id nombre
 id none
 id normal
 id notification_background
@@ -2121,7 +2125,6 @@ id notification_main_column
 id notification_main_column_container
 id off
 id on
-id opcion_detail
 id opcion_detail_container
 id opcion_list
 id outline
@@ -2142,6 +2145,7 @@ id percent
 id pin
 id position
 id postLayout
+id precio
 id progress_circular
 id progress_horizontal
 id radio
@@ -2268,6 +2272,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id unchecked
+id unidad
 id uniform
 id unlabeled
 id up
@@ -2358,8 +2363,8 @@ layout activity_crear_base_datos_mysql
 layout activity_exportar_datos
 layout activity_importar_datos
 layout activity_inicio
+layout activity_inventario_productos
 layout activity_menuinicio
-layout activity_opcion_detail
 layout ajustes_list_content
 layout alertcambiobasedatos
 layout alertdialogcontra
@@ -2383,6 +2388,7 @@ layout expand_button
 layout fragment_agsinarcontrasena
 layout fragment_crear_base_datos
 layout fragment_inicio_blanco
+layout fragment_inventario_productos
 layout fragment_modificarcontra
 layout fragment_registrar_base_datos
 layout image_frame
@@ -2444,7 +2450,6 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
-layout opcion_detail
 layout opcion_list
 layout opcion_list_content
 layout preference
@@ -2463,6 +2468,7 @@ layout preference_widget_seekbar
 layout preference_widget_seekbar_material
 layout preference_widget_switch
 layout preference_widget_switch_compat
+layout producto_detail_container
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -2482,6 +2488,10 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+mipmap add_adaptive_fore
+mipmap agregar
+mipmap agregar_adaptive_back
+mipmap agregar_adaptive_fore
 mipmap ajustes
 mipmap ajustes_adaptive_back
 mipmap ajustes_adaptive_fore
@@ -2489,6 +2499,10 @@ mipmap caja
 mipmap caja_adaptive_back
 mipmap caja_adaptive_fore
 mipmap ic_launcher
+mipmap list_products
+mipmap list_products_adaptive_back
+mipmap list_products_adaptive_fore
+mipmap mas_adaptive_fore
 mipmap productos
 mipmap productos_adaptive_back
 mipmap productos_adaptive_fore

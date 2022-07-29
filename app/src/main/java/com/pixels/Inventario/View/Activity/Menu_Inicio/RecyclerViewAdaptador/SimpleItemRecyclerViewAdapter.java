@@ -33,7 +33,7 @@ public class SimpleItemRecyclerViewAdapter extends RecyclerView.Adapter<SimpleIt
             }
             if(Id==2){
                 if (mTwoPane) {
-                    VerInventarioFragment fragment = new VerInventarioFragment();
+                    VerInventarioFragment fragment = new VerInventarioFragment(mParentActivity);
                     mParentActivity.getSupportFragmentManager().beginTransaction()
                             .replace(R.id.opcion_detail_container, fragment)
                             .commit();
