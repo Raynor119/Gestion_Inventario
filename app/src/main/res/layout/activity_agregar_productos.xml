@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:weightSum="12">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menufondo"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:background="@color/colorPrimary"
+                    android:contentDescription="login background"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Agregar Productos"
+                android:layout_marginLeft="10dp"
+                android:textSize="26dp"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/whiteCardColor"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_marginTop="15dp"
+
+                                android:layout_width="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical"
+                                android:layout_height="wrap_content">
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="305dp"
+                                android:layout_height="wrap_content"
+                                android:hint="Codigo del Producto"
+                                app:endIconMode="clear_text">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/codigo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="text" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/Escaner"
+                                    card_view:cardBackgroundColor="@android:color/transparent"
+                                    card_view:cardCornerRadius="9dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_width="44dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_height="44dp">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:gravity="center"
+                                        android:background="@color/colorPrimary"
+                                        android:layout_height="match_parent">
+                                        <ImageView
+                                            android:padding="3dp"
+                                            android:layout_height="40dp"
+                                            android:layout_width="40dp"
+                                            android:src="@mipmap/scaner"/>
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="360dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_height="wrap_content"
+                                android:hint="Nombre del Producto"
+                                app:endIconMode="clear_text">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/nombre"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="text" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:gravity="center_vertical"
+                                android:layout_marginTop="30dp"
+                                android:layout_height="wrap_content">
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                    android:layout_width="180dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:hint="Cantidad"
+                                    app:endIconMode="clear_text">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/cantidad"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:inputType="numberDecimal" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/spinner"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                                    android:layout_width="170dp"
+                                    android:hint="Tipo Cantidad"
+                                    android:layout_height="55dp">
+                                    <!-- Google themselves instruct us to use the deprecated editable attribute -->
+                                    <AutoCompleteTextView
+
+                                        android:id="@+id/spinner_dropdown"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:editable="false"/>
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="360dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_height="wrap_content"
+                                android:hint="Costo del Producto"
+                                app:endIconMode="clear_text">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/CosteP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="360dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_height="wrap_content"
+                                android:hint="Precio del Producto"
+                                app:endIconMode="clear_text">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/Precio"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <Button
+                                android:id="@+id/ButtonG"
+                                android:layout_width="210dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="100dp"
+                                android:padding="20dp"
+                                android:text="Guardar Producto"
+                                android:textColor="#FFFFFF" />
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

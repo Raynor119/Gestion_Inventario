@@ -11,7 +11,6 @@ anim abc_slide_out_bottom
 anim abc_slide_out_top
 anim abc_tooltip_enter
 anim abc_tooltip_exit
-anim botones
 anim btn_checkbox_to_checked_box_inner_merged_animation
 anim btn_checkbox_to_checked_box_outer_merged_animation
 anim btn_checkbox_to_checked_icon_null_animation
@@ -1837,9 +1836,12 @@ id BOTTOM_END
 id BOTTOM_START
 id ButtonG
 id CTRL
+id CosteP
+id Escaner
 id FUNCTION
 id META
 id NO_DEBUG
+id Precio
 id RadioMysqlButton
 id RadioSQLiteButton
 id SHIFT
@@ -2203,6 +2205,7 @@ id snap
 id snapMargins
 id spacer
 id spinner
+id spinner_dropdown
 id spline
 id split_action_bar
 id spread
@@ -2360,6 +2363,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_agregar_productos
 layout activity_ajustes
 layout activity_cambiar_my_sql
 layout activity_config_contra
@@ -2493,6 +2497,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout tipocantidad
 mipmap add_adaptive_fore
 mipmap agregar
 mipmap agregar_adaptive_back
@@ -2503,6 +2508,12 @@ mipmap ajustes_adaptive_fore
 mipmap caja
 mipmap caja_adaptive_back
 mipmap caja_adaptive_fore
+mipmap editar
+mipmap editar_adaptive_back
+mipmap editar_adaptive_fore
+mipmap eliminar
+mipmap eliminar_adaptive_back
+mipmap eliminar_adaptive_fore
 mipmap ic_launcher
 mipmap list_products
 mipmap list_products_adaptive_back
@@ -2514,10 +2525,12 @@ mipmap productos_adaptive_fore
 mipmap salir
 mipmap salir_adaptive_back
 mipmap salir_adaptive_fore
+mipmap scaner
 mipmap ventas
 mipmap ventas_adaptive_back
 mipmap ventas_adaptive_fore
 plurals mtrl_badge_content_description
+string MonedaMonto
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

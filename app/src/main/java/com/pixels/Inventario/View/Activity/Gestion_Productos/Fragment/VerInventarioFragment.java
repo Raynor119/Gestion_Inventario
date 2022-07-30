@@ -2,6 +2,7 @@ package com.pixels.Inventario.View.Activity.Gestion_Productos.Fragment;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import androidx.fragment.app.Fragment;
@@ -18,6 +19,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.R;
+import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.AgregarProductos;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.RecyclerViewAdaptador.ProductosRecyclerViewAdapter;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.VerInventario;
 import com.pixels.Inventario.View.Activity.Menu_Inicio.MenuInicio;
@@ -35,11 +37,14 @@ import java.util.List;
 public class VerInventarioFragment extends Fragment {
 
     public Context Context;
+    public RecyclerView reciclerView;
+    public boolean verificacion;
     public VerInventarioFragment(){
 
     }
-    public VerInventarioFragment(Context context) {
+    public VerInventarioFragment(Context context,boolean verificar) {
         this.Context=context;
+        this.verificacion=verificar;
     }
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -55,25 +60,31 @@ public class VerInventarioFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_inventario_productos, container, false);
-        final RecyclerView reciclerView= rootView.findViewById(R.id.opcion_list);
+        reciclerView= rootView.findViewById(R.id.opcion_list);
+        iniciarRecyclerView();
+        if(verificacion){
+            FloatingActionButton fab = rootView.findViewById(R.id.fab);
+            fab.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(Context, AgregarProductos.class);
+                    startActivity(intent);
+                }
+            });
+        }
+        return rootView;
+    }
+    public void iniciarRecyclerView(){
+        reciclerView.setAdapter(null);
         ProductosRecyclerViewModel productos= ViewModelProviders.of(getActivity()).get(ProductosRecyclerViewModel.class);
         productos.reset();
         productos.buscarProductos(Context);
         final Observer<List<Producto>> observer= new Observer<List<Producto>>() {
             @Override
             public void onChanged(List<Producto> productos) {
-                reciclerView.setAdapter(new ProductosRecyclerViewAdapter(Context,productos));
+                reciclerView.setAdapter(new ProductosRecyclerViewAdapter(Context,productos,VerInventarioFragment.this));
             }
         };
         productos.getResultado().observe(getActivity(),observer);
-        FloatingActionButton fab = rootView.findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-        return rootView;
     }
 }

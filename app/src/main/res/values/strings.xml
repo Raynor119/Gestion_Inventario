@@ -3,4 +3,5 @@
     <string name="version">v1.0</string>
     <string name="title_opcion_list">opciones</string>
     <string name="title_opcion_detail">opcion Detail</string>
+    <string name="MonedaMonto">$</string>
 </resources>

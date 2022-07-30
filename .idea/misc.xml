@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-sw600dp/fragment_inventario_productos.xml" value="0.275" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_agregar_productos.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_cambiar_my_sql.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_configuracion_i.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_crear_base_datos_mysql.xml" value="0.36666666666666664" />
@@ -13,6 +15,7 @@
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_menuinicio.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_opcion_detail.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/alertcambiobasedatos.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/fragment_agsinarcontrasena.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/fragment_crear_base_datos.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/fragment_inventario_productos.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/fragment_modificarcontra.xml" value="0.36666666666666664" />
@@ -20,6 +23,7 @@
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/opcion_list.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/opcion_list_content.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/producto_detail_container.xml" value="0.365625" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/tipocantidad.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

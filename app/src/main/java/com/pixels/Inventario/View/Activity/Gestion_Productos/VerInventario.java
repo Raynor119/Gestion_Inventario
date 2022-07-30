@@ -7,7 +7,11 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.ActionBar;
 import android.view.MenuItem;
+import android.view.View;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.pixels.Inventario.R;
+import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.AgregarProductos;
 import com.pixels.Inventario.View.Activity.Menu_Inicio.MenuInicio;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.Fragment.VerInventarioFragment;
 
@@ -45,11 +49,19 @@ public class VerInventario extends AppCompatActivity {
             // Create the detail fragment and add it to the activity
             // using a fragment transaction.
 
-            VerInventarioFragment fragment = new VerInventarioFragment(VerInventario.this);
+            VerInventarioFragment fragment = new VerInventarioFragment(VerInventario.this,false);
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.opcion_detail_container, fragment)
                     .commit();
         }
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), AgregarProductos.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

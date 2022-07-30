@@ -19,17 +19,22 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.R;
+import com.pixels.Inventario.View.Activity.Gestion_Productos.AlertDialog.alertEliminar;
+import com.pixels.Inventario.View.Activity.Gestion_Productos.Fragment.VerInventarioFragment;
 
+import java.text.NumberFormat;
 import java.util.List;
 
 public class ProductosRecyclerViewAdapter extends RecyclerView.Adapter<ProductosRecyclerViewAdapter.ViewHolder> {
     private Context Context;
     private List<Producto> Productos;
+    private VerInventarioFragment Fragment;
     private  ProductosRecyclerViewAdapter.ViewHolder botonprecionado=null;
 
-    public ProductosRecyclerViewAdapter(Context context,List<Producto> productos){
+    public ProductosRecyclerViewAdapter(Context context,List<Producto> productos,VerInventarioFragment fragment){
         this.Context=context;
         this.Productos=productos;
+        this.Fragment=fragment;
     }
     @Override
     public ProductosRecyclerViewAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -45,13 +50,14 @@ public class ProductosRecyclerViewAdapter extends RecyclerView.Adapter<Productos
             holder.unidad.setText(" Kg");
             holder.cantidad.setText(""+Productos.get(position).getCantidad());
         }
-        if(Productos.get(position).getTipoC().equals("unidad")){
+        if(Productos.get(position).getTipoC().equals("unitario")){
             holder.unidad.setText("");
             int canti=(int) Productos.get(position).getCantidad();
             holder.cantidad.setText(""+canti);
         }
-        holder.costo.setText(""+Productos.get(position).getCosteP());
-        holder.precio.setText(""+Productos.get(position).getPrecio());
+        NumberFormat formato= NumberFormat.getNumberInstance();
+        holder.costo.setText("$"+formato.format(Productos.get(position).getCosteP()));
+        holder.precio.setText("$"+formato.format(Productos.get(position).getPrecio()));
         holder.opciones.setVisibility(ConstraintLayout.GONE);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,7 +78,8 @@ public class ProductosRecyclerViewAdapter extends RecyclerView.Adapter<Productos
         holder.eliminar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(Context, "Eliminar: "+Productos.get(poscion).getCodigo(), Toast.LENGTH_LONG).show();
+                alertEliminar alert=new alertEliminar(Context,Productos.get(poscion).getCodigo(),Fragment);
+                alert.AlertDialogEliminar();
             }
         });
         holder.editar.setOnClickListener(new View.OnClickListener() {
@@ -90,7 +97,6 @@ public class ProductosRecyclerViewAdapter extends RecyclerView.Adapter<Productos
     class ViewHolder extends RecyclerView.ViewHolder {
         final TextView codigo,nombre,cantidad,unidad,costo,precio;
         final LinearLayout opciones;
-        final LinearLayout ani;
         final CardView eliminar,editar;
         ViewHolder(View view) {
             super(view);
@@ -103,7 +109,6 @@ public class ProductosRecyclerViewAdapter extends RecyclerView.Adapter<Productos
             opciones= (LinearLayout) view.findViewById(R.id.opciones);
             eliminar= (CardView) view.findViewById(R.id.eliminar);
             editar= (CardView) view.findViewById(R.id.editar);
-            ani= (LinearLayout) view.findViewById(R.id.anim);
         }
     }
 
