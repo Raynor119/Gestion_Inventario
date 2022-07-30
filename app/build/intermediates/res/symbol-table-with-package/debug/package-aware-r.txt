@@ -11,6 +11,7 @@ anim abc_slide_out_bottom
 anim abc_slide_out_top
 anim abc_tooltip_enter
 anim abc_tooltip_exit
+anim botones
 anim btn_checkbox_to_checked_box_inner_merged_animation
 anim btn_checkbox_to_checked_box_outer_merged_animation
 anim btn_checkbox_to_checked_icon_null_animation
@@ -1909,6 +1910,7 @@ id alertTitle
 id aligned
 id all
 id always
+id anim
 id animateToEnd
 id animateToStart
 id app_bar
@@ -1994,7 +1996,9 @@ id easeIn
 id easeInOut
 id easeOut
 id edit_query
+id editar
 id elastic
+id eliminar
 id end
 id endToStart
 id end_padder
@@ -2127,6 +2131,7 @@ id off
 id on
 id opcion_detail_container
 id opcion_list
+id opciones
 id outline
 id outward
 id packed

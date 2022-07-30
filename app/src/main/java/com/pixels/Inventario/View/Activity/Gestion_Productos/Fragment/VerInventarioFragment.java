@@ -5,6 +5,8 @@ import android.content.Context;
 import android.os.Bundle;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
@@ -14,9 +16,15 @@ import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.R;
+import com.pixels.Inventario.View.Activity.Gestion_Productos.RecyclerViewAdaptador.ProductosRecyclerViewAdapter;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.VerInventario;
 import com.pixels.Inventario.View.Activity.Menu_Inicio.MenuInicio;
+import com.pixels.Inventario.ViewModel.Gestion_Productos.ProductosRecyclerViewModel;
+import com.pixels.Inventario.ViewModel.InicioA.ConfiguracionInicial.VerificarConexionViewModel;
+
+import java.util.List;
 
 /**
  * A fragment representing a single opcion detail screen.
@@ -47,8 +55,17 @@ public class VerInventarioFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_inventario_productos, container, false);
-        RecyclerView reciclerView= rootView.findViewById(R.id.opcion_list);
-
+        final RecyclerView reciclerView= rootView.findViewById(R.id.opcion_list);
+        ProductosRecyclerViewModel productos= ViewModelProviders.of(getActivity()).get(ProductosRecyclerViewModel.class);
+        productos.reset();
+        productos.buscarProductos(Context);
+        final Observer<List<Producto>> observer= new Observer<List<Producto>>() {
+            @Override
+            public void onChanged(List<Producto> productos) {
+                reciclerView.setAdapter(new ProductosRecyclerViewAdapter(Context,productos));
+            }
+        };
+        productos.getResultado().observe(getActivity(),observer);
         FloatingActionButton fab = rootView.findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override

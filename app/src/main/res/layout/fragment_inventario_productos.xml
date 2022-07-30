@@ -44,6 +44,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             app:layoutManager="LinearLayoutManager"
             tools:context=".View.Activity.Menu_Inicio.MenuInicio"
             tools:listitem="@layout/producto_detail_container"/>

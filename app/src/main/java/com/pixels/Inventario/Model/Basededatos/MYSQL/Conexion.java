@@ -11,7 +11,7 @@ import java.sql.DriverManager;
 import java.util.List;
 
 public class Conexion extends AsyncTask<String, Void , String> {
-    private String Url,Usuario,Contra;
+    public String Url,Usuario,Contra;
     private List<datosI> datosIS;
     public Context Context;
 

@@ -4,9 +4,10 @@ import android.content.Context;
 
 import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.Model.DatosE.datosI;
+import com.pixels.Inventario.ViewModel.Gestion_Productos.ProductosRecyclerViewModel;
 
 import java.util.List;
 
 public interface MediadorBaseDatos{
-    public List<Producto> ObtenerProductos(Context context,List<datosI> datos);
+    public void ObtenerProductos(ProductosRecyclerViewModel viewModel,List<Producto> productos);
 }

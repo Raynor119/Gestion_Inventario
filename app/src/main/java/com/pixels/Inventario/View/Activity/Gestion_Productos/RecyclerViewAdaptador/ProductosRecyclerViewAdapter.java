@@ -4,8 +4,17 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationSet;
+import android.view.animation.AnimationUtils;
+import android.view.animation.LayoutAnimationController;
+import android.view.animation.TranslateAnimation;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.cardview.widget.CardView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.pixels.Inventario.Model.DatosE.Producto;
@@ -16,6 +25,7 @@ import java.util.List;
 public class ProductosRecyclerViewAdapter extends RecyclerView.Adapter<ProductosRecyclerViewAdapter.ViewHolder> {
     private Context Context;
     private List<Producto> Productos;
+    private  ProductosRecyclerViewAdapter.ViewHolder botonprecionado=null;
 
     public ProductosRecyclerViewAdapter(Context context,List<Producto> productos){
         this.Context=context;
@@ -31,15 +41,46 @@ public class ProductosRecyclerViewAdapter extends RecyclerView.Adapter<Productos
     public void onBindViewHolder(final ProductosRecyclerViewAdapter.ViewHolder holder, int position) {
         holder.codigo.setText(""+Productos.get(position).getCodigo());
         holder.nombre.setText(""+Productos.get(position).getNombre());
-        holder.cantidad.setText(""+Productos.get(position).getCantidad());
         if(Productos.get(position).getTipoC().equals("peso")){
             holder.unidad.setText(" Kg");
+            holder.cantidad.setText(""+Productos.get(position).getCantidad());
         }
         if(Productos.get(position).getTipoC().equals("unidad")){
             holder.unidad.setText("");
+            int canti=(int) Productos.get(position).getCantidad();
+            holder.cantidad.setText(""+canti);
         }
         holder.costo.setText(""+Productos.get(position).getCosteP());
         holder.precio.setText(""+Productos.get(position).getPrecio());
+        holder.opciones.setVisibility(ConstraintLayout.GONE);
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(holder.opciones.getVisibility()==ConstraintLayout.GONE){
+                    if(botonprecionado!=null){
+                        botonprecionado.opciones.setVisibility(ConstraintLayout.GONE);
+                    }
+                    holder.opciones.setVisibility(ConstraintLayout.VISIBLE);
+                    botonprecionado = holder;
+                }else{
+                    holder.opciones.setVisibility(ConstraintLayout.GONE);
+                }
+
+            }
+        });
+        final int poscion=position;
+        holder.eliminar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(Context, "Eliminar: "+Productos.get(poscion).getCodigo(), Toast.LENGTH_LONG).show();
+            }
+        });
+        holder.editar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(Context, "Editar: "+Productos.get(poscion).getCodigo(), Toast.LENGTH_LONG).show();
+            }
+        });
     }
     @Override
     public int getItemCount() {
@@ -48,6 +89,9 @@ public class ProductosRecyclerViewAdapter extends RecyclerView.Adapter<Productos
 
     class ViewHolder extends RecyclerView.ViewHolder {
         final TextView codigo,nombre,cantidad,unidad,costo,precio;
+        final LinearLayout opciones;
+        final LinearLayout ani;
+        final CardView eliminar,editar;
         ViewHolder(View view) {
             super(view);
             codigo = (TextView) view.findViewById(R.id.codigo);
@@ -56,6 +100,10 @@ public class ProductosRecyclerViewAdapter extends RecyclerView.Adapter<Productos
             unidad= (TextView) view.findViewById(R.id.unidad);
             costo= (TextView) view.findViewById(R.id.costeP);
             precio= (TextView) view.findViewById(R.id.precio);
+            opciones= (LinearLayout) view.findViewById(R.id.opciones);
+            eliminar= (CardView) view.findViewById(R.id.eliminar);
+            editar= (CardView) view.findViewById(R.id.editar);
+            ani= (LinearLayout) view.findViewById(R.id.anim);
         }
     }
 
