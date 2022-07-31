@@ -43,12 +43,12 @@ public class ImportarDatosSQLite extends AsyncTask<String, Void , List<ImportDat
             rs = st.executeQuery("SELECT * FROM Venta");
             List<Venta> ventas=new ArrayList<>();
             while (rs.next()) {
-                ventas.add(new Venta(rs.getInt(1),rs.getString(2),rs.getInt(3),rs.getInt(4)));
+                ventas.add(new Venta(rs.getInt(1),rs.getString(2),rs.getInt(3)));
             }
             rs = st.executeQuery("SELECT * FROM VentasProductos");
             List<VentasProductos> ventasProductos=new ArrayList<>();
             while (rs.next()) {
-                ventasProductos.add(new VentasProductos(rs.getInt(1),rs.getInt(2),rs.getString(3),rs.getDouble(4)));
+                ventasProductos.add(new VentasProductos(rs.getInt(1),rs.getInt(2),rs.getString(3),rs.getDouble(4),rs.getInt(5),rs.getInt(6)));
             }
             resul.add(new ImportDatos(productos,ventas,ventasProductos));
             return resul;

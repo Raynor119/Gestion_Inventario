@@ -1,13 +1,12 @@
 package com.pixels.Inventario.Model.DatosE;
 
 public class Venta {
-    private int Codigo,Efectivo,TotalV;
+    private int Codigo,Efectivo;
     private String Fecha;
 
-    public Venta(int codigo,String fecha, int efectivo, int totalV) {
+    public Venta(int codigo,String fecha, int efectivo) {
         this.Codigo = codigo;
         this.Efectivo = efectivo;
-        this.TotalV = totalV;
         this.Fecha = fecha;
     }
 
@@ -25,14 +24,6 @@ public class Venta {
 
     public void setEfectivo(int efectivo) {
         Efectivo = efectivo;
-    }
-
-    public int getTotalV() {
-        return TotalV;
-    }
-
-    public void setTotalV(int totalV) {
-        TotalV = totalV;
     }
 
     public String getFecha() {

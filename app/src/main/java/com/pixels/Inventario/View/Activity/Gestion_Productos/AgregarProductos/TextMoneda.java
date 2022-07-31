@@ -3,6 +3,7 @@ package com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.pixels.Inventario.R;
 
@@ -31,6 +32,7 @@ public class TextMoneda {
             public void onTextChanged(CharSequence s, int start,
                                       int before, int count) {
                 if(!s.toString().equals(current) && s.toString().compareTo("")!=0){
+                    s=s+".00";
                     editText.removeTextChangedListener(this);
                     String cleanString = s.toString().replaceAll("["+Context.getResources().getString(R.string.MonedaMonto)+",.]", "").replace(" ","");
                     double parsed = Double.parseDouble(cleanString.replaceAll("\\s","").trim());
@@ -38,6 +40,7 @@ public class TextMoneda {
                     DecimalFormatSymbols symbols = decimalFormat.getDecimalFormatSymbols();
                     symbols.setCurrencySymbol(Context.getResources().getString(R.string.MonedaMonto)+" ");
                     decimalFormat.setDecimalFormatSymbols(symbols);
+                    decimalFormat.setMaximumFractionDigits(0);
                     String formatted = decimalFormat.format((parsed/100));
                     current = formatted;
                     editText.setText(formatted);

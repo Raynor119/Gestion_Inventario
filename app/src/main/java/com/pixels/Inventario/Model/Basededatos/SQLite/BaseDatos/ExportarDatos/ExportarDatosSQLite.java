@@ -41,11 +41,15 @@ public class ExportarDatosSQLite extends AsyncTask<String, Void , String> {
             }
             List<Venta> ventas=exportacion.exportarDatosVentas();
             for(int i=0;i<ventas.size();i++){
-                st.executeUpdate("INSERT INTO Venta VALUES("+ventas.get(i).getCodigo()+",'"+ventas.get(i).getFecha()+"',"+ventas.get(i).getEfectivo()+","+ventas.get(i).getTotalV()+")");
+                st.executeUpdate("INSERT INTO Venta VALUES("+ventas.get(i).getCodigo()+",'"+ventas.get(i).getFecha()+"',"+ventas.get(i).getEfectivo()+")");
             }
             List<VentasProductos> ventasProductos=exportacion.exportarDatosVentasProductos();
             for(int i=0;i<ventasProductos.size();i++){
-                st.executeUpdate("INSERT INTO VentasProductos VALUES("+ventasProductos.get(i).getId()+","+ventasProductos.get(i).getCodigoV()+",'"+ventasProductos.get(i).getCodigoP()+"',"+ventasProductos.get(i).getCantidadV()+")");
+                if(ventasProductos.get(i).getCodigoP()==null){
+                    st.executeUpdate("INSERT INTO VentasProductos VALUES("+ventasProductos.get(i).getId()+","+ventasProductos.get(i).getCodigoV()+",NULL,"+ventasProductos.get(i).getCantidadV()+","+ventasProductos.get(i).getCostePV()+","+ventasProductos.get(i).getPrecioPV()+")");
+                }else{
+                    st.executeUpdate("INSERT INTO VentasProductos VALUES("+ventasProductos.get(i).getId()+","+ventasProductos.get(i).getCodigoV()+",'"+ventasProductos.get(i).getCodigoP()+"',"+ventasProductos.get(i).getCantidadV()+","+ventasProductos.get(i).getCostePV()+","+ventasProductos.get(i).getPrecioPV()+")");
+                }
             }
             return "Se exporto los datos Exitosamente";
         }catch (Exception e){

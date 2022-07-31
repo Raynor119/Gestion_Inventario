@@ -38,7 +38,7 @@ public class ConexionSQLiteImportacionDatos extends BaseDatosSQLite {
         {
             for(int i=0;i< ventas.size();i++){
                 try {
-                    bd.execSQL("INSERT INTO Venta VALUES("+ventas.get(i).getCodigo()+",'"+ventas.get(i).getFecha()+"',"+ventas.get(i).getEfectivo()+","+ventas.get(i).getTotalV()+")");
+                    bd.execSQL("INSERT INTO Venta VALUES("+ventas.get(i).getCodigo()+",'"+ventas.get(i).getFecha()+"',"+ventas.get(i).getEfectivo()+")");
                 }catch (Exception e){
                     Toast.makeText(Context, "Error al Importar los Datos de las Ventas", Toast.LENGTH_LONG).show();
                 }
@@ -52,9 +52,13 @@ public class ConexionSQLiteImportacionDatos extends BaseDatosSQLite {
         {
             for(int i=0;i< VentasProductos.size();i++){
                 try {
-                    bd.execSQL("INSERT INTO VentasProductos VALUES("+VentasProductos.get(i).getId()+","+VentasProductos.get(i).getCodigoV()+",'"+VentasProductos.get(i).getCodigoP()+"',"+VentasProductos.get(i).getCantidadV()+")");
+                    if(VentasProductos.get(i).getCodigoP()==null){
+                        bd.execSQL("INSERT INTO VentasProductos VALUES("+VentasProductos.get(i).getId()+","+VentasProductos.get(i).getCodigoV()+",NULL,"+VentasProductos.get(i).getCantidadV()+","+VentasProductos.get(i).getCostePV()+","+VentasProductos.get(i).getPrecioPV()+")");
+                    }else{
+                        bd.execSQL("INSERT INTO VentasProductos VALUES("+VentasProductos.get(i).getId()+","+VentasProductos.get(i).getCodigoV()+",'"+VentasProductos.get(i).getCodigoP()+"',"+VentasProductos.get(i).getCantidadV()+","+VentasProductos.get(i).getCostePV()+","+VentasProductos.get(i).getPrecioPV()+")");
+                    }
                 }catch (Exception e){
-                    Toast.makeText(Context, "Error al Importar los Datos la tabla VentasProductos", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Context, "Error al Importar los Datos la tabla VentasProductos: "+VentasProductos.get(i).getCodigoP(), Toast.LENGTH_LONG).show();
                 }
             }
             bd.close();
