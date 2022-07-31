@@ -19,18 +19,20 @@ public class TextMoneda {
     }
     public TextWatcher moneda(final EditText editText) {
         return new TextWatcher() {
-            DecimalFormat dec = new DecimalFormat("0.00");
+            private String current = "";
+            private int select=-1;
             @Override
             public void afterTextChanged(Editable arg0) {
+                if(editText.getText().toString().equals("")){
+                    select=-1;
+                }
             }
             @Override
-            public void beforeTextChanged(CharSequence s, int start,
-                                          int count, int after) {
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
             }
-            private String current = "";
             @Override
-            public void onTextChanged(CharSequence s, int start,
-                                      int before, int count) {
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
                 if(!s.toString().equals(current) && s.toString().compareTo("")!=0){
                     s=s+".00";
                     editText.removeTextChangedListener(this);
@@ -43,8 +45,26 @@ public class TextMoneda {
                     decimalFormat.setMaximumFractionDigits(0);
                     String formatted = decimalFormat.format((parsed/100));
                     current = formatted;
+                    int ver=editText.getSelectionStart();
+                    if(select!=-1){
+                        if(select!=1){
+                            if(editText.getSelectionStart()==1){
+                                select=formatted.length();
+                            }else{
+                                select=editText.getSelectionStart();
+                            }
+                        }else{
+                            select=formatted.length();
+                        }
+                    }else{
+                        select=formatted.length();
+                    }
                     editText.setText(formatted);
-                    editText.setSelection(formatted.length());
+                    try{
+                        editText.setSelection(select);
+                    }catch (Exception e){
+                        editText.setSelection(formatted.length());
+                    }
                     editText.addTextChangedListener(this);
                 }
             }
