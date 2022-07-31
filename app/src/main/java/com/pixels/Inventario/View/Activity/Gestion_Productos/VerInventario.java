@@ -22,6 +22,8 @@ import com.pixels.Inventario.View.Activity.Gestion_Productos.Fragment.VerInventa
  * in a {@link MenuInicio}.
  */
 public class VerInventario extends AppCompatActivity {
+    VerInventarioFragment fragment;
+    public static FloatingActionButton fab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,16 +47,11 @@ public class VerInventario extends AppCompatActivity {
         //
         // http://developer.android.com/guide/components/fragments.html
         //
-        if (savedInstanceState == null) {
-            // Create the detail fragment and add it to the activity
-            // using a fragment transaction.
-
-            VerInventarioFragment fragment = new VerInventarioFragment(VerInventario.this,false);
+        fragment = new VerInventarioFragment(VerInventario.this);
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.opcion_detail_container, fragment)
+                    .replace(R.id.opcion_detail_container, fragment)
                     .commit();
-        }
-        FloatingActionButton fab = findViewById(R.id.fab);
+            fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -38,13 +38,11 @@ public class VerInventarioFragment extends Fragment {
 
     public Context Context;
     public RecyclerView reciclerView;
-    public boolean verificacion;
     public VerInventarioFragment(){
 
     }
-    public VerInventarioFragment(Context context,boolean verificar) {
+    public VerInventarioFragment(Context context) {
         this.Context=context;
-        this.verificacion=verificar;
     }
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -61,8 +59,15 @@ public class VerInventarioFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_inventario_productos, container, false);
         reciclerView= rootView.findViewById(R.id.opcion_list);
-        iniciarRecyclerView();
-        if(verificacion){
+
+        if(Context!=null){
+            iniciarRecyclerView();
+        }else {
+            //si se redimensiona
+            Context=getActivity();
+            iniciarRecyclerView();
+        }
+        try {
             FloatingActionButton fab = rootView.findViewById(R.id.fab);
             fab.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -71,6 +76,11 @@ public class VerInventarioFragment extends Fragment {
                     startActivity(intent);
                 }
             });
+            if(VerInventario.fab != null){
+                VerInventario.fab.setVisibility(View.INVISIBLE);
+            }
+        }catch (Exception e){
+
         }
         return rootView;
     }

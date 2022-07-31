@@ -9,12 +9,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class consultasDatos extends DatosInicio{
+    private SQLiteDatabase bd;
 
     public consultasDatos(Context context) {
         super(context);
     }
     public void Iagregar(){
-        SQLiteDatabase bd=getWritableDatabase();
+        bd=getWritableDatabase();
         if(bd!=null)
         {
             String nada="";
@@ -23,7 +24,7 @@ public class consultasDatos extends DatosInicio{
         }
     }
     public List<datosI> obtenerD(){
-        SQLiteDatabase bd=getReadableDatabase();
+        bd=getReadableDatabase();
         Cursor cursor=bd.rawQuery("SELECT * FROM INICIO",null);
         List<datosI> datos=new ArrayList<>();
         if(cursor.moveToFirst()){
@@ -36,7 +37,7 @@ public class consultasDatos extends DatosInicio{
         return datos;
     }
     public void Imodificar(String finalizo ,String contra,String contrasena,String basedatos,String ip,String nbasedatos,String usuario,String ucontra){
-        SQLiteDatabase bd=getWritableDatabase();
+        bd=getWritableDatabase();
         if(bd!=null)
         {
             bd.execSQL("UPDATE INICIO SET FINALIZO='"+finalizo+"',CONTRA='"+contra+"',CONTRASENA='"+contrasena+"',BASEDATOS='"+basedatos+"',IP='"+ip+"',NBASEDATOS='"+nbasedatos+"',USUARIO='"+usuario+"',UCONTRA='"+ucontra+"'");
@@ -44,7 +45,7 @@ public class consultasDatos extends DatosInicio{
         }
     }
     public void asignarcontra(String contrasena){
-        SQLiteDatabase bd=getWritableDatabase();
+        bd=getWritableDatabase();
         if(bd!=null)
         {
             bd.execSQL("UPDATE INICIO SET CONTRA='"+"si"+"',CONTRASENA='"+contrasena+"' WHERE FINALIZO = '1'");
@@ -52,7 +53,7 @@ public class consultasDatos extends DatosInicio{
         }
     }
     public void eliminarcontra(){
-        SQLiteDatabase bd=getWritableDatabase();
+        bd=getWritableDatabase();
         if(bd!=null)
         {
             bd.execSQL("UPDATE INICIO SET CONTRA='"+"no"+"',CONTRASENA='"+""+"' WHERE FINALIZO = '1'");
@@ -60,7 +61,7 @@ public class consultasDatos extends DatosInicio{
         }
     }
     public void modificarContra(String contrasena){
-        SQLiteDatabase bd=getWritableDatabase();
+        bd=getWritableDatabase();
         if(bd!=null)
         {
             bd.execSQL("UPDATE INICIO SET CONTRASENA='"+contrasena+"' WHERE FINALIZO = '1'");
@@ -68,7 +69,7 @@ public class consultasDatos extends DatosInicio{
         }
     }
     public void modificarbasedatos(String basedatos,String ip,String nbasedatos,String usuario,String ucontra){
-        SQLiteDatabase bd=getWritableDatabase();
+        bd=getWritableDatabase();
         if(bd!=null)
         {
             bd.execSQL("UPDATE INICIO SET BASEDATOS='"+basedatos+"',IP='"+ip+"',NBASEDATOS='"+nbasedatos+"',USUARIO='"+usuario+"',UCONTRA='"+ucontra+"' WHERE FINALIZO = '1'");
