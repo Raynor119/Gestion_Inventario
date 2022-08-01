@@ -6,9 +6,9 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.pixels.Inventario.Model.Basededatos.MYSQL.Consultas.VerificarCodigoMYSQL;
+import com.pixels.Inventario.Model.Basededatos.MYSQL.Consultas.Gestion_Productos.VerificarCodigoMYSQL;
 import com.pixels.Inventario.Model.Basededatos.MediadorBaseDatos;
-import com.pixels.Inventario.Model.Basededatos.SQLite.BaseDatos.Consultas.VerificarCodigoSQLite;
+import com.pixels.Inventario.Model.Basededatos.SQLite.BaseDatos.Consultas.Gestion_Productos.VerificarCodigoSQLite;
 import com.pixels.Inventario.Model.Basededatos.SQLite.DatosInicio.consultasDatos;
 
 

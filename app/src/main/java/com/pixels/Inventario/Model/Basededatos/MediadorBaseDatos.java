@@ -5,6 +5,7 @@ import android.content.Context;
 import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.Model.DatosE.datosI;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.AgregarProductos.AgregarProductosViewModel;
+import com.pixels.Inventario.ViewModel.Gestion_Productos.EliminarProducto.EliminarProductoViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.ProductosRecyclerViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.VerificarCodigoViewModel;
 
@@ -14,4 +15,5 @@ public interface MediadorBaseDatos{
     public void ObtenerProductos(ProductosRecyclerViewModel viewModel,List<Producto> productos);
     public void verificarCodigoProducto(VerificarCodigoViewModel viewModel,List<Producto> productos,String codigo);
     public void agregarproductobasedatos(AgregarProductosViewModel viewModel);
+    public void EliminarProducto(EliminarProductoViewModel viewModel);
 }

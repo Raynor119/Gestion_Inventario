@@ -4,11 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.AnimationSet;
-import android.view.animation.AnimationUtils;
-import android.view.animation.LayoutAnimationController;
-import android.view.animation.TranslateAnimation;
+
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -56,8 +52,8 @@ public class ProductosRecyclerViewAdapter extends RecyclerView.Adapter<Productos
             holder.cantidad.setText(""+canti);
         }
         NumberFormat formato= NumberFormat.getNumberInstance();
-        holder.costo.setText("$"+formato.format(Productos.get(position).getCosteP()));
-        holder.precio.setText("$"+formato.format(Productos.get(position).getPrecio()));
+        holder.costo.setText("$ "+formato.format(Productos.get(position).getCosteP()));
+        holder.precio.setText("$ "+formato.format(Productos.get(position).getPrecio()));
         holder.opciones.setVisibility(ConstraintLayout.GONE);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +66,7 @@ public class ProductosRecyclerViewAdapter extends RecyclerView.Adapter<Productos
                     botonprecionado = holder;
                 }else{
                     holder.opciones.setVisibility(ConstraintLayout.GONE);
+                    Fragment.iniciarRecyclerView();
                 }
 
             }
