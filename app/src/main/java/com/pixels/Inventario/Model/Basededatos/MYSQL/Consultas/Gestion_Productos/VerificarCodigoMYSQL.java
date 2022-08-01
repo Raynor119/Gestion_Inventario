@@ -71,6 +71,5 @@ public class VerificarCodigoMYSQL extends Conexion implements MediadorBaseDatos 
 
     @Override
     public void EliminarProducto(EliminarProductoViewModel viewModel) {
-
     }
 }

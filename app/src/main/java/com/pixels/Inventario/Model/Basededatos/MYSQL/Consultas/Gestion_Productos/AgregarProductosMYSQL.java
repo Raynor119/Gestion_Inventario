@@ -72,6 +72,5 @@ public class AgregarProductosMYSQL  extends Conexion implements MediadorBaseDato
     }
     @Override
     public void EliminarProducto(EliminarProductoViewModel viewModel) {
-
     }
 }

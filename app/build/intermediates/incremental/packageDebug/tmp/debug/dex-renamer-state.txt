@@ -1,4 +1,4 @@
-#Mon Aug 01 01:09:42 COT 2022
+#Mon Aug 01 02:48:28 COT 2022
 base.1=C\:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
 path.1=classes.dex
 base.0=C\:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0

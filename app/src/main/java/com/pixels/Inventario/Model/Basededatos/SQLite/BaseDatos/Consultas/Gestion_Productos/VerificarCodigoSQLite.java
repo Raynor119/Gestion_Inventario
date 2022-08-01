@@ -48,9 +48,7 @@ public class VerificarCodigoSQLite extends BaseDatosSQLite implements MediadorBa
     @Override
     public void agregarproductobasedatos(AgregarProductosViewModel viewModel) {
     }
-
     @Override
     public void EliminarProducto(EliminarProductoViewModel viewModel) {
-
     }
 }
