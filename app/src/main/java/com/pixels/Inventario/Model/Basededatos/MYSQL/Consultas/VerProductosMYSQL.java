@@ -6,6 +6,7 @@ import android.widget.Toast;
 import com.pixels.Inventario.Model.Basededatos.MYSQL.Conexion;
 import com.pixels.Inventario.Model.Basededatos.MediadorBaseDatos;
 import com.pixels.Inventario.Model.DatosE.Producto;
+import com.pixels.Inventario.ViewModel.Gestion_Productos.AgregarProductos.AgregarProductosViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.ProductosRecyclerViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.VerificarCodigoViewModel;
 
@@ -52,9 +53,11 @@ public class VerProductosMYSQL extends Conexion implements MediadorBaseDatos {
     public void ObtenerProductos(ProductosRecyclerViewModel viewModel, List<Producto> productos) {
         viewModel.resultado.setValue(productos);
     }
-
     @Override
     public void verificarCodigoProducto(VerificarCodigoViewModel viewModel, List<Producto> productos, String codigo) {
+    }
+    @Override
+    public void agregarproductobasedatos(AgregarProductosViewModel viewModel) {
     }
 
 

@@ -57,6 +57,7 @@ public class VerInventario extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), AgregarProductos.class);
                 startActivity(intent);
+                AgregarProductos.verproductos=fragment;
             }
         });
     }

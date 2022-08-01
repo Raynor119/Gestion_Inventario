@@ -26,6 +26,8 @@ import com.google.zxing.integration.android.IntentResult;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.TextWatcher.TextCodigo;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.TextWatcher.TextMoneda;
+import com.pixels.Inventario.View.Activity.Gestion_Productos.Fragment.VerInventarioFragment;
+import com.pixels.Inventario.ViewModel.Gestion_Productos.AgregarProductos.AgregarProductosViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.ProductosRecyclerViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.VerificarCodigoViewModel;
 
@@ -37,6 +39,7 @@ public class AgregarProductos extends AppCompatActivity {
     public Button Button;
     public TextInputLayout CCodigo,TipoC;
     public CardView Escaner;
+    public static VerInventarioFragment verproductos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -155,7 +158,25 @@ public class AgregarProductos extends AppCompatActivity {
                             public void onChanged(Boolean aBoolean) {
                                 if(aBoolean){
                                     if(verificacion[0]){
-                                        Toast.makeText(getApplicationContext(), "entro", Toast.LENGTH_LONG).show();
+                                        AgregarProductosViewModel agregar= ViewModelProviders.of(AgregarProductos.this).get(AgregarProductosViewModel.class);
+                                        agregar.reset();
+                                        double cantidad=Double.parseDouble(Cantidad.getText().toString()+"");
+                                        agregar.GuardarProducto(Codigo.getText().toString(),Nombre.getText().toString(),cantidad,spinner.getText().toString(),Costop.getText().toString(),Precio.getText().toString(),AgregarProductos.this);
+                                        Observer<Boolean> observer1= new Observer<Boolean>() {
+                                            @Override
+                                            public void onChanged(Boolean aBoolean) {
+                                                if(aBoolean){
+                                                    try{
+                                                        Toast.makeText(AgregarProductos.this, "Se guardo el Producto en la Base de Datos", Toast.LENGTH_LONG).show();
+                                                        finish();
+                                                        verproductos.iniciarRecyclerView();
+                                                    }catch (Exception e){
+                                                        finish();
+                                                    }
+                                                }
+                                            }
+                                        };
+                                        agregar.getResultado().observe(AgregarProductos.this,observer1);
                                     }
                                 }else {
                                     CCodigo.setError("Error el codigo ya esta registrado en la base de datos");

@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import com.pixels.Inventario.Model.Basededatos.MediadorBaseDatos;
 import com.pixels.Inventario.Model.Basededatos.SQLite.BaseDatos.BaseDatosSQLite;
 import com.pixels.Inventario.Model.DatosE.Producto;
+import com.pixels.Inventario.ViewModel.Gestion_Productos.AgregarProductos.AgregarProductosViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.ProductosRecyclerViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.VerificarCodigoViewModel;
 
@@ -41,5 +42,9 @@ public class VerificarCodigoSQLite extends BaseDatosSQLite implements MediadorBa
             }
         }
         viewModel.resultado.setValue(verificar);
+    }
+
+    @Override
+    public void agregarproductobasedatos(AgregarProductosViewModel viewModel) {
     }
 }

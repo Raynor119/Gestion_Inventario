@@ -26,7 +26,7 @@ public class ConexionSQLiteImportacionDatos extends BaseDatosSQLite {
                 try {
                     bd.execSQL("INSERT INTO Producto VALUES('"+productos.get(i).getCodigo()+"','"+productos.get(i).getNombre()+"',"+productos.get(i).getCantidad()+",'"+productos.get(i).getTipoC()+"',"+productos.get(i).getCosteP()+","+productos.get(i).getPrecio()+")");
                 }catch (Exception e){
-                    Toast.makeText(Context, "Error al Importar los Datos de los Productos \n"+e, Toast.LENGTH_LONG).show();
+                    Toast.makeText(Context, "Error al Importar los Datos de los Productos \n", Toast.LENGTH_LONG).show();
                 }
             }
             bd.close();
