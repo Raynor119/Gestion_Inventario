@@ -21,20 +21,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\7ae703092afe87e2fb924c9a8ebcf05e\\res\\values-sv\\values-sv.xml",
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\be2fdff6c89016b54e0c4a54c3559b1a\\res\\values-sv\\values-sv.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,114,161,267",
+                        "endColumns": "58,46,105,113",
+                        "endOffsets": "109,156,262,376"
                     },
                     "to": {
-                        "startLines": "92",
-                        "startColumns": "4",
-                        "startOffsets": "7653",
-                        "endColumns": "100",
-                        "endOffsets": "7749"
+                        "startLines": "96,97,98,99",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "8078,8137,8184,8290",
+                        "endColumns": "58,46,105,113",
+                        "endOffsets": "8132,8179,8285,8399"
                     }
                 },
                 {
@@ -52,6 +52,23 @@
                         "startOffsets": "271,374,477,588,672,774,887,964,1039,1132,1227,1322,1416,1518,1613,1710,1808,1904,1997,2077,2183,2282,2378,2483,2586,2688,2842,7573",
                         "endColumns": "102,102,110,83,101,112,76,74,92,94,94,93,101,94,96,97,95,92,79,105,98,95,104,102,101,153,101,79",
                         "endOffsets": "369,472,583,667,769,882,959,1034,1127,1222,1317,1411,1513,1608,1705,1803,1899,1992,2072,2178,2277,2373,2478,2581,2683,2837,2939,7648"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\5b7b2791c4c2f4bbe2e04b9d37c1c77c\\res\\values-sv\\values-sv.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "92",
+                        "startColumns": "4",
+                        "startOffsets": "7653",
+                        "endColumns": "100",
+                        "endOffsets": "7749"
                     }
                 },
                 {

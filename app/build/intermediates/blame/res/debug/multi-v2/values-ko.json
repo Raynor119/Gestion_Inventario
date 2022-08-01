@@ -4,23 +4,6 @@
             "outputFile": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ko\\values-ko.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\7ae703092afe87e2fb924c9a8ebcf05e\\res\\values-ko\\values-ko.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "92",
-                        "startColumns": "4",
-                        "startOffsets": "7113",
-                        "endColumns": "100",
-                        "endOffsets": "7209"
-                    }
-                },
-                {
                     "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\72e668ba98e8f48540142398664d29aa\\res\\values-ko\\values-ko.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
@@ -35,6 +18,40 @@
                         "startOffsets": "3167,3295,6757,6902,7214,7383,7465",
                         "endColumns": "65,80,72,131,168,81,75",
                         "endOffsets": "3228,3371,6825,7029,7378,7460,7536"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\be2fdff6c89016b54e0c4a54c3559b1a\\res\\values-ko\\values-ko.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,106,153,260",
+                        "endColumns": "50,46,106,71",
+                        "endOffsets": "101,148,255,327"
+                    },
+                    "to": {
+                        "startLines": "96,97,98,99",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "7541,7592,7639,7746",
+                        "endColumns": "50,46,106,71",
+                        "endOffsets": "7587,7634,7741,7813"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\5b7b2791c4c2f4bbe2e04b9d37c1c77c\\res\\values-ko\\values-ko.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "92",
+                        "startColumns": "4",
+                        "startOffsets": "7113",
+                        "endColumns": "100",
+                        "endOffsets": "7209"
                     }
                 },
                 {

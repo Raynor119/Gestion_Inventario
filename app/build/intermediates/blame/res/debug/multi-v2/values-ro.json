@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ro\\values-ro.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\7ae703092afe87e2fb924c9a8ebcf05e\\res\\values-ro\\values-ro.xml",
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\5b7b2791c4c2f4bbe2e04b9d37c1c77c\\res\\values-ro\\values-ro.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -18,6 +18,23 @@
                         "startOffsets": "7946",
                         "endColumns": "100",
                         "endOffsets": "8042"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\be2fdff6c89016b54e0c4a54c3559b1a\\res\\values-ro\\values-ro.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,114,166,275",
+                        "endColumns": "58,51,108,116",
+                        "endOffsets": "109,161,270,387"
+                    },
+                    "to": {
+                        "startLines": "97,98,99,100",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "8384,8443,8495,8604",
+                        "endColumns": "58,51,108,116",
+                        "endOffsets": "8438,8490,8599,8716"
                     }
                 },
                 {

@@ -4,20 +4,20 @@
             "outputFile": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hi\\values-hi.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\7ae703092afe87e2fb924c9a8ebcf05e\\res\\values-hi\\values-hi.xml",
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\be2fdff6c89016b54e0c4a54c3559b1a\\res\\values-hi\\values-hi.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,112,163,329",
+                        "endColumns": "56,50,165,102",
+                        "endOffsets": "107,158,324,427"
                     },
                     "to": {
-                        "startLines": "92",
-                        "startColumns": "4",
-                        "startOffsets": "7754",
-                        "endColumns": "100",
-                        "endOffsets": "7850"
+                        "startLines": "96,97,98,99",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "8182,8239,8290,8456",
+                        "endColumns": "56,50,165,102",
+                        "endOffsets": "8234,8285,8451,8554"
                     }
                 },
                 {
@@ -71,6 +71,23 @@
                         "startOffsets": "3349,3487,7374,7530,7855,8024,8104",
                         "endColumns": "72,90,76,141,168,79,77",
                         "endOffsets": "3417,3573,7446,7667,8019,8099,8177"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\5b7b2791c4c2f4bbe2e04b9d37c1c77c\\res\\values-hi\\values-hi.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "92",
+                        "startColumns": "4",
+                        "startOffsets": "7754",
+                        "endColumns": "100",
+                        "endOffsets": "7850"
                     }
                 }
             ]

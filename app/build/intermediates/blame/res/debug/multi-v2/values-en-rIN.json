@@ -4,23 +4,6 @@
             "outputFile": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rIN\\values-en-rIN.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\7ae703092afe87e2fb924c9a8ebcf05e\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "34",
-                        "startColumns": "4",
-                        "startOffsets": "3207",
-                        "endColumns": "100",
-                        "endOffsets": "3303"
-                    }
-                },
-                {
                     "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\72e668ba98e8f48540142398664d29aa\\res\\values-en-rIN\\values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
@@ -35,6 +18,23 @@
                         "startOffsets": "2762,2830,2917,2990,3308,3477,3557",
                         "endColumns": "67,86,72,133,168,79,75",
                         "endOffsets": "2825,2912,2985,3119,3472,3552,3628"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\5b7b2791c4c2f4bbe2e04b9d37c1c77c\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "34",
+                        "startColumns": "4",
+                        "startOffsets": "3207",
+                        "endColumns": "100",
+                        "endOffsets": "3303"
                     }
                 },
                 {

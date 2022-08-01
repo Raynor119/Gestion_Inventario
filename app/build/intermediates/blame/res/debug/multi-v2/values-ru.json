@@ -40,7 +40,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\7ae703092afe87e2fb924c9a8ebcf05e\\res\\values-ru\\values-ru.xml",
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\72e668ba98e8f48540142398664d29aa\\res\\values-ru\\values-ru.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "105,179,271,347,492,661,743",
+                        "endColumns": "73,91,75,144,168,81,77",
+                        "endOffsets": "174,266,342,487,656,738,816"
+                    },
+                    "to": {
+                        "startLines": "39,41,90,92,95,96,97",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "3513,3653,7601,7757,8085,8254,8336",
+                        "endColumns": "73,91,75,144,168,81,77",
+                        "endOffsets": "3582,3740,7672,7897,8249,8331,8409"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\5b7b2791c4c2f4bbe2e04b9d37c1c77c\\res\\values-ru\\values-ru.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -57,20 +74,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\72e668ba98e8f48540142398664d29aa\\res\\values-ru\\values-ru.xml",
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\be2fdff6c89016b54e0c4a54c3559b1a\\res\\values-ru\\values-ru.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "105,179,271,347,492,661,743",
-                        "endColumns": "73,91,75,144,168,81,77",
-                        "endOffsets": "174,266,342,487,656,738,816"
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,117,164,306",
+                        "endColumns": "61,46,141,125",
+                        "endOffsets": "112,159,301,427"
                     },
                     "to": {
-                        "startLines": "39,41,90,92,95,96,97",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "3513,3653,7601,7757,8085,8254,8336",
-                        "endColumns": "73,91,75,144,168,81,77",
-                        "endOffsets": "3582,3740,7672,7897,8249,8331,8409"
+                        "startLines": "98,99,100,101",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "8414,8476,8523,8665",
+                        "endColumns": "61,46,141,125",
+                        "endOffsets": "8471,8518,8660,8786"
                     }
                 }
             ]

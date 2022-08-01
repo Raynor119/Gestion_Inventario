@@ -1,7 +1,7 @@
-#Sun Jul 31 20:42:38 COT 2022
-base.1=C\:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
+#Sun Jul 31 23:39:45 COT 2022
+base.1=C\:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
 path.1=classes.dex
-base.0=C\:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
+base.0=C\:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 renamed.1=classes2.dex
 renamed.0=classes.dex
 path.0=classes.dex

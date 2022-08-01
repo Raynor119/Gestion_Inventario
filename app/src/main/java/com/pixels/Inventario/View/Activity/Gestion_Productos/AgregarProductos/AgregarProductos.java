@@ -1,9 +1,12 @@
 package com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 
@@ -18,6 +21,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.TextWatcher.TextCodigo;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.TextWatcher.TextMoneda;
@@ -31,12 +36,14 @@ public class AgregarProductos extends AppCompatActivity {
     public EditText Codigo,Nombre,Cantidad,Costop,Precio;
     public Button Button;
     public TextInputLayout CCodigo,TipoC;
+    public CardView Escaner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agregar_productos);
         spinner=(AutoCompleteTextView) findViewById(R.id.spinner_dropdown);
+        Escaner=(CardView) findViewById(R.id.Escaner);
         TipoC=(TextInputLayout)findViewById(R.id.spinner);
         Codigo=(EditText)findViewById(R.id.codigo);
         CCodigo=(TextInputLayout) findViewById(R.id.EditCodigo);
@@ -75,7 +82,6 @@ public class AgregarProductos extends AppCompatActivity {
                 // si presiona enter
                 if ((event.getAction() == KeyEvent.ACTION_DOWN) &&
                         (keyCode == KeyEvent.KEYCODE_ENTER)) {
-                    // modifica por tu método
                     if(Codigo.getText().toString().equals("")){
                         CCodigo.setError("Digite el Codigo del Producto");
                         CCodigo.setFocusableInTouchMode(true);
@@ -103,37 +109,16 @@ public class AgregarProductos extends AppCompatActivity {
                 return false;
             }
         });
+        Escaner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new IntentIntegrator(AgregarProductos.this).initiateScan();
+            }
+        });
         Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 final boolean[] verificacion = {true};
-                if(Codigo.getText().toString().equals("")){
-                    Codigo.setError("Digite el Codigo del Producto");
-                    verificacion[0] =false;
-                }else {
-                    try {
-                        CCodigo.setError(CCodigo.getError().toString()+"");
-                        verificacion[0] =false;
-                    }catch (Exception e){
-                        VerificarCodigoViewModel verificar= ViewModelProviders.of(AgregarProductos.this).get(VerificarCodigoViewModel.class);
-                        verificar.reset();
-                        verificar.verificarCodigo(Codigo.getText().toString(),AgregarProductos.this);
-                        Observer<Boolean> observer=new Observer<Boolean>() {
-                            @Override
-                            public void onChanged(Boolean aBoolean) {
-                                if(aBoolean){
-
-                                }else {
-                                    CCodigo.setError("Error el codigo ya esta registrado en la base de datos");
-                                    CCodigo.setFocusableInTouchMode(true);
-                                    CCodigo.requestFocus();
-                                    verificacion[0] =false;
-                                }
-                            }
-                        };
-                        verificar.getResultado().observe(AgregarProductos.this,observer);
-                    }
-                }
                 if(Nombre.getText().toString().equals("")){
                     Nombre.setError("Digite el nombre del Producto");
                     verificacion[0] =false;
@@ -154,11 +139,66 @@ public class AgregarProductos extends AppCompatActivity {
                     Precio.setError("Digite el Precio del Producto");
                     verificacion[0] =false;
                 }
-                if(verificacion[0]){
-                    Toast.makeText(getApplicationContext(), "entro", Toast.LENGTH_LONG).show();
+                if(Codigo.getText().toString().equals("")){
+                    Codigo.setError("Digite el Codigo del Producto");
+                    verificacion[0] =false;
+                }else {
+                    try {
+                        CCodigo.setError(CCodigo.getError().toString()+"");
+                        verificacion[0] =false;
+                    }catch (Exception e){
+                        VerificarCodigoViewModel verificar= ViewModelProviders.of(AgregarProductos.this).get(VerificarCodigoViewModel.class);
+                        verificar.reset();
+                        verificar.verificarCodigo(Codigo.getText().toString(),AgregarProductos.this);
+                        Observer<Boolean> observer=new Observer<Boolean>() {
+                            @Override
+                            public void onChanged(Boolean aBoolean) {
+                                if(aBoolean){
+                                    if(verificacion[0]){
+                                        Toast.makeText(getApplicationContext(), "entro", Toast.LENGTH_LONG).show();
+                                    }
+                                }else {
+                                    CCodigo.setError("Error el codigo ya esta registrado en la base de datos");
+                                    CCodigo.setFocusableInTouchMode(true);
+                                    CCodigo.requestFocus();
+                                    verificacion[0] =false;
+                                }
+                            }
+                        };
+                        verificar.getResultado().observe(AgregarProductos.this,observer);
+                    }
                 }
+
             }
         });
-    }
 
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
+        if(result != null)
+            if (result.getContents() != null){
+                Codigo.setText(result.getContents()+"");
+                VerificarCodigoViewModel verificar= ViewModelProviders.of(AgregarProductos.this).get(VerificarCodigoViewModel.class);
+                verificar.reset();
+                verificar.verificarCodigo(Codigo.getText().toString(),AgregarProductos.this);
+                Observer<Boolean> observer=new Observer<Boolean>() {
+                    @Override
+                    public void onChanged(Boolean aBoolean) {
+                        if(aBoolean){
+
+                        }else {
+                            CCodigo.setError("Error el codigo ya esta registrado en la base de datos");
+                            CCodigo.setFocusableInTouchMode(true);
+                            CCodigo.requestFocus();
+                        }
+                    }
+                };
+                verificar.getResultado().observe(AgregarProductos.this,observer);
+            }else{
+                CCodigo.setError("Error al escanear el código de barras");
+                Codigo.setText("");
+            }
+    }
 }

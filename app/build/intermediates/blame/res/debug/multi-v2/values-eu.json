@@ -4,23 +4,6 @@
             "outputFile": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-eu\\values-eu.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\7ae703092afe87e2fb924c9a8ebcf05e\\res\\values-eu\\values-eu.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "92",
-                        "startColumns": "4",
-                        "startOffsets": "7835",
-                        "endColumns": "100",
-                        "endOffsets": "7931"
-                    }
-                },
-                {
                     "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\72e668ba98e8f48540142398664d29aa\\res\\values-eu\\values-eu.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
@@ -35,6 +18,23 @@
                         "startOffsets": "3401,3539,7457,7618,7936,8105,8195",
                         "endColumns": "70,98,77,133,168,89,83",
                         "endOffsets": "3467,3633,7530,7747,8100,8190,8274"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\be2fdff6c89016b54e0c4a54c3559b1a\\res\\values-eu\\values-eu.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,119,168,316",
+                        "endColumns": "63,48,147,111",
+                        "endOffsets": "114,163,311,423"
+                    },
+                    "to": {
+                        "startLines": "96,97,98,99",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "8279,8343,8392,8540",
+                        "endColumns": "63,48,147,111",
+                        "endOffsets": "8338,8387,8535,8647"
                     }
                 },
                 {
@@ -54,6 +54,23 @@
                         "endLines": "5,33,34,35,36,38,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,89",
                         "endColumns": "12,79,97,114,82,66,98,67,60,87,65,63,70,62,53,108,58,62,53,73,124,89,79,114,82,81,88,66,65,70,79,85,77,77,72,74,86,86,90,92,71,75,91,50,65,83,85,61,63,62,106,104,95,105,82",
                         "endOffsets": "275,3100,3198,3313,3396,3534,3732,3800,3861,3949,4015,4079,4150,4213,4267,4376,4435,4498,4552,4626,4751,4841,4921,5036,5119,5201,5290,5357,5423,5494,5574,5660,5738,5816,5889,5964,6051,6138,6229,6322,6394,6470,6562,6613,6679,6763,6849,6911,6975,7038,7145,7250,7346,7452,7613"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\5b7b2791c4c2f4bbe2e04b9d37c1c77c\\res\\values-eu\\values-eu.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "92",
+                        "startColumns": "4",
+                        "startOffsets": "7835",
+                        "endColumns": "100",
+                        "endOffsets": "7931"
                     }
                 },
                 {
