@@ -22,14 +22,16 @@ import androidx.lifecycle.ViewModelProviders;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
+import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.R;
-import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.AgregarProductos;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.TextWatcher.TextCodigo;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.TextWatcher.TextMoneda;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.Fragment.VerInventarioFragment;
-import com.pixels.Inventario.ViewModel.Gestion_Productos.AgregarProductos.AgregarProductosViewModel;
+import com.pixels.Inventario.ViewModel.Gestion_Productos.EditarProducto.VerDatosProductoViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.VerificarCodigoEditarViewModel;
-import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.VerificarCodigoViewModel;
+
+
+import java.util.List;
 
 public class EditarProducto extends AppCompatActivity {
     public AutoCompleteTextView spinner;
@@ -40,6 +42,14 @@ public class EditarProducto extends AppCompatActivity {
     public CardView Escaner;
     public static VerInventarioFragment verproductos;
     private String codigo="";
+
+    private String nombreG="";
+    private String cantidadG="";
+    private String TipoCG="";
+    private String CostePG="";
+    private String PrecioG="";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,9 +68,6 @@ public class EditarProducto extends AppCompatActivity {
         Button=(Button)findViewById(R.id.ButtonG);
         Titulo.setText("Editar Producto");
         Codigo.setText(""+codigo);
-        String [] tipoC={"Unitario(U)","Peso(Kg)"};
-        ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, R.layout.tipocantidad,tipoC);
-        spinner.setAdapter(adapter);
         Cantidad.setEnabled(false);
         spinner.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -161,7 +168,11 @@ public class EditarProducto extends AppCompatActivity {
                             public void onChanged(Boolean aBoolean) {
                                 if(aBoolean){
                                     if(verificacion[0]){
-                                        Toast.makeText(EditarProducto.this, "Se Modiico el Producto en la Base de Datos", Toast.LENGTH_LONG).show();
+                                        if(Codigo.getText().toString().equals(codigo) && Nombre.getText().toString().equals(nombreG) && Cantidad.getText().toString().equals(cantidadG) && spinner.getText().toString().equals(TipoCG) && Costop.getText().toString().equals(CostePG) && Precio.getText().toString().equals(PrecioG)){
+                                            Toast.makeText(EditarProducto.this, "Tiene que modificar por lo menos un dato del producto", Toast.LENGTH_LONG).show();
+                                        }else{
+                                            Toast.makeText(EditarProducto.this, "Se Modiico el Producto en la Base de Datos", Toast.LENGTH_LONG).show();
+                                        }
                                     }
                                 }else {
                                     CCodigo.setError("Error el codigo ya esta registrado en la base de datos");
@@ -177,7 +188,41 @@ public class EditarProducto extends AppCompatActivity {
 
             }
         });
+        VerDatosProductoViewModel datosproducto= ViewModelProviders.of(EditarProducto.this).get(VerDatosProductoViewModel.class);
+        datosproducto.reset();
+        datosproducto.VerDatosProducto(EditarProducto.this,codigo);
+        Observer<List<Producto>> observer=new Observer<List<Producto>>() {
+            @Override
+            public void onChanged(List<Producto> productos) {
+                Nombre.setText(""+productos.get(0).getNombre());
+                if(productos.get(0).getTipoC().equals("unitario")){
+                    spinner.setText("Unitario(U)");
+                    Cantidad.setEnabled(true);
+                    Cantidad.setInputType(InputType.TYPE_CLASS_NUMBER);
+                    int canti=(int) productos.get(0).getCantidad();
+                    Cantidad.setText(""+canti);
+                    cantidadG=Cantidad.getText().toString();
+                }
+                if(productos.get(0).getTipoC().equals("peso")){
+                    spinner.setText("Peso(Kg)");
+                    Cantidad.setEnabled(true);
+                    Cantidad.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
+                    Cantidad.setText(""+productos.get(0).getCantidad());
+                    cantidadG=Cantidad.getText().toString();
+                }
+                Costop.setText(""+productos.get(0).getCosteP());
+                Precio.setText(""+productos.get(0).getPrecio());
+                String [] tipoC={"Unitario(U)","Peso(Kg)"};
+                ArrayAdapter<String> adapter=new ArrayAdapter<String>(EditarProducto.this, R.layout.tipocantidad,tipoC);
+                spinner.setAdapter(adapter);
+                nombreG=productos.get(0).getNombre();
+                TipoCG=spinner.getText().toString();
+                CostePG=Costop.getText().toString();
+                PrecioG=Precio.getText().toString();
 
+            }
+        };
+        datosproducto.getResultado().observe(EditarProducto.this,observer);
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {

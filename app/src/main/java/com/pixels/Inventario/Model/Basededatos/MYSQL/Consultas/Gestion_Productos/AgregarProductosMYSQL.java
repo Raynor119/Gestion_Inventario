@@ -7,6 +7,7 @@ import com.pixels.Inventario.Model.Basededatos.MYSQL.Conexion;
 import com.pixels.Inventario.Model.Basededatos.MediadorBaseDatos;
 import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.AgregarProductos.AgregarProductosViewModel;
+import com.pixels.Inventario.ViewModel.Gestion_Productos.EditarProducto.VerDatosProductoViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.EliminarProducto.EliminarProductoViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.ProductosRecyclerViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.VerificarCodigoViewModel;
@@ -72,5 +73,10 @@ public class AgregarProductosMYSQL  extends Conexion implements MediadorBaseDato
     }
     @Override
     public void EliminarProducto(EliminarProductoViewModel viewModel) {
+    }
+
+    @Override
+    public void VerDatosProductoCodigo(VerDatosProductoViewModel viewModel, List<Producto> producto) {
+
     }
 }

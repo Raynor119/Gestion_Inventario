@@ -8,6 +8,7 @@ import com.pixels.Inventario.Model.Basededatos.MediadorBaseDatos;
 import com.pixels.Inventario.Model.Basededatos.SQLite.BaseDatos.BaseDatosSQLite;
 import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.AgregarProductos.AgregarProductosViewModel;
+import com.pixels.Inventario.ViewModel.Gestion_Productos.EditarProducto.VerDatosProductoViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.EliminarProducto.EliminarProductoViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.ProductosRecyclerViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.VerificarCodigoViewModel;
@@ -50,5 +51,8 @@ public class EliminarProductosSQLite  extends BaseDatosSQLite implements Mediado
             viewModel.resultado.setValue(verificar);
             bd.close();
         }
+    }
+    @Override
+    public void VerDatosProductoCodigo(VerDatosProductoViewModel viewModel, List<Producto> producto) {
     }
 }

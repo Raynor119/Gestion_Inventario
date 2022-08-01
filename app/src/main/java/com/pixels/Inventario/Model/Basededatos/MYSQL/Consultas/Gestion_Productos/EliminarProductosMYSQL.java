@@ -7,6 +7,7 @@ import com.pixels.Inventario.Model.Basededatos.MYSQL.Conexion;
 import com.pixels.Inventario.Model.Basededatos.MediadorBaseDatos;
 import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.AgregarProductos.AgregarProductosViewModel;
+import com.pixels.Inventario.ViewModel.Gestion_Productos.EditarProducto.VerDatosProductoViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.EliminarProducto.EliminarProductoViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.ProductosRecyclerViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.VerificarCodigoViewModel;
@@ -68,5 +69,10 @@ public class EliminarProductosMYSQL  extends Conexion implements MediadorBaseDat
     @Override
     public void EliminarProducto(EliminarProductoViewModel viewModel) {
         viewModel.resultado.setValue(verficar);
+    }
+
+    @Override
+    public void VerDatosProductoCodigo(VerDatosProductoViewModel viewModel, List<Producto> producto) {
+
     }
 }
