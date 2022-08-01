@@ -896,13 +896,13 @@ public final class R {
         public static final int title = 0x7f0801b7;
         public static final int titleDividerNoCustom = 0x7f0801b8;
         public static final int title_template = 0x7f0801b9;
-        public static final int top = 0x7f0801bd;
-        public static final int topPanel = 0x7f0801be;
-        public static final int unchecked = 0x7f0801c8;
-        public static final int uniform = 0x7f0801ca;
-        public static final int up = 0x7f0801cc;
-        public static final int visible_removing_fragment_view_tag = 0x7f0801d2;
-        public static final int wrap_content = 0x7f0801d6;
+        public static final int top = 0x7f0801be;
+        public static final int topPanel = 0x7f0801bf;
+        public static final int unchecked = 0x7f0801c9;
+        public static final int uniform = 0x7f0801cb;
+        public static final int up = 0x7f0801cd;
+        public static final int visible_removing_fragment_view_tag = 0x7f0801d3;
+        public static final int wrap_content = 0x7f0801d7;
     }
     public static final class integer {
         private integer() {}

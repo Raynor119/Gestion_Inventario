@@ -14,6 +14,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".View.Activity.Gestion_Productos.EditarProductos.EditarProducto"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+        </activity>
+        <activity
             android:name=".View.Activity.Gestion_Productos.AgregarProductos.AgregarProductos"
             android:exported="false"
             android:theme="@style/Theme.MyApplication.NoActionBar">

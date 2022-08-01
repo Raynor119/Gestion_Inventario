@@ -36,9 +36,10 @@
             android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp">
             <TextView
+                android:id="@+id/titulo"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:text="Agregar Productos"
+                android:text="Agregar Producto"
                 android:layout_marginLeft="10dp"
                 android:textSize="26dp"
                 android:textColor="#FFFFFF"

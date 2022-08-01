@@ -156,20 +156,20 @@ public final class R {
         public static final int text2 = 0x7f0801a7;
         public static final int time = 0x7f0801b6;
         public static final int title = 0x7f0801b7;
-        public static final int top = 0x7f0801bd;
-        public static final int zxing_back_button = 0x7f0801d8;
-        public static final int zxing_barcode_scanner = 0x7f0801d9;
-        public static final int zxing_barcode_surface = 0x7f0801da;
-        public static final int zxing_camera_closed = 0x7f0801db;
-        public static final int zxing_camera_error = 0x7f0801dc;
-        public static final int zxing_decode = 0x7f0801dd;
-        public static final int zxing_decode_failed = 0x7f0801de;
-        public static final int zxing_decode_succeeded = 0x7f0801df;
-        public static final int zxing_possible_result_points = 0x7f0801e0;
-        public static final int zxing_preview_failed = 0x7f0801e1;
-        public static final int zxing_prewiew_size_ready = 0x7f0801e2;
-        public static final int zxing_status_view = 0x7f0801e3;
-        public static final int zxing_viewfinder_view = 0x7f0801e4;
+        public static final int top = 0x7f0801be;
+        public static final int zxing_back_button = 0x7f0801d9;
+        public static final int zxing_barcode_scanner = 0x7f0801da;
+        public static final int zxing_barcode_surface = 0x7f0801db;
+        public static final int zxing_camera_closed = 0x7f0801dc;
+        public static final int zxing_camera_error = 0x7f0801dd;
+        public static final int zxing_decode = 0x7f0801de;
+        public static final int zxing_decode_failed = 0x7f0801df;
+        public static final int zxing_decode_succeeded = 0x7f0801e0;
+        public static final int zxing_possible_result_points = 0x7f0801e1;
+        public static final int zxing_preview_failed = 0x7f0801e2;
+        public static final int zxing_prewiew_size_ready = 0x7f0801e3;
+        public static final int zxing_status_view = 0x7f0801e4;
+        public static final int zxing_viewfinder_view = 0x7f0801e5;
     }
     public static final class integer {
         private integer() {}

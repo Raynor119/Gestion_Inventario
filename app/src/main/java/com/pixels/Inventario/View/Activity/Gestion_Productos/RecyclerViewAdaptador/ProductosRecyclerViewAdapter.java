@@ -1,6 +1,7 @@
 package com.pixels.Inventario.View.Activity.Gestion_Productos.RecyclerViewAdaptador;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.AlertDialog.alertEliminar;
+import com.pixels.Inventario.View.Activity.Gestion_Productos.EditarProductos.EditarProducto;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.Fragment.VerInventarioFragment;
 
 import java.text.NumberFormat;
@@ -82,7 +84,10 @@ public class ProductosRecyclerViewAdapter extends RecyclerView.Adapter<Productos
         holder.editar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(Context, "Editar: "+Productos.get(poscion).getCodigo(), Toast.LENGTH_LONG).show();
+                Intent intent=new Intent(Context, EditarProducto.class);
+                intent.putExtra("codigo",Productos.get(poscion).getCodigo());
+                Context.startActivity(intent);
+                EditarProducto.verproductos=Fragment;
             }
         });
     }

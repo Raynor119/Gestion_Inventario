@@ -1,5 +1,6 @@
 package com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.TextWatcher;
 
+import android.content.Context;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.EditText;
@@ -14,8 +15,8 @@ import java.text.NumberFormat;
 import java.util.Locale;
 
 public class TextMoneda {
-    public AgregarProductos Context;
-    public TextMoneda(AgregarProductos context){
+    public Context Context;
+    public TextMoneda(Context context){
         this.Context=context;
     }
     public TextWatcher moneda(final EditText editText) {

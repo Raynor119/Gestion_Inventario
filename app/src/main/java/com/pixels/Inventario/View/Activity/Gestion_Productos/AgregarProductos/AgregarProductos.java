@@ -28,7 +28,6 @@ import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.Te
 import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.TextWatcher.TextMoneda;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.Fragment.VerInventarioFragment;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.AgregarProductos.AgregarProductosViewModel;
-import com.pixels.Inventario.ViewModel.Gestion_Productos.ProductosRecyclerViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.VerificarCodigoViewModel;
 
 
