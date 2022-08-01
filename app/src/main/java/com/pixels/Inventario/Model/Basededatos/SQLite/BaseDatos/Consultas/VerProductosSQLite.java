@@ -8,6 +8,7 @@ import com.pixels.Inventario.Model.Basededatos.MediadorBaseDatos;
 import com.pixels.Inventario.Model.Basededatos.SQLite.BaseDatos.BaseDatosSQLite;
 import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.ProductosRecyclerViewModel;
+import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.VerificarCodigoViewModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,9 +30,14 @@ public class VerProductosSQLite extends BaseDatosSQLite implements MediadorBaseD
         }
         return datos;
     }
-
     @Override
     public void ObtenerProductos(ProductosRecyclerViewModel viewModel, List<Producto> productos) {
         viewModel.resultado.setValue(productos);
     }
+
+    @Override
+    public void verificarCodigoProducto(VerificarCodigoViewModel viewModel, List<Producto> productos, String codigo) {
+
+    }
+
 }

@@ -16,8 +16,6 @@ public class TextCodigo {
     }
     public TextWatcher codigo(final EditText editText, final TextInputLayout CCodigo) {
         return new TextWatcher() {
-            private String current = "";
-            private int select=-1;
             @Override
             public void afterTextChanged(Editable arg0) {
 

@@ -1,6 +1,8 @@
 package com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProviders;
 
 import android.os.Bundle;
 
@@ -19,6 +21,8 @@ import com.google.android.material.textfield.TextInputLayout;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.TextWatcher.TextCodigo;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.TextWatcher.TextMoneda;
+import com.pixels.Inventario.ViewModel.Gestion_Productos.ProductosRecyclerViewModel;
+import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.VerificarCodigoViewModel;
 
 
 public class AgregarProductos extends AppCompatActivity {
@@ -77,9 +81,22 @@ public class AgregarProductos extends AppCompatActivity {
                         CCodigo.setFocusableInTouchMode(true);
                         CCodigo.requestFocus();
                     }else{
-                        CCodigo.setError("Error el codigo ya esta registrado en la base de datos");
-                        CCodigo.setFocusableInTouchMode(true);
-                        CCodigo.requestFocus();
+                        VerificarCodigoViewModel verificar= ViewModelProviders.of(AgregarProductos.this).get(VerificarCodigoViewModel.class);
+                        verificar.reset();
+                        verificar.verificarCodigo(Codigo.getText().toString(),AgregarProductos.this);
+                        Observer<Boolean> observer=new Observer<Boolean>() {
+                            @Override
+                            public void onChanged(Boolean aBoolean) {
+                                if(aBoolean){
+
+                                }else {
+                                    CCodigo.setError("Error el codigo ya esta registrado en la base de datos");
+                                    CCodigo.setFocusableInTouchMode(true);
+                                    CCodigo.requestFocus();
+                                }
+                            }
+                        };
+                        verificar.getResultado().observe(AgregarProductos.this,observer);
                     }
                     return true;
                 }
@@ -89,39 +106,55 @@ public class AgregarProductos extends AppCompatActivity {
         Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                boolean verificacion=true;
+                final boolean[] verificacion = {true};
                 if(Codigo.getText().toString().equals("")){
                     Codigo.setError("Digite el Codigo del Producto");
-                    verificacion=false;
+                    verificacion[0] =false;
                 }else {
                     try {
                         CCodigo.setError(CCodigo.getError().toString()+"");
-                        verificacion=false;
+                        verificacion[0] =false;
                     }catch (Exception e){
+                        VerificarCodigoViewModel verificar= ViewModelProviders.of(AgregarProductos.this).get(VerificarCodigoViewModel.class);
+                        verificar.reset();
+                        verificar.verificarCodigo(Codigo.getText().toString(),AgregarProductos.this);
+                        Observer<Boolean> observer=new Observer<Boolean>() {
+                            @Override
+                            public void onChanged(Boolean aBoolean) {
+                                if(aBoolean){
 
+                                }else {
+                                    CCodigo.setError("Error el codigo ya esta registrado en la base de datos");
+                                    CCodigo.setFocusableInTouchMode(true);
+                                    CCodigo.requestFocus();
+                                    verificacion[0] =false;
+                                }
+                            }
+                        };
+                        verificar.getResultado().observe(AgregarProductos.this,observer);
                     }
                 }
                 if(Nombre.getText().toString().equals("")){
                     Nombre.setError("Digite el nombre del Producto");
-                    verificacion=false;
+                    verificacion[0] =false;
                 }
                 if(Cantidad.getText().toString().equals("")){
                     Cantidad.setError("Digite la cantidad del Producto");
-                    verificacion=false;
+                    verificacion[0] =false;
                 }
                 if(spinner.getText().toString().equals("")){
                     TipoC.setError("Seleccione el Tipo de Cantidad");
-                    verificacion=false;
+                    verificacion[0] =false;
                 }
                 if(Costop.getText().toString().equals("")){
                     Costop.setError("Digite el Costo del Producto");
-                    verificacion=false;
+                    verificacion[0] =false;
                 }
                 if(Precio.getText().toString().equals("")){
                     Precio.setError("Digite el Precio del Producto");
-                    verificacion=false;
+                    verificacion[0] =false;
                 }
-                if(verificacion){
+                if(verificacion[0]){
                     Toast.makeText(getApplicationContext(), "entro", Toast.LENGTH_LONG).show();
                 }
             }
