@@ -13,7 +13,7 @@ import com.pixels.Inventario.Model.DatosE.AjustesContent;
 
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Ajustes.Ajustes;
-import com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionBaseDatos.alertcambiarbasedatos;
+import com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionBaseDatos.AlertDialog.alertcambiarbasedatos;
 import com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionContra.configContra;
 import com.pixels.Inventario.View.Activity.Ajustes.EliminarBaseDatos.alertEliminarBD;
 import com.pixels.Inventario.View.Activity.Ajustes.ExportarDatos.ExportarDatos;

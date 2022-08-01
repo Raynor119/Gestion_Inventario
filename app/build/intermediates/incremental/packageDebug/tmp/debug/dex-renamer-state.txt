@@ -1,4 +1,4 @@
-#Sun Jul 31 04:02:37 COT 2022
+#Sun Jul 31 19:57:14 COT 2022
 base.1=C\:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
 path.1=classes.dex
 base.0=C\:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out

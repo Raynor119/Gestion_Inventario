@@ -67,7 +67,6 @@
                             android:layout_height="wrap_content">
                             <LinearLayout
                                 android:layout_marginTop="15dp"
-
                                 android:layout_width="wrap_content"
                                 android:orientation="horizontal"
                                 android:gravity="center_vertical"
@@ -75,11 +74,14 @@
                             <com.google.android.material.textfield.TextInputLayout
                                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                                 android:layout_width="305dp"
+                                android:id="@+id/EditCodigo"
                                 android:layout_height="wrap_content"
+                                android:singleLine="true"
                                 android:hint="Codigo del Producto"
                                 app:endIconMode="clear_text">
                                 <com.google.android.material.textfield.TextInputEditText
                                     android:id="@+id/codigo"
+                                    android:singleLine="true"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:inputType="text" />
@@ -87,7 +89,7 @@
                                 <androidx.cardview.widget.CardView
                                     android:id="@+id/Escaner"
                                     card_view:cardBackgroundColor="@android:color/transparent"
-                                    card_view:cardCornerRadius="9dp"
+                                    card_view:cardCornerRadius="5dp"
                                     android:layout_marginTop="2dp"
                                     android:layout_width="44dp"
                                     android:layout_marginLeft="10dp"
@@ -145,7 +147,6 @@
                                     android:layout_height="55dp">
                                     <!-- Google themselves instruct us to use the deprecated editable attribute -->
                                     <AutoCompleteTextView
-
                                         android:id="@+id/spinner_dropdown"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"

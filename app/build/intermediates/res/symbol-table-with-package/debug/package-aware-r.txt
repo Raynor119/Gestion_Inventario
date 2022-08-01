@@ -1837,6 +1837,7 @@ id BOTTOM_START
 id ButtonG
 id CTRL
 id CosteP
+id EditCodigo
 id Escaner
 id FUNCTION
 id META

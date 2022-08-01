@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProviders;
 import com.pixels.Inventario.R;
+import com.pixels.Inventario.View.Activity.InicioA.Configuracion_Inicial.AlertDialog.AlertConfiguracion;
 import com.pixels.Inventario.View.Activity.InicioA.Configuracion_Inicial.Fragment.AsignarContrasena;
 import com.pixels.Inventario.View.Activity.InicioA.Configuracion_Inicial.Fragment.CrearBaseDatos;
 import com.pixels.Inventario.View.Activity.InicioA.Configuracion_Inicial.Fragment.InicioBlanco;

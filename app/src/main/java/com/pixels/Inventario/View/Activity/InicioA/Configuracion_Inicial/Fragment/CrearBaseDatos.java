@@ -43,39 +43,42 @@ public class CrearBaseDatos extends Fragment {
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                boolean verificar=true;
                 if(ip.getText().toString().equals("")){
                     ip.setError("Digite la Ip de la Base de datos");
-                }else{
-                    if(Nbasedatos.getText().toString().equals("")){
-                        Nbasedatos.setError("Digite el Nombre de la Base de datos");
-                    }else {
-                        if (username.getText().toString().equals("")) {
-                            username.setError("Digite el Usuario de la Base de datos");
-                        } else {
-                            if (password.getText().toString().equals("")) {
-                                password.setError("Digite la Contraseña de la Base de datos");
-                            } else {
-                                veriMYSQL.reset();
-                                veriMYSQL.VerificarConexion(ip.getText().toString(),Nbasedatos.getText().toString(),username.getText().toString(),password.getText().toString());
-                                final Observer<Boolean> observer=new Observer<Boolean>() {
-                                    @Override
-                                    public void onChanged(Boolean aBoolean) {
-                                        if(aBoolean){
-                                            Context.ip = ip.getText().toString();
-                                            Context.nbasedatos= Nbasedatos.getText().toString();
-                                            Context.usuario = username.getText().toString();
-                                            Context.ucontra = password.getText().toString();
-                                            veriMYSQL.TerminarProceso();
-                                            Context.guardarDatos();
-                                        }else{
-                                            Toast.makeText(getActivity(), "No se puede Crear la Base de Datos", Toast.LENGTH_LONG).show();
-                                        }
-                                    }
-                                };
-                                veriMYSQL.getResultado().observe(Context,observer);
+                    verificar=false;
+                }
+                if(Nbasedatos.getText().toString().equals("")){
+                    Nbasedatos.setError("Digite el Nombre de la Base de datos");
+                    verificar=false;
+                }
+                if (username.getText().toString().equals("")) {
+                    username.setError("Digite el Usuario de la Base de datos");
+                    verificar=false;
+                }
+                if (password.getText().toString().equals("")) {
+                    password.setError("Digite la Contraseña de la Base de datos");
+                    verificar=false;
+                }
+                if(verificar){
+                    veriMYSQL.reset();
+                    veriMYSQL.VerificarConexion(ip.getText().toString(),Nbasedatos.getText().toString(),username.getText().toString(),password.getText().toString());
+                    final Observer<Boolean> observer=new Observer<Boolean>() {
+                        @Override
+                        public void onChanged(Boolean aBoolean) {
+                            if(aBoolean){
+                                Context.ip = ip.getText().toString();
+                                Context.nbasedatos= Nbasedatos.getText().toString();
+                                Context.usuario = username.getText().toString();
+                                Context.ucontra = password.getText().toString();
+                                veriMYSQL.TerminarProceso();
+                                Context.guardarDatos();
+                            }else{
+                                Toast.makeText(getActivity(), "No se puede Crear la Base de Datos", Toast.LENGTH_LONG).show();
                             }
                         }
-                    }
+                    };
+                    veriMYSQL.getResultado().observe(Context,observer);
                 }
             }
         });

@@ -9,7 +9,6 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.RecyclerView;
 import com.pixels.Inventario.Model.DatosE.AjustesContent;
 import com.pixels.Inventario.R;
-import com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionBaseDatos.alertcambiarbasedatos;
 import com.pixels.Inventario.View.Activity.Ajustes.RecyclerViewAdapter.AjustesRecyclerViewAdapter;
 import com.pixels.Inventario.ViewModel.Ajustes.VerificacionContraViewModel;
 

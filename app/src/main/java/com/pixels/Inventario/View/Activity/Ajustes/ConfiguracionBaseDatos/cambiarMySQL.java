@@ -55,37 +55,40 @@ public class cambiarMySQL extends AppCompatActivity {
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                boolean verificar=true;
                 if(ip.getText().toString().equals("")){
                     ip.setError("Digite la Ip de la Base de datos");
-                }else{
-                    if(Nbasedatos.getText().toString().equals("")){
-                        Nbasedatos.setError("Digite el Nombre de la Base de datos");
-                    }else {
-                        if (username.getText().toString().equals("")) {
-                            username.setError("Digite el Usuario de la Base de datos");
-                        } else {
-                            if (password.getText().toString().equals("")) {
-                                password.setError("Digite la Contraseña de la Base de datos");
-                            } else {
-                                veriMYSQL.reset();
-                                veriMYSQL.VerificarConexion(ip.getText().toString(),Nbasedatos.getText().toString(),username.getText().toString(),password.getText().toString());
-                                final Observer<Boolean> observer=new Observer<Boolean>() {
-                                    @Override
-                                    public void onChanged(Boolean aBoolean) {
-                                        if(aBoolean){
-                                            modificarbasedatosViewModel modificar=ViewModelProviders.of(cambiarMySQL.this).get(modificarbasedatosViewModel.class);
-                                            modificar.ModificarBaseDatos(cambiarMySQL.this,"MYSQL",ip.getText().toString(),Nbasedatos.getText().toString(),username.getText().toString(),password.getText().toString());
-                                            finish();
-                                        }else{
-                                            ip.setError("No se puede conectar a La Base Datos");
-                                            Toast.makeText(cambiarMySQL.this, "No se puede conectar a La Base Datos", Toast.LENGTH_LONG).show();
-                                        }
-                                    }
-                                };
-                                veriMYSQL.getResultado().observe(cambiarMySQL.this,observer);
+                    verificar=false;
+                }
+                if(Nbasedatos.getText().toString().equals("")){
+                    Nbasedatos.setError("Digite el Nombre de la Base de datos");
+                    verificar=false;
+                }
+                if (username.getText().toString().equals("")) {
+                    username.setError("Digite el Usuario de la Base de datos");
+                    verificar=false;
+                }
+                if (password.getText().toString().equals("")) {
+                    password.setError("Digite la Contraseña de la Base de datos");
+                    verificar=false;
+                }
+                if(verificar){
+                    veriMYSQL.reset();
+                    veriMYSQL.VerificarConexion(ip.getText().toString(),Nbasedatos.getText().toString(),username.getText().toString(),password.getText().toString());
+                    final Observer<Boolean> observer=new Observer<Boolean>() {
+                        @Override
+                        public void onChanged(Boolean aBoolean) {
+                            if(aBoolean){
+                                modificarbasedatosViewModel modificar=ViewModelProviders.of(cambiarMySQL.this).get(modificarbasedatosViewModel.class);
+                                modificar.ModificarBaseDatos(cambiarMySQL.this,"MYSQL",ip.getText().toString(),Nbasedatos.getText().toString(),username.getText().toString(),password.getText().toString());
+                                finish();
+                            }else{
+                                ip.setError("No se puede conectar a La Base Datos");
+                                Toast.makeText(cambiarMySQL.this, "No se puede conectar a La Base Datos", Toast.LENGTH_LONG).show();
                             }
                         }
-                    }
+                    };
+                    veriMYSQL.getResultado().observe(cambiarMySQL.this,observer);
                 }
             }
         });

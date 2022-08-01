@@ -37,37 +37,40 @@ public class ExportarDatos extends AppCompatActivity {
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                boolean verificar=true;
                 if(ip.getText().toString().equals("")){
                     ip.setError("Digite la Ip de la Base de datos");
-                }else{
-                    if(Nbasedatos.getText().toString().equals("")){
-                        Nbasedatos.setError("Digite el Nombre de la Base de datos");
-                    }else {
-                        if (username.getText().toString().equals("")) {
-                            username.setError("Digite el Usuario de la Base de datos");
-                        } else {
-                            if (password.getText().toString().equals("")) {
-                                password.setError("Digite la Contraseña de la Base de datos");
-                            } else {
-                                veriMYSQL.reset();
-                                veriMYSQL.VerificarConexion(ip.getText().toString(),Nbasedatos.getText().toString(),username.getText().toString(),password.getText().toString());
-                                final Observer<Boolean> observer=new Observer<Boolean>() {
-                                    @Override
-                                    public void onChanged(Boolean aBoolean) {
-                                        if(aBoolean){
-                                            ExportarDatosViewModel exportar= ViewModelProviders.of(ExportarDatos.this).get(ExportarDatosViewModel.class);
-                                            exportar.exportardatos(ip.getText().toString(),Nbasedatos.getText().toString(),username.getText().toString(),password.getText().toString(),ExportarDatos.this);
-                                            finish();
-                                        }else{
-                                            ip.setError("No se puede conectar a La Base Datos");
-                                            Toast.makeText(ExportarDatos.this, "No se puede conectar a La Base Datos", Toast.LENGTH_LONG).show();
-                                        }
-                                    }
-                                };
-                                veriMYSQL.getResultado().observe(ExportarDatos.this,observer);
+                    verificar=false;
+                }
+                if(Nbasedatos.getText().toString().equals("")){
+                    Nbasedatos.setError("Digite el Nombre de la Base de datos");
+                    verificar=false;
+                }
+                if (username.getText().toString().equals("")) {
+                    username.setError("Digite el Usuario de la Base de datos");
+                    verificar=false;
+                }
+                if (password.getText().toString().equals("")) {
+                    password.setError("Digite la Contraseña de la Base de datos");
+                    verificar=false;
+                }
+                if(verificar){
+                    veriMYSQL.reset();
+                    veriMYSQL.VerificarConexion(ip.getText().toString(),Nbasedatos.getText().toString(),username.getText().toString(),password.getText().toString());
+                    final Observer<Boolean> observer=new Observer<Boolean>() {
+                        @Override
+                        public void onChanged(Boolean aBoolean) {
+                            if(aBoolean){
+                                ExportarDatosViewModel exportar= ViewModelProviders.of(ExportarDatos.this).get(ExportarDatosViewModel.class);
+                                exportar.exportardatos(ip.getText().toString(),Nbasedatos.getText().toString(),username.getText().toString(),password.getText().toString(),ExportarDatos.this);
+                                finish();
+                            }else{
+                                ip.setError("No se puede conectar a La Base Datos");
+                                Toast.makeText(ExportarDatos.this, "No se puede conectar a La Base Datos", Toast.LENGTH_LONG).show();
                             }
                         }
-                    }
+                    };
+                    veriMYSQL.getResultado().observe(ExportarDatos.this,observer);
                 }
             }
         });
