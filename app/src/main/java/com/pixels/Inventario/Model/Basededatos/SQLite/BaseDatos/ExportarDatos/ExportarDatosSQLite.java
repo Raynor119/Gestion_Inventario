@@ -46,9 +46,17 @@ public class ExportarDatosSQLite extends AsyncTask<String, Void , String> {
             List<VentasProductos> ventasProductos=exportacion.exportarDatosVentasProductos();
             for(int i=0;i<ventasProductos.size();i++){
                 if(ventasProductos.get(i).getCodigoP()==null){
-                    st.executeUpdate("INSERT INTO VentasProductos VALUES("+ventasProductos.get(i).getId()+","+ventasProductos.get(i).getCodigoV()+",NULL,"+ventasProductos.get(i).getCantidadV()+","+ventasProductos.get(i).getCostePV()+","+ventasProductos.get(i).getPrecioPV()+")");
+                    if(ventasProductos.get(i).getObservacionD()==null){
+                        st.executeUpdate("INSERT INTO VentasProductos VALUES("+ventasProductos.get(i).getId()+","+ventasProductos.get(i).getCodigoV()+",NULL,"+ventasProductos.get(i).getCantidadV()+","+ventasProductos.get(i).getCostePV()+","+ventasProductos.get(i).getPrecioPV()+",'"+ventasProductos.get(i).getEstadoDevolucion()+"',NULL)");
+                    }else{
+                        st.executeUpdate("INSERT INTO VentasProductos VALUES("+ventasProductos.get(i).getId()+","+ventasProductos.get(i).getCodigoV()+",NULL,"+ventasProductos.get(i).getCantidadV()+","+ventasProductos.get(i).getCostePV()+","+ventasProductos.get(i).getPrecioPV()+",'"+ventasProductos.get(i).getEstadoDevolucion()+"','"+ventasProductos.get(i).getObservacionD()+"')");
+                    }
                 }else{
-                    st.executeUpdate("INSERT INTO VentasProductos VALUES("+ventasProductos.get(i).getId()+","+ventasProductos.get(i).getCodigoV()+",'"+ventasProductos.get(i).getCodigoP()+"',"+ventasProductos.get(i).getCantidadV()+","+ventasProductos.get(i).getCostePV()+","+ventasProductos.get(i).getPrecioPV()+")");
+                    if(ventasProductos.get(i).getObservacionD()==null){
+                        st.executeUpdate("INSERT INTO VentasProductos VALUES("+ventasProductos.get(i).getId()+","+ventasProductos.get(i).getCodigoV()+",'"+ventasProductos.get(i).getCodigoP()+"',"+ventasProductos.get(i).getCantidadV()+","+ventasProductos.get(i).getCostePV()+","+ventasProductos.get(i).getPrecioPV()+",'"+ventasProductos.get(i).getEstadoDevolucion()+"',NULL)");
+                    }else{
+                        st.executeUpdate("INSERT INTO VentasProductos VALUES("+ventasProductos.get(i).getId()+","+ventasProductos.get(i).getCodigoV()+",'"+ventasProductos.get(i).getCodigoP()+"',"+ventasProductos.get(i).getCantidadV()+","+ventasProductos.get(i).getCostePV()+","+ventasProductos.get(i).getPrecioPV()+",'"+ventasProductos.get(i).getEstadoDevolucion()+"','"+ventasProductos.get(i).getObservacionD()+"')");
+                    }
                 }
             }
             return "Se exporto los datos Exitosamente";
