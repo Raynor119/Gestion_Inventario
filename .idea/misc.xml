@@ -4,7 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-sw600dp/fragment_inventario_productos.xml" value="0.275" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_agregar_productos.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_agregar_productos.xml" value="0.25" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_caja.xml" value="0.25" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_cambiar_my_sql.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_configuracion_i.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_crear_base_datos_mysql.xml" value="0.36666666666666664" />

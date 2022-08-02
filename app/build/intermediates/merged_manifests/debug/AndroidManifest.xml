@@ -42,15 +42,17 @@
         android:testOnly="true"
         android:theme="@style/Theme.MyApplication" >
         <activity
+            android:name="com.pixels.Inventario.View.Activity.Caja.Caja"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
             android:name="com.pixels.Inventario.View.Activity.Gestion_Productos.EditarProductos.EditarProducto"
             android:exported="false"
-            android:theme="@style/Theme.MyApplication.NoActionBar" >
-        </activity>
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
             android:name="com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.AgregarProductos"
             android:exported="false"
-            android:theme="@style/Theme.MyApplication.NoActionBar" >
-        </activity>
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
             android:name="com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionBaseDatos.CrearBaseDatosMYSQL"
             android:exported="false"

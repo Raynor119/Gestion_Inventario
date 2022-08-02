@@ -1160,6 +1160,10 @@
         "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\f4b8d3cf6d52b7c97b7366689d2a7314\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
+        "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_lupa_adaptive_back.png.flat",
+        "source": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\src\\main\\res\\mipmap-xhdpi\\lupa_adaptive_back.png"
+    },
+    {
         "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_list_products.png.flat",
         "source": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\src\\main\\res\\mipmap-xhdpi\\list_products.png"
     },
@@ -1792,6 +1796,10 @@
         "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\0e371a18df9b4005d8622373386a955f\\res\\color\\mtrl_navigation_bar_ripple_color.xml"
     },
     {
+        "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_caja.xml.flat",
+        "source": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\src\\main\\res\\layout\\activity_caja.xml"
+    },
+    {
         "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_outlined_icon_tint.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\0e371a18df9b4005d8622373386a955f\\res\\color\\mtrl_outlined_icon_tint.xml"
     },
@@ -1846,6 +1854,10 @@
     {
         "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\f4b8d3cf6d52b7c97b7366689d2a7314\\res\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_lupa.png.flat",
+        "source": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\src\\main\\res\\mipmap-xhdpi\\lupa.png"
     },
     {
         "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
@@ -2754,6 +2766,10 @@
     {
         "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\f4b8d3cf6d52b7c97b7366689d2a7314\\res\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_lupa_adaptive_fore.png.flat",
+        "source": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\src\\main\\res\\mipmap-xhdpi\\lupa_adaptive_fore.png"
     },
     {
         "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_fab_transformation_sheet_collapse_spec.xml.flat",

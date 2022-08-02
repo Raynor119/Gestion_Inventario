@@ -1858,6 +1858,7 @@ drawable tooltip_frame_light
 id ALT
 id BOTTOM_END
 id BOTTOM_START
+id Buscar
 id ButtonG
 id CTRL
 id CosteP
@@ -1876,6 +1877,7 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id Total
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -2071,6 +2073,7 @@ id ignore
 id ignoreRequest
 id image
 id imagen
+id impretotal
 id info
 id invisible
 id inward
@@ -2412,6 +2415,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_agregar_productos
 layout activity_ajustes
+layout activity_caja
 layout activity_cambiar_my_sql
 layout activity_config_contra
 layout activity_configuracion_i
@@ -2569,6 +2573,9 @@ mipmap ic_launcher
 mipmap list_products
 mipmap list_products_adaptive_back
 mipmap list_products_adaptive_fore
+mipmap lupa
+mipmap lupa_adaptive_back
+mipmap lupa_adaptive_fore
 mipmap mas_adaptive_fore
 mipmap productos
 mipmap productos_adaptive_back
@@ -2611,6 +2618,7 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
+string app_namecaja
 string app_version
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior

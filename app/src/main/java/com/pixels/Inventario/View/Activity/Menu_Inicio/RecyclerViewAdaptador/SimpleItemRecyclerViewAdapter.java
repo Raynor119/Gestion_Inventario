@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.pixels.Inventario.Model.DatosE.OpcionesContent;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Ajustes.Ajustes;
+import com.pixels.Inventario.View.Activity.Caja.Caja;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.Fragment.VerInventarioFragment;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.VerInventario;
 import com.pixels.Inventario.View.Activity.Menu_Inicio.MenuInicio;
@@ -30,7 +31,9 @@ public class SimpleItemRecyclerViewAdapter extends RecyclerView.Adapter<SimpleIt
         public void onClick(View view) {
             int Id=Integer.parseInt((view.getTag()+""));
             if(Id==1){
-
+                Context context = view.getContext();
+                Intent intent = new Intent(context, Caja.class);
+                context.startActivity(intent);
             }
             if(Id==2){
                 if (mTwoPane) {
