@@ -27,6 +27,7 @@ import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.TextWatcher.TextCodigo;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.TextWatcher.TextMoneda;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.Fragment.VerInventarioFragment;
+import com.pixels.Inventario.ViewModel.Gestion_Productos.EditarProducto.EditarDatosViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.EditarProducto.VerDatosProductoViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.VerificarCodigoEditarViewModel;
 
@@ -128,6 +129,7 @@ public class EditarProducto extends AppCompatActivity {
                 new IntentIntegrator(EditarProducto.this).initiateScan();
             }
         });
+        Button.setText("Modificar Datos");
         Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -171,7 +173,20 @@ public class EditarProducto extends AppCompatActivity {
                                         if(Codigo.getText().toString().equals(codigo) && Nombre.getText().toString().equals(nombreG) && Cantidad.getText().toString().equals(cantidadG) && spinner.getText().toString().equals(TipoCG) && Costop.getText().toString().equals(CostePG) && Precio.getText().toString().equals(PrecioG)){
                                             Toast.makeText(EditarProducto.this, "Tienes que modificar por lo menos un dato del producto", Toast.LENGTH_LONG).show();
                                         }else{
-                                            Toast.makeText(EditarProducto.this, "Se Modiico el Producto en la Base de Datos", Toast.LENGTH_LONG).show();
+                                            EditarDatosViewModel Editar= ViewModelProviders.of(EditarProducto.this).get(EditarDatosViewModel.class);
+                                            Editar.reset();
+                                            Editar.EditarProducto(EditarProducto.this,Codigo.getText().toString(),Nombre.getText().toString(),Cantidad.getText().toString(),spinner.getText().toString(),Costop.getText().toString(),Precio.getText().toString(),codigo);
+                                            Observer<Boolean> observer1=new Observer<Boolean>() {
+                                                @Override
+                                                public void onChanged(Boolean aBoolean) {
+                                                    if(aBoolean){
+                                                        Toast.makeText(EditarProducto.this, "Se modifico los datos del producto", Toast.LENGTH_LONG).show();
+                                                        finish();
+                                                        verproductos.iniciarRecyclerView();
+                                                    }
+                                                }
+                                            };
+                                            Editar.getResultado().observe(EditarProducto.this,observer1);
                                         }
                                     }
                                 }else {
