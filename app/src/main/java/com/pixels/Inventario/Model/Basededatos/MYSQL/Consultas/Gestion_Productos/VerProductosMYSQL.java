@@ -46,29 +46,13 @@ public class VerProductosMYSQL extends Conexion implements MediadorBaseDatos {
     @Override
     protected void onPostExecute(String result) {
         if(result.equals("")){
-            ObtenerProductos(ViewModel,productos);
+            ConsultaBaseDatos();
         }else {
             Toast.makeText(Context, result, Toast.LENGTH_LONG).show();
         }
     }
     @Override
-    public void ObtenerProductos(ProductosRecyclerViewModel viewModel, List<Producto> productos) {
-        viewModel.resultado.setValue(productos);
+    public void ConsultaBaseDatos() {
+        ViewModel.resultado.setValue(productos);
     }
-    @Override
-    public void verificarCodigoProducto(VerificarCodigoViewModel viewModel, List<Producto> productos, String codigo) {
-    }
-    @Override
-    public void agregarproductobasedatos(AgregarProductosViewModel viewModel) {
-    }
-    @Override
-    public void EliminarProducto(EliminarProductoViewModel viewModel) {
-    }
-
-    @Override
-    public void VerDatosProductoCodigo(VerDatosProductoViewModel viewModel, List<Producto> producto) {
-
-    }
-
-
 }

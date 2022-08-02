@@ -169,7 +169,7 @@ public class EditarProducto extends AppCompatActivity {
                                 if(aBoolean){
                                     if(verificacion[0]){
                                         if(Codigo.getText().toString().equals(codigo) && Nombre.getText().toString().equals(nombreG) && Cantidad.getText().toString().equals(cantidadG) && spinner.getText().toString().equals(TipoCG) && Costop.getText().toString().equals(CostePG) && Precio.getText().toString().equals(PrecioG)){
-                                            Toast.makeText(EditarProducto.this, "Tiene que modificar por lo menos un dato del producto", Toast.LENGTH_LONG).show();
+                                            Toast.makeText(EditarProducto.this, "Tienes que modificar por lo menos un dato del producto", Toast.LENGTH_LONG).show();
                                         }else{
                                             Toast.makeText(EditarProducto.this, "Se Modiico el Producto en la Base de Datos", Toast.LENGTH_LONG).show();
                                         }

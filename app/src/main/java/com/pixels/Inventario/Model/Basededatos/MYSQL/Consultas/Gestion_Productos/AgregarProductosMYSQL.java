@@ -20,9 +20,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AgregarProductosMYSQL  extends Conexion implements MediadorBaseDatos {
-    public String Codigo,Nombre,TipoC;
-    public double Cantidad;
-    public int CosteP,Precio;
+
+    private String Codigo,Nombre,TipoC;
+    private double Cantidad;
+    private int CosteP,Precio;
     private AgregarProductosViewModel ViewModel;
     private boolean verficar;
 
@@ -53,30 +54,15 @@ public class AgregarProductosMYSQL  extends Conexion implements MediadorBaseDato
     @Override
     protected void onPostExecute(String result) {
         if(result.equals("")){
-            agregarproductobasedatos(ViewModel);
+            ConsultaBaseDatos();
         }else {
             verficar=false;
-            agregarproductobasedatos(ViewModel);
+            ConsultaBaseDatos();
             Toast.makeText(Context, result, Toast.LENGTH_LONG).show();
         }
     }
-
     @Override
-    public void ObtenerProductos(ProductosRecyclerViewModel viewModel, List<Producto> productos) {
-    }
-    @Override
-    public void verificarCodigoProducto(VerificarCodigoViewModel viewModel, List<Producto> productos, String codigo) {
-    }
-    @Override
-    public void agregarproductobasedatos(AgregarProductosViewModel viewModel) {
-        viewModel.resultado.setValue(verficar);
-    }
-    @Override
-    public void EliminarProducto(EliminarProductoViewModel viewModel) {
-    }
-
-    @Override
-    public void VerDatosProductoCodigo(VerDatosProductoViewModel viewModel, List<Producto> producto) {
-
+    public void ConsultaBaseDatos() {
+        ViewModel.resultado.setValue(verficar);
     }
 }

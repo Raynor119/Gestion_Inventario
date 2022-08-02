@@ -20,11 +20,14 @@ import java.util.List;
 public class VerificarCodigoEditarSQLite extends BaseDatosSQLite implements MediadorBaseDatos {
     private VerificarCodigoEditarViewModel ViewModel;
     private String Codigo;
+    private String CodigoE;
+
     public VerificarCodigoEditarSQLite(Context context, VerificarCodigoEditarViewModel viewModel, String codigo,String codigoE) {
         super(context);
         this.ViewModel=viewModel;
         this.Codigo=codigo;
-        verificarCodigoProducto(null,DatosProductos(),codigoE);
+        this.CodigoE=codigoE;
+        ConsultaBaseDatos();
     }
     public List<Producto> DatosProductos(){
         List<Producto> datos=new ArrayList<>();
@@ -38,29 +41,18 @@ public class VerificarCodigoEditarSQLite extends BaseDatosSQLite implements Medi
         return datos;
     }
     @Override
-    public void ObtenerProductos(ProductosRecyclerViewModel viewModel, List<Producto> productos) {
-    }
-    @Override
-    public void verificarCodigoProducto(VerificarCodigoViewModel viewModel, List<Producto> productos,String codigo) {
+    public void ConsultaBaseDatos() {
+        List<Producto> productos=DatosProductos();
         boolean verificar=true;
         for(int i=0;i<productos.size();i++){
             if(productos.get(i).getCodigo().equals(Codigo)){
 
             }else {
-                if(productos.get(i).getCodigo().equals(codigo)){
+                if(productos.get(i).getCodigo().equals(CodigoE)){
                     verificar=false;
                 }
             }
         }
         ViewModel.resultado.setValue(verificar);
-    }
-    @Override
-    public void agregarproductobasedatos(AgregarProductosViewModel viewModel) {
-    }
-    @Override
-    public void EliminarProducto(EliminarProductoViewModel viewModel) {
-    }
-    @Override
-    public void VerDatosProductoCodigo(VerDatosProductoViewModel viewModel, List<Producto> producto) {
     }
 }

@@ -16,29 +16,26 @@ import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.Verific
 import java.util.List;
 
 public class AgregarProductosSQLite  extends BaseDatosSQLite implements MediadorBaseDatos {
-    public Context Context;
-    public String Codigo,Nombre,TipoC;
-    public double Cantidad;
-    public int CosteP,Precio;
+    private Context Context;
+    private String Codigo,Nombre,TipoC;
+    private double Cantidad;
+    private int CosteP,Precio;
+    private AgregarProductosViewModel ViewModel;
 
     public AgregarProductosSQLite(Context context,String codigo, String nombre, double cantidad,String tipoC, int costeP, int precio,AgregarProductosViewModel viewModel) {
         super(context);
+        this.Context=context;
         this.Codigo=codigo;
         this.Nombre=nombre;
         this.Cantidad=cantidad;
         this.TipoC=tipoC;
         this.CosteP=costeP;
         this.Precio=precio;
-        agregarproductobasedatos(viewModel);
+        this.ViewModel=viewModel;
+        ConsultaBaseDatos();
     }
     @Override
-    public void ObtenerProductos(ProductosRecyclerViewModel viewModel, List<Producto> productos) {
-    }
-    @Override
-    public void verificarCodigoProducto(VerificarCodigoViewModel viewModel, List<Producto> productos, String codigo) {
-    }
-    @Override
-    public void agregarproductobasedatos(AgregarProductosViewModel viewModel) {
+    public void ConsultaBaseDatos() {
         SQLiteDatabase bd=getWritableDatabase();
         boolean verificar=true;
         if(bd!=null)
@@ -49,16 +46,8 @@ public class AgregarProductosSQLite  extends BaseDatosSQLite implements Mediador
                 Toast.makeText(Context, "Error al guardar los datos del producto en la Base de Datos", Toast.LENGTH_LONG).show();
                 verificar=false;
             }
-            viewModel.resultado.setValue(verificar);
+            ViewModel.resultado.setValue(verificar);
             bd.close();
         }
-    }
-    @Override
-    public void EliminarProducto(EliminarProductoViewModel viewModel) {
-    }
-
-    @Override
-    public void VerDatosProductoCodigo(VerDatosProductoViewModel viewModel, List<Producto> producto) {
-
     }
 }

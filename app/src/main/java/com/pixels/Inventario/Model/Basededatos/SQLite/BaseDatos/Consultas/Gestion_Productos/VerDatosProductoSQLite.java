@@ -17,10 +17,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class VerDatosProductoSQLite extends BaseDatosSQLite implements MediadorBaseDatos {
+    private VerDatosProductoViewModel ViewModel;
+    private String Codigo;
 
     public VerDatosProductoSQLite(Context context, VerDatosProductoViewModel viewModel,String codigo) {
         super(context);
-        VerDatosProductoCodigo(viewModel,DatosProductos(codigo));
+        this.ViewModel=viewModel;
+        this.Codigo=codigo;
+        ConsultaBaseDatos();
     }
     public List<Producto> DatosProductos(String Codigo){
         List<Producto> datos=new ArrayList<>();
@@ -34,20 +38,8 @@ public class VerDatosProductoSQLite extends BaseDatosSQLite implements MediadorB
         return datos;
     }
     @Override
-    public void ObtenerProductos(ProductosRecyclerViewModel viewModel, List<Producto> productos) {
-    }
-    @Override
-    public void verificarCodigoProducto(VerificarCodigoViewModel viewModel, List<Producto> productos, String codigo) {
-    }
-    @Override
-    public void agregarproductobasedatos(AgregarProductosViewModel viewModel) {
-    }
-    @Override
-    public void EliminarProducto(EliminarProductoViewModel viewModel) {
-    }
-    @Override
-    public void VerDatosProductoCodigo(VerDatosProductoViewModel viewModel, List<Producto> producto) {
-        viewModel.resultado.setValue(producto);
+    public void ConsultaBaseDatos() {
+        ViewModel.resultado.setValue(DatosProductos(Codigo));
     }
 
 }

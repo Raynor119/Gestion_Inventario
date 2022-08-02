@@ -48,34 +48,19 @@ public class VerificarCodigoMYSQL extends Conexion implements MediadorBaseDatos 
     @Override
     protected void onPostExecute(String result) {
         if(result.equals("")){
-            verificarCodigoProducto(ViewModel,productos,Codigo);
+            ConsultaBaseDatos();
         }else {
             Toast.makeText(Context, result, Toast.LENGTH_LONG).show();
         }
     }
     @Override
-    public void ObtenerProductos(ProductosRecyclerViewModel viewModel, List<Producto> productos) {
-    }
-    @Override
-    public void verificarCodigoProducto(VerificarCodigoViewModel viewModel, List<Producto> productos, String codigo) {
+    public void ConsultaBaseDatos() {
         boolean verificar=true;
         for(int i=0;i<productos.size();i++){
-            if(productos.get(i).getCodigo().equals(codigo)){
+            if(productos.get(i).getCodigo().equals(Codigo)){
                 verificar=false;
             }
         }
-        viewModel.resultado.setValue(verificar);
-    }
-    @Override
-    public void agregarproductobasedatos(AgregarProductosViewModel viewModel) {
-    }
-
-    @Override
-    public void EliminarProducto(EliminarProductoViewModel viewModel) {
-    }
-
-    @Override
-    public void VerDatosProductoCodigo(VerDatosProductoViewModel viewModel, List<Producto> producto) {
-
+        ViewModel.resultado.setValue(verificar);
     }
 }

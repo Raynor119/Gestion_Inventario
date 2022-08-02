@@ -13,9 +13,5 @@ import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.Verific
 import java.util.List;
 
 public interface MediadorBaseDatos{
-    public void ObtenerProductos(ProductosRecyclerViewModel viewModel,List<Producto> productos);
-    public void verificarCodigoProducto(VerificarCodigoViewModel viewModel,List<Producto> productos,String codigo);
-    public void agregarproductobasedatos(AgregarProductosViewModel viewModel);
-    public void EliminarProducto(EliminarProductoViewModel viewModel);
-    public void VerDatosProductoCodigo(VerDatosProductoViewModel viewModel,List<Producto> producto);
+    public void ConsultaBaseDatos();
 }
