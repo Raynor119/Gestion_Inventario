@@ -31,7 +31,6 @@ public class ImportarDatos extends AppCompatActivity {
         password= (EditText) findViewById(R.id.password);
         boton=(Button) findViewById(R.id.ButtonG);
         boton.setText("Importar Datos");
-        boton.getLayoutParams().width=490;
         veriMYSQL= ViewModelProviders.of(ImportarDatos.this).get(VerificarConexionViewModel.class);
         boton=(Button) findViewById(R.id.ButtonG);
         boton.setOnClickListener(new View.OnClickListener() {

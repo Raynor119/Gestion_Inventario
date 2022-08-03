@@ -38,7 +38,6 @@ public class CrearBaseDatos extends Fragment {
         password= (EditText) view.findViewById(R.id.password);
         boton=(Button) view.findViewById(R.id.ButtonG);
         boton.setText("Crear Base de Datos");
-        boton.getLayoutParams().width=520;
         veriMYSQL= ViewModelProviders.of(Context).get(CrearBaseVerificarViewModel.class);
         boton.setOnClickListener(new View.OnClickListener() {
             @Override

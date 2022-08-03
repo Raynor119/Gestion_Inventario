@@ -31,7 +31,6 @@ public class ExportarDatos extends AppCompatActivity {
         password= (EditText) findViewById(R.id.password);
         boton=(Button) findViewById(R.id.ButtonG);
         boton.setText("Exportar Datos");
-        boton.getLayoutParams().width=490;
         veriMYSQL= ViewModelProviders.of(ExportarDatos.this).get(VerificarConexionViewModel.class);
         boton=(Button) findViewById(R.id.ButtonG);
         boton.setOnClickListener(new View.OnClickListener() {

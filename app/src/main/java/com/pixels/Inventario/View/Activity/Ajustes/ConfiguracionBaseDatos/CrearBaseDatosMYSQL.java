@@ -48,7 +48,6 @@ public class CrearBaseDatosMYSQL extends AppCompatActivity {
         password= (EditText) findViewById(R.id.password);
         boton=(Button) findViewById(R.id.ButtonG);
         boton.setText("Crear Base de Datos");
-        boton.getLayoutParams().width=520;
         veriMYSQL= ViewModelProviders.of(CrearBaseDatosMYSQL.this).get(CrearBaseVerificarViewModel.class);
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
