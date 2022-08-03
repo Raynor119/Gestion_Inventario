@@ -10,6 +10,5 @@
     <dimen name="text_margin">16dp</dimen>
     <dimen name="agregar_margin_cantidad">180dp</dimen>
     <dimen name="agregar_margin_spinner">170dp</dimen>
-    <dimen name="agregar_margin_eliminar">170dp</dimen>
-    <dimen name="agregar_margin_editar">170dp</dimen>
+    <dimen name="agregar_margin_espacio">105dp</dimen>
 </resources>

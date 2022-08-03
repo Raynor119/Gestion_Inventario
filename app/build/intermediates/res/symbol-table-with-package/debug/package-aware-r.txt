@@ -1353,8 +1353,7 @@ dimen action_bar_size
 dimen activity_horizontal_margin
 dimen activity_vertical_margin
 dimen agregar_margin_cantidad
-dimen agregar_margin_editar
-dimen agregar_margin_eliminar
+dimen agregar_margin_espacio
 dimen agregar_margin_spinner
 dimen app_bar_height
 dimen appcompat_dialog_background_inset

@@ -2,6 +2,5 @@
 <resources>
     <dimen name="agregar_margin_cantidad">180dp</dimen>
     <dimen name="agregar_margin_spinner">170dp</dimen>
-    <dimen name="agregar_margin_eliminar">130dp</dimen>
-    <dimen name="agregar_margin_editar">130dp</dimen>
+    <dimen name="agregar_margin_espacio">15dp</dimen>
 </resources>

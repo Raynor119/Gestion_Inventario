@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="agregar_margin_eliminar">170dp</dimen>
-    <dimen name="agregar_margin_editar">170dp</dimen>
+    <dimen name="agregar_margin_espacio">25dp</dimen>
 </resources>
