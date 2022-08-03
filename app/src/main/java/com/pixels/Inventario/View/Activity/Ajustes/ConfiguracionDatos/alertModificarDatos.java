@@ -20,10 +20,10 @@ import com.pixels.Inventario.ViewModel.InicioA.Datos.DInicioViewModel;
 
 import java.util.List;
 
-public class alerModificarDatos {
+public class alertModificarDatos {
     private Ajustes Context;
     private String Nit,Nombre;
-    public alerModificarDatos(Ajustes context){
+    public alertModificarDatos(Ajustes context){
         this.Context=context;
     }
     public void PreguntaModificarDatos(){

@@ -82,4 +82,12 @@ public class consultasDatos extends DatosInicio{
             bd.close();
         }
     }
+    public void modificarIVA(String iva){
+        bd=getWritableDatabase();
+        if(bd!=null)
+        {
+            bd.execSQL("UPDATE INICIO SET IVA='"+iva+"' WHERE FINALIZO = '1'");
+            bd.close();
+        }
+    }
 }
