@@ -1,11 +1,11 @@
 package com.pixels.Inventario.Model.DatosE;
 
 public class datosI {
-    private String Finalizo,Contra,Contrasena,Basedatos,Ip,Nbasedatos,Usuario,Ucontra,Nit,Nombre,Iva;
+    private String Finalizo,Contra,Contrasena,Basedatos,Ip,Nbasedatos,Usuario,Ucontra,Nit,Nombre;
 
 
 
-    public datosI(String finalizo, String contra, String contrasena, String basedatos, String ip, String nbasedatos, String usuario, String ucontra,String nit,String nombre,String iva){
+    public datosI(String finalizo, String contra, String contrasena, String basedatos, String ip, String nbasedatos, String usuario, String ucontra,String nit,String nombre){
         this.Finalizo=finalizo;
         this.Contra=contra;
         this.Contrasena=contrasena;
@@ -16,7 +16,6 @@ public class datosI {
         this.Ucontra=ucontra;
         this.Nit=nit;
         this.Nombre=nombre;
-        this.Iva=iva;
     }
 
     public String getFinalizo() {
@@ -99,11 +98,4 @@ public class datosI {
         Nombre = nombre;
     }
 
-    public String getIva() {
-        return Iva;
-    }
-
-    public void setIva(String iva) {
-        Iva = iva;
-    }
 }

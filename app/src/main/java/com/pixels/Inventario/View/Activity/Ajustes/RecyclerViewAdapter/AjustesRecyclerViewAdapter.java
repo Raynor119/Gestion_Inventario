@@ -16,7 +16,6 @@ import com.pixels.Inventario.View.Activity.Ajustes.Ajustes;
 import com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionBaseDatos.AlertDialog.alertcambiarbasedatos;
 import com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionContra.configContra;
 import com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionDatos.alertModificarDatos;
-import com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionIva.alertmodificarIVA;
 import com.pixels.Inventario.View.Activity.Ajustes.EliminarBaseDatos.alertEliminarBD;
 import com.pixels.Inventario.View.Activity.Ajustes.ExportarDatos.ExportarDatos;
 import com.pixels.Inventario.View.Activity.Ajustes.ImportarDatos.ImportarDatos;
@@ -65,10 +64,6 @@ public class AjustesRecyclerViewAdapter extends RecyclerView.Adapter<AjustesRecy
             if(Id==7){
                 alertModificarDatos modatos=new alertModificarDatos(mParentActivity);
                 modatos.PreguntaModificarDatos();
-            }
-            if(Id==8){
-                alertmodificarIVA iva=new alertmodificarIVA(mParentActivity);
-                iva.modificarIVA();
             }
         }
     };
