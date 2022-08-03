@@ -74,4 +74,12 @@ public class consultasDatos extends DatosInicio{
             bd.close();
         }
     }
+    public void modificarDatos(String nit,String nombre){
+        bd=getWritableDatabase();
+        if(bd!=null)
+        {
+            bd.execSQL("UPDATE INICIO SET NIT='"+nit+"',NOMBRE='"+nombre+"' WHERE FINALIZO = '1'");
+            bd.close();
+        }
+    }
 }

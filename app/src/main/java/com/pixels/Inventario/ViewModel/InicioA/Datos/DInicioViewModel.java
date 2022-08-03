@@ -18,6 +18,9 @@ public class  DInicioViewModel extends ViewModel {
     public LiveData<List<datosI>> getResultado(){
         return resultado;
     }
+    public void reset(){
+        resultado= new MutableLiveData<>();
+    }
     public void DatosdeInicio(Context context){
         consultasDatos datosInicio =new consultasDatos(context);
         resultado.setValue(datosInicio.obtenerD());

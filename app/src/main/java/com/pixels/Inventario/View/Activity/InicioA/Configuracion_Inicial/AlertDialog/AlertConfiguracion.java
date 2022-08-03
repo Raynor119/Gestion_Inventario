@@ -42,13 +42,10 @@ public class AlertConfiguracion {
                     veridicar=false;
                 }
                 if(veridicar){
-                    Context.nit=nit.getText().toString();
-                    Context.nombreR=nombre.getText().toString();
+                    Context.nit=nit.getText().toString()+"";
+                    Context.nombreR=nombre.getText().toString()+"";
                     dialog.cancel();
                     PreguntarContrasena();
-                }else{
-
-                    dialog.show();
                 }
             }
         });
