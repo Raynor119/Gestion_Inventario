@@ -23,13 +23,14 @@
                     android:text="Digite la Antigua Contraseña para poder Modificar la Contraseña"
                     android:textSize="16dp" />
             <LinearLayout
-                    android:layout_marginTop="140dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
+                android:layout_marginTop="140dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp">
             <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-                    android:layout_width="300dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Antigua Contraseña"
                     app:endIconMode="password_toggle">
@@ -40,14 +41,17 @@
                         android:layout_height="wrap_content"
                         android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
+
             </LinearLayout>
             <LinearLayout
-                    android:layout_marginTop="40dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp">
             <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-                    android:layout_width="300dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Nueva Contraseña"
                     app:endIconMode="password_toggle">

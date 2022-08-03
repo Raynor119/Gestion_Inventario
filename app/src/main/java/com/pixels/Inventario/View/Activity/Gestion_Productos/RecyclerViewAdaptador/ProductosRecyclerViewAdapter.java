@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -98,7 +99,7 @@ public class ProductosRecyclerViewAdapter extends RecyclerView.Adapter<Productos
 
     class ViewHolder extends RecyclerView.ViewHolder {
         final TextView codigo,nombre,cantidad,unidad,costo,precio;
-        final LinearLayout opciones;
+        final RelativeLayout opciones;
         final CardView eliminar,editar;
         ViewHolder(View view) {
             super(view);
@@ -108,7 +109,7 @@ public class ProductosRecyclerViewAdapter extends RecyclerView.Adapter<Productos
             unidad= (TextView) view.findViewById(R.id.unidad);
             costo= (TextView) view.findViewById(R.id.costeP);
             precio= (TextView) view.findViewById(R.id.precio);
-            opciones= (LinearLayout) view.findViewById(R.id.opciones);
+            opciones= (RelativeLayout) view.findViewById(R.id.opciones);
             eliminar= (CardView) view.findViewById(R.id.eliminar);
             editar= (CardView) view.findViewById(R.id.editar);
         }

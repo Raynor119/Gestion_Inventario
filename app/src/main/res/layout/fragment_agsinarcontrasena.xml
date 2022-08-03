@@ -22,20 +22,26 @@
                 android:text="Digite la Contraseña"
                 android:textSize="16dp" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-                android:layout_width="300dp"
+            <LinearLayout
+                android:layout_marginTop="190dp"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="190dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="190dp"
-                android:hint="Contraseña"
-                app:endIconMode="password_toggle">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/password"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp">
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPassword" />
-            </com.google.android.material.textfield.TextInputLayout>
+                    android:hint="Contraseña"
+                    app:endIconMode="password_toggle">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
 
 
             <Button
