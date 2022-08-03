@@ -11,7 +11,7 @@ import java.util.List;
 public class DatosInicio extends SQLiteOpenHelper {
     private static final String NOMBRE_BD="DatosdeInicio";
     private static final int VERSION_BD=1;
-    private static final String TABLAS="CREATE TABLE INICIO(FINALIZO TEXT , CONTRA TEXT, CONTRASENA TEXT, BASEDATOS TEXT, IP TEXT, NBASEDATOS TEXT, USUARIO TEXT, UCONTRA TEXT)";
+    private static final String TABLAS="CREATE TABLE INICIO(FINALIZO TEXT , CONTRA TEXT, CONTRASENA TEXT, BASEDATOS TEXT, IP TEXT, NBASEDATOS TEXT, USUARIO TEXT, UCONTRA TEXT,NIT TEXT,NOMBRE TEXT,IVA TEXT)";
 
     public DatosInicio(Context context) {
         super(context, NOMBRE_BD, null, VERSION_BD);

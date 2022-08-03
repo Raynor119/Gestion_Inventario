@@ -21,7 +21,7 @@ public class configuracionI extends AppCompatActivity {
     private datosInicioViewModel Mdatosincio;
     public AlertConfiguracion alert;
 
-    public static String contra="",contrasena="",basedatos="",ip="",nbasedatos="",usuario="",ucontra="";
+    public static String contra="",contrasena="",basedatos="",ip="",nbasedatos="",usuario="",ucontra="",nit="",nombreR="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class configuracionI extends AppCompatActivity {
         transaction=getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.contenedirFragments,Inicio).commit();
         alert=new AlertConfiguracion(configuracionI.this);
-        alert.PreguntarContrasena();
+        alert.PreguntarNitNombre();
     }
     public void AparecerFragmentContra(){
         fragmentAContrasena= new AsignarContrasena(configuracionI.this);
@@ -50,7 +50,7 @@ public class configuracionI extends AppCompatActivity {
         transaction.replace(R.id.contenedirFragments,fragmentCrear).commit();
     }
     public void guardarDatos(){
-        Mdatosincio.mandarDatos(configuracionI.this,contra,contrasena,basedatos,ip,nbasedatos,usuario,ucontra);
+        Mdatosincio.mandarDatos(configuracionI.this,contra,contrasena,basedatos,ip,nbasedatos,usuario,ucontra,nit,nombreR);
         Intent intent = new Intent(configuracionI.this, MenuInicio.class);
         startActivity(intent);
         finish();

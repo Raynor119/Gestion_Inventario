@@ -1870,6 +1870,8 @@ id Escaner
 id FUNCTION
 id META
 id NO_DEBUG
+id Nit
+id NombreR
 id Precio
 id RadioMysqlButton
 id RadioSQLiteButton
@@ -2431,6 +2433,7 @@ layout activity_menuinicio
 layout ajustes_list_content
 layout alertcambiobasedatos
 layout alertdialogcontra
+layout alertdialogonitnombre
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

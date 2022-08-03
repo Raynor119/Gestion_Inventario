@@ -1,14 +1,57 @@
 package com.pixels.Inventario.View.Activity.InicioA.Configuracion_Inicial.AlertDialog;
 
 import android.content.DialogInterface;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AlertDialog;
 
+import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.InicioA.Configuracion_Inicial.configuracionI;
 
 public class AlertConfiguracion {
     private configuracionI Context;
     public AlertConfiguracion(configuracionI context){
         this.Context=context;
+    }
+    public  void PreguntarNitNombre(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(Context);
+        builder.setCancelable(false);
+        LayoutInflater inflater= Context.getLayoutInflater();
+        View view=inflater.inflate(R.layout.alertdialogonitnombre, null);
+        final EditText nit=(EditText) view.findViewById(R.id.Nit);
+        final EditText nombre=(EditText) view.findViewById(R.id.NombreR);
+        builder.setView(view);
+        builder.setTitle("Datos del Usuario");
+        AlertDialog dialog = builder.create();
+        dialog.show();
+        Button botton = (Button) view.findViewById(R.id.ButtonG);
+        botton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                boolean veridicar=true;
+                if(nit.getText().toString().equals("")){
+                    nit.setError("Digite el Nit");
+                    veridicar=false;
+                }
+                if(nombre.getText().toString().equals("")){
+                    nombre.setError("Digite el Nombre o Razon Social");
+                    veridicar=false;
+                }
+                if(veridicar){
+                    Context.nit=nit.getText().toString();
+                    Context.nombreR=nombre.getText().toString();
+                    dialog.cancel();
+                    PreguntarContrasena();
+                }else{
+
+                    dialog.show();
+                }
+            }
+        });
     }
     public void PreguntarContrasena(){
         AlertDialog.Builder builder = new AlertDialog.Builder(Context);
