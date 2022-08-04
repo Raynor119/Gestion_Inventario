@@ -13,10 +13,10 @@ public class EditarProductosSQLite extends BaseDatosSQLite implements MediadorBa
     private Context Context;
     private String Codigo,CodigoP,Nombre,TipoC;
     private double Cantidad;
-    private int CosteP,Precio;
+    private int CosteP,Precio,Iva;
     private EditarDatosViewModel ViewModel;
 
-    public EditarProductosSQLite(Context context, String codigo, String nombre, double cantidad, String tipoC, int costeP, int precio,String codigoP,EditarDatosViewModel viewModel) {
+    public EditarProductosSQLite(Context context, String codigo, String nombre, double cantidad, String tipoC, int costeP, int precio,int iva,String codigoP,EditarDatosViewModel viewModel) {
         super(context);
         this.Context=context;
         this.Codigo=codigo;
@@ -26,6 +26,7 @@ public class EditarProductosSQLite extends BaseDatosSQLite implements MediadorBa
         this.TipoC=tipoC;
         this.CosteP=costeP;
         this.Precio=precio;
+        this.Iva=iva;
         this.ViewModel=viewModel;
         ConsultaBaseDatos();
     }
@@ -37,7 +38,7 @@ public class EditarProductosSQLite extends BaseDatosSQLite implements MediadorBa
         if(bd!=null)
         {
             try {
-                bd.execSQL("UPDATE Producto SET codigo='"+Codigo+"',nombre='"+Nombre+"',cantidad="+Cantidad+",TipoC='"+TipoC+"',CosteP="+CosteP+",precio="+Precio+" WHERE codigo='"+CodigoP+"'");
+                bd.execSQL("UPDATE Producto SET codigo='"+Codigo+"',nombre='"+Nombre+"',cantidad="+Cantidad+",TipoC='"+TipoC+"',CosteP="+CosteP+",precio="+Precio+",Iva="+Iva+" WHERE codigo='"+CodigoP+"'");
             }catch (Exception e){
                 Toast.makeText(Context, "Error al modificar los datos del producto en la Base de Datos", Toast.LENGTH_LONG).show();
                 verificar=false;

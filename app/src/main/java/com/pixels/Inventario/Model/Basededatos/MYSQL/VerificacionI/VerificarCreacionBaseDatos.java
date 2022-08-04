@@ -35,9 +35,9 @@ public class VerificarCreacionBaseDatos extends AsyncTask<String, Void , Boolean
             String Url="jdbc:mysql://"+Ip+"/"+NBaseDatos;
             connection= DriverManager.getConnection(Url,Usuario,Contra);
             st=connection.createStatement();
-            st.execute("CREATE TABLE Producto(codigo VARCHAR(255) PRIMARY KEY NOT NULL,nombre VARCHAR(255) NOT NULL,cantidad DOUBLE NOT NULL,TipoC VARCHAR(255) NOT NULL,CosteP BIGINT NOT NULL,precio BIGINT NOT NULL)");
+            st.execute("CREATE TABLE Producto(codigo VARCHAR(255) PRIMARY KEY NOT NULL,nombre VARCHAR(255) NOT NULL,cantidad DOUBLE NOT NULL,TipoC VARCHAR(255) NOT NULL,CosteP BIGINT NOT NULL,precio BIGINT NOT NULL,Iva INT NOT NULL)");
             st.execute("CREATE TABLE Venta(codigo INT AUTO_INCREMENT,Fecha DATETIME NOT NULL DEFAULT NOW(),Efectivo BIGINT NOT NULL,PRIMARY KEY (codigo))");
-            st.execute("CREATE TABLE VentasProductos(Id INT AUTO_INCREMENT,codigoV INT NOT NULL,codigoP VARCHAR(255),CantidadV DOUBLE NOT NULL,CostePV BIGINT NOT NULL,PrecioPV BIGINT NOT NULL,EstadoDevolucion VARCHAR(255) NOT NULL,ObservacionD VARCHAR(255),PRIMARY KEY (Id),FOREIGN KEY (codigoV) REFERENCES Venta(codigo),FOREIGN KEY (codigoP) REFERENCES Producto(codigo) ON UPDATE CASCADE)");
+            st.execute("CREATE TABLE VentasProductos(Id INT AUTO_INCREMENT,codigoV INT NOT NULL,codigoP VARCHAR(255),CantidadV DOUBLE NOT NULL,CostePV BIGINT NOT NULL,PrecioPV BIGINT NOT NULL,IvaPV INT NOT NULL,EstadoDevolucion VARCHAR(255) NOT NULL,ObservacionD VARCHAR(255),PRIMARY KEY (Id),FOREIGN KEY (codigoV) REFERENCES Venta(codigo),FOREIGN KEY (codigoP) REFERENCES Producto(codigo) ON UPDATE CASCADE)");
             connection.close();
             return true;
         }catch (Exception e){

@@ -24,7 +24,7 @@ public class EditarDatosViewModel extends ViewModel {
     public LiveData<Boolean> getResultado(){
         return resultado;
     }
-    public void EditarProducto(Context context,String codigo,String nombre,String cantidad,String spinner,String CosteP,String Precio,String CodigoP){
+    public void EditarProducto(Context context,String codigo,String nombre,String cantidad,String spinner,String CosteP,String Precio,String CodigoP,int iva){
         consultasDatos dinici=new consultasDatos(context);
         MediadorBaseDatos BD;
         ConvertirModenaINT convertir=new ConvertirModenaINT();
@@ -37,10 +37,10 @@ public class EditarDatosViewModel extends ViewModel {
         }
         double Cantidad=Double.parseDouble(cantidad);
         if(dinici.obtenerD().get(0).getBasedatos().equals("SQLITE")){
-            BD= new EditarProductosSQLite(context,codigo,nombre,Cantidad,TipoC,convertir.Convertir(CosteP),convertir.Convertir(Precio),CodigoP,EditarDatosViewModel.this);
+            BD= new EditarProductosSQLite(context,codigo,nombre,Cantidad,TipoC,convertir.Convertir(CosteP),convertir.Convertir(Precio),iva,CodigoP,EditarDatosViewModel.this);
         }
         if(dinici.obtenerD().get(0).getBasedatos().equals("MYSQL")){
-            BD= new EditarProductosMYSQL(context,codigo,nombre,Cantidad,TipoC,convertir.Convertir(CosteP),convertir.Convertir(Precio),CodigoP,EditarDatosViewModel.this);
+            BD= new EditarProductosMYSQL(context,codigo,nombre,Cantidad,TipoC,convertir.Convertir(CosteP),convertir.Convertir(Precio),iva,CodigoP,EditarDatosViewModel.this);
         }
     }
 }

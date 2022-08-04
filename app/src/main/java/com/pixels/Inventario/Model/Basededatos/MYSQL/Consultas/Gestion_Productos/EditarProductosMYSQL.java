@@ -16,11 +16,11 @@ import java.sql.Statement;
 public class EditarProductosMYSQL extends Conexion implements MediadorBaseDatos {
     private String Codigo,CodigoP,Nombre,TipoC;
     private double Cantidad;
-    private int CosteP,Precio;
+    private int CosteP,Precio,Iva;
     private EditarDatosViewModel ViewModel;
     private boolean verficar;
 
-    public EditarProductosMYSQL(Context context, String codigo, String nombre, double cantidad, String tipoC, int costeP, int precio,String codigoP,EditarDatosViewModel viewModel) {
+    public EditarProductosMYSQL(Context context, String codigo, String nombre, double cantidad, String tipoC, int costeP, int precio,int iva,String codigoP,EditarDatosViewModel viewModel) {
         super(context);
         this.Codigo=codigo;
         this.CodigoP=codigoP;
@@ -29,6 +29,7 @@ public class EditarProductosMYSQL extends Conexion implements MediadorBaseDatos 
         this.TipoC=tipoC;
         this.CosteP=costeP;
         this.Precio=precio;
+        this.Iva=iva;
         this.ViewModel=viewModel;
         this.verficar=true;
         execute("");
@@ -39,7 +40,7 @@ public class EditarProductosMYSQL extends Conexion implements MediadorBaseDatos 
             Class.forName("com.mysql.jdbc.Driver");
             Connection connection= DriverManager.getConnection(Url,Usuario,Contra);
             Statement st = connection.createStatement();
-            st.executeUpdate("UPDATE Producto SET codigo='"+Codigo+"',nombre='"+Nombre+"',cantidad="+Cantidad+",TipoC='"+TipoC+"',CosteP="+CosteP+",precio="+Precio+" WHERE codigo='"+CodigoP+"'");
+            st.executeUpdate("UPDATE Producto SET codigo='"+Codigo+"',nombre='"+Nombre+"',cantidad="+Cantidad+",TipoC='"+TipoC+"',CosteP="+CosteP+",precio="+Precio+",Iva="+Iva+" WHERE codigo='"+CodigoP+"'");
             return "";
         }catch (Exception e){
             return "Error al guardar los datos del producto en la Base de Datos";

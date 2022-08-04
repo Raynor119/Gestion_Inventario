@@ -34,7 +34,7 @@ import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.Verific
 public class AgregarProductos extends AppCompatActivity {
 
     public AutoCompleteTextView spinner;
-    public EditText Codigo,Nombre,Cantidad,Costop,Precio;
+    public EditText Codigo,Nombre,Cantidad,Costop,Precio,Iva;
     public Button Button;
     public TextInputLayout CCodigo,TipoC;
     public CardView Escaner;
@@ -53,6 +53,7 @@ public class AgregarProductos extends AppCompatActivity {
         Cantidad=(EditText)findViewById(R.id.cantidad);
         Costop=(EditText)findViewById(R.id.CosteP);
         Precio=(EditText)findViewById(R.id.Precio);
+        Iva=(EditText)findViewById(R.id.Iva);
         Button=(Button)findViewById(R.id.ButtonG);
         String [] tipoC={"Unitario(U)","Peso(Kg)"};
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, R.layout.tipocantidad,tipoC);
@@ -141,6 +142,10 @@ public class AgregarProductos extends AppCompatActivity {
                     Precio.setError("Digite el Precio del Producto");
                     verificacion[0] =false;
                 }
+                if(Iva.getText().toString().equals("")){
+                    Iva.setError("Digite la Tasa de IVA(%)");
+                    verificacion[0] =false;
+                }
                 if(Codigo.getText().toString().equals("")){
                     Codigo.setError("Digite el Codigo del Producto");
                     verificacion[0] =false;
@@ -160,7 +165,8 @@ public class AgregarProductos extends AppCompatActivity {
                                         AgregarProductosViewModel agregar= ViewModelProviders.of(AgregarProductos.this).get(AgregarProductosViewModel.class);
                                         agregar.reset();
                                         double cantidad=Double.parseDouble(Cantidad.getText().toString()+"");
-                                        agregar.GuardarProducto(Codigo.getText().toString(),Nombre.getText().toString(),cantidad,spinner.getText().toString(),Costop.getText().toString(),Precio.getText().toString(),AgregarProductos.this);
+                                        int iva=Integer.parseInt(Iva.getText().toString());
+                                        agregar.GuardarProducto(Codigo.getText().toString(),Nombre.getText().toString(),cantidad,spinner.getText().toString(),Costop.getText().toString(),Precio.getText().toString(),iva,AgregarProductos.this);
                                         Observer<Boolean> observer1= new Observer<Boolean>() {
                                             @Override
                                             public void onChanged(Boolean aBoolean) {

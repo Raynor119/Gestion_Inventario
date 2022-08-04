@@ -19,10 +19,10 @@ public class AgregarProductosSQLite  extends BaseDatosSQLite implements Mediador
     private Context Context;
     private String Codigo,Nombre,TipoC;
     private double Cantidad;
-    private int CosteP,Precio;
+    private int CosteP,Precio,Iva;
     private AgregarProductosViewModel ViewModel;
 
-    public AgregarProductosSQLite(Context context,String codigo, String nombre, double cantidad,String tipoC, int costeP, int precio,AgregarProductosViewModel viewModel) {
+    public AgregarProductosSQLite(Context context,String codigo, String nombre, double cantidad,String tipoC, int costeP, int precio,int iva,AgregarProductosViewModel viewModel) {
         super(context);
         this.Context=context;
         this.Codigo=codigo;
@@ -31,6 +31,7 @@ public class AgregarProductosSQLite  extends BaseDatosSQLite implements Mediador
         this.TipoC=tipoC;
         this.CosteP=costeP;
         this.Precio=precio;
+        this.Iva=iva;
         this.ViewModel=viewModel;
         ConsultaBaseDatos();
     }
@@ -41,7 +42,7 @@ public class AgregarProductosSQLite  extends BaseDatosSQLite implements Mediador
         if(bd!=null)
         {
             try {
-                bd.execSQL("INSERT INTO Producto VALUES('"+Codigo+"','"+Nombre+"',"+Cantidad+",'"+TipoC+"',"+CosteP+","+Precio+")");
+                bd.execSQL("INSERT INTO Producto VALUES('"+Codigo+"','"+Nombre+"',"+Cantidad+",'"+TipoC+"',"+CosteP+","+Precio+","+Iva+")");
             }catch (Exception e){
                 Toast.makeText(Context, "Error al guardar los datos del producto en la Base de Datos", Toast.LENGTH_LONG).show();
                 verificar=false;

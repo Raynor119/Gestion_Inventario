@@ -25,7 +25,7 @@ public class AgregarProductosViewModel extends ViewModel {
     public LiveData<Boolean> getResultado(){
         return resultado;
     }
-    public void GuardarProducto(String codigo, String nombre, double cantidad, String tipoC, String costeP, String precio, Context context){
+    public void GuardarProducto(String codigo, String nombre, double cantidad, String tipoC, String costeP, String precio,int iva, Context context){
         consultasDatos dinici=new consultasDatos(context);
         ConvertirModenaINT convertir=new ConvertirModenaINT();
         String TipoC="";
@@ -37,10 +37,10 @@ public class AgregarProductosViewModel extends ViewModel {
         }
         MediadorBaseDatos BD;
         if(dinici.obtenerD().get(0).getBasedatos().equals("SQLITE")){
-            BD = new AgregarProductosSQLite(context,codigo,nombre,cantidad,TipoC,convertir.Convertir(costeP),convertir.Convertir(precio),AgregarProductosViewModel.this);
+            BD = new AgregarProductosSQLite(context,codigo,nombre,cantidad,TipoC,convertir.Convertir(costeP),convertir.Convertir(precio),iva,AgregarProductosViewModel.this);
         }
         if(dinici.obtenerD().get(0).getBasedatos().equals("MYSQL")){
-            BD = new AgregarProductosMYSQL(context,codigo,nombre,cantidad,TipoC,convertir.Convertir(costeP),convertir.Convertir(precio),AgregarProductosViewModel.this);
+            BD = new AgregarProductosMYSQL(context,codigo,nombre,cantidad,TipoC,convertir.Convertir(costeP),convertir.Convertir(precio),iva,AgregarProductosViewModel.this);
         }
     }
 }

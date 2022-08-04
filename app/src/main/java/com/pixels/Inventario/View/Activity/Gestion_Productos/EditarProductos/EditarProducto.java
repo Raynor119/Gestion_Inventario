@@ -37,7 +37,7 @@ import java.util.List;
 public class EditarProducto extends AppCompatActivity {
     public AutoCompleteTextView spinner;
     public TextView Titulo;
-    public EditText Codigo,Nombre,Cantidad,Costop,Precio;
+    public EditText Codigo,Nombre,Cantidad,Costop,Precio,Iva;
     public android.widget.Button Button;
     public TextInputLayout CCodigo,TipoC;
     public CardView Escaner;
@@ -49,6 +49,7 @@ public class EditarProducto extends AppCompatActivity {
     private String TipoCG="";
     private String CostePG="";
     private String PrecioG="";
+    private String IvaG="";
 
 
     @Override
@@ -66,6 +67,7 @@ public class EditarProducto extends AppCompatActivity {
         Cantidad=(EditText)findViewById(R.id.cantidad);
         Costop=(EditText)findViewById(R.id.CosteP);
         Precio=(EditText)findViewById(R.id.Precio);
+        Iva=(EditText)findViewById(R.id.Iva);
         Button=(Button)findViewById(R.id.ButtonG);
         Titulo.setText("Editar Producto");
         Codigo.setText(""+codigo);
@@ -154,6 +156,10 @@ public class EditarProducto extends AppCompatActivity {
                     Precio.setError("Digite el Precio del Producto");
                     verificacion[0] =false;
                 }
+                if(Iva.getText().toString().equals("")){
+                    Iva.setError("Digite la Tasa de IVA(%)");
+                    verificacion[0] =false;
+                }
                 if(Codigo.getText().toString().equals("")){
                     Codigo.setError("Digite el Codigo del Producto");
                     verificacion[0] =false;
@@ -170,12 +176,13 @@ public class EditarProducto extends AppCompatActivity {
                             public void onChanged(Boolean aBoolean) {
                                 if(aBoolean){
                                     if(verificacion[0]){
-                                        if(Codigo.getText().toString().equals(codigo) && Nombre.getText().toString().equals(nombreG) && Cantidad.getText().toString().equals(cantidadG) && spinner.getText().toString().equals(TipoCG) && Costop.getText().toString().equals(CostePG) && Precio.getText().toString().equals(PrecioG)){
+                                        if(Codigo.getText().toString().equals(codigo) && Nombre.getText().toString().equals(nombreG) && Cantidad.getText().toString().equals(cantidadG) && spinner.getText().toString().equals(TipoCG) && Costop.getText().toString().equals(CostePG) && Precio.getText().toString().equals(PrecioG) && Iva.getText().toString().equals(IvaG)){
                                             Toast.makeText(EditarProducto.this, "Tienes que modificar por lo menos un dato del producto", Toast.LENGTH_LONG).show();
                                         }else{
                                             EditarDatosViewModel Editar= ViewModelProviders.of(EditarProducto.this).get(EditarDatosViewModel.class);
                                             Editar.reset();
-                                            Editar.EditarProducto(EditarProducto.this,Codigo.getText().toString(),Nombre.getText().toString(),Cantidad.getText().toString(),spinner.getText().toString(),Costop.getText().toString(),Precio.getText().toString(),codigo);
+                                            int iva=Integer.parseInt(Iva.getText().toString()+"");
+                                            Editar.EditarProducto(EditarProducto.this,Codigo.getText().toString(),Nombre.getText().toString(),Cantidad.getText().toString(),spinner.getText().toString(),Costop.getText().toString(),Precio.getText().toString(),codigo,iva);
                                             Observer<Boolean> observer1=new Observer<Boolean>() {
                                                 @Override
                                                 public void onChanged(Boolean aBoolean) {
@@ -227,6 +234,7 @@ public class EditarProducto extends AppCompatActivity {
                 }
                 Costop.setText(""+productos.get(0).getCosteP());
                 Precio.setText(""+productos.get(0).getPrecio());
+                Iva.setText(""+productos.get(0).getIva());
                 String [] tipoC={"Unitario(U)","Peso(Kg)"};
                 ArrayAdapter<String> adapter=new ArrayAdapter<String>(EditarProducto.this, R.layout.tipocantidad,tipoC);
                 spinner.setAdapter(adapter);
@@ -234,6 +242,7 @@ public class EditarProducto extends AppCompatActivity {
                 TipoCG=spinner.getText().toString();
                 CostePG=Costop.getText().toString();
                 PrecioG=Precio.getText().toString();
+                IvaG=Iva.getText().toString();
 
             }
         };

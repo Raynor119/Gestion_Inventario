@@ -1868,6 +1868,7 @@ id CosteP
 id EditCodigo
 id Escaner
 id FUNCTION
+id Iva
 id META
 id NO_DEBUG
 id Nit

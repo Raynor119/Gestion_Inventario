@@ -23,11 +23,11 @@ public class AgregarProductosMYSQL  extends Conexion implements MediadorBaseDato
 
     private String Codigo,Nombre,TipoC;
     private double Cantidad;
-    private int CosteP,Precio;
+    private int CosteP,Precio,Iva;
     private AgregarProductosViewModel ViewModel;
     private boolean verficar;
 
-    public AgregarProductosMYSQL(Context context,String codigo, String nombre, double cantidad,String tipoC, int costeP, int precio,AgregarProductosViewModel viewModel) {
+    public AgregarProductosMYSQL(Context context,String codigo, String nombre, double cantidad,String tipoC, int costeP, int precio,int iva,AgregarProductosViewModel viewModel) {
         super(context);
         this.Codigo=codigo;
         this.Nombre=nombre;
@@ -35,6 +35,7 @@ public class AgregarProductosMYSQL  extends Conexion implements MediadorBaseDato
         this.TipoC=tipoC;
         this.CosteP=costeP;
         this.Precio=precio;
+        this.Iva=iva;
         this.ViewModel=viewModel;
         this.verficar=true;
         execute("");
@@ -45,7 +46,7 @@ public class AgregarProductosMYSQL  extends Conexion implements MediadorBaseDato
             Class.forName("com.mysql.jdbc.Driver");
             Connection connection= DriverManager.getConnection(Url,Usuario,Contra);
             Statement st = connection.createStatement();
-            st.executeUpdate("INSERT INTO Producto VALUES('"+Codigo+"','"+Nombre+"',"+Cantidad+",'"+TipoC+"',"+CosteP+","+Precio+")");
+            st.executeUpdate("INSERT INTO Producto VALUES('"+Codigo+"','"+Nombre+"',"+Cantidad+",'"+TipoC+"',"+CosteP+","+Precio+","+Iva+")");
             return "";
         }catch (Exception e){
             return "Error al guardar los datos del producto en la Base de Datos";

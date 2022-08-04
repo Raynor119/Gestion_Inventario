@@ -216,11 +216,30 @@
                                     android:inputType="numberDecimal" />
                             </com.google.android.material.textfield.TextInputLayout>
                         </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginRight="17dp"
+                                android:layout_height="wrap_content">
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Tasa de IVA(%)"
+                                    app:endIconMode="clear_text">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/Iva"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:inputType="number" />
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
                             <Button
                                 android:id="@+id/ButtonG"
                                 android:layout_width="210dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="100dp"
+                                android:layout_marginTop="35dp"
                                 android:padding="20dp"
                                 android:text="Guardar Producto"
                                 android:textColor="#FFFFFF" />

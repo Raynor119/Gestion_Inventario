@@ -57,6 +57,7 @@ public class ProductosRecyclerViewAdapter extends RecyclerView.Adapter<Productos
         NumberFormat formato= NumberFormat.getNumberInstance();
         holder.costo.setText("$ "+formato.format(Productos.get(position).getCosteP()));
         holder.precio.setText("$ "+formato.format(Productos.get(position).getPrecio()));
+        holder.iva.setText(Productos.get(position).getIva()+"%");
         holder.opciones.setVisibility(ConstraintLayout.GONE);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -98,7 +99,7 @@ public class ProductosRecyclerViewAdapter extends RecyclerView.Adapter<Productos
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
-        final TextView codigo,nombre,cantidad,unidad,costo,precio;
+        final TextView codigo,nombre,cantidad,unidad,costo,precio,iva;
         final LinearLayout opciones;
         final CardView eliminar,editar;
         ViewHolder(View view) {
@@ -112,6 +113,7 @@ public class ProductosRecyclerViewAdapter extends RecyclerView.Adapter<Productos
             opciones= (LinearLayout) view.findViewById(R.id.opciones);
             eliminar= (CardView) view.findViewById(R.id.eliminar);
             editar= (CardView) view.findViewById(R.id.editar);
+            iva=(TextView) view.findViewById(R.id.iva);
         }
     }
 

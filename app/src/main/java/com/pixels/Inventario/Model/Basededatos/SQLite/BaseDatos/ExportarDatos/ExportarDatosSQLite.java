@@ -37,7 +37,7 @@ public class ExportarDatosSQLite extends AsyncTask<String, Void , String> {
             ConexionSQLiteExportacionDatos exportacion=new ConexionSQLiteExportacionDatos(Context);
             List<Producto> productos=exportacion.exportarDatosProductos();
             for(int i=0;i<productos.size();i++){
-                st.executeUpdate("INSERT INTO Producto VALUES('"+productos.get(i).getCodigo()+"','"+productos.get(i).getNombre()+"',"+productos.get(i).getCantidad()+",'"+productos.get(i).getTipoC()+"',"+productos.get(i).getCosteP()+","+productos.get(i).getPrecio()+")");
+                st.executeUpdate("INSERT INTO Producto VALUES('"+productos.get(i).getCodigo()+"','"+productos.get(i).getNombre()+"',"+productos.get(i).getCantidad()+",'"+productos.get(i).getTipoC()+"',"+productos.get(i).getCosteP()+","+productos.get(i).getPrecio()+","+productos.get(i).getIva()+")");
             }
             List<Venta> ventas=exportacion.exportarDatosVentas();
             for(int i=0;i<ventas.size();i++){
@@ -47,15 +47,15 @@ public class ExportarDatosSQLite extends AsyncTask<String, Void , String> {
             for(int i=0;i<ventasProductos.size();i++){
                 if(ventasProductos.get(i).getCodigoP()==null){
                     if(ventasProductos.get(i).getObservacionD()==null){
-                        st.executeUpdate("INSERT INTO VentasProductos VALUES("+ventasProductos.get(i).getId()+","+ventasProductos.get(i).getCodigoV()+",NULL,"+ventasProductos.get(i).getCantidadV()+","+ventasProductos.get(i).getCostePV()+","+ventasProductos.get(i).getPrecioPV()+",'"+ventasProductos.get(i).getEstadoDevolucion()+"',NULL)");
+                        st.executeUpdate("INSERT INTO VentasProductos VALUES("+ventasProductos.get(i).getId()+","+ventasProductos.get(i).getCodigoV()+",NULL,"+ventasProductos.get(i).getCantidadV()+","+ventasProductos.get(i).getCostePV()+","+ventasProductos.get(i).getPrecioPV()+","+ventasProductos.get(i).getIva()+",'"+ventasProductos.get(i).getEstadoDevolucion()+"',NULL)");
                     }else{
-                        st.executeUpdate("INSERT INTO VentasProductos VALUES("+ventasProductos.get(i).getId()+","+ventasProductos.get(i).getCodigoV()+",NULL,"+ventasProductos.get(i).getCantidadV()+","+ventasProductos.get(i).getCostePV()+","+ventasProductos.get(i).getPrecioPV()+",'"+ventasProductos.get(i).getEstadoDevolucion()+"','"+ventasProductos.get(i).getObservacionD()+"')");
+                        st.executeUpdate("INSERT INTO VentasProductos VALUES("+ventasProductos.get(i).getId()+","+ventasProductos.get(i).getCodigoV()+",NULL,"+ventasProductos.get(i).getCantidadV()+","+ventasProductos.get(i).getCostePV()+","+ventasProductos.get(i).getPrecioPV()+","+ventasProductos.get(i).getIva()+",'"+ventasProductos.get(i).getEstadoDevolucion()+"','"+ventasProductos.get(i).getObservacionD()+"')");
                     }
                 }else{
                     if(ventasProductos.get(i).getObservacionD()==null){
-                        st.executeUpdate("INSERT INTO VentasProductos VALUES("+ventasProductos.get(i).getId()+","+ventasProductos.get(i).getCodigoV()+",'"+ventasProductos.get(i).getCodigoP()+"',"+ventasProductos.get(i).getCantidadV()+","+ventasProductos.get(i).getCostePV()+","+ventasProductos.get(i).getPrecioPV()+",'"+ventasProductos.get(i).getEstadoDevolucion()+"',NULL)");
+                        st.executeUpdate("INSERT INTO VentasProductos VALUES("+ventasProductos.get(i).getId()+","+ventasProductos.get(i).getCodigoV()+",'"+ventasProductos.get(i).getCodigoP()+"',"+ventasProductos.get(i).getCantidadV()+","+ventasProductos.get(i).getCostePV()+","+ventasProductos.get(i).getPrecioPV()+","+ventasProductos.get(i).getIva()+",'"+ventasProductos.get(i).getEstadoDevolucion()+"',NULL)");
                     }else{
-                        st.executeUpdate("INSERT INTO VentasProductos VALUES("+ventasProductos.get(i).getId()+","+ventasProductos.get(i).getCodigoV()+",'"+ventasProductos.get(i).getCodigoP()+"',"+ventasProductos.get(i).getCantidadV()+","+ventasProductos.get(i).getCostePV()+","+ventasProductos.get(i).getPrecioPV()+",'"+ventasProductos.get(i).getEstadoDevolucion()+"','"+ventasProductos.get(i).getObservacionD()+"')");
+                        st.executeUpdate("INSERT INTO VentasProductos VALUES("+ventasProductos.get(i).getId()+","+ventasProductos.get(i).getCodigoV()+",'"+ventasProductos.get(i).getCodigoP()+"',"+ventasProductos.get(i).getCantidadV()+","+ventasProductos.get(i).getCostePV()+","+ventasProductos.get(i).getPrecioPV()+","+ventasProductos.get(i).getIva()+",'"+ventasProductos.get(i).getEstadoDevolucion()+"','"+ventasProductos.get(i).getObservacionD()+"')");
                     }
                 }
             }

@@ -36,7 +36,7 @@ public class VerProductosMYSQL extends Conexion implements MediadorBaseDatos {
             ResultSet rs = st.executeQuery("SELECT * FROM Producto");
             productos=new ArrayList<>();
             while (rs.next()) {
-                productos.add(new Producto(rs.getString(1),rs.getString(2),rs.getDouble(3),rs.getString(4),rs.getInt(5),rs.getInt(6)));
+                productos.add(new Producto(rs.getString(1),rs.getString(2),rs.getDouble(3),rs.getString(4),rs.getInt(5),rs.getInt(6),rs.getInt(7)));
             }
             return "";
         }catch (Exception e){

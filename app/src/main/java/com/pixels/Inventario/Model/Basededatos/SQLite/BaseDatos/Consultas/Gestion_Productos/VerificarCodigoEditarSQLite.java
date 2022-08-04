@@ -35,7 +35,7 @@ public class VerificarCodigoEditarSQLite extends BaseDatosSQLite implements Medi
         Cursor cursor=bd.rawQuery("SELECT * FROM Producto",null);
         if(cursor.moveToFirst()){
             do{
-                datos.add(new Producto(cursor.getString(0),cursor.getString(1),cursor.getDouble(2),cursor.getString(3),cursor.getInt(4),cursor.getInt(5)));
+                datos.add(new Producto(cursor.getString(0),cursor.getString(1),cursor.getDouble(2),cursor.getString(3),cursor.getInt(4),cursor.getInt(5),cursor.getInt(6)));
             }while(cursor.moveToNext());
         }
         return datos;

@@ -1,11 +1,11 @@
 package com.pixels.Inventario.Model.DatosE;
 
 public class VentasProductos {
-    private int Id,CodigoV,CostePV,PrecioPV;
+    private int Id,CodigoV,CostePV,PrecioPV,Iva;
     private String CodigoP,EstadoDevolucion,ObservacionD;
     private double CantidadV;
 
-    public VentasProductos(int id,int codigoV,String codigoP, double cantidadV,int costePV,int precioPV,String estadoDevolucion,String observacionD) {
+    public VentasProductos(int id,int codigoV,String codigoP, double cantidadV,int costePV,int precioPV,int iva,String estadoDevolucion,String observacionD) {
         this.Id=id;
         this.CodigoV = codigoV;
         this.CantidadV = cantidadV;
@@ -14,6 +14,7 @@ public class VentasProductos {
         this.PrecioPV=precioPV;
         this.EstadoDevolucion=estadoDevolucion;
         this.ObservacionD=observacionD;
+        this.Iva=iva;
     }
 
     public int getId() {
@@ -46,6 +47,14 @@ public class VentasProductos {
 
     public void setPrecioPV(int precioPV) {
         PrecioPV = precioPV;
+    }
+
+    public int getIva() {
+        return Iva;
+    }
+
+    public void setIva(int iva) {
+        Iva = iva;
     }
 
     public String getCodigoP() {

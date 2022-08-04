@@ -24,7 +24,7 @@ public class ConexionSQLiteImportacionDatos extends BaseDatosSQLite {
         {
             for(int i=0;i< productos.size();i++){
                 try {
-                    bd.execSQL("INSERT INTO Producto VALUES('"+productos.get(i).getCodigo()+"','"+productos.get(i).getNombre()+"',"+productos.get(i).getCantidad()+",'"+productos.get(i).getTipoC()+"',"+productos.get(i).getCosteP()+","+productos.get(i).getPrecio()+")");
+                    bd.execSQL("INSERT INTO Producto VALUES('"+productos.get(i).getCodigo()+"','"+productos.get(i).getNombre()+"',"+productos.get(i).getCantidad()+",'"+productos.get(i).getTipoC()+"',"+productos.get(i).getCosteP()+","+productos.get(i).getPrecio()+","+productos.get(i).getIva()+")");
                 }catch (Exception e){
                     Toast.makeText(Context, "Error al Importar los Datos de los Productos \n", Toast.LENGTH_LONG).show();
                 }
@@ -54,15 +54,15 @@ public class ConexionSQLiteImportacionDatos extends BaseDatosSQLite {
                 try {
                     if(VentasProductos.get(i).getCodigoP()==null){
                         if(VentasProductos.get(i).getObservacionD()==null){
-                            bd.execSQL("INSERT INTO VentasProductos VALUES("+VentasProductos.get(i).getId()+","+VentasProductos.get(i).getCodigoV()+",NULL,"+VentasProductos.get(i).getCantidadV()+","+VentasProductos.get(i).getCostePV()+","+VentasProductos.get(i).getPrecioPV()+",'"+VentasProductos.get(i).getEstadoDevolucion()+"',NULL)");
+                            bd.execSQL("INSERT INTO VentasProductos VALUES("+VentasProductos.get(i).getId()+","+VentasProductos.get(i).getCodigoV()+",NULL,"+VentasProductos.get(i).getCantidadV()+","+VentasProductos.get(i).getCostePV()+","+VentasProductos.get(i).getPrecioPV()+","+VentasProductos.get(i).getIva()+",'"+VentasProductos.get(i).getEstadoDevolucion()+"',NULL)");
                         }else{
-                            bd.execSQL("INSERT INTO VentasProductos VALUES("+VentasProductos.get(i).getId()+","+VentasProductos.get(i).getCodigoV()+",NULL,"+VentasProductos.get(i).getCantidadV()+","+VentasProductos.get(i).getCostePV()+","+VentasProductos.get(i).getPrecioPV()+",'"+VentasProductos.get(i).getEstadoDevolucion()+"','"+VentasProductos.get(i).getObservacionD()+"')");
+                            bd.execSQL("INSERT INTO VentasProductos VALUES("+VentasProductos.get(i).getId()+","+VentasProductos.get(i).getCodigoV()+",NULL,"+VentasProductos.get(i).getCantidadV()+","+VentasProductos.get(i).getCostePV()+","+VentasProductos.get(i).getPrecioPV()+","+VentasProductos.get(i).getIva()+",'"+VentasProductos.get(i).getEstadoDevolucion()+"','"+VentasProductos.get(i).getObservacionD()+"')");
                         }
                     }else{
                         if(VentasProductos.get(i).getObservacionD()==null){
-                            bd.execSQL("INSERT INTO VentasProductos VALUES("+VentasProductos.get(i).getId()+","+VentasProductos.get(i).getCodigoV()+",'"+VentasProductos.get(i).getCodigoP()+"',"+VentasProductos.get(i).getCantidadV()+","+VentasProductos.get(i).getCostePV()+","+VentasProductos.get(i).getPrecioPV()+",'"+VentasProductos.get(i).getEstadoDevolucion()+"',NULL)");
+                            bd.execSQL("INSERT INTO VentasProductos VALUES("+VentasProductos.get(i).getId()+","+VentasProductos.get(i).getCodigoV()+",'"+VentasProductos.get(i).getCodigoP()+"',"+VentasProductos.get(i).getCantidadV()+","+VentasProductos.get(i).getCostePV()+","+VentasProductos.get(i).getPrecioPV()+","+VentasProductos.get(i).getIva()+",'"+VentasProductos.get(i).getEstadoDevolucion()+"',NULL)");
                         }else{
-                            bd.execSQL("INSERT INTO VentasProductos VALUES("+VentasProductos.get(i).getId()+","+VentasProductos.get(i).getCodigoV()+",'"+VentasProductos.get(i).getCodigoP()+"',"+VentasProductos.get(i).getCantidadV()+","+VentasProductos.get(i).getCostePV()+","+VentasProductos.get(i).getPrecioPV()+",'"+VentasProductos.get(i).getEstadoDevolucion()+"','"+VentasProductos.get(i).getObservacionD()+"')");
+                            bd.execSQL("INSERT INTO VentasProductos VALUES("+VentasProductos.get(i).getId()+","+VentasProductos.get(i).getCodigoV()+",'"+VentasProductos.get(i).getCodigoP()+"',"+VentasProductos.get(i).getCantidadV()+","+VentasProductos.get(i).getCostePV()+","+VentasProductos.get(i).getPrecioPV()+","+VentasProductos.get(i).getIva()+",'"+VentasProductos.get(i).getEstadoDevolucion()+"','"+VentasProductos.get(i).getObservacionD()+"')");
                         }
                     }
                 }catch (Exception e){
