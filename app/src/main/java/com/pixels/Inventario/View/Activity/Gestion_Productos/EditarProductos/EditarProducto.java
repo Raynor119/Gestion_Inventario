@@ -33,6 +33,7 @@ import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.Verific
 
 
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 public class EditarProducto extends AppCompatActivity {
     public AutoCompleteTextView spinner;
@@ -100,8 +101,8 @@ public class EditarProducto extends AppCompatActivity {
                         (keyCode == KeyEvent.KEYCODE_ENTER)) {
                     if(Codigo.getText().toString().equals("")){
                         CCodigo.setError("Digite el Codigo del Producto");
-                        CCodigo.setFocusableInTouchMode(true);
-                        CCodigo.requestFocus();
+                        Codigo.setFocusableInTouchMode(true);
+                        Codigo.requestFocus();
                     }else{
                         VerificarCodigoEditarViewModel verificar= ViewModelProviders.of(EditarProducto.this).get(VerificarCodigoEditarViewModel.class);
                         verificar.reset();
@@ -113,8 +114,8 @@ public class EditarProducto extends AppCompatActivity {
 
                                 }else {
                                     CCodigo.setError("Error el codigo ya esta registrado en la base de datos");
-                                    CCodigo.setFocusableInTouchMode(true);
-                                    CCodigo.requestFocus();
+                                    Codigo.setFocusableInTouchMode(true);
+                                    Codigo.requestFocus();
                                 }
                             }
                         };
@@ -198,8 +199,8 @@ public class EditarProducto extends AppCompatActivity {
                                     }
                                 }else {
                                     CCodigo.setError("Error el codigo ya esta registrado en la base de datos");
-                                    CCodigo.setFocusableInTouchMode(true);
-                                    CCodigo.requestFocus();
+                                    Codigo.setFocusableInTouchMode(true);
+                                    Codigo.requestFocus();
                                     verificacion[0] =false;
                                 }
                             }
@@ -234,7 +235,13 @@ public class EditarProducto extends AppCompatActivity {
                 }
                 Costop.setText(""+productos.get(0).getCosteP());
                 Precio.setText(""+productos.get(0).getPrecio());
-                Iva.setText(""+productos.get(0).getIva());
+                Iva=(EditText)findViewById(R.id.Iva);
+                try{
+                    Iva.setText(""+productos.get(0).getIva());
+                }catch (Exception e){
+
+                }
+
                 String [] tipoC={"Unitario(U)","Peso(Kg)"};
                 ArrayAdapter<String> adapter=new ArrayAdapter<String>(EditarProducto.this, R.layout.tipocantidad,tipoC);
                 spinner.setAdapter(adapter);
@@ -242,8 +249,7 @@ public class EditarProducto extends AppCompatActivity {
                 TipoCG=spinner.getText().toString();
                 CostePG=Costop.getText().toString();
                 PrecioG=Precio.getText().toString();
-                IvaG=Iva.getText().toString();
-
+                IvaG=productos.get(0).getIva()+"";
             }
         };
         datosproducto.getResultado().observe(EditarProducto.this,observer);
@@ -265,8 +271,8 @@ public class EditarProducto extends AppCompatActivity {
 
                         }else {
                             CCodigo.setError("Error el codigo ya esta registrado en la base de datos");
-                            CCodigo.setFocusableInTouchMode(true);
-                            CCodigo.requestFocus();
+                            Codigo.setFocusableInTouchMode(true);
+                            Codigo.requestFocus();
                         }
                     }
                 };

@@ -20,6 +20,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
@@ -34,8 +35,9 @@ import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.Verific
 public class AgregarProductos extends AppCompatActivity {
 
     public AutoCompleteTextView spinner;
-    public EditText Codigo,Nombre,Cantidad,Costop,Precio,Iva;
+    public EditText Nombre,Cantidad,Costop,Precio,Iva;
     public Button Button;
+    public TextInputEditText Codigo;
     public TextInputLayout CCodigo,TipoC;
     public CardView Escaner;
     public static VerInventarioFragment verproductos;
@@ -47,7 +49,7 @@ public class AgregarProductos extends AppCompatActivity {
         spinner=(AutoCompleteTextView) findViewById(R.id.spinner_dropdown);
         Escaner=(CardView) findViewById(R.id.Escaner);
         TipoC=(TextInputLayout)findViewById(R.id.spinner);
-        Codigo=(EditText)findViewById(R.id.codigo);
+        Codigo=(TextInputEditText)findViewById(R.id.codigo);
         CCodigo=(TextInputLayout) findViewById(R.id.EditCodigo);
         Nombre=(EditText)findViewById(R.id.nombre) ;
         Cantidad=(EditText)findViewById(R.id.cantidad);
@@ -83,12 +85,12 @@ public class AgregarProductos extends AppCompatActivity {
         Codigo.setOnKeyListener(new View.OnKeyListener() {
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 // si presiona enter
-                if ((event.getAction() == KeyEvent.ACTION_DOWN) &&
-                        (keyCode == KeyEvent.KEYCODE_ENTER)) {
+                if (((event.getAction() == KeyEvent.ACTION_DOWN) &&
+                        (keyCode == KeyEvent.KEYCODE_ENTER)) || (keyCode == KeyEvent.KEYCODE_ENTER)) {
                     if(Codigo.getText().toString().equals("")){
                         CCodigo.setError("Digite el Codigo del Producto");
-                        CCodigo.setFocusableInTouchMode(true);
-                        CCodigo.requestFocus();
+                        Codigo.setFocusableInTouchMode(true);
+                        Codigo.requestFocus();
                     }else{
                         VerificarCodigoViewModel verificar= ViewModelProviders.of(AgregarProductos.this).get(VerificarCodigoViewModel.class);
                         verificar.reset();
@@ -97,11 +99,11 @@ public class AgregarProductos extends AppCompatActivity {
                             @Override
                             public void onChanged(Boolean aBoolean) {
                                 if(aBoolean){
-
+                                    Codigo.clearFocus();
                                 }else {
                                     CCodigo.setError("Error el codigo ya esta registrado en la base de datos");
-                                    CCodigo.setFocusableInTouchMode(true);
-                                    CCodigo.requestFocus();
+                                    Codigo.setFocusableInTouchMode(true);
+                                    Codigo.requestFocus();
                                 }
                             }
                         };
@@ -185,8 +187,8 @@ public class AgregarProductos extends AppCompatActivity {
                                     }
                                 }else {
                                     CCodigo.setError("Error el codigo ya esta registrado en la base de datos");
-                                    CCodigo.setFocusableInTouchMode(true);
-                                    CCodigo.requestFocus();
+                                    Codigo.setFocusableInTouchMode(true);
+                                    Codigo.requestFocus();
                                     verificacion[0] =false;
                                 }
                             }
@@ -216,8 +218,8 @@ public class AgregarProductos extends AppCompatActivity {
 
                         }else {
                             CCodigo.setError("Error el codigo ya esta registrado en la base de datos");
-                            CCodigo.setFocusableInTouchMode(true);
-                            CCodigo.requestFocus();
+                            Codigo.setFocusableInTouchMode(true);
+                            Codigo.requestFocus();
                         }
                     }
                 };
@@ -225,6 +227,8 @@ public class AgregarProductos extends AppCompatActivity {
             }else{
                 CCodigo.setError("Error al escanear el código de barras");
                 Codigo.setText("");
+                Codigo.setFocusableInTouchMode(true);
+                Codigo.requestFocus();
             }
     }
 }

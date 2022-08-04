@@ -80,12 +80,10 @@
                                 android:layout_marginRight="50dp"
                                 android:id="@+id/EditCodigo"
                                 android:layout_height="wrap_content"
-                                android:singleLine="true"
                                 android:hint="Codigo del Producto"
                                 app:endIconMode="clear_text">
                                 <com.google.android.material.textfield.TextInputEditText
                                     android:id="@+id/codigo"
-                                    android:singleLine="true"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:inputType="text" />
