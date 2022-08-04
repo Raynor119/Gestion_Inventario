@@ -62,6 +62,7 @@ public class ImportarDatos extends AppCompatActivity {
                             if(aBoolean){
                                 ImportarDatosViewModel importar= ViewModelProviders.of(ImportarDatos.this).get(ImportarDatosViewModel.class);
                                 importar.importarDatos(ip.getText().toString(),Nbasedatos.getText().toString(),username.getText().toString(),password.getText().toString(),ImportarDatos.this);
+                                Toast.makeText(ImportarDatos.this, "Se Importo los datos Exitosamente", Toast.LENGTH_LONG).show();
                                 finish();
                             }else{
                                 ip.setError("No se puede conectar a La Base Datos");

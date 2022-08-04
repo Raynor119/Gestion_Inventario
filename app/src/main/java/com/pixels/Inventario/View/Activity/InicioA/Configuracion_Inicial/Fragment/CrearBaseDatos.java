@@ -50,6 +50,13 @@ public class CrearBaseDatos extends Fragment {
                 if(Nbasedatos.getText().toString().equals("")){
                     Nbasedatos.setError("Digite el Nombre de la Base de datos");
                     verificar=false;
+                }else{
+                    for(int i=0;i<Nbasedatos.getText().toString().length();i++){
+                        if((""+Nbasedatos.getText().toString().charAt(i)).equals(" ")){
+                            Nbasedatos.setError("El Nombre de la Base de datos no puede tener espacios");
+                            verificar=false;
+                        }
+                    }
                 }
                 if (username.getText().toString().equals("")) {
                     username.setError("Digite el Usuario de la Base de datos");
