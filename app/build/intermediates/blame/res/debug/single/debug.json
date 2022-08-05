@@ -28,24 +28,24 @@
         "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\f4b8d3cf6d52b7c97b7366689d2a7314\\res\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
-        "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\f4b8d3cf6d52b7c97b7366689d2a7314\\res\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
-    },
-    {
         "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_icon_group.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\5b7b2791c4c2f4bbe2e04b9d37c1c77c\\res\\layout-v21\\notification_template_icon_group.xml"
     },
     {
-        "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tooltip_frame_light.xml.flat",
-        "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\f4b8d3cf6d52b7c97b7366689d2a7314\\res\\drawable\\tooltip_frame_light.xml"
+        "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
+        "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\f4b8d3cf6d52b7c97b7366689d2a7314\\res\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
+    },
+    {
+        "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_alert_dialog_actions.xml.flat",
+        "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\0e371a18df9b4005d8622373386a955f\\res\\layout\\mtrl_alert_dialog_actions.xml"
     },
     {
         "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\color_material_on_surface_emphasis_medium.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\0e371a18df9b4005d8622373386a955f\\res\\color\\material_on_surface_emphasis_medium.xml"
     },
     {
-        "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_alert_dialog_actions.xml.flat",
-        "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\0e371a18df9b4005d8622373386a955f\\res\\layout\\mtrl_alert_dialog_actions.xml"
+        "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tooltip_frame_light.xml.flat",
+        "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\f4b8d3cf6d52b7c97b7366689d2a7314\\res\\drawable\\tooltip_frame_light.xml"
     },
     {
         "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mtrl_chip_checked_black.xml.flat",
@@ -64,12 +64,12 @@
         "source": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\src\\main\\res\\layout\\activity_menuinicio.xml"
     },
     {
-        "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\f4b8d3cf6d52b7c97b7366689d2a7314\\res\\drawable-mdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_voice_search_api_material.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\f4b8d3cf6d52b7c97b7366689d2a7314\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\f4b8d3cf6d52b7c97b7366689d2a7314\\res\\drawable-mdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_checkbox.xml.flat",
@@ -650,6 +650,10 @@
     {
         "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_keyboard_black_24dp.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\0e371a18df9b4005d8622373386a955f\\res\\drawable\\ic_keyboard_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_mas.png.flat",
+        "source": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\src\\main\\res\\mipmap-xhdpi\\mas.png"
     },
     {
         "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -1384,6 +1388,10 @@
         "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\25ffa2fd68d26f3814c6252482bd2517\\res\\layout\\notification_template_big_media_narrow_custom.xml"
     },
     {
+        "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_menos_adaptive_fore.png.flat",
+        "source": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\src\\main\\res\\mipmap-xhdpi\\menos_adaptive_fore.png"
+    },
+    {
         "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\layout_tipocantidad.xml.flat",
         "source": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\src\\main\\res\\layout\\tipocantidad.xml"
     },
@@ -2044,6 +2052,10 @@
         "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\f4b8d3cf6d52b7c97b7366689d2a7314\\res\\drawable\\btn_checkbox_unchecked_to_checked_mtrl_animation.xml"
     },
     {
+        "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\layout_producto_caja.xml.flat",
+        "source": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\src\\main\\res\\layout\\producto_caja.xml"
+    },
+    {
         "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\anim_btn_radio_to_off_mtrl_ring_outer_animation.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\f4b8d3cf6d52b7c97b7366689d2a7314\\res\\anim\\btn_radio_to_off_mtrl_ring_outer_animation.xml"
     },
@@ -2252,6 +2264,10 @@
         "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\f4b8d3cf6d52b7c97b7366689d2a7314\\res\\drawable-xxhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
     {
+        "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\layout_alertpedircantidad.xml.flat",
+        "source": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\src\\main\\res\\layout\\alertpedircantidad.xml"
+    },
+    {
         "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\f4b8d3cf6d52b7c97b7366689d2a7314\\res\\drawable-xxhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
@@ -2426,6 +2442,10 @@
     {
         "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_choice_chip_ripple_color.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\0e371a18df9b4005d8622373386a955f\\res\\color\\mtrl_choice_chip_ripple_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_mas_adaptive_back.png.flat",
+        "source": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\src\\main\\res\\mipmap-xhdpi\\mas_adaptive_back.png"
     },
     {
         "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -2696,6 +2716,10 @@
         "source": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\src\\main\\res\\mipmap-xhdpi\\eliminar.png"
     },
     {
+        "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_menos_adaptive_back.png.flat",
+        "source": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\src\\main\\res\\mipmap-xhdpi\\menos_adaptive_back.png"
+    },
+    {
         "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_dialog_background.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\0e371a18df9b4005d8622373386a955f\\res\\drawable\\mtrl_dialog_background.xml"
     },
@@ -2862,6 +2886,10 @@
     {
         "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-2\\files-2.1\\f4b8d3cf6d52b7c97b7366689d2a7314\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_menos.png.flat",
+        "source": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\src\\main\\res\\mipmap-xhdpi\\menos.png"
     },
     {
         "merged": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\res\\merged\\debug\\layout_preference_dropdown_material.xml.flat",

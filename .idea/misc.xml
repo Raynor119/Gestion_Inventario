@@ -8,7 +8,7 @@
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w600dp/fragment_inventario_productos.xml" value="0.309375" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_agregar_productos.xml" value="0.21" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_ajustes.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_caja.xml" value="0.2354515050167224" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_caja.xml" value="0.32592592592592595" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_cambiar_my_sql.xml" value="0.22" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_config_contra.xml" value="0.23783783783783785" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_configuracion_i.xml" value="0.36666666666666664" />
@@ -16,7 +16,7 @@
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_exportar_datos.xml" value="0.25" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_importar_datos.xml" value="0.25" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_inicio.xml" value="0.25" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_inventario_productos.xml" value="0.22" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_inventario_productos.xml" value="0.33" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_menuinicio.xml" value="0.2354515050167224" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_opcion_detail.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/ajustes_list_content.xml" value="0.23783783783783785" />
@@ -24,6 +24,7 @@
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/alertdialogcontra.xml" value="0.23783783783783785" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/alertdialogonitnombre.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/alertiva.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/alertpedircantidad.xml" value="0.325" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/fragment_agsinarcontrasena.xml" value="0.22" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/fragment_crear_base_datos.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/fragment_inicio_blanco.xml" value="0.23783783783783785" />
@@ -32,6 +33,7 @@
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/fragment_registrar_base_datos.xml" value="0.2354515050167224" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/opcion_list.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/opcion_list_content.xml" value="0.25" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/producto_caja.xml" value="0.5" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/producto_detail_container.xml" value="0.5" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/tipocantidad.xml" value="0.36666666666666664" />
       </map>

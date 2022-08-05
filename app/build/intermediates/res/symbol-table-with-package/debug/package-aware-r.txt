@@ -1418,6 +1418,7 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
+dimen distanciaopciones
 dimen fab_margin
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
@@ -1689,6 +1690,7 @@ dimen subtitle_corner_radius
 dimen subtitle_outline_width
 dimen subtitle_shadow_offset
 dimen subtitle_shadow_radius
+dimen tamano_de_texto
 dimen test_mtrl_calendar_day_cornerSize
 dimen test_navigation_bar_active_item_max_width
 dimen test_navigation_bar_active_item_min_width
@@ -1881,6 +1883,7 @@ id SHOW_ALL
 id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
+id SubTotal
 id TOP_END
 id TOP_START
 id Total
@@ -1967,6 +1970,7 @@ id buttonPanel
 id cancel_action
 id cancel_button
 id cantidad
+id cantidadmod
 id center
 id centerCrop
 id center_horizontal
@@ -2102,6 +2106,7 @@ id line3
 id linear
 id listMode
 id list_item
+id mas
 id masked
 id material_clock_display
 id material_clock_face
@@ -2123,6 +2128,7 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id media_actions
+id menos
 id message
 id middle
 id mini
@@ -2191,6 +2197,7 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id peso
 id pin
 id position
 id postLayout
@@ -2270,6 +2277,7 @@ id submenuarrow
 id submit_area
 id switchWidget
 id tabMode
+id table
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -2437,6 +2445,7 @@ layout alertcambiobasedatos
 layout alertdialogcontra
 layout alertdialogonitnombre
 layout alertiva
+layout alertpedircantidad
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2537,6 +2546,7 @@ layout preference_widget_seekbar
 layout preference_widget_seekbar_material
 layout preference_widget_switch
 layout preference_widget_switch_compat
+layout producto_caja
 layout producto_detail_container
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
@@ -2585,7 +2595,12 @@ mipmap list_products_adaptive_fore
 mipmap lupa
 mipmap lupa_adaptive_back
 mipmap lupa_adaptive_fore
+mipmap mas
+mipmap mas_adaptive_back
 mipmap mas_adaptive_fore
+mipmap menos
+mipmap menos_adaptive_back
+mipmap menos_adaptive_fore
 mipmap productos
 mipmap productos_adaptive_back
 mipmap productos_adaptive_fore

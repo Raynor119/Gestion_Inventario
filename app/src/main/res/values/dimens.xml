@@ -11,4 +11,6 @@
     <dimen name="agregar_margin_cantidad">180dp</dimen>
     <dimen name="agregar_margin_spinner">170dp</dimen>
     <dimen name="agregar_margin_espacio">105dp</dimen>
+    <dimen name="tamano_de_texto">11sp</dimen>
+    <dimen name="distanciaopciones">40dp</dimen>
 </resources>
