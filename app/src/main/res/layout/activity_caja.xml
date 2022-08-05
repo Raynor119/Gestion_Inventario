@@ -289,7 +289,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="19dp"
-                                android:layout_marginTop="15dp"
+                                android:layout_marginTop="25dp"
                                 android:layout_marginRight="19dp"
                                 android:orientation="horizontal">
 
@@ -317,7 +317,7 @@
                                 android:id="@+id/ButtonG"
                                 android:layout_width="190dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="15dp"
+                                android:layout_marginTop="35dp"
                                 android:padding="20dp"
                                 android:text="Realizar Venta"
                                 android:textColor="#FFFFFF" />

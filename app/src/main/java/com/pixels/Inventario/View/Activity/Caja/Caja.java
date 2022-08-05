@@ -10,6 +10,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
@@ -24,12 +25,14 @@ import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.Te
 import com.pixels.Inventario.ViewModel.Caja.VerificarCodigo.VerificarCodigoCajaViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.VerificarCodigoViewModel;
 
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Caja extends AppCompatActivity {
     public TextInputEditText Codigo;
     public TextInputLayout CCodigo;
+    public TextView impretotal,Total;
     public Button Button;
     public RecyclerView tableproductos;
     public List<Producto> Productos=new ArrayList<>();;
@@ -41,6 +44,8 @@ public class Caja extends AppCompatActivity {
         setContentView(R.layout.activity_caja);
         Codigo=(TextInputEditText)findViewById(R.id.codigo);
         CCodigo=(TextInputLayout) findViewById(R.id.EditCodigo);
+        impretotal=(TextView) findViewById(R.id.impretotal);
+        Total=(TextView)findViewById(R.id.Total);
         Button=(Button)findViewById(R.id.ButtonG);
         tableproductos=(RecyclerView)findViewById(R.id.opcion_list);
         Codigo.setFocusableInTouchMode(true);
@@ -134,13 +139,24 @@ public class Caja extends AppCompatActivity {
         Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                if(Productos.size()==0){
+                    CCodigo.setError("Registre al menos un producto para realizar la Venta");
+                }
             }
         });
     }
     public void iniciarRecyclerView(){
         tableproductos.setAdapter(null);
         tableproductos.setAdapter(new productoVRecyclerViewAdapter(Caja.this));
+        int total=0;
+        for(int b=0;b<Productos.size();b++){
+            int suptotal=(int)(Productos.get(b).getPrecio()*Productos.get(b).getCantidad());
+            total=total+suptotal;
+        }
+        NumberFormat formato= NumberFormat.getNumberInstance();
+        impretotal.setText("Total: ");
+        Total.setText("$ "+formato.format(total));
+
     }
 
 }

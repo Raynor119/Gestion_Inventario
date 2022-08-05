@@ -16,6 +16,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.pixels.Inventario.R;
+import com.pixels.Inventario.View.Activity.Caja.AlertDialog.alertpeso;
 import com.pixels.Inventario.View.Activity.Caja.Caja;
 
 import java.text.NumberFormat;
@@ -49,8 +50,8 @@ public class productoVRecyclerViewAdapter extends RecyclerView.Adapter<productoV
         }
         NumberFormat formato= NumberFormat.getNumberInstance();
         holder.precio.setText("$ "+formato.format(activity.Productos.get(position).getPrecio()));
-
-        holder.Subtotal.setText("$ "+formato.format(activity.Productos.get(position).getPrecio()));
+        int suptotal=(int)(activity.Productos.get(position).getPrecio()*activity.Productos.get(position).getCantidad());
+        holder.Subtotal.setText("$ "+formato.format(suptotal));
         holder.opciones.setVisibility(ConstraintLayout.GONE);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,13 +73,59 @@ public class productoVRecyclerViewAdapter extends RecyclerView.Adapter<productoV
         holder.mas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(activity, "mas", Toast.LENGTH_LONG).show();
+                if(activity.Productos.get(poscion).getTipoC().equals("peso")){
+                    alertpeso pedir=new alertpeso(activity,activity.Productos,activity.Productos.get(poscion).getCantidad(),false,poscion);
+                    pedir.pedircantidad();
+                }
+                if(activity.Productos.get(poscion).getTipoC().equals("unitario")){
+                    int canti=Integer.parseInt(holder.cantidad.getText().toString());
+                    canti=canti+1;
+                    double cantidouble=(double) canti;
+                    activity.Productos.get(poscion).setCantidad(cantidouble);
+                    holder.cantidad.setText(""+canti);
+                    holder.cantidadmod.setText(""+canti);
+                    int suptotal=(int)(activity.Productos.get(poscion).getPrecio()*activity.Productos.get(poscion).getCantidad());
+                    holder.Subtotal.setText("$ "+formato.format(suptotal));
+                    int total=0;
+                    for(int b=0;b<activity.Productos.size();b++){
+                        int supptotal=(int)(activity.Productos.get(b).getPrecio()*activity.Productos.get(b).getCantidad());
+                        total=total+supptotal;
+                    }
+                    NumberFormat formato= NumberFormat.getNumberInstance();
+                    activity.impretotal.setText("Total: ");
+                    activity.Total.setText("$ "+formato.format(total));
+                }
             }
         });
         holder.menos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(activity, "menos", Toast.LENGTH_LONG).show();
+                if(activity.Productos.get(poscion).getTipoC().equals("peso")){
+                    alertpeso pedir=new alertpeso(activity,activity.Productos,activity.Productos.get(poscion).getCantidad(),false,poscion);
+                    pedir.pedircantidad();
+                }
+                if(activity.Productos.get(poscion).getTipoC().equals("unitario")){
+                    int canti=Integer.parseInt(holder.cantidad.getText().toString());
+                    if(canti==1){
+
+                    }else{
+                        canti=canti-1;
+                    }
+                    double cantidouble=(double) canti;
+                    activity.Productos.get(poscion).setCantidad(cantidouble);
+                    holder.cantidad.setText(""+canti);
+                    holder.cantidadmod.setText(""+canti);
+                    int suptotal=(int)(activity.Productos.get(poscion).getPrecio()*activity.Productos.get(poscion).getCantidad());
+                    holder.Subtotal.setText("$ "+formato.format(suptotal));
+                    int total=0;
+                    for(int b=0;b<activity.Productos.size();b++){
+                        int supptotal=(int)(activity.Productos.get(b).getPrecio()*activity.Productos.get(b).getCantidad());
+                        total=total+supptotal;
+                    }
+                    NumberFormat formato= NumberFormat.getNumberInstance();
+                    activity.impretotal.setText("Total: ");
+                    activity.Total.setText("$ "+formato.format(total));
+                }
             }
         });
         holder.eliminar.setOnClickListener(new View.OnClickListener() {
