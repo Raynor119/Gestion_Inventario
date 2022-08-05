@@ -76,6 +76,7 @@ public class Caja extends AppCompatActivity {
 
                                 }else{
                                     vercodigo[0] =false;
+                                    Codigo.setText("");
                                     CCodigo.setError("El Codigo del Producto no esta Registrado en la Base de Datos");
                                     Codigo.setFocusableInTouchMode(true);
                                     Codigo.requestFocus();

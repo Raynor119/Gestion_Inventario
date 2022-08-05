@@ -1,0 +1,11 @@
+#Internal package file, do not edit.
+#Fri Aug 05 04:27:29 COT 2022
+0.base=C\:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+0.path=classes.dex
+1.baseType=DIRECTORY
+count=2
+1.path=classes.dex
+0.baseType=DIRECTORY
+1.set=DEX
+1.base=C\:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.set=DEX

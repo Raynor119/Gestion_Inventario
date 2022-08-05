@@ -5,26 +5,50 @@
     android:orientation="vertical"
     android:gravity="center"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout
-        android:layout_marginTop="20dp"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="45dp"
-        android:layout_marginLeft="45dp">
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content">
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Cantidad Kg"
+            android:layout_height="55dp"
+            android:layout_marginRight="@dimen/agregar_margin_cantidad"
+            android:hint="Cantidad"
             app:endIconMode="clear_text">
-
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/peso"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal" />
+
         </com.google.android.material.textfield.TextInputLayout>
-    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/spinner"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="@dimen/agregar_margin_spinner"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dp"
+                android:hint="Tipo Cantidad">
+                <!-- Google themselves instruct us to use the deprecated editable attribute -->
+                <AutoCompleteTextView
+                    android:id="@+id/spinner_dropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
 
     <Button
         android:id="@+id/ButtonG"
