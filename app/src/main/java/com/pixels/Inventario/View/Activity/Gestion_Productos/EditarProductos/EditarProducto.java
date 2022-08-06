@@ -32,6 +32,8 @@ import com.pixels.Inventario.ViewModel.Gestion_Productos.EditarProducto.VerDatos
 import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.VerificarCodigoEditarViewModel;
 
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
@@ -73,18 +75,89 @@ public class EditarProducto extends AppCompatActivity {
         Titulo.setText("Editar Producto");
         Codigo.setText(""+codigo);
         Cantidad.setEnabled(false);
+        final boolean[] verificarspinnerU = {true};
+        final boolean[] verificarspinnerK = {true};
+        final boolean[] verificarspinnerg = {true};
+        final boolean[] verifi = {true};
         spinner.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if(spinner.getText().toString().equals("Unitario(U)")){
-                    Cantidad.setEnabled(true);
-                    Cantidad.setInputType(InputType.TYPE_CLASS_NUMBER);
-                    Cantidad.setText("");
+                    if(verificarspinnerU[0]){
+                        Cantidad.setEnabled(true);
+                        Cantidad.setInputType(InputType.TYPE_CLASS_NUMBER);
+                        Cantidad.setText("");
+                        verificarspinnerU[0] =false;
+                        verificarspinnerK[0] =true;
+                        verificarspinnerg[0] = true;
+                        verifi[0] =false;
+                    }
                 }
                 if(spinner.getText().toString().equals("Peso(Kg)")){
-                    Cantidad.setEnabled(true);
-                    Cantidad.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
-                    Cantidad.setText("");
+                    if(verificarspinnerK[0]){
+                        if(verifi[0]){
+                            if(Cantidad.getText().toString().equals("")){
+                                Cantidad.setEnabled(true);
+                                Cantidad.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
+                                Cantidad.setText("");
+                                verificarspinnerK[0] =false;
+                                verificarspinnerU[0] =true;
+                                verificarspinnerg[0] = true;
+                                verifi[0] =true;
+                            }else{
+                                double conversion=Double.parseDouble(Cantidad.getText().toString());
+                                double canntidadconvertida=conversion*(0.001);
+                                BigDecimal bd = new BigDecimal(canntidadconvertida);
+                                bd = bd.setScale(3, RoundingMode.HALF_UP);
+                                Cantidad.setText(""+bd.doubleValue());
+                                verificarspinnerK[0] =false;
+                                verificarspinnerU[0] =true;
+                                verificarspinnerg[0] = true;
+                                verifi[0] =true;
+                            }
+                        }else{
+                            Cantidad.setEnabled(true);
+                            Cantidad.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
+                            Cantidad.setText("");
+                            verificarspinnerK[0] =false;
+                            verificarspinnerU[0] =true;
+                            verificarspinnerg[0] = true;
+                            verifi[0] =true;
+                        }
+                    }
+                }
+                if(spinner.getText().toString().equals("Peso(g)")){
+                    if(verificarspinnerg[0]){
+                        if(verifi[0]){
+                            if(Cantidad.getText().toString().equals("")){
+                                Cantidad.setEnabled(true);
+                                Cantidad.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
+                                Cantidad.setText("");
+                                verificarspinnerg[0] =false;
+                                verificarspinnerU[0] =true;
+                                verificarspinnerK[0] =true;
+                                verifi[0] =true;
+                            }else{
+                                double conversion=Double.parseDouble(Cantidad.getText().toString());
+                                double canntidadconvertida=conversion*(1000);
+                                BigDecimal bd = new BigDecimal(canntidadconvertida);
+                                bd = bd.setScale(3, RoundingMode.HALF_UP);
+                                Cantidad.setText(""+bd.doubleValue());
+                                verificarspinnerg[0] =false;
+                                verificarspinnerU[0] =true;
+                                verificarspinnerK[0] =true;
+                                verifi[0] =true;
+                            }
+                        }else{
+                            Cantidad.setEnabled(true);
+                            Cantidad.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
+                            Cantidad.setText("");
+                            verificarspinnerg[0] =false;
+                            verificarspinnerU[0] =true;
+                            verificarspinnerK[0] =true;
+                            verifi[0] =true;
+                        }
+                    }
                 }
                 TipoC.setErrorEnabled(false);
             }
@@ -242,7 +315,7 @@ public class EditarProducto extends AppCompatActivity {
 
                 }
 
-                String [] tipoC={"Unitario(U)","Peso(Kg)"};
+                String [] tipoC={"Unitario(U)","Peso(Kg)","Peso(g)"};
                 ArrayAdapter<String> adapter=new ArrayAdapter<String>(EditarProducto.this, R.layout.tipocantidad,tipoC);
                 spinner.setAdapter(adapter);
                 nombreG=productos.get(0).getNombre();

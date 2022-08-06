@@ -12,6 +12,9 @@ import com.pixels.Inventario.Model.Basededatos.SQLite.BaseDatos.Consultas.Gestio
 import com.pixels.Inventario.Model.Basededatos.SQLite.DatosInicio.consultasDatos;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.AgregarProductos.ConvertirModenaINT;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 
 public class EditarDatosViewModel extends ViewModel {
     public MutableLiveData<Boolean> resultado;
@@ -35,7 +38,16 @@ public class EditarDatosViewModel extends ViewModel {
         if(spinner.equals("Peso(Kg)")){
             TipoC="peso";
         }
+        if(spinner.equals("Peso(g)")){
+            TipoC="peso";
+        }
         double Cantidad=Double.parseDouble(cantidad);
+        if(spinner.equals("Peso(g)")){
+            Cantidad=Cantidad*(0.001);
+        }
+        BigDecimal bd = new BigDecimal(Cantidad);
+        bd = bd.setScale(3, RoundingMode.HALF_UP);
+        Cantidad=bd.doubleValue();
         if(dinici.obtenerD().get(0).getBasedatos().equals("SQLITE")){
             BD= new EditarProductosSQLite(context,codigo,nombre,Cantidad,TipoC,convertir.Convertir(CosteP),convertir.Convertir(Precio),iva,CodigoP,EditarDatosViewModel.this);
         }

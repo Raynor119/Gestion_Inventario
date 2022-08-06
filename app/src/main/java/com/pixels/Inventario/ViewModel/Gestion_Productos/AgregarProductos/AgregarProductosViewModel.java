@@ -35,6 +35,9 @@ public class AgregarProductosViewModel extends ViewModel {
         if(tipoC.equals("Peso(Kg)")){
             TipoC="peso";
         }
+        if(tipoC.equals("Peso(g)")){
+            TipoC="peso";
+        }
         MediadorBaseDatos BD;
         if(dinici.obtenerD().get(0).getBasedatos().equals("SQLITE")){
             BD = new AgregarProductosSQLite(context,codigo,nombre,cantidad,TipoC,convertir.Convertir(costeP),convertir.Convertir(precio),iva,AgregarProductosViewModel.this);
