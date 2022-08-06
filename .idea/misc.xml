@@ -25,6 +25,7 @@
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/alertdialogonitnombre.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/alertiva.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/alertpedircantidad.xml" value="0.325" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/alertverproductos.xml" value="0.30085470085470084" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/fragment_agsinarcontrasena.xml" value="0.22" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/fragment_crear_base_datos.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/fragment_inicio_blanco.xml" value="0.23783783783783785" />
@@ -35,6 +36,7 @@
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/opcion_list_content.xml" value="0.25" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/producto_caja.xml" value="0.5" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/producto_detail_container.xml" value="0.5" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/producto_ver.xml" value="0.365625" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/tipocantidad.xml" value="0.36666666666666664" />
       </map>
     </option>

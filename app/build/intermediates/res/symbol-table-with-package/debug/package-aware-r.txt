@@ -2446,6 +2446,7 @@ layout alertdialogcontra
 layout alertdialogonitnombre
 layout alertiva
 layout alertpedircantidad
+layout alertverproductos
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2548,6 +2549,7 @@ layout preference_widget_switch
 layout preference_widget_switch_compat
 layout producto_caja
 layout producto_detail_container
+layout producto_ver
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

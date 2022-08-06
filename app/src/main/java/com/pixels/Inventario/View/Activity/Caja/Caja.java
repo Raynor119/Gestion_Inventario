@@ -22,6 +22,7 @@ import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.R;
+import com.pixels.Inventario.View.Activity.Caja.AlertDialog.alertbuscar;
 import com.pixels.Inventario.View.Activity.Caja.AlertDialog.alertpeso;
 import com.pixels.Inventario.View.Activity.Caja.RecyclerViewAdaptador.productoVRecyclerViewAdapter;
 import com.pixels.Inventario.View.Activity.Caja.TextWatcher.TextCodigoCaja;
@@ -39,7 +40,7 @@ public class Caja extends AppCompatActivity {
     public TextInputLayout CCodigo;
     public TextView impretotal,Total;
     public Button Button;
-    public CardView Escaner;
+    public CardView Escaner,Buscar;
     public RecyclerView tableproductos;
     public List<Producto> Productos=new ArrayList<>();;
     public boolean verificarEnter=true;
@@ -49,6 +50,7 @@ public class Caja extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_caja);
         Escaner=(CardView) findViewById(R.id.Escaner);
+        Buscar=(CardView) findViewById(R.id.Buscar);
         Codigo=(TextInputEditText)findViewById(R.id.codigo);
         CCodigo=(TextInputLayout) findViewById(R.id.EditCodigo);
         impretotal=(TextView) findViewById(R.id.impretotal);
@@ -157,6 +159,13 @@ public class Caja extends AppCompatActivity {
             public void onClick(View view) {
                 i[0]=0;
                 new IntentIntegrator(Caja.this).initiateScan();
+            }
+        });
+        Buscar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                alertbuscar buscar=new alertbuscar(Caja.this);
+                buscar.buscarproductos();
             }
         });
     }
