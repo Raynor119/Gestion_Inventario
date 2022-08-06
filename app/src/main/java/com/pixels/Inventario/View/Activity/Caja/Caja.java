@@ -1,10 +1,13 @@
 package com.pixels.Inventario.View.Activity.Caja;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
@@ -15,6 +18,8 @@ import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
 import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Caja.AlertDialog.alertpeso;
@@ -34,6 +39,7 @@ public class Caja extends AppCompatActivity {
     public TextInputLayout CCodigo;
     public TextView impretotal,Total;
     public Button Button;
+    public CardView Escaner;
     public RecyclerView tableproductos;
     public List<Producto> Productos=new ArrayList<>();;
     public boolean verificarEnter=true;
@@ -42,6 +48,7 @@ public class Caja extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_caja);
+        Escaner=(CardView) findViewById(R.id.Escaner);
         Codigo=(TextInputEditText)findViewById(R.id.codigo);
         CCodigo=(TextInputLayout) findViewById(R.id.EditCodigo);
         impretotal=(TextView) findViewById(R.id.impretotal);
@@ -145,19 +152,110 @@ public class Caja extends AppCompatActivity {
                 }
             }
         });
+        Escaner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                i[0]=0;
+                new IntentIntegrator(Caja.this).initiateScan();
+            }
+        });
     }
     public void iniciarRecyclerView(){
         tableproductos.setAdapter(null);
-        tableproductos.setAdapter(new productoVRecyclerViewAdapter(Caja.this));
-        int total=0;
-        for(int b=0;b<Productos.size();b++){
-            int suptotal=(int)(Productos.get(b).getPrecio()*Productos.get(b).getCantidad());
-            total=total+suptotal;
+        if(Productos.size()==0){
+            impretotal.setText("");
+            Total.setText("");
+        }else{
+            tableproductos.setAdapter(new productoVRecyclerViewAdapter(Caja.this));
+            int total=0;
+            for(int b=0;b<Productos.size();b++){
+                int suptotal=(int)(Productos.get(b).getPrecio()*Productos.get(b).getCantidad());
+                total=total+suptotal;
+            }
+            NumberFormat formato= NumberFormat.getNumberInstance();
+            impretotal.setText("Total: ");
+            Total.setText("$ "+formato.format(total));
         }
-        NumberFormat formato= NumberFormat.getNumberInstance();
-        impretotal.setText("Total: ");
-        Total.setText("$ "+formato.format(total));
 
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
+        if(result != null)
+            if (result.getContents() != null){
+                Codigo.setText(result.getContents()+"");
+                VerificarCodigoCajaViewModel verificar= ViewModelProviders.of(Caja.this).get(VerificarCodigoCajaViewModel.class);
+                verificar.reset();
+                verificar.verificarCodigo(Codigo.getText().toString(),Caja.this);
+                final boolean[] vercodigo = {true};
+                Observer<Boolean> observer=new Observer<Boolean>() {
+                    @Override
+                    public void onChanged(Boolean aBoolean) {
+                        if(aBoolean){
+
+                        }else{
+                            vercodigo[0] =false;
+                            Codigo.setText("");
+                            CCodigo.setError("El Codigo del Producto no esta Registrado en la Base de Datos");
+                            Codigo.setFocusableInTouchMode(true);
+                            Codigo.requestFocus();
+                        }
+                    }
+                };
+                verificar.getResultado().observe(Caja.this,observer);
+                if(vercodigo[0]){
+                    Observer<List<Producto>> observer1 = new Observer<List<Producto>>() {
+                        @Override
+                        public void onChanged(List<Producto> productos) {
+                            if(i[0]==0){
+                                i[0]++;
+                                boolean productorepi=false;
+                                int posicion=0;
+                                for (int b=0;b<Productos.size();b++){
+                                    if(Productos.get(b).getCodigo().equals(productos.get(0).getCodigo())){
+                                        productorepi=true;
+                                        posicion=b;
+                                    }
+                                }
+
+                                if(productorepi){
+                                    if(productos.get(0).getTipoC().equals("peso")){
+                                        alertpeso pedir=new alertpeso(Caja.this,productos,Productos.get(posicion).getCantidad(),false,posicion);
+                                        pedir.pedircantidad();
+                                    }
+                                    if(productos.get(0).getTipoC().equals("unitario")){
+                                        double cantiR=Productos.get(posicion).getCantidad()+1;
+                                        int canti=(int) cantiR;
+                                        Productos.get(posicion).setCantidad(canti);
+                                    }
+                                }else{
+                                    if(productos.get(0).getTipoC().equals("peso")){
+                                        alertpeso pedir=new alertpeso(Caja.this,productos,0,true,0);
+                                        pedir.pedircantidad();
+                                    }
+                                    if(productos.get(0).getTipoC().equals("unitario")){
+                                        Productos.add(new Producto(productos.get(0).getCodigo(),productos.get(0).getNombre(),1,productos.get(0).getTipoC(),productos.get(0).getCosteP(),productos.get(0).getPrecio(),productos.get(0).getIva()));
+                                    }
+                                }
+                                iniciarRecyclerView();
+                                Codigo.setText("");
+                                verificarEnter=false;
+                                Codigo.setFocusableInTouchMode(true);
+                                Codigo.requestFocus();
+                            }else{
+                                i[0]=0;
+                            }
+                        }
+                    };
+                    verificar.getProductos().observe(Caja.this,observer1);
+                }
+            }else{
+                CCodigo.setError("Error al escanear el código de barras");
+                Codigo.setText("");
+                Codigo.setFocusableInTouchMode(true);
+                Codigo.requestFocus();
+            }
     }
 
 }

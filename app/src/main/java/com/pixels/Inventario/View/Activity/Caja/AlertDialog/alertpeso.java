@@ -44,7 +44,7 @@ public class alertpeso {
         final AutoCompleteTextView spinner=(AutoCompleteTextView) view.findViewById(R.id.spinner_dropdown);
         final TextInputLayout TipoC=(TextInputLayout) view.findViewById(R.id.spinner);
         cantidad.setText(""+Cantidad);
-        spinner.setText("Kilograms(Kg)");
+        spinner.setText("Kilogramos(Kg)");
         String [] tipoC={"Gramos(g)","Kilogramos(Kg)"};
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(Context, R.layout.tipocantidad,tipoC);
         spinner.setAdapter(adapter);
