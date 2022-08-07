@@ -10968,15 +10968,15 @@ public final class R {
      * @see #ActionBar_titleTextStyle
      */
     public static final int[] ActionBar={
-      0x7f03003e, 0x7f030045, 0x7f030046, 0x7f0300d5, 
-      0x7f0300d6, 0x7f0300d7, 0x7f0300d8, 0x7f0300d9, 
-      0x7f0300da, 0x7f030100, 0x7f030118, 0x7f030119, 
-      0x7f030133, 0x7f03018f, 0x7f030196, 0x7f03019c, 
-      0x7f03019d, 0x7f0301a0, 0x7f0301ac, 0x7f0301c0, 
-      0x7f03022f, 0x7f03027e, 0x7f0302b0, 0x7f0302c1, 
-      0x7f0302c2, 0x7f030317, 0x7f03031b, 0x7f03037c, 
-      0x7f030388
-    };
+        0x7f03003e, 0x7f030045, 0x7f030046, 0x7f0300d5, 
+        0x7f0300d6, 0x7f0300d7, 0x7f0300d8, 0x7f0300d9, 
+        0x7f0300da, 0x7f030100, 0x7f030118, 0x7f030119, 
+        0x7f030133, 0x7f03018f, 0x7f030196, 0x7f03019c, 
+        0x7f03019d, 0x7f0301a0, 0x7f0301ac, 0x7f0301c0, 
+        0x7f03022f, 0x7f03027e, 0x7f0302b0, 0x7f0302c1, 
+        0x7f0302c2, 0x7f030317, 0x7f03031b, 0x7f03037c, 
+        0x7f030388
+      };
     /**
      * <p>
      * @attr description
@@ -11400,8 +11400,8 @@ public final class R {
      * @see #ActionBarLayout_android_layout_gravity
      */
     public static final int[] ActionBarLayout={
-      0x010100b3
-    };
+        0x010100b3
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#layout_gravity}
      * attribute's value can be found in the {@link #ActionBarLayout} array.
@@ -11443,8 +11443,8 @@ public final class R {
      * @see #ActionMenuItemView_android_minWidth
      */
     public static final int[] ActionMenuItemView={
-      0x0101013f
-    };
+        0x0101013f
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#minWidth}
      * attribute's value can be found in the {@link #ActionMenuItemView} array.
@@ -11459,7 +11459,7 @@ public final class R {
      */
     public static final int ActionMenuItemView_android_minWidth=0;
     public static final int[] ActionMenuView={
-    };
+      };
     /**
      * Attributes that can be used with a ActionMode.
      * <p>Includes the following attributes:</p>
@@ -11482,9 +11482,9 @@ public final class R {
      * @see #ActionMode_titleTextStyle
      */
     public static final int[] ActionMode={
-      0x7f03003e, 0x7f030045, 0x7f0300b0, 0x7f03018f, 
-      0x7f03031b, 0x7f030388
-    };
+        0x7f03003e, 0x7f030045, 0x7f0300b0, 0x7f03018f, 
+        0x7f03031b, 0x7f030388
+      };
     /**
      * <p>
      * @attr description
@@ -11581,8 +11581,8 @@ public final class R {
      * @see #ActivityChooserView_initialActivityCount
      */
     public static final int[] ActivityChooserView={
-      0x7f03014b, 0x7f0301b2
-    };
+        0x7f03014b, 0x7f0301b2
+      };
     /**
      * <p>
      * @attr description
@@ -11637,9 +11637,9 @@ public final class R {
      * @see #AlertDialog_singleChoiceItemLayout
      */
     public static final int[] AlertDialog={
-      0x010100f2, 0x7f030074, 0x7f030075, 0x7f030224, 
-      0x7f030225, 0x7f03027a, 0x7f0302f2, 0x7f0302f4
-    };
+        0x010100f2, 0x7f030074, 0x7f030075, 0x7f030224, 
+        0x7f030225, 0x7f03027a, 0x7f0302f2, 0x7f0302f4
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#layout}
      * attribute's value can be found in the {@link #AlertDialog} array.
@@ -11757,9 +11757,9 @@ public final class R {
      * @see #AnimatedStateListDrawableCompat_android_exitFadeDuration
      */
     public static final int[] AnimatedStateListDrawableCompat={
-      0x0101011c, 0x01010194, 0x01010195, 0x01010196, 
-      0x0101030c, 0x0101030d
-    };
+        0x0101011c, 0x01010194, 0x01010195, 0x01010196, 
+        0x0101030c, 0x0101030d
+      };
     /**
      * <p>
      * @attr description
@@ -11848,8 +11848,8 @@ public final class R {
      * @see #AnimatedStateListDrawableItem_android_drawable
      */
     public static final int[] AnimatedStateListDrawableItem={
-      0x010100d0, 0x01010199
-    };
+        0x010100d0, 0x01010199
+      };
     /**
      * <p>
      * @attr description
@@ -11895,8 +11895,8 @@ public final class R {
      * @see #AnimatedStateListDrawableTransition_android_reversible
      */
     public static final int[] AnimatedStateListDrawableTransition={
-      0x01010199, 0x01010449, 0x0101044a, 0x0101044b
-    };
+        0x01010199, 0x01010449, 0x0101044a, 0x0101044b
+      };
     /**
      * <p>
      * @attr description
@@ -11975,9 +11975,9 @@ public final class R {
      * @see #AppBarLayout_statusBarForeground
      */
     public static final int[] AppBarLayout={
-      0x010100d4, 0x0101048f, 0x01010540, 0x7f030133, 
-      0x7f03014c, 0x7f03021a, 0x7f03021b, 0x7f030311
-    };
+        0x010100d4, 0x0101048f, 0x01010540, 0x7f030133, 
+        0x7f03014c, 0x7f03021a, 0x7f03021b, 0x7f030311
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#background}
      * attribute's value can be found in the {@link #AppBarLayout} array.
@@ -12105,8 +12105,8 @@ public final class R {
      */
     @Deprecated
     public static final int[] AppBarLayoutStates={
-      0x7f03030b, 0x7f03030c, 0x7f03030e, 0x7f03030f
-    };
+        0x7f03030b, 0x7f03030c, 0x7f03030e, 0x7f03030f
+      };
     /**
      * <p>
      * @attr description
@@ -12169,8 +12169,8 @@ public final class R {
      * @see #AppBarLayout_Layout_layout_scrollInterpolator
      */
     public static final int[] AppBarLayout_Layout={
-      0x7f030218, 0x7f030219
-    };
+        0x7f030218, 0x7f030219
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#layout_scrollFlags}
      * attribute's value can be found in the {@link #AppBarLayout_Layout} array.
@@ -12236,8 +12236,8 @@ public final class R {
      * @see #AppCompatImageView_tintMode
      */
     public static final int[] AppCompatImageView={
-      0x01010119, 0x7f030302, 0x7f03037a, 0x7f03037b
-    };
+        0x01010119, 0x7f030302, 0x7f03037a, 0x7f03037b
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#src}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
@@ -12324,8 +12324,8 @@ public final class R {
      * @see #AppCompatSeekBar_tickMarkTintMode
      */
     public static final int[] AppCompatSeekBar={
-      0x01010142, 0x7f030376, 0x7f030377, 0x7f030378
-    };
+        0x01010142, 0x7f030376, 0x7f030377, 0x7f030378
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#thumb}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
@@ -12414,9 +12414,9 @@ public final class R {
      * @see #AppCompatTextHelper_android_drawableEnd
      */
     public static final int[] AppCompatTextHelper={
-      0x01010034, 0x0101016d, 0x0101016e, 0x0101016f, 
-      0x01010170, 0x01010392, 0x01010393
-    };
+        0x01010034, 0x0101016d, 0x0101016e, 0x0101016f, 
+        0x01010170, 0x01010392, 0x01010393
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#textAppearance}
      * attribute's value can be found in the {@link #AppCompatTextHelper} array.
@@ -12575,13 +12575,13 @@ public final class R {
      * @see #AppCompatTextView_textLocale
      */
     public static final int[] AppCompatTextView={
-      0x01010034, 0x7f030038, 0x7f030039, 0x7f03003a, 
-      0x7f03003b, 0x7f03003c, 0x7f030121, 0x7f030122, 
-      0x7f030123, 0x7f030124, 0x7f030126, 0x7f030127, 
-      0x7f030128, 0x7f030129, 0x7f030164, 0x7f03017a, 
-      0x7f030183, 0x7f0301d8, 0x7f03021d, 0x7f03034a, 
-      0x7f030366
-    };
+        0x01010034, 0x7f030038, 0x7f030039, 0x7f03003a, 
+        0x7f03003b, 0x7f03003c, 0x7f030121, 0x7f030122, 
+        0x7f030123, 0x7f030124, 0x7f030126, 0x7f030127, 
+        0x7f030128, 0x7f030129, 0x7f030164, 0x7f03017a, 
+        0x7f030183, 0x7f0301d8, 0x7f03021d, 0x7f03034a, 
+        0x7f030366
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#textAppearance}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
@@ -13160,39 +13160,39 @@ public final class R {
      * @see #AppCompatTheme_windowNoTitle
      */
     public static final int[] AppCompatTheme={
-      0x01010057, 0x010100ae, 0x7f030000, 0x7f030001, 
-      0x7f030002, 0x7f030003, 0x7f030004, 0x7f030005, 
-      0x7f030006, 0x7f030007, 0x7f030008, 0x7f030009, 
-      0x7f03000a, 0x7f03000b, 0x7f03000c, 0x7f03000e, 
-      0x7f03000f, 0x7f030010, 0x7f030011, 0x7f030012, 
-      0x7f030013, 0x7f030014, 0x7f030015, 0x7f030016, 
-      0x7f030017, 0x7f030018, 0x7f030019, 0x7f03001a, 
-      0x7f03001b, 0x7f03001c, 0x7f03001d, 0x7f03001e, 
-      0x7f030022, 0x7f030024, 0x7f030025, 0x7f030026, 
-      0x7f030027, 0x7f030037, 0x7f03005c, 0x7f03006d, 
-      0x7f03006e, 0x7f03006f, 0x7f030070, 0x7f030071, 
-      0x7f030076, 0x7f030077, 0x7f030084, 0x7f03008d, 
-      0x7f0300b8, 0x7f0300b9, 0x7f0300ba, 0x7f0300bb, 
-      0x7f0300bc, 0x7f0300bd, 0x7f0300be, 0x7f0300c5, 
-      0x7f0300c6, 0x7f0300cc, 0x7f0300e4, 0x7f03010f, 
-      0x7f030114, 0x7f030115, 0x7f03011a, 0x7f03011c, 
-      0x7f03012b, 0x7f03012c, 0x7f03012f, 0x7f030130, 
-      0x7f030132, 0x7f03019c, 0x7f0301aa, 0x7f030220, 
-      0x7f030221, 0x7f030222, 0x7f030223, 0x7f030226, 
-      0x7f030227, 0x7f030228, 0x7f030229, 0x7f03022a, 
-      0x7f03022b, 0x7f03022c, 0x7f03022d, 0x7f03022e, 
-      0x7f030299, 0x7f03029a, 0x7f03029b, 0x7f0302af, 
-      0x7f0302b1, 0x7f0302c6, 0x7f0302c8, 0x7f0302c9, 
-      0x7f0302ca, 0x7f0302da, 0x7f0302dd, 0x7f0302df, 
-      0x7f0302e0, 0x7f0302ff, 0x7f030300, 0x7f030327, 
-      0x7f030355, 0x7f030357, 0x7f030358, 0x7f030359, 
-      0x7f03035b, 0x7f03035c, 0x7f03035d, 0x7f03035e, 
-      0x7f030361, 0x7f030362, 0x7f03038a, 0x7f03038b, 
-      0x7f03038c, 0x7f03038d, 0x7f0303ab, 0x7f0303b5, 
-      0x7f0303b6, 0x7f0303b7, 0x7f0303b8, 0x7f0303b9, 
-      0x7f0303ba, 0x7f0303bb, 0x7f0303bc, 0x7f0303bd, 
-      0x7f0303be
-    };
+        0x01010057, 0x010100ae, 0x7f030000, 0x7f030001, 
+        0x7f030002, 0x7f030003, 0x7f030004, 0x7f030005, 
+        0x7f030006, 0x7f030007, 0x7f030008, 0x7f030009, 
+        0x7f03000a, 0x7f03000b, 0x7f03000c, 0x7f03000e, 
+        0x7f03000f, 0x7f030010, 0x7f030011, 0x7f030012, 
+        0x7f030013, 0x7f030014, 0x7f030015, 0x7f030016, 
+        0x7f030017, 0x7f030018, 0x7f030019, 0x7f03001a, 
+        0x7f03001b, 0x7f03001c, 0x7f03001d, 0x7f03001e, 
+        0x7f030022, 0x7f030024, 0x7f030025, 0x7f030026, 
+        0x7f030027, 0x7f030037, 0x7f03005c, 0x7f03006d, 
+        0x7f03006e, 0x7f03006f, 0x7f030070, 0x7f030071, 
+        0x7f030076, 0x7f030077, 0x7f030084, 0x7f03008d, 
+        0x7f0300b8, 0x7f0300b9, 0x7f0300ba, 0x7f0300bb, 
+        0x7f0300bc, 0x7f0300bd, 0x7f0300be, 0x7f0300c5, 
+        0x7f0300c6, 0x7f0300cc, 0x7f0300e4, 0x7f03010f, 
+        0x7f030114, 0x7f030115, 0x7f03011a, 0x7f03011c, 
+        0x7f03012b, 0x7f03012c, 0x7f03012f, 0x7f030130, 
+        0x7f030132, 0x7f03019c, 0x7f0301aa, 0x7f030220, 
+        0x7f030221, 0x7f030222, 0x7f030223, 0x7f030226, 
+        0x7f030227, 0x7f030228, 0x7f030229, 0x7f03022a, 
+        0x7f03022b, 0x7f03022c, 0x7f03022d, 0x7f03022e, 
+        0x7f030299, 0x7f03029a, 0x7f03029b, 0x7f0302af, 
+        0x7f0302b1, 0x7f0302c6, 0x7f0302c8, 0x7f0302c9, 
+        0x7f0302ca, 0x7f0302da, 0x7f0302dd, 0x7f0302df, 
+        0x7f0302e0, 0x7f0302ff, 0x7f030300, 0x7f030327, 
+        0x7f030355, 0x7f030357, 0x7f030358, 0x7f030359, 
+        0x7f03035b, 0x7f03035c, 0x7f03035d, 0x7f03035e, 
+        0x7f030361, 0x7f030362, 0x7f03038a, 0x7f03038b, 
+        0x7f03038c, 0x7f03038d, 0x7f0303ab, 0x7f0303b5, 
+        0x7f0303b6, 0x7f0303b7, 0x7f0303b8, 0x7f0303b9, 
+        0x7f0303ba, 0x7f0303bb, 0x7f0303bc, 0x7f0303bd, 
+        0x7f0303be
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#windowIsFloating}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
@@ -14904,8 +14904,8 @@ public final class R {
      * @see #BackgroundStyle_selectableItemBackground
      */
     public static final int[] BackgroundStyle={
-      0x0101030e, 0x7f0302df
-    };
+        0x0101030e, 0x7f0302df
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#selectableItemBackground}
      * attribute's value can be found in the {@link #BackgroundStyle} array.
@@ -14955,9 +14955,9 @@ public final class R {
      * @see #Badge_verticalOffset
      */
     public static final int[] Badge={
-      0x7f03003f, 0x7f030049, 0x7f03004b, 0x7f03019e, 
-      0x7f030250, 0x7f030285, 0x7f0303aa
-    };
+        0x7f03003f, 0x7f030049, 0x7f03004b, 0x7f03019e, 
+        0x7f030250, 0x7f030285, 0x7f0303aa
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#backgroundColor}
      * attribute's value can be found in the {@link #Badge} array.
@@ -15074,10 +15074,10 @@ public final class R {
      * @see #BaseProgressIndicator_trackThickness
      */
     public static final int[] BaseProgressIndicator={
-      0x01010139, 0x7f030194, 0x7f0301ad, 0x7f03025b, 
-      0x7f0302ea, 0x7f0302ec, 0x7f030394, 0x7f030397, 
-      0x7f030399
-    };
+        0x01010139, 0x7f030194, 0x7f0301ad, 0x7f03025b, 
+        0x7f0302ea, 0x7f0302ec, 0x7f030394, 0x7f030397, 
+        0x7f030399
+      };
     /**
      * <p>
      * @attr description
@@ -15248,10 +15248,10 @@ public final class R {
      * @see #BottomAppBar_paddingRightSystemWindowInsets
      */
     public static final int[] BottomAppBar={
-      0x7f030047, 0x7f030133, 0x7f030158, 0x7f030159, 
-      0x7f03015a, 0x7f03015b, 0x7f03015c, 0x7f030197, 
-      0x7f030292, 0x7f030294, 0x7f030295
-    };
+        0x7f030047, 0x7f030133, 0x7f030158, 0x7f030159, 
+        0x7f03015a, 0x7f03015b, 0x7f03015c, 0x7f030197, 
+        0x7f030292, 0x7f030294, 0x7f030295
+      };
     /**
      * <p>
      * @attr description
@@ -15412,8 +15412,8 @@ public final class R {
      * @see #BottomNavigationView_itemHorizontalTranslationEnabled
      */
     public static final int[] BottomNavigationView={
-      0x7f0301bb
-    };
+        0x7f0301bb
+      };
     /**
      * <p>
      * @attr description
@@ -15473,12 +15473,12 @@ public final class R {
      * @see #BottomSheetBehavior_Layout_shapeAppearanceOverlay
      */
     public static final int[] BottomSheetBehavior_Layout={
-      0x0101011f, 0x01010440, 0x7f030047, 0x7f030052, 
-      0x7f030053, 0x7f030054, 0x7f030055, 0x7f030056, 
-      0x7f030058, 0x7f030059, 0x7f03005a, 0x7f03018a, 
-      0x7f030292, 0x7f030294, 0x7f030295, 0x7f030298, 
-      0x7f0302e3, 0x7f0302e6
-    };
+        0x0101011f, 0x01010440, 0x7f030047, 0x7f030052, 
+        0x7f030053, 0x7f030054, 0x7f030055, 0x7f030056, 
+        0x7f030058, 0x7f030059, 0x7f03005a, 0x7f03018a, 
+        0x7f030292, 0x7f030294, 0x7f030295, 0x7f030298, 
+        0x7f0302e3, 0x7f0302e6
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#maxWidth}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
@@ -15742,8 +15742,8 @@ public final class R {
      * @see #ButtonBarLayout_allowStacking
      */
     public static final int[] ButtonBarLayout={
-      0x7f03002b
-    };
+        0x7f03002b
+      };
     /**
      * <p>
      * @attr description
@@ -15771,8 +15771,8 @@ public final class R {
      * @see #Capability_shortcutMatchRequired
      */
     public static final int[] Capability={
-      0x7f0302c5, 0x7f0302e8
-    };
+        0x7f0302c5, 0x7f0302e8
+      };
     /**
      * <p>
      * @attr description
@@ -15834,11 +15834,11 @@ public final class R {
      * @see #CardView_contentPaddingTop
      */
     public static final int[] CardView={
-      0x0101013f, 0x01010140, 0x7f03007a, 0x7f03007b, 
-      0x7f03007c, 0x7f03007e, 0x7f03007f, 0x7f030080, 
-      0x7f0300db, 0x7f0300dc, 0x7f0300de, 0x7f0300df, 
-      0x7f0300e1
-    };
+        0x0101013f, 0x01010140, 0x7f03007a, 0x7f03007b, 
+        0x7f03007c, 0x7f03007e, 0x7f03007f, 0x7f030080, 
+        0x7f0300db, 0x7f0300dc, 0x7f0300de, 0x7f0300df, 
+        0x7f0300e1
+      };
     /**
      * <p>
      * @attr description
@@ -16037,9 +16037,9 @@ public final class R {
      * @see #CheckBoxPreference_summaryOn
      */
     public static final int[] CheckBoxPreference={
-      0x010101ef, 0x010101f0, 0x010101f1, 0x7f030117, 
-      0x7f030321, 0x7f030322
-    };
+        0x010101ef, 0x010101f0, 0x010101f1, 0x7f030117, 
+        0x7f030321, 0x7f030322
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#summaryOn}
      * attribute's value can be found in the {@link #CheckBoxPreference} array.
@@ -16203,18 +16203,18 @@ public final class R {
      * @see #Chip_textStartPadding
      */
     public static final int[] Chip={
-      0x01010034, 0x01010095, 0x01010098, 0x010100ab, 
-      0x0101011f, 0x0101014f, 0x010101e5, 0x7f030087, 
-      0x7f030088, 0x7f03008b, 0x7f03008c, 0x7f03008e, 
-      0x7f03008f, 0x7f030090, 0x7f030092, 0x7f030093, 
-      0x7f030094, 0x7f030095, 0x7f030096, 0x7f030097, 
-      0x7f030098, 0x7f03009d, 0x7f03009e, 0x7f03009f, 
-      0x7f0300a1, 0x7f0300a9, 0x7f0300aa, 0x7f0300ab, 
-      0x7f0300ac, 0x7f0300ad, 0x7f0300ae, 0x7f0300af, 
-      0x7f030141, 0x7f030195, 0x7f0301a1, 0x7f0301a6, 
-      0x7f0302d1, 0x7f0302e3, 0x7f0302e6, 0x7f0302ee, 
-      0x7f030363, 0x7f030367
-    };
+        0x01010034, 0x01010095, 0x01010098, 0x010100ab, 
+        0x0101011f, 0x0101014f, 0x010101e5, 0x7f030087, 
+        0x7f030088, 0x7f03008b, 0x7f03008c, 0x7f03008e, 
+        0x7f03008f, 0x7f030090, 0x7f030092, 0x7f030093, 
+        0x7f030094, 0x7f030095, 0x7f030096, 0x7f030097, 
+        0x7f030098, 0x7f03009d, 0x7f03009e, 0x7f03009f, 
+        0x7f0300a1, 0x7f0300a9, 0x7f0300aa, 0x7f0300ab, 
+        0x7f0300ac, 0x7f0300ad, 0x7f0300ae, 0x7f0300af, 
+        0x7f030141, 0x7f030195, 0x7f0301a1, 0x7f0301a6, 
+        0x7f0302d1, 0x7f0302e3, 0x7f0302e6, 0x7f0302ee, 
+        0x7f030363, 0x7f030367
+      };
     /**
      * <p>
      * @attr description
@@ -16791,9 +16791,9 @@ public final class R {
      * @see #ChipGroup_singleSelection
      */
     public static final int[] ChipGroup={
-      0x7f030086, 0x7f030099, 0x7f03009a, 0x7f03009b, 
-      0x7f0302e1, 0x7f0302f5, 0x7f0302f7
-    };
+        0x7f030086, 0x7f030099, 0x7f03009a, 0x7f03009b, 
+        0x7f0302e1, 0x7f0302f5, 0x7f0302f7
+      };
     /**
      * <p>
      * @attr description
@@ -16905,8 +16905,8 @@ public final class R {
      * @see #CircularProgressIndicator_indicatorSize
      */
     public static final int[] CircularProgressIndicator={
-      0x7f0301ae, 0x7f0301b0, 0x7f0301b1
-    };
+        0x7f0301ae, 0x7f0301b0, 0x7f0301b1
+      };
     /**
      * <p>
      * @attr description
@@ -16975,8 +16975,8 @@ public final class R {
      * @see #ClockFaceView_clockNumberTextColor
      */
     public static final int[] ClockFaceView={
-      0x7f0300a5, 0x7f0300a8
-    };
+        0x7f0300a5, 0x7f0300a8
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#clockFaceBackgroundColor}
      * attribute's value can be found in the {@link #ClockFaceView} array.
@@ -17015,8 +17015,8 @@ public final class R {
      * @see #ClockHandView_selectorSize
      */
     public static final int[] ClockHandView={
-      0x7f0300a6, 0x7f030248, 0x7f0302e2
-    };
+        0x7f0300a6, 0x7f030248, 0x7f0302e2
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#clockHandColor}
      * attribute's value can be found in the {@link #ClockHandView} array.
@@ -17112,12 +17112,12 @@ public final class R {
      * @see #CollapsingToolbarLayout_toolbarId
      */
     public static final int[] CollapsingToolbarLayout={
-      0x7f0300b4, 0x7f0300b5, 0x7f0300e2, 0x7f03014e, 
-      0x7f03014f, 0x7f030150, 0x7f030151, 0x7f030152, 
-      0x7f030153, 0x7f030154, 0x7f030157, 0x7f030185, 
-      0x7f030253, 0x7f0302d5, 0x7f0302d7, 0x7f030312, 
-      0x7f03037c, 0x7f03037e, 0x7f03037f, 0x7f030389
-    };
+        0x7f0300b4, 0x7f0300b5, 0x7f0300e2, 0x7f03014e, 
+        0x7f03014f, 0x7f030150, 0x7f030151, 0x7f030152, 
+        0x7f030153, 0x7f030154, 0x7f030157, 0x7f030185, 
+        0x7f030253, 0x7f0302d5, 0x7f0302d7, 0x7f030312, 
+        0x7f03037c, 0x7f03037e, 0x7f03037f, 0x7f030389
+      };
     /**
      * <p>
      * @attr description
@@ -17428,8 +17428,8 @@ public final class R {
      * @see #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier
      */
     public static final int[] CollapsingToolbarLayout_Layout={
-      0x7f0301e0, 0x7f0301e1
-    };
+        0x7f0301e0, 0x7f0301e1
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#layout_collapseMode}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
@@ -17480,9 +17480,9 @@ public final class R {
      * @see #ColorStateListItem_lStar
      */
     public static final int[] ColorStateListItem={
-      0x010101a5, 0x0101031f, 0x01010647, 0x7f03002c, 
-      0x7f0301d4
-    };
+        0x010101a5, 0x0101031f, 0x01010647, 0x7f03002c, 
+        0x7f0301d4
+      };
     /**
      * <p>
      * @attr description
@@ -17551,8 +17551,8 @@ public final class R {
      * @see #CompoundButton_buttonTintMode
      */
     public static final int[] CompoundButton={
-      0x01010107, 0x7f030072, 0x7f030078, 0x7f030079
-    };
+        0x01010107, 0x7f030072, 0x7f030078, 0x7f030079
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#button}
      * attribute's value can be found in the {@link #CompoundButton} array.
@@ -17845,35 +17845,35 @@ public final class R {
      * @see #Constraint_visibilityMode
      */
     public static final int[] Constraint={
-      0x010100c4, 0x010100d0, 0x010100dc, 0x010100f4, 
-      0x010100f5, 0x010100f7, 0x010100f8, 0x010100f9, 
-      0x010100fa, 0x0101011f, 0x01010120, 0x0101013f, 
-      0x01010140, 0x0101031f, 0x01010320, 0x01010321, 
-      0x01010322, 0x01010323, 0x01010324, 0x01010325, 
-      0x01010326, 0x01010327, 0x01010328, 0x010103b5, 
-      0x010103b6, 0x010103fa, 0x01010440, 0x7f03002f, 
-      0x7f03004d, 0x7f03004e, 0x7f03004f, 0x7f030082, 
-      0x7f0300d1, 0x7f030120, 0x7f030166, 0x7f030167, 
-      0x7f030168, 0x7f030169, 0x7f03016a, 0x7f03016b, 
-      0x7f03016c, 0x7f03016d, 0x7f03016e, 0x7f03016f, 
-      0x7f030170, 0x7f030171, 0x7f030172, 0x7f030174, 
-      0x7f030175, 0x7f030176, 0x7f030177, 0x7f030178, 
-      0x7f0301e2, 0x7f0301e3, 0x7f0301e4, 0x7f0301e5, 
-      0x7f0301e6, 0x7f0301e7, 0x7f0301e8, 0x7f0301e9, 
-      0x7f0301ea, 0x7f0301eb, 0x7f0301ec, 0x7f0301ed, 
-      0x7f0301ee, 0x7f0301ef, 0x7f0301f0, 0x7f0301f1, 
-      0x7f0301f2, 0x7f0301f3, 0x7f0301f4, 0x7f0301f5, 
-      0x7f0301f6, 0x7f0301f7, 0x7f0301f8, 0x7f0301f9, 
-      0x7f0301fa, 0x7f0301fb, 0x7f0301fc, 0x7f0301fd, 
-      0x7f0301fe, 0x7f0301ff, 0x7f030200, 0x7f030201, 
-      0x7f030202, 0x7f030203, 0x7f030204, 0x7f030205, 
-      0x7f030206, 0x7f030207, 0x7f030208, 0x7f030209, 
-      0x7f03020a, 0x7f03020b, 0x7f03020d, 0x7f03020e, 
-      0x7f03020f, 0x7f030210, 0x7f030211, 0x7f030212, 
-      0x7f030213, 0x7f030214, 0x7f030274, 0x7f030275, 
-      0x7f0302a1, 0x7f0302a9, 0x7f03039d, 0x7f03039f, 
-      0x7f0303ac
-    };
+        0x010100c4, 0x010100d0, 0x010100dc, 0x010100f4, 
+        0x010100f5, 0x010100f7, 0x010100f8, 0x010100f9, 
+        0x010100fa, 0x0101011f, 0x01010120, 0x0101013f, 
+        0x01010140, 0x0101031f, 0x01010320, 0x01010321, 
+        0x01010322, 0x01010323, 0x01010324, 0x01010325, 
+        0x01010326, 0x01010327, 0x01010328, 0x010103b5, 
+        0x010103b6, 0x010103fa, 0x01010440, 0x7f03002f, 
+        0x7f03004d, 0x7f03004e, 0x7f03004f, 0x7f030082, 
+        0x7f0300d1, 0x7f030120, 0x7f030166, 0x7f030167, 
+        0x7f030168, 0x7f030169, 0x7f03016a, 0x7f03016b, 
+        0x7f03016c, 0x7f03016d, 0x7f03016e, 0x7f03016f, 
+        0x7f030170, 0x7f030171, 0x7f030172, 0x7f030174, 
+        0x7f030175, 0x7f030176, 0x7f030177, 0x7f030178, 
+        0x7f0301e2, 0x7f0301e3, 0x7f0301e4, 0x7f0301e5, 
+        0x7f0301e6, 0x7f0301e7, 0x7f0301e8, 0x7f0301e9, 
+        0x7f0301ea, 0x7f0301eb, 0x7f0301ec, 0x7f0301ed, 
+        0x7f0301ee, 0x7f0301ef, 0x7f0301f0, 0x7f0301f1, 
+        0x7f0301f2, 0x7f0301f3, 0x7f0301f4, 0x7f0301f5, 
+        0x7f0301f6, 0x7f0301f7, 0x7f0301f8, 0x7f0301f9, 
+        0x7f0301fa, 0x7f0301fb, 0x7f0301fc, 0x7f0301fd, 
+        0x7f0301fe, 0x7f0301ff, 0x7f030200, 0x7f030201, 
+        0x7f030202, 0x7f030203, 0x7f030204, 0x7f030205, 
+        0x7f030206, 0x7f030207, 0x7f030208, 0x7f030209, 
+        0x7f03020a, 0x7f03020b, 0x7f03020d, 0x7f03020e, 
+        0x7f03020f, 0x7f030210, 0x7f030211, 0x7f030212, 
+        0x7f030213, 0x7f030214, 0x7f030274, 0x7f030275, 
+        0x7f0302a1, 0x7f0302a9, 0x7f03039d, 0x7f03039f, 
+        0x7f0303ac
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#orientation}
      * attribute's value can be found in the {@link #Constraint} array.
@@ -19601,30 +19601,30 @@ public final class R {
      * @see #ConstraintLayout_Layout_layout_optimizationLevel
      */
     public static final int[] ConstraintLayout_Layout={
-      0x010100c4, 0x010100d5, 0x010100d6, 0x010100d7, 
-      0x010100d8, 0x010100d9, 0x010100dc, 0x0101011f, 
-      0x01010120, 0x0101013f, 0x01010140, 0x010103b3, 
-      0x010103b4, 0x01010440, 0x7f03004d, 0x7f03004e, 
-      0x7f03004f, 0x7f030082, 0x7f0300ce, 0x7f0300d1, 
-      0x7f030166, 0x7f030167, 0x7f030168, 0x7f030169, 
-      0x7f03016a, 0x7f03016b, 0x7f03016c, 0x7f03016d, 
-      0x7f03016e, 0x7f03016f, 0x7f030170, 0x7f030171, 
-      0x7f030172, 0x7f030174, 0x7f030175, 0x7f030176, 
-      0x7f030177, 0x7f030178, 0x7f0301da, 0x7f0301e2, 
-      0x7f0301e3, 0x7f0301e4, 0x7f0301e5, 0x7f0301e6, 
-      0x7f0301e7, 0x7f0301e8, 0x7f0301e9, 0x7f0301ea, 
-      0x7f0301eb, 0x7f0301ec, 0x7f0301ed, 0x7f0301ee, 
-      0x7f0301ef, 0x7f0301f0, 0x7f0301f1, 0x7f0301f2, 
-      0x7f0301f3, 0x7f0301f4, 0x7f0301f5, 0x7f0301f6, 
-      0x7f0301f7, 0x7f0301f8, 0x7f0301f9, 0x7f0301fa, 
-      0x7f0301fb, 0x7f0301fc, 0x7f0301fd, 0x7f0301fe, 
-      0x7f0301ff, 0x7f030200, 0x7f030201, 0x7f030202, 
-      0x7f030203, 0x7f030204, 0x7f030205, 0x7f030206, 
-      0x7f030207, 0x7f030208, 0x7f030209, 0x7f03020a, 
-      0x7f03020b, 0x7f03020d, 0x7f03020e, 0x7f03020f, 
-      0x7f030210, 0x7f030211, 0x7f030212, 0x7f030213, 
-      0x7f030214, 0x7f030217
-    };
+        0x010100c4, 0x010100d5, 0x010100d6, 0x010100d7, 
+        0x010100d8, 0x010100d9, 0x010100dc, 0x0101011f, 
+        0x01010120, 0x0101013f, 0x01010140, 0x010103b3, 
+        0x010103b4, 0x01010440, 0x7f03004d, 0x7f03004e, 
+        0x7f03004f, 0x7f030082, 0x7f0300ce, 0x7f0300d1, 
+        0x7f030166, 0x7f030167, 0x7f030168, 0x7f030169, 
+        0x7f03016a, 0x7f03016b, 0x7f03016c, 0x7f03016d, 
+        0x7f03016e, 0x7f03016f, 0x7f030170, 0x7f030171, 
+        0x7f030172, 0x7f030174, 0x7f030175, 0x7f030176, 
+        0x7f030177, 0x7f030178, 0x7f0301da, 0x7f0301e2, 
+        0x7f0301e3, 0x7f0301e4, 0x7f0301e5, 0x7f0301e6, 
+        0x7f0301e7, 0x7f0301e8, 0x7f0301e9, 0x7f0301ea, 
+        0x7f0301eb, 0x7f0301ec, 0x7f0301ed, 0x7f0301ee, 
+        0x7f0301ef, 0x7f0301f0, 0x7f0301f1, 0x7f0301f2, 
+        0x7f0301f3, 0x7f0301f4, 0x7f0301f5, 0x7f0301f6, 
+        0x7f0301f7, 0x7f0301f8, 0x7f0301f9, 0x7f0301fa, 
+        0x7f0301fb, 0x7f0301fc, 0x7f0301fd, 0x7f0301fe, 
+        0x7f0301ff, 0x7f030200, 0x7f030201, 0x7f030202, 
+        0x7f030203, 0x7f030204, 0x7f030205, 0x7f030206, 
+        0x7f030207, 0x7f030208, 0x7f030209, 0x7f03020a, 
+        0x7f03020b, 0x7f03020d, 0x7f03020e, 0x7f03020f, 
+        0x7f030210, 0x7f030211, 0x7f030212, 0x7f030213, 
+        0x7f030214, 0x7f030217
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#orientation}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -20924,8 +20924,8 @@ public final class R {
      * @see #ConstraintLayout_placeholder_placeholder_emptyVisibility
      */
     public static final int[] ConstraintLayout_placeholder={
-      0x7f0300d3, 0x7f0302ad
-    };
+        0x7f0300d3, 0x7f0302ad
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#content}
      * attribute's value can be found in the {@link #ConstraintLayout_placeholder} array.
@@ -21188,35 +21188,35 @@ public final class R {
      * @see #ConstraintSet_transitionPathRotate
      */
     public static final int[] ConstraintSet={
-      0x010100c4, 0x010100d0, 0x010100dc, 0x010100f4, 
-      0x010100f5, 0x010100f7, 0x010100f8, 0x010100f9, 
-      0x010100fa, 0x0101011f, 0x01010120, 0x0101013f, 
-      0x01010140, 0x010101b5, 0x010101b6, 0x0101031f, 
-      0x01010320, 0x01010321, 0x01010322, 0x01010323, 
-      0x01010324, 0x01010325, 0x01010326, 0x01010327, 
-      0x01010328, 0x010103b5, 0x010103b6, 0x010103fa, 
-      0x01010440, 0x7f03002f, 0x7f03004d, 0x7f03004e, 
-      0x7f03004f, 0x7f030082, 0x7f0300d1, 0x7f03010e, 
-      0x7f030120, 0x7f030166, 0x7f030167, 0x7f030168, 
-      0x7f030169, 0x7f03016a, 0x7f03016b, 0x7f03016c, 
-      0x7f03016d, 0x7f03016e, 0x7f03016f, 0x7f030170, 
-      0x7f030171, 0x7f030172, 0x7f030174, 0x7f030175, 
-      0x7f030176, 0x7f030177, 0x7f030178, 0x7f0301e2, 
-      0x7f0301e3, 0x7f0301e4, 0x7f0301e5, 0x7f0301e6, 
-      0x7f0301e7, 0x7f0301e8, 0x7f0301e9, 0x7f0301ea, 
-      0x7f0301eb, 0x7f0301ec, 0x7f0301ed, 0x7f0301ee, 
-      0x7f0301ef, 0x7f0301f0, 0x7f0301f1, 0x7f0301f2, 
-      0x7f0301f3, 0x7f0301f4, 0x7f0301f5, 0x7f0301f6, 
-      0x7f0301f7, 0x7f0301f8, 0x7f0301f9, 0x7f0301fa, 
-      0x7f0301fb, 0x7f0301fc, 0x7f0301fd, 0x7f0301fe, 
-      0x7f0301ff, 0x7f030200, 0x7f030201, 0x7f030202, 
-      0x7f030203, 0x7f030204, 0x7f030205, 0x7f030206, 
-      0x7f030207, 0x7f030208, 0x7f030209, 0x7f03020a, 
-      0x7f03020b, 0x7f03020d, 0x7f03020e, 0x7f03020f, 
-      0x7f030210, 0x7f030211, 0x7f030212, 0x7f030213, 
-      0x7f030214, 0x7f030274, 0x7f030275, 0x7f0302a1, 
-      0x7f0302a9, 0x7f03039d, 0x7f03039f
-    };
+        0x010100c4, 0x010100d0, 0x010100dc, 0x010100f4, 
+        0x010100f5, 0x010100f7, 0x010100f8, 0x010100f9, 
+        0x010100fa, 0x0101011f, 0x01010120, 0x0101013f, 
+        0x01010140, 0x010101b5, 0x010101b6, 0x0101031f, 
+        0x01010320, 0x01010321, 0x01010322, 0x01010323, 
+        0x01010324, 0x01010325, 0x01010326, 0x01010327, 
+        0x01010328, 0x010103b5, 0x010103b6, 0x010103fa, 
+        0x01010440, 0x7f03002f, 0x7f03004d, 0x7f03004e, 
+        0x7f03004f, 0x7f030082, 0x7f0300d1, 0x7f03010e, 
+        0x7f030120, 0x7f030166, 0x7f030167, 0x7f030168, 
+        0x7f030169, 0x7f03016a, 0x7f03016b, 0x7f03016c, 
+        0x7f03016d, 0x7f03016e, 0x7f03016f, 0x7f030170, 
+        0x7f030171, 0x7f030172, 0x7f030174, 0x7f030175, 
+        0x7f030176, 0x7f030177, 0x7f030178, 0x7f0301e2, 
+        0x7f0301e3, 0x7f0301e4, 0x7f0301e5, 0x7f0301e6, 
+        0x7f0301e7, 0x7f0301e8, 0x7f0301e9, 0x7f0301ea, 
+        0x7f0301eb, 0x7f0301ec, 0x7f0301ed, 0x7f0301ee, 
+        0x7f0301ef, 0x7f0301f0, 0x7f0301f1, 0x7f0301f2, 
+        0x7f0301f3, 0x7f0301f4, 0x7f0301f5, 0x7f0301f6, 
+        0x7f0301f7, 0x7f0301f8, 0x7f0301f9, 0x7f0301fa, 
+        0x7f0301fb, 0x7f0301fc, 0x7f0301fd, 0x7f0301fe, 
+        0x7f0301ff, 0x7f030200, 0x7f030201, 0x7f030202, 
+        0x7f030203, 0x7f030204, 0x7f030205, 0x7f030206, 
+        0x7f030207, 0x7f030208, 0x7f030209, 0x7f03020a, 
+        0x7f03020b, 0x7f03020d, 0x7f03020e, 0x7f03020f, 
+        0x7f030210, 0x7f030211, 0x7f030212, 0x7f030213, 
+        0x7f030214, 0x7f030274, 0x7f030275, 0x7f0302a1, 
+        0x7f0302a9, 0x7f03039d, 0x7f03039f
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#orientation}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -22790,8 +22790,8 @@ public final class R {
      * @see #CoordinatorLayout_statusBarBackground
      */
     public static final int[] CoordinatorLayout={
-      0x7f0301d3, 0x7f030310
-    };
+        0x7f0301d3, 0x7f030310
+      };
     /**
      * <p>
      * @attr description
@@ -22852,9 +22852,9 @@ public final class R {
      * @see #CoordinatorLayout_Layout_layout_keyline
      */
     public static final int[] CoordinatorLayout_Layout={
-      0x010100b3, 0x7f0301dd, 0x7f0301de, 0x7f0301df, 
-      0x7f03020c, 0x7f030215, 0x7f030216
-    };
+        0x010100b3, 0x7f0301dd, 0x7f0301de, 0x7f0301df, 
+        0x7f03020c, 0x7f030215, 0x7f030216
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#layout_gravity}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
@@ -23034,10 +23034,10 @@ public final class R {
      * @see #CustomAttribute_customStringValue
      */
     public static final int[] CustomAttribute={
-      0x7f030036, 0x7f0300fa, 0x7f0300fb, 0x7f0300fc, 
-      0x7f0300fd, 0x7f0300fe, 0x7f0300ff, 0x7f030101, 
-      0x7f030102
-    };
+        0x7f030036, 0x7f0300fa, 0x7f0300fb, 0x7f0300fc, 
+        0x7f0300fd, 0x7f0300fe, 0x7f0300ff, 0x7f030101, 
+        0x7f030102
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#attributeName}
      * attribute's value can be found in the {@link #CustomAttribute} array.
@@ -23168,10 +23168,10 @@ public final class R {
      * @see #DialogPreference_positiveButtonText
      */
     public static final int[] DialogPreference={
-      0x010101f2, 0x010101f3, 0x010101f4, 0x010101f5, 
-      0x010101f6, 0x010101f7, 0x7f030110, 0x7f030111, 
-      0x7f030112, 0x7f030116, 0x7f030281, 0x7f0302b2
-    };
+        0x010101f2, 0x010101f3, 0x010101f4, 0x010101f5, 
+        0x010101f6, 0x010101f7, 0x7f030110, 0x7f030111, 
+        0x7f030112, 0x7f030116, 0x7f030281, 0x7f0302b2
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#dialogTitle}
      * attribute's value can be found in the {@link #DialogPreference} array.
@@ -23335,9 +23335,9 @@ public final class R {
      * @see #DrawerArrowToggle_thickness
      */
     public static final int[] DrawerArrowToggle={
-      0x7f030034, 0x7f030035, 0x7f03004c, 0x7f0300b7, 
-      0x7f030125, 0x7f030189, 0x7f0302fe, 0x7f03036a
-    };
+        0x7f030034, 0x7f030035, 0x7f03004c, 0x7f0300b7, 
+        0x7f030125, 0x7f030189, 0x7f0302fe, 0x7f03036a
+      };
     /**
      * <p>
      * @attr description
@@ -23458,8 +23458,8 @@ public final class R {
      * @see #EditTextPreference_useSimpleSummaryProvider
      */
     public static final int[] EditTextPreference={
-      0x7f0303a8
-    };
+        0x7f0303a8
+      };
     /**
      * <p>
      * @attr description
@@ -23494,9 +23494,9 @@ public final class R {
      * @see #ExtendedFloatingActionButton_shrinkMotionSpec
      */
     public static final int[] ExtendedFloatingActionButton={
-      0x7f0300b3, 0x7f030133, 0x7f030155, 0x7f030195, 
-      0x7f0302ee, 0x7f0302f3
-    };
+        0x7f0300b3, 0x7f030133, 0x7f030155, 0x7f030195, 
+        0x7f0302ee, 0x7f0302f3
+      };
     /**
      * <p>
      * @attr description
@@ -23591,8 +23591,8 @@ public final class R {
      * @see #ExtendedFloatingActionButton_Behavior_Layout_behavior_autoShrink
      */
     public static final int[] ExtendedFloatingActionButton_Behavior_Layout={
-      0x7f030050, 0x7f030051
-    };
+        0x7f030050, 0x7f030051
+      };
     /**
      * <p>
      * @attr description
@@ -23659,12 +23659,12 @@ public final class R {
      * @see #FloatingActionButton_useCompatPadding
      */
     public static final int[] FloatingActionButton={
-      0x0101000e, 0x7f030047, 0x7f030048, 0x7f03005b, 
-      0x7f030133, 0x7f030141, 0x7f03015d, 0x7f03015e, 
-      0x7f030195, 0x7f03019f, 0x7f030252, 0x7f0302c0, 
-      0x7f0302d1, 0x7f0302e3, 0x7f0302e6, 0x7f0302ee, 
-      0x7f0303a6
-    };
+        0x0101000e, 0x7f030047, 0x7f030048, 0x7f03005b, 
+        0x7f030133, 0x7f030141, 0x7f03015d, 0x7f03015e, 
+        0x7f030195, 0x7f03019f, 0x7f030252, 0x7f0302c0, 
+        0x7f0302d1, 0x7f0302e3, 0x7f0302e6, 0x7f0302ee, 
+        0x7f0303a6
+      };
     /**
      * <p>
      * @attr description
@@ -23918,8 +23918,8 @@ public final class R {
      * @see #FloatingActionButton_Behavior_Layout_behavior_autoHide
      */
     public static final int[] FloatingActionButton_Behavior_Layout={
-      0x7f030050
-    };
+        0x7f030050
+      };
     /**
      * <p>
      * @attr description
@@ -23945,8 +23945,8 @@ public final class R {
      * @see #FlowLayout_lineSpacing
      */
     public static final int[] FlowLayout={
-      0x7f0301c9, 0x7f03021e
-    };
+        0x7f0301c9, 0x7f03021e
+      };
     /**
      * <p>
      * @attr description
@@ -23999,9 +23999,9 @@ public final class R {
      * @see #FontFamily_fontProviderSystemFontFamily
      */
     public static final int[] FontFamily={
-      0x7f03017b, 0x7f03017c, 0x7f03017d, 0x7f03017e, 
-      0x7f03017f, 0x7f030180, 0x7f030181
-    };
+        0x7f03017b, 0x7f03017c, 0x7f03017d, 0x7f03017e, 
+        0x7f03017f, 0x7f030180, 0x7f030181
+      };
     /**
      * <p>
      * @attr description
@@ -24149,10 +24149,10 @@ public final class R {
      * @see #FontFamilyFont_ttcIndex
      */
     public static final int[] FontFamilyFont={
-      0x01010532, 0x01010533, 0x0101053f, 0x0101056f, 
-      0x01010570, 0x7f030179, 0x7f030182, 0x7f030183, 
-      0x7f030184, 0x7f0303a4
-    };
+        0x01010532, 0x01010533, 0x0101053f, 0x0101056f, 
+        0x01010570, 0x7f030179, 0x7f030182, 0x7f030183, 
+        0x7f030184, 0x7f0303a4
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#font}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
@@ -24300,8 +24300,8 @@ public final class R {
      * @see #ForegroundLinearLayout_foregroundInsidePadding
      */
     public static final int[] ForegroundLinearLayout={
-      0x01010109, 0x01010200, 0x7f030186
-    };
+        0x01010109, 0x01010200, 0x7f030186
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#foreground}
      * attribute's value can be found in the {@link #ForegroundLinearLayout} array.
@@ -24371,8 +24371,8 @@ public final class R {
      * @see #Fragment_android_tag
      */
     public static final int[] Fragment={
-      0x01010003, 0x010100d0, 0x010100d1
-    };
+        0x01010003, 0x010100d0, 0x010100d1
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#name}
      * attribute's value can be found in the {@link #Fragment} array.
@@ -24419,8 +24419,8 @@ public final class R {
      * @see #FragmentContainerView_android_tag
      */
     public static final int[] FragmentContainerView={
-      0x01010003, 0x010100d1
-    };
+        0x01010003, 0x010100d1
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#name}
      * attribute's value can be found in the {@link #FragmentContainerView} array.
@@ -24475,10 +24475,10 @@ public final class R {
      * @see #GradientColor_android_endY
      */
     public static final int[] GradientColor={
-      0x0101019d, 0x0101019e, 0x010101a1, 0x010101a2, 
-      0x010101a3, 0x010101a4, 0x01010201, 0x0101020b, 
-      0x01010510, 0x01010511, 0x01010512, 0x01010513
-    };
+        0x0101019d, 0x0101019e, 0x010101a1, 0x010101a2, 
+        0x010101a3, 0x010101a4, 0x01010201, 0x0101020b, 
+        0x01010510, 0x01010511, 0x01010512, 0x01010513
+      };
     /**
      * <p>
      * @attr description
@@ -24659,8 +24659,8 @@ public final class R {
      * @see #GradientColorItem_android_offset
      */
     public static final int[] GradientColorItem={
-      0x010101a5, 0x01010514
-    };
+        0x010101a5, 0x01010514
+      };
     /**
      * <p>
      * @attr description
@@ -24712,10 +24712,10 @@ public final class R {
      * @see #ImageFilterView_warmth
      */
     public static final int[] ImageFilterView={
-      0x7f03002e, 0x7f03006c, 0x7f0300e3, 0x7f0300f7, 
-      0x7f030290, 0x7f0302d2, 0x7f0302d3, 0x7f0302d4, 
-      0x7f0303ae
-    };
+        0x7f03002e, 0x7f03006c, 0x7f0300e3, 0x7f0300f7, 
+        0x7f030290, 0x7f0302d2, 0x7f0302d3, 0x7f0302d4, 
+        0x7f0303ae
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#altSrc}
      * attribute's value can be found in the {@link #ImageFilterView} array.
@@ -24823,8 +24823,8 @@ public final class R {
      * @see #Insets_paddingTopSystemWindowInsets
      */
     public static final int[] Insets={
-      0x7f030292, 0x7f030294, 0x7f030295, 0x7f030298
-    };
+        0x7f030292, 0x7f030294, 0x7f030295, 0x7f030298
+      };
     /**
      * <p>
      * @attr description
@@ -24913,12 +24913,12 @@ public final class R {
      * @see #KeyAttribute_transitionPathRotate
      */
     public static final int[] KeyAttribute={
-      0x0101031f, 0x01010320, 0x01010321, 0x01010322, 
-      0x01010323, 0x01010324, 0x01010325, 0x01010326, 
-      0x01010327, 0x01010328, 0x010103fa, 0x01010440, 
-      0x7f0300f9, 0x7f030188, 0x7f030274, 0x7f030276, 
-      0x7f03039d, 0x7f03039f
-    };
+        0x0101031f, 0x01010320, 0x01010321, 0x01010322, 
+        0x01010323, 0x01010324, 0x01010325, 0x01010326, 
+        0x01010327, 0x01010328, 0x010103fa, 0x01010440, 
+        0x7f0300f9, 0x7f030188, 0x7f030274, 0x7f030276, 
+        0x7f03039d, 0x7f03039f
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#alpha}
      * attribute's value can be found in the {@link #KeyAttribute} array.
@@ -25180,12 +25180,12 @@ public final class R {
      * @see #KeyCycle_waveVariesBy
      */
     public static final int[] KeyCycle={
-      0x0101031f, 0x01010322, 0x01010323, 0x01010324, 
-      0x01010325, 0x01010326, 0x01010327, 0x01010328, 
-      0x010103fa, 0x01010440, 0x7f0300f9, 0x7f030188, 
-      0x7f030274, 0x7f030276, 0x7f03039d, 0x7f03039f, 
-      0x7f0303b0, 0x7f0303b1, 0x7f0303b2, 0x7f0303b3
-    };
+        0x0101031f, 0x01010322, 0x01010323, 0x01010324, 
+        0x01010325, 0x01010326, 0x01010327, 0x01010328, 
+        0x010103fa, 0x01010440, 0x7f0300f9, 0x7f030188, 
+        0x7f030274, 0x7f030276, 0x7f03039d, 0x7f03039f, 
+        0x7f0303b0, 0x7f0303b1, 0x7f0303b2, 0x7f0303b3
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#alpha}
      * attribute's value can be found in the {@link #KeyCycle} array.
@@ -25434,11 +25434,11 @@ public final class R {
      */
     public static final int KeyCycle_waveVariesBy=19;
     public static final int[] KeyFrame={
-    };
+      };
     public static final int[] KeyFramesAcceleration={
-    };
+      };
     public static final int[] KeyFramesVelocity={
-    };
+      };
     /**
      * Attributes that can be used with a KeyPosition.
      * <p>Includes the following attributes:</p>
@@ -25473,10 +25473,10 @@ public final class R {
      * @see #KeyPosition_transitionEasing
      */
     public static final int[] KeyPosition={
-      0x7f0300f9, 0x7f030120, 0x7f030188, 0x7f0301d1, 
-      0x7f030276, 0x7f0302a1, 0x7f0302a3, 0x7f0302a4, 
-      0x7f0302a5, 0x7f0302a6, 0x7f0302f8, 0x7f03039d
-    };
+        0x7f0300f9, 0x7f030120, 0x7f030188, 0x7f0301d1, 
+        0x7f030276, 0x7f0302a1, 0x7f0302a3, 0x7f0302a4, 
+        0x7f0302a5, 0x7f0302a6, 0x7f0302f8, 0x7f03039d
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#curveFit}
      * attribute's value can be found in the {@link #KeyPosition} array.
@@ -25691,12 +25691,12 @@ public final class R {
      * @see #KeyTimeCycle_waveShape
      */
     public static final int[] KeyTimeCycle={
-      0x0101031f, 0x01010322, 0x01010323, 0x01010324, 
-      0x01010325, 0x01010326, 0x01010327, 0x01010328, 
-      0x010103fa, 0x01010440, 0x7f0300f9, 0x7f030188, 
-      0x7f030274, 0x7f030276, 0x7f03039d, 0x7f03039f, 
-      0x7f0303af, 0x7f0303b0, 0x7f0303b1, 0x7f0303b2
-    };
+        0x0101031f, 0x01010322, 0x01010323, 0x01010324, 
+        0x01010325, 0x01010326, 0x01010327, 0x01010328, 
+        0x010103fa, 0x01010440, 0x7f0300f9, 0x7f030188, 
+        0x7f030274, 0x7f030276, 0x7f03039d, 0x7f03039f, 
+        0x7f0303af, 0x7f0303b0, 0x7f0303b1, 0x7f0303b2
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#alpha}
      * attribute's value can be found in the {@link #KeyTimeCycle} array.
@@ -25966,10 +25966,10 @@ public final class R {
      * @see #KeyTrigger_triggerSlack
      */
     public static final int[] KeyTrigger={
-      0x7f030188, 0x7f030276, 0x7f030277, 0x7f030278, 
-      0x7f030287, 0x7f030289, 0x7f03028a, 0x7f0303a1, 
-      0x7f0303a2, 0x7f0303a3
-    };
+        0x7f030188, 0x7f030276, 0x7f030277, 0x7f030278, 
+        0x7f030287, 0x7f030289, 0x7f03028a, 0x7f0303a1, 
+        0x7f0303a2, 0x7f0303a3
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#framePosition}
      * attribute's value can be found in the {@link #KeyTrigger} array.
@@ -26222,24 +26222,24 @@ public final class R {
      * @see #Layout_minWidth
      */
     public static final int[] Layout={
-      0x010100c4, 0x010100f4, 0x010100f5, 0x010100f7, 
-      0x010100f8, 0x010100f9, 0x010100fa, 0x010103b5, 
-      0x010103b6, 0x7f03004d, 0x7f03004e, 0x7f03004f, 
-      0x7f030082, 0x7f0300d1, 0x7f0301e2, 0x7f0301e3, 
-      0x7f0301e4, 0x7f0301e5, 0x7f0301e6, 0x7f0301e7, 
-      0x7f0301e8, 0x7f0301e9, 0x7f0301ea, 0x7f0301eb, 
-      0x7f0301ec, 0x7f0301ed, 0x7f0301ee, 0x7f0301ef, 
-      0x7f0301f0, 0x7f0301f1, 0x7f0301f2, 0x7f0301f3, 
-      0x7f0301f4, 0x7f0301f5, 0x7f0301f6, 0x7f0301f7, 
-      0x7f0301f8, 0x7f0301f9, 0x7f0301fa, 0x7f0301fb, 
-      0x7f0301fc, 0x7f0301fd, 0x7f0301fe, 0x7f0301ff, 
-      0x7f030200, 0x7f030202, 0x7f030203, 0x7f030204, 
-      0x7f030205, 0x7f030206, 0x7f030207, 0x7f030208, 
-      0x7f030209, 0x7f03020a, 0x7f03020b, 0x7f03020d, 
-      0x7f03020e, 0x7f03020f, 0x7f030210, 0x7f030211, 
-      0x7f030212, 0x7f030213, 0x7f030214, 0x7f030251, 
-      0x7f030255, 0x7f03025a, 0x7f03025e
-    };
+        0x010100c4, 0x010100f4, 0x010100f5, 0x010100f7, 
+        0x010100f8, 0x010100f9, 0x010100fa, 0x010103b5, 
+        0x010103b6, 0x7f03004d, 0x7f03004e, 0x7f03004f, 
+        0x7f030082, 0x7f0300d1, 0x7f0301e2, 0x7f0301e3, 
+        0x7f0301e4, 0x7f0301e5, 0x7f0301e6, 0x7f0301e7, 
+        0x7f0301e8, 0x7f0301e9, 0x7f0301ea, 0x7f0301eb, 
+        0x7f0301ec, 0x7f0301ed, 0x7f0301ee, 0x7f0301ef, 
+        0x7f0301f0, 0x7f0301f1, 0x7f0301f2, 0x7f0301f3, 
+        0x7f0301f4, 0x7f0301f5, 0x7f0301f6, 0x7f0301f7, 
+        0x7f0301f8, 0x7f0301f9, 0x7f0301fa, 0x7f0301fb, 
+        0x7f0301fc, 0x7f0301fd, 0x7f0301fe, 0x7f0301ff, 
+        0x7f030200, 0x7f030202, 0x7f030203, 0x7f030204, 
+        0x7f030205, 0x7f030206, 0x7f030207, 0x7f030208, 
+        0x7f030209, 0x7f03020a, 0x7f03020b, 0x7f03020d, 
+        0x7f03020e, 0x7f03020f, 0x7f030210, 0x7f030211, 
+        0x7f030212, 0x7f030213, 0x7f030214, 0x7f030251, 
+        0x7f030255, 0x7f03025a, 0x7f03025e
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#orientation}
      * attribute's value can be found in the {@link #Layout} array.
@@ -27244,10 +27244,10 @@ public final class R {
      * @see #LinearLayoutCompat_showDividers
      */
     public static final int[] LinearLayoutCompat={
-      0x010100af, 0x010100c4, 0x01010126, 0x01010127, 
-      0x01010128, 0x7f030119, 0x7f03011b, 0x7f030256, 
-      0x7f0302ed
-    };
+        0x010100af, 0x010100c4, 0x01010126, 0x01010127, 
+        0x01010128, 0x7f030119, 0x7f03011b, 0x7f030256, 
+        0x7f0302ed
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#gravity}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
@@ -27414,8 +27414,8 @@ public final class R {
      * @see #LinearLayoutCompat_Layout_android_layout_weight
      */
     public static final int[] LinearLayoutCompat_Layout={
-      0x010100b3, 0x010100f4, 0x010100f5, 0x01010181
-    };
+        0x010100b3, 0x010100f4, 0x010100f5, 0x01010181
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#layout_gravity}
      * attribute's value can be found in the {@link #LinearLayoutCompat_Layout} array.
@@ -27515,8 +27515,8 @@ public final class R {
      * @see #LinearProgressIndicator_indicatorDirectionLinear
      */
     public static final int[] LinearProgressIndicator={
-      0x7f0301ab, 0x7f0301af
-    };
+        0x7f0301ab, 0x7f0301af
+      };
     /**
      * <p>
      * @attr description
@@ -27574,8 +27574,8 @@ public final class R {
      * @see #ListPopupWindow_android_dropDownVerticalOffset
      */
     public static final int[] ListPopupWindow={
-      0x010102ac, 0x010102ad
-    };
+        0x010102ac, 0x010102ad
+      };
     /**
      * <p>
      * @attr description
@@ -27626,9 +27626,9 @@ public final class R {
      * @see #ListPreference_useSimpleSummaryProvider
      */
     public static final int[] ListPreference={
-      0x010100b2, 0x010101f8, 0x7f030142, 0x7f030143, 
-      0x7f0303a8
-    };
+        0x010100b2, 0x010101f8, 0x7f030142, 0x7f030143, 
+        0x7f0303a8
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#entries}
      * attribute's value can be found in the {@link #ListPreference} array.
@@ -27712,8 +27712,8 @@ public final class R {
      * @see #MaterialAlertDialog_backgroundInsetTop
      */
     public static final int[] MaterialAlertDialog={
-      0x7f030040, 0x7f030041, 0x7f030042, 0x7f030043
-    };
+        0x7f030040, 0x7f030041, 0x7f030042, 0x7f030043
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#backgroundInsetBottom}
      * attribute's value can be found in the {@link #MaterialAlertDialog} array.
@@ -27786,9 +27786,9 @@ public final class R {
      * @see #MaterialAlertDialogTheme_materialAlertDialogTitleTextStyle
      */
     public static final int[] MaterialAlertDialogTheme={
-      0x7f030231, 0x7f030232, 0x7f030233, 0x7f030234, 
-      0x7f030235
-    };
+        0x7f030231, 0x7f030232, 0x7f030233, 0x7f030234, 
+        0x7f030235
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#materialAlertDialogBodyTextStyle}
      * attribute's value can be found in the {@link #MaterialAlertDialogTheme} array.
@@ -27861,8 +27861,8 @@ public final class R {
      * @see #MaterialAutoCompleteTextView_android_inputType
      */
     public static final int[] MaterialAutoCompleteTextView={
-      0x01010220
-    };
+        0x01010220
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#inputType}
      * attribute's value can be found in the {@link #MaterialAutoCompleteTextView} array.
@@ -27962,13 +27962,13 @@ public final class R {
      * @see #MaterialButton_strokeWidth
      */
     public static final int[] MaterialButton={
-      0x010100d4, 0x010101b7, 0x010101b8, 0x010101b9, 
-      0x010101ba, 0x010101e5, 0x7f030047, 0x7f030048, 
-      0x7f0300eb, 0x7f030133, 0x7f0301a0, 0x7f0301a2, 
-      0x7f0301a3, 0x7f0301a4, 0x7f0301a7, 0x7f0301a8, 
-      0x7f0302d1, 0x7f0302e3, 0x7f0302e6, 0x7f030313, 
-      0x7f030314
-    };
+        0x010100d4, 0x010101b7, 0x010101b8, 0x010101b9, 
+        0x010101ba, 0x010101e5, 0x7f030047, 0x7f030048, 
+        0x7f0300eb, 0x7f030133, 0x7f0301a0, 0x7f0301a2, 
+        0x7f0301a3, 0x7f0301a4, 0x7f0301a7, 0x7f0301a8, 
+        0x7f0302d1, 0x7f0302e3, 0x7f0302e6, 0x7f030313, 
+        0x7f030314
+      };
     /**
      * <p>
      * @attr description
@@ -28325,8 +28325,8 @@ public final class R {
      * @see #MaterialButtonToggleGroup_singleSelection
      */
     public static final int[] MaterialButtonToggleGroup={
-      0x7f030085, 0x7f0302e1, 0x7f0302f7
-    };
+        0x7f030085, 0x7f0302e1, 0x7f0302f7
+      };
     /**
      * <p>
      * @attr description
@@ -28395,10 +28395,10 @@ public final class R {
      * @see #MaterialCalendar_yearTodayStyle
      */
     public static final int[] MaterialCalendar={
-      0x0101020d, 0x7f030103, 0x7f030104, 0x7f030105, 
-      0x7f030106, 0x7f030284, 0x7f0302c7, 0x7f0303bf, 
-      0x7f0303c0, 0x7f0303c1
-    };
+        0x0101020d, 0x7f030103, 0x7f030104, 0x7f030105, 
+        0x7f030106, 0x7f030284, 0x7f0302c7, 0x7f0303bf, 
+        0x7f0303c0, 0x7f0303c1
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#windowFullscreen}
      * attribute's value can be found in the {@link #MaterialCalendar} array.
@@ -28544,10 +28544,10 @@ public final class R {
      * @see #MaterialCalendarItem_itemTextColor
      */
     public static final int[] MaterialCalendarItem={
-      0x010101b7, 0x010101b8, 0x010101b9, 0x010101ba, 
-      0x7f0301b9, 0x7f0301c2, 0x7f0301c3, 0x7f0301ca, 
-      0x7f0301cb, 0x7f0301cf
-    };
+        0x010101b7, 0x010101b8, 0x010101b9, 0x010101ba, 
+        0x7f0301b9, 0x7f0301c2, 0x7f0301c3, 0x7f0301ca, 
+        0x7f0301cb, 0x7f0301cf
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#insetLeft}
      * attribute's value can be found in the {@link #MaterialCalendarItem} array.
@@ -28720,10 +28720,10 @@ public final class R {
      * @see #MaterialCardView_strokeWidth
      */
     public static final int[] MaterialCardView={
-      0x010101e5, 0x7f03007d, 0x7f030087, 0x7f030089, 
-      0x7f03008a, 0x7f03008b, 0x7f0302d1, 0x7f0302e3, 
-      0x7f0302e6, 0x7f03030d, 0x7f030313, 0x7f030314
-    };
+        0x010101e5, 0x7f03007d, 0x7f030087, 0x7f030089, 
+        0x7f03008a, 0x7f03008b, 0x7f0302d1, 0x7f0302e3, 
+        0x7f0302e6, 0x7f03030d, 0x7f030313, 0x7f030314
+      };
     /**
      * <p>
      * @attr description
@@ -28893,8 +28893,8 @@ public final class R {
      * @see #MaterialCheckBox_useMaterialThemeColors
      */
     public static final int[] MaterialCheckBox={
-      0x7f030078, 0x7f0303a7
-    };
+        0x7f030078, 0x7f0303a7
+      };
     /**
      * <p>
      * @attr description
@@ -28935,8 +28935,8 @@ public final class R {
      * @see #MaterialRadioButton_useMaterialThemeColors
      */
     public static final int[] MaterialRadioButton={
-      0x7f030078, 0x7f0303a7
-    };
+        0x7f030078, 0x7f0303a7
+      };
     /**
      * <p>
      * @attr description
@@ -28977,8 +28977,8 @@ public final class R {
      * @see #MaterialShape_shapeAppearanceOverlay
      */
     public static final int[] MaterialShape={
-      0x7f0302e3, 0x7f0302e6
-    };
+        0x7f0302e3, 0x7f0302e6
+      };
     /**
      * <p>
      * @attr description
@@ -29021,8 +29021,8 @@ public final class R {
      * @see #MaterialTextAppearance_lineHeight
      */
     public static final int[] MaterialTextAppearance={
-      0x010104b6, 0x0101057f, 0x7f03021d
-    };
+        0x010104b6, 0x0101057f, 0x7f03021d
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#letterSpacing}
      * attribute's value can be found in the {@link #MaterialTextAppearance} array.
@@ -29074,8 +29074,8 @@ public final class R {
      * @see #MaterialTextView_lineHeight
      */
     public static final int[] MaterialTextView={
-      0x01010034, 0x0101057f, 0x7f03021d
-    };
+        0x01010034, 0x0101057f, 0x7f03021d
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#textAppearance}
      * attribute's value can be found in the {@link #MaterialTextView} array.
@@ -29128,8 +29128,8 @@ public final class R {
      * @see #MaterialTimePicker_keyboardIcon
      */
     public static final int[] MaterialTimePicker={
-      0x7f0300a7, 0x7f0301d2
-    };
+        0x7f0300a7, 0x7f0301d2
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#clockIcon}
      * attribute's value can be found in the {@link #MaterialTimePicker} array.
@@ -29173,8 +29173,8 @@ public final class R {
      * @see #MaterialToolbar_titleCentered
      */
     public static final int[] MaterialToolbar={
-      0x7f03027d, 0x7f030318, 0x7f03037d
-    };
+        0x7f03027d, 0x7f030318, 0x7f03037d
+      };
     /**
      * <p>
      * @attr description
@@ -29234,9 +29234,9 @@ public final class R {
      * @see #MenuGroup_android_checkableBehavior
      */
     public static final int[] MenuGroup={
-      0x0101000e, 0x010100d0, 0x01010194, 0x010101de, 
-      0x010101df, 0x010101e0
-    };
+        0x0101000e, 0x010100d0, 0x01010194, 0x010101de, 
+        0x010101df, 0x010101e0
+      };
     /**
      * <p>
      * @attr description
@@ -29381,13 +29381,13 @@ public final class R {
      * @see #MenuItem_tooltipText
      */
     public static final int[] MenuItem={
-      0x01010002, 0x0101000e, 0x010100d0, 0x01010106, 
-      0x01010194, 0x010101de, 0x010101df, 0x010101e1, 
-      0x010101e2, 0x010101e3, 0x010101e4, 0x010101e5, 
-      0x0101026f, 0x7f03000d, 0x7f03001f, 0x7f030021, 
-      0x7f03002d, 0x7f0300d4, 0x7f0301a7, 0x7f0301a8, 
-      0x7f030286, 0x7f0302eb, 0x7f03038f
-    };
+        0x01010002, 0x0101000e, 0x010100d0, 0x01010106, 
+        0x01010194, 0x010101de, 0x010101df, 0x010101e1, 
+        0x010101e2, 0x010101e3, 0x010101e4, 0x010101e5, 
+        0x0101026f, 0x7f03000d, 0x7f03001f, 0x7f030021, 
+        0x7f03002d, 0x7f0300d4, 0x7f0301a7, 0x7f0301a8, 
+        0x7f030286, 0x7f0302eb, 0x7f03038f
+      };
     /**
      * <p>
      * @attr description
@@ -29758,10 +29758,10 @@ public final class R {
      * @see #MenuView_subMenuArrow
      */
     public static final int[] MenuView={
-      0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e, 
-      0x0101012f, 0x01010130, 0x01010131, 0x7f0302bf, 
-      0x7f030315
-    };
+        0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e, 
+        0x0101012f, 0x01010130, 0x01010131, 0x7f0302bf, 
+        0x7f030315
+      };
     /**
      * <p>
      * @attr description
@@ -29902,9 +29902,9 @@ public final class R {
      * @see #MockView_mock_showLabel
      */
     public static final int[] MockView={
-      0x7f03025f, 0x7f030260, 0x7f030261, 0x7f030262, 
-      0x7f030263, 0x7f030264
-    };
+        0x7f03025f, 0x7f030260, 0x7f030261, 0x7f030262, 
+        0x7f030263, 0x7f030264
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#mock_diagonalsColor}
      * attribute's value can be found in the {@link #MockView} array.
@@ -29990,9 +29990,9 @@ public final class R {
      * @see #Motion_transitionEasing
      */
     public static final int[] Motion={
-      0x7f03002f, 0x7f030120, 0x7f030273, 0x7f030275, 
-      0x7f0302a1, 0x7f03039d
-    };
+        0x7f03002f, 0x7f030120, 0x7f030273, 0x7f030275, 
+        0x7f0302a1, 0x7f03039d
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#animate_relativeTo}
      * attribute's value can be found in the {@link #Motion} array.
@@ -30098,8 +30098,8 @@ public final class R {
      * @see #MotionHelper_onShow
      */
     public static final int[] MotionHelper={
-      0x7f030288, 0x7f03028b
-    };
+        0x7f030288, 0x7f03028b
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#onHide}
      * attribute's value can be found in the {@link #MotionHelper} array.
@@ -30142,9 +30142,9 @@ public final class R {
      * @see #MotionLayout_showPaths
      */
     public static final int[] MotionLayout={
-      0x7f030032, 0x7f0300f8, 0x7f0301da, 0x7f030265, 
-      0x7f030274, 0x7f0302ef
-    };
+        0x7f030032, 0x7f0300f8, 0x7f0301da, 0x7f030265, 
+        0x7f030274, 0x7f0302ef
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#applyMotionScene}
      * attribute's value can be found in the {@link #MotionLayout} array.
@@ -30231,8 +30231,8 @@ public final class R {
      * @see #MotionScene_layoutDuringTransition
      */
     public static final int[] MotionScene={
-      0x7f030107, 0x7f0301db
-    };
+        0x7f030107, 0x7f0301db
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#defaultDuration}
      * attribute's value can be found in the {@link #MotionScene} array.
@@ -30275,8 +30275,8 @@ public final class R {
      * @see #MotionTelltales_telltales_velocityMode
      */
     public static final int[] MotionTelltales={
-      0x7f030347, 0x7f030348, 0x7f030349
-    };
+        0x7f030347, 0x7f030348, 0x7f030349
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#telltales_tailColor}
      * attribute's value can be found in the {@link #MotionTelltales} array.
@@ -30335,8 +30335,8 @@ public final class R {
      * @see #MultiSelectListPreference_entryValues
      */
     public static final int[] MultiSelectListPreference={
-      0x010100b2, 0x010101f8, 0x7f030142, 0x7f030143
-    };
+        0x010100b2, 0x010101f8, 0x7f030142, 0x7f030143
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#entries}
      * attribute's value can be found in the {@link #MultiSelectListPreference} array.
@@ -30423,10 +30423,10 @@ public final class R {
      * @see #NavigationBarView_menu
      */
     public static final int[] NavigationBarView={
-      0x7f030047, 0x7f030133, 0x7f0301b8, 0x7f0301bd, 
-      0x7f0301be, 0x7f0301c1, 0x7f0301cd, 0x7f0301ce, 
-      0x7f0301cf, 0x7f0301d7, 0x7f030257
-    };
+        0x7f030047, 0x7f030133, 0x7f0301b8, 0x7f0301bd, 
+        0x7f0301be, 0x7f0301c1, 0x7f0301cd, 0x7f0301ce, 
+        0x7f0301cf, 0x7f0301d7, 0x7f030257
+      };
     /**
      * <p>
      * @attr description
@@ -30604,8 +30604,8 @@ public final class R {
      * @see #NavigationRailView_menuGravity
      */
     public static final int[] NavigationRailView={
-      0x7f03018e, 0x7f030258
-    };
+        0x7f03018e, 0x7f030258
+      };
     /**
      * <p>
      * @attr description
@@ -30694,13 +30694,13 @@ public final class R {
      * @see #NavigationView_shapeAppearanceOverlay
      */
     public static final int[] NavigationView={
-      0x010100d4, 0x010100dd, 0x0101011f, 0x7f030133, 
-      0x7f03018e, 0x7f0301b8, 0x7f0301ba, 0x7f0301bc, 
-      0x7f0301bd, 0x7f0301be, 0x7f0301bf, 0x7f0301c2, 
-      0x7f0301c3, 0x7f0301c4, 0x7f0301c5, 0x7f0301c6, 
-      0x7f0301c7, 0x7f0301c8, 0x7f0301cc, 0x7f0301cf, 
-      0x7f030257, 0x7f0302e3, 0x7f0302e6
-    };
+        0x010100d4, 0x010100dd, 0x0101011f, 0x7f030133, 
+        0x7f03018e, 0x7f0301b8, 0x7f0301ba, 0x7f0301bc, 
+        0x7f0301bd, 0x7f0301be, 0x7f0301bf, 0x7f0301c2, 
+        0x7f0301c3, 0x7f0301c4, 0x7f0301c5, 0x7f0301c6, 
+        0x7f0301c7, 0x7f0301c8, 0x7f0301cc, 0x7f0301cf, 
+        0x7f030257, 0x7f0302e3, 0x7f0302e6
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#background}
      * attribute's value can be found in the {@link #NavigationView} array.
@@ -31025,8 +31025,8 @@ public final class R {
      * @see #OnClick_targetId
      */
     public static final int[] OnClick={
-      0x7f0300a4, 0x7f030346
-    };
+        0x7f0300a4, 0x7f030346
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#clickAction}
      * attribute's value can be found in the {@link #OnClick} array.
@@ -31093,10 +31093,10 @@ public final class R {
      * @see #OnSwipe_touchRegionId
      */
     public static final int[] OnSwipe={
-      0x7f03011d, 0x7f03011e, 0x7f03011f, 0x7f03021c, 
-      0x7f03024d, 0x7f030254, 0x7f030279, 0x7f030282, 
-      0x7f03028c, 0x7f030390, 0x7f030391, 0x7f030392
-    };
+        0x7f03011d, 0x7f03011e, 0x7f03011f, 0x7f03021c, 
+        0x7f03024d, 0x7f030254, 0x7f030279, 0x7f030282, 
+        0x7f03028c, 0x7f030390, 0x7f030391, 0x7f030392
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#dragDirection}
      * attribute's value can be found in the {@link #OnSwipe} array.
@@ -31277,8 +31277,8 @@ public final class R {
      * @see #PopupWindow_overlapAnchor
      */
     public static final int[] PopupWindow={
-      0x01010176, 0x010102c9, 0x7f03028f
-    };
+        0x01010176, 0x010102c9, 0x7f03028f
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#popupBackground}
      * attribute's value can be found in the {@link #PopupWindow} array.
@@ -31329,8 +31329,8 @@ public final class R {
      * @see #PopupWindowBackgroundState_state_above_anchor
      */
     public static final int[] PopupWindowBackgroundState={
-      0x7f03030a
-    };
+        0x7f03030a
+      };
     /**
      * <p>
      * @attr description
@@ -31429,16 +31429,16 @@ public final class R {
      * @see #Preference_widgetLayout
      */
     public static final int[] Preference={
-      0x01010002, 0x0101000d, 0x0101000e, 0x010100f2, 
-      0x010101e1, 0x010101e6, 0x010101e8, 0x010101e9, 
-      0x010101ea, 0x010101eb, 0x010101ec, 0x010101ed, 
-      0x010101ee, 0x010102e3, 0x0101055c, 0x01010561, 
-      0x7f030028, 0x7f03002a, 0x7f03010a, 0x7f03010d, 
-      0x7f030136, 0x7f030138, 0x7f030187, 0x7f0301a0, 
-      0x7f0301a5, 0x7f0301b7, 0x7f0301d0, 0x7f0301d9, 
-      0x7f03028d, 0x7f0302a8, 0x7f0302de, 0x7f0302e9, 
-      0x7f0302f6, 0x7f030320, 0x7f03037c, 0x7f0303b4
-    };
+        0x01010002, 0x0101000d, 0x0101000e, 0x010100f2, 
+        0x010101e1, 0x010101e6, 0x010101e8, 0x010101e9, 
+        0x010101ea, 0x010101eb, 0x010101ec, 0x010101ed, 
+        0x010101ee, 0x010102e3, 0x0101055c, 0x01010561, 
+        0x7f030028, 0x7f03002a, 0x7f03010a, 0x7f03010d, 
+        0x7f030136, 0x7f030138, 0x7f030187, 0x7f0301a0, 
+        0x7f0301a5, 0x7f0301b7, 0x7f0301d0, 0x7f0301d9, 
+        0x7f03028d, 0x7f0302a8, 0x7f0302de, 0x7f0302e9, 
+        0x7f0302f6, 0x7f030320, 0x7f03037c, 0x7f0303b4
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#icon}
      * attribute's value can be found in the {@link #Preference} array.
@@ -31878,8 +31878,8 @@ public final class R {
      * @see #PreferenceFragment_allowDividerAfterLastItem
      */
     public static final int[] PreferenceFragment={
-      0x010100f2, 0x01010129, 0x0101012a, 0x7f030029
-    };
+        0x010100f2, 0x01010129, 0x0101012a, 0x7f030029
+      };
     /**
      * <p>
      * @attr description
@@ -31952,8 +31952,8 @@ public final class R {
      * @see #PreferenceFragmentCompat_allowDividerAfterLastItem
      */
     public static final int[] PreferenceFragmentCompat={
-      0x010100f2, 0x01010129, 0x0101012a, 0x7f030029
-    };
+        0x010100f2, 0x01010129, 0x0101012a, 0x7f030029
+      };
     /**
      * <p>
      * @attr description
@@ -32025,8 +32025,8 @@ public final class R {
      * @see #PreferenceGroup_orderingFromXml
      */
     public static final int[] PreferenceGroup={
-      0x010101e7, 0x7f0301b3, 0x7f03028e
-    };
+        0x010101e7, 0x7f0301b3, 0x7f03028e
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#orderingFromXml}
      * attribute's value can be found in the {@link #PreferenceGroup} array.
@@ -32087,8 +32087,8 @@ public final class R {
      * @see #PreferenceImageView_maxWidth
      */
     public static final int[] PreferenceImageView={
-      0x0101011f, 0x01010120, 0x7f030251, 0x7f030255
-    };
+        0x0101011f, 0x01010120, 0x7f030251, 0x7f030255
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#maxWidth}
      * attribute's value can be found in the {@link #PreferenceImageView} array.
@@ -32183,11 +32183,11 @@ public final class R {
      * @see #PreferenceTheme_switchPreferenceStyle
      */
     public static final int[] PreferenceTheme={
-      0x7f030083, 0x7f030113, 0x7f03012d, 0x7f030131, 
-      0x7f0302b3, 0x7f0302b4, 0x7f0302b5, 0x7f0302b6, 
-      0x7f0302b7, 0x7f0302b8, 0x7f0302b9, 0x7f0302ba, 
-      0x7f0302bb, 0x7f0302dc, 0x7f030325, 0x7f030326
-    };
+        0x7f030083, 0x7f030113, 0x7f03012d, 0x7f030131, 
+        0x7f0302b3, 0x7f0302b4, 0x7f0302b5, 0x7f0302b6, 
+        0x7f0302b7, 0x7f0302b8, 0x7f0302b9, 0x7f0302ba, 
+        0x7f0302bb, 0x7f0302dc, 0x7f030325, 0x7f030326
+      };
     /**
      * <p>
      * @attr description
@@ -32418,9 +32418,9 @@ public final class R {
      * @see #PropertySet_visibilityMode
      */
     public static final int[] PropertySet={
-      0x010100dc, 0x0101031f, 0x7f030201, 0x7f030274, 
-      0x7f0303ac
-    };
+        0x010100dc, 0x0101031f, 0x7f030201, 0x7f030274, 
+        0x7f0303ac
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#visibility}
      * attribute's value can be found in the {@link #PropertySet} array.
@@ -32496,8 +32496,8 @@ public final class R {
      * @see #RadialViewGroup_materialCircleRadius
      */
     public static final int[] RadialViewGroup={
-      0x7f030248
-    };
+        0x7f030248
+      };
     /**
      * <p>
      * @attr description
@@ -32528,8 +32528,8 @@ public final class R {
      * @see #RangeSlider_values
      */
     public static final int[] RangeSlider={
-      0x7f03025c, 0x7f0303a9
-    };
+        0x7f03025c, 0x7f0303a9
+      };
     /**
      * <p>
      * @attr description
@@ -32571,8 +32571,8 @@ public final class R {
      * @see #RecycleListView_paddingTopNoTitle
      */
     public static final int[] RecycleListView={
-      0x7f030291, 0x7f030297
-    };
+        0x7f030291, 0x7f030297
+      };
     /**
      * <p>
      * @attr description
@@ -32635,10 +32635,10 @@ public final class R {
      * @see #RecyclerView_stackFromEnd
      */
     public static final int[] RecyclerView={
-      0x010100c4, 0x010100eb, 0x010100f1, 0x7f03015f, 
-      0x7f030160, 0x7f030161, 0x7f030162, 0x7f030163, 
-      0x7f0301dc, 0x7f0302d0, 0x7f0302fd, 0x7f030303
-    };
+        0x010100c4, 0x010100eb, 0x010100f1, 0x7f03015f, 
+        0x7f030160, 0x7f030161, 0x7f030162, 0x7f030163, 
+        0x7f0301dc, 0x7f0302d0, 0x7f0302fd, 0x7f030303
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#orientation}
      * attribute's value can be found in the {@link #RecyclerView} array.
@@ -32802,8 +32802,8 @@ public final class R {
      * @see #ScrimInsetsFrameLayout_insetForeground
      */
     public static final int[] ScrimInsetsFrameLayout={
-      0x7f0301b4
-    };
+        0x7f0301b4
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#insetForeground}
      * attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
@@ -32831,8 +32831,8 @@ public final class R {
      * @see #ScrollingViewBehavior_Layout_behavior_overlapTop
      */
     public static final int[] ScrollingViewBehavior_Layout={
-      0x7f030057
-    };
+        0x7f030057
+      };
     /**
      * <p>
      * @attr description
@@ -32892,12 +32892,12 @@ public final class R {
      * @see #SearchView_voiceIcon
      */
     public static final int[] SearchView={
-      0x010100da, 0x0101011f, 0x01010220, 0x01010264, 
-      0x7f0300a9, 0x7f0300cd, 0x7f030108, 0x7f03018b, 
-      0x7f0301a9, 0x7f0301d9, 0x7f0302c3, 0x7f0302c4, 
-      0x7f0302d8, 0x7f0302d9, 0x7f030316, 0x7f03031f, 
-      0x7f0303ad
-    };
+        0x010100da, 0x0101011f, 0x01010220, 0x01010264, 
+        0x7f0300a9, 0x7f0300cd, 0x7f030108, 0x7f03018b, 
+        0x7f0301a9, 0x7f0301d9, 0x7f0302c3, 0x7f0302c4, 
+        0x7f0302d8, 0x7f0302d9, 0x7f030316, 0x7f03031f, 
+        0x7f0303ad
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#focusable}
      * attribute's value can be found in the {@link #SearchView} array.
@@ -33205,9 +33205,9 @@ public final class R {
      * @see #SeekBarPreference_updatesContinuously
      */
     public static final int[] SeekBarPreference={
-      0x010100f2, 0x01010136, 0x7f030023, 0x7f030259, 
-      0x7f0302db, 0x7f0302f0, 0x7f0303a5
-    };
+        0x010100f2, 0x01010136, 0x7f030023, 0x7f030259, 
+        0x7f0302db, 0x7f0302f0, 0x7f0303a5
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#layout}
      * attribute's value can be found in the {@link #SeekBarPreference} array.
@@ -33320,10 +33320,10 @@ public final class R {
      * @see #ShapeAppearance_cornerSizeTopRight
      */
     public static final int[] ShapeAppearance={
-      0x7f0300e6, 0x7f0300e7, 0x7f0300e8, 0x7f0300e9, 
-      0x7f0300ea, 0x7f0300ec, 0x7f0300ed, 0x7f0300ee, 
-      0x7f0300ef, 0x7f0300f0
-    };
+        0x7f0300e6, 0x7f0300e7, 0x7f0300e8, 0x7f0300e9, 
+        0x7f0300ea, 0x7f0300ec, 0x7f0300ed, 0x7f0300ee, 
+        0x7f0300ef, 0x7f0300f0
+      };
     /**
      * <p>
      * @attr description
@@ -33536,10 +33536,10 @@ public final class R {
      * @see #ShapeableImageView_strokeWidth
      */
     public static final int[] ShapeableImageView={
-      0x7f0300db, 0x7f0300dc, 0x7f0300dd, 0x7f0300de, 
-      0x7f0300df, 0x7f0300e0, 0x7f0300e1, 0x7f0302e3, 
-      0x7f0302e6, 0x7f030313, 0x7f030314
-    };
+        0x7f0300db, 0x7f0300dc, 0x7f0300dd, 0x7f0300de, 
+        0x7f0300df, 0x7f0300e0, 0x7f0300e1, 0x7f0302e3, 
+        0x7f0302e6, 0x7f030313, 0x7f030314
+      };
     /**
      * <p>
      * @attr description
@@ -33743,13 +33743,13 @@ public final class R {
      * @see #Slider_trackHeight
      */
     public static final int[] Slider={
-      0x0101000e, 0x01010024, 0x01010146, 0x010102de, 
-      0x010102df, 0x7f03018c, 0x7f03018d, 0x7f0301d5, 
-      0x7f0301d6, 0x7f03036b, 0x7f03036c, 0x7f03036d, 
-      0x7f03036e, 0x7f03036f, 0x7f030373, 0x7f030374, 
-      0x7f030375, 0x7f030379, 0x7f030394, 0x7f030395, 
-      0x7f030396, 0x7f030398
-    };
+        0x0101000e, 0x01010024, 0x01010146, 0x010102de, 
+        0x010102df, 0x7f03018c, 0x7f03018d, 0x7f0301d5, 
+        0x7f0301d6, 0x7f03036b, 0x7f03036c, 0x7f03036d, 
+        0x7f03036e, 0x7f03036f, 0x7f030373, 0x7f030374, 
+        0x7f030375, 0x7f030379, 0x7f030394, 0x7f030395, 
+        0x7f030396, 0x7f030398
+      };
     /**
      * <p>
      * @attr description
@@ -34066,8 +34066,8 @@ public final class R {
      * @see #Snackbar_snackbarTextViewStyle
      */
     public static final int[] Snackbar={
-      0x7f0302fa, 0x7f0302fb, 0x7f0302fc
-    };
+        0x7f0302fa, 0x7f0302fb, 0x7f0302fc
+      };
     /**
      * <p>
      * @attr description
@@ -34134,9 +34134,9 @@ public final class R {
      * @see #SnackbarLayout_maxActionInlineWidth
      */
     public static final int[] SnackbarLayout={
-      0x0101011f, 0x7f030020, 0x7f030030, 0x7f030044, 
-      0x7f030047, 0x7f030048, 0x7f030133, 0x7f03024e
-    };
+        0x0101011f, 0x7f030020, 0x7f030030, 0x7f030044, 
+        0x7f030047, 0x7f030048, 0x7f030133, 0x7f03024e
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#maxWidth}
      * attribute's value can be found in the {@link #SnackbarLayout} array.
@@ -34278,9 +34278,9 @@ public final class R {
      * @see #Spinner_popupTheme
      */
     public static final int[] Spinner={
-      0x010100b2, 0x01010176, 0x0101017b, 0x01010262, 
-      0x7f0302b0
-    };
+        0x010100b2, 0x01010176, 0x0101017b, 0x01010262, 
+        0x7f0302b0
+      };
     /**
      * <p>
      * @attr description
@@ -34374,8 +34374,8 @@ public final class R {
      * @see #State_constraints
      */
     public static final int[] State={
-      0x010100d0, 0x7f0300d2
-    };
+        0x010100d0, 0x7f0300d2
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#id}
      * attribute's value can be found in the {@link #State} array.
@@ -34422,9 +34422,9 @@ public final class R {
      * @see #StateListDrawable_android_exitFadeDuration
      */
     public static final int[] StateListDrawable={
-      0x0101011c, 0x01010194, 0x01010195, 0x01010196, 
-      0x0101030c, 0x0101030d
-    };
+        0x0101011c, 0x01010194, 0x01010195, 0x01010196, 
+        0x0101030c, 0x0101030d
+      };
     /**
      * <p>
      * @attr description
@@ -34511,8 +34511,8 @@ public final class R {
      * @see #StateListDrawableItem_android_drawable
      */
     public static final int[] StateListDrawableItem={
-      0x01010199
-    };
+        0x01010199
+      };
     /**
      * <p>
      * @attr description
@@ -34539,8 +34539,8 @@ public final class R {
      * @see #StateSet_defaultState
      */
     public static final int[] StateSet={
-      0x7f030109
-    };
+        0x7f030109
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#defaultState}
      * attribute's value can be found in the {@link #StateSet} array.
@@ -34591,11 +34591,11 @@ public final class R {
      * @see #SwitchCompat_trackTintMode
      */
     public static final int[] SwitchCompat={
-      0x01010124, 0x01010125, 0x01010142, 0x7f0302f1, 
-      0x7f030301, 0x7f030323, 0x7f030324, 0x7f030328, 
-      0x7f030370, 0x7f030371, 0x7f030372, 0x7f030393, 
-      0x7f03039a, 0x7f03039b
-    };
+        0x01010124, 0x01010125, 0x01010142, 0x7f0302f1, 
+        0x7f030301, 0x7f030323, 0x7f030324, 0x7f030328, 
+        0x7f030370, 0x7f030371, 0x7f030372, 0x7f030393, 
+        0x7f03039a, 0x7f03039b
+      };
     /**
      * <p>
      * @attr description
@@ -34811,8 +34811,8 @@ public final class R {
      * @see #SwitchMaterial_useMaterialThemeColors
      */
     public static final int[] SwitchMaterial={
-      0x7f0303a7
-    };
+        0x7f0303a7
+      };
     /**
      * <p>
      * @attr description
@@ -34859,10 +34859,10 @@ public final class R {
      * @see #SwitchPreference_switchTextOn
      */
     public static final int[] SwitchPreference={
-      0x010101ef, 0x010101f0, 0x010101f1, 0x0101036b, 
-      0x0101036c, 0x7f030117, 0x7f030321, 0x7f030322, 
-      0x7f030329, 0x7f03032a
-    };
+        0x010101ef, 0x010101f0, 0x010101f1, 0x0101036b, 
+        0x0101036c, 0x7f030117, 0x7f030321, 0x7f030322, 
+        0x7f030329, 0x7f03032a
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#summaryOn}
      * attribute's value can be found in the {@link #SwitchPreference} array.
@@ -35007,10 +35007,10 @@ public final class R {
      * @see #SwitchPreferenceCompat_switchTextOn
      */
     public static final int[] SwitchPreferenceCompat={
-      0x010101ef, 0x010101f0, 0x010101f1, 0x0101036b, 
-      0x0101036c, 0x7f030117, 0x7f030321, 0x7f030322, 
-      0x7f030329, 0x7f03032a
-    };
+        0x010101ef, 0x010101f0, 0x010101f1, 0x0101036b, 
+        0x0101036c, 0x7f030117, 0x7f030321, 0x7f030322, 
+        0x7f030329, 0x7f03032a
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#summaryOn}
      * attribute's value can be found in the {@link #SwitchPreferenceCompat} array.
@@ -35139,8 +35139,8 @@ public final class R {
      * @see #TabItem_android_text
      */
     public static final int[] TabItem={
-      0x01010002, 0x010100f2, 0x0101014f
-    };
+        0x01010002, 0x010100f2, 0x0101014f
+      };
     /**
      * <p>
      * @attr description
@@ -35247,14 +35247,14 @@ public final class R {
      */
     @Deprecated
     public static final int[] TabLayout={
-      0x7f03032b, 0x7f03032c, 0x7f03032d, 0x7f03032e, 
-      0x7f03032f, 0x7f030330, 0x7f030331, 0x7f030332, 
-      0x7f030333, 0x7f030334, 0x7f030335, 0x7f030336, 
-      0x7f030337, 0x7f030338, 0x7f030339, 0x7f03033a, 
-      0x7f03033b, 0x7f03033c, 0x7f03033d, 0x7f03033e, 
-      0x7f03033f, 0x7f030340, 0x7f030341, 0x7f030343, 
-      0x7f030344, 0x7f030345
-    };
+        0x7f03032b, 0x7f03032c, 0x7f03032d, 0x7f03032e, 
+        0x7f03032f, 0x7f030330, 0x7f030331, 0x7f030332, 
+        0x7f030333, 0x7f030334, 0x7f030335, 0x7f030336, 
+        0x7f030337, 0x7f030338, 0x7f030339, 0x7f03033a, 
+        0x7f03033b, 0x7f03033c, 0x7f03033d, 0x7f03033e, 
+        0x7f03033f, 0x7f030340, 0x7f030341, 0x7f030343, 
+        0x7f030344, 0x7f030345
+      };
     /**
      * <p>
      * @attr description
@@ -35680,11 +35680,11 @@ public final class R {
      * @see #TextAppearance_textLocale
      */
     public static final int[] TextAppearance={
-      0x01010095, 0x01010096, 0x01010097, 0x01010098, 
-      0x0101009a, 0x0101009b, 0x01010161, 0x01010162, 
-      0x01010163, 0x01010164, 0x010103ac, 0x01010585, 
-      0x7f03017a, 0x7f030183, 0x7f03034a, 0x7f030366
-    };
+        0x01010095, 0x01010096, 0x01010097, 0x01010098, 
+        0x0101009a, 0x0101009b, 0x01010161, 0x01010162, 
+        0x01010163, 0x01010164, 0x010103ac, 0x01010585, 
+        0x7f03017a, 0x7f030183, 0x7f03034a, 0x7f030366
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#textSize}
      * attribute's value can be found in the {@link #TextAppearance} array.
@@ -35902,8 +35902,8 @@ public final class R {
      * @see #TextInputEditText_textInputLayoutFocusedRectEnabled
      */
     public static final int[] TextInputEditText={
-      0x7f030364
-    };
+        0x7f030364
+      };
     /**
      * <p>
      * @attr description
@@ -36061,24 +36061,24 @@ public final class R {
      * @see #TextInputLayout_suffixTextColor
      */
     public static final int[] TextInputLayout={
-      0x0101000e, 0x0101009a, 0x0101011f, 0x0101013f, 
-      0x01010150, 0x7f030061, 0x7f030062, 0x7f030063, 
-      0x7f030064, 0x7f030065, 0x7f030066, 0x7f030067, 
-      0x7f030068, 0x7f030069, 0x7f03006a, 0x7f03006b, 
-      0x7f0300f1, 0x7f0300f2, 0x7f0300f3, 0x7f0300f4, 
-      0x7f0300f5, 0x7f0300f6, 0x7f030139, 0x7f03013a, 
-      0x7f03013b, 0x7f03013c, 0x7f03013d, 0x7f03013e, 
-      0x7f030144, 0x7f030145, 0x7f030146, 0x7f030147, 
-      0x7f030148, 0x7f030149, 0x7f03014a, 0x7f03014d, 
-      0x7f030190, 0x7f030191, 0x7f030192, 0x7f030193, 
-      0x7f030198, 0x7f030199, 0x7f03019a, 0x7f03019b, 
-      0x7f03029c, 0x7f03029d, 0x7f03029e, 0x7f03029f, 
-      0x7f0302a0, 0x7f0302aa, 0x7f0302ab, 0x7f0302ac, 
-      0x7f0302bc, 0x7f0302bd, 0x7f0302be, 0x7f0302e3, 
-      0x7f0302e6, 0x7f030305, 0x7f030306, 0x7f030307, 
-      0x7f030308, 0x7f030309, 0x7f03031c, 0x7f03031d, 
-      0x7f03031e
-    };
+        0x0101000e, 0x0101009a, 0x0101011f, 0x0101013f, 
+        0x01010150, 0x7f030061, 0x7f030062, 0x7f030063, 
+        0x7f030064, 0x7f030065, 0x7f030066, 0x7f030067, 
+        0x7f030068, 0x7f030069, 0x7f03006a, 0x7f03006b, 
+        0x7f0300f1, 0x7f0300f2, 0x7f0300f3, 0x7f0300f4, 
+        0x7f0300f5, 0x7f0300f6, 0x7f030139, 0x7f03013a, 
+        0x7f03013b, 0x7f03013c, 0x7f03013d, 0x7f03013e, 
+        0x7f030144, 0x7f030145, 0x7f030146, 0x7f030147, 
+        0x7f030148, 0x7f030149, 0x7f03014a, 0x7f03014d, 
+        0x7f030190, 0x7f030191, 0x7f030192, 0x7f030193, 
+        0x7f030198, 0x7f030199, 0x7f03019a, 0x7f03019b, 
+        0x7f03029c, 0x7f03029d, 0x7f03029e, 0x7f03029f, 
+        0x7f0302a0, 0x7f0302aa, 0x7f0302ab, 0x7f0302ac, 
+        0x7f0302bc, 0x7f0302bd, 0x7f0302be, 0x7f0302e3, 
+        0x7f0302e6, 0x7f030305, 0x7f030306, 0x7f030307, 
+        0x7f030308, 0x7f030309, 0x7f03031c, 0x7f03031d, 
+        0x7f03031e
+      };
     /**
      * <p>
      * @attr description
@@ -36993,8 +36993,8 @@ public final class R {
      * @see #ThemeEnforcement_enforceTextAppearance
      */
     public static final int[] ThemeEnforcement={
-      0x01010034, 0x7f03013f, 0x7f030140
-    };
+        0x01010034, 0x7f03013f, 0x7f030140
+      };
     /**
      * <p>
      * @attr description
@@ -37115,15 +37115,15 @@ public final class R {
      */
     @Deprecated
     public static final int[] Toolbar={
-      0x010100af, 0x01010140, 0x7f030073, 0x7f0300b1, 
-      0x7f0300b2, 0x7f0300d5, 0x7f0300d6, 0x7f0300d7, 
-      0x7f0300d8, 0x7f0300d9, 0x7f0300da, 0x7f03022f, 
-      0x7f030230, 0x7f03024f, 0x7f030257, 0x7f03027b, 
-      0x7f03027c, 0x7f0302b0, 0x7f030317, 0x7f030319, 
-      0x7f03031a, 0x7f03037c, 0x7f030380, 0x7f030381, 
-      0x7f030382, 0x7f030383, 0x7f030384, 0x7f030385, 
-      0x7f030386, 0x7f030387
-    };
+        0x010100af, 0x01010140, 0x7f030073, 0x7f0300b1, 
+        0x7f0300b2, 0x7f0300d5, 0x7f0300d6, 0x7f0300d7, 
+        0x7f0300d8, 0x7f0300d9, 0x7f0300da, 0x7f03022f, 
+        0x7f030230, 0x7f03024f, 0x7f030257, 0x7f03027b, 
+        0x7f03027c, 0x7f0302b0, 0x7f030317, 0x7f030319, 
+        0x7f03031a, 0x7f03037c, 0x7f030380, 0x7f030381, 
+        0x7f030382, 0x7f030383, 0x7f030384, 0x7f030385, 
+        0x7f030386, 0x7f030387
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#gravity}
      * attribute's value can be found in the {@link #Toolbar} array.
@@ -37577,9 +37577,9 @@ public final class R {
      * @see #Tooltip_backgroundTint
      */
     public static final int[] Tooltip={
-      0x01010034, 0x010100d5, 0x010100f6, 0x0101013f, 
-      0x01010140, 0x0101014f, 0x7f030047
-    };
+        0x01010034, 0x010100d5, 0x010100f6, 0x0101013f, 
+        0x01010140, 0x0101014f, 0x7f030047
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#textAppearance}
      * attribute's value can be found in the {@link #Tooltip} array.
@@ -37698,10 +37698,10 @@ public final class R {
      * @see #Transform_android_elevation
      */
     public static final int[] Transform={
-      0x01010320, 0x01010321, 0x01010322, 0x01010323, 
-      0x01010324, 0x01010325, 0x01010326, 0x01010327, 
-      0x01010328, 0x010103fa, 0x01010440
-    };
+        0x01010320, 0x01010321, 0x01010322, 0x01010323, 
+        0x01010324, 0x01010325, 0x01010326, 0x01010327, 
+        0x01010328, 0x010103fa, 0x01010440
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#transformPivotX}
      * attribute's value can be found in the {@link #Transform} array.
@@ -37857,10 +37857,10 @@ public final class R {
      * @see #Transition_transitionFlags
      */
     public static final int[] Transition={
-      0x010100d0, 0x7f03003d, 0x7f0300cf, 0x7f0300d0, 
-      0x7f03012e, 0x7f0301db, 0x7f030271, 0x7f0302a1, 
-      0x7f030304, 0x7f03039c, 0x7f03039e
-    };
+        0x010100d0, 0x7f03003d, 0x7f0300cf, 0x7f0300d0, 
+        0x7f03012e, 0x7f0301db, 0x7f030271, 0x7f0302a1, 
+        0x7f030304, 0x7f03039c, 0x7f03039e
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#id}
      * attribute's value can be found in the {@link #Transition} array.
@@ -38044,9 +38044,9 @@ public final class R {
      * @see #Variant_region_widthMoreThan
      */
     public static final int[] Variant={
-      0x7f0300d2, 0x7f0302cc, 0x7f0302cd, 0x7f0302ce, 
-      0x7f0302cf
-    };
+        0x7f0300d2, 0x7f0302cc, 0x7f0302cd, 0x7f0302ce, 
+        0x7f0302cf
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#constraints}
      * attribute's value can be found in the {@link #Variant} array.
@@ -38131,9 +38131,9 @@ public final class R {
      * @see #View_theme
      */
     public static final int[] View={
-      0x01010000, 0x010100da, 0x7f030293, 0x7f030296, 
-      0x7f030368
-    };
+        0x01010000, 0x010100da, 0x7f030293, 0x7f030296, 
+        0x7f030368
+      };
     /**
      * <p>
      * @attr description
@@ -38230,8 +38230,8 @@ public final class R {
      * @see #ViewBackgroundHelper_backgroundTintMode
      */
     public static final int[] ViewBackgroundHelper={
-      0x010100d4, 0x7f030047, 0x7f030048
-    };
+        0x010100d4, 0x7f030047, 0x7f030048
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#background}
      * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
@@ -38298,8 +38298,8 @@ public final class R {
      * @see #ViewPager2_android_orientation
      */
     public static final int[] ViewPager2={
-      0x010100c4
-    };
+        0x010100c4
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#orientation}
      * attribute's value can be found in the {@link #ViewPager2} array.
@@ -38333,8 +38333,8 @@ public final class R {
      * @see #ViewStubCompat_android_inflatedId
      */
     public static final int[] ViewStubCompat={
-      0x010100d0, 0x010100f2, 0x010100f3
-    };
+        0x010100d0, 0x010100f2, 0x010100f3
+      };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#id}
      * attribute's value can be found in the {@link #ViewStubCompat} array.
@@ -38393,8 +38393,8 @@ public final class R {
      * @see #zxing_camera_preview_zxing_use_texture_view
      */
     public static final int[] zxing_camera_preview={
-      0x7f0303c2, 0x7f0303c3, 0x7f0303c5, 0x7f0303c8
-    };
+        0x7f0303c2, 0x7f0303c3, 0x7f0303c5, 0x7f0303c8
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#zxing_framing_rect_height}
      * attribute's value can be found in the {@link #zxing_camera_preview} array.
@@ -38469,9 +38469,9 @@ public final class R {
      * @see #zxing_finder_zxing_viewfinder_mask
      */
     public static final int[] zxing_finder={
-      0x7f0303c4, 0x7f0303c6, 0x7f0303c9, 0x7f0303ca, 
-      0x7f0303cb
-    };
+        0x7f0303c4, 0x7f0303c6, 0x7f0303c9, 0x7f0303ca, 
+        0x7f0303cb
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#zxing_possible_result_points}
      * attribute's value can be found in the {@link #zxing_finder} array.
@@ -38538,8 +38538,8 @@ public final class R {
      * @see #zxing_view_zxing_scanner_layout
      */
     public static final int[] zxing_view={
-      0x7f0303c7
-    };
+        0x7f0303c7
+      };
     /**
      * <p>This symbol is the offset where the {@link com.pixels.Inventario.R.attr#zxing_scanner_layout}
      * attribute's value can be found in the {@link #zxing_view} array.

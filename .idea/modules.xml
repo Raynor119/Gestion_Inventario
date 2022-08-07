@@ -3,10 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Gestion_Inventario.iml" filepath="$PROJECT_DIR$/Gestion_Inventario.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Gestion_Inventario.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Gestion_Inventario.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Gestion_Inventario.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Gestion_Inventario.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Gestion_Inventario.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Gestion_Inventario.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Gestion_Inventario.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Gestion_Inventario.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>
