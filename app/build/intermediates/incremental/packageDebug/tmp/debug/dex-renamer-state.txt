@@ -1,7 +1,7 @@
-#Sun Aug 07 12:36:20 COT 2022
-base.1=/home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/transforms/dexMerger/debug/1
+#Wed Aug 10 00:06:09 COT 2022
+base.1=/home/raynor9029/Documentos/Gestion_Inventario/app/build/intermediates/transforms/dexMerger/debug/1
 path.1=classes.dex
-base.0=/home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/transforms/dexMerger/debug/0
+base.0=/home/raynor9029/Documentos/Gestion_Inventario/app/build/intermediates/transforms/dexMerger/debug/0
 renamed.1=classes2.dex
 renamed.0=classes.dex
 path.0=classes.dex

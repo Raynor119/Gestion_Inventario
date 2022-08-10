@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+            "outputFile": "/home/raynor9029/Documentos/Gestion_Inventario/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "/home/raynor/.gradle/caches/transforms-2/files-2.1/e1c03b27460d232f833f77289f16a818/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "source": "/home/raynor9029/.gradle/caches/transforms-2/files-2.1/817bfb79db4a26dfcb633c2dc1b59094/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

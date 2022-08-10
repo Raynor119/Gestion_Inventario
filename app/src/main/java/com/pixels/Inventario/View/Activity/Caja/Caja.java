@@ -22,6 +22,7 @@ import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.R;
+import com.pixels.Inventario.View.Activity.Caja.AlertDialog.alertVenta;
 import com.pixels.Inventario.View.Activity.Caja.AlertDialog.alertbuscar;
 import com.pixels.Inventario.View.Activity.Caja.AlertDialog.alertpeso;
 import com.pixels.Inventario.View.Activity.Caja.RecyclerViewAdaptador.productoVRecyclerViewAdapter;
@@ -156,6 +157,9 @@ public class Caja extends AppCompatActivity {
             public void onClick(View view) {
                 if(Productos.size()==0){
                     CCodigo.setError("Registre al menos un producto para realizar la Venta");
+                }else{
+                    alertVenta alertventa=new alertVenta(Caja.this);
+                    alertventa.pedirEfectivo();
                 }
             }
         });

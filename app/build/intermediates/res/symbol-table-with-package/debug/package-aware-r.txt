@@ -1865,9 +1865,11 @@ id BOTTOM_END
 id BOTTOM_START
 id Buscar
 id ButtonG
+id CEfectivo
 id CTRL
 id CosteP
 id EditCodigo
+id Efectivo
 id Escaner
 id FUNCTION
 id Iva
@@ -2444,6 +2446,7 @@ layout ajustes_list_content
 layout alertcambiobasedatos
 layout alertdialogcontra
 layout alertdialogonitnombre
+layout alertefectivo
 layout alertiva
 layout alertpedircantidad
 layout alertverproductos
