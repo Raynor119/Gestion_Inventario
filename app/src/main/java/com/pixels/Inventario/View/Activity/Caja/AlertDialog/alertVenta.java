@@ -58,7 +58,7 @@ public class alertVenta {
                     if(efectivo<total){
                         cantidad.setError("La cantidad de efectivo tiene que ser mayor o igual al Total de la Venta");
                     }else{
-
+                        
                     }
                 }
             }
