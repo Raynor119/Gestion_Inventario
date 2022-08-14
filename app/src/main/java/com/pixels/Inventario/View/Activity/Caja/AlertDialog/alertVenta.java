@@ -5,14 +5,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProviders;
 
 import com.google.android.material.textfield.TextInputLayout;
+import com.pixels.Inventario.Model.DatosE.VentaRealizada;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Caja.Caja;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.TextWatcher.TextMoneda;
+import com.pixels.Inventario.ViewModel.Caja.Venta.RealizarVentaViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.AgregarProductos.ConvertirModenaINT;
+
+import java.util.List;
 
 public class alertVenta {
     public Caja Context;
@@ -58,7 +65,20 @@ public class alertVenta {
                     if(efectivo<total){
                         cantidad.setError("La cantidad de efectivo tiene que ser mayor o igual al Total de la Venta");
                     }else{
-                        
+                        RealizarVentaViewModel Venta= ViewModelProviders.of(Context).get(RealizarVentaViewModel.class);
+                        Venta.reset();
+                        Venta.realizarVenta(Context,efectivo);
+                        Observer<List<VentaRealizada>> observer=new Observer<List<VentaRealizada>>() {
+                            @Override
+                            public void onChanged(List<VentaRealizada> ventaRealizadas) {
+                                if(ventaRealizadas.get(0).isVerificar()){
+                                    Toast.makeText(Context, "CodigoVenta: "+ventaRealizadas.get(0).getCodigoVenta(), Toast.LENGTH_LONG).show();
+                                }else{
+                                    Toast.makeText(Context, "Error al Realizar la Venta", Toast.LENGTH_LONG).show();
+                                }
+                            }
+                        };
+                        Venta.getResultado().observe(Context,observer);
                     }
                 }
             }
