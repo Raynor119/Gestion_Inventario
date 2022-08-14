@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel;
 
 import com.pixels.Inventario.Model.Basededatos.MYSQL.Consultas.Caja.RealizarVentaMYSQL;
 import com.pixels.Inventario.Model.Basededatos.MediadorBaseDatos;
+import com.pixels.Inventario.Model.Basededatos.SQLite.BaseDatos.Consultas.Caja.RealizarVentaSQLite;
 import com.pixels.Inventario.Model.Basededatos.SQLite.DatosInicio.consultasDatos;
 import com.pixels.Inventario.Model.DatosE.VentaRealizada;
 import com.pixels.Inventario.View.Activity.Caja.Caja;
@@ -28,6 +29,7 @@ public class RealizarVentaViewModel extends ViewModel {
         consultasDatos dinici=new consultasDatos(Context);
         MediadorBaseDatos BD;
         if(dinici.obtenerD().get(0).getBasedatos().equals("SQLITE")){
+            BD =new RealizarVentaSQLite(Context,Efectivo,RealizarVentaViewModel.this);
         }
         if(dinici.obtenerD().get(0).getBasedatos().equals("MYSQL")){
             BD =new RealizarVentaMYSQL(Context,Efectivo,RealizarVentaViewModel.this);
