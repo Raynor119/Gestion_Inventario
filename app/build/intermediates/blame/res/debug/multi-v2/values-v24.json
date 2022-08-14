@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/raynor9029/Documentos/Gestion_Inventario/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/home/raynor9029/.gradle/caches/transforms-2/files-2.1/817bfb79db4a26dfcb633c2dc1b59094/res/values-v24/values-v24.xml",
+                    "source": "/home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/c3f7fe58c24ad1cc98d5753370343bc3/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/raynor9029/.gradle/caches/transforms-2/files-2.1/d8f6d47eae9ef1fb8bb48612ec7d6434/res/values-v24/values-v24.xml",
+                    "source": "/home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/08082afc67f4477f68f1afae96adfc4f/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

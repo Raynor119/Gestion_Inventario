@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/raynor9029/Documentos/Gestion_Inventario/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
+            "outputFile": "/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "/home/raynor9029/.gradle/caches/transforms-2/files-2.1/817bfb79db4a26dfcb633c2dc1b59094/res/values-v17/values-v17.xml",
+                    "source": "/home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/c3f7fe58c24ad1cc98d5753370343bc3/res/values-v17/values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

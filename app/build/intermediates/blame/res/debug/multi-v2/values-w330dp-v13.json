@@ -1,16 +1,16 @@
 {
     "logs": [
         {
-            "outputFile": "/home/raynor9029/Documentos/Gestion_Inventario/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w330dp-v13/values-w330dp-v13.xml",
+            "outputFile": "/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w330dp-v13/values-w330dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/raynor9029/Documentos/Gestion_Inventario/app/src/main/res/values-w330dp/dimens.xml",
+                    "source": "/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/res/values-w330dp/dimens.xml",
                     "from": {
-                        "startLines": "2,4,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,166,111",
-                        "endColumns": "55,53,54",
-                        "endOffsets": "106,215,161"
+                        "startLines": "2,4,-1",
+                        "startColumns": "4,4,-1",
+                        "startOffsets": "55,166,-1",
+                        "endColumns": "55,53,-1",
+                        "endOffsets": "106,215,-1"
                     },
                     "to": {
                         "startLines": "2,3,4",
