@@ -3,7 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.pixels.Inventario">
 
+    <uses-sdk tools:overrideLibrary="com.google.zxing.client.android"/>
+
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
 
     <application
         android:allowBackup="true"
@@ -14,17 +19,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".View.Activity.Caja.Factura.VerFactura"
+            android:exported="false" />
+        <activity
             android:name=".View.Activity.Caja.Caja"
             android:exported="false"
-            android:theme="@style/Theme.MyApplication.NoActionBar"></activity>
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
             android:name=".View.Activity.Gestion_Productos.EditarProductos.EditarProducto"
             android:exported="false"
-            android:theme="@style/Theme.MyApplication.NoActionBar"></activity>
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
             android:name=".View.Activity.Gestion_Productos.AgregarProductos.AgregarProductos"
             android:exported="false"
-            android:theme="@style/Theme.MyApplication.NoActionBar"></activity>
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
             android:name=".View.Activity.Ajustes.ConfiguracionBaseDatos.CrearBaseDatosMYSQL"
             android:exported="false"

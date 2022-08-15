@@ -6,11 +6,11 @@
                 {
                     "source": "/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/res/values-w330dp/dimens.xml",
                     "from": {
-                        "startLines": "2,4,-1",
-                        "startColumns": "4,4,-1",
-                        "startOffsets": "55,166,-1",
-                        "endColumns": "55,53,-1",
-                        "endOffsets": "106,215,-1"
+                        "startLines": "2,4,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,166,111",
+                        "endColumns": "55,53,54",
+                        "endOffsets": "106,215,161"
                     },
                     "to": {
                         "startLines": "2,3,4",

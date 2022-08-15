@@ -21,6 +21,23 @@
                     }
                 },
                 {
+                    "source": "/home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/37c45629890f204970afb4f45c4b49b0/res/values-eu/values-eu.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,119,168,316",
+                        "endColumns": "63,48,147,111",
+                        "endOffsets": "114,163,311,423"
+                    },
+                    "to": {
+                        "startLines": "96,97,98,99",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "8279,8343,8392,8540",
+                        "endColumns": "63,48,147,111",
+                        "endOffsets": "8338,8387,8535,8647"
+                    }
+                },
+                {
                     "source": "/home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/c13bae97551fc8dec1fc7bb438aacb96/res/values-eu/values-eu.xml",
                     "from": {
                         "startLines": "2",
@@ -35,23 +52,6 @@
                         "startOffsets": "7835",
                         "endColumns": "100",
                         "endOffsets": "7931"
-                    }
-                },
-                {
-                    "source": "/home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/e18d9934532f2633ea8f30764e52f0fb/res/values-eu/values-eu.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,119,168,316",
-                        "endColumns": "63,48,147,111",
-                        "endOffsets": "114,163,311,423"
-                    },
-                    "to": {
-                        "startLines": "96,97,98,99",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "8279,8343,8392,8540",
-                        "endColumns": "63,48,147,111",
-                        "endOffsets": "8338,8387,8535,8647"
                     }
                 },
                 {

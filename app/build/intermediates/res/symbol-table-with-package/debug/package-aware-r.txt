@@ -1969,6 +1969,7 @@ id blocking
 id bottom
 id bounce
 id buttonPanel
+id cambio
 id cancel_action
 id cancel_button
 id cantidad
@@ -2442,6 +2443,7 @@ layout activity_importar_datos
 layout activity_inicio
 layout activity_inventario_productos
 layout activity_menuinicio
+layout activity_ver_factura
 layout ajustes_list_content
 layout alertcambiobasedatos
 layout alertdialogcontra
@@ -2449,6 +2451,7 @@ layout alertdialogonitnombre
 layout alertefectivo
 layout alertiva
 layout alertpedircantidad
+layout alertventafinalizada
 layout alertverproductos
 layout custom_dialog
 layout design_bottom_navigation_item

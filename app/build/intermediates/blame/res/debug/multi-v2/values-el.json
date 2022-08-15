@@ -4,23 +4,6 @@
             "outputFile": "/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-el/values-el.xml",
             "map": [
                 {
-                    "source": "/home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/e18d9934532f2633ea8f30764e52f0fb/res/values-el/values-el.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,114,161,311",
-                        "endColumns": "58,46,149,114",
-                        "endOffsets": "109,156,306,421"
-                    },
-                    "to": {
-                        "startLines": "96,97,98,99",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "8456,8515,8562,8712",
-                        "endColumns": "58,46,149,114",
-                        "endOffsets": "8510,8557,8707,8822"
-                    }
-                },
-                {
                     "source": "/home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/c13bae97551fc8dec1fc7bb438aacb96/res/values-el/values-el.xml",
                     "from": {
                         "startLines": "2",
@@ -52,6 +35,23 @@
                         "startOffsets": "275,393,504,621,706,812,935,1024,1109,1200,1293,1388,1482,1582,1675,1770,1867,1958,2049,2134,2245,2354,2456,2567,2677,2785,2956,7935",
                         "endColumns": "117,110,116,84,105,122,88,84,90,92,94,93,99,92,94,96,90,90,84,110,108,101,110,109,107,170,99,85",
                         "endOffsets": "388,499,616,701,807,930,1019,1104,1195,1288,1383,1477,1577,1670,1765,1862,1953,2044,2129,2240,2349,2451,2562,2672,2780,2951,3051,8016"
+                    }
+                },
+                {
+                    "source": "/home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/37c45629890f204970afb4f45c4b49b0/res/values-el/values-el.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,114,161,311",
+                        "endColumns": "58,46,149,114",
+                        "endOffsets": "109,156,306,421"
+                    },
+                    "to": {
+                        "startLines": "96,97,98,99",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "8456,8515,8562,8712",
+                        "endColumns": "58,46,149,114",
+                        "endOffsets": "8510,8557,8707,8822"
                     }
                 },
                 {
