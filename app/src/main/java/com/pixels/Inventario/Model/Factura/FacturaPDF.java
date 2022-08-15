@@ -10,26 +10,28 @@ import com.itextpdf.text.Element;
 import com.itextpdf.text.Font;
 import com.itextpdf.text.PageSize;
 import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.Phrase;
+import com.itextpdf.text.pdf.PdfPCell;
+import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.pixels.Inventario.View.Activity.Caja.Caja;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.text.NumberFormat;
 
 public class FacturaPDF {
     private Caja Context;
     private File Factura;
     private String CodigoV;
-    private int Efectivo;
     private Document document;
     private PdfWriter FacturaEscribir;
     private Paragraph paragraph;
     private Font Ftitulo,FsubTitulo,Ftext,FhighText;
 
-    public FacturaPDF(Caja context, String codigoV,int efectivo) {
+    public FacturaPDF(Caja context, String codigoV) {
         this.Context=context;
         this.CodigoV=codigoV;
-        this.Efectivo=efectivo;
         this.Ftitulo=new Font(Font.FontFamily.TIMES_ROMAN,20,Font.BOLD);
         this.FsubTitulo=new Font(Font.FontFamily.TIMES_ROMAN,20,Font.BOLD);
         this.Ftext=new Font(Font.FontFamily.TIMES_ROMAN,20,Font.BOLD);
@@ -63,7 +65,7 @@ public class FacturaPDF {
             paragraph.setSpacingAfter(5);
             document.add(paragraph);
         }catch (Exception e){
-            Toast.makeText(Context, "Error al Cargar la Factura", Toast.LENGTH_LONG).show();
+            Toast.makeText(Context, "Error al Cargar la Factura Titulos", Toast.LENGTH_LONG).show();
         }
     }
     public void addParagraph(String text){
@@ -73,7 +75,49 @@ public class FacturaPDF {
             paragraph.setSpacingBefore(5);
             document.add(paragraph);
         }catch (Exception e){
-            Toast.makeText(Context, "Error al Cargar la Factura", Toast.LENGTH_LONG).show();
+            Toast.makeText(Context, "Error al Cargar la Factura Texto", Toast.LENGTH_LONG).show();
+        }
+    }
+    public void addTablaP(){
+        try {
+            String [] header={"CODIGO","NOMBRE","CANTIDAD","VALOR"};
+            paragraph=new Paragraph();
+            paragraph.setFont(Ftext);
+            PdfPTable table=new PdfPTable(header.length);
+            table.setWidthPercentage(100);
+            PdfPCell cell;
+            int index=0;
+            while(index<header.length){
+                cell=new PdfPCell(new Phrase(header[index++],Ftext));
+                cell.setHorizontalAlignment(Element.ALIGN_CENTER);
+                table.addCell(cell);
+            }
+            for(int i=0;i<Context.Productos.size();i++){
+                cell=new PdfPCell(new Phrase(Context.Productos.get(i).getCodigo(),Ftext));
+                cell.setHorizontalAlignment(Element.ALIGN_CENTER);
+                table.addCell(cell);
+                cell=new PdfPCell(new Phrase(Context.Productos.get(i).getNombre(),Ftext));
+                cell.setHorizontalAlignment(Element.ALIGN_CENTER);
+                table.addCell(cell);
+                if(Context.Productos.get(i).getTipoC().equals("peso")){
+                    cell=new PdfPCell(new Phrase(Context.Productos.get(i).getCantidad()+"",Ftext));
+                    cell.setHorizontalAlignment(Element.ALIGN_CENTER);
+                    table.addCell(cell);
+                }else{
+                    int cantidad=(int) Context.Productos.get(i).getCantidad();
+                    cell=new PdfPCell(new Phrase(cantidad+"",Ftext));
+                    cell.setHorizontalAlignment(Element.ALIGN_CENTER);
+                    table.addCell(cell);
+                }
+                NumberFormat formato= NumberFormat.getNumberInstance();
+                cell=new PdfPCell(new Phrase(formato.format(Context.Productos.get(i).getPrecio()),Ftext));
+                cell.setHorizontalAlignment(Element.ALIGN_CENTER);
+                table.addCell(cell);
+            }
+            paragraph.add(table);
+            document.add(paragraph);
+        }catch (Exception e){
+            Toast.makeText(Context, "Error al Cargar la Factura Tabla", Toast.LENGTH_LONG).show();
         }
     }
     private void addChildP(Paragraph childParagraph){
@@ -86,6 +130,8 @@ public class FacturaPDF {
             carpeta.mkdirs();
         }
         Factura=new File(carpeta,"Factura_Codigo_"+CodigoV);
-
+    }
+    public File getFactura(){
+        return Factura;
     }
 }

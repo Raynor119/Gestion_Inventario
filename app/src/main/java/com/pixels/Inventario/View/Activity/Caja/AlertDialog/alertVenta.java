@@ -17,6 +17,7 @@ import com.pixels.Inventario.Model.DatosE.VentaRealizada;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Caja.Caja;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.TextWatcher.TextMoneda;
+import com.pixels.Inventario.ViewModel.Caja.Venta.RealizarFacturaViewModel;
 import com.pixels.Inventario.ViewModel.Caja.Venta.RealizarVentaViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.AgregarProductos.ConvertirModenaINT;
 
@@ -64,7 +65,7 @@ public class alertVenta {
                         total=total+suptotal;
                     }
                     ConvertirModenaINT convertir=new ConvertirModenaINT();
-                    int efectivo=convertir.Convertir(cantidad.getText().toString());
+                    final int efectivo=convertir.Convertir(cantidad.getText().toString());
                     if(efectivo<total){
                         cantidad.setError("La cantidad de efectivo recibida tiene que ser mayor o igual al Total de la Venta");
                     }else{
@@ -76,9 +77,7 @@ public class alertVenta {
                             @Override
                             public void onChanged(List<VentaRealizada> ventaRealizadas) {
                                 if(ventaRealizadas.get(0).isVerificar()){
-                                    VentaRealizada(ventaRealizadas.get(0).getCodigoVenta(),cambio);
-                                    Context.Productos=new ArrayList<>();
-                                    Context.iniciarRecyclerView();
+                                    VentaRealizada(ventaRealizadas.get(0).getCodigoVenta(),ventaRealizadas.get(0).getFecha(),cambio,efectivo);
                                     dialog.cancel();
                                 }else{
                                     Toast.makeText(Context, "Error al Realizar la Venta", Toast.LENGTH_LONG).show();
@@ -91,7 +90,7 @@ public class alertVenta {
             }
         });
     }
-    public void VentaRealizada(String CodigoV,int Cambio){
+    public void VentaRealizada(String CodigoV,String FechaV,int Cambio,int efectivo){
         AlertDialog.Builder builder = new AlertDialog.Builder(Context);
         builder.setCancelable(false);
         builder.setTitle("Venta Realizada");
@@ -104,13 +103,15 @@ public class alertVenta {
         builder.setPositiveButton("Compartir La Factura", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-
+                RealizarFacturaViewModel Venta= ViewModelProviders.of(Context).get(RealizarFacturaViewModel.class);
+                Venta.crearFactura(Context,CodigoV,FechaV,efectivo,"si");
             }
         });
         builder.setNegativeButton("Ver La Factura", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-
+                RealizarFacturaViewModel Venta= ViewModelProviders.of(Context).get(RealizarFacturaViewModel.class);
+                Venta.crearFactura(Context,CodigoV,FechaV,efectivo,"no");
             }
         });
         builder.setNeutralButton("Salir", new DialogInterface.OnClickListener() {

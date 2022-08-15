@@ -1388,6 +1388,10 @@
         "source": "/home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/08082afc67f4477f68f1afae96adfc4f/res/layout/notification_media_action.xml"
     },
     {
+        "merged": "/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/build/intermediates/res/merged/debug/drawable_default_scroll_handle_left.xml.flat",
+        "source": "/home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/ce8754034b91bfca9e472b2eb422690b/res/drawable/default_scroll_handle_left.xml"
+    },
+    {
         "merged": "/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "/home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/c3f7fe58c24ad1cc98d5753370343bc3/res/drawable-xhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
     },
@@ -1976,6 +1980,10 @@
         "source": "/home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/f488a8aacbbbd8afd1b86ce9187f03da/res/color/material_cursor_color.xml"
     },
     {
+        "merged": "/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/build/intermediates/res/merged/debug/drawable_default_scroll_handle_bottom.xml.flat",
+        "source": "/home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/ce8754034b91bfca9e472b2eb422690b/res/drawable/default_scroll_handle_bottom.xml"
+    },
+    {
         "merged": "/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "/home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/c3f7fe58c24ad1cc98d5753370343bc3/res/drawable-xxhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
     },
@@ -2202,6 +2210,10 @@
     {
         "merged": "/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "/home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/c3f7fe58c24ad1cc98d5753370343bc3/res/drawable-mdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/build/intermediates/res/merged/debug/drawable_default_scroll_handle_top.xml.flat",
+        "source": "/home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/ce8754034b91bfca9e472b2eb422690b/res/drawable/default_scroll_handle_top.xml"
     },
     {
         "merged": "/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/build/intermediates/res/merged/debug/color_mtrl_outlined_stroke_color.xml.flat",
@@ -2442,6 +2454,10 @@
     {
         "merged": "/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/build/intermediates/res/merged/debug/drawable_abc_ratingbar_indicator_material.xml.flat",
         "source": "/home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/c3f7fe58c24ad1cc98d5753370343bc3/res/drawable/abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/build/intermediates/res/merged/debug/drawable_default_scroll_handle_right.xml.flat",
+        "source": "/home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/ce8754034b91bfca9e472b2eb422690b/res/drawable/default_scroll_handle_right.xml"
     },
     {
         "merged": "/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/build/intermediates/res/merged/debug/mipmap-xhdpi_productos.png.flat",

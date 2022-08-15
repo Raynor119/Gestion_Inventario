@@ -20,6 +20,7 @@ public class RealizarVentaSQLite extends BaseDatosSQLite implements MediadorBase
     private int Efectivo;
     private RealizarVentaViewModel ViewModel;
     private String CodigoV="";
+    private String FechaV="";
 
     public RealizarVentaSQLite(Caja context, int efectivo, RealizarVentaViewModel viewModel) {
         super(context);
@@ -39,6 +40,7 @@ public class RealizarVentaSQLite extends BaseDatosSQLite implements MediadorBase
                 if(cursor.moveToFirst()){
                     do{
                         CodigoV=cursor.getString(0);
+                        FechaV=cursor.getString(1);
                     }while(cursor.moveToNext());
                 }
                 for(int i=0;i< Context.Productos.size();i++){
@@ -64,7 +66,7 @@ public class RealizarVentaSQLite extends BaseDatosSQLite implements MediadorBase
             }catch (Exception e){
                 Toast.makeText(Context, "Error en La Base Datos", Toast.LENGTH_LONG).show();
                 List<VentaRealizada> resultado=new ArrayList<>();
-                resultado.add(new VentaRealizada(false,""));
+                resultado.add(new VentaRealizada(false,"",""));
                 ViewModel.resultado.setValue(resultado);
             }
             bd.close();
@@ -74,13 +76,13 @@ public class RealizarVentaSQLite extends BaseDatosSQLite implements MediadorBase
 
     @Override
     public void ConsultaBaseDatos() {
-        if(CodigoV.equals("")){
+        if(CodigoV.equals("") || FechaV.equals("")){
             List<VentaRealizada> resultado=new ArrayList<>();
-            resultado.add(new VentaRealizada(false,""));
+            resultado.add(new VentaRealizada(false,"",""));
             ViewModel.resultado.setValue(resultado);
         }else{
             List<VentaRealizada> resultado=new ArrayList<>();
-            resultado.add(new VentaRealizada(true,CodigoV));
+            resultado.add(new VentaRealizada(true,CodigoV,FechaV));
             ViewModel.resultado.setValue(resultado);
         }
     }

@@ -22,6 +22,7 @@ public class RealizarVentaMYSQL extends Conexion implements MediadorBaseDatos {
     private int Efectivo;
     private RealizarVentaViewModel ViewModel;
     private String CodigoV="";
+    private String FechaV="";
 
     public RealizarVentaMYSQL(Caja context, int efectivo, RealizarVentaViewModel viewModel) {
         super(context);
@@ -40,6 +41,7 @@ public class RealizarVentaMYSQL extends Conexion implements MediadorBaseDatos {
             ResultSet rs = st.executeQuery("SELECT * FROM Venta ORDER by codigo DESC LIMIT 1");
             while (rs.next()) {
                 CodigoV=rs.getString(1);
+                FechaV=rs.getString(2);
             }
             for(int i=0;i< Context.Productos.size();i++){
                 st.executeUpdate("INSERT INTO VentasProductos (codigoV,codigoP,CantidadV,CostePV,PrecioPV,IvaPV,EstadoDevolucion,ObservacionD) VALUES("+CodigoV+",'"+Context.Productos.get(i).getCodigo()+"',"+Context.Productos.get(i).getCantidad()+","+Context.Productos.get(i).getCosteP()+","+Context.Productos.get(i).getPrecio()+","+Context.Productos.get(i).getIva()+",'no',NULL)");
@@ -68,20 +70,20 @@ public class RealizarVentaMYSQL extends Conexion implements MediadorBaseDatos {
         }else {
             Toast.makeText(Context, result, Toast.LENGTH_LONG).show();
             List<VentaRealizada> resultado=new ArrayList<>();
-            resultado.add(new VentaRealizada(false,""));
+            resultado.add(new VentaRealizada(false,"",""));
             ViewModel.resultado.setValue(resultado);
         }
     }
 
     @Override
     public void ConsultaBaseDatos() {
-        if(CodigoV.equals("")){
+        if(CodigoV.equals("") || FechaV.equals("")){
             List<VentaRealizada> resultado=new ArrayList<>();
-            resultado.add(new VentaRealizada(false,""));
+            resultado.add(new VentaRealizada(false,"",""));
             ViewModel.resultado.setValue(resultado);
         }else{
             List<VentaRealizada> resultado=new ArrayList<>();
-            resultado.add(new VentaRealizada(true,CodigoV));
+            resultado.add(new VentaRealizada(true,CodigoV,FechaV));
             ViewModel.resultado.setValue(resultado);
         }
     }

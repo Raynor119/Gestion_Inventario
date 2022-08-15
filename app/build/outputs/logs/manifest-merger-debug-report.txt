@@ -10,6 +10,8 @@ MERGED from [androidx.preference:preference:1.1.1] /home/deivicamiloflorezprieto
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/d9ab6e53bf99b954eea93138efe2b306/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/c3f7fe58c24ad1cc98d5753370343bc3/AndroidManifest.xml:17:1-24:12
 MERGED from [com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/37c45629890f204970afb4f45c4b49b0/AndroidManifest.xml:17:1-56:12
+MERGED from [com.github.barteksc:android-pdf-viewer:2.8.1] /home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/ce8754034b91bfca9e472b2eb422690b/AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.barteksc:pdfium-android:1.7.1] /home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/cdd6a23395119f2398022094dccc1c25/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/b89f24530737aa0a0d752a61ae5ab9bb/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/0a5eb4bf115d8e3e4e0d47c4befce379/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/be557088ddc00cc53dd2d6daf6e84388/AndroidManifest.xml:17:1-24:12
@@ -85,6 +87,10 @@ MERGED from [androidx.appcompat:appcompat:1.2.0] /home/deivicamiloflorezprieto/.
 MERGED from [androidx.appcompat:appcompat:1.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/c3f7fe58c24ad1cc98d5753370343bc3/AndroidManifest.xml:20:5-22:41
 MERGED from [com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/37c45629890f204970afb4f45c4b49b0/AndroidManifest.xml:20:5-44
 MERGED from [com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/37c45629890f204970afb4f45c4b49b0/AndroidManifest.xml:20:5-44
+MERGED from [com.github.barteksc:android-pdf-viewer:2.8.1] /home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/ce8754034b91bfca9e472b2eb422690b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:android-pdf-viewer:2.8.1] /home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/ce8754034b91bfca9e472b2eb422690b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:pdfium-android:1.7.1] /home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/cdd6a23395119f2398022094dccc1c25/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:pdfium-android:1.7.1] /home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/cdd6a23395119f2398022094dccc1c25/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/b89f24530737aa0a0d752a61ae5ab9bb/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/b89f24530737aa0a0d752a61ae5ab9bb/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-2/files-2.1/0a5eb4bf115d8e3e4e0d47c4befce379/AndroidManifest.xml:20:5-22:41
