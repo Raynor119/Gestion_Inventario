@@ -2,6 +2,7 @@ package com.pixels.Inventario.Model.Factura;
 
 
 
+import android.content.Context;
 import android.os.Environment;
 import android.widget.Toast;
 
@@ -16,14 +17,16 @@ import com.itextpdf.text.Phrase;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
+import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.View.Activity.Caja.Caja;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.text.NumberFormat;
+import java.util.List;
 
 public class FacturaPDF {
-    private Caja Context;
+    private Context Context;
     private File Factura;
     private String CodigoV;
     private Document document;
@@ -31,7 +34,7 @@ public class FacturaPDF {
     private Paragraph paragraph;
     private Font Ftitulo,FsubTitulo,Ftext,FhighText;
 
-    public FacturaPDF(Caja context, String codigoV) {
+    public FacturaPDF(Context context, String codigoV) {
         this.Context=context;
         this.CodigoV=codigoV;
         this.Ftitulo=new Font(Font.FontFamily.TIMES_ROMAN,20,Font.BOLD);
@@ -58,6 +61,7 @@ public class FacturaPDF {
             paragraph=new Paragraph();
             addChildP(new Paragraph(dato,Ftitulo));
             paragraph.setSpacingAfter(5);
+            paragraph.setSpacingBefore(10);
             document.add(paragraph);
         }catch (Exception e){
             Toast.makeText(Context, "Error al Cargar la Titulos", Toast.LENGTH_LONG).show();
@@ -80,17 +84,30 @@ public class FacturaPDF {
             Toast.makeText(Context, "Error al Cargar la Factura Titulos", Toast.LENGTH_LONG).show();
         }
     }
-    public void addParagraph(String text){
+    public void addParagraphR(String text){
         try{
-            paragraph=new Paragraph(text,Ftext);
+            paragraph=new Paragraph();
+            addChildR(new Paragraph(text,Ftext));
             paragraph.setSpacingAfter(5);
             paragraph.setSpacingBefore(5);
+
             document.add(paragraph);
         }catch (Exception e){
             Toast.makeText(Context, "Error al Cargar la Factura Texto", Toast.LENGTH_LONG).show();
         }
     }
-    public void addTablaP(){
+    public void addParagraph(String text){
+        try{
+            paragraph=new Paragraph(text,Ftext);
+            paragraph.setSpacingAfter(5);
+            paragraph.setSpacingBefore(5);
+
+            document.add(paragraph);
+        }catch (Exception e){
+            Toast.makeText(Context, "Error al Cargar la Factura Texto", Toast.LENGTH_LONG).show();
+        }
+    }
+    public void addTablaP(List<Producto> Productos){
         try {
             String [] header={"CODIGO","NOMBRE","CANTIDAD","VALOR"};
             paragraph=new Paragraph();
@@ -104,25 +121,25 @@ public class FacturaPDF {
                 cell.setHorizontalAlignment(Element.ALIGN_CENTER);
                 table.addCell(cell);
             }
-            for(int i=0;i<Context.Productos.size();i++){
-                cell=new PdfPCell(new Phrase(Context.Productos.get(i).getCodigo(),Ftext));
+            for(int i=0;i<Productos.size();i++){
+                cell=new PdfPCell(new Phrase(Productos.get(i).getCodigo(),Ftext));
                 cell.setHorizontalAlignment(Element.ALIGN_CENTER);
                 table.addCell(cell);
-                cell=new PdfPCell(new Phrase(Context.Productos.get(i).getNombre(),Ftext));
+                cell=new PdfPCell(new Phrase(Productos.get(i).getNombre(),Ftext));
                 cell.setHorizontalAlignment(Element.ALIGN_CENTER);
                 table.addCell(cell);
-                if(Context.Productos.get(i).getTipoC().equals("peso")){
-                    cell=new PdfPCell(new Phrase(Context.Productos.get(i).getCantidad()+"",Ftext));
+                if(Productos.get(i).getTipoC().equals("peso")){
+                    cell=new PdfPCell(new Phrase(Productos.get(i).getCantidad()+"",Ftext));
                     cell.setHorizontalAlignment(Element.ALIGN_CENTER);
                     table.addCell(cell);
                 }else{
-                    int cantidad=(int) Context.Productos.get(i).getCantidad();
+                    int cantidad=(int) Productos.get(i).getCantidad();
                     cell=new PdfPCell(new Phrase(cantidad+"",Ftext));
                     cell.setHorizontalAlignment(Element.ALIGN_CENTER);
                     table.addCell(cell);
                 }
                 NumberFormat formato= NumberFormat.getNumberInstance();
-                cell=new PdfPCell(new Phrase(formato.format(Context.Productos.get(i).getPrecio()),Ftext));
+                cell=new PdfPCell(new Phrase(formato.format(Productos.get(i).getPrecio()),Ftext));
                 cell.setHorizontalAlignment(Element.ALIGN_CENTER);
                 table.addCell(cell);
             }
@@ -136,6 +153,10 @@ public class FacturaPDF {
     }
     private void addChildP(Paragraph childParagraph){
         childParagraph.setAlignment(Element.ALIGN_CENTER);
+        paragraph.add(childParagraph);
+    }
+    private void addChildR(Paragraph childParagraph){
+        childParagraph.setAlignment(Element.ALIGN_RIGHT);
         paragraph.add(childParagraph);
     }
     private void CrearArchivo(){

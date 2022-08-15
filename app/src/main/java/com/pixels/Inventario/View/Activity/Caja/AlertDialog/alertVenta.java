@@ -131,7 +131,8 @@ public class alertVenta {
         builder.setNeutralButton("Salir", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-
+                Context.Productos=new ArrayList<>();
+                Context.iniciarRecyclerView();
             }
         });
 
