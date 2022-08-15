@@ -9,6 +9,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cad1e94c179ffb9b078c44ef5fb65d21/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cad1e94c179ffb9b078c44ef5fb65d21/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cad1e94c179ffb9b078c44ef5fb65d21/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1047a5f87c5c8aa996ddea577be24118/transformed/jetified-lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1047a5f87c5c8aa996ddea577be24118/transformed/jetified-lifecycle-viewmodel-savedstate-2.2.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1047a5f87c5c8aa996ddea577be24118/transformed/jetified-lifecycle-viewmodel-savedstate-2.2.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

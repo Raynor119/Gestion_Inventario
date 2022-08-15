@@ -1,6 +1,8 @@
 package com.pixels.Inventario.View.Activity.Caja.AlertDialog;
 
+import android.Manifest;
 import android.content.DialogInterface;
+import android.content.pm.PackageManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -9,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
+import androidx.core.content.ContextCompat;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
@@ -27,6 +30,7 @@ import java.util.List;
 
 public class alertVenta {
     public Caja Context;
+    public int code=200;
     public alertVenta(Caja context){
         this.Context=context;
     }
@@ -69,22 +73,32 @@ public class alertVenta {
                     if(efectivo<total){
                         cantidad.setError("La cantidad de efectivo recibida tiene que ser mayor o igual al Total de la Venta");
                     }else{
-                        int cambio=efectivo-total;
-                        RealizarVentaViewModel Venta= ViewModelProviders.of(Context).get(RealizarVentaViewModel.class);
-                        Venta.reset();
-                        Venta.realizarVenta(Context,efectivo);
-                        Observer<List<VentaRealizada>> observer=new Observer<List<VentaRealizada>>() {
-                            @Override
-                            public void onChanged(List<VentaRealizada> ventaRealizadas) {
-                                if(ventaRealizadas.get(0).isVerificar()){
-                                    VentaRealizada(ventaRealizadas.get(0).getCodigoVenta(),ventaRealizadas.get(0).getFecha(),cambio,efectivo);
-                                    dialog.cancel();
-                                }else{
-                                    Toast.makeText(Context, "Error al Realizar la Venta", Toast.LENGTH_LONG).show();
+                        int permisos= ContextCompat.checkSelfPermission(Context, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+                        boolean vcerificar=false;
+                        if(permisos== PackageManager.PERMISSION_GRANTED){
+                            vcerificar=true;
+                        }else{
+                            Toast.makeText(Context, "Error al realizar la venta conceda los permosos de almacenamiento", Toast.LENGTH_LONG).show();
+                            Context.requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},code);
+                        }
+                        if(vcerificar){
+                            int cambio=efectivo-total;
+                            RealizarVentaViewModel Venta= ViewModelProviders.of(Context).get(RealizarVentaViewModel.class);
+                            Venta.reset();
+                            Venta.realizarVenta(Context,efectivo);
+                            Observer<List<VentaRealizada>> observer=new Observer<List<VentaRealizada>>() {
+                                @Override
+                                public void onChanged(List<VentaRealizada> ventaRealizadas) {
+                                    if(ventaRealizadas.get(0).isVerificar()){
+                                        VentaRealizada(ventaRealizadas.get(0).getCodigoVenta(),ventaRealizadas.get(0).getFecha(),cambio,efectivo);
+                                        dialog.cancel();
+                                    }else{
+                                        Toast.makeText(Context, "Error al Realizar la Venta", Toast.LENGTH_LONG).show();
+                                    }
                                 }
-                            }
-                        };
-                        Venta.getResultado().observe(Context,observer);
+                            };
+                            Venta.getResultado().observe(Context,observer);
+                        }
                     }
                 }
             }

@@ -1,8 +1,10 @@
 package com.pixels.Inventario.Model.Factura;
 
-import android.content.Context;
+
+
 import android.os.Environment;
 import android.widget.Toast;
+
 
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Document;
@@ -45,11 +47,21 @@ public class FacturaPDF {
             FacturaEscribir=PdfWriter.getInstance(document,new FileOutputStream(Factura));
             document.open();
         }catch (Exception e){
-            Toast.makeText(Context, "Error al Cargar el PDF", Toast.LENGTH_LONG).show();
+            Toast.makeText(Context, "Error al Cargar el PDF: "+e, Toast.LENGTH_LONG).show();
         }
     }
     public void CerrarFactura(){
         document.close();
+    }
+    public void addSubTitulos(String dato){
+        try {
+            paragraph=new Paragraph();
+            addChildP(new Paragraph(dato,Ftitulo));
+            paragraph.setSpacingAfter(5);
+            document.add(paragraph);
+        }catch (Exception e){
+            Toast.makeText(Context, "Error al Cargar la Titulos", Toast.LENGTH_LONG).show();
+        }
     }
     public void addDatos(String titulo,String subject,String author){
         document.addTitle(titulo);
@@ -115,6 +127,8 @@ public class FacturaPDF {
                 table.addCell(cell);
             }
             paragraph.add(table);
+            paragraph.setSpacingAfter(5);
+            paragraph.setSpacingBefore(5);
             document.add(paragraph);
         }catch (Exception e){
             Toast.makeText(Context, "Error al Cargar la Factura Tabla", Toast.LENGTH_LONG).show();
@@ -125,11 +139,12 @@ public class FacturaPDF {
         paragraph.add(childParagraph);
     }
     private void CrearArchivo(){
+
         File carpeta=new File(Environment.getExternalStorageDirectory().toString(),"Facturas");
         if(!carpeta.exists()){
             carpeta.mkdirs();
         }
-        Factura=new File(carpeta,"Factura_Codigo_"+CodigoV);
+        Factura=new File(carpeta,"FacturaCodigo"+CodigoV+".pdf");
     }
     public File getFactura(){
         return Factura;
