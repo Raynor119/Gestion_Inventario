@@ -1,10 +1,14 @@
 package com.pixels.Inventario.View.Activity.Caja.Factura;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ShareCompat;
+import androidx.core.content.FileProvider;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.view.View;
 import android.widget.Toast;
 
@@ -14,6 +18,10 @@ import com.pixels.Inventario.R;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 
 public class VerFactura extends AppCompatActivity {
 
@@ -48,18 +56,26 @@ public class VerFactura extends AppCompatActivity {
     }
     public void Compartir(){
         try {
-            FileOutputStream fOut = null;
-            fOut = new FileOutputStream(factura);
-            fOut.flush();
-            fOut.close();
-            factura.setReadable(true, false);
-            final Intent intent = new Intent(android.content.Intent.ACTION_SEND);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(factura));
-            intent.setType("factura/pdf");
-            startActivity(intent);
+            Context Context=VerFactura.this;
+            File documentsPath = new File(Context.getFilesDir(), "documents");
+            if(!documentsPath.exists()){
+                documentsPath.mkdirs();
+            }
+
+            File file = new File(documentsPath, factura.getName());
+            Path origenPath = FileSystems.getDefault().getPath(factura.getAbsolutePath());
+            Path destinoPath = FileSystems.getDefault().getPath(file.getAbsolutePath());
+            Files.copy(origenPath, destinoPath, StandardCopyOption.REPLACE_EXISTING);
+            Uri uri = FileProvider.getUriForFile(VerFactura.this, "com.pixels.Inventario.fileprovider", file);
+            Intent intent = ShareCompat.IntentBuilder.from(VerFactura.this)
+                    .setType("application/pdf")
+                    .setStream(uri)
+                    .setChooserTitle("Compartir "+factura.getName())
+                    .createChooserIntent()
+                    .addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+            Context.startActivity(intent);
         }catch (Exception e){
-            Toast.makeText(getApplicationContext(), "Error al enviar la Factura asegurese de tener los permisos de almacenamiento", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Error al Compartir el Pdf Verifique los Permisos de Almacenamiento de la APP ", Toast.LENGTH_LONG).show();
         }
         if(decision.equals("si")){
             finish();
