@@ -3,23 +3,29 @@ package com.pixels.Inventario.Model.Factura;
 
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.os.Environment;
 import android.widget.Toast;
 
 
+import com.google.zxing.BarcodeFormat;
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.Element;
 import com.itextpdf.text.Font;
+import com.itextpdf.text.Image;
 import com.itextpdf.text.PageSize;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.Phrase;
+import com.itextpdf.text.pdf.Barcode;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
+import com.journeyapps.barcodescanner.BarcodeEncoder;
 import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.View.Activity.Caja.Caja;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.math.BigDecimal;
@@ -155,7 +161,7 @@ public class FacturaPDF {
     }
     public void addTablaPIVA(List<Producto> Productos){
         try {
-            String [] header={"CODIGO","TOTAL","BASE","IVA"};
+            String [] header={"CODIGO","BASE","IVA","TOTAL"};
             paragraph=new Paragraph();
             paragraph.setFont(Ftext);
             PdfPTable table=new PdfPTable(header.length);
@@ -187,11 +193,6 @@ public class FacturaPDF {
 
                 iva=iva+((int) ivaa);
 
-                cell=new PdfPCell(new Phrase(formato.format(total),Ftext));
-                cell.setHorizontalAlignment(Element.ALIGN_CENTER);
-                cell.setVerticalAlignment(Element.ALIGN_CENTER);
-                table.addCell(cell);
-
 
                 cell=new PdfPCell(new Phrase(formato.format(base),Ftext));
                 cell.setHorizontalAlignment(Element.ALIGN_CENTER);
@@ -203,29 +204,59 @@ public class FacturaPDF {
                 cell.setHorizontalAlignment(Element.ALIGN_CENTER);
                 cell.setVerticalAlignment(Element.ALIGN_CENTER);
                 table.addCell(cell);
+
+                cell=new PdfPCell(new Phrase(formato.format(total),Ftext));
+                cell.setHorizontalAlignment(Element.ALIGN_CENTER);
+                cell.setVerticalAlignment(Element.ALIGN_CENTER);
+                table.addCell(cell);
             }
-            cell=new PdfPCell(new Phrase("Total:",Ftext));
+            cell=new PdfPCell(new Phrase("TOTAL:",Ftext));
             cell.setHorizontalAlignment(Element.ALIGN_CENTER);
             cell.setVerticalAlignment(Element.ALIGN_CENTER);
             table.addCell(cell);
-            cell=new PdfPCell(new Phrase(formato.format(totalbase+iva),Ftext));
-            cell.setHorizontalAlignment(Element.ALIGN_CENTER);
-            cell.setVerticalAlignment(Element.ALIGN_CENTER);
-            table.addCell(cell);
+
             cell=new PdfPCell(new Phrase(formato.format(totalbase),Ftext));
             cell.setHorizontalAlignment(Element.ALIGN_CENTER);
             cell.setVerticalAlignment(Element.ALIGN_CENTER);
             table.addCell(cell);
+
             cell=new PdfPCell(new Phrase(formato.format(iva),Ftext));
             cell.setHorizontalAlignment(Element.ALIGN_CENTER);
             cell.setVerticalAlignment(Element.ALIGN_CENTER);
             table.addCell(cell);
+
+            cell=new PdfPCell(new Phrase(formato.format(totalbase+iva),Ftext));
+            cell.setHorizontalAlignment(Element.ALIGN_CENTER);
+            cell.setVerticalAlignment(Element.ALIGN_CENTER);
+            table.addCell(cell);
+
             paragraph.add(table);
             paragraph.setSpacingAfter(5);
             paragraph.setSpacingBefore(5);
             document.add(paragraph);
         }catch (Exception e){
             Toast.makeText(Context, "Error al Cargar la Factura Tabla", Toast.LENGTH_LONG).show();
+        }
+    }
+    public void addCodigoBarras(){
+        BarcodeEncoder barcodeEncoder=new BarcodeEncoder();
+        try {
+            Bitmap bitmap=barcodeEncoder.encodeBitmap(CodigoV, BarcodeFormat.CODABAR,550,80);
+            ByteArrayOutputStream stream = new ByteArrayOutputStream();
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+            Image imagen = Image.getInstance(stream.toByteArray());
+            imagen.scaleToFit(550, 80);
+            imagen.setAlignment(Element.ALIGN_CENTER);
+            Paragraph paragraph1=new Paragraph();
+            paragraph1.add(imagen);
+            paragraph1.setAlignment(Element.ALIGN_CENTER);
+            paragraph=new Paragraph();
+            paragraph.add(paragraph1);
+            paragraph.setSpacingAfter(20);
+            paragraph.setSpacingBefore(20);
+            document.add(paragraph);
+        }catch (Exception e){
+            Toast.makeText(Context, "Error al Cargar la Factura Codgio de Barras", Toast.LENGTH_LONG).show();
         }
     }
     private void addChildP(Paragraph childParagraph){
