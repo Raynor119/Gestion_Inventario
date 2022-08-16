@@ -22,6 +22,8 @@ import com.pixels.Inventario.View.Activity.Caja.Caja;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.text.NumberFormat;
 import java.util.List;
 
@@ -129,7 +131,7 @@ public class FacturaPDF {
                 cell.setHorizontalAlignment(Element.ALIGN_CENTER);
                 table.addCell(cell);
                 if(Productos.get(i).getTipoC().equals("peso")){
-                    cell=new PdfPCell(new Phrase(Productos.get(i).getCantidad()+"",Ftext));
+                    cell=new PdfPCell(new Phrase(Productos.get(i).getCantidad()+"Kg",Ftext));
                     cell.setHorizontalAlignment(Element.ALIGN_CENTER);
                     table.addCell(cell);
                 }else{
@@ -143,6 +145,81 @@ public class FacturaPDF {
                 cell.setHorizontalAlignment(Element.ALIGN_CENTER);
                 table.addCell(cell);
             }
+            paragraph.add(table);
+            paragraph.setSpacingAfter(5);
+            paragraph.setSpacingBefore(5);
+            document.add(paragraph);
+        }catch (Exception e){
+            Toast.makeText(Context, "Error al Cargar la Factura Tabla", Toast.LENGTH_LONG).show();
+        }
+    }
+    public void addTablaPIVA(List<Producto> Productos){
+        try {
+            String [] header={"CODIGO","TOTAL","BASE","IVA"};
+            paragraph=new Paragraph();
+            paragraph.setFont(Ftext);
+            PdfPTable table=new PdfPTable(header.length);
+            table.setWidthPercentage(100);
+            PdfPCell cell;
+            int index=0;
+            while(index<header.length){
+                cell=new PdfPCell(new Phrase(header[index++],Ftext));
+                cell.setHorizontalAlignment(Element.ALIGN_CENTER);
+                table.addCell(cell);
+            }
+            int totalbase=0,iva=0;
+            NumberFormat formato= NumberFormat.getNumberInstance();
+            for(int i=0;i<Productos.size();i++){
+
+                cell=new PdfPCell(new Phrase(Productos.get(i).getCodigo(),Ftext));
+                cell.setHorizontalAlignment(Element.ALIGN_CENTER);
+                cell.setVerticalAlignment(Element.ALIGN_CENTER);
+                table.addCell(cell);
+
+                double porcentajeiva=Double.parseDouble("1."+Productos.get(i).getIva());
+                int total=(int) (Productos.get(i).getPrecio()*Productos.get(i).getCantidad());
+                BigDecimal precionS = new BigDecimal((Productos.get(i).getPrecio()*Productos.get(i).getCantidad())/porcentajeiva).setScale(0, RoundingMode.HALF_UP);
+                int base=(int)(precionS.doubleValue());
+                totalbase=totalbase+base;
+                double poriva=(Productos.get(i).getIva()*0.01);
+                BigDecimal precion = new BigDecimal(base*poriva).setScale(0, RoundingMode.HALF_UP);
+                double ivaa=precion.doubleValue();
+
+                iva=iva+((int) ivaa);
+
+                cell=new PdfPCell(new Phrase(formato.format(total),Ftext));
+                cell.setHorizontalAlignment(Element.ALIGN_CENTER);
+                cell.setVerticalAlignment(Element.ALIGN_CENTER);
+                table.addCell(cell);
+
+
+                cell=new PdfPCell(new Phrase(formato.format(base),Ftext));
+                cell.setHorizontalAlignment(Element.ALIGN_CENTER);
+                cell.setVerticalAlignment(Element.ALIGN_CENTER);
+                table.addCell(cell);
+
+
+                cell=new PdfPCell(new Phrase(formato.format(ivaa),Ftext));
+                cell.setHorizontalAlignment(Element.ALIGN_CENTER);
+                cell.setVerticalAlignment(Element.ALIGN_CENTER);
+                table.addCell(cell);
+            }
+            cell=new PdfPCell(new Phrase("Total:",Ftext));
+            cell.setHorizontalAlignment(Element.ALIGN_CENTER);
+            cell.setVerticalAlignment(Element.ALIGN_CENTER);
+            table.addCell(cell);
+            cell=new PdfPCell(new Phrase(formato.format(totalbase+iva),Ftext));
+            cell.setHorizontalAlignment(Element.ALIGN_CENTER);
+            cell.setVerticalAlignment(Element.ALIGN_CENTER);
+            table.addCell(cell);
+            cell=new PdfPCell(new Phrase(formato.format(totalbase),Ftext));
+            cell.setHorizontalAlignment(Element.ALIGN_CENTER);
+            cell.setVerticalAlignment(Element.ALIGN_CENTER);
+            table.addCell(cell);
+            cell=new PdfPCell(new Phrase(formato.format(iva),Ftext));
+            cell.setHorizontalAlignment(Element.ALIGN_CENTER);
+            cell.setVerticalAlignment(Element.ALIGN_CENTER);
+            table.addCell(cell);
             paragraph.add(table);
             paragraph.setSpacingAfter(5);
             paragraph.setSpacingBefore(5);

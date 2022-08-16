@@ -72,6 +72,7 @@ public class RealizarFacturaViewModel extends ViewModel {
                          "CAMBIO $                         "+formato.format(cambio);
             factura.addParagraphR(texto);
             factura.addSubTitulos("RESUMEN DE IMPUESTOS");
+            factura.addTablaPIVA(Productos);
             factura.CerrarFactura();
             Intent intent=new Intent(context, VerFactura.class);
             intent.putExtra("path",factura.getFactura().getAbsolutePath());
