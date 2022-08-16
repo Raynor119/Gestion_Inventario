@@ -23,6 +23,7 @@ import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.journeyapps.barcodescanner.BarcodeEncoder;
 import com.pixels.Inventario.Model.DatosE.Producto;
+import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Caja.Caja;
 
 import java.io.ByteArrayOutputStream;
@@ -36,15 +37,17 @@ import java.util.List;
 public class FacturaPDF {
     private Context Context;
     private File Factura;
-    private String CodigoV;
+    private String CodigoV,FechaV,BaseDatos;
     private Document document;
     private PdfWriter FacturaEscribir;
     private Paragraph paragraph;
     private Font Ftitulo,FsubTitulo,Ftext,FhighText;
 
-    public FacturaPDF(Context context, String codigoV) {
+    public FacturaPDF(Context context, String codigoV,String fechaV,String basedatos) {
         this.Context=context;
         this.CodigoV=codigoV;
+        this.FechaV=fechaV;
+        this.BaseDatos=basedatos;
         this.Ftitulo=new Font(Font.FontFamily.TIMES_ROMAN,20,Font.BOLD);
         this.FsubTitulo=new Font(Font.FontFamily.TIMES_ROMAN,20,Font.BOLD);
         this.Ftext=new Font(Font.FontFamily.TIMES_ROMAN,20,Font.BOLD);
@@ -269,11 +272,27 @@ public class FacturaPDF {
     }
     private void CrearArchivo(){
 
-        File carpeta=new File(Environment.getExternalStorageDirectory().toString(),"Facturas");
+        File carpeta=new File(Environment.getExternalStorageDirectory().toString(),"Facturas"+Context.getString(R.string.app_name));
         if(!carpeta.exists()){
             carpeta.mkdirs();
         }
-        Factura=new File(carpeta,"FacturaCodigo"+CodigoV+".pdf");
+        File subcarpeta=new File(carpeta,BaseDatos);
+        if(!subcarpeta.exists()){
+            subcarpeta.mkdirs();
+        }
+        String Fecha="";
+        for (int i=0;i<FechaV.length();i++){
+            if((""+FechaV.charAt(i)).equals(" ")){
+                break;
+            }else{
+                Fecha=Fecha+(""+FechaV.charAt(i));
+            }
+        }
+        File carpetaFecha=new File(subcarpeta,Fecha);
+        if(!carpetaFecha.exists()){
+            carpetaFecha.mkdirs();
+        }
+        Factura=new File(carpetaFecha,"FacturaCodigo"+CodigoV+".pdf");
     }
     public File getFactura(){
         return Factura;

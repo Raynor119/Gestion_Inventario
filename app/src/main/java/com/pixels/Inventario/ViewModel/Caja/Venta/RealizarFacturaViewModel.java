@@ -45,7 +45,7 @@ public class RealizarFacturaViewModel extends ViewModel {
             context.requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},code);
         }
         if(verificar){
-            factura=new FacturaPDF(context,codigoV);
+            factura=new FacturaPDF(context,codigoV,fechaV,bd.obtenerD().get(0).getBasedatos());
             factura.AbrirFactura();
             factura.addDatos("Factura_"+codigoV,"VentaRealizada",""+context.getString(R.string.app_name));
             factura.addTitulos(""+nombre+"      NIT: "+nit,"Codigo de la Factura: "+codigoV,"Fecha: "+fechaV);
