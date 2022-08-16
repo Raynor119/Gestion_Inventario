@@ -18,6 +18,8 @@ import java.util.List;
 
 public class alertbuscar {
     public Caja Context;
+    public RecyclerView recycler;
+
     public alertbuscar(Caja context){
         this.Context=context;
     }
@@ -29,17 +31,28 @@ public class alertbuscar {
         builder.setView(view);
         builder.setTitle("Buscar Productos");
         AlertDialog dialog = builder.create();
-        RecyclerView recycler= view.findViewById(R.id.opcion_list);
+        recycler= view.findViewById(R.id.opcion_list);
         ProductosRecyclerViewModel productos= ViewModelProviders.of(Context).get(ProductosRecyclerViewModel.class);
         productos.reset();
         productos.buscarProductos(Context);
         final Observer<List<Producto>> observer= new Observer<List<Producto>>() {
             @Override
             public void onChanged(List<Producto> productos) {
-                recycler.setAdapter(new alertRecyclerViewAdapter(productos,Context,dialog));
+                new android.os.Handler().postDelayed(new Runnable() {
+
+                    @Override
+                    public void run() {
+                        recycler.setAdapter(new alertRecyclerViewAdapter(productos,Context,dialog,alertbuscar.this));
+                        reiniciar(productos,dialog);
+                    }
+                },100);
             }
         };
         productos.getResultado().observe(Context,observer);
         dialog.show();
+
+    }
+    public void reiniciar(List<Producto> Productos,AlertDialog dialog){
+        recycler.setAdapter(new alertRecyclerViewAdapter(Productos,Context,dialog,alertbuscar.this));
     }
 }

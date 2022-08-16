@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.R;
+import com.pixels.Inventario.View.Activity.Caja.AlertDialog.alertbuscar;
 import com.pixels.Inventario.View.Activity.Caja.AlertDialog.alertpeso;
 import com.pixels.Inventario.View.Activity.Caja.Caja;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.AlertDialog.alertEliminar;
@@ -30,11 +31,13 @@ public class alertRecyclerViewAdapter extends RecyclerView.Adapter<alertRecycler
     private List<Producto> Productos;
     private Caja Fragment;
     private  AlertDialog Dialog;
+    private alertbuscar Alerbuscar;
 
-    public alertRecyclerViewAdapter(List<Producto> productos, Caja fragment, AlertDialog dialog){
+    public alertRecyclerViewAdapter(List<Producto> productos, Caja fragment, AlertDialog dialog, alertbuscar alertbuscar){
         this.Productos=productos;
         this.Fragment=fragment;
         this.Dialog=dialog;
+        this.Alerbuscar=alertbuscar;
     }
     @Override
     public alertRecyclerViewAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {

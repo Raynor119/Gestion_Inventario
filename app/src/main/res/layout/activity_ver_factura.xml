@@ -20,7 +20,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     app:layout_anchorGravity="top|end"
-                    app:srcCompat="@mipmap/compartirmmas_adaptive_fore" />
+                    app:srcCompat="@mipmap/compartirmas_adaptive_fore" />
         </LinearLayout>
 
 </RelativeLayout>
