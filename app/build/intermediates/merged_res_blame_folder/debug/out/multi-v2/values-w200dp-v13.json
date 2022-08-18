@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.pixels.Inventario.app-mergeDebugResources-21:/values-w200dp-v13/values-w200dp-v13.xml",
+            "map": [
+                {
+                    "source": "/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/res/values-w200dp/dimens.xml",
+                    "from": {
+                        "startLines": "2,4,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,166,111",
+                        "endColumns": "55,52,54",
+                        "endOffsets": "106,214,161"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,111,164",
+                        "endColumns": "55,52,54",
+                        "endOffsets": "106,159,214"
+                    }
+                }
+            ]
+        }
+    ]
+}

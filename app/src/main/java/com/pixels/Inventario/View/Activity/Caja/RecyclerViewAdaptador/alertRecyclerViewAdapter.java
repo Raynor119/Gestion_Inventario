@@ -1,16 +1,14 @@
 package com.pixels.Inventario.View.Activity.Caja.RecyclerViewAdaptador;
 
-import android.content.Context;
-import android.content.Intent;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+
 import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
-import androidx.cardview.widget.CardView;
-import androidx.constraintlayout.widget.ConstraintLayout;
+
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.pixels.Inventario.Model.DatosE.Producto;
@@ -18,10 +16,7 @@ import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Caja.AlertDialog.alertbuscar;
 import com.pixels.Inventario.View.Activity.Caja.AlertDialog.alertpeso;
 import com.pixels.Inventario.View.Activity.Caja.Caja;
-import com.pixels.Inventario.View.Activity.Gestion_Productos.AlertDialog.alertEliminar;
-import com.pixels.Inventario.View.Activity.Gestion_Productos.EditarProductos.EditarProducto;
-import com.pixels.Inventario.View.Activity.Gestion_Productos.Fragment.VerInventarioFragment;
-import com.pixels.Inventario.View.Activity.Gestion_Productos.RecyclerViewAdaptador.ProductosRecyclerViewAdapter;
+
 
 import java.text.NumberFormat;
 import java.util.ArrayList;

@@ -29,6 +29,9 @@
                 android:resource="@xml/filepaths" />
         </provider>
         <activity
+            android:name=".View.Activity.Caja.Devoluciones.devoluciones"
+            android:exported="false"/>
+        <activity
             android:name=".View.Activity.Caja.Factura.VerFactura"
             android:exported="false">
         </activity>
