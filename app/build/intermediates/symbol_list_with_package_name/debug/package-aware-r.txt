@@ -2191,6 +2191,7 @@ id notification_main_column
 id notification_main_column_container
 id off
 id on
+id opcion
 id opcion_detail_container
 id opcion_list
 id opciones
@@ -2455,6 +2456,7 @@ layout activity_menuinicio
 layout activity_ver_factura
 layout ajustes_list_content
 layout alertcambiobasedatos
+layout alertdevolucion
 layout alertdialogcontra
 layout alertdialogonitnombre
 layout alertefectivo
@@ -2589,6 +2591,7 @@ layout zxing_barcode_scanner
 layout zxing_capture
 menu example_menu
 menu example_menu2
+menu menud
 mipmap add_adaptive_fore
 mipmap agregar
 mipmap agregar_adaptive_back

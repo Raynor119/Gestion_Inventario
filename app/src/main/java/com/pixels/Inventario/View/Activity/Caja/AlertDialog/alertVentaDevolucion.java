@@ -80,6 +80,7 @@ public class alertVentaDevolucion {
                                         CCodigo.setError("El Codigo de la Factura no esta Registrado en la Base de Datos");
                                         Codigo.setFocusableInTouchMode(true);
                                         Codigo.requestFocus();
+                                        verificarEnter=false;
                                     }else{
                                         i[0]=0;
                                     }
