@@ -2,6 +2,7 @@ package com.pixels.Inventario.View.Activity.Caja;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
@@ -10,6 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -23,6 +26,7 @@ import com.google.zxing.integration.android.IntentResult;
 import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Caja.AlertDialog.alertVenta;
+import com.pixels.Inventario.View.Activity.Caja.AlertDialog.alertVentaDevolucion;
 import com.pixels.Inventario.View.Activity.Caja.AlertDialog.alertbuscar;
 import com.pixels.Inventario.View.Activity.Caja.AlertDialog.alertpeso;
 import com.pixels.Inventario.View.Activity.Caja.RecyclerViewAdaptador.productoVRecyclerViewAdapter;
@@ -50,6 +54,9 @@ public class Caja extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_caja);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.detail_toolbar);
+        setTitle("");
+        setSupportActionBar(toolbar);
         Escaner=(CardView) findViewById(R.id.Escaner);
         Buscar=(CardView) findViewById(R.id.Buscar);
         Codigo=(TextInputEditText)findViewById(R.id.codigo);
@@ -178,6 +185,21 @@ public class Caja extends AppCompatActivity {
             }
         });
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.menud,menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        int id= item.getItemId();
+        if(id == R.id.opcion){
+            alertVentaDevolucion alert=new alertVentaDevolucion(Caja.this);
+            alert.pediridventa();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
     public void iniciarRecyclerView(){
         tableproductos.setAdapter(null);
         if(Productos.size()==0){
@@ -275,5 +297,6 @@ public class Caja extends AppCompatActivity {
                 Codigo.requestFocus();
             }
     }
+
 
 }

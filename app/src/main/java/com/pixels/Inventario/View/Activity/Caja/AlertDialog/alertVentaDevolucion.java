@@ -1,16 +1,98 @@
 package com.pixels.Inventario.View.Activity.Caja.AlertDialog;
 
-import android.content.Context;
+import android.app.AlertDialog;
+
+import android.view.KeyEvent;
+import android.view.LayoutInflater;
+import android.view.View;
+
+import androidx.cardview.widget.CardView;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProviders;
+
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
+import com.pixels.Inventario.Model.DatosE.Producto;
+import com.pixels.Inventario.R;
+import com.pixels.Inventario.View.Activity.Caja.Caja;
+import com.pixels.Inventario.View.Activity.Caja.TextWatcher.TextCodigoCaja;
+import com.pixels.Inventario.ViewModel.Caja.VerificarCodigo.VerificarCodigoCajaViewModel;
+
+import java.util.List;
 
 public class alertVentaDevolucion {
 
-    private Context Context;
+    private Caja Context;
+    public boolean verificarEnter=true;
+    public int[] i = {0};
 
-    public alertVentaDevolucion(Context context){
+    public alertVentaDevolucion(Caja context){
         this.Context=context;
     }
 
     public void pediridventa(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(Context);
+        //builder.setCancelable(false);
+        LayoutInflater inflater= Context.getLayoutInflater();
+        View view=inflater.inflate(R.layout.alertdevolucion, null);
+        builder.setView(view);
+        builder.setTitle("Digite el Codigo de la Factura");
+        AlertDialog dialog = builder.create();
+        dialog.show();
+        CardView Escaner=(CardView) view.findViewById(R.id.Escaner);
+        TextInputEditText Codigo=(TextInputEditText) view.findViewById(R.id.codigo);
+        TextInputLayout CCodigo=(TextInputLayout) view.findViewById(R.id.EditCodigo);
+        Codigo.setFocusableInTouchMode(true);
+        Codigo.requestFocus();
+        TextCodigoCaja verificarC=new TextCodigoCaja(Context);
+        Codigo.addTextChangedListener(verificarC.codigo(Codigo,CCodigo));
+        Codigo.setOnKeyListener(new View.OnKeyListener() {
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                // si presiona enter
+                if ((event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER) || (keyCode == KeyEvent.KEYCODE_ENTER)) {
+                    if(Codigo.getText().toString().equals("")){
+                        if(verificarEnter){
+                            CCodigo.setError("Digite el Codgo de la Factura");
+                            Codigo.setFocusableInTouchMode(true);
+                            Codigo.requestFocus();
+                        }else{
+                            verificarEnter=true;
+                        }
+                    }else{
+                        VerificarCodigoCajaViewModel verificar= ViewModelProviders.of(Context).get(VerificarCodigoCajaViewModel.class);
+                        verificar.reset();
+                        verificar.verificarCodigo(Codigo.getText().toString(),Context);
+                        Observer<Boolean> observer=new Observer<Boolean>() {
+                            @Override
+                            public void onChanged(Boolean aBoolean) {
+                                if(aBoolean){
+                                    if(i[0]==0){
+                                        i[0]++;
+                                        Codigo.setFocusableInTouchMode(true);
+                                        Codigo.requestFocus();
+                                    }else{
+                                        i[0]=0;
+                                    }
+                                }else{
+                                    if(i[0]==0){
+                                        i[0]++;
+                                        Codigo.setText("");
+                                        CCodigo.setError("El Codigo de la Factura no esta Registrado en la Base de Datos");
+                                        Codigo.setFocusableInTouchMode(true);
+                                        Codigo.requestFocus();
+                                    }else{
+                                        i[0]=0;
+                                    }
+                                }
+                            }
+                        };
+                        verificar.getResultado().observe(Context,observer);
 
+                    }
+                    return true;
+                }
+                return false;
+            }
+        });
     }
 }

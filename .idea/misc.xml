@@ -4,15 +4,22 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.17925659472422062" />
+        <entry key="app/src/main/res/layout/activity_agregar_productos.xml" value="0.44947916666666665" />
         <entry key="app/src/main/res/layout/activity_caja.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_cambiar_my_sql.xml" value="0.37135416666666665" />
         <entry key="app/src/main/res/layout/activity_inventario_productos.xml" value="0.44947916666666665" />
         <entry key="app/src/main/res/layout/activity_ver_factura.xml" value="0.44947916666666665" />
+        <entry key="app/src/main/res/layout/ajustes_list_content.xml" value="0.44947916666666665" />
+        <entry key="app/src/main/res/layout/alertcambiobasedatos.xml" value="0.44947916666666665" />
+        <entry key="app/src/main/res/layout/alertdevolucion.xml" value="0.44947916666666665" />
+        <entry key="app/src/main/res/layout/alertdialogonitnombre.xml" value="0.44947916666666665" />
         <entry key="app/src/main/res/layout/alertefectivo.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/alertpedircantidad.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/alertventafinalizada.xml" value="0.4484375" />
         <entry key="app/src/main/res/layout/alertverproductos.xml" value="0.44947916666666665" />
         <entry key="app/src/main/res/layout/producto_caja.xml" value="0.44947916666666665" />
         <entry key="app/src/main/res/layout/producto_ver.xml" value="0.44947916666666665" />
+        <entry key="app/src/main/res/menu/menud.xml" value="0.4484375" />
         <entry key="app/src/main/res/xml/file_paths.xml" value="0.336328125" />
         <entry key="app/src/main/res/xml/filepaths.xml" value="0.24114583333333334" />
       </map>
