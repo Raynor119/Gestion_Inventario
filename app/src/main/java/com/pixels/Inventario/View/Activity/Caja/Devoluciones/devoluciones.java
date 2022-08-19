@@ -42,6 +42,7 @@ public class devoluciones extends AppCompatActivity {
     public List<VentasProductoD> Productos=new ArrayList<>();
     public static List<VentasProductoD> ProductosV=new ArrayList<>();
     public static boolean verificarEnter=true;
+    public int indexProducto=0;
     public int[] i = {0};
     private String CodigoV="";
 
@@ -79,7 +80,6 @@ public class devoluciones extends AppCompatActivity {
                         }
                     }else{
                         boolean vercodigo=false;
-                        int indexProducto=0;
                         for(int i=0;i<ProductosV.size();i++){
                             if(ProductosV.get(i).getCodigoP().equals(Codigo.getText().toString())){
                                 vercodigo=true;
@@ -104,6 +104,8 @@ public class devoluciones extends AppCompatActivity {
                                     verificarEnter=false;
                                     Codigo.requestFocus();
                                 }else{
+
+
                                     iniciarRecyclerView();
                                     Codigo.setText("");
                                     verificarEnter=false;

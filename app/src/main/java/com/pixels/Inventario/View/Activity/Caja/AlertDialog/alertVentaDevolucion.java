@@ -2,6 +2,7 @@ package com.pixels.Inventario.View.Activity.Caja.AlertDialog;
 
 import android.app.AlertDialog;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -44,11 +45,17 @@ public class alertVentaDevolucion {
     }
     public void pediridventa(){
         AlertDialog.Builder builder = new AlertDialog.Builder(Context);
-        //builder.setCancelable(false);
+        builder.setCancelable(false);
         LayoutInflater inflater= Context.getLayoutInflater();
         View view=inflater.inflate(R.layout.alertdevolucion, null);
         builder.setView(view);
         builder.setTitle("Digite el Codigo de la Factura");
+        builder.setNegativeButton("Salir", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialog.cancel();
+            }
+        });
         dialog = builder.create();
         dialog.show();
         CardView Escaner=(CardView) view.findViewById(R.id.Escaner);
