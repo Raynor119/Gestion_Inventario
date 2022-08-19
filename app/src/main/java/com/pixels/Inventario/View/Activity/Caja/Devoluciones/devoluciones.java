@@ -105,14 +105,21 @@ public class devoluciones extends AppCompatActivity {
                                     verificarEnter=false;
                                     Codigo.requestFocus();
                                 }else{
-                                    alerObservacion observacion=new alerObservacion(devoluciones.this);
-                                    observacion.pedirObservaciones();
-                                    /**
-                                    iniciarRecyclerView();
-                                    Codigo.setText("");
-                                    verificarEnter=false;
-                                    Codigo.setFocusableInTouchMode(true);
-                                    Codigo.requestFocus();**/
+                                    if(ProductosV.get(indexProducto).getEstadoDevolucion().equals("si")){
+                                        Codigo.setText("");
+                                        CCodigo.setError("El producto ya ha sido devuelto");
+                                        Codigo.setFocusableInTouchMode(true);
+                                        verificarEnter=false;
+                                        Codigo.requestFocus();
+                                    }else{
+                                        alerObservacion observacion=new alerObservacion(devoluciones.this);
+                                        observacion.pedirObservaciones();
+                                        iniciarRecyclerView();
+                                        Codigo.setText("");
+                                        verificarEnter=false;
+                                        Codigo.setFocusableInTouchMode(true);
+                                        Codigo.requestFocus();
+                                    }
                                 }
                             }else{
                                 i[0]=0;

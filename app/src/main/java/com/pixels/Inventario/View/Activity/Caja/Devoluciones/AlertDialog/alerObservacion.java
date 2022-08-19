@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
+import com.pixels.Inventario.Model.DatosE.VentasProductoD;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Caja.Devoluciones.devoluciones;
 import com.pixels.Inventario.View.Activity.Caja.TextWatcher.TextCodigoCaja;
@@ -43,7 +44,9 @@ public class alerObservacion {
                 if(observacion.getText().toString().equals("")){
                     CObservacion.setError("Digite las observaciones");
                 }else{
-
+                    Context.Productos.add(new VentasProductoD(Context.ProductosV.get(Context.indexProducto).getId(),Context.ProductosV.get(Context.indexProducto).getCodigoV(),Context.ProductosV.get(Context.indexProducto).getCodigoP(),Context.ProductosV.get(Context.indexProducto).getNombre(),Context.ProductosV.get(Context.indexProducto).getCantidadV(),Context.ProductosV.get(Context.indexProducto).getCostePV(),Context.ProductosV.get(Context.indexProducto).getPrecioPV(),Context.ProductosV.get(Context.indexProducto).getIva(),"si",observacion.getText().toString()));
+                    Context.iniciarRecyclerView();
+                    dialog.cancel();
                 }
             }
         });
