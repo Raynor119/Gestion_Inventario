@@ -13,9 +13,11 @@ import androidx.lifecycle.ViewModelProviders;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.pixels.Inventario.Model.DatosE.Producto;
+import com.pixels.Inventario.Model.DatosE.VentasProductoD;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Caja.Caja;
 import com.pixels.Inventario.View.Activity.Caja.TextWatcher.TextCodigoCaja;
+import com.pixels.Inventario.ViewModel.Caja.Devoluciones.VerificarCodigoV.VerificarCodigoVentaViewModel;
 import com.pixels.Inventario.ViewModel.Caja.VerificarCodigo.VerificarCodigoCajaViewModel;
 
 import java.util.List;
@@ -59,7 +61,7 @@ public class alertVentaDevolucion {
                             verificarEnter=true;
                         }
                     }else{
-                        VerificarCodigoCajaViewModel verificar= ViewModelProviders.of(Context).get(VerificarCodigoCajaViewModel.class);
+                        VerificarCodigoVentaViewModel verificar= ViewModelProviders.of(Context).get(VerificarCodigoVentaViewModel.class);
                         verificar.reset();
                         verificar.verificarCodigo(Codigo.getText().toString(),Context);
                         Observer<Boolean> observer=new Observer<Boolean>() {
@@ -67,9 +69,13 @@ public class alertVentaDevolucion {
                             public void onChanged(Boolean aBoolean) {
                                 if(aBoolean){
                                     if(i[0]==0){
-                                        i[0]++;
-                                        Codigo.setFocusableInTouchMode(true);
-                                        Codigo.requestFocus();
+                                        Observer<List<VentasProductoD>> observer1=new Observer<List<VentasProductoD>>() {
+                                            @Override
+                                            public void onChanged(List<VentasProductoD> ventasProductoDS) {
+
+                                            }
+                                        };
+                                        verificar.getProductos().observe(Context,observer1);
                                     }else{
                                         i[0]=0;
                                     }
