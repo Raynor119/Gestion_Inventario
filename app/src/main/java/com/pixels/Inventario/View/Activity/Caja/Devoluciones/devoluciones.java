@@ -52,7 +52,7 @@ public class devoluciones extends AppCompatActivity {
         Bundle bundle=getIntent().getExtras();
         CodigoV=bundle.getString("codigo");
         Titulo=(TextView) findViewById(R.id.titulo);
-        Titulo.setText("Devolucion de Factura #"+CodigoV);
+        Titulo.setText("Devolucion de la Factura #"+CodigoV);
         Escaner=(CardView) findViewById(R.id.Escaner);
         Buscar=(CardView) findViewById(R.id.Buscar);
         Codigo=(TextInputEditText)findViewById(R.id.codigo);
