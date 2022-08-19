@@ -95,6 +95,7 @@ public class alertVentaDevolucion {
                                                 intent.putExtra("codigo",Codigo.getText().toString());
                                                 Context.startActivity(intent);
                                                 devoluciones.ProductosV=ventasProductoDS;
+                                                devoluciones.verificarEnter=false;
                                                 dialog.cancel();
                                             }
                                         };

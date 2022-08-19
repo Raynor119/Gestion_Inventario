@@ -21,6 +21,7 @@ import com.google.zxing.integration.android.IntentResult;
 import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.Model.DatosE.VentasProductoD;
 import com.pixels.Inventario.R;
+import com.pixels.Inventario.View.Activity.Caja.Devoluciones.AlertDialog.alerObservacion;
 import com.pixels.Inventario.View.Activity.Caja.Devoluciones.AlertDialog.alertbuscarPV;
 import com.pixels.Inventario.View.Activity.Caja.Devoluciones.RecyclerViewAdaptador.productoRecyclesViewAdapterD;
 import com.pixels.Inventario.View.Activity.Caja.RecyclerViewAdaptador.productoVRecyclerViewAdapter;
@@ -104,13 +105,14 @@ public class devoluciones extends AppCompatActivity {
                                     verificarEnter=false;
                                     Codigo.requestFocus();
                                 }else{
-
-
+                                    alerObservacion observacion=new alerObservacion(devoluciones.this);
+                                    observacion.pedirObservaciones();
+                                    /**
                                     iniciarRecyclerView();
                                     Codigo.setText("");
                                     verificarEnter=false;
                                     Codigo.setFocusableInTouchMode(true);
-                                    Codigo.requestFocus();
+                                    Codigo.requestFocus();**/
                                 }
                             }else{
                                 i[0]=0;

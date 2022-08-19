@@ -1874,6 +1874,7 @@ id BOTTOM_START
 id Buscar
 id ButtonG
 id CEfectivo
+id CObservacion
 id CTRL
 id CosteP
 id EditCodigo
@@ -1885,6 +1886,7 @@ id META
 id NO_DEBUG
 id Nit
 id NombreR
+id Observacion
 id Precio
 id RadioMysqlButton
 id RadioSQLiteButton
@@ -2461,6 +2463,7 @@ layout alertdialogcontra
 layout alertdialogonitnombre
 layout alertefectivo
 layout alertiva
+layout alertobservaciones
 layout alertpedircantidad
 layout alertventafinalizada
 layout alertverproductos
