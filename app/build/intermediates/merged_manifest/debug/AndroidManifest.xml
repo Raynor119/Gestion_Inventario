@@ -57,7 +57,8 @@
 
         <activity
             android:name="com.pixels.Inventario.View.Activity.Caja.Devoluciones.devoluciones"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
             android:name="com.pixels.Inventario.View.Activity.Caja.Factura.VerFactura"
             android:exported="false" >

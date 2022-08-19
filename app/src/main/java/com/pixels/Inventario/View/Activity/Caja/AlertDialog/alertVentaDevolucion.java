@@ -7,6 +7,7 @@ import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 
+import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
@@ -14,6 +15,8 @@ import androidx.lifecycle.ViewModelProviders;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
 import com.pixels.Inventario.Model.DatosE.VentasProductoD;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Caja.Caja;
@@ -29,11 +32,16 @@ public class alertVentaDevolucion {
     private Caja Context;
     public boolean verificarEnter=true;
     public int[] i = {0};
+    public AlertDialog dialog;
+    public TextInputEditText Codigo;
+    public TextInputLayout CCodigo;
 
     public alertVentaDevolucion(Caja context){
         this.Context=context;
     }
-
+    public void alertCancelar(){
+        dialog.cancel();
+    }
     public void pediridventa(){
         AlertDialog.Builder builder = new AlertDialog.Builder(Context);
         //builder.setCancelable(false);
@@ -41,11 +49,11 @@ public class alertVentaDevolucion {
         View view=inflater.inflate(R.layout.alertdevolucion, null);
         builder.setView(view);
         builder.setTitle("Digite el Codigo de la Factura");
-        AlertDialog dialog = builder.create();
+        dialog = builder.create();
         dialog.show();
         CardView Escaner=(CardView) view.findViewById(R.id.Escaner);
-        TextInputEditText Codigo=(TextInputEditText) view.findViewById(R.id.codigo);
-        TextInputLayout CCodigo=(TextInputLayout) view.findViewById(R.id.EditCodigo);
+        Codigo=(TextInputEditText) view.findViewById(R.id.codigo);
+        CCodigo=(TextInputLayout) view.findViewById(R.id.EditCodigo);
         Codigo.setFocusableInTouchMode(true);
         Codigo.requestFocus();
         TextCodigoCaja verificarC=new TextCodigoCaja(Context);
@@ -109,5 +117,15 @@ public class alertVentaDevolucion {
                 return false;
             }
         });
+
+        Escaner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Context.i[0]=0;
+                Context.vdevolucion=false;
+                new IntentIntegrator(Context).initiateScan();
+            }
+        });
     }
+
 }
