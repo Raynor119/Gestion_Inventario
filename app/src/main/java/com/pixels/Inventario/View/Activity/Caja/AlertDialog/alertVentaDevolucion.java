@@ -13,14 +13,14 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
-import com.pixels.Inventario.Model.DatosE.Producto;
+
 import com.pixels.Inventario.Model.DatosE.VentasProductoD;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Caja.Caja;
 import com.pixels.Inventario.View.Activity.Caja.Devoluciones.devoluciones;
 import com.pixels.Inventario.View.Activity.Caja.TextWatcher.TextCodigoCaja;
 import com.pixels.Inventario.ViewModel.Caja.Devoluciones.VerificarCodigoV.VerificarCodigoVentaViewModel;
-import com.pixels.Inventario.ViewModel.Caja.VerificarCodigo.VerificarCodigoCajaViewModel;
+
 
 import java.util.List;
 
@@ -74,10 +74,13 @@ public class alertVentaDevolucion {
                                         Observer<List<VentasProductoD>> observer1=new Observer<List<VentasProductoD>>() {
                                             @Override
                                             public void onChanged(List<VentasProductoD> ventasProductoDS) {
+                                                i[0]++;
+                                                verificarEnter=false;
                                                 Intent intent=new  Intent(Context,devoluciones.class);
                                                 intent.putExtra("codigo",Codigo.getText().toString());
                                                 Context.startActivity(intent);
                                                 devoluciones.ProductosV=ventasProductoDS;
+                                                dialog.cancel();
                                             }
                                         };
                                         verificar.getProductos().observe(Context,observer1);

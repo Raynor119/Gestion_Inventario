@@ -9,6 +9,7 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.pixels.Inventario.Model.DatosE.Producto;
+import com.pixels.Inventario.Model.DatosE.VentasProductoD;
 import com.pixels.Inventario.R;
 
 import com.pixels.Inventario.View.Activity.Caja.Devoluciones.RecyclerViewAdaptador.alertRecyclerViewAdapterD;
@@ -21,9 +22,11 @@ import java.util.List;
 public class alertbuscarPV {
     public devoluciones Context;
     public RecyclerView recycler;
+    private List<VentasProductoD> ProductosV;
 
-    public alertbuscarPV(devoluciones context){
+    public alertbuscarPV(devoluciones context,List<VentasProductoD> productosV){
         this.Context=context;
+        this.ProductosV=productosV;
     }
     public void buscarproductos(){
         AlertDialog.Builder builder = new AlertDialog.Builder(Context);

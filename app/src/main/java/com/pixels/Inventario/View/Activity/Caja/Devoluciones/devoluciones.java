@@ -35,13 +35,13 @@ public class devoluciones extends AppCompatActivity {
 
     public TextInputEditText Codigo;
     public TextInputLayout CCodigo;
-    public TextView impretotal,Total;
+    public TextView impretotal,Total,Titulo;
     public Button Button;
     public CardView Escaner,Buscar;
     public RecyclerView tableproductos;
     public List<VentasProductoD> Productos=new ArrayList<>();
     public static List<VentasProductoD> ProductosV=new ArrayList<>();
-    public boolean verificarEnter=true;
+    public static boolean verificarEnter=true;
     public int[] i = {0};
     private String CodigoV="";
 
@@ -51,6 +51,8 @@ public class devoluciones extends AppCompatActivity {
         setContentView(R.layout.activity_caja);
         Bundle bundle=getIntent().getExtras();
         CodigoV=bundle.getString("codigo");
+        Titulo=(TextView) findViewById(R.id.titulo);
+        Titulo.setText("Devolucion de Factura #"+CodigoV);
         Escaner=(CardView) findViewById(R.id.Escaner);
         Buscar=(CardView) findViewById(R.id.Buscar);
         Codigo=(TextInputEditText)findViewById(R.id.codigo);
@@ -150,7 +152,7 @@ public class devoluciones extends AppCompatActivity {
         Buscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                alertbuscarPV buscar=new alertbuscarPV(devoluciones.this);
+                alertbuscarPV buscar=new alertbuscarPV(devoluciones.this,ProductosV);
                 buscar.buscarproductos();
             }
         });

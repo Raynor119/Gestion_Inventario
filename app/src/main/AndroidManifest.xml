@@ -30,6 +30,7 @@
         </provider>
         <activity
             android:name=".View.Activity.Caja.Devoluciones.devoluciones"
+            android:theme="@style/Theme.MyApplication.NoActionBar"
             android:exported="false"/>
         <activity
             android:name=".View.Activity.Caja.Factura.VerFactura"
