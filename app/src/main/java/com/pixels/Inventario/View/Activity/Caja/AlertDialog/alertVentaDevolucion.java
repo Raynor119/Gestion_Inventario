@@ -2,6 +2,7 @@ package com.pixels.Inventario.View.Activity.Caja.AlertDialog;
 
 import android.app.AlertDialog;
 
+import android.content.Intent;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,6 +17,7 @@ import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.Model.DatosE.VentasProductoD;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Caja.Caja;
+import com.pixels.Inventario.View.Activity.Caja.Devoluciones.devoluciones;
 import com.pixels.Inventario.View.Activity.Caja.TextWatcher.TextCodigoCaja;
 import com.pixels.Inventario.ViewModel.Caja.Devoluciones.VerificarCodigoV.VerificarCodigoVentaViewModel;
 import com.pixels.Inventario.ViewModel.Caja.VerificarCodigo.VerificarCodigoCajaViewModel;
@@ -72,7 +74,10 @@ public class alertVentaDevolucion {
                                         Observer<List<VentasProductoD>> observer1=new Observer<List<VentasProductoD>>() {
                                             @Override
                                             public void onChanged(List<VentasProductoD> ventasProductoDS) {
-
+                                                Intent intent=new  Intent(Context,devoluciones.class);
+                                                intent.putExtra("codigo",Codigo.getText().toString());
+                                                Context.startActivity(intent);
+                                                devoluciones.ProductosV=ventasProductoDS;
                                             }
                                         };
                                         verificar.getProductos().observe(Context,observer1);

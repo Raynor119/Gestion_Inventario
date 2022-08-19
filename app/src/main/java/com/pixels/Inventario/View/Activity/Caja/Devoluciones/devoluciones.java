@@ -19,6 +19,7 @@ import com.google.android.material.textfield.TextInputLayout;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 import com.pixels.Inventario.Model.DatosE.Producto;
+import com.pixels.Inventario.Model.DatosE.VentasProductoD;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Caja.Devoluciones.AlertDialog.alertbuscarPV;
 import com.pixels.Inventario.View.Activity.Caja.Devoluciones.RecyclerViewAdaptador.productoRecyclesViewAdapterD;
@@ -38,14 +39,18 @@ public class devoluciones extends AppCompatActivity {
     public Button Button;
     public CardView Escaner,Buscar;
     public RecyclerView tableproductos;
-    public List<Producto> Productos=new ArrayList<>();;
+    public List<VentasProductoD> Productos=new ArrayList<>();
+    public static List<VentasProductoD> ProductosV=new ArrayList<>();
     public boolean verificarEnter=true;
     public int[] i = {0};
+    private String CodigoV="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_caja);
+        Bundle bundle=getIntent().getExtras();
+        CodigoV=bundle.getString("codigo");
         Escaner=(CardView) findViewById(R.id.Escaner);
         Buscar=(CardView) findViewById(R.id.Buscar);
         Codigo=(TextInputEditText)findViewById(R.id.codigo);
@@ -71,73 +76,52 @@ public class devoluciones extends AppCompatActivity {
                             verificarEnter=true;
                         }
                     }else{
-                        VerificarCodigoCajaViewModel verificar= ViewModelProviders.of(devoluciones.this).get(VerificarCodigoCajaViewModel.class);
-                        verificar.reset();
-                        verificar.verificarCodigo(Codigo.getText().toString(),devoluciones.this);
-                        final boolean[] vercodigo = {true};
-                        Observer<Boolean> observer=new Observer<Boolean>() {
-                            @Override
-                            public void onChanged(Boolean aBoolean) {
-                                if(aBoolean){
-
-                                }else{
-                                    if(i[0]==0){
-                                        i[0]++;
-                                        vercodigo[0] =false;
-                                        Codigo.setText("");
-                                        CCodigo.setError("El Codigo del Producto no esta Registrado en la Base de Datos");
-                                        Codigo.setFocusableInTouchMode(true);
-                                        Codigo.requestFocus();
-                                    }else{
-                                        i[0]=0;
-                                    }
-                                }
+                        boolean vercodigo=false;
+                        int indexProducto=0;
+                        for(int i=0;i<ProductosV.size();i++){
+                            if(ProductosV.get(i).getCodigoP().equals(Codigo.getText().toString())){
+                                vercodigo=true;
+                                indexProducto=i;
                             }
-                        };
-                        verificar.getResultado().observe(devoluciones.this,observer);
-                        if(vercodigo[0]){
-                            Observer<List<Producto>> observer1 = new Observer<List<Producto>>() {
-                                @Override
-                                public void onChanged(List<Producto> productos) {
-                                    if(i[0]==0){
-                                        i[0]++;
-                                        boolean productorepi=false;
-                                        int posicion=0;
-                                        for (int b=0;b<Productos.size();b++){
-                                            if(Productos.get(b).getCodigo().equals(productos.get(0).getCodigo())){
-                                                productorepi=true;
-                                                posicion=b;
-                                            }
-                                        }
+                        }
 
-                                        if(productorepi){
-                                            if(productos.get(0).getTipoC().equals("peso")){
+                        if(vercodigo){
+                            if(i[0]==0){
+                                i[0]++;
+                                boolean productorepi=false;
 
-                                            }
-                                            if(productos.get(0).getTipoC().equals("unitario")){
-                                                double cantiR=Productos.get(posicion).getCantidad()+1;
-                                                int canti=(int) cantiR;
-                                                Productos.get(posicion).setCantidad(canti);
-                                            }
-                                        }else{
-                                            if(productos.get(0).getTipoC().equals("peso")){
-
-                                            }
-                                            if(productos.get(0).getTipoC().equals("unitario")){
-                                                Productos.add(new Producto(productos.get(0).getCodigo(),productos.get(0).getNombre(),1,productos.get(0).getTipoC(),productos.get(0).getCosteP(),productos.get(0).getPrecio(),productos.get(0).getIva()));
-                                            }
-                                        }
-                                        iniciarRecyclerView();
-                                        Codigo.setText("");
-                                        verificarEnter=false;
-                                        Codigo.setFocusableInTouchMode(true);
-                                        Codigo.requestFocus();
-                                    }else{
-                                        i[0]=0;
+                                for (int b=0;b<Productos.size();b++){
+                                    if(Productos.get(b).getCodigoP().equals(ProductosV.get(indexProducto).getCodigoP())){
+                                        productorepi=true;
                                     }
                                 }
-                            };
-                            verificar.getProductos().observe(devoluciones.this,observer1);
+                                if(productorepi){
+                                    Codigo.setText("");
+                                    CCodigo.setError("El producto ya esta regitrado para la devolucion");
+                                    Codigo.setFocusableInTouchMode(true);
+                                    verificarEnter=false;
+                                    Codigo.requestFocus();
+                                }else{
+                                    iniciarRecyclerView();
+                                    Codigo.setText("");
+                                    verificarEnter=false;
+                                    Codigo.setFocusableInTouchMode(true);
+                                    Codigo.requestFocus();
+                                }
+                            }else{
+                                i[0]=0;
+                            }
+                        }else{
+                            if(i[0]==0){
+                                i[0]++;
+                                Codigo.setText("");
+                                CCodigo.setError("El Codigo del Producto no esta Registrado en la Venta");
+                                Codigo.setFocusableInTouchMode(true);
+                                verificarEnter=false;
+                                Codigo.requestFocus();
+                            }else{
+                                i[0]=0;
+                            }
                         }
 
                     }
@@ -180,11 +164,11 @@ public class devoluciones extends AppCompatActivity {
             tableproductos.setAdapter(new productoRecyclesViewAdapterD(devoluciones.this));
             int total=0;
             for(int b=0;b<Productos.size();b++){
-                int suptotal=(int)(Productos.get(b).getPrecio()*Productos.get(b).getCantidad());
+                int suptotal=(int)(Productos.get(b).getPrecioPV()*Productos.get(b).getCantidadV());
                 total=total+suptotal;
             }
             NumberFormat formato= NumberFormat.getNumberInstance();
-            impretotal.setText("Total: ");
+            impretotal.setText("Devolucion Total: ");
             Total.setText("$ "+formato.format(total));
         }
 
@@ -196,69 +180,7 @@ public class devoluciones extends AppCompatActivity {
         if(result != null)
             if (result.getContents() != null){
                 Codigo.setText(result.getContents()+"");
-                VerificarCodigoCajaViewModel verificar= ViewModelProviders.of(devoluciones.this).get(VerificarCodigoCajaViewModel.class);
-                verificar.reset();
-                verificar.verificarCodigo(Codigo.getText().toString(),devoluciones.this);
-                final boolean[] vercodigo = {true};
-                Observer<Boolean> observer=new Observer<Boolean>() {
-                    @Override
-                    public void onChanged(Boolean aBoolean) {
-                        if(aBoolean){
 
-                        }else{
-                            vercodigo[0] =false;
-                            Codigo.setText("");
-                            CCodigo.setError("El Codigo del Producto no esta Registrado en la Base de Datos");
-                            Codigo.setFocusableInTouchMode(true);
-                            Codigo.requestFocus();
-                        }
-                    }
-                };
-                verificar.getResultado().observe(devoluciones.this,observer);
-                if(vercodigo[0]){
-                    Observer<List<Producto>> observer1 = new Observer<List<Producto>>() {
-                        @Override
-                        public void onChanged(List<Producto> productos) {
-                            if(i[0]==0){
-                                i[0]++;
-                                boolean productorepi=false;
-                                int posicion=0;
-                                for (int b=0;b<Productos.size();b++){
-                                    if(Productos.get(b).getCodigo().equals(productos.get(0).getCodigo())){
-                                        productorepi=true;
-                                        posicion=b;
-                                    }
-                                }
-
-                                if(productorepi){
-                                    if(productos.get(0).getTipoC().equals("peso")){
-
-                                    }
-                                    if(productos.get(0).getTipoC().equals("unitario")){
-                                        double cantiR=Productos.get(posicion).getCantidad()+1;
-                                        int canti=(int) cantiR;
-                                        Productos.get(posicion).setCantidad(canti);
-                                    }
-                                }else{
-                                    if(productos.get(0).getTipoC().equals("peso")){
-
-                                    }
-                                    if(productos.get(0).getTipoC().equals("unitario")){
-                                        Productos.add(new Producto(productos.get(0).getCodigo(),productos.get(0).getNombre(),1,productos.get(0).getTipoC(),productos.get(0).getCosteP(),productos.get(0).getPrecio(),productos.get(0).getIva()));
-                                    }
-                                }
-                                iniciarRecyclerView();
-                                Codigo.setText("");
-                                verificarEnter=false;
-                                Codigo.setFocusableInTouchMode(true);
-                                Codigo.requestFocus();
-                            }else{
-                                i[0]=0;
-                            }
-                        }
-                    };
-                    verificar.getProductos().observe(devoluciones.this,observer1);
-                }
             }else{
                 CCodigo.setError("Error al escanear el código de barras");
                 Codigo.setText("");

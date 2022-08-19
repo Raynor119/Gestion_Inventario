@@ -31,20 +31,14 @@ public class productoRecyclesViewAdapterD extends RecyclerView.Adapter<productoR
     }
     @Override
     public void onBindViewHolder(final productoRecyclesViewAdapterD.ViewHolder holder, int position) {
-        holder.codigo.setText(""+activity.Productos.get(position).getCodigo());
+        holder.codigo.setText(""+activity.Productos.get(position).getCodigoP());
         holder.nombre.setText(""+activity.Productos.get(position).getNombre());
-        if(activity.Productos.get(position).getTipoC().equals("peso")){
-            holder.cantidad.setText(""+activity.Productos.get(position).getCantidad()+" Kg");
-            holder.cantidadmod.setText(""+activity.Productos.get(position).getCantidad());
-        }
-        if(activity.Productos.get(position).getTipoC().equals("unitario")){
-            int canti=(int) activity.Productos.get(position).getCantidad();
-            holder.cantidad.setText(""+canti);
-            holder.cantidadmod.setText(""+canti);
-        }
+        holder.cantidad.setText(""+activity.Productos.get(position).getCantidadV()+"");
+
+
         NumberFormat formato= NumberFormat.getNumberInstance();
-        holder.precio.setText("$ "+formato.format(activity.Productos.get(position).getPrecio()));
-        int suptotal=(int)(activity.Productos.get(position).getPrecio()*activity.Productos.get(position).getCantidad());
+        holder.precio.setText("$ "+formato.format(activity.Productos.get(position).getPrecioPV()));
+        int suptotal=(int)(activity.Productos.get(position).getPrecioPV()*activity.Productos.get(position).getCantidadV());
         holder.Subtotal.setText("$ "+formato.format(suptotal));
         holder.opciones.setVisibility(ConstraintLayout.GONE);
         final int poscion=position;

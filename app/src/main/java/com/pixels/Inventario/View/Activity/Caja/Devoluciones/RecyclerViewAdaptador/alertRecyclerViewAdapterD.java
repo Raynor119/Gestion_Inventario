@@ -53,7 +53,7 @@ public class alertRecyclerViewAdapterD extends RecyclerView.Adapter<alertRecycle
                 productoslist.add(new Producto(Productos.get(positionn).getCodigo(),Productos.get(positionn).getNombre(),Productos.get(positionn).getCantidad(),Productos.get(positionn).getTipoC(),Productos.get(positionn).getCosteP(),Productos.get(positionn).getPrecio(),Productos.get(positionn).getIva()));
                 int posicion=0;
                 for (int b=0;b<Fragment.Productos.size();b++){
-                    if(Fragment.Productos.get(b).getCodigo().equals(productoslist.get(0).getCodigo())){
+                    if(Fragment.Productos.get(b).getCodigoP().equals(productoslist.get(0).getCodigo())){
                         productorepi=true;
                         posicion=b;
                     }
@@ -65,9 +65,9 @@ public class alertRecyclerViewAdapterD extends RecyclerView.Adapter<alertRecycle
 
                     }
                     if(productoslist.get(0).getTipoC().equals("unitario")){
-                        double cantiR=Fragment.Productos.get(posicion).getCantidad()+1;
+                        double cantiR=Fragment.Productos.get(posicion).getCantidadV()+1;
                         int canti=(int) cantiR;
-                        Fragment.Productos.get(posicion).setCantidad(canti);
+                        Fragment.Productos.get(posicion).setCantidadV(canti);
                     }
                 }else{
                     if(productoslist.get(0).getTipoC().equals("peso")){
@@ -75,7 +75,7 @@ public class alertRecyclerViewAdapterD extends RecyclerView.Adapter<alertRecycle
 
                     }
                     if(productoslist.get(0).getTipoC().equals("unitario")){
-                        Fragment.Productos.add(new Producto(productoslist.get(0).getCodigo(),productoslist.get(0).getNombre(),1,productoslist.get(0).getTipoC(),productoslist.get(0).getCosteP(),productoslist.get(0).getPrecio(),productoslist.get(0).getIva()));
+                    //    Fragment.Productos.add(new Producto(productoslist.get(0).getCodigo(),productoslist.get(0).getNombre(),1,productoslist.get(0).getTipoC(),productoslist.get(0).getCosteP(),productoslist.get(0).getPrecio(),productoslist.get(0).getIva()));
                     }
                 }
                 Fragment.iniciarRecyclerView();
