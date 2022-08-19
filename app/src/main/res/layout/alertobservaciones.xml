@@ -16,7 +16,7 @@
             android:id="@+id/CObservacion"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_height="wrap_content"
             android:hint="Observaciones"
             app:endIconMode="clear_text">
             <com.google.android.material.textfield.TextInputEditText

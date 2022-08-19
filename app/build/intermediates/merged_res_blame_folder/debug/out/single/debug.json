@@ -8,16 +8,20 @@
         "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertefectivo.xml"
     },
     {
-        "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_cambiar_my_sql.xml.flat",
-        "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_cambiar_my_sql.xml"
-    },
-    {
         "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertventafinalizada.xml.flat",
         "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertventafinalizada.xml"
     },
     {
+        "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_cambiar_my_sql.xml.flat",
+        "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_cambiar_my_sql.xml"
+    },
+    {
         "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_menos.png.flat",
         "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/menos.png"
+    },
+    {
+        "merged": "com.pixels.Inventario.app-merged_res-23:/layout_alertobservaciones.xml.flat",
+        "source": "com.pixels.Inventario.app-main-25:/layout/alertobservaciones.xml"
     },
     {
         "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_list_products_adaptive_back.png.flat",
@@ -178,10 +182,6 @@
     {
         "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_caja_adaptive_fore.png.flat",
         "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/caja_adaptive_fore.png"
-    },
-    {
-        "merged": "com.pixels.Inventario.app-merged_res-23:/layout_alertdevolucion.xml.flat",
-        "source": "com.pixels.Inventario.app-main-25:/layout/alertdevolucion.xml"
     },
     {
         "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_agregar_adaptive_fore.png.flat",
