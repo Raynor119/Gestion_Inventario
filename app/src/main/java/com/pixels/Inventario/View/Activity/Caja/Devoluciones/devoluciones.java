@@ -143,11 +143,12 @@ public class devoluciones extends AppCompatActivity {
                 return false;
             }
         });
+        Button.setText("Realizar Devolucion");
         Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(Productos.size()==0){
-                    CCodigo.setError("Registre al menos un producto para realizar la Venta");
+                    CCodigo.setError("Registre al menos un producto para realizar la devolucion");
                 }else{
 
                 }
@@ -193,7 +194,58 @@ public class devoluciones extends AppCompatActivity {
         if(result != null)
             if (result.getContents() != null){
                 Codigo.setText(result.getContents()+"");
+                boolean vercodigo=false;
+                for(int i=0;i<ProductosV.size();i++){
+                    if(ProductosV.get(i).getCodigoP().equals(Codigo.getText().toString())){
+                        vercodigo=true;
+                        indexProducto=i;
+                    }
+                }
 
+                if(vercodigo){
+                    if(i[0]==0){
+                        i[0]++;
+                        boolean productorepi=false;
+
+                        for (int b=0;b<Productos.size();b++){
+                            if(Productos.get(b).getCodigoP().equals(ProductosV.get(indexProducto).getCodigoP())){
+                                productorepi=true;
+                            }
+                        }
+                        if(productorepi){
+                            Codigo.setText("");
+                            CCodigo.setError("El producto ya esta regitrado para la devolucion");
+                            Codigo.setFocusableInTouchMode(true);
+                            Codigo.requestFocus();
+                        }else{
+                            if(ProductosV.get(indexProducto).getEstadoDevolucion().equals("si")){
+                                Codigo.setText("");
+                                CCodigo.setError("El producto ya ha sido devuelto");
+                                Codigo.setFocusableInTouchMode(true);
+                                Codigo.requestFocus();
+                            }else{
+                                alerObservacion observacion=new alerObservacion(devoluciones.this);
+                                observacion.pedirObservaciones();
+                                iniciarRecyclerView();
+                                Codigo.setText("");
+                                Codigo.setFocusableInTouchMode(true);
+                                Codigo.requestFocus();
+                            }
+                        }
+                    }else{
+                        i[0]=0;
+                    }
+                }else{
+                    if(i[0]==0){
+                        i[0]++;
+                        Codigo.setText("");
+                        CCodigo.setError("El Codigo del Producto no esta Registrado en la Venta");
+                        Codigo.setFocusableInTouchMode(true);
+                        Codigo.requestFocus();
+                    }else{
+                        i[0]=0;
+                    }
+                }
             }else{
                 CCodigo.setError("Error al escanear el código de barras");
                 Codigo.setText("");
