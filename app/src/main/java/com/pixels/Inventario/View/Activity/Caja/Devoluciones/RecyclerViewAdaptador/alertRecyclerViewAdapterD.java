@@ -45,7 +45,9 @@ public class alertRecyclerViewAdapterD extends RecyclerView.Adapter<alertRecycle
         holder.codigo.setText(""+Productos.get(position).getCodigoP());
         holder.nombre.setText(""+Productos.get(position).getNombre());
         NumberFormat formato= NumberFormat.getNumberInstance();
+        holder.titulo.setText("Total: ");
         if(Productos.get(position).getEstadoDevolucion().equals("si")){
+            holder.titulo.setText("");
             holder.precio.setText(" Ya se Devolvio");
         }else {
             holder.precio.setText("$ "+formato.format(Productos.get(position).getPrecioPV()*Productos.get(position).getCantidadV()));
@@ -75,6 +77,7 @@ public class alertRecyclerViewAdapterD extends RecyclerView.Adapter<alertRecycle
                         Fragment.Codigo.setFocusableInTouchMode(true);
                         Fragment.Codigo.requestFocus();
                     }else{
+                        Fragment.indexProducto=positionn;
                         alerObservacion observacion=new alerObservacion(Fragment);
                         observacion.pedirObservaciones();
                         Fragment.iniciarRecyclerView();
@@ -93,12 +96,13 @@ public class alertRecyclerViewAdapterD extends RecyclerView.Adapter<alertRecycle
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
-        final TextView codigo,nombre,precio;
+        final TextView codigo,nombre,precio,titulo;
         ViewHolder(View view) {
             super(view);
             codigo = (TextView) view.findViewById(R.id.codigo);
             nombre= (TextView) view.findViewById(R.id.nombre);
             precio= (TextView) view.findViewById(R.id.precio);
+            titulo= (TextView) view.findViewById(R.id.titulo);
         }
     }
 
