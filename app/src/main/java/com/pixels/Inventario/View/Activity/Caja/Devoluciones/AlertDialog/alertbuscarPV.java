@@ -22,11 +22,10 @@ import java.util.List;
 public class alertbuscarPV {
     public devoluciones Context;
     public RecyclerView recycler;
-    private List<VentasProductoD> ProductosV;
 
-    public alertbuscarPV(devoluciones context,List<VentasProductoD> productosV){
+
+    public alertbuscarPV(devoluciones context){
         this.Context=context;
-        this.ProductosV=productosV;
     }
     public void buscarproductos(){
         AlertDialog.Builder builder = new AlertDialog.Builder(Context);
@@ -37,27 +36,14 @@ public class alertbuscarPV {
         builder.setTitle("Buscar Productos");
         AlertDialog dialog = builder.create();
         recycler= view.findViewById(R.id.opcion_list);
-        ProductosRecyclerViewModel productos= ViewModelProviders.of(Context).get(ProductosRecyclerViewModel.class);
-        productos.reset();
-        productos.buscarProductos(Context);
-        final Observer<List<Producto>> observer= new Observer<List<Producto>>() {
-            @Override
-            public void onChanged(List<Producto> productos) {
-                new android.os.Handler().postDelayed(new Runnable() {
+        new android.os.Handler().postDelayed(new Runnable() {
 
-                    @Override
-                    public void run() {
-                        recycler.setAdapter(new alertRecyclerViewAdapterD(productos,Context,dialog, alertbuscarPV.this));
-                        reiniciar(productos,dialog);
-                    }
-                },100);
+            @Override
+            public void run() {
+                recycler.setAdapter(new alertRecyclerViewAdapterD(Context.ProductosV,Context,dialog, alertbuscarPV.this));
             }
-        };
-        productos.getResultado().observe(Context,observer);
+        },100);
         dialog.show();
 
-    }
-    public void reiniciar(List<Producto> Productos,AlertDialog dialog){
-        recycler.setAdapter(new alertRecyclerViewAdapterD(Productos,Context,dialog,alertbuscarPV.this));
     }
 }

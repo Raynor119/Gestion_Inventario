@@ -164,7 +164,7 @@ public class devoluciones extends AppCompatActivity {
         Buscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                alertbuscarPV buscar=new alertbuscarPV(devoluciones.this,ProductosV);
+                alertbuscarPV buscar=new alertbuscarPV(devoluciones.this);
                 buscar.buscarproductos();
             }
         });

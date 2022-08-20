@@ -10,8 +10,10 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.pixels.Inventario.Model.DatosE.Producto;
+import com.pixels.Inventario.Model.DatosE.VentasProductoD;
 import com.pixels.Inventario.R;
 
+import com.pixels.Inventario.View.Activity.Caja.Devoluciones.AlertDialog.alerObservacion;
 import com.pixels.Inventario.View.Activity.Caja.Devoluciones.AlertDialog.alertbuscarPV;
 import com.pixels.Inventario.View.Activity.Caja.Devoluciones.devoluciones;
 
@@ -21,12 +23,12 @@ import java.util.List;
 
 
 public class alertRecyclerViewAdapterD extends RecyclerView.Adapter<alertRecyclerViewAdapterD.ViewHolder> {
-    private List<Producto> Productos;
+    private List<VentasProductoD> Productos;
     private devoluciones Fragment;
     private AlertDialog Dialog;
     private alertbuscarPV Alerbuscar;
 
-    public alertRecyclerViewAdapterD(List<Producto> productos, devoluciones fragment, AlertDialog dialog, alertbuscarPV alertbuscar){
+    public alertRecyclerViewAdapterD(List<VentasProductoD> productos, devoluciones fragment, AlertDialog dialog, alertbuscarPV alertbuscar){
         this.Productos=productos;
         this.Fragment=fragment;
         this.Dialog=dialog;
@@ -40,48 +42,47 @@ public class alertRecyclerViewAdapterD extends RecyclerView.Adapter<alertRecycle
     }
     @Override
     public void onBindViewHolder(final alertRecyclerViewAdapterD.ViewHolder holder, int position) {
-        holder.codigo.setText(""+Productos.get(position).getCodigo());
+        holder.codigo.setText(""+Productos.get(position).getCodigoP());
         holder.nombre.setText(""+Productos.get(position).getNombre());
         NumberFormat formato= NumberFormat.getNumberInstance();
-        holder.precio.setText("$ "+formato.format(Productos.get(position).getPrecio()));
+        if(Productos.get(position).getEstadoDevolucion().equals("si")){
+            holder.precio.setText(" Ya se Devolvio");
+        }else {
+            holder.precio.setText("$ "+formato.format(Productos.get(position).getPrecioPV()*Productos.get(position).getCantidadV()));
+        }
         int positionn=position;
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 boolean productorepi=false;
-                List<Producto> productoslist=new ArrayList<>();
-                productoslist.add(new Producto(Productos.get(positionn).getCodigo(),Productos.get(positionn).getNombre(),Productos.get(positionn).getCantidad(),Productos.get(positionn).getTipoC(),Productos.get(positionn).getCosteP(),Productos.get(positionn).getPrecio(),Productos.get(positionn).getIva()));
-                int posicion=0;
+
                 for (int b=0;b<Fragment.Productos.size();b++){
-                    if(Fragment.Productos.get(b).getCodigoP().equals(productoslist.get(0).getCodigo())){
+                    if(Fragment.Productos.get(b).getCodigoP().equals(Productos.get(positionn).getCodigoP())){
                         productorepi=true;
-                        posicion=b;
+
                     }
                 }
 
                 if(productorepi){
-                    if(productoslist.get(0).getTipoC().equals("peso")){
-                        Dialog.cancel();
-
-                    }
-                    if(productoslist.get(0).getTipoC().equals("unitario")){
-                        double cantiR=Fragment.Productos.get(posicion).getCantidadV()+1;
-                        int canti=(int) cantiR;
-                        Fragment.Productos.get(posicion).setCantidadV(canti);
-                    }
+                    Fragment.Codigo.setText("");
+                    Fragment.CCodigo.setError("El producto ya esta regitrado para la devolucion");
+                    Fragment.Codigo.setFocusableInTouchMode(true);
+                    Fragment.Codigo.requestFocus();
                 }else{
-                    if(productoslist.get(0).getTipoC().equals("peso")){
-                        Dialog.cancel();
-
-                    }
-                    if(productoslist.get(0).getTipoC().equals("unitario")){
-                    //    Fragment.Productos.add(new Producto(productoslist.get(0).getCodigo(),productoslist.get(0).getNombre(),1,productoslist.get(0).getTipoC(),productoslist.get(0).getCosteP(),productoslist.get(0).getPrecio(),productoslist.get(0).getIva()));
+                    if(Productos.get(positionn).getEstadoDevolucion().equals("si")){
+                        Fragment.Codigo.setText("");
+                        Fragment.CCodigo.setError("El producto ya ha sido devuelto");
+                        Fragment.Codigo.setFocusableInTouchMode(true);
+                        Fragment.Codigo.requestFocus();
+                    }else{
+                        alerObservacion observacion=new alerObservacion(Fragment);
+                        observacion.pedirObservaciones();
+                        Fragment.iniciarRecyclerView();
+                        Fragment.Codigo.setText("");
+                        Fragment.Codigo.setFocusableInTouchMode(true);
+                        Fragment.Codigo.requestFocus();
                     }
                 }
-                Fragment.iniciarRecyclerView();
-                Fragment.Codigo.setText("");
-                Fragment.Codigo.setFocusableInTouchMode(true);
-                Fragment.Codigo.requestFocus();
                 Dialog.cancel();
             }
         });
