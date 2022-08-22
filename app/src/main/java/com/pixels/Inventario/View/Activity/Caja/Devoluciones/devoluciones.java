@@ -22,6 +22,7 @@ import com.google.zxing.integration.android.IntentResult;
 import com.pixels.Inventario.Model.DatosE.VentasProductoD;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Caja.Devoluciones.AlertDialog.alerObservacion;
+import com.pixels.Inventario.View.Activity.Caja.Devoluciones.AlertDialog.alertDevolucion;
 import com.pixels.Inventario.View.Activity.Caja.Devoluciones.AlertDialog.alertbuscarPV;
 import com.pixels.Inventario.View.Activity.Caja.Devoluciones.RecyclerViewAdaptador.productoRecyclesViewAdapterD;
 import com.pixels.Inventario.View.Activity.Caja.TextWatcher.TextCodigoCaja;
@@ -165,7 +166,13 @@ public class devoluciones extends AppCompatActivity {
                         @Override
                         public void onChanged(Boolean aBoolean) {
                             if(aBoolean){
-
+                                int total=0;
+                                for(int b=0;b<Productos.size();b++){
+                                    int suptotal=(int)(Productos.get(b).getPrecioPV()*Productos.get(b).getCantidadV());
+                                    total=total+suptotal;
+                                }
+                                alertDevolucion alert=new alertDevolucion(devoluciones.this,total);
+                                alert.totalD();
                             }else{
                                 Toast.makeText(devoluciones.this, "Error al Realizar la Devolucion", Toast.LENGTH_LONG).show();
                             }
