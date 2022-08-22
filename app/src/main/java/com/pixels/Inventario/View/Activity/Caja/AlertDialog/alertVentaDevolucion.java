@@ -81,24 +81,26 @@ public class alertVentaDevolucion {
                         VerificarCodigoVentaViewModel verificar= ViewModelProviders.of(Context).get(VerificarCodigoVentaViewModel.class);
                         verificar.reset();
                         verificar.verificarCodigo(Codigo.getText().toString(),Context);
+                        Observer<List<VentasProductoD>> observer1=new Observer<List<VentasProductoD>>() {
+                            @Override
+                            public void onChanged(List<VentasProductoD> ventasProductoDS) {
+                                if(i[0]==0){
+                                    i[0]++;
+                                    verificarEnter=false;
+                                    Intent intent=new  Intent(Context,devoluciones.class);
+                                    intent.putExtra("codigo",Codigo.getText().toString());
+                                    Context.startActivity(intent);
+                                    devoluciones.ProductosV=ventasProductoDS;
+                                    devoluciones.verificarEnter=false;
+                                    dialog.cancel();
+                                }
+                            }
+                        };
                         Observer<Boolean> observer=new Observer<Boolean>() {
                             @Override
                             public void onChanged(Boolean aBoolean) {
                                 if(aBoolean){
                                     if(i[0]==0){
-                                        Observer<List<VentasProductoD>> observer1=new Observer<List<VentasProductoD>>() {
-                                            @Override
-                                            public void onChanged(List<VentasProductoD> ventasProductoDS) {
-                                                i[0]++;
-                                                verificarEnter=false;
-                                                Intent intent=new  Intent(Context,devoluciones.class);
-                                                intent.putExtra("codigo",Codigo.getText().toString());
-                                                Context.startActivity(intent);
-                                                devoluciones.ProductosV=ventasProductoDS;
-                                                devoluciones.verificarEnter=false;
-                                                dialog.cancel();
-                                            }
-                                        };
                                         verificar.getProductos().observe(Context,observer1);
                                     }else{
                                         i[0]=0;
@@ -118,7 +120,6 @@ public class alertVentaDevolucion {
                             }
                         };
                         verificar.getResultado().observe(Context,observer);
-
                     }
                     return true;
                 }
