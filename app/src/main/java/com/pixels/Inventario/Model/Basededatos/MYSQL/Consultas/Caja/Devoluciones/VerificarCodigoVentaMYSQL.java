@@ -39,6 +39,10 @@ public class VerificarCodigoVentaMYSQL extends Conexion implements MediadorBaseD
             while (rs.next()) {
                 productos.add(new VentasProductoD(rs.getInt(1),rs.getInt(2),rs.getString(3),rs.getString(4),rs.getDouble(5),rs.getInt(6),rs.getInt(7),rs.getInt(8),rs.getString(9),rs.getString(10)));
             }
+            rs = st.executeQuery("SELECT * FROM VentasProductos WHERE codigoV="+Codigo+" AND codigoP IS NULL");
+            while (rs.next()) {
+                productos.add(new VentasProductoD(rs.getInt(1),rs.getInt(2),"null","Producto Desconocido",rs.getDouble(4),rs.getInt(5),rs.getInt(6),rs.getInt(7),rs.getString(8),rs.getString(9)));
+            }
             return "";
         }catch (Exception e){
             return "No se puede conectar a La Base Datos";

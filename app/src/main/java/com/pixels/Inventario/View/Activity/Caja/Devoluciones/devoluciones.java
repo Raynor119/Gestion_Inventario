@@ -80,10 +80,19 @@ public class devoluciones extends AppCompatActivity {
                         }
                     }else{
                         boolean vercodigo=false;
-                        for(int i=0;i<ProductosV.size();i++){
-                            if(ProductosV.get(i).getCodigoP().equals(Codigo.getText().toString())){
-                                vercodigo=true;
-                                indexProducto=i;
+                        if(Codigo.getText().toString().equals("null")){
+                            Codigo.setText("");
+                            CCodigo.setError("El codigo no es valido");
+                            Codigo.setFocusableInTouchMode(true);
+                            verificarEnter=false;
+                            Codigo.requestFocus();
+                            i[0]++;
+                        }else{
+                            for(int b=0;b<ProductosV.size();b++){
+                                if(ProductosV.get(b).getCodigoP().equals(Codigo.getText().toString())){
+                                    vercodigo=true;
+                                    indexProducto=b;
+                                }
                             }
                         }
 
@@ -207,10 +216,19 @@ public class devoluciones extends AppCompatActivity {
             if (result.getContents() != null){
                 Codigo.setText(result.getContents()+"");
                 boolean vercodigo=false;
-                for(int i=0;i<ProductosV.size();i++){
-                    if(ProductosV.get(i).getCodigoP().equals(Codigo.getText().toString())){
-                        vercodigo=true;
-                        indexProducto=i;
+                if(Codigo.getText().toString().equals("null")){
+                    Codigo.setText("");
+                    CCodigo.setError("El codigo no es valido");
+                    Codigo.setFocusableInTouchMode(true);
+                    verificarEnter=false;
+                    Codigo.requestFocus();
+                    i[0]++;
+                }else{
+                    for(int i=0;i<ProductosV.size();i++){
+                        if(ProductosV.get(i).getCodigoP().equals(Codigo.getText().toString())){
+                            vercodigo=true;
+                            indexProducto=i;
+                        }
                     }
                 }
 

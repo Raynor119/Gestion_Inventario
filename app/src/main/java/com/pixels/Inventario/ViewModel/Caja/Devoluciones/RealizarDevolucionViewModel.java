@@ -7,7 +7,6 @@ import androidx.lifecycle.ViewModel;
 import com.pixels.Inventario.Model.Basededatos.MYSQL.Consultas.Caja.RealizarVentaMYSQL;
 import com.pixels.Inventario.Model.Basededatos.MediadorBaseDatos;
 import com.pixels.Inventario.Model.Basededatos.SQLite.BaseDatos.Consultas.Caja.Devoluciones.RealizarDevolucionSQLite;
-import com.pixels.Inventario.Model.Basededatos.SQLite.BaseDatos.Consultas.Caja.RealizarVentaSQLite;
 import com.pixels.Inventario.Model.Basededatos.SQLite.DatosInicio.consultasDatos;
 import com.pixels.Inventario.View.Activity.Caja.Devoluciones.devoluciones;
 
@@ -29,7 +28,7 @@ public class RealizarDevolucionViewModel extends ViewModel {
             BD =new RealizarDevolucionSQLite(Context,RealizarDevolucionViewModel.this,CodigoV);
         }
         if(dinici.obtenerD().get(0).getBasedatos().equals("MYSQL")){
-            BD =new RealizarVentaMYSQL(Context,Efectivo,RealizarVentaViewModel.this);
+           // BD =new RealizarVentaMYSQL(Context,Efectivo,RealizarVentaViewModel.this);
         }
     }
 }

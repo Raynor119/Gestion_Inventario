@@ -59,9 +59,8 @@ public class alertRecyclerViewAdapterD extends RecyclerView.Adapter<alertRecycle
                 boolean productorepi=false;
 
                 for (int b=0;b<Fragment.Productos.size();b++){
-                    if(Fragment.Productos.get(b).getCodigoP().equals(Productos.get(positionn).getCodigoP())){
+                    if((Fragment.Productos.get(b).getId()+"").equals(Productos.get(positionn).getId()+"")){
                         productorepi=true;
-
                     }
                 }
 
