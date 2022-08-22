@@ -8,10 +8,6 @@
         "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertefectivo.xml"
     },
     {
-        "merged": "com.pixels.Inventario.app-merged_res-23:/layout_producto_ver.xml.flat",
-        "source": "com.pixels.Inventario.app-main-25:/layout/producto_ver.xml"
-    },
-    {
         "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_cambiar_my_sql.xml.flat",
         "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_cambiar_my_sql.xml"
     },
@@ -36,12 +32,12 @@
         "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertobservaciones.xml"
     },
     {
-        "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertdialogcontra.xml.flat",
-        "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertdialogcontra.xml"
-    },
-    {
         "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_producto_caja.xml.flat",
         "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/producto_caja.xml"
+    },
+    {
+        "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertdialogcontra.xml.flat",
+        "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertdialogcontra.xml"
     },
     {
         "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_config_contra.xml.flat",
@@ -86,6 +82,10 @@
     {
         "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_salir_adaptive_back.png.flat",
         "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/salir_adaptive_back.png"
+    },
+    {
+        "merged": "com.pixels.Inventario.app-merged_res-23:/layout_activity_caja.xml.flat",
+        "source": "com.pixels.Inventario.app-main-25:/layout/activity_caja.xml"
     },
     {
         "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/drawable_menufondo.xml.flat",

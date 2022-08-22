@@ -309,23 +309,25 @@ public class Caja extends AppCompatActivity {
                     verificar.reset();
 
                     verificar.verificarCodigo(alert.Codigo.getText().toString(),Caja.this);
+                    Observer<List<VentasProductoD>> observer1=new Observer<List<VentasProductoD>>() {
+                        @Override
+                        public void onChanged(List<VentasProductoD> ventasProductoDS) {
+                            if(i[0]==0) {
+                                i[0]++;
+                                Intent intent = new Intent(Caja.this, devoluciones.class);
+                                intent.putExtra("codigo", alert.Codigo.getText().toString());
+                                startActivity(intent);
+                                devoluciones.ProductosV = ventasProductoDS;
+                                alert.alertCancelar();
+                                vdevolucion = true;
+                            }
+                        }
+                    };
                     Observer<Boolean> observer=new Observer<Boolean>() {
                         @Override
                         public void onChanged(Boolean aBoolean) {
                             if(aBoolean){
                                 if(i[0]==0){
-                                    Observer<List<VentasProductoD>> observer1=new Observer<List<VentasProductoD>>() {
-                                        @Override
-                                        public void onChanged(List<VentasProductoD> ventasProductoDS) {
-                                            i[0]++;
-                                            Intent intent=new  Intent(Caja.this, devoluciones.class);
-                                            intent.putExtra("codigo",alert.Codigo.getText().toString());
-                                            startActivity(intent);
-                                            devoluciones.ProductosV=ventasProductoDS;
-                                            alert.alertCancelar();
-                                            vdevolucion=true;
-                                        }
-                                    };
                                     verificar.getProductos().observe(Caja.this,observer1);
                                 }else{
                                     i[0]=0;
