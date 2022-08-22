@@ -6,6 +6,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,15 +19,13 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
-import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.Model.DatosE.VentasProductoD;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Caja.Devoluciones.AlertDialog.alerObservacion;
 import com.pixels.Inventario.View.Activity.Caja.Devoluciones.AlertDialog.alertbuscarPV;
 import com.pixels.Inventario.View.Activity.Caja.Devoluciones.RecyclerViewAdaptador.productoRecyclesViewAdapterD;
-import com.pixels.Inventario.View.Activity.Caja.RecyclerViewAdaptador.productoVRecyclerViewAdapter;
 import com.pixels.Inventario.View.Activity.Caja.TextWatcher.TextCodigoCaja;
-import com.pixels.Inventario.ViewModel.Caja.VerificarCodigo.VerificarCodigoCajaViewModel;
+import com.pixels.Inventario.ViewModel.Caja.Devoluciones.RealizarDevolucionViewModel;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;
@@ -150,7 +149,20 @@ public class devoluciones extends AppCompatActivity {
                 if(Productos.size()==0){
                     CCodigo.setError("Registre al menos un producto para realizar la devolucion");
                 }else{
+                    RealizarDevolucionViewModel Devolucion= ViewModelProviders.of(devoluciones.this).get(RealizarDevolucionViewModel.class);
+                    Devolucion.reset();
+                    Devolucion.realizarDevolucion(devoluciones.this,CodigoV);
+                    Observer<Boolean> observer=new Observer<Boolean>() {
+                        @Override
+                        public void onChanged(Boolean aBoolean) {
+                            if(aBoolean){
 
+                            }else{
+                                Toast.makeText(devoluciones.this, "Error al Realizar la Devolucion", Toast.LENGTH_LONG).show();
+                            }
+                        }
+                    };
+                    Devolucion.getResultado().observe(devoluciones.this,observer);
                 }
             }
         });
