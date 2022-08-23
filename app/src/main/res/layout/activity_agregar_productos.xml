@@ -235,7 +235,7 @@
                             </LinearLayout>
                             <Button
                                 android:id="@+id/ButtonG"
-                                android:layout_width="210dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="35dp"
                                 android:padding="20dp"
