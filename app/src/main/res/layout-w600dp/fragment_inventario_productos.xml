@@ -19,19 +19,28 @@
             android:weightSum="12">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="20dp"
+                android:layout_height="160dp"
                 android:background="@color/colorPrimary"
                 android:orientation="vertical">
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
+    <TextView
+        android:layout_gravity=""
+        android:layout_marginTop="50dp"
+        android:text="Inventario de Productos"
+        android:layout_marginLeft="45dp"
+        android:textSize="32dp"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
     <androidx.cardview.widget.CardView
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="130dp"
         android:layout_width="match_parent"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="30dp"
         android:layout_height="match_parent"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
         android:background="@color/whiteCardColor"
         app:cardCornerRadius="10dp"
         android:layout_gravity="center">
@@ -57,6 +66,6 @@
             android:layout_margin="15dp"
             app:srcCompat="@mipmap/mas_adaptive_fore"
             app:layout_anchorGravity="top|end"/>
-        
+
     </androidx.cardview.widget.CardView>
 </RelativeLayout>
