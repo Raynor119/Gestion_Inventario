@@ -16,6 +16,7 @@
         <entry key="app/src/main/res/layout-w800dp/activity_inventario_productos.xml" value="0.22473958333333333" />
         <entry key="app/src/main/res/layout-w800dp/ajustes_list_content.xml" value="0.22473958333333333" />
         <entry key="app/src/main/res/layout-w800dp/fragment_agsinarcontrasena.xml" value="0.2" />
+        <entry key="app/src/main/res/layout-w800dp/fragment_modificarcontra.xml" value="0.22473958333333333" />
         <entry key="app/src/main/res/layout-w900dp/fragment_inventario_productos.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_agregar_productos.xml" value="0.44947916666666665" />
         <entry key="app/src/main/res/layout/activity_ajustes.xml" value="0.18229166666666666" />
@@ -34,6 +35,9 @@
         <entry key="app/src/main/res/layout/alertventafinalizada.xml" value="0.4484375" />
         <entry key="app/src/main/res/layout/alertverproductos.xml" value="0.44947916666666665" />
         <entry key="app/src/main/res/layout/fragment_agsinarcontrasena.xml" value="0.22473958333333333" />
+        <entry key="app/src/main/res/layout/fragment_crear_base_datos.xml" value="0.22473958333333333" />
+        <entry key="app/src/main/res/layout/fragment_modificarcontra.xml" value="0.22473958333333333" />
+        <entry key="app/src/main/res/layout/fragment_registrar_base_datos.xml" value="0.22473958333333333" />
         <entry key="app/src/main/res/layout/opcion_list.xml" value="0.44947916666666665" />
         <entry key="app/src/main/res/layout/opcion_list_content.xml" value="0.22473958333333333" />
         <entry key="app/src/main/res/layout/producto_caja.xml" value="0.44947916666666665" />
