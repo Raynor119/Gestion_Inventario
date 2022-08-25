@@ -1,6 +1,7 @@
 package com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionContra.AlertDialog;
 
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
@@ -8,6 +9,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.preference.PreferenceManager;
+
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionContra.configContra;
 import com.pixels.Inventario.ViewModel.Ajustes.ConfiguracionContra.EliminarContraViewModel;
@@ -26,6 +29,10 @@ public class alertcontra {
        builder.setPositiveButton("Modificar", new DialogInterface.OnClickListener() {
            @Override
            public void onClick(DialogInterface dialog, int which) {
+               SharedPreferences myPreferences = PreferenceManager.getDefaultSharedPreferences(Context);
+               SharedPreferences.Editor myEditor = myPreferences.edit();
+               myEditor.putBoolean("redimension", false);
+               myEditor.commit();
                Context.modificarContra();
            }
        });
@@ -50,8 +57,12 @@ public class alertcontra {
                obtenercontra.getResultado().observe(Context,observer);
            }
        });
-       AlertDialog dialog = builder.create();
-       dialog.show();
+       try{
+           AlertDialog dialog = builder.create();
+           dialog.show();
+       }catch (Exception e){
+
+       }
    }
    public void pedirContra(final String contrasena){
 

@@ -2,11 +2,13 @@ package com.pixels.Inventario.View.Activity.Ajustes.RecyclerViewAdapter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.preference.PreferenceManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.pixels.Inventario.Model.DatosE.AjustesContent;
@@ -30,6 +32,10 @@ public class AjustesRecyclerViewAdapter extends RecyclerView.Adapter<AjustesRecy
         public void onClick(View view) {
             int Id=Integer.parseInt((view.getTag()+""));
             if(Id==1){
+                SharedPreferences myPreferences = PreferenceManager.getDefaultSharedPreferences(mParentActivity);
+                SharedPreferences.Editor myEditor = myPreferences.edit();
+                myEditor.putBoolean("redimension", true);
+                myEditor.commit();
                 Context context = view.getContext();
                 Intent intent = new Intent(context,configContra.class);
                 intent.putExtra("fragment","1");

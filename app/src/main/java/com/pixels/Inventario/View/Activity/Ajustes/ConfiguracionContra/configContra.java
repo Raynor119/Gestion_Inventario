@@ -1,9 +1,12 @@
 package com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionContra;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.preference.PreferenceManager;
+
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Ajustes.Ajustes;
 import com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionContra.AlertDialog.alertcontra;
@@ -25,8 +28,14 @@ public class configContra extends AppCompatActivity {
 
         if(fragment.equals("1")){
             this.setTitle("Modificar la Contraseña");
-            alertcontra alert =new alertcontra(configContra.this);
-            alert.alertConfig();
+            SharedPreferences myPreferences = PreferenceManager.getDefaultSharedPreferences(Context);
+            boolean isalert = myPreferences.getBoolean("redimension",false);
+            if(isalert){
+                alertcontra alert =new alertcontra(configContra.this);
+                alert.alertConfig();
+            }else{
+                modificarContra();
+            }
         }
         if(fragment.equals("6")){
             this.setTitle("Configuracion de la Contraseña");

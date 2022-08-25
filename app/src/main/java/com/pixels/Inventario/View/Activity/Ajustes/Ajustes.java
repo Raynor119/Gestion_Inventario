@@ -1,11 +1,13 @@
 package com.pixels.Inventario.View.Activity.Ajustes;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.preference.PreferenceManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.pixels.Inventario.Model.DatosE.AjustesContent;
 import com.pixels.Inventario.R;
@@ -44,7 +46,6 @@ public class Ajustes extends AppCompatActivity {
             public void onChanged(String s) {
                 if(s.equals("si")){
                     ajustes.add(new AjustesContent(1,"Configuracion de la Contraseña","Permite cambiar o eliminar la contraseña que se tiene guardada"));
-
                 }else{
                     ajustes.add(new AjustesContent(6,"Configuracion de la Contraseña","Permite asignar una contraseña a la aplicacion"));
                 }
