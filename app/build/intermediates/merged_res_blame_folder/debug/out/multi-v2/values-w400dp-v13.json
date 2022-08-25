@@ -4,8 +4,15 @@
             "outputFile": "com.pixels.Inventario.app-mergeDebugResources-21:/values-w400dp-v13/values-w400dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/res/values-w400dp/dimens.xml",
+                    "source": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\src\\main\\res\\values-w400dp\\dimens.xml",
                     "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "53",
+                        "endOffsets": "106"
+                    },
+                    "to": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",

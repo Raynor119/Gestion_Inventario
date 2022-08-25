@@ -4,7 +4,7 @@
             "outputFile": "com.pixels.Inventario.app-mergeDebugResources-21:/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "/home/deivicamiloflorezprieto/.gradle/caches/transforms-3/c8a2094444aa101959e16d71c36ae1fe/transformed/appcompat-1.2.0/res/values-port/values-port.xml",
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-3\\c8a2094444aa101959e16d71c36ae1fe\\transformed\\appcompat-1.2.0\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

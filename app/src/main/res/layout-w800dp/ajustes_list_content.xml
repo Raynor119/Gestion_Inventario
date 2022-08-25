@@ -21,7 +21,7 @@
         <TextView
                 android:id="@+id/ajusteso"
                 android:layout_width="wrap_content"
-                android:textSize="22sp"
+                android:textSize="18sp"
                 android:state_hovered="true"
                 android:layout_height="wrap_content"
                 android:textColor="#000000"
@@ -32,7 +32,7 @@
         <TextView
                 android:id="@+id/content"
                 android:layout_width="wrap_content"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:state_hovered="true"
                 android:layout_height="wrap_content"
                 android:textColor="#8A000000"

@@ -5,267 +5,267 @@
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
-7-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:6:5-72
+7-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:6:5-72
 8        android:minSdkVersion="26"
-8-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:6:5-72
+8-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:6:5-72
 9        android:targetSdkVersion="32" />
-9-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:6:5-72
+9-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:6:5-72
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:8:5-67
-11-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:8:22-64
+11-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:8:5-67
+11-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:8:22-64
 12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-12-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:9:5-81
-12-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:9:22-78
+12-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:9:5-81
+12-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:9:22-78
 13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-13-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:10:5-80
-13-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:10:22-77
+13-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:10:5-80
+13-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:10:22-77
 14    <uses-permission android:name="android.permission.CAMERA" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
-14-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:22:5-65
-14-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:22:22-62
+14-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:22:5-65
+14-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:22:22-62
 15    <uses-feature
-15-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:25:5-27:36
+15-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:25:5-27:36
 16        android:name="android.hardware.camera"
-16-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:26:9-47
+16-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:26:9-47
 17        android:required="false" />
-17-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:27:9-33
+17-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:27:9-33
 18    <uses-feature
-18-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:28:5-30:36
+18-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:28:5-30:36
 19        android:name="android.hardware.camera.front"
-19-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:29:9-53
+19-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:29:9-53
 20        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
-20-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:30:9-33
+20-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:30:9-33
 21    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
 22    <uses-feature
-22-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:33:5-35:36
+22-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:33:5-35:36
 23        android:name="android.hardware.camera.autofocus"
-23-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:34:9-57
+23-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:34:9-57
 24        android:required="false" />
-24-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:35:9-33
+24-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:35:9-33
 25    <uses-feature
-25-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:36:5-38:36
+25-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:36:5-38:36
 26        android:name="android.hardware.camera.flash"
-26-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:37:9-53
+26-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:37:9-53
 27        android:required="false" />
-27-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:38:9-33
+27-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:38:9-33
 28    <uses-feature
-28-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:39:5-41:36
+28-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:39:5-41:36
 29        android:name="android.hardware.screen.landscape"
-29-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:40:9-57
+29-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:40:9-57
 30        android:required="false" />
-30-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:41:9-33
+30-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:41:9-33
 31    <uses-feature
-31-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:42:5-44:36
+31-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:42:5-44:36
 32        android:name="android.hardware.wifi"
-32-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:43:9-45
+32-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:43:9-45
 33        android:required="false" />
-33-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:44:9-33
+33-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:44:9-33
 34
 35    <application
-35-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:13:5-102:19
+35-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:13:5-102:19
 36        android:allowBackup="true"
-36-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:14:9-35
+36-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:14:9-35
 37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-37-->[androidx.core:core:1.7.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/90c70f0e9b779f3812f40b7c13ccdef6/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+37-->[androidx.core:core:1.7.0] C:\Users\saibo\.gradle\caches\transforms-3\90c70f0e9b779f3812f40b7c13ccdef6\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 38        android:debuggable="true"
 39        android:extractNativeLibs="false"
 40        android:grantUriPermissions="true"
-40-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:19:9-43
+40-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:19:9-43
 41        android:hardwareAccelerated="true"
-41-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:15:9-43
+41-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:15:9-43
 42        android:icon="@mipmap/ic_launcher"
-42-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:16:9-43
+42-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:16:9-43
 43        android:label="@string/app_name"
-43-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:17:9-41
+43-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:17:9-41
 44        android:resizeableActivity="true"
-44-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:18:9-42
+44-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:18:9-42
 45        android:supportsRtl="true"
-45-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:20:9-35
+45-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:20:9-35
 46        android:testOnly="true"
 47        android:theme="@style/Theme.MyApplication" >
-47-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:21:9-51
+47-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:21:9-51
 48        <provider
-48-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:22:9-30:20
+48-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:22:9-30:20
 49            android:name="androidx.core.content.FileProvider"
-49-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:23:13-62
+49-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:23:13-62
 50            android:authorities="com.pixels.Inventario.fileprovider"
-50-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:24:13-69
+50-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:24:13-69
 51            android:exported="false"
-51-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:25:13-37
+51-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:25:13-37
 52            android:grantUriPermissions="true" >
-52-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:26:13-47
+52-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:26:13-47
 53            <meta-data
-53-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:27:13-29:53
+53-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:27:13-29:53
 54                android:name="android.support.FILE_PROVIDER_PATHS"
-54-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:28:17-67
+54-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:28:17-67
 55                android:resource="@xml/filepaths" />
-55-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:29:17-50
+55-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:29:17-50
 56        </provider>
 57
 58        <activity
-58-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:31:9-34:39
+58-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:31:9-34:39
 59            android:name="com.pixels.Inventario.View.Activity.Caja.Devoluciones.devoluciones"
-59-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:32:13-73
+59-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:32:13-73
 60            android:exported="false"
-60-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:34:13-37
+60-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:34:13-37
 61            android:theme="@style/Theme.MyApplication.NoActionBar" />
-61-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:33:13-67
+61-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:33:13-67
 62        <activity
-62-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:35:9-38:20
+62-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:35:9-38:20
 63            android:name="com.pixels.Inventario.View.Activity.Caja.Factura.VerFactura"
-63-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:36:13-66
+63-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:36:13-66
 64            android:exported="false" >
-64-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:37:13-37
+64-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:37:13-37
 65        </activity>
 66        <activity
-66-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:39:9-42:70
+66-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:39:9-42:70
 67            android:name="com.pixels.Inventario.View.Activity.Caja.Caja"
-67-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:40:13-52
+67-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:40:13-52
 68            android:exported="false"
-68-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:41:13-37
+68-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:41:13-37
 69            android:theme="@style/Theme.MyApplication.NoActionBar" />
-69-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:42:13-67
+69-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:42:13-67
 70        <activity
-70-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:43:9-46:70
+70-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:43:9-46:70
 71            android:name="com.pixels.Inventario.View.Activity.Gestion_Productos.EditarProductos.EditarProducto"
-71-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:44:13-91
+71-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:44:13-91
 72            android:exported="false"
-72-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:45:13-37
+72-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:45:13-37
 73            android:theme="@style/Theme.MyApplication.NoActionBar" />
-73-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:46:13-67
+73-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:46:13-67
 74        <activity
-74-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:47:9-50:70
+74-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:47:9-50:70
 75            android:name="com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.AgregarProductos"
-75-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:48:13-94
+75-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:48:13-94
 76            android:exported="false"
-76-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:49:13-37
+76-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:49:13-37
 77            android:theme="@style/Theme.MyApplication.NoActionBar" />
-77-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:50:13-67
+77-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:50:13-67
 78        <activity
-78-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:51:9-54:70
+78-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:51:9-54:70
 79            android:name="com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionBaseDatos.CrearBaseDatosMYSQL"
-79-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:52:13-93
+79-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:52:13-93
 80            android:exported="false"
-80-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:53:13-37
+80-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:53:13-37
 81            android:theme="@style/Theme.MyApplication.NoActionBar" />
-81-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:54:13-67
+81-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:54:13-67
 82        <activity android:name="com.pixels.Inventario.View.Activity.Ajustes.ExportarDatos.ExportarDatos" >
-82-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:55:9-59:20
-82-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:55:19-84
+82-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:55:9-59:20
+82-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:55:19-84
 83            <meta-data
-83-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:56:13-58:66
+83-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:56:13-58:66
 84                android:name="android.support.PARENT_ACTIVITY"
-84-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:57:17-63
+84-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:57:17-63
 85                android:value=".View.Activity.Ajustes.Ajustes" />
-85-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:58:17-63
+85-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:58:17-63
 86        </activity>
 87        <activity android:name="com.pixels.Inventario.View.Activity.Ajustes.ImportarDatos.ImportarDatos" >
-87-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:60:9-64:20
-87-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:60:19-84
+87-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:60:9-64:20
+87-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:60:19-84
 88            <meta-data
-88-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:56:13-58:66
+88-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:56:13-58:66
 89                android:name="android.support.PARENT_ACTIVITY"
-89-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:57:17-63
+89-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:57:17-63
 90                android:value=".View.Activity.Ajustes.Ajustes" />
-90-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:58:17-63
+90-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:58:17-63
 91        </activity>
 92        <activity
-92-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:65:9-68:70
+92-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:65:9-68:70
 93            android:name="com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionBaseDatos.cambiarMySQL"
-93-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:66:13-86
+93-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:66:13-86
 94            android:exported="false"
-94-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:67:13-37
+94-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:67:13-37
 95            android:theme="@style/Theme.MyApplication.NoActionBar" />
-95-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:68:13-67
+95-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:68:13-67
 96        <activity android:name="com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionContra.configContra" >
-96-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:69:9-73:20
-96-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:69:19-89
+96-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:69:9-73:20
+96-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:69:19-89
 97            <meta-data
-97-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:56:13-58:66
+97-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:56:13-58:66
 98                android:name="android.support.PARENT_ACTIVITY"
-98-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:57:17-63
+98-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:57:17-63
 99                android:value=".View.Activity.Ajustes.Ajustes" />
-99-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:58:17-63
+99-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:58:17-63
 100        </activity>
 101        <activity
-101-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:74:9-76:70
+101-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:74:9-76:70
 102            android:name="com.pixels.Inventario.View.Activity.Ajustes.Ajustes"
-102-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:75:13-58
+102-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:75:13-58
 103            android:theme="@style/Theme.MyApplication.NoActionBar" />
-103-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:76:13-67
+103-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:76:13-67
 104        <activity
-104-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:77:9-79:70
+104-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:77:9-79:70
 105            android:name="com.pixels.Inventario.View.Activity.Menu_Inicio.MenuInicio"
-105-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:78:13-65
+105-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:78:13-65
 106            android:theme="@style/Theme.MyApplication.NoActionBar" />
-106-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:79:13-67
+106-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:79:13-67
 107        <activity
-107-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:80:9-88:20
+107-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:80:9-88:20
 108            android:name="com.pixels.Inventario.View.Activity.Gestion_Productos.VerInventario"
-108-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:81:13-74
+108-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:81:13-74
 109            android:label="@string/title_opcion_detail"
-109-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:82:13-56
+109-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:82:13-56
 110            android:parentActivityName="com.pixels.Inventario.View.Activity.Menu_Inicio.MenuInicio"
-110-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:83:13-79
+110-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:83:13-79
 111            android:theme="@style/Theme.MyApplication.NoActionBar" >
-111-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:84:13-67
+111-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:84:13-67
 112            <meta-data
-112-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:56:13-58:66
+112-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:56:13-58:66
 113                android:name="android.support.PARENT_ACTIVITY"
-113-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:57:17-63
+113-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:57:17-63
 114                android:value="com.pixels.Inventario.View.Activity.Menu_Inicio.MenuInicio" />
-114-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:58:17-63
+114-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:58:17-63
 115        </activity>
 116        <activity
-116-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:89:9-91:40
+116-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:89:9-91:40
 117            android:name="com.pixels.Inventario.View.Activity.InicioA.Configuracion_Inicial.configuracionI"
-117-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:90:13-87
+117-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:90:13-87
 118            android:exported="false" />
-118-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:91:13-37
+118-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:91:13-37
 119        <activity
-119-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:92:9-101:20
+119-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:92:9-101:20
 120            android:name="com.pixels.Inventario.View.Activity.InicioA.Inicio"
-120-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:93:13-57
+120-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:93:13-57
 121            android:exported="true"
-121-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:94:13-36
+121-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:94:13-36
 122            android:theme="@style/Theme.MyApplication.NoActionBar" >
-122-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:95:13-67
+122-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:95:13-67
 123            <intent-filter>
-123-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:96:13-100:29
+123-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:96:13-100:29
 124                <action android:name="android.intent.action.MAIN" />
-124-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:97:17-69
-124-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:97:25-66
+124-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:97:17-69
+124-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:97:25-66
 125
 126                <category android:name="android.intent.category.LAUNCHER" />
-126-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:99:17-77
-126-->/home/deivicamiloflorezprieto/Documentos/Gestion_Inventario/app/src/main/AndroidManifest.xml:99:27-74
+126-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:99:17-77
+126-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:99:27-74
 127            </intent-filter>
 128        </activity>
 129        <activity
-129-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:47:9-53:63
+129-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:47:9-53:63
 130            android:name="com.journeyapps.barcodescanner.CaptureActivity"
-130-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:48:13-74
+130-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:48:13-74
 131            android:clearTaskOnLaunch="true"
-131-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:49:13-45
+131-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:49:13-45
 132            android:screenOrientation="sensorLandscape"
-132-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:50:13-56
+132-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:50:13-56
 133            android:stateNotNeeded="true"
-133-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:51:13-42
+133-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:51:13-42
 134            android:theme="@style/zxing_CaptureTheme"
-134-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:52:13-54
+134-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:52:13-54
 135            android:windowSoftInputMode="stateAlwaysHidden" />
-135-->[com.journeyapps:zxing-android-embedded:4.2.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/8737cc03599a5fa78eafe2514c038020/transformed/jetified-zxing-android-embedded-4.2.0/AndroidManifest.xml:53:13-60
+135-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:53:13-60
 136
 137        <provider
-137-->[androidx.lifecycle:lifecycle-process:2.0.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/9ae512f0c9cb413ecc503703ea68a535/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+137-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\saibo\.gradle\caches\transforms-3\9ae512f0c9cb413ecc503703ea68a535\transformed\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
 138            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-138-->[androidx.lifecycle:lifecycle-process:2.0.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/9ae512f0c9cb413ecc503703ea68a535/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
+138-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\saibo\.gradle\caches\transforms-3\9ae512f0c9cb413ecc503703ea68a535\transformed\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
 139            android:authorities="com.pixels.Inventario.lifecycle-process"
-139-->[androidx.lifecycle:lifecycle-process:2.0.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/9ae512f0c9cb413ecc503703ea68a535/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+139-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\saibo\.gradle\caches\transforms-3\9ae512f0c9cb413ecc503703ea68a535\transformed\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
 140            android:exported="false"
-140-->[androidx.lifecycle:lifecycle-process:2.0.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/9ae512f0c9cb413ecc503703ea68a535/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+140-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\saibo\.gradle\caches\transforms-3\9ae512f0c9cb413ecc503703ea68a535\transformed\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
 141            android:multiprocess="true" />
-141-->[androidx.lifecycle:lifecycle-process:2.0.0] /home/deivicamiloflorezprieto/.gradle/caches/transforms-3/9ae512f0c9cb413ecc503703ea68a535/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+141-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\saibo\.gradle\caches\transforms-3\9ae512f0c9cb413ecc503703ea68a535\transformed\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
 142    </application>
 143
 144</manifest>

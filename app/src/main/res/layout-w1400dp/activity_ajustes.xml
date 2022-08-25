@@ -32,8 +32,8 @@
                     android:layout_gravity="center"
                     android:text="Ajustes"
                     android:layout_marginTop="10dp"
-                    android:layout_marginLeft="190dp"
-                    android:textSize="40dp"
+                    android:layout_marginLeft="220dp"
+                    android:textSize="32dp"
                     android:textColor="#FFFFFF"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"/>

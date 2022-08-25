@@ -4,7 +4,7 @@
             "outputFile": "com.pixels.Inventario.app-mergeDebugResources-21:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/home/deivicamiloflorezprieto/.gradle/caches/transforms-3/c8a2094444aa101959e16d71c36ae1fe/transformed/appcompat-1.2.0/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-3\\c8a2094444aa101959e16d71c36ae1fe\\transformed\\appcompat-1.2.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/home/deivicamiloflorezprieto/.gradle/caches/transforms-3/037164efd180b1a759f85bd80e940c8b/transformed/material-1.4.0/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-3\\037164efd180b1a759f85bd80e940c8b\\transformed\\material-1.4.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,6",
                         "startColumns": "4,4",
@@ -42,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "/home/deivicamiloflorezprieto/.gradle/caches/transforms-3/476b29e0ad710acb6cc42ccfb2c8e71c/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-3\\476b29e0ad710acb6cc42ccfb2c8e71c\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
