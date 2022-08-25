@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.17925659472422062" />
+        <entry key="app/src/main/res/layout-w1400dp/activity_ajustes.xml" value="0.136" />
         <entry key="app/src/main/res/layout-w1400dp/activity_menuinicio.xml" value="0.20069444444444445" />
         <entry key="app/src/main/res/layout-w600dp/activity_agregar_productos.xml" value="0.22473958333333333" />
         <entry key="app/src/main/res/layout-w600dp/activity_menuinicio.xml" value="0.2" />
@@ -12,6 +13,7 @@
         <entry key="app/src/main/res/layout-w800dp/activity_agregar_productos.xml" value="0.18229166666666666" />
         <entry key="app/src/main/res/layout-w800dp/activity_ajustes.xml" value="0.2" />
         <entry key="app/src/main/res/layout-w800dp/activity_inventario_productos.xml" value="0.22473958333333333" />
+        <entry key="app/src/main/res/layout-w800dp/ajustes_list_content.xml" value="0.22473958333333333" />
         <entry key="app/src/main/res/layout-w900dp/fragment_inventario_productos.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_agregar_productos.xml" value="0.44947916666666665" />
         <entry key="app/src/main/res/layout/activity_ajustes.xml" value="0.18229166666666666" />

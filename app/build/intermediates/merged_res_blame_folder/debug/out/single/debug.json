@@ -20,20 +20,24 @@
         "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_config_contra.xml"
     },
     {
-        "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1400dp_fragment_inventario_productos.xml.flat",
-        "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1400dp/fragment_inventario_productos.xml"
+        "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_activity_inventario_productos.xml.flat",
+        "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/activity_inventario_productos.xml"
     },
     {
         "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_importar_datos.xml.flat",
         "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_importar_datos.xml"
     },
     {
+        "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1400dp_fragment_inventario_productos.xml.flat",
+        "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1400dp/fragment_inventario_productos.xml"
+    },
+    {
         "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_activity_agregar_productos.xml.flat",
         "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/activity_agregar_productos.xml"
     },
     {
-        "merged": "com.pixels.Inventario.app-merged_res-23:/layout-w800dp_activity_agregar_productos.xml.flat",
-        "source": "com.pixels.Inventario.app-main-25:/layout-w800dp/activity_agregar_productos.xml"
+        "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_ajustes_list_content.xml.flat",
+        "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/ajustes_list_content.xml"
     },
     {
         "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_salir_adaptive_back.png.flat",
@@ -56,12 +60,12 @@
         "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/caja.png"
     },
     {
-        "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_exportar_datos.xml.flat",
-        "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_exportar_datos.xml"
-    },
-    {
         "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_scaner.png.flat",
         "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/scaner.png"
+    },
+    {
+        "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_exportar_datos.xml.flat",
+        "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_exportar_datos.xml"
     },
     {
         "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ajustes_adaptive_fore.png.flat",
@@ -84,12 +88,12 @@
         "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/menos_adaptive_back.png"
     },
     {
-        "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_activity_menuinicio.xml.flat",
-        "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/activity_menuinicio.xml"
-    },
-    {
         "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_fragment_modificarcontra.xml.flat",
         "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/fragment_modificarcontra.xml"
+    },
+    {
+        "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_activity_menuinicio.xml.flat",
+        "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/activity_menuinicio.xml"
     },
     {
         "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_tipocantidad.xml.flat",
@@ -100,12 +104,12 @@
         "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/agregar_adaptive_fore.png"
     },
     {
-        "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_activity_ajustes.xml.flat",
-        "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/activity_ajustes.xml"
-    },
-    {
         "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_opcion_list_content.xml.flat",
         "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/opcion_list_content.xml"
+    },
+    {
+        "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_activity_ajustes.xml.flat",
+        "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/activity_ajustes.xml"
     },
     {
         "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_caja.xml.flat",
@@ -170,6 +174,10 @@
     {
         "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_menos_adaptive_fore.png.flat",
         "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/menos_adaptive_fore.png"
+    },
+    {
+        "merged": "com.pixels.Inventario.app-merged_res-23:/layout-w1400dp_activity_ajustes.xml.flat",
+        "source": "com.pixels.Inventario.app-main-25:/layout-w1400dp/activity_ajustes.xml"
     },
     {
         "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_ver_factura.xml.flat",
@@ -256,10 +264,6 @@
         "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w600dp/activity_menuinicio.xml"
     },
     {
-        "merged": "com.pixels.Inventario.app-merged_res-23:/layout_activity_agregar_productos.xml.flat",
-        "source": "com.pixels.Inventario.app-main-25:/layout/activity_agregar_productos.xml"
-    },
-    {
         "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_inventario_productos.xml.flat",
         "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_inventario_productos.xml"
     },
@@ -290,6 +294,10 @@
     {
         "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_menuinicio.xml.flat",
         "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_menuinicio.xml"
+    },
+    {
+        "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1400dp_activity_ajustes.xml.flat",
+        "source": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1400dp/activity_ajustes.xml"
     },
     {
         "merged": "/home/deivicamiloflorezprieto/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w600dp_activity_agregar_productos.xml.flat",
