@@ -271,7 +271,7 @@ public class FacturaPDF {
         paragraph.add(childParagraph);
     }
     private void CrearArchivo(){
-
+        //modificar para android 12
         File carpeta=new File(Environment.getExternalStorageDirectory().toString(),"Facturas"+Context.getString(R.string.app_name));
         if(!carpeta.exists()){
             carpeta.mkdirs();
