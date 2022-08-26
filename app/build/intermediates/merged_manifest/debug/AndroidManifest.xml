@@ -106,7 +106,6 @@
             android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
             android:name="com.pixels.Inventario.View.Activity.Gestion_Productos.VerInventario"
-            android:label="@string/title_opcion_detail"
             android:parentActivityName="com.pixels.Inventario.View.Activity.Menu_Inicio.MenuInicio"
             android:theme="@style/Theme.MyApplication.NoActionBar" >
             <meta-data

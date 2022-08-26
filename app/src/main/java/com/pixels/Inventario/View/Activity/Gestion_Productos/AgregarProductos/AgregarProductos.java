@@ -178,22 +178,8 @@ public class AgregarProductos extends AppCompatActivity {
                         Codigo.setFocusableInTouchMode(true);
                         Codigo.requestFocus();
                     }else{
-                        VerificarCodigoViewModel verificar= ViewModelProviders.of(AgregarProductos.this).get(VerificarCodigoViewModel.class);
-                        verificar.reset();
-                        verificar.verificarCodigo(Codigo.getText().toString(),AgregarProductos.this);
-                        Observer<Boolean> observer=new Observer<Boolean>() {
-                            @Override
-                            public void onChanged(Boolean aBoolean) {
-                                if(aBoolean){
-                                    Codigo.clearFocus();
-                                }else {
-                                    CCodigo.setError("Error el codigo ya esta registrado en la base de datos");
-                                    Codigo.setFocusableInTouchMode(true);
-                                    Codigo.requestFocus();
-                                }
-                            }
-                        };
-                        verificar.getResultado().observe(AgregarProductos.this,observer);
+                       VerificacionCodigoA codigo=new VerificacionCodigoA(AgregarProductos.this);
+                       codigo.verificarCodigo();
                     }
                     return true;
                 }
@@ -270,6 +256,8 @@ public class AgregarProductos extends AppCompatActivity {
                                                         finish();
                                                         verproductos.iniciarRecyclerView();
                                                     }catch (Exception e){
+                                                        Toast.makeText(AgregarProductos.this, "Error al guardar el Producto en la Base de Datos", Toast.LENGTH_LONG).show();
+
                                                         finish();
                                                     }
                                                 }
@@ -300,22 +288,8 @@ public class AgregarProductos extends AppCompatActivity {
         if(result != null)
             if (result.getContents() != null){
                 Codigo.setText(result.getContents()+"");
-                VerificarCodigoViewModel verificar= ViewModelProviders.of(AgregarProductos.this).get(VerificarCodigoViewModel.class);
-                verificar.reset();
-                verificar.verificarCodigo(Codigo.getText().toString(),AgregarProductos.this);
-                Observer<Boolean> observer=new Observer<Boolean>() {
-                    @Override
-                    public void onChanged(Boolean aBoolean) {
-                        if(aBoolean){
-
-                        }else {
-                            CCodigo.setError("Error el codigo ya esta registrado en la base de datos");
-                            Codigo.setFocusableInTouchMode(true);
-                            Codigo.requestFocus();
-                        }
-                    }
-                };
-                verificar.getResultado().observe(AgregarProductos.this,observer);
+                VerificacionCodigoA codigo=new VerificacionCodigoA(AgregarProductos.this);
+                codigo.verificarCodigo();
             }else{
                 CCodigo.setError("Error al escanear el código de barras");
                 Codigo.setText("");
