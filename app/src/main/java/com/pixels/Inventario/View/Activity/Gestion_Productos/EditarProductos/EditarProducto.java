@@ -24,6 +24,7 @@ import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.R;
+import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.AgregarProductos;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.TextWatcher.TextCodigo;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.TextWatcher.TextMoneda;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.Fragment.VerInventarioFragment;
@@ -92,6 +93,9 @@ public class EditarProducto extends AppCompatActivity {
                         verificarspinnerg[0] = true;
                         verifi[0] =false;
                     }
+                    String [] tipoC={"Unitario(U)","Peso(Kg)","Peso(g)"};
+                    ArrayAdapter<String> adapter=new ArrayAdapter<String>(EditarProducto.this, R.layout.tipocantidad,tipoC);
+                    spinner.setAdapter(adapter);
                 }
                 if(spinner.getText().toString().equals("Peso(Kg)")){
                     if(verificarspinnerK[0]){
@@ -105,6 +109,7 @@ public class EditarProducto extends AppCompatActivity {
                                 verificarspinnerg[0] = true;
                                 verifi[0] =true;
                             }else{
+                                Cantidad.setEnabled(true);
                                 double conversion=Double.parseDouble(Cantidad.getText().toString());
                                 double canntidadconvertida=conversion*(0.001);
                                 BigDecimal bd = new BigDecimal(canntidadconvertida);
@@ -125,6 +130,9 @@ public class EditarProducto extends AppCompatActivity {
                             verifi[0] =true;
                         }
                     }
+                    String [] tipoC={"Unitario(U)","Peso(Kg)","Peso(g)"};
+                    ArrayAdapter<String> adapter=new ArrayAdapter<String>(EditarProducto.this, R.layout.tipocantidad,tipoC);
+                    spinner.setAdapter(adapter);
                 }
                 if(spinner.getText().toString().equals("Peso(g)")){
                     if(verificarspinnerg[0]){
@@ -138,6 +146,7 @@ public class EditarProducto extends AppCompatActivity {
                                 verificarspinnerK[0] =true;
                                 verifi[0] =true;
                             }else{
+                                Cantidad.setEnabled(true);
                                 double conversion=Double.parseDouble(Cantidad.getText().toString());
                                 double canntidadconvertida=conversion*(1000);
                                 BigDecimal bd = new BigDecimal(canntidadconvertida);
@@ -158,6 +167,9 @@ public class EditarProducto extends AppCompatActivity {
                             verifi[0] =true;
                         }
                     }
+                    String [] tipoC={"Unitario(U)","Peso(Kg)","Peso(g)"};
+                    ArrayAdapter<String> adapter=new ArrayAdapter<String>(EditarProducto.this, R.layout.tipocantidad,tipoC);
+                    spinner.setAdapter(adapter);
                 }
                 TipoC.setErrorEnabled(false);
             }
@@ -298,6 +310,10 @@ public class EditarProducto extends AppCompatActivity {
                     int canti=(int) productos.get(0).getCantidad();
                     Cantidad.setText(""+canti);
                     cantidadG=Cantidad.getText().toString();
+                    verificarspinnerU[0] =false;
+                    verificarspinnerK[0] =true;
+                    verificarspinnerg[0] = true;
+                    verifi[0] =false;
                 }
                 if(productos.get(0).getTipoC().equals("peso")){
                     spinner.setText("Peso(Kg)");
@@ -305,6 +321,10 @@ public class EditarProducto extends AppCompatActivity {
                     Cantidad.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
                     Cantidad.setText(""+productos.get(0).getCantidad());
                     cantidadG=Cantidad.getText().toString();
+                    verificarspinnerK[0] =false;
+                    verificarspinnerU[0] =true;
+                    verificarspinnerg[0] = true;
+                    verifi[0] =true;
                 }
                 Costop.setText(""+productos.get(0).getCosteP());
                 Precio.setText(""+productos.get(0).getPrecio());

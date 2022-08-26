@@ -63,6 +63,7 @@ public class AgregarProductos extends AppCompatActivity {
         String [] tipoC={"Unitario(U)","Peso(Kg)","Peso(g)"};
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, R.layout.tipocantidad,tipoC);
         spinner.setAdapter(adapter);
+        Cantidad.setText("");
         Cantidad.setEnabled(false);
         final boolean[] verificarspinnerU = {true};
         final boolean[] verificarspinnerK = {true};
@@ -81,6 +82,9 @@ public class AgregarProductos extends AppCompatActivity {
                         verificarspinnerg[0] = true;
                         verifi[0] =false;
                     }
+                    String [] tipoC={"Unitario(U)","Peso(Kg)","Peso(g)"};
+                    ArrayAdapter<String> adapter=new ArrayAdapter<String>(AgregarProductos.this, R.layout.tipocantidad,tipoC);
+                    spinner.setAdapter(adapter);
                 }
                 if(spinner.getText().toString().equals("Peso(Kg)")){
                     if(verificarspinnerK[0]){
@@ -94,6 +98,7 @@ public class AgregarProductos extends AppCompatActivity {
                                 verificarspinnerg[0] = true;
                                 verifi[0] =true;
                             }else{
+                                Cantidad.setEnabled(true);
                                 double conversion=Double.parseDouble(Cantidad.getText().toString());
                                 double canntidadconvertida=conversion*(0.001);
                                 BigDecimal bd = new BigDecimal(canntidadconvertida);
@@ -114,6 +119,9 @@ public class AgregarProductos extends AppCompatActivity {
                             verifi[0] =true;
                         }
                     }
+                    String [] tipoC={"Unitario(U)","Peso(Kg)","Peso(g)"};
+                    ArrayAdapter<String> adapter=new ArrayAdapter<String>(AgregarProductos.this, R.layout.tipocantidad,tipoC);
+                    spinner.setAdapter(adapter);
                 }
                 if(spinner.getText().toString().equals("Peso(g)")){
                     if(verificarspinnerg[0]){
@@ -127,6 +135,7 @@ public class AgregarProductos extends AppCompatActivity {
                                 verificarspinnerK[0] =true;
                                 verifi[0] =true;
                             }else{
+                                Cantidad.setEnabled(true);
                                 double conversion=Double.parseDouble(Cantidad.getText().toString());
                                 double canntidadconvertida=conversion*(1000);
                                 BigDecimal bd = new BigDecimal(canntidadconvertida);
@@ -147,6 +156,9 @@ public class AgregarProductos extends AppCompatActivity {
                             verifi[0] =true;
                         }
                     }
+                    String [] tipoC={"Unitario(U)","Peso(Kg)","Peso(g)"};
+                    ArrayAdapter<String> adapter=new ArrayAdapter<String>(AgregarProductos.this, R.layout.tipocantidad,tipoC);
+                    spinner.setAdapter(adapter);
                 }
                 TipoC.setErrorEnabled(false);
             }
