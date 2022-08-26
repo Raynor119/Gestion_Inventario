@@ -46,7 +46,7 @@ public class EditarProducto extends AppCompatActivity {
     public TextInputLayout CCodigo,TipoC;
     public CardView Escaner;
     public static VerInventarioFragment verproductos;
-    private String codigo="";
+    public String codigo="";
 
     private String nombreG="";
     private String cantidadG="";
@@ -189,22 +189,8 @@ public class EditarProducto extends AppCompatActivity {
                         Codigo.setFocusableInTouchMode(true);
                         Codigo.requestFocus();
                     }else{
-                        VerificarCodigoEditarViewModel verificar= ViewModelProviders.of(EditarProducto.this).get(VerificarCodigoEditarViewModel.class);
-                        verificar.reset();
-                        verificar.verificarCodigo(EditarProducto.this,codigo,Codigo.getText().toString());
-                        Observer<Boolean> observer=new Observer<Boolean>() {
-                            @Override
-                            public void onChanged(Boolean aBoolean) {
-                                if(aBoolean){
-
-                                }else {
-                                    CCodigo.setError("Error el codigo ya esta registrado en la base de datos");
-                                    Codigo.setFocusableInTouchMode(true);
-                                    Codigo.requestFocus();
-                                }
-                            }
-                        };
-                        verificar.getResultado().observe(EditarProducto.this,observer);
+                        VerificacionCodigoE codigo =new VerificacionCodigoE(EditarProducto.this);
+                        codigo.verificarCodigo();
                     }
                     return true;
                 }
@@ -354,22 +340,8 @@ public class EditarProducto extends AppCompatActivity {
         if(result != null)
             if (result.getContents() != null){
                 Codigo.setText(result.getContents()+"");
-                VerificarCodigoEditarViewModel verificar= ViewModelProviders.of(EditarProducto.this).get(VerificarCodigoEditarViewModel.class);
-                verificar.reset();
-                verificar.verificarCodigo(EditarProducto.this,codigo,Codigo.getText().toString());
-                Observer<Boolean> observer=new Observer<Boolean>() {
-                    @Override
-                    public void onChanged(Boolean aBoolean) {
-                        if(aBoolean){
-
-                        }else {
-                            CCodigo.setError("Error el codigo ya esta registrado en la base de datos");
-                            Codigo.setFocusableInTouchMode(true);
-                            Codigo.requestFocus();
-                        }
-                    }
-                };
-                verificar.getResultado().observe(EditarProducto.this,observer);
+                VerificacionCodigoE codigo =new VerificacionCodigoE(EditarProducto.this);
+                codigo.verificarCodigo();
             }else{
                 CCodigo.setError("Error al escanear el código de barras");
                 Codigo.setText("");
