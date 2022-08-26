@@ -27,6 +27,7 @@ import com.google.zxing.integration.android.IntentResult;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.TextWatcher.TextCodigo;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.TextWatcher.TextMoneda;
+import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.VerificacionCodigo.VerificacionCodigoA;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.Fragment.VerInventarioFragment;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.AgregarProductos.AgregarProductosViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.VerificarCodigoViewModel;

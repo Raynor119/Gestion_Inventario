@@ -1,25 +1,25 @@
-package com.pixels.Inventario.View.Activity.Gestion_Productos.EditarProductos;
+package com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.VerificacionCodigo;
 
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.VerificarCodigoEditarViewModel;
+import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.AgregarProductos;
+import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.VerificarCodigoViewModel;
 
-public class VerificacionCodigoE {
-    private EditarProducto Context;
-
-    public VerificacionCodigoE(EditarProducto context){
+public class VerificacionCodigoA {
+    private AgregarProductos Context;
+    public VerificacionCodigoA(AgregarProductos context){
         this.Context=context;
     }
     public void verificarCodigo(){
-        VerificarCodigoEditarViewModel verificar= ViewModelProviders.of(Context).get(VerificarCodigoEditarViewModel.class);
+        VerificarCodigoViewModel verificar= ViewModelProviders.of(Context).get(VerificarCodigoViewModel.class);
         verificar.reset();
-        verificar.verificarCodigo(Context,Context.codigo,Context.Codigo.getText().toString());
+        verificar.verificarCodigo(Context.Codigo.getText().toString(),Context);
         Observer<Boolean> observer=new Observer<Boolean>() {
             @Override
             public void onChanged(Boolean aBoolean) {
                 if(aBoolean){
-
+                    Context.Codigo.clearFocus();
                 }else {
                     Context.CCodigo.setError("Error el codigo ya esta registrado en la base de datos");
                     Context.Codigo.setFocusableInTouchMode(true);
@@ -29,5 +29,4 @@ public class VerificacionCodigoE {
         };
         verificar.getResultado().observe(Context,observer);
     }
-
 }

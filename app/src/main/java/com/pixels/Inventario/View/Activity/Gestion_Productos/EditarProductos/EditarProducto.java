@@ -24,9 +24,9 @@ import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.R;
-import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.AgregarProductos;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.TextWatcher.TextCodigo;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.TextWatcher.TextMoneda;
+import com.pixels.Inventario.View.Activity.Gestion_Productos.EditarProductos.VerificacionCodigo.VerificacionCodigoE;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.Fragment.VerInventarioFragment;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.EditarProducto.EditarDatosViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.EditarProducto.VerDatosProductoViewModel;
@@ -36,7 +36,6 @@ import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.Verific
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
 
 public class EditarProducto extends AppCompatActivity {
     public AutoCompleteTextView spinner;
