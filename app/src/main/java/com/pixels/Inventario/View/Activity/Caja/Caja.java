@@ -33,6 +33,7 @@ import com.pixels.Inventario.View.Activity.Caja.AlertDialog.alertpeso;
 import com.pixels.Inventario.View.Activity.Caja.Devoluciones.devoluciones;
 import com.pixels.Inventario.View.Activity.Caja.RecyclerViewAdaptador.productoVRecyclerViewAdapter;
 import com.pixels.Inventario.View.Activity.Caja.TextWatcher.TextCodigoCaja;
+import com.pixels.Inventario.View.Activity.Caja.VerificacionCodigo.VerificarCodigoC;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.AgregarProductos;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.TextWatcher.TextCodigo;
 import com.pixels.Inventario.ViewModel.Caja.Devoluciones.VerificarCodigoV.VerificarCodigoVentaViewModel;
@@ -87,78 +88,8 @@ public class Caja extends AppCompatActivity {
                             verificarEnter=true;
                         }
                     }else{
-                        VerificarCodigoCajaViewModel verificar= ViewModelProviders.of(Caja.this).get(VerificarCodigoCajaViewModel.class);
-                        verificar.reset();
-                        verificar.verificarCodigo(Codigo.getText().toString(),Caja.this);
-                        final boolean[] vercodigo = {true};
-                        Observer<Boolean> observer=new Observer<Boolean>() {
-                            @Override
-                            public void onChanged(Boolean aBoolean) {
-                                if(aBoolean){
-
-                                }else{
-                                    if(i[0]==0){
-                                        i[0]++;
-                                        vercodigo[0] =false;
-                                        Codigo.setText("");
-                                        CCodigo.setError("El Codigo del Producto no esta Registrado en la Base de Datos");
-                                        Codigo.setFocusableInTouchMode(true);
-                                        Codigo.requestFocus();
-                                        verificarEnter=false;
-                                    }else{
-                                        i[0]=0;
-                                    }
-                                }
-                            }
-                        };
-                        verificar.getResultado().observe(Caja.this,observer);
-                        if(vercodigo[0]){
-                            Observer<List<Producto>> observer1 = new Observer<List<Producto>>() {
-                                @Override
-                                public void onChanged(List<Producto> productos) {
-                                    if(i[0]==0){
-                                        i[0]++;
-                                        boolean productorepi=false;
-                                        int posicion=0;
-                                        for (int b=0;b<Productos.size();b++){
-                                            if(Productos.get(b).getCodigo().equals(productos.get(0).getCodigo())){
-                                                productorepi=true;
-                                                posicion=b;
-                                            }
-                                        }
-
-                                        if(productorepi){
-                                            if(productos.get(0).getTipoC().equals("peso")){
-                                                alertpeso pedir=new alertpeso(Caja.this,productos,Productos.get(posicion).getCantidad(),false,posicion);
-                                                pedir.pedircantidad();
-                                            }
-                                            if(productos.get(0).getTipoC().equals("unitario")){
-                                                double cantiR=Productos.get(posicion).getCantidad()+1;
-                                                int canti=(int) cantiR;
-                                                Productos.get(posicion).setCantidad(canti);
-                                            }
-                                        }else{
-                                            if(productos.get(0).getTipoC().equals("peso")){
-                                                alertpeso pedir=new alertpeso(Caja.this,productos,0,true,0);
-                                                pedir.pedircantidad();
-                                            }
-                                            if(productos.get(0).getTipoC().equals("unitario")){
-                                                Productos.add(new Producto(productos.get(0).getCodigo(),productos.get(0).getNombre(),1,productos.get(0).getTipoC(),productos.get(0).getCosteP(),productos.get(0).getPrecio(),productos.get(0).getIva()));
-                                            }
-                                        }
-                                        iniciarRecyclerView();
-                                        Codigo.setText("");
-                                        verificarEnter=false;
-                                        Codigo.setFocusableInTouchMode(true);
-                                        Codigo.requestFocus();
-                                    }else{
-                                        i[0]=0;
-                                    }
-                                }
-                            };
-                            verificar.getProductos().observe(Caja.this,observer1);
-                        }
-
+                        VerificarCodigoC codigo=new VerificarCodigoC(Caja.this);
+                        codigo.verificarCodigo(true);
                     }
                     return true;
                 }
@@ -231,71 +162,8 @@ public class Caja extends AppCompatActivity {
             if(vdevolucion){
                 if (result.getContents() != null){
                     Codigo.setText(result.getContents()+"");
-                    VerificarCodigoCajaViewModel verificar= ViewModelProviders.of(Caja.this).get(VerificarCodigoCajaViewModel.class);
-                    verificar.reset();
-                    verificar.verificarCodigo(Codigo.getText().toString(),Caja.this);
-                    final boolean[] vercodigo = {true};
-                    Observer<Boolean> observer=new Observer<Boolean>() {
-                        @Override
-                        public void onChanged(Boolean aBoolean) {
-                            if(aBoolean){
-
-                            }else{
-                                vercodigo[0] =false;
-                                Codigo.setText("");
-                                CCodigo.setError("El Codigo del Producto no esta Registrado en la Base de Datos");
-                                Codigo.setFocusableInTouchMode(true);
-                                Codigo.requestFocus();
-                            }
-                        }
-                    };
-                    verificar.getResultado().observe(Caja.this,observer);
-                    if(vercodigo[0]){
-                        Observer<List<Producto>> observer1 = new Observer<List<Producto>>() {
-                            @Override
-                            public void onChanged(List<Producto> productos) {
-                                if(i[0]==0){
-                                    i[0]++;
-                                    boolean productorepi=false;
-                                    int posicion=0;
-                                    for (int b=0;b<Productos.size();b++){
-                                        if(Productos.get(b).getCodigo().equals(productos.get(0).getCodigo())){
-                                            productorepi=true;
-                                            posicion=b;
-                                        }
-                                    }
-
-                                    if(productorepi){
-                                        if(productos.get(0).getTipoC().equals("peso")){
-                                            alertpeso pedir=new alertpeso(Caja.this,productos,Productos.get(posicion).getCantidad(),false,posicion);
-                                            pedir.pedircantidad();
-                                        }
-                                        if(productos.get(0).getTipoC().equals("unitario")){
-                                            double cantiR=Productos.get(posicion).getCantidad()+1;
-                                            int canti=(int) cantiR;
-                                            Productos.get(posicion).setCantidad(canti);
-                                        }
-                                    }else{
-                                        if(productos.get(0).getTipoC().equals("peso")){
-                                            alertpeso pedir=new alertpeso(Caja.this,productos,0,true,0);
-                                            pedir.pedircantidad();
-                                        }
-                                        if(productos.get(0).getTipoC().equals("unitario")){
-                                            Productos.add(new Producto(productos.get(0).getCodigo(),productos.get(0).getNombre(),1,productos.get(0).getTipoC(),productos.get(0).getCosteP(),productos.get(0).getPrecio(),productos.get(0).getIva()));
-                                        }
-                                    }
-                                    iniciarRecyclerView();
-                                    Codigo.setText("");
-                                    verificarEnter=false;
-                                    Codigo.setFocusableInTouchMode(true);
-                                    Codigo.requestFocus();
-                                }else{
-                                    i[0]=0;
-                                }
-                            }
-                        };
-                        verificar.getProductos().observe(Caja.this,observer1);
-                    }
+                    VerificarCodigoC codigo=new VerificarCodigoC(Caja.this);
+                    codigo.verificarCodigo(false);
                 }else{
                     CCodigo.setError("Error al escanear el código de barras");
                     Codigo.setText("");
@@ -346,6 +214,11 @@ public class Caja extends AppCompatActivity {
                         }
                     };
                     verificar.getResultado().observe(Caja.this,observer);
+                }else{
+                    alert.CCodigo.setError("Error al escanear el código de barras");
+                    alert.Codigo.setText("");
+                    alert.Codigo.setFocusableInTouchMode(true);
+                    alert.Codigo.requestFocus();
                 }
             }
         }

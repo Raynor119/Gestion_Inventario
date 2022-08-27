@@ -6,6 +6,28 @@
                 {
                     "source": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\src\\main\\res\\values-w400dp\\dimens.xml",
                     "from": {
+                        "startLines": "3,-1,4",
+                        "startColumns": "4,-1,4",
+                        "startOffsets": "112,-1,169",
+                        "endColumns": "55,-1,54",
+                        "endOffsets": "163,-1,219"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,111,165",
+                        "endColumns": "55,53,54",
+                        "endOffsets": "106,160,215"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-mergeDebugResources-21:\\values-w400dp-v13\\values-w400dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\saibo\\Documents\\Gestion_Inventario\\app\\src\\main\\res\\values-w400dp\\dimens.xml",
+                    "from": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "57",
