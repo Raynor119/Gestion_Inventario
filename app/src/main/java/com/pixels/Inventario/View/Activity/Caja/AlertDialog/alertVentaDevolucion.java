@@ -23,6 +23,7 @@ import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Activity.Caja.Caja;
 import com.pixels.Inventario.View.Activity.Caja.Devoluciones.devoluciones;
 import com.pixels.Inventario.View.Activity.Caja.TextWatcher.TextCodigoCaja;
+import com.pixels.Inventario.View.Activity.Caja.VerificacionCodigo.VerificarCodigoD;
 import com.pixels.Inventario.ViewModel.Caja.Devoluciones.VerificarCodigoV.VerificarCodigoVentaViewModel;
 
 
@@ -30,7 +31,7 @@ import java.util.List;
 
 public class alertVentaDevolucion {
 
-    private Caja Context;
+    public Caja Context;
     public boolean verificarEnter=true;
     public int[] i = {0};
     public AlertDialog dialog;
@@ -78,48 +79,8 @@ public class alertVentaDevolucion {
                             verificarEnter=true;
                         }
                     }else{
-                        VerificarCodigoVentaViewModel verificar= ViewModelProviders.of(Context).get(VerificarCodigoVentaViewModel.class);
-                        verificar.reset();
-                        verificar.verificarCodigo(Codigo.getText().toString(),Context);
-                        Observer<List<VentasProductoD>> observer1=new Observer<List<VentasProductoD>>() {
-                            @Override
-                            public void onChanged(List<VentasProductoD> ventasProductoDS) {
-                                if(i[0]==0){
-                                    i[0]++;
-                                    verificarEnter=false;
-                                    Intent intent=new  Intent(Context,devoluciones.class);
-                                    intent.putExtra("codigo",Codigo.getText().toString());
-                                    Context.startActivity(intent);
-                                    devoluciones.ProductosV=ventasProductoDS;
-                                    devoluciones.verificarEnter=false;
-                                    dialog.cancel();
-                                }
-                            }
-                        };
-                        Observer<Boolean> observer=new Observer<Boolean>() {
-                            @Override
-                            public void onChanged(Boolean aBoolean) {
-                                if(aBoolean){
-                                    if(i[0]==0){
-                                        verificar.getProductos().observe(Context,observer1);
-                                    }else{
-                                        i[0]=0;
-                                    }
-                                }else{
-                                    if(i[0]==0){
-                                        i[0]++;
-                                        Codigo.setText("");
-                                        CCodigo.setError("El Codigo de la Factura no esta Registrado en la Base de Datos");
-                                        Codigo.setFocusableInTouchMode(true);
-                                        Codigo.requestFocus();
-                                        verificarEnter=false;
-                                    }else{
-                                        i[0]=0;
-                                    }
-                                }
-                            }
-                        };
-                        verificar.getResultado().observe(Context,observer);
+                        VerificarCodigoD codigo=new VerificarCodigoD(alertVentaDevolucion.this);
+                        codigo.verificarcodigo(true);
                     }
                     return true;
                 }

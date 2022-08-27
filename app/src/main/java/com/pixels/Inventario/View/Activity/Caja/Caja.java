@@ -34,6 +34,7 @@ import com.pixels.Inventario.View.Activity.Caja.Devoluciones.devoluciones;
 import com.pixels.Inventario.View.Activity.Caja.RecyclerViewAdaptador.productoVRecyclerViewAdapter;
 import com.pixels.Inventario.View.Activity.Caja.TextWatcher.TextCodigoCaja;
 import com.pixels.Inventario.View.Activity.Caja.VerificacionCodigo.VerificarCodigoC;
+import com.pixels.Inventario.View.Activity.Caja.VerificacionCodigo.VerificarCodigoD;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.AgregarProductos;
 import com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.TextWatcher.TextCodigo;
 import com.pixels.Inventario.ViewModel.Caja.Devoluciones.VerificarCodigoV.VerificarCodigoVentaViewModel;
@@ -173,47 +174,8 @@ public class Caja extends AppCompatActivity {
             }else{
                 if (result.getContents() != null){
                     alert.Codigo.setText(result.getContents()+"");
-                    VerificarCodigoVentaViewModel verificar= ViewModelProviders.of(Caja.this).get(VerificarCodigoVentaViewModel.class);
-                    verificar.reset();
-
-                    verificar.verificarCodigo(alert.Codigo.getText().toString(),Caja.this);
-                    Observer<List<VentasProductoD>> observer1=new Observer<List<VentasProductoD>>() {
-                        @Override
-                        public void onChanged(List<VentasProductoD> ventasProductoDS) {
-                            if(i[0]==0) {
-                                i[0]++;
-                                Intent intent = new Intent(Caja.this, devoluciones.class);
-                                intent.putExtra("codigo", alert.Codigo.getText().toString());
-                                startActivity(intent);
-                                devoluciones.ProductosV = ventasProductoDS;
-                                alert.alertCancelar();
-                                vdevolucion = true;
-                            }
-                        }
-                    };
-                    Observer<Boolean> observer=new Observer<Boolean>() {
-                        @Override
-                        public void onChanged(Boolean aBoolean) {
-                            if(aBoolean){
-                                if(i[0]==0){
-                                    verificar.getProductos().observe(Caja.this,observer1);
-                                }else{
-                                    i[0]=0;
-                                }
-                            }else{
-                                if(i[0]==0){
-                                    i[0]++;
-                                    alert.Codigo.setText("");
-                                    alert.CCodigo.setError("El Codigo de la Factura no esta Registrado en la Base de Datos");
-                                    alert.Codigo.setFocusableInTouchMode(true);
-                                    alert.Codigo.requestFocus();
-                                }else{
-                                    i[0]=0;
-                                }
-                            }
-                        }
-                    };
-                    verificar.getResultado().observe(Caja.this,observer);
+                    VerificarCodigoD codigo=new VerificarCodigoD(alert);
+                    codigo.verificarcodigo(false);
                 }else{
                     alert.CCodigo.setError("Error al escanear el código de barras");
                     alert.Codigo.setText("");
