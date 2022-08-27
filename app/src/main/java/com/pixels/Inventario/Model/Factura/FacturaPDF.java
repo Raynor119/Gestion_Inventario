@@ -244,7 +244,7 @@ public class FacturaPDF {
     public void addCodigoBarras(){
         BarcodeEncoder barcodeEncoder=new BarcodeEncoder();
         try {
-            Bitmap bitmap=barcodeEncoder.encodeBitmap(CodigoV, BarcodeFormat.CODABAR,550,80);
+            Bitmap bitmap=barcodeEncoder.encodeBitmap(CodigoV, BarcodeFormat.CODE_128,550,80);
             ByteArrayOutputStream stream = new ByteArrayOutputStream();
             bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
             Image imagen = Image.getInstance(stream.toByteArray());
