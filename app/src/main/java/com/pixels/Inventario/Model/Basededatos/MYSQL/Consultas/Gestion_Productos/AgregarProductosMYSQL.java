@@ -77,7 +77,11 @@ public class AgregarProductosMYSQL  extends Conexion implements MediadorBaseDato
         }else {
             verficar=false;
             ConsultaBaseDatos();
-            Toast.makeText(Context, result, Toast.LENGTH_LONG).show();
+            if(result.equals("Error en la conexion")){
+
+            }else{
+                Toast.makeText(Context, result, Toast.LENGTH_LONG).show();
+            }
         }
     }
     @Override

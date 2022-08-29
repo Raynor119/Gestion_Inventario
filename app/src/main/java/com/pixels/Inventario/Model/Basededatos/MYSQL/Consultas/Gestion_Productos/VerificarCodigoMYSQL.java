@@ -69,7 +69,11 @@ public class VerificarCodigoMYSQL extends Conexion implements MediadorBaseDatos 
         if(result.equals("")){
             ConsultaBaseDatos();
         }else {
-            Toast.makeText(Context, result, Toast.LENGTH_LONG).show();
+            if(result.equals("Error en la conexion")){
+
+            }else{
+                Toast.makeText(Context, result, Toast.LENGTH_LONG).show();
+            }
         }
     }
     @Override

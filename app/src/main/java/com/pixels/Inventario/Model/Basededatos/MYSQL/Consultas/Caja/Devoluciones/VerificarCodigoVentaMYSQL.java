@@ -22,38 +22,58 @@ public class VerificarCodigoVentaMYSQL extends Conexion implements MediadorBaseD
     public List<VentasProductoD> productos;
     private VerificarCodigoVentaViewModel ViewModel;
     public String Codigo;
+    private boolean verificarE=false;
     public VerificarCodigoVentaMYSQL(Context context, VerificarCodigoVentaViewModel viewModel, String codigo) {
         super(context);
         this.ViewModel=viewModel;
         this.Codigo=codigo;
         execute("");
+        new android.os.Handler().postDelayed(new Runnable() {
+            public void run() {
+                if(verificarE){
+                    onCancelled();
+                }else{
+                    onCancelled("No se puede conectar a La Base Datos");
+                    verificarE=true;
+                }
+            }
+        },10000);
     }
     @Override
     protected String doInBackground(String... params) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection connection= DriverManager.getConnection(Url,Usuario,Contra);
-            Statement st = connection.createStatement();
-            ResultSet rs = st.executeQuery("SELECT VentasProductos.Id,VentasProductos.codigoV,VentasProductos.codigoP,Producto.nombre,VentasProductos.CantidadV,VentasProductos.CostePV,VentasProductos.PrecioPV,VentasProductos.IvaPV,VentasProductos.EstadoDevolucion,VentasProductos.ObservacionD FROM VentasProductos INNER JOIN Producto ON VentasProductos.codigoP=Producto.codigo WHERE VentasProductos.codigoV="+Codigo+"");
-            productos=new ArrayList<>();
-            while (rs.next()) {
-                productos.add(new VentasProductoD(rs.getInt(1),rs.getInt(2),rs.getString(3),rs.getString(4),rs.getDouble(5),rs.getInt(6),rs.getInt(7),rs.getInt(8),rs.getString(9),rs.getString(10)));
+            if(verificarE){
+                return "Error en la conexion";
+            }else{
+                Statement st = connection.createStatement();
+                ResultSet rs = st.executeQuery("SELECT VentasProductos.Id,VentasProductos.codigoV,VentasProductos.codigoP,Producto.nombre,VentasProductos.CantidadV,VentasProductos.CostePV,VentasProductos.PrecioPV,VentasProductos.IvaPV,VentasProductos.EstadoDevolucion,VentasProductos.ObservacionD FROM VentasProductos INNER JOIN Producto ON VentasProductos.codigoP=Producto.codigo WHERE VentasProductos.codigoV="+Codigo+"");
+                productos=new ArrayList<>();
+                while (rs.next()) {
+                    productos.add(new VentasProductoD(rs.getInt(1),rs.getInt(2),rs.getString(3),rs.getString(4),rs.getDouble(5),rs.getInt(6),rs.getInt(7),rs.getInt(8),rs.getString(9),rs.getString(10)));
+                }
+                rs = st.executeQuery("SELECT * FROM VentasProductos WHERE codigoV="+Codigo+" AND codigoP IS NULL");
+                while (rs.next()) {
+                    productos.add(new VentasProductoD(rs.getInt(1),rs.getInt(2),"null","Producto Desconocido",rs.getDouble(4),rs.getInt(5),rs.getInt(6),rs.getInt(7),rs.getString(8),rs.getString(9)));
+                }
+                return "";
             }
-            rs = st.executeQuery("SELECT * FROM VentasProductos WHERE codigoV="+Codigo+" AND codigoP IS NULL");
-            while (rs.next()) {
-                productos.add(new VentasProductoD(rs.getInt(1),rs.getInt(2),"null","Producto Desconocido",rs.getDouble(4),rs.getInt(5),rs.getInt(6),rs.getInt(7),rs.getString(8),rs.getString(9)));
-            }
-            return "";
         }catch (Exception e){
             return "No se puede conectar a La Base Datos";
         }
     }
     @Override
     protected void onPostExecute(String result) {
+        verificarE=true;
         if(result.equals("")){
             ConsultaBaseDatos();
         }else {
-            Toast.makeText(Context, result, Toast.LENGTH_LONG).show();
+            if(result.equals("Error en la conexion")){
+
+            }else{
+                Toast.makeText(Context, result, Toast.LENGTH_LONG).show();
+            }
         }
     }
     @Override

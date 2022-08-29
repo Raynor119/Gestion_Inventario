@@ -26,34 +26,53 @@ public class RealizarDevolucionMYSQL extends Conexion implements MediadorBaseDat
     private RealizarDevolucionViewModel ViewModel;
     private String CodigoV;
     private boolean Verificar=true;
-
+    private boolean verificarE=false;
     public RealizarDevolucionMYSQL(devoluciones context,RealizarDevolucionViewModel viewModel,String codigoV) {
         super(context);
         this.Context=context;
         this.ViewModel=viewModel;
         this.CodigoV=codigoV;
         execute("");
+        new android.os.Handler().postDelayed(new Runnable() {
+            public void run() {
+                if(verificarE){
+                    onCancelled();
+                }else{
+                    onCancelled("No se puede conectar a La Base Datos");
+                    verificarE=true;
+                }
+            }
+        },10000);
     }
     @Override
     protected String doInBackground(String... params) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection connection= DriverManager.getConnection(Url,Usuario,Contra);
-            Statement st = connection.createStatement();
-            for(int i=0;i<Context.Productos.size();i++){
-                st.executeUpdate("UPDATE VentasProductos SET EstadoDevolucion='si', ObservacionD='"+Context.Productos.get(i).getObservacionD()+"' WHERE codigoV="+CodigoV+" AND Id="+Context.Productos.get(i).getId()+"");
+            if(verificarE){
+                return "Error en la conexion";
+            }else{
+                Statement st = connection.createStatement();
+                for(int i=0;i<Context.Productos.size();i++){
+                    st.executeUpdate("UPDATE VentasProductos SET EstadoDevolucion='si', ObservacionD='"+Context.Productos.get(i).getObservacionD()+"' WHERE codigoV="+CodigoV+" AND Id="+Context.Productos.get(i).getId()+"");
+                }
+                return "";
             }
-            return "";
         }catch (Exception e){
             return "No se puede conectar a La Base Datos";
         }
     }
     @Override
     protected void onPostExecute(String result) {
+        verificarE=true;
         if(result.equals("")){
             ConsultaBaseDatos();
         }else {
-            Toast.makeText(Context, result, Toast.LENGTH_LONG).show();
+            if(result.equals("Error en la conexion")){
+
+            }else{
+                Toast.makeText(Context, result, Toast.LENGTH_LONG).show();
+            }
             Verificar=false;
             ConsultaBaseDatos();
         }
