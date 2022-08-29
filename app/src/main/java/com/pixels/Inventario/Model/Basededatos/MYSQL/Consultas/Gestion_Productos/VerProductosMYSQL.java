@@ -22,10 +22,20 @@ import java.util.List;
 public class VerProductosMYSQL extends Conexion implements MediadorBaseDatos {
     public ProductosRecyclerViewModel ViewModel;
     public List<Producto> productos;
+    private boolean verificar=false;
     public VerProductosMYSQL(Context context, ProductosRecyclerViewModel viewModel) {
         super(context);
         this.ViewModel=viewModel;
         execute("");
+        new android.os.Handler().postDelayed(new Runnable() {
+            public void run() {
+                if(verificar){
+                    onCancelled();
+                }else{
+                    onCancelled("No se puede conectar a La Base Datos");
+                }
+            }
+        },10000);
     }
     @Override
     protected String doInBackground(String... params) {
@@ -40,11 +50,12 @@ public class VerProductosMYSQL extends Conexion implements MediadorBaseDatos {
             }
             return "";
         }catch (Exception e){
-            return "No se puede conectar a La Base Datos: ";
+            return "No se puede conectar a La Base Datos";
         }
     }
     @Override
     protected void onPostExecute(String result) {
+        verificar=true;
         if(result.equals("")){
             ConsultaBaseDatos();
         }else {
