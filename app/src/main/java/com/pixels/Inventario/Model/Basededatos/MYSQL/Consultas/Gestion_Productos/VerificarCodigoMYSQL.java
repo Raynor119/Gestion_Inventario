@@ -41,12 +41,13 @@ public class VerificarCodigoMYSQL extends Conexion implements MediadorBaseDatos 
                     verificarE=true;
                 }
             }
-        },10000);
+        },11000);
     }
     @Override
     protected String doInBackground(String... params) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
+            DriverManager.setLoginTimeout(10);
             Connection connection= DriverManager.getConnection(Url,Usuario,Contra);
             if(verificarE){
                 return "Error en la conexion";

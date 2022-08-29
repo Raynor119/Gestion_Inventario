@@ -5,6 +5,7 @@ import android.os.AsyncTask;
 import com.pixels.Inventario.ViewModel.InicioA.ConfiguracionInicial.VerificarConexionViewModel;
 
 import java.sql.Connection;
+import java.sql.Driver;
 import java.sql.DriverManager;
 
 public class VerificarConexion extends  AsyncTask<String, Void , Boolean> {
@@ -30,13 +31,14 @@ public class VerificarConexion extends  AsyncTask<String, Void , Boolean> {
                     verificarE=true;
                 }
             }
-        },10000);
+        },11000);
     }
     @Override
     protected Boolean doInBackground(String... params) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection connection= DriverManager.getConnection(Url,Usuario,Contra);
+            DriverManager.setLoginTimeout(10);
+            DriverManager.getConnection(Url,Usuario,Contra);
             return true;
         }catch (Exception e){
             return false;

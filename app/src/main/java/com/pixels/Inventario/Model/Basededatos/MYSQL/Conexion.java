@@ -31,6 +31,7 @@ public class Conexion extends AsyncTask<String, Void , String> {
     protected String doInBackground(String... params) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
+            DriverManager.setLoginTimeout(10);
             Connection connection= DriverManager.getConnection(Url,Usuario,Contra);
             return "Hay Conexion en la Base de Datos";
         }catch (Exception e){

@@ -32,12 +32,13 @@ public class VerificarCreacionBaseDatos extends AsyncTask<String, Void , Boolean
                     verificarE=true;
                 }
             }
-        },10000);
+        },11000);
     }
     @Override
     protected Boolean doInBackground(String... params) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
+            DriverManager.setLoginTimeout(10);
             Connection connection= DriverManager.getConnection(Url,Usuario,Contra);
             Statement st=connection.createStatement();
             st.execute("CREATE DATABASE "+NBaseDatos);

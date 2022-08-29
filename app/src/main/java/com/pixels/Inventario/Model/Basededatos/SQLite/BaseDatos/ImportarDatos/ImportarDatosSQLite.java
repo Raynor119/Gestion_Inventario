@@ -33,6 +33,7 @@ public class ImportarDatosSQLite extends AsyncTask<String, Void , List<ImportDat
         try {
             List<ImportDatos> resul= new ArrayList<>();
             Class.forName("com.mysql.jdbc.Driver");
+            DriverManager.setLoginTimeout(10);
             Connection connection= DriverManager.getConnection(Url,Usuario,Contra);
             Statement st = connection.createStatement();
             ResultSet rs = st.executeQuery("SELECT * FROM Producto");

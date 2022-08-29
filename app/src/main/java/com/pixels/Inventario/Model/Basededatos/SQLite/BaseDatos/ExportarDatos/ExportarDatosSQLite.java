@@ -32,6 +32,7 @@ public class ExportarDatosSQLite extends AsyncTask<String, Void , String> {
     protected String doInBackground(String... params) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
+            DriverManager.setLoginTimeout(10);
             Connection connection= DriverManager.getConnection(Url,Usuario,Contra);
             Statement st = connection.createStatement();
             ConexionSQLiteExportacionDatos exportacion=new ConexionSQLiteExportacionDatos(Context);
