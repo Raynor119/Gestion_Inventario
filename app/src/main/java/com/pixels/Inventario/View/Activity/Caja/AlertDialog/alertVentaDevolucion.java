@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
@@ -37,6 +38,7 @@ public class alertVentaDevolucion {
     public AlertDialog dialog;
     public TextInputEditText Codigo;
     public TextInputLayout CCodigo;
+    public int controlador=0;
 
     public alertVentaDevolucion(Caja context){
         this.Context=context;
@@ -79,8 +81,14 @@ public class alertVentaDevolucion {
                             verificarEnter=true;
                         }
                     }else{
-                        VerificarCodigoD codigo=new VerificarCodigoD(alertVentaDevolucion.this);
-                        codigo.verificarcodigo(true);
+                        if(controlador==0){
+                            i[0]=0;
+                            controlador++;
+                            VerificarCodigoD codigo=new VerificarCodigoD(alertVentaDevolucion.this);
+                            codigo.verificarcodigo(true);
+                        }else{
+                            controlador=0;
+                        }
                     }
                     return true;
                 }
