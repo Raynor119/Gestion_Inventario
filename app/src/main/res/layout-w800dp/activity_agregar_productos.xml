@@ -40,18 +40,18 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:text="Agregar Producto"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="70dp"
                 android:textSize="26dp"
                 android:textColor="#FFFFFF"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"/>
             <androidx.cardview.widget.CardView
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="80dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginRight="5dp"
-                android:layout_marginLeft="5dp"
+                android:layout_marginRight="200dp"
+                android:layout_marginLeft="200dp"
                 android:background="@color/whiteCardColor"
                 app:cardCornerRadius="10dp"
                 android:layout_gravity="center">
@@ -63,6 +63,8 @@
                         android:layout_height="wrap_content">
                         <LinearLayout
                             android:layout_width="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
                             android:orientation="vertical"
                             android:gravity="center"
                             android:layout_height="wrap_content">
@@ -74,20 +76,20 @@
                                 android:layout_marginRight="17dp"
                                 android:gravity="center_vertical"
                                 android:layout_height="wrap_content">
-                                <com.google.android.material.textfield.TextInputLayout
-                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="match_parent"
+                                android:layout_marginRight="50dp"
+                                android:id="@+id/EditCodigo"
+                                android:layout_height="wrap_content"
+                                android:hint="Codigo del Producto"
+                                app:endIconMode="clear_text">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/codigo"
                                     android:layout_width="match_parent"
-                                    android:layout_marginRight="50dp"
-                                    android:id="@+id/EditCodigo"
                                     android:layout_height="wrap_content"
-                                    android:hint="Codigo del Producto"
-                                    app:endIconMode="clear_text">
-                                    <com.google.android.material.textfield.TextInputEditText
-                                        android:id="@+id/codigo"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:inputType="text" />
-                                </com.google.android.material.textfield.TextInputLayout>
+                                    android:inputType="text" />
+                            </com.google.android.material.textfield.TextInputLayout>
                                 <LinearLayout
                                     android:layout_marginTop="7dp"
                                     android:gravity="right"
@@ -119,18 +121,18 @@
                                 android:layout_marginLeft="17dp"
                                 android:layout_marginRight="17dp"
                                 android:layout_height="wrap_content">
-                                <com.google.android.material.textfield.TextInputLayout
-                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Nombre del Producto"
+                                app:endIconMode="clear_text">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/nombre"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:hint="Nombre del Producto"
-                                    app:endIconMode="clear_text">
-                                    <com.google.android.material.textfield.TextInputEditText
-                                        android:id="@+id/nombre"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:inputType="text" />
-                                </com.google.android.material.textfield.TextInputLayout>
+                                    android:inputType="text" />
+                            </com.google.android.material.textfield.TextInputLayout>
                             </LinearLayout>
                             <RelativeLayout
                                 android:layout_width="match_parent"
@@ -195,25 +197,25 @@
                                         android:inputType="numberDecimal" />
                                 </com.google.android.material.textfield.TextInputLayout>
                             </LinearLayout>
-                            <LinearLayout
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="17dp"
+                            android:layout_marginRight="17dp"
+                            android:layout_height="wrap_content">
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                                 android:layout_width="match_parent"
-                                android:layout_marginTop="30dp"
-                                android:layout_marginLeft="17dp"
-                                android:layout_marginRight="17dp"
-                                android:layout_height="wrap_content">
-                                <com.google.android.material.textfield.TextInputLayout
-                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_height="wrap_content"
+                                android:hint="Precio del Producto"
+                                app:endIconMode="clear_text">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/Precio"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:hint="Precio del Producto"
-                                    app:endIconMode="clear_text">
-                                    <com.google.android.material.textfield.TextInputEditText
-                                        android:id="@+id/Precio"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:inputType="numberDecimal" />
-                                </com.google.android.material.textfield.TextInputLayout>
-                            </LinearLayout>
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_marginTop="30dp"
