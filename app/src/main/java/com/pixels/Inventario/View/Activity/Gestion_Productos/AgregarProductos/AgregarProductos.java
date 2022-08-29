@@ -45,7 +45,10 @@ public class AgregarProductos extends AppCompatActivity {
     public TextInputLayout CCodigo,TipoC;
     public CardView Escaner;
     public static VerInventarioFragment verproductos;
-
+    public boolean[] verificarspinnerU = {true};
+    public boolean[] verificarspinnerK = {true};
+    public boolean[] verificarspinnerg = {true};
+    public boolean[] verifi = {true};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,22 +69,27 @@ public class AgregarProductos extends AppCompatActivity {
         spinner.setAdapter(adapter);
         Cantidad.setText("");
         Cantidad.setEnabled(false);
-        final boolean[] verificarspinnerU = {true};
-        final boolean[] verificarspinnerK = {true};
-        final boolean[] verificarspinnerg = {true};
-        final boolean[] verifi = {true};
         spinner.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if(spinner.getText().toString().equals("Unitario(U)")){
                     if(verificarspinnerU[0]){
-                        Cantidad.setEnabled(true);
-                        Cantidad.setInputType(InputType.TYPE_CLASS_NUMBER);
-                        Cantidad.setText("");
-                        verificarspinnerU[0] =false;
-                        verificarspinnerK[0] =true;
-                        verificarspinnerg[0] = true;
-                        verifi[0] =false;
+                        if(Cantidad.isEnabled()){
+                            Cantidad.setEnabled(true);
+                            Cantidad.setInputType(InputType.TYPE_CLASS_NUMBER);
+                            Cantidad.setText("");
+                            verificarspinnerU[0] =false;
+                            verificarspinnerK[0] =true;
+                            verificarspinnerg[0] = true;
+                            verifi[0] =false;
+                        }else{
+                            Cantidad.setEnabled(true);
+                            Cantidad.setInputType(InputType.TYPE_CLASS_NUMBER);
+                            verificarspinnerU[0] =false;
+                            verificarspinnerK[0] =true;
+                            verificarspinnerg[0] = true;
+                            verifi[0] =false;
+                        }
                     }
                     String [] tipoC={"Unitario(U)","Peso(Kg)","Peso(g)"};
                     ArrayAdapter<String> adapter=new ArrayAdapter<String>(AgregarProductos.this, R.layout.tipocantidad,tipoC);
@@ -99,16 +107,25 @@ public class AgregarProductos extends AppCompatActivity {
                                 verificarspinnerg[0] = true;
                                 verifi[0] =true;
                             }else{
-                                Cantidad.setEnabled(true);
-                                double conversion=Double.parseDouble(Cantidad.getText().toString());
-                                double canntidadconvertida=conversion*(0.001);
-                                BigDecimal bd = new BigDecimal(canntidadconvertida);
-                                bd = bd.setScale(3, RoundingMode.HALF_UP);
-                                Cantidad.setText(""+bd.doubleValue());
-                                verificarspinnerK[0] =false;
-                                verificarspinnerU[0] =true;
-                                verificarspinnerg[0] = true;
-                                verifi[0] =true;
+                                if(Cantidad.isEnabled()){
+                                    Cantidad.setEnabled(true);
+                                    double conversion=Double.parseDouble(Cantidad.getText().toString());
+                                    double canntidadconvertida=conversion*(0.001);
+                                    BigDecimal bd = new BigDecimal(canntidadconvertida);
+                                    bd = bd.setScale(3, RoundingMode.HALF_UP);
+                                    Cantidad.setText(""+bd.doubleValue());
+                                    verificarspinnerK[0] =false;
+                                    verificarspinnerU[0] =true;
+                                    verificarspinnerg[0] = true;
+                                    verifi[0] =true;
+                                }else{
+                                    Cantidad.setEnabled(true);
+                                    verificarspinnerK[0] =false;
+                                    verificarspinnerU[0] =true;
+                                    verificarspinnerg[0] = true;
+                                    verifi[0] =true;
+                                }
+
                             }
                         }else{
                             Cantidad.setEnabled(true);
@@ -136,16 +153,24 @@ public class AgregarProductos extends AppCompatActivity {
                                 verificarspinnerK[0] =true;
                                 verifi[0] =true;
                             }else{
-                                Cantidad.setEnabled(true);
-                                double conversion=Double.parseDouble(Cantidad.getText().toString());
-                                double canntidadconvertida=conversion*(1000);
-                                BigDecimal bd = new BigDecimal(canntidadconvertida);
-                                bd = bd.setScale(3, RoundingMode.HALF_UP);
-                                Cantidad.setText(""+bd.doubleValue());
-                                verificarspinnerg[0] =false;
-                                verificarspinnerU[0] =true;
-                                verificarspinnerK[0] =true;
-                                verifi[0] =true;
+                                if(Cantidad.isEnabled()){
+                                    Cantidad.setEnabled(true);
+                                    double conversion=Double.parseDouble(Cantidad.getText().toString());
+                                    double canntidadconvertida=conversion*(1000);
+                                    BigDecimal bd = new BigDecimal(canntidadconvertida);
+                                    bd = bd.setScale(3, RoundingMode.HALF_UP);
+                                    Cantidad.setText(""+bd.doubleValue());
+                                    verificarspinnerg[0] =false;
+                                    verificarspinnerU[0] =true;
+                                    verificarspinnerK[0] =true;
+                                    verifi[0] =true;
+                                }else{
+                                    Cantidad.setEnabled(true);
+                                    verificarspinnerg[0] =false;
+                                    verificarspinnerU[0] =true;
+                                    verificarspinnerK[0] =true;
+                                    verifi[0] =true;
+                                }
                             }
                         }else{
                             Cantidad.setEnabled(true);
