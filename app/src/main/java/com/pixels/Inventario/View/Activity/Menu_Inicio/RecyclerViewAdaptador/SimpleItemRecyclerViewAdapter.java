@@ -56,7 +56,7 @@ public class SimpleItemRecyclerViewAdapter extends RecyclerView.Adapter<SimpleIt
                 context.startActivity(intent);
             }
             if(Id==5){
-                mParentActivity.finish();
+                android.os.Process.killProcess(android.os.Process.myPid());
             }
         }
     };
