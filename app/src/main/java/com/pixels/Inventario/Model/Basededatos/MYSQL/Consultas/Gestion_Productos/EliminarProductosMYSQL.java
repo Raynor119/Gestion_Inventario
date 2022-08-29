@@ -16,6 +16,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
 public class EliminarProductosMYSQL  extends Conexion implements MediadorBaseDatos {
     private String Codigo;

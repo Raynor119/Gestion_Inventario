@@ -18,6 +18,9 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
 public class VerificarCodigoMYSQL extends Conexion implements MediadorBaseDatos {
     public List<Producto> productos;

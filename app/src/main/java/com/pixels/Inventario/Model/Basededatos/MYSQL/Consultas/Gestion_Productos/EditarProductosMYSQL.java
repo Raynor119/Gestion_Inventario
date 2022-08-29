@@ -12,6 +12,9 @@ import com.pixels.Inventario.ViewModel.Gestion_Productos.EditarProducto.EditarDa
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
 public class EditarProductosMYSQL extends Conexion implements MediadorBaseDatos {
     private String Codigo,CodigoP,Nombre,TipoC;
