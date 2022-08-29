@@ -42,7 +42,7 @@ public class Conexion extends AsyncTask<String, Void , String> {
         Toast.makeText(Context, result, Toast.LENGTH_LONG).show();
     }
     @Override
-    protected void onCancelled (String resultra) {
-        Toast.makeText(Context, resultra, Toast.LENGTH_LONG).show();
+    protected void onCancelled (String result) {
+        Toast.makeText(Context, result, Toast.LENGTH_LONG).show();
     }
 }

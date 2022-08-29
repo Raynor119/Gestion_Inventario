@@ -11,7 +11,7 @@ public class VerificarConexion extends  AsyncTask<String, Void , Boolean> {
 
     private String Url,Usuario,Contra;
     private VerificarConexionViewModel Context;
-
+    private boolean verificarE=false;
     public VerificarConexion(String Ip,String NBasedatos,String usuario,String contra,VerificarConexionViewModel context){
         this.Url="jdbc:mysql://"+Ip+"/"+NBasedatos;
         this.Usuario=usuario;
@@ -21,6 +21,16 @@ public class VerificarConexion extends  AsyncTask<String, Void , Boolean> {
     @Override
     protected void onPreExecute() {
         super.onPreExecute();
+        new android.os.Handler().postDelayed(new Runnable() {
+            public void run() {
+                if(verificarE){
+
+                }else{
+                    Context.resultado.setValue(false);
+                    verificarE=true;
+                }
+            }
+        },10000);
     }
     @Override
     protected Boolean doInBackground(String... params) {
@@ -34,7 +44,12 @@ public class VerificarConexion extends  AsyncTask<String, Void , Boolean> {
     }
     @Override
     protected void onPostExecute(Boolean result) {
-        Context.resultado.setValue(result);
+        if(verificarE){
+
+        }else{
+            verificarE=true;
+            Context.resultado.setValue(result);
+        }
     }
 
 
