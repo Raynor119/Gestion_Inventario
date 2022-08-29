@@ -19,7 +19,7 @@ public class EditarProductosMYSQL extends Conexion implements MediadorBaseDatos 
     private int CosteP,Precio,Iva;
     private EditarDatosViewModel ViewModel;
     private boolean verficar;
-
+    private boolean verificarE=false;
     public EditarProductosMYSQL(Context context, String codigo, String nombre, double cantidad, String tipoC, int costeP, int precio,int iva,String codigoP,EditarDatosViewModel viewModel) {
         super(context);
         this.Codigo=codigo;
@@ -33,21 +33,36 @@ public class EditarProductosMYSQL extends Conexion implements MediadorBaseDatos 
         this.ViewModel=viewModel;
         this.verficar=true;
         execute("");
+        new android.os.Handler().postDelayed(new Runnable() {
+            public void run() {
+                if(verificarE){
+                    onCancelled();
+                }else{
+                    onCancelled("No se puede conectar a La Base Datos");
+                    verificarE=true;
+                }
+            }
+        },10000);
     }
     @Override
     protected String doInBackground(String... params) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection connection= DriverManager.getConnection(Url,Usuario,Contra);
-            Statement st = connection.createStatement();
-            st.executeUpdate("UPDATE Producto SET codigo='"+Codigo+"',nombre='"+Nombre+"',cantidad="+Cantidad+",TipoC='"+TipoC+"',CosteP="+CosteP+",precio="+Precio+",Iva="+Iva+" WHERE codigo='"+CodigoP+"'");
-            return "";
+            if(verificarE){
+                return "Error en la conexion";
+            }else{
+                Statement st = connection.createStatement();
+                st.executeUpdate("UPDATE Producto SET codigo='"+Codigo+"',nombre='"+Nombre+"',cantidad="+Cantidad+",TipoC='"+TipoC+"',CosteP="+CosteP+",precio="+Precio+",Iva="+Iva+" WHERE codigo='"+CodigoP+"'");
+                return "";
+            }
         }catch (Exception e){
             return "Error al guardar los datos del producto en la Base de Datos";
         }
     }
     @Override
     protected void onPostExecute(String result) {
+        verificarE=true;
         if(result.equals("")){
             ConsultaBaseDatos();
         }else {

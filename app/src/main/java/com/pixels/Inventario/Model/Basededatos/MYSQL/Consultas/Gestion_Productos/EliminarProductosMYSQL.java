@@ -21,32 +21,48 @@ public class EliminarProductosMYSQL  extends Conexion implements MediadorBaseDat
     private String Codigo;
     private boolean verficar;
     private EliminarProductoViewModel ViewModel;
+    private boolean verificarE=false;
     public EliminarProductosMYSQL(Context context,String codigo,EliminarProductoViewModel viewModel) {
         super(context);
         this.Codigo=codigo;
         this.verficar=true;
         this.ViewModel=viewModel;
         execute("");
+        new android.os.Handler().postDelayed(new Runnable() {
+            public void run() {
+                if(verificarE){
+                    onCancelled();
+                }else{
+                    onCancelled("No se puede conectar a La Base Datos");
+                    verificarE=true;
+                }
+            }
+        },10000);
     }
     @Override
     protected String doInBackground(String... params) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection connection= DriverManager.getConnection(Url,Usuario,Contra);
-            Statement st = connection.createStatement();
-            st.executeUpdate("UPDATE VentasProductos SET codigoP=NULL WHERE codigoP='"+Codigo+"'");
-            connection.close();
-            connection= DriverManager.getConnection(Url,Usuario,Contra);
-            st = connection.createStatement();
-            st.executeUpdate("DELETE FROM Producto WHERE codigo='"+Codigo+"'");
-            connection.close();
-            return "";
+            if(verificarE){
+                return "Error en la conexion";
+            }else{
+                Statement st = connection.createStatement();
+                st.executeUpdate("UPDATE VentasProductos SET codigoP=NULL WHERE codigoP='"+Codigo+"'");
+                connection.close();
+                connection= DriverManager.getConnection(Url,Usuario,Contra);
+                st = connection.createStatement();
+                st.executeUpdate("DELETE FROM Producto WHERE codigo='"+Codigo+"'");
+                connection.close();
+                return "";
+            }
         }catch (Exception e){
             return "Error al Eliminar el producto: "+e;
         }
     }
     @Override
     protected void onPostExecute(String result) {
+        verificarE=true;
         if(result.equals("")){
             ConsultaBaseDatos();
         }else {

@@ -26,7 +26,7 @@ public class AgregarProductosMYSQL  extends Conexion implements MediadorBaseDato
     private int CosteP,Precio,Iva;
     private AgregarProductosViewModel ViewModel;
     private boolean verficar;
-
+    private boolean verificarE=false;
     public AgregarProductosMYSQL(Context context,String codigo, String nombre, double cantidad,String tipoC, int costeP, int precio,int iva,AgregarProductosViewModel viewModel) {
         super(context);
         this.Codigo=codigo;
@@ -39,21 +39,36 @@ public class AgregarProductosMYSQL  extends Conexion implements MediadorBaseDato
         this.ViewModel=viewModel;
         this.verficar=true;
         execute("");
+        new android.os.Handler().postDelayed(new Runnable() {
+            public void run() {
+                if(verificarE){
+                    onCancelled();
+                }else{
+                    onCancelled("No se puede conectar a La Base Datos");
+                    verificarE=true;
+                }
+            }
+        },10000);
     }
     @Override
     protected String doInBackground(String... params) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection connection= DriverManager.getConnection(Url,Usuario,Contra);
-            Statement st = connection.createStatement();
-            st.executeUpdate("INSERT INTO Producto VALUES('"+Codigo+"','"+Nombre+"',"+Cantidad+",'"+TipoC+"',"+CosteP+","+Precio+","+Iva+")");
-            return "";
+            if(verificarE){
+                return "Error en la conexion";
+            }else{
+                Statement st = connection.createStatement();
+                st.executeUpdate("INSERT INTO Producto VALUES('"+Codigo+"','"+Nombre+"',"+Cantidad+",'"+TipoC+"',"+CosteP+","+Precio+","+Iva+")");
+                return "";
+            }
         }catch (Exception e){
             return "Error al guardar los datos del producto en la Base de Datos";
         }
     }
     @Override
     protected void onPostExecute(String result) {
+        verificarE=true;
         if(result.equals("")){
             ConsultaBaseDatos();
         }else {
