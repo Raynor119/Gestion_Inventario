@@ -1,20 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.fragment:fragment:1.2.4@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/560d1c68c76d6a4dc17a30f3bc50349f/annotations.zip!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/eb011fa124232ad0dcdb786222d8e890/annotations.zip!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/65a38da08117b1935e616b3b315c7626/annotations.zip!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9525d449607a2d200091f109859f499f/transformed/fragment-1.2.4/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/560d1c68c76d6a4dc17a30f3bc50349f/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/560d1c68c76d6a4dc17a30f3bc50349f/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/eb011fa124232ad0dcdb786222d8e890/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/eb011fa124232ad0dcdb786222d8e890/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/eb011fa124232ad0dcdb786222d8e890/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/65a38da08117b1935e616b3b315c7626/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/65a38da08117b1935e616b3b315c7626/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/65a38da08117b1935e616b3b315c7626/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9525d449607a2d200091f109859f499f/transformed/fragment-1.2.4/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9525d449607a2d200091f109859f499f/transformed/fragment-1.2.4/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9525d449607a2d200091f109859f499f/transformed/fragment-1.2.4/AndroidManifest.xml" />

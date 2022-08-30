@@ -3,73 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="../../../../layout/custom_preview.xml" value="0.17925659472422062" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1400dp/activity_agregar_productos.xml" value="0.15" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1400dp/activity_ajustes.xml" value="0.309375" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1400dp/fragment_agsinarcontrasena.xml" value="0.11" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1400dp/fragment_registrar_base_datos.xml" value="0.1" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1600dp/fragment_agsinarcontrasena.xml" value="0.309375" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1700dp/activity_agregar_productos.xml" value="0.1375" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1700dp/fragment_agsinarcontrasena.xml" value="0.1375" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1700dp/fragment_registrar_base_datos.xml" value="0.1" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1900dp/fragment_agsinarcontrasena.xml" value="0.1375" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w800dp/activity_agregar_productos.xml" value="0.25" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w800dp/activity_ajustes.xml" value="0.202734375" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w800dp/activity_caja.xml" value="0.199609375" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w800dp/activity_menuinicio.xml" value="0.18125" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w800dp/ajustes_list_content.xml" value="0.202734375" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w800dp/fragment_agsinarcontrasena.xml" value="0.2" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w800dp/fragment_registrar_base_datos.xml" value="0.1675" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w800dp/producto_caja.xml" value="0.25" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_agregar_productos.xml" value="0.23513513513513515" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_caja.xml" value="0.23513513513513515" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/alertdevolucion.xml" value="0.23277591973244147" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/fragment_registrar_base_datos.xml" value="0.3178082191780822" />
-        <entry key="app/src/main/res/layout-w1400dp/activity_ajustes.xml" value="0.136" />
-        <entry key="app/src/main/res/layout-w1400dp/activity_menuinicio.xml" value="0.20069444444444445" />
-        <entry key="app/src/main/res/layout-w1400dp/fragment_agsinarcontrasena.xml" value="0.136" />
-        <entry key="app/src/main/res/layout-w600dp/activity_agregar_productos.xml" value="0.22473958333333333" />
-        <entry key="app/src/main/res/layout-w600dp/activity_menuinicio.xml" value="0.2" />
-        <entry key="app/src/main/res/layout-w600dp/fragment_inventario_productos.xml" value="0.22473958333333333" />
-        <entry key="app/src/main/res/layout-w600dp/opcion_list.xml" value="0.264" />
-        <entry key="app/src/main/res/layout-w800dp/activity_agregar_productos.xml" value="0.18229166666666666" />
-        <entry key="app/src/main/res/layout-w800dp/activity_ajustes.xml" value="0.2" />
-        <entry key="app/src/main/res/layout-w800dp/activity_inventario_productos.xml" value="0.22473958333333333" />
-        <entry key="app/src/main/res/layout-w800dp/ajustes_list_content.xml" value="0.22473958333333333" />
-        <entry key="app/src/main/res/layout-w800dp/fragment_agsinarcontrasena.xml" value="0.2" />
-        <entry key="app/src/main/res/layout-w800dp/fragment_modificarcontra.xml" value="0.22473958333333333" />
-        <entry key="app/src/main/res/layout-w900dp/fragment_inventario_productos.xml" value="0.2" />
-        <entry key="app/src/main/res/layout/activity_agregar_productos.xml" value="0.44947916666666665" />
-        <entry key="app/src/main/res/layout/activity_ajustes.xml" value="0.18229166666666666" />
-        <entry key="app/src/main/res/layout/activity_caja.xml" value="0.35625" />
-        <entry key="app/src/main/res/layout/activity_cambiar_my_sql.xml" value="0.37135416666666665" />
-        <entry key="app/src/main/res/layout/activity_inventario_productos.xml" value="0.176" />
-        <entry key="app/src/main/res/layout/activity_menuinicio.xml" value="0.4" />
-        <entry key="app/src/main/res/layout/activity_ver_factura.xml" value="0.44947916666666665" />
-        <entry key="app/src/main/res/layout/ajustes_list_content.xml" value="0.44947916666666665" />
-        <entry key="app/src/main/res/layout/alertcambiobasedatos.xml" value="0.44947916666666665" />
-        <entry key="app/src/main/res/layout/alertdevolucion.xml" value="0.44947916666666665" />
-        <entry key="app/src/main/res/layout/alertdialogonitnombre.xml" value="0.44947916666666665" />
-        <entry key="app/src/main/res/layout/alertefectivo.xml" value="0.35520833333333335" />
-        <entry key="app/src/main/res/layout/alertobservaciones.xml" value="0.44947916666666665" />
-        <entry key="app/src/main/res/layout/alertpedircantidad.xml" value="0.35625" />
-        <entry key="app/src/main/res/layout/alertventafinalizada.xml" value="0.4484375" />
-        <entry key="app/src/main/res/layout/alertverproductos.xml" value="0.44947916666666665" />
-        <entry key="app/src/main/res/layout/fragment_agsinarcontrasena.xml" value="0.22473958333333333" />
-        <entry key="app/src/main/res/layout/fragment_crear_base_datos.xml" value="0.22473958333333333" />
-        <entry key="app/src/main/res/layout/fragment_modificarcontra.xml" value="0.22473958333333333" />
-        <entry key="app/src/main/res/layout/fragment_registrar_base_datos.xml" value="0.22473958333333333" />
-        <entry key="app/src/main/res/layout/opcion_list.xml" value="0.44947916666666665" />
-        <entry key="app/src/main/res/layout/opcion_list_content.xml" value="0.22473958333333333" />
-        <entry key="app/src/main/res/layout/producto_caja.xml" value="0.44947916666666665" />
-        <entry key="app/src/main/res/layout/producto_ver.xml" value="0.44947916666666665" />
-        <entry key="app/src/main/res/menu/menud.xml" value="0.4484375" />
-        <entry key="app/src/main/res/xml/file_paths.xml" value="0.336328125" />
-        <entry key="app/src/main/res/xml/filepaths.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1000dp/activity_caja.xml" value="0.27317708333333335" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1000dp/producto_caja.xml" value="0.27317708333333335" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1400dp/activity_caja.xml" value="0.33" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1400dp/producto_caja.xml" value="0.33877551020408164" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w800dp/activity_caja.xml" value="0.33" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w800dp/producto_caja.xml" value="0.33" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

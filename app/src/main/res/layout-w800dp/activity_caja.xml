@@ -57,7 +57,7 @@
                 android:layout_marginTop="5dp"
                 android:text="@string/app_namecaja"
                 android:textColor="#FFFFFF"
-                android:textSize="30dp" />
+                android:textSize="28dp" />
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -85,8 +85,8 @@
 
                         <HorizontalScrollView
                             android:layout_width="wrap_content"
-                            android:layout_marginLeft="30dp"
-                            android:layout_marginRight="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
                             android:layout_height="match_parent"
                             android:layout_gravity="center">
 
@@ -99,8 +99,8 @@
                                 <LinearLayout
                                     android:id="@+id/table"
                                     android:layout_width="match_parent"
-                                    android:paddingLeft="60dp"
-                                    android:paddingRight="60dp"
+                                    android:paddingLeft="30dp"
+                                    android:paddingRight="30dp"
                                     android:layout_height="30dp"
                                     android:background="@color/colorPrimaryDark"
                                     android:gravity="center">
@@ -108,7 +108,7 @@
                                     <LinearLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="30dp"
-                                        android:layout_marginRight="85dp"
+                                        android:layout_marginRight="20dp"
                                         android:gravity="center"
                                         >
 
@@ -116,7 +116,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:text="codigo"
-                                            android:textSize="18dp"
+                                            android:textSize="16dp"
                                             android:textColor="#FFFFFF" />
                                     </LinearLayout>
 
@@ -124,13 +124,13 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="30dp"
                                         android:gravity="center"
-                                        android:layout_marginRight="75dp"
+                                        android:layout_marginRight="25dp"
                                         >
 
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:textSize="18dp"
+                                            android:textSize="16dp"
                                             android:text="nombre"
                                             android:textColor="#FFFFFF" />
                                     </LinearLayout>
@@ -138,14 +138,14 @@
                                     <LinearLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="30dp"
-                                        android:layout_marginRight="75dp"
+                                        android:layout_marginRight="25dp"
                                         android:gravity="center"
                                        >
 
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:textSize="18dp"
+                                            android:textSize="16dp"
                                             android:text="cantidad"
                                             android:textColor="#FFFFFF" />
                                     </LinearLayout>
@@ -153,14 +153,14 @@
                                     <LinearLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="30dp"
-                                        android:layout_marginRight="70dp"
+                                        android:layout_marginRight="40dp"
                                         android:gravity="center"
                                         >
 
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:textSize="18dp"
+                                            android:textSize="16dp"
                                             android:text="precio"
                                             android:textColor="#FFFFFF" />
                                     </LinearLayout>
@@ -169,14 +169,13 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="30dp"
                                         android:gravity="center"
-                                        android:layout_marginLeft="10dp"
                                         >
 
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:textSize="18dp"
-                                            android:text="Sub Total"
+                                            android:textSize="16dp"
+                                            android:text="SubTotal"
                                             android:textColor="#FFFFFF" />
                                     </LinearLayout>
                                 </LinearLayout>
