@@ -57,67 +57,67 @@
         </provider>
 
         <activity
-            android:name="com.pixels.Inventario.View.Activity.Caja.Devoluciones.devoluciones"
+            android:name="com.pixels.Inventario.View.Caja.Devoluciones.devoluciones"
             android:exported="false"
             android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
-            android:name="com.pixels.Inventario.View.Activity.Caja.Factura.VerFactura"
+            android:name="com.pixels.Inventario.View.Caja.Factura.VerFactura"
             android:exported="false" >
         </activity>
         <activity
-            android:name="com.pixels.Inventario.View.Activity.Caja.Caja"
+            android:name="com.pixels.Inventario.View.Caja.Caja"
             android:exported="false"
             android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
-            android:name="com.pixels.Inventario.View.Activity.Gestion_Productos.EditarProductos.EditarProducto"
+            android:name="com.pixels.Inventario.View.Gestion_Productos.EditarProductos.EditarProducto"
             android:exported="false"
             android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
-            android:name="com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.AgregarProductos"
+            android:name="com.pixels.Inventario.View.Gestion_Productos.AgregarProductos.AgregarProductos"
             android:exported="false"
             android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
-            android:name="com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionBaseDatos.CrearBaseDatosMYSQL"
+            android:name="com.pixels.Inventario.View.Ajustes.ConfiguracionBaseDatos.CrearBaseDatosMYSQL"
             android:exported="false"
             android:theme="@style/Theme.MyApplication.NoActionBar" />
-        <activity android:name="com.pixels.Inventario.View.Activity.Ajustes.ExportarDatos.ExportarDatos" >
+        <activity android:name="com.pixels.Inventario.View.Ajustes.ExportarDatos.ExportarDatos" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".View.Activity.Ajustes.Ajustes" />
+                android:value=".View.Ajustes.Ajustes" />
         </activity>
-        <activity android:name="com.pixels.Inventario.View.Activity.Ajustes.ImportarDatos.ImportarDatos" >
+        <activity android:name="com.pixels.Inventario.View.Ajustes.ImportarDatos.ImportarDatos" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".View.Activity.Ajustes.Ajustes" />
+                android:value=".View.Ajustes.Ajustes" />
         </activity>
         <activity
-            android:name="com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionBaseDatos.cambiarMySQL"
+            android:name="com.pixels.Inventario.View.Ajustes.ConfiguracionBaseDatos.cambiarMySQL"
             android:exported="false"
             android:theme="@style/Theme.MyApplication.NoActionBar" />
-        <activity android:name="com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionContra.configContra" >
+        <activity android:name="com.pixels.Inventario.View.Ajustes.ConfiguracionContra.configContra" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".View.Activity.Ajustes.Ajustes" />
+                android:value=".View.Ajustes.Ajustes" />
         </activity>
         <activity
-            android:name="com.pixels.Inventario.View.Activity.Ajustes.Ajustes"
+            android:name="com.pixels.Inventario.View.Ajustes.Ajustes"
             android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
-            android:name="com.pixels.Inventario.View.Activity.Menu_Inicio.MenuInicio"
+            android:name="com.pixels.Inventario.View.Menu_Inicio.MenuInicio"
             android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
-            android:name="com.pixels.Inventario.View.Activity.Gestion_Productos.VerInventario"
-            android:parentActivityName="com.pixels.Inventario.View.Activity.Menu_Inicio.MenuInicio"
+            android:name="com.pixels.Inventario.View.Gestion_Productos.VerInventario"
+            android:parentActivityName="com.pixels.Inventario.View.Menu_Inicio.MenuInicio"
             android:theme="@style/Theme.MyApplication.NoActionBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.pixels.Inventario.View.Activity.Menu_Inicio.MenuInicio" />
+                android:value=".View.Menu_Inicio.MenuInicio" />
         </activity>
         <activity
-            android:name="com.pixels.Inventario.View.Activity.InicioA.Configuracion_Inicial.configuracionI"
+            android:name="com.pixels.Inventario.View.InicioA.Configuracion_Inicial.configuracionI"
             android:exported="false" />
         <activity
-            android:name="com.pixels.Inventario.View.Activity.InicioA.Inicio"
+            android:name="com.pixels.Inventario.View.InicioA.Inicio"
             android:exported="true"
             android:theme="@style/Theme.MyApplication.NoActionBar" >
             <intent-filter>

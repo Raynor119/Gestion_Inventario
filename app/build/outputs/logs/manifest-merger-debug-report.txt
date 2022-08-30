@@ -249,112 +249,112 @@ ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManif
 		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:30:17-50
 	android:name
 		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:29:17-67
-activity#com.pixels.Inventario.View.Activity.Caja.Devoluciones.devoluciones
+activity#com.pixels.Inventario.View.Caja.Devoluciones.devoluciones
 ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:32:9-35:39
 	android:exported
 		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:35:13-37
 	android:theme
 		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:34:13-67
 	android:name
-		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:33:13-73
-activity#com.pixels.Inventario.View.Activity.Caja.Factura.VerFactura
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:33:13-64
+activity#com.pixels.Inventario.View.Caja.Factura.VerFactura
 ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:36:9-39:20
 	android:exported
 		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:38:13-37
 	android:name
-		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:37:13-66
-activity#com.pixels.Inventario.View.Activity.Caja.Caja
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:37:13-57
+activity#com.pixels.Inventario.View.Caja.Caja
 ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:40:9-43:70
 	android:exported
 		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:42:13-37
 	android:theme
 		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:43:13-67
 	android:name
-		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:41:13-52
-activity#com.pixels.Inventario.View.Activity.Gestion_Productos.EditarProductos.EditarProducto
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:41:13-43
+activity#com.pixels.Inventario.View.Gestion_Productos.EditarProductos.EditarProducto
 ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:44:9-47:70
 	android:exported
 		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:46:13-37
 	android:theme
 		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:47:13-67
 	android:name
-		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:45:13-91
-activity#com.pixels.Inventario.View.Activity.Gestion_Productos.AgregarProductos.AgregarProductos
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:45:13-82
+activity#com.pixels.Inventario.View.Gestion_Productos.AgregarProductos.AgregarProductos
 ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:48:9-51:70
 	android:exported
 		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:50:13-37
 	android:theme
 		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:51:13-67
 	android:name
-		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:49:13-94
-activity#com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionBaseDatos.CrearBaseDatosMYSQL
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:49:13-85
+activity#com.pixels.Inventario.View.Ajustes.ConfiguracionBaseDatos.CrearBaseDatosMYSQL
 ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:52:9-55:70
 	android:exported
 		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:54:13-37
 	android:theme
 		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:55:13-67
 	android:name
-		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:53:13-93
-activity#com.pixels.Inventario.View.Activity.Ajustes.ExportarDatos.ExportarDatos
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:53:13-84
+activity#com.pixels.Inventario.View.Ajustes.ExportarDatos.ExportarDatos
 ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:56:9-60:20
 	android:name
-		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:56:19-84
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:56:19-75
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:57:13-59:66
+ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:57:13-59:57
 	android:value
-		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:59:17-63
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:59:17-54
 	android:name
 		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:58:17-63
-activity#com.pixels.Inventario.View.Activity.Ajustes.ImportarDatos.ImportarDatos
+activity#com.pixels.Inventario.View.Ajustes.ImportarDatos.ImportarDatos
 ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:61:9-65:20
 	android:name
-		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:61:19-84
-activity#com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionBaseDatos.cambiarMySQL
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:61:19-75
+activity#com.pixels.Inventario.View.Ajustes.ConfiguracionBaseDatos.cambiarMySQL
 ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:66:9-69:70
 	android:exported
 		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:68:13-37
 	android:theme
 		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:69:13-67
 	android:name
-		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:67:13-86
-activity#com.pixels.Inventario.View.Activity.Ajustes.ConfiguracionContra.configContra
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:67:13-77
+activity#com.pixels.Inventario.View.Ajustes.ConfiguracionContra.configContra
 ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:70:9-74:20
 	android:name
-		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:70:19-89
-activity#com.pixels.Inventario.View.Activity.Ajustes.Ajustes
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:70:19-80
+activity#com.pixels.Inventario.View.Ajustes.Ajustes
 ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:75:9-77:70
 	android:theme
 		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:77:13-67
 	android:name
-		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:76:13-58
-activity#com.pixels.Inventario.View.Activity.Menu_Inicio.MenuInicio
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:76:13-49
+activity#com.pixels.Inventario.View.Menu_Inicio.MenuInicio
 ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:78:9-80:70
 	android:theme
 		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:80:13-67
 	android:name
-		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:79:13-65
-activity#com.pixels.Inventario.View.Activity.Gestion_Productos.VerInventario
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:79:13-56
+activity#com.pixels.Inventario.View.Gestion_Productos.VerInventario
 ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:81:9-88:20
 	android:parentActivityName
-		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:83:13-79
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:83:13-70
 	android:theme
 		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:84:13-67
 	android:name
-		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:82:13-74
-activity#com.pixels.Inventario.View.Activity.InicioA.Configuracion_Inicial.configuracionI
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:82:13-65
+activity#com.pixels.Inventario.View.InicioA.Configuracion_Inicial.configuracionI
 ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:89:9-91:40
 	android:exported
 		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:91:13-37
 	android:name
-		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:90:13-87
-activity#com.pixels.Inventario.View.Activity.InicioA.Inicio
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:90:13-78
+activity#com.pixels.Inventario.View.InicioA.Inicio
 ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:92:9-101:20
 	android:exported
 		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:94:13-36
 	android:theme
 		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:95:13-67
 	android:name
-		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:93:13-57
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:93:13-48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:96:13-100:29
 action#android.intent.action.MAIN
