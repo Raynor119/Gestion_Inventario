@@ -271,8 +271,13 @@ public class FacturaPDF {
         paragraph.add(childParagraph);
     }
     private void CrearArchivo(){
-        //se genera el diretorio en android/data/
-        File carpeta=new File(Context.getExternalFilesDir(null),"Facturas"+Context.getString(R.string.app_name));
+        //se genera el diretorio en android/data/ si tiene android 8 o mas
+        File carpeta;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            carpeta=new File(Context.getExternalFilesDir(null),"Facturas"+Context.getString(R.string.app_name));
+        }else{
+            carpeta=new File(Context.getFilesDir(),"documents");
+        }
         if(!carpeta.exists()){
             carpeta.mkdirs();
         }
@@ -293,6 +298,7 @@ public class FacturaPDF {
             carpetaFecha.mkdirs();
         }
         Factura=new File(carpetaFecha,"FacturaCodigo"+CodigoV+".pdf");
+
     }
     public File getFactura(){
         return Factura;

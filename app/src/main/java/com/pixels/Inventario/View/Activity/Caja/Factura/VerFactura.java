@@ -61,11 +61,14 @@ public class VerFactura extends AppCompatActivity {
             if(!documentsPath.exists()){
                 documentsPath.mkdirs();
             }
-
-            File file = new File(documentsPath, factura.getName());
-            Path origenPath = FileSystems.getDefault().getPath(factura.getAbsolutePath());
-            Path destinoPath = FileSystems.getDefault().getPath(file.getAbsolutePath());
-            Files.copy(origenPath, destinoPath, StandardCopyOption.REPLACE_EXISTING);
+            File file = factura;
+            Path origenPath = null;
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+                file = new File(documentsPath, factura.getName());
+                origenPath = FileSystems.getDefault().getPath(factura.getAbsolutePath());
+                Path destinoPath = FileSystems.getDefault().getPath(file.getAbsolutePath());
+                Files.copy(origenPath, destinoPath, StandardCopyOption.REPLACE_EXISTING);
+            }
             Uri uri = FileProvider.getUriForFile(VerFactura.this, "com.pixels.Inventario.fileprovider", file);
             Intent intent = ShareCompat.IntentBuilder.from(VerFactura.this)
                     .setType("application/pdf")
@@ -75,7 +78,7 @@ public class VerFactura extends AppCompatActivity {
                     .addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
             Context.startActivity(intent);
         }catch (Exception e){
-            Toast.makeText(getApplicationContext(), "Error al Compartir el Pdf Verifique los Permisos de Almacenamiento de la APP ", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Error al Compartir el Pdf Verifique los Permisos de Almacenamiento de la APP "+e, Toast.LENGTH_LONG).show();
         }
         if(decision.equals("si")){
             finish();
