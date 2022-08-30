@@ -4,14 +4,15 @@
     <shared>
       <config>
         <device id="_device_class_desktop" />
+        <device id="_device_class_tablet" />
         <device id="13.5in Freeform" />
         <device id="6.7in Foldable" />
-        <device id="_device_class_tablet" />
         <device id="tv_1080p" />
         <device id="tv_4k" />
         <device id="pixel_c" />
         <device id="Nexus 9" />
         <device id="Nexus 7 2013" />
+        <option name="nonWearDeviceLastStateName" value="landscape" />
       </config>
     </shared>
   </component>
@@ -19,9 +20,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v33 mejoras en el disenno de caja">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout-w1700dp/activity_caja.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout-w1700dp/producto_caja.xml" afterDir="false" />
+    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v33.1 mejoras en el disenno de caja">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout-w1600dp/activity_caja.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout-w1600dp/producto_caja.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout-w1900dp/activity_caja.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout-w1900dp/producto_caja.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.bin" afterDir="false" />
@@ -34,15 +37,14 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/layout-w1000dp_activity_caja.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/layout-w1000dp_activity_caja.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/layout-w1400dp_activity_caja.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/layout-w1400dp_activity_caja.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/layout-w800dp_activity_caja.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/layout-w800dp_activity_caja.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/layout-w1700dp_activity_caja.xml.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/layout-w1700dp_producto_caja.xml.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/stable_resource_ids_file/debug/stableIds.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/stable_resource_ids_file/debug/stableIds.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-w1000dp/activity_caja.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-w1000dp/activity_caja.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-w1400dp/activity_caja.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-w1400dp/activity_caja.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-w800dp/activity_caja.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-w800dp/activity_caja.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-w1700dp/activity_caja.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-w1700dp/producto_caja.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,10 +71,12 @@
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout-w1700dp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout-w1900dp" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\res\layout-w1900dp" />
+      <recent name="C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\res\layout-w1600dp" />
       <recent name="C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\res\layout-w1700dp" />
       <recent name="C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\res\layout-w1000dp" />
       <recent name="C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\res\layout-w1400dp" />
@@ -153,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661837195762</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="copia de seguridad v33.1 mejoras en el disenno de caja">
+      <created>1661839147173</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661839147173</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,6 +180,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="copia de seguridad v33 mejoras en el disenno de caja" />
-    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v33 mejoras en el disenno de caja" />
+    <MESSAGE value="copia de seguridad v33.1 mejoras en el disenno de caja" />
+    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v33.1 mejoras en el disenno de caja" />
   </component>
 </project>
