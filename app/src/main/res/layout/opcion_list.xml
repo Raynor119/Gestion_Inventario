@@ -11,5 +11,5 @@
         android:layout_marginRight="5dp"
         android:layout_marginTop="10dp"
         app:layoutManager="LinearLayoutManager"
-        tools:context=".View.Activity.Menu_Inicio.MenuInicio"
+        tools:context=".View.Menu_Inicio.MenuInicio"
         tools:listitem="@layout/opcion_list_content"/>

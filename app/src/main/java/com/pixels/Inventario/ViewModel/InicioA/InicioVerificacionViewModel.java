@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 import com.pixels.Inventario.Model.Inicio.Verificacion;
-import com.pixels.Inventario.View.Activity.InicioA.Inicio;
+import com.pixels.Inventario.View.InicioA.Inicio;
 
 public class InicioVerificacionViewModel extends ViewModel {
     private MutableLiveData<Integer> resultado;

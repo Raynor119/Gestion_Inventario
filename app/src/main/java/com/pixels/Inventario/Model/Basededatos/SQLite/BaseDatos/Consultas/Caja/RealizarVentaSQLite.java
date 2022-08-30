@@ -1,6 +1,5 @@
 package com.pixels.Inventario.Model.Basededatos.SQLite.BaseDatos.Consultas.Caja;
 
-import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.widget.Toast;
@@ -8,7 +7,7 @@ import android.widget.Toast;
 import com.pixels.Inventario.Model.Basededatos.MediadorBaseDatos;
 import com.pixels.Inventario.Model.Basededatos.SQLite.BaseDatos.BaseDatosSQLite;
 import com.pixels.Inventario.Model.DatosE.VentaRealizada;
-import com.pixels.Inventario.View.Activity.Caja.Caja;
+import com.pixels.Inventario.View.Caja.Caja;
 import com.pixels.Inventario.ViewModel.Caja.Venta.RealizarVentaViewModel;
 
 import java.util.ArrayList;

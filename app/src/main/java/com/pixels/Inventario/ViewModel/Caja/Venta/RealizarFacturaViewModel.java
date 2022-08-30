@@ -3,10 +3,8 @@ package com.pixels.Inventario.ViewModel.Caja.Venta;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.os.Build;
 import android.widget.Toast;
 
-import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.lifecycle.ViewModel;
 
@@ -14,8 +12,8 @@ import com.pixels.Inventario.Model.Basededatos.SQLite.DatosInicio.consultasDatos
 import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.Model.Factura.FacturaPDF;
 import com.pixels.Inventario.R;
-import com.pixels.Inventario.View.Activity.Caja.Caja;
-import com.pixels.Inventario.View.Activity.Caja.Factura.VerFactura;
+import com.pixels.Inventario.View.Caja.Caja;
+import com.pixels.Inventario.View.Caja.Factura.VerFactura;
 
 
 import java.math.BigDecimal;

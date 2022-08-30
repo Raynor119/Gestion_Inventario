@@ -6,7 +6,7 @@ import com.pixels.Inventario.Model.Basededatos.MYSQL.Conexion;
 import com.pixels.Inventario.Model.Basededatos.MediadorBaseDatos;
 
 import com.pixels.Inventario.Model.DatosE.VentaRealizada;
-import com.pixels.Inventario.View.Activity.Caja.Caja;
+import com.pixels.Inventario.View.Caja.Caja;
 import com.pixels.Inventario.ViewModel.Caja.Venta.RealizarVentaViewModel;
 
 import java.sql.Connection;

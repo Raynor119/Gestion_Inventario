@@ -63,7 +63,7 @@
                         android:layout_width="300dp"
                         android:layout_height="match_parent"
                         app:layoutManager="LinearLayoutManager"
-                        tools:context="com.pixels.Inventario.View.Activity.Menu_Inicio.MenuInicio"
+                        tools:context=".View.Menu_Inicio.MenuInicio"
                         tools:listitem="@layout/opcion_list_content"/>
 
                 </FrameLayout>

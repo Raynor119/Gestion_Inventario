@@ -8,7 +8,7 @@ import com.pixels.Inventario.Model.Basededatos.MYSQL.Consultas.Caja.Devoluciones
 import com.pixels.Inventario.Model.Basededatos.MediadorBaseDatos;
 import com.pixels.Inventario.Model.Basededatos.SQLite.BaseDatos.Consultas.Caja.Devoluciones.RealizarDevolucionSQLite;
 import com.pixels.Inventario.Model.Basededatos.SQLite.DatosInicio.consultasDatos;
-import com.pixels.Inventario.View.Activity.Caja.Devoluciones.devoluciones;
+import com.pixels.Inventario.View.Caja.Devoluciones.devoluciones;
 
 public class RealizarDevolucionViewModel extends ViewModel {
     public MutableLiveData<Boolean> resultado;

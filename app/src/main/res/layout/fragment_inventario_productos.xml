@@ -7,7 +7,7 @@
           android:layout_width="match_parent"
     app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
           android:layout_height="match_parent"
-          tools:context=".View.Activity.Gestion_Productos.Fragment.VerInventarioFragment">
+          tools:context=".View.Gestion_Productos.Fragment.VerInventarioFragment">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -47,7 +47,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="5dp"
             app:layoutManager="LinearLayoutManager"
-            tools:context=".View.Activity.Menu_Inicio.MenuInicio"
+            tools:context=".View.Menu_Inicio.MenuInicio"
             tools:listitem="@layout/producto_detail_container"/>
 
     </androidx.cardview.widget.CardView>

@@ -2,7 +2,7 @@ package com.pixels.Inventario.Model.Inicio;
 
 
 import android.content.SharedPreferences;
-import com.pixels.Inventario.View.Activity.InicioA.Inicio;
+import com.pixels.Inventario.View.InicioA.Inicio;
 public class Verificacion {
     private Inicio Context;
     public Verificacion(Inicio context){

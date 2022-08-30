@@ -4,7 +4,6 @@ package com.pixels.Inventario.Model.Factura;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.os.Environment;
 import android.widget.Toast;
 
 
@@ -17,14 +16,12 @@ import com.itextpdf.text.Image;
 import com.itextpdf.text.PageSize;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.Phrase;
-import com.itextpdf.text.pdf.Barcode;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.journeyapps.barcodescanner.BarcodeEncoder;
 import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.R;
-import com.pixels.Inventario.View.Activity.Caja.Caja;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

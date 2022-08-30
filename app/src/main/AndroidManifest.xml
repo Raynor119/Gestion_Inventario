@@ -30,67 +30,67 @@
                 android:resource="@xml/filepaths" />
         </provider>
         <activity
-            android:name=".View.Activity.Caja.Devoluciones.devoluciones"
+            android:name=".View.Caja.Devoluciones.devoluciones"
             android:theme="@style/Theme.MyApplication.NoActionBar"
             android:exported="false"/>
         <activity
-            android:name=".View.Activity.Caja.Factura.VerFactura"
+            android:name=".View.Caja.Factura.VerFactura"
             android:exported="false">
         </activity>
         <activity
-            android:name=".View.Activity.Caja.Caja"
+            android:name=".View.Caja.Caja"
             android:exported="false"
             android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
-            android:name=".View.Activity.Gestion_Productos.EditarProductos.EditarProducto"
+            android:name=".View.Gestion_Productos.EditarProductos.EditarProducto"
             android:exported="false"
             android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
-            android:name=".View.Activity.Gestion_Productos.AgregarProductos.AgregarProductos"
+            android:name=".View.Gestion_Productos.AgregarProductos.AgregarProductos"
             android:exported="false"
             android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
-            android:name=".View.Activity.Ajustes.ConfiguracionBaseDatos.CrearBaseDatosMYSQL"
+            android:name=".View.Ajustes.ConfiguracionBaseDatos.CrearBaseDatosMYSQL"
             android:exported="false"
             android:theme="@style/Theme.MyApplication.NoActionBar" />
-        <activity android:name=".View.Activity.Ajustes.ExportarDatos.ExportarDatos">
+        <activity android:name=".View.Ajustes.ExportarDatos.ExportarDatos">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".View.Activity.Ajustes.Ajustes" />
+                android:value=".View.Ajustes.Ajustes" />
         </activity>
-        <activity android:name=".View.Activity.Ajustes.ImportarDatos.ImportarDatos">
+        <activity android:name=".View.Ajustes.ImportarDatos.ImportarDatos">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".View.Activity.Ajustes.Ajustes" />
+                android:value=".View.Ajustes.Ajustes" />
         </activity>
         <activity
-            android:name=".View.Activity.Ajustes.ConfiguracionBaseDatos.cambiarMySQL"
+            android:name=".View.Ajustes.ConfiguracionBaseDatos.cambiarMySQL"
             android:exported="false"
             android:theme="@style/Theme.MyApplication.NoActionBar" />
-        <activity android:name=".View.Activity.Ajustes.ConfiguracionContra.configContra">
+        <activity android:name=".View.Ajustes.ConfiguracionContra.configContra">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".View.Activity.Ajustes.Ajustes" />
+                android:value=".View.Ajustes.Ajustes" />
         </activity>
         <activity
-            android:name=".View.Activity.Ajustes.Ajustes"
+            android:name=".View.Ajustes.Ajustes"
             android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
-            android:name=".View.Activity.Menu_Inicio.MenuInicio"
+            android:name=".View.Menu_Inicio.MenuInicio"
             android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
-            android:name=".View.Activity.Gestion_Productos.VerInventario"
-            android:parentActivityName=".View.Activity.Menu_Inicio.MenuInicio"
+            android:name=".View.Gestion_Productos.VerInventario"
+            android:parentActivityName=".View.Menu_Inicio.MenuInicio"
             android:theme="@style/Theme.MyApplication.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.pixels.Inventario.View.Activity.Menu_Inicio.MenuInicio" />
+                android:value=".View.Menu_Inicio.MenuInicio" />
         </activity>
         <activity
-            android:name=".View.Activity.InicioA.Configuracion_Inicial.configuracionI"
+            android:name=".View.InicioA.Configuracion_Inicial.configuracionI"
             android:exported="false" />
         <activity
-            android:name=".View.Activity.InicioA.Inicio"
+            android:name=".View.InicioA.Inicio"
             android:exported="true"
             android:theme="@style/Theme.MyApplication.NoActionBar">
             <intent-filter>

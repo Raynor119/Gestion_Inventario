@@ -8,7 +8,7 @@
               android:divider="?android:attr/dividerHorizontal"
               android:orientation="horizontal"
               android:showDividers="middle"
-              tools:context=".View.Activity.Menu_Inicio.MenuInicio">
+              tools:context=".View.Menu_Inicio.MenuInicio">
     <FrameLayout
             android:id="@+id/opcion_detail_container"
             android:layout_width="match_parent"

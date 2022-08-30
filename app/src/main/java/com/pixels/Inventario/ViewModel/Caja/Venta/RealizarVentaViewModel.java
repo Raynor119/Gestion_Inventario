@@ -9,7 +9,7 @@ import com.pixels.Inventario.Model.Basededatos.MediadorBaseDatos;
 import com.pixels.Inventario.Model.Basededatos.SQLite.BaseDatos.Consultas.Caja.RealizarVentaSQLite;
 import com.pixels.Inventario.Model.Basededatos.SQLite.DatosInicio.consultasDatos;
 import com.pixels.Inventario.Model.DatosE.VentaRealizada;
-import com.pixels.Inventario.View.Activity.Caja.Caja;
+import com.pixels.Inventario.View.Caja.Caja;
 
 import java.util.List;
 

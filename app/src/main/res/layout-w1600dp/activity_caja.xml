@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".View.Activity.Caja.Caja">
+    tools:context=".View.Caja.Caja">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -190,7 +190,7 @@
                                     android:layout_marginRight="2dp"
                                     android:layout_marginBottom="5dp"
                                     app:layoutManager="LinearLayoutManager"
-                                    tools:context=".View.Activity.Menu_Inicio.MenuInicio"
+                                    tools:context=".View.Menu_Inicio.MenuInicio"
                                     tools:listitem="@layout/producto_caja" />
 
 

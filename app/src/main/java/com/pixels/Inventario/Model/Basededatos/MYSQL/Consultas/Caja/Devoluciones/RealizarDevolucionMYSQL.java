@@ -7,18 +7,13 @@ import android.widget.Toast;
 import com.pixels.Inventario.Model.Basededatos.MYSQL.Conexion;
 import com.pixels.Inventario.Model.Basededatos.MediadorBaseDatos;
 
-import com.pixels.Inventario.Model.DatosE.VentaRealizada;
-
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.List;
 
 
-import com.pixels.Inventario.View.Activity.Caja.Devoluciones.devoluciones;
+import com.pixels.Inventario.View.Caja.Devoluciones.devoluciones;
 import com.pixels.Inventario.ViewModel.Caja.Devoluciones.RealizarDevolucionViewModel;
 
 public class RealizarDevolucionMYSQL extends Conexion implements MediadorBaseDatos {

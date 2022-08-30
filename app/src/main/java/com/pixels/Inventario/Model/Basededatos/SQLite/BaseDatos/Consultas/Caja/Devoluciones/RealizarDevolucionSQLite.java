@@ -5,7 +5,7 @@ import android.widget.Toast;
 
 import com.pixels.Inventario.Model.Basededatos.MediadorBaseDatos;
 import com.pixels.Inventario.Model.Basededatos.SQLite.BaseDatos.BaseDatosSQLite;
-import com.pixels.Inventario.View.Activity.Caja.Devoluciones.devoluciones;
+import com.pixels.Inventario.View.Caja.Devoluciones.devoluciones;
 import com.pixels.Inventario.ViewModel.Caja.Devoluciones.RealizarDevolucionViewModel;
 
 public class RealizarDevolucionSQLite extends BaseDatosSQLite implements MediadorBaseDatos{
