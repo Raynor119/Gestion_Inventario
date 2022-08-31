@@ -11,7 +11,7 @@ public class BaseDatosSQLite extends SQLiteOpenHelper {
     private static final int VERSION_BD=1;
     private static final String TABLAProducto="CREATE TABLE Producto(codigo VARCHAR(255) PRIMARY KEY NOT NULL,nombre VARCHAR(255) NOT NULL,cantidad DOUBLE NOT NULL,TipoC VARCHAR(255) NOT NULL,CosteP BIGINT NOT NULL,precio BIGINT NOT NULL,Iva INT NOT NULL)";
     private static final String TABLAVenta="CREATE TABLE Venta(codigo INTEGER PRIMARY KEY AUTOINCREMENT,Fecha TEXT NOT NULL,Efectivo BIGINT NOT NULL)";
-    private static final String TABLAVentasProductos="CREATE TABLE VentasProductos(Id INTEGER PRIMARY KEY AUTOINCREMENT,codigoV INT NOT NULL,codigoP VARCHAR(255),CantidadV DOUBLE NOT NULL,CostePV BIGINT NOT NULL,PrecioPV BIGINT NOT NULL,IvaPV INT NOT NULL,EstadoDevolucion VARCHAR(255) NOT NULL,ObservacionD VARCHAR(255),FOREIGN KEY (codigoV) REFERENCES Venta(codigo),FOREIGN KEY (codigoP) REFERENCES Producto(codigo) ON UPDATE CASCADE)";
+    private static final String TABLAVentasProductos="CREATE TABLE VentasProductos(Id INTEGER PRIMARY KEY AUTOINCREMENT,codigoV INT NOT NULL,codigoP VARCHAR(255),CantidadV DOUBLE NOT NULL,CantidadD DOUBLE NOT NULL,CostePV BIGINT NOT NULL,PrecioPV BIGINT NOT NULL,IvaPV INT NOT NULL,EstadoDevolucion VARCHAR(255) NOT NULL,ObservacionD VARCHAR(255),FOREIGN KEY (codigoV) REFERENCES Venta(codigo),FOREIGN KEY (codigoP) REFERENCES Producto(codigo) ON UPDATE CASCADE)";
 
     public BaseDatosSQLite(Context context) {
         super(context, NOMBRE_BD, null, VERSION_BD);

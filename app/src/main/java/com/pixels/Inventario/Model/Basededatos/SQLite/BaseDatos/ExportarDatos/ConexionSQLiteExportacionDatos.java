@@ -46,7 +46,7 @@ public class ConexionSQLiteExportacionDatos extends BaseDatosSQLite {
         Cursor cursor=bd.rawQuery("SELECT * FROM VentasProductos",null);
         if(cursor.moveToFirst()){
             do{
-                datos.add(new VentasProductos(cursor.getInt(0),cursor.getInt(1),cursor.getString(2),cursor.getDouble(3),cursor.getInt(4),cursor.getInt(5),cursor.getInt(6),cursor.getString(7),cursor.getString(8)));
+                datos.add(new VentasProductos(cursor.getInt(0),cursor.getInt(1),cursor.getString(2),cursor.getDouble(3),cursor.getDouble(4),cursor.getInt(5),cursor.getInt(6),cursor.getInt(7),cursor.getString(8),cursor.getString(9)));
             }while(cursor.moveToNext());
         }
         return datos;
