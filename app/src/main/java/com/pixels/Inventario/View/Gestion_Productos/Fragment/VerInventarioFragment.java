@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.pixels.Inventario.Model.DatosE.Producto;
@@ -35,6 +36,7 @@ public class VerInventarioFragment extends Fragment {
 
     public Context Context;
     public RecyclerView reciclerView;
+
     public VerInventarioFragment(){
 
     }
@@ -56,6 +58,23 @@ public class VerInventarioFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_inventario_productos, container, false);
         reciclerView= rootView.findViewById(R.id.opcion_list);
+        try {
+            ImageView cargar=(ImageView) rootView.findViewById(R.id.cargar);
+            cargar.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(Context!=null){
+                        iniciarRecyclerView();
+                    }else {
+                        //si se redimensiona
+                        Context=getActivity();
+                        iniciarRecyclerView();
+                    }
+                }
+            });
+        }catch (Exception e){
+
+        }
 
         if(Context!=null){
             iniciarRecyclerView();

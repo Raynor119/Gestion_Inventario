@@ -1985,6 +1985,7 @@ id cancel_action
 id cancel_button
 id cantidad
 id cantidadmod
+id cargar
 id center
 id centerCrop
 id center_horizontal

@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.ActionBar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.pixels.Inventario.R;
@@ -24,6 +25,7 @@ import com.pixels.Inventario.View.Gestion_Productos.Fragment.VerInventarioFragme
 public class VerInventario extends AppCompatActivity {
     VerInventarioFragment fragment;
     public static FloatingActionButton fab;
+    public static ImageView cargar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +53,19 @@ public class VerInventario extends AppCompatActivity {
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.opcion_detail_container, fragment)
                     .commit();
+
+        try{
+            cargar=(ImageView) findViewById(R.id.cargar);
+            cargar.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    fragment.Context=VerInventario.this;
+                    fragment.iniciarRecyclerView();
+                }
+            });
+        }catch (Exception e){
+            cargar=null;
+        }
             fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
