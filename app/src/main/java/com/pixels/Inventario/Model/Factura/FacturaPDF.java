@@ -175,8 +175,9 @@ public class FacturaPDF {
             }
             int totalbase=0,iva=0;
             NumberFormat formato= NumberFormat.getNumberInstance();
+            int Total=0;
             for(int i=0;i<Productos.size();i++){
-
+                Total=(int)(Total+(Productos.get(i).getPrecio()*Productos.get(i).getCantidad()));
                 cell=new PdfPCell(new Phrase(Productos.get(i).getCodigo(),Ftext));
                 cell.setHorizontalAlignment(Element.ALIGN_CENTER);
                 cell.setVerticalAlignment(Element.ALIGN_CENTER);
@@ -225,7 +226,7 @@ public class FacturaPDF {
             cell.setVerticalAlignment(Element.ALIGN_CENTER);
             table.addCell(cell);
 
-            cell=new PdfPCell(new Phrase(formato.format(totalbase+iva),Ftext));
+            cell=new PdfPCell(new Phrase(formato.format(Total),Ftext));
             cell.setHorizontalAlignment(Element.ALIGN_CENTER);
             cell.setVerticalAlignment(Element.ALIGN_CENTER);
             table.addCell(cell);

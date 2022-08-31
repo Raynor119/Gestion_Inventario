@@ -50,7 +50,9 @@ public class RealizarFacturaViewModel extends ViewModel {
             factura.addSubTitulos("PRODUCTOS VENDIDOS");
             factura.addTablaP(Productos);
             int Subtotal=0,iva=0,cambio=0;
+            int Total=0;
             for(int i=0;i<Productos.size();i++){
+                Total=(int)(Total+(Productos.get(i).getPrecio()*Productos.get(i).getCantidad()));
                 double porcentajeiva=Double.parseDouble("1."+Productos.get(i).getIva());
                 BigDecimal precionS = new BigDecimal((Productos.get(i).getPrecio()*Productos.get(i).getCantidad())/porcentajeiva).setScale(0, RoundingMode.HALF_UP);
                 int suptotal=(int)(precionS.doubleValue());
@@ -60,7 +62,7 @@ public class RealizarFacturaViewModel extends ViewModel {
                 double ivaa=precion.doubleValue();
                 iva=iva+((int) ivaa);
             }
-            int Total=Subtotal+iva;
+
             cambio=efectivo-Total;
             NumberFormat formato= NumberFormat.getNumberInstance();
             String texto="IVA $                            "+formato.format(iva)+"\n"+
