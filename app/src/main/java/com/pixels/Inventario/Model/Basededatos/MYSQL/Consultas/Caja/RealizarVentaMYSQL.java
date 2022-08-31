@@ -58,7 +58,7 @@ public class RealizarVentaMYSQL extends Conexion implements MediadorBaseDatos {
                     FechaV=rs.getString(2);
                 }
                 for(int i=0;i< Context.Productos.size();i++){
-                    st.executeUpdate("INSERT INTO VentasProductos (codigoV,codigoP,CantidadV,CostePV,PrecioPV,IvaPV,EstadoDevolucion,ObservacionD) VALUES("+CodigoV+",'"+Context.Productos.get(i).getCodigo()+"',"+Context.Productos.get(i).getCantidad()+","+Context.Productos.get(i).getCosteP()+","+Context.Productos.get(i).getPrecio()+","+Context.Productos.get(i).getIva()+",'no',NULL)");
+                    st.executeUpdate("INSERT INTO VentasProductos (codigoV,codigoP,CantidadV,CantidadD,CostePV,PrecioPV,IvaPV,EstadoDevolucion,ObservacionD) VALUES("+CodigoV+",'"+Context.Productos.get(i).getCodigo()+"',"+Context.Productos.get(i).getCantidad()+",0,"+Context.Productos.get(i).getCosteP()+","+Context.Productos.get(i).getPrecio()+","+Context.Productos.get(i).getIva()+",'no',NULL)");
                     rs = st.executeQuery("SELECT cantidad FROM Producto WHERE codigo='"+Context.Productos.get(i).getCodigo()+"'");
                     double cantidaP=0;
                     while (rs.next()) {

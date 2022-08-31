@@ -44,7 +44,7 @@ public class RealizarVentaSQLite extends BaseDatosSQLite implements MediadorBase
                 }
                 for(int i=0;i< Context.Productos.size();i++){
                     bd=getWritableDatabase();
-                    bd.execSQL("INSERT INTO VentasProductos (codigoV,codigoP,CantidadV,CostePV,PrecioPV,IvaPV,EstadoDevolucion,ObservacionD) VALUES("+CodigoV+",'"+Context.Productos.get(i).getCodigo()+"',"+Context.Productos.get(i).getCantidad()+","+Context.Productos.get(i).getCosteP()+","+Context.Productos.get(i).getPrecio()+","+Context.Productos.get(i).getIva()+",'no',NULL)");
+                    bd.execSQL("INSERT INTO VentasProductos (codigoV,codigoP,CantidadV,CantidadD,CostePV,PrecioPV,IvaPV,EstadoDevolucion,ObservacionD) VALUES("+CodigoV+",'"+Context.Productos.get(i).getCodigo()+"',"+Context.Productos.get(i).getCantidad()+",0,"+Context.Productos.get(i).getCosteP()+","+Context.Productos.get(i).getPrecio()+","+Context.Productos.get(i).getIva()+",'no',NULL)");
                     bd=getReadableDatabase();
                     cursor=bd.rawQuery("SELECT cantidad FROM Producto WHERE codigo='"+Context.Productos.get(i).getCodigo()+"'",null);
                     double cantidaP=0;
