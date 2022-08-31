@@ -2606,6 +2606,9 @@ mipmap ajustes_adaptive_fore
 mipmap caja
 mipmap caja_adaptive_back
 mipmap caja_adaptive_fore
+mipmap cargat
+mipmap cargat_adaptive_back
+mipmap cargat_adaptive_fore
 mipmap compartirmas
 mipmap compartirmas_adaptive_back
 mipmap compartirmas_adaptive_fore
@@ -2616,6 +2619,9 @@ mipmap eliminar
 mipmap eliminar_adaptive_back
 mipmap eliminar_adaptive_fore
 mipmap ic_launcher
+mipmap iconic
+mipmap iconic_adaptive_back
+mipmap iconic_adaptive_fore
 mipmap list_products
 mipmap list_products_adaptive_back
 mipmap list_products_adaptive_fore

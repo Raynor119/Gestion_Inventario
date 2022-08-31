@@ -228,7 +228,7 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\saibo\.gradle\
 	android:resizeableActivity
 		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:19:9-42
 	android:icon
-		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:17:9-43
+		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:17:9-38
 	android:allowBackup
 		ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:15:9-35
 	android:theme
