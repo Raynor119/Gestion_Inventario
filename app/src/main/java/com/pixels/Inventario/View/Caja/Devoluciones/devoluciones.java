@@ -122,7 +122,7 @@ public class devoluciones extends AppCompatActivity {
                                         Codigo.requestFocus();
                                     }else{
                                         alerObservacion observacion=new alerObservacion(devoluciones.this);
-                                        observacion.pedirObservaciones();
+                                        //observacion.pedirObservaciones();
                                         iniciarRecyclerView();
                                         Codigo.setText("");
                                         verificarEnter=false;
@@ -168,7 +168,7 @@ public class devoluciones extends AppCompatActivity {
                             if(aBoolean){
                                 int total=0;
                                 for(int b=0;b<Productos.size();b++){
-                                    int suptotal=(int)(Productos.get(b).getPrecioPV()*Productos.get(b).getCantidadV());
+                                    int suptotal=(int)(Productos.get(b).getPrecioPV()*Productos.get(b).getCantidadD());
                                     total=total+suptotal;
                                 }
                                 alertDevolucion alert=new alertDevolucion(devoluciones.this,total);
@@ -206,7 +206,7 @@ public class devoluciones extends AppCompatActivity {
             tableproductos.setAdapter(new productoRecyclesViewAdapterD(devoluciones.this));
             int total=0;
             for(int b=0;b<Productos.size();b++){
-                int suptotal=(int)(Productos.get(b).getPrecioPV()*Productos.get(b).getCantidadV());
+                int suptotal=(int)(Productos.get(b).getPrecioPV()*Productos.get(b).getCantidadD());
                 total=total+suptotal;
             }
             NumberFormat formato= NumberFormat.getNumberInstance();
@@ -262,7 +262,7 @@ public class devoluciones extends AppCompatActivity {
                                 Codigo.requestFocus();
                             }else{
                                 alerObservacion observacion=new alerObservacion(devoluciones.this);
-                                observacion.pedirObservaciones();
+                               // observacion.pedirObservaciones();
                                 iniciarRecyclerView();
                                 Codigo.setText("");
                                 Codigo.setFocusableInTouchMode(true);

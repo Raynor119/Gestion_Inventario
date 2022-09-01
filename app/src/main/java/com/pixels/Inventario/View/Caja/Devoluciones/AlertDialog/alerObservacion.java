@@ -18,7 +18,7 @@ public class alerObservacion {
     public alerObservacion(devoluciones context){
         this.Context=context;
     }
-    public void pedirObservaciones(){
+    public void pedirObservaciones(boolean verifi,double CantidadD){
         AlertDialog.Builder builder = new AlertDialog.Builder(Context);
         builder.setCancelable(false);
         LayoutInflater inflater= Context.getLayoutInflater();
@@ -37,6 +37,9 @@ public class alerObservacion {
         TextInputEditText observacion=(TextInputEditText) view.findViewById(R.id.Observacion);
         TextInputLayout CObservacion=(TextInputLayout) view.findViewById(R.id.CObservacion);
         TextCodigoCaja verificarC=new TextCodigoCaja(Context);
+        if(verifi){
+            observacion.setText(Context.Productos.get(Context.indexProducto).getObservacionD());
+        }
         observacion.addTextChangedListener(verificarC.codigo(observacion,CObservacion));
         buton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,8 +47,14 @@ public class alerObservacion {
                 if(observacion.getText().toString().equals("")){
                     CObservacion.setError("Digite las observaciones");
                 }else{
-                    Context.Productos.add(new VentasProductoD(Context.ProductosV.get(Context.indexProducto).getId(),Context.ProductosV.get(Context.indexProducto).getCodigoV(),Context.ProductosV.get(Context.indexProducto).getCodigoP(),Context.ProductosV.get(Context.indexProducto).getNombre(),Context.ProductosV.get(Context.indexProducto).getCantidadV(),Context.ProductosV.get(Context.indexProducto).getCostePV(),Context.ProductosV.get(Context.indexProducto).getPrecioPV(),Context.ProductosV.get(Context.indexProducto).getIva(),"si",observacion.getText().toString()));
-                    Context.iniciarRecyclerView();
+                    if(verifi){
+                        Context.Productos.get(Context.indexProducto).setCantidadD(CantidadD);
+                        Context.Productos.get(Context.indexProducto).setObservacionD(observacion.getText().toString());
+                        Context.iniciarRecyclerView();
+                    }else{
+                        Context.Productos.add(new VentasProductoD(Context.ProductosV.get(Context.indexProducto).getId(),Context.ProductosV.get(Context.indexProducto).getCodigoV(),Context.ProductosV.get(Context.indexProducto).getCodigoP(),Context.ProductosV.get(Context.indexProducto).getNombre(),Context.ProductosV.get(Context.indexProducto).getCantidadV(),CantidadD,Context.ProductosV.get(Context.indexProducto).getCostePV(),Context.ProductosV.get(Context.indexProducto).getPrecioPV(),Context.ProductosV.get(Context.indexProducto).getIva(),"si",observacion.getText().toString()));
+                        Context.iniciarRecyclerView();
+                    }
                     dialog.cancel();
                 }
             }

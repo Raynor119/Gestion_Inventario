@@ -50,7 +50,7 @@ public class RealizarDevolucionMYSQL extends Conexion implements MediadorBaseDat
             }else{
                 Statement st = connection.createStatement();
                 for(int i=0;i<Context.Productos.size();i++){
-                    st.executeUpdate("UPDATE VentasProductos SET EstadoDevolucion='si', ObservacionD='"+Context.Productos.get(i).getObservacionD()+"' WHERE codigoV="+CodigoV+" AND Id="+Context.Productos.get(i).getId()+"");
+                    st.executeUpdate("UPDATE VentasProductos SET CantidadD="+Context.Productos.get(i).getCantidadD()+",EstadoDevolucion='si', ObservacionD='"+Context.Productos.get(i).getObservacionD()+"' WHERE codigoV="+CodigoV+" AND Id="+Context.Productos.get(i).getId()+"");
                 }
                 return "";
             }

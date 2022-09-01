@@ -28,7 +28,7 @@ public class RealizarDevolucionSQLite extends BaseDatosSQLite implements Mediado
         {
             try{
                 for(int i=0;i<Context.Productos.size();i++){
-                    bd.execSQL("UPDATE VentasProductos SET EstadoDevolucion='si', ObservacionD='"+Context.Productos.get(i).getObservacionD()+"' WHERE codigoV="+CodigoV+" AND Id="+Context.Productos.get(i).getId()+"");
+                    bd.execSQL("UPDATE VentasProductos SET CantidadD="+Context.Productos.get(i).getCantidadD()+",EstadoDevolucion='si', ObservacionD='"+Context.Productos.get(i).getObservacionD()+"' WHERE codigoV="+CodigoV+" AND Id="+Context.Productos.get(i).getId()+"");
                 }
                 ConsultaBaseDatos();
             }catch (Exception e){
