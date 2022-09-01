@@ -1873,9 +1873,11 @@ id BOTTOM_END
 id BOTTOM_START
 id Buscar
 id ButtonG
+id CCantidad
 id CEfectivo
 id CObservacion
 id CTRL
+id Cantidad
 id CosteP
 id EditCodigo
 id Efectivo
@@ -2465,6 +2467,7 @@ layout activity_menuinicio
 layout activity_ver_factura
 layout ajustes_list_content
 layout alertcambiobasedatos
+layout alertcantidadd
 layout alertdevolucion
 layout alertdialogcontra
 layout alertdialogonitnombre

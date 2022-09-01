@@ -24,7 +24,7 @@ public class alertCantidadD {
         AlertDialog.Builder builder = new AlertDialog.Builder(Context);
         builder.setCancelable(false);
         LayoutInflater inflater= Context.getLayoutInflater();
-        View view=inflater.inflate(R.layout.alertobservaciones, null);
+        View view=inflater.inflate(R.layout.alertcantidadd, null);
         builder.setView(view);
         double cantidadMax=0;
         if(verifi){
@@ -32,7 +32,8 @@ public class alertCantidadD {
         }else{
             cantidadMax=Context.ProductosV.get(Context.indexProducto).getCantidadV()-Context.ProductosV.get(Context.indexProducto).getCantidadD();
         }
-        builder.setTitle("Digite la cantidad que se va a devolver (La Cantidad Devuelta no puede superarse de "+cantidadMax+")");
+        builder.setTitle("Digite la cantidad que se va a devolver");
+        builder.setMessage("(La cantidad devuelta no puede ser mayor de "+cantidadMax+")");
         builder.setNegativeButton("Salir", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
@@ -42,13 +43,14 @@ public class alertCantidadD {
         AlertDialog dialog = builder.create();
         dialog.show();
         Button buton=(Button) view.findViewById(R.id.ButtonG);
-        TextInputEditText Cantidad=(TextInputEditText) view.findViewById(R.id.Observacion);
-        TextInputLayout CCantidad=(TextInputLayout) view.findViewById(R.id.CObservacion);
+        TextInputEditText Cantidad=(TextInputEditText) view.findViewById(R.id.Cantidad);
+        TextInputLayout CCantidad=(TextInputLayout) view.findViewById(R.id.CCantidad);
         if(verifi){
             Cantidad.setText(""+Context.Productos.get(Context.indexProducto).getCantidadD());
         }
         Cantidad.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
         CCantidad.setHint("Cantidad Devuelta");
+
         TextCodigoCaja verificarC=new TextCodigoCaja(Context);
         Cantidad.addTextChangedListener(verificarC.codigo(Cantidad,CCantidad));
         double finalCantidadMax = cantidadMax;
@@ -60,13 +62,12 @@ public class alertCantidadD {
                 }else{
                     double cantidadDD=Double.parseDouble(Cantidad.getText().toString());
                     if(cantidadDD> finalCantidadMax){
-                        CCantidad.setError("La Cantidad Devuelta no puede superarse de "+ finalCantidadMax +"");
+                        CCantidad.setError("La cantidad devuelta no puede superar a la cantidad Vendida: "+ finalCantidadMax +"");
                     }else{
                         if(cantidadDD==0){
-                            CCantidad.setError("La Cantidad Devuelta no puede ser 0");
+                            CCantidad.setError("La cantidad devuelta no puede ser 0");
                         }else{
                             alerObservacion observacion=new alerObservacion(Context);
-                            Toast.makeText(Context, ""+cantidadDD, Toast.LENGTH_LONG).show();
                             observacion.pedirObservaciones(verifi,cantidadDD);
                             dialog.cancel();
                         }

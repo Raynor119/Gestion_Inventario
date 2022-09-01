@@ -5,18 +5,14 @@
     android:orientation="vertical"
     android:gravity="center"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_marginLeft="37dp"
-        android:layout_marginRight="37dp"
-        android:gravity="center"
-        android:layout_marginTop="20dp"
-        android:layout_height="wrap_content">
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/CObservacion"
+            android:layout_marginTop="20dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="37dp"
+            android:layout_marginRight="37dp"
             android:hint="Observaciones"
             app:endIconMode="clear_text">
             <com.google.android.material.textfield.TextInputEditText
@@ -26,8 +22,6 @@
                 android:inputType="" />
 
         </com.google.android.material.textfield.TextInputLayout>
-    </RelativeLayout>
-
     <Button
         android:id="@+id/ButtonG"
         android:layout_width="match_parent"
@@ -39,6 +33,5 @@
         android:padding="15dp"
         android:text="continuar"
         android:textColor="#FFFFFF" />
-
 
 </LinearLayout>

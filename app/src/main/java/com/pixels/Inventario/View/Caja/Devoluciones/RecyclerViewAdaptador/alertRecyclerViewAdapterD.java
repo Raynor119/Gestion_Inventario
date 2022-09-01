@@ -4,9 +4,11 @@ import android.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.pixels.Inventario.Model.DatosE.VentasProductoD;
@@ -45,9 +47,13 @@ public class alertRecyclerViewAdapterD extends RecyclerView.Adapter<alertRecycle
         holder.nombre.setText(""+Productos.get(position).getNombre());
         NumberFormat formato= NumberFormat.getNumberInstance();
         holder.titulo.setText("Total: ");
+        holder.cantidadV.setText(""+Productos.get(position).getCantidadV());
+        holder.cantidadD.setText(""+Productos.get(position).getCantidadD());
         if(Productos.get(position).getEstadoDevolucion().equals("si") && (Productos.get(position).getCantidadD()==Productos.get(position).getCantidadV())){
             holder.titulo.setText("");
             holder.precio.setText(" Ya todo se Devolvio");
+            holder.LcantidadD.setVisibility(ConstraintLayout.GONE);
+            holder.LcantidadV.setVisibility(ConstraintLayout.GONE);
         }else {
             holder.precio.setText("$ "+formato.format(Productos.get(position).getPrecioPV()*Productos.get(position).getCantidadV()));
         }
@@ -95,11 +101,16 @@ public class alertRecyclerViewAdapterD extends RecyclerView.Adapter<alertRecycle
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
-        final TextView codigo,nombre,precio,titulo;
+        final TextView codigo,nombre,cantidadV,cantidadD,precio,titulo;
+        final LinearLayout LcantidadV,LcantidadD;
         ViewHolder(View view) {
             super(view);
             codigo = (TextView) view.findViewById(R.id.codigo);
             nombre= (TextView) view.findViewById(R.id.nombre);
+            cantidadV= (TextView) view.findViewById(R.id.cantidad);
+            cantidadD= (TextView) view.findViewById(R.id.cantidadD);
+            LcantidadV= (LinearLayout) view.findViewById(R.id.canti);
+            LcantidadD= (LinearLayout) view.findViewById(R.id.cantiD);
             precio= (TextView) view.findViewById(R.id.precio);
             titulo= (TextView) view.findViewById(R.id.titulo);
         }

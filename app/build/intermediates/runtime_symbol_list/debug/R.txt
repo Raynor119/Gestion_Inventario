@@ -1872,9 +1872,11 @@ int id BOTTOM_END 0x7f080001
 int id BOTTOM_START 0x7f080002
 int id Buscar 0x7f080003
 int id ButtonG 0x7f080004
+int id CCantidad 0x7f080201
 int id CEfectivo 0x7f080005
 int id CObservacion 0x7f080006
 int id CTRL 0x7f080007
+int id Cantidad 0x7f080202
 int id CosteP 0x7f080008
 int id EditCodigo 0x7f080009
 int id Efectivo 0x7f08000a
@@ -2464,6 +2466,7 @@ int layout activity_menuinicio 0x7f0b0027
 int layout activity_ver_factura 0x7f0b0028
 int layout ajustes_list_content 0x7f0b0029
 int layout alertcambiobasedatos 0x7f0b002a
+int layout alertcantidadd 0x7f0b00b2
 int layout alertdevolucion 0x7f0b002b
 int layout alertdialogcontra 0x7f0b002c
 int layout alertdialogonitnombre 0x7f0b002d
