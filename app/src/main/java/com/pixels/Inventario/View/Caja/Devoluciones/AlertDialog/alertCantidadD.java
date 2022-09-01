@@ -15,6 +15,9 @@ import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Caja.Devoluciones.devoluciones;
 import com.pixels.Inventario.View.Caja.TextWatcher.TextCodigoCaja;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class alertCantidadD {
     private devoluciones Context;
     public alertCantidadD(devoluciones context){
@@ -67,9 +70,16 @@ public class alertCantidadD {
                         if(cantidadDD==0){
                             CCantidad.setError("La cantidad devuelta no puede ser 0");
                         }else{
-                            alerObservacion observacion=new alerObservacion(Context);
-                            observacion.pedirObservaciones(verifi,cantidadDD);
-                            dialog.cancel();
+                            BigDecimal bd = new BigDecimal(cantidadDD);
+                            bd = bd.setScale(3, RoundingMode.HALF_UP);
+                            cantidadDD=bd.doubleValue();
+                            if(cantidadDD!=0.0){
+                                alerObservacion observacion=new alerObservacion(Context);
+                                observacion.pedirObservaciones(verifi,cantidadDD);
+                                dialog.cancel();
+                            }else{
+                                CCantidad.setError("la cantidad devuelta es muy pequeña");
+                            }
                         }
                     }
                 }
