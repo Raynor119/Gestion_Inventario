@@ -31,16 +31,16 @@ public class VerificarCodigoVentaSQLite extends BaseDatosSQLite implements Media
     public List<VentasProductoD> DatosProductos(){
         List<VentasProductoD> datos=new ArrayList<>();
         SQLiteDatabase bd=getReadableDatabase();
-        Cursor cursor=bd.rawQuery("SELECT VentasProductos.Id,VentasProductos.codigoV,VentasProductos.codigoP,Producto.nombre,VentasProductos.CantidadV,VentasProductos.CostePV,VentasProductos.PrecioPV,VentasProductos.IvaPV,VentasProductos.EstadoDevolucion,VentasProductos.ObservacionD FROM VentasProductos INNER JOIN Producto ON VentasProductos.codigoP=Producto.codigo WHERE VentasProductos.codigoV="+Codigo+"",null);
+        Cursor cursor=bd.rawQuery("SELECT VentasProductos.Id,VentasProductos.codigoV,VentasProductos.codigoP,Producto.nombre,VentasProductos.CantidadV,VentasProductos.CantidadD,VentasProductos.CostePV,VentasProductos.PrecioPV,VentasProductos.IvaPV,VentasProductos.EstadoDevolucion,VentasProductos.ObservacionD FROM VentasProductos INNER JOIN Producto ON VentasProductos.codigoP=Producto.codigo WHERE VentasProductos.codigoV="+Codigo+"",null);
         if(cursor.moveToFirst()){
             do{
-                datos.add(new VentasProductoD(cursor.getInt(0),cursor.getInt(1),cursor.getString(2),cursor.getString(3),cursor.getDouble(4),cursor.getInt(5),cursor.getInt(6),cursor.getInt(7),cursor.getString(8),cursor.getString(9)));
+                datos.add(new VentasProductoD(cursor.getInt(0),cursor.getInt(1),cursor.getString(2),cursor.getString(3),cursor.getDouble(4),cursor.getDouble(5),cursor.getInt(6),cursor.getInt(7),cursor.getInt(8),cursor.getString(9),cursor.getString(10)));
             }while(cursor.moveToNext());
         }
         cursor=bd.rawQuery("SELECT * FROM VentasProductos WHERE codigoV="+Codigo+" AND codigoP IS NULL",null);
         if(cursor.moveToFirst()){
             do{
-                datos.add(new VentasProductoD(cursor.getInt(0),cursor.getInt(1),"null","Producto Desconocido",cursor.getDouble(3),cursor.getInt(4),cursor.getInt(5),cursor.getInt(6),cursor.getString(7),cursor.getString(8)));
+                datos.add(new VentasProductoD(cursor.getInt(0),cursor.getInt(1),"null","Producto Desconocido",cursor.getDouble(3),cursor.getDouble(4),cursor.getInt(5),cursor.getInt(6),cursor.getInt(7),cursor.getString(8),cursor.getString(9)));
             }while(cursor.moveToNext());
         }
         return datos;
@@ -53,7 +53,7 @@ public class VerificarCodigoVentaSQLite extends BaseDatosSQLite implements Media
         for(int i=0;i<productos.size();i++){
             if((productos.get(i).getCodigoV()+"").equals(Codigo)){
                 verificar=true;
-                productosEnviar.add(new VentasProductoD(productos.get(i).getId(),productos.get(i).getCodigoV(),productos.get(i).getCodigoP(),productos.get(i).getNombre(),productos.get(i).getCantidadV(),productos.get(i).getCostePV(),productos.get(i).getPrecioPV(),productos.get(i).getIva(),productos.get(i).getEstadoDevolucion(),productos.get(i).getObservacionD()));
+                productosEnviar.add(new VentasProductoD(productos.get(i).getId(),productos.get(i).getCodigoV(),productos.get(i).getCodigoP(),productos.get(i).getNombre(),productos.get(i).getCantidadV(),productos.get(i).getCantidadD(),productos.get(i).getCostePV(),productos.get(i).getPrecioPV(),productos.get(i).getIva(),productos.get(i).getEstadoDevolucion(),productos.get(i).getObservacionD()));
             }
         }
         ViewModel.resultado.setValue(verificar);
