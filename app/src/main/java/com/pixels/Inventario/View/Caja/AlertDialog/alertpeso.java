@@ -44,7 +44,7 @@ public class alertpeso {
         final TextInputLayout TipoC=(TextInputLayout) view.findViewById(R.id.spinner);
         cantidad.setText(""+Cantidad);
         spinner.setText("Kilogramos(Kg)");
-        String [] tipoC={"Gramos(g)","Kilogramos(Kg)"};
+        String [] tipoC={"Kilogramos(Kg)","Gramos(g)"};
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(Context, R.layout.tipocantidad,tipoC);
         spinner.setAdapter(adapter);
         final boolean[] verificarg = {true};
@@ -54,24 +54,32 @@ public class alertpeso {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if(spinner.getText().toString().equals("Gramos(g)")){
                     if(verificarg[0]){
-                        double conversion=Double.parseDouble(cantidad.getText().toString());
-                        double canntidadconvertida=conversion*(1000);
-                        BigDecimal bd = new BigDecimal(canntidadconvertida);
-                        bd = bd.setScale(3, RoundingMode.HALF_UP);
-                        cantidad.setText(""+bd.doubleValue());
-                        verificarg[0]=false;
-                        verificark[0]=true;
+                       if(cantidad.getText().toString().equals("")){
+
+                       }else{
+                           double conversion=Double.parseDouble(cantidad.getText().toString());
+                           double canntidadconvertida=conversion*(1000);
+                           BigDecimal bd = new BigDecimal(canntidadconvertida);
+                           bd = bd.setScale(3, RoundingMode.HALF_UP);
+                           cantidad.setText(""+bd.doubleValue());
+                           verificarg[0]=false;
+                           verificark[0]=true;
+                       }
                     }
                 }
                 if(spinner.getText().toString().equals("Kilogramos(Kg)")){
                    if(verificark[0]){
-                       double conversion=Double.parseDouble(cantidad.getText().toString());
-                       double canntidadconvertida=conversion*(0.001);
-                       BigDecimal bd = new BigDecimal(canntidadconvertida);
-                       bd = bd.setScale(3, RoundingMode.HALF_UP);
-                       cantidad.setText(""+bd.doubleValue());
-                       verificark[0] =false;
-                       verificarg[0] =true;
+                       if(cantidad.getText().toString().equals("")){
+
+                       }else{
+                           double conversion=Double.parseDouble(cantidad.getText().toString());
+                           double canntidadconvertida=conversion*(0.001);
+                           BigDecimal bd = new BigDecimal(canntidadconvertida);
+                           bd = bd.setScale(3, RoundingMode.HALF_UP);
+                           cantidad.setText(""+bd.doubleValue());
+                           verificark[0] =false;
+                           verificarg[0] =true;
+                       }
                    }
                 }
                 TipoC.setErrorEnabled(false);
@@ -96,15 +104,16 @@ public class alertpeso {
                 if(cantidad.getText().toString().equals("")){
                     cantidad.setError("Digite la Cantidad");
                     veridicar=false;
-                }
-                double verificarCero=Double.parseDouble(cantidad.getText().toString());
-                if(verificarCero==0.0){
-                    cantidad.setError("no se puede digitar 0");
-                    veridicar=false;
-                }
-                if(spinner.getText().toString().equals("")){
-                    TipoC.setError("Seleccione el Tipo de Cantidad");
-                    veridicar=false;
+                }else{
+                    double verificarCero=Double.parseDouble(cantidad.getText().toString());
+                    if(verificarCero==0.0){
+                        cantidad.setError("no se puede digitar 0");
+                        veridicar=false;
+                    }
+                    if(spinner.getText().toString().equals("")){
+                        TipoC.setError("Seleccione el Tipo de Cantidad");
+                        veridicar=false;
+                    }
                 }
                 if(veridicar){
                     double cantidadpeso=Double.parseDouble(cantidad.getText().toString());
@@ -114,13 +123,17 @@ public class alertpeso {
                     BigDecimal bd = new BigDecimal(cantidadpeso);
                     bd = bd.setScale(3, RoundingMode.HALF_UP);
                     cantidadpeso=bd.doubleValue();
-                    if(Veri){
-                        Context.Productos.add(new Producto(productos.get(0).getCodigo(),productos.get(0).getNombre(),cantidadpeso,productos.get(0).getTipoC(),productos.get(0).getCosteP(),productos.get(0).getPrecio(),productos.get(0).getIva()));
+                    if(cantidadpeso!=0.0){
+                        if(Veri){
+                            Context.Productos.add(new Producto(productos.get(0).getCodigo(),productos.get(0).getNombre(),cantidadpeso,productos.get(0).getTipoC(),productos.get(0).getCosteP(),productos.get(0).getPrecio(),productos.get(0).getIva()));
+                        }else{
+                            Context.Productos.get(Posicion).setCantidad(cantidadpeso);
+                        }
+                        Context.iniciarRecyclerView();
+                        dialog.cancel();
                     }else{
-                        Context.Productos.get(Posicion).setCantidad(cantidadpeso);
+                        cantidad.setError("la cantidad es muy pequeña");
                     }
-                    Context.iniciarRecyclerView();
-                    dialog.cancel();
                 }
             }
         });
