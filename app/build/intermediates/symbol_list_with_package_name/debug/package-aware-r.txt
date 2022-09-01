@@ -1983,7 +1983,10 @@ id buttonPanel
 id cambio
 id cancel_action
 id cancel_button
+id canti
+id cantiD
 id cantidad
+id cantidadD
 id cantidadmod
 id cargar
 id center
@@ -2333,6 +2336,8 @@ id title
 id titleDividerNoCustom
 id title_template
 id titulo
+id tituloC
+id tituloCD
 id toggle
 id toolbar
 id toolbar_layout
@@ -2572,6 +2577,7 @@ layout preference_widget_switch_compat
 layout producto_caja
 layout producto_detail_container
 layout producto_ver
+layout productod_ver
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
