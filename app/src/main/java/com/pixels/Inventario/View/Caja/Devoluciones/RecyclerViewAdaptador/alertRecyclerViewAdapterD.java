@@ -57,6 +57,7 @@ public class alertRecyclerViewAdapterD extends RecyclerView.Adapter<alertRecycle
         }else {
             holder.precio.setText("$ "+formato.format(Productos.get(position).getPrecioPV()*Productos.get(position).getCantidadV()));
         }
+        //modificar tipo c
         int positionn=position;
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
