@@ -52,7 +52,7 @@ public class alerObservacion {
                         Context.Productos.get(Context.indexProducto).setObservacionD(observacion.getText().toString());
                         Context.iniciarRecyclerView();
                     }else{
-                        Context.Productos.add(new VentasProductoD(Context.ProductosV.get(Context.indexProducto).getId(),Context.ProductosV.get(Context.indexProducto).getCodigoV(),Context.ProductosV.get(Context.indexProducto).getCodigoP(),Context.ProductosV.get(Context.indexProducto).getNombre(),Context.ProductosV.get(Context.indexProducto).getCantidadV(),CantidadD,Context.ProductosV.get(Context.indexProducto).getCostePV(),Context.ProductosV.get(Context.indexProducto).getPrecioPV(),Context.ProductosV.get(Context.indexProducto).getIva(),"si",observacion.getText().toString()));
+                        Context.Productos.add(new VentasProductoD(Context.ProductosV.get(Context.indexProducto).getId(),Context.ProductosV.get(Context.indexProducto).getCodigoV(),Context.ProductosV.get(Context.indexProducto).getCodigoP(),Context.ProductosV.get(Context.indexProducto).getNombre(),Context.ProductosV.get(Context.indexProducto).getCantidadV(),CantidadD,Context.ProductosV.get(Context.indexProducto).getTipoC(),Context.ProductosV.get(Context.indexProducto).getCostePV(),Context.ProductosV.get(Context.indexProducto).getPrecioPV(),Context.ProductosV.get(Context.indexProducto).getIva(),"si",observacion.getText().toString()));
                         Context.iniciarRecyclerView();
                     }
                     dialog.cancel();
