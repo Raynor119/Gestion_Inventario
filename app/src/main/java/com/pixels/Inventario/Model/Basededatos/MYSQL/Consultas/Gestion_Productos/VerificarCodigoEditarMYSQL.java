@@ -83,14 +83,9 @@ public class VerificarCodigoEditarMYSQL extends Conexion implements MediadorBase
     @Override
     public void ConsultaBaseDatos() {
         boolean verificar=true;
-
         for(int i=0;i<productos.size();i++){
-            if(productos.get(i).getCodigo().equals(Codigo)){
-
-            }else {
-                if(productos.get(i).getCodigo().equals(CodigoE)){
-                    verificar=false;
-                }
+            if(!productos.get(i).getCodigo().equals(Codigo) && productos.get(i).getCodigo().equals(CodigoE)) {
+                verificar = false;
             }
         }
         ViewModel.resultado.setValue(verificar);
