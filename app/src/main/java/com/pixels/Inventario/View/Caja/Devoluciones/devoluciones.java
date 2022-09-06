@@ -22,6 +22,7 @@ import com.google.zxing.integration.android.IntentResult;
 import com.pixels.Inventario.Model.DatosE.VentasProductoD;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Caja.Devoluciones.AlertDialog.alerObservacion;
+import com.pixels.Inventario.View.Caja.Devoluciones.AlertDialog.alertCantidadD;
 import com.pixels.Inventario.View.Caja.Devoluciones.AlertDialog.alertDevolucion;
 import com.pixels.Inventario.View.Caja.Devoluciones.AlertDialog.alertbuscarPV;
 import com.pixels.Inventario.View.Caja.Devoluciones.RecyclerViewAdaptador.productoRecyclesViewAdapterD;
@@ -101,31 +102,35 @@ public class devoluciones extends AppCompatActivity {
                             if(i[0]==0){
                                 i[0]++;
                                 boolean productorepi=false;
-
+                                int indexP=0;
                                 for (int b=0;b<Productos.size();b++){
                                     if(Productos.get(b).getCodigoP().equals(ProductosV.get(indexProducto).getCodigoP())){
                                         productorepi=true;
+                                        indexP=b;
                                     }
                                 }
                                 if(productorepi){
-                                    Codigo.setText("");
-                                    CCodigo.setError("El producto ya esta regitrado para la devolucion");
-                                    Codigo.setFocusableInTouchMode(true);
+                                    int aux=indexProducto;
+                                    indexProducto=indexP;
+                                    indexP=aux;
                                     verificarEnter=false;
+                                    alertCantidadD alert=new alertCantidadD(devoluciones.this);
+                                    alert.pedirCantidadD(true,indexP);
+                                    Codigo.setText("");
+                                    Codigo.setFocusableInTouchMode(true);
                                     Codigo.requestFocus();
                                 }else{
-                                    if(ProductosV.get(indexProducto).getEstadoDevolucion().equals("si")){
-                                        Codigo.setText("");
-                                        CCodigo.setError("El producto ya ha sido devuelto");
-                                        Codigo.setFocusableInTouchMode(true);
+                                    if(ProductosV.get(indexProducto).getEstadoDevolucion().equals("si") && (ProductosV.get(indexProducto).getCantidadD()==ProductosV.get(indexProducto).getCantidadV())){
                                         verificarEnter=false;
+                                        Codigo.setText("");
+                                        CCodigo.setError("El producto ya ha sido devuelto en su totalidad");
+                                        Codigo.setFocusableInTouchMode(true);
                                         Codigo.requestFocus();
                                     }else{
-                                        alerObservacion observacion=new alerObservacion(devoluciones.this);
-                                        //observacion.pedirObservaciones();
-                                        iniciarRecyclerView();
-                                        Codigo.setText("");
                                         verificarEnter=false;
+                                        alertCantidadD alert=new alertCantidadD(devoluciones.this);
+                                        alert.pedirCantidadD(false,indexProducto);
+                                        Codigo.setText("");
                                         Codigo.setFocusableInTouchMode(true);
                                         Codigo.requestFocus();
                                     }
@@ -243,27 +248,31 @@ public class devoluciones extends AppCompatActivity {
                     if(i[0]==0){
                         i[0]++;
                         boolean productorepi=false;
-
+                        int indexP=0;
                         for (int b=0;b<Productos.size();b++){
                             if(Productos.get(b).getCodigoP().equals(ProductosV.get(indexProducto).getCodigoP())){
                                 productorepi=true;
+                                indexP=b;
                             }
                         }
                         if(productorepi){
+                            int aux=indexProducto;
+                            indexProducto=indexP;
+                            indexP=aux;
+                            alertCantidadD alert=new alertCantidadD(devoluciones.this);
+                            alert.pedirCantidadD(true,indexP);
                             Codigo.setText("");
-                            CCodigo.setError("El producto ya esta regitrado para la devolucion");
                             Codigo.setFocusableInTouchMode(true);
                             Codigo.requestFocus();
                         }else{
                             if(ProductosV.get(indexProducto).getEstadoDevolucion().equals("si")){
                                 Codigo.setText("");
-                                CCodigo.setError("El producto ya ha sido devuelto");
+                                CCodigo.setError("El producto ya ha sido devuelto en su totalidad");
                                 Codigo.setFocusableInTouchMode(true);
                                 Codigo.requestFocus();
                             }else{
-                                alerObservacion observacion=new alerObservacion(devoluciones.this);
-                               // observacion.pedirObservaciones();
-                                iniciarRecyclerView();
+                                alertCantidadD alert=new alertCantidadD(devoluciones.this);
+                                alert.pedirCantidadD(false,indexProducto);
                                 Codigo.setText("");
                                 Codigo.setFocusableInTouchMode(true);
                                 Codigo.requestFocus();
