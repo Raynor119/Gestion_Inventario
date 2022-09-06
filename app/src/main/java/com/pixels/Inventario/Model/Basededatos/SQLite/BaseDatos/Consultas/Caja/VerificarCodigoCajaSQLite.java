@@ -29,7 +29,7 @@ public class VerificarCodigoCajaSQLite extends BaseDatosSQLite implements Mediad
     public List<Producto> DatosProductos(){
         List<Producto> datos=new ArrayList<>();
         SQLiteDatabase bd=getReadableDatabase();
-        Cursor cursor=bd.rawQuery("SELECT * FROM Producto",null);
+        Cursor cursor=bd.rawQuery("SELECT * FROM Producto WHERE codigo='"+Codigo+"'",null);
         if(cursor.moveToFirst()){
             do{
                 datos.add(new Producto(cursor.getString(0),cursor.getString(1),cursor.getDouble(2),cursor.getString(3),cursor.getInt(4),cursor.getInt(5),cursor.getInt(6)));
@@ -39,14 +39,14 @@ public class VerificarCodigoCajaSQLite extends BaseDatosSQLite implements Mediad
     }
     @Override
     public void ConsultaBaseDatos() {
-        boolean verificar=false;
+        boolean verificar=true;
         List<Producto> productos=DatosProductos();
         List<Producto> productosEnviar=new ArrayList<>();
-        for(int i=0;i<productos.size();i++){
-            if(productos.get(i).getCodigo().equals(Codigo)){
-                verificar=true;
-                productosEnviar.add(new Producto(productos.get(i).getCodigo(),productos.get(i).getNombre(),productos.get(i).getCantidad(),productos.get(i).getTipoC(),productos.get(i).getCosteP(),productos.get(i).getPrecio(),productos.get(i).getIva()));
-            }
+
+        if(productos.size()==0){
+            verificar=false;
+        }else{
+            productosEnviar.add(new Producto(productos.get(0).getCodigo(),productos.get(0).getNombre(),productos.get(0).getCantidad(),productos.get(0).getTipoC(),productos.get(0).getCosteP(),productos.get(0).getPrecio(),productos.get(0).getIva()));
         }
         ViewModel.resultado.setValue(verificar);
         if(verificar){

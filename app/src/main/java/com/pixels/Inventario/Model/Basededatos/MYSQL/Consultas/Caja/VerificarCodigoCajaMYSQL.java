@@ -47,7 +47,7 @@ public class VerificarCodigoCajaMYSQL extends Conexion implements MediadorBaseDa
                 return "Error en la conexion";
             }else{
                 Statement st = connection.createStatement();
-                ResultSet rs = st.executeQuery("SELECT * FROM Producto");
+                ResultSet rs = st.executeQuery("SELECT * FROM Producto WHERE codigo='"+Codigo+"'");
                 productos=new ArrayList<>();
                 while (rs.next()) {
                     productos.add(new Producto(rs.getString(1),rs.getString(2),rs.getDouble(3),rs.getString(4),rs.getInt(5),rs.getInt(6),rs.getInt(7)));
@@ -73,13 +73,12 @@ public class VerificarCodigoCajaMYSQL extends Conexion implements MediadorBaseDa
     }
     @Override
     public void ConsultaBaseDatos() {
-        boolean verificar=false;
+        boolean verificar=true;
         List<Producto> productosEnviar=new ArrayList<>();
-        for(int i=0;i<productos.size();i++){
-            if(productos.get(i).getCodigo().equals(Codigo)){
-                verificar=true;
-                productosEnviar.add(new Producto(productos.get(i).getCodigo(),productos.get(i).getNombre(),productos.get(i).getCantidad(),productos.get(i).getTipoC(),productos.get(i).getCosteP(),productos.get(i).getPrecio(),productos.get(i).getIva()));
-            }
+        if(productos.size()==0){
+            verificar=false;
+        }else{
+            productosEnviar.add(new Producto(productos.get(0).getCodigo(),productos.get(0).getNombre(),productos.get(0).getCantidad(),productos.get(0).getTipoC(),productos.get(0).getCosteP(),productos.get(0).getPrecio(),productos.get(0).getIva()));
         }
         ViewModel.resultado.setValue(verificar);
         if(verificar){
