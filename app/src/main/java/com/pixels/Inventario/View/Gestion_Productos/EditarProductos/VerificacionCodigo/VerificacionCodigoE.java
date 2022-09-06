@@ -19,9 +19,7 @@ public class VerificacionCodigoE {
         Observer<Boolean> observer=new Observer<Boolean>() {
             @Override
             public void onChanged(Boolean aBoolean) {
-                if(aBoolean){
-
-                }else {
+                if(!aBoolean){
                     Context.CCodigo.setError("Error el codigo ya esta registrado en la base de datos");
                     Context.Codigo.setFocusableInTouchMode(true);
                     Context.Codigo.requestFocus();
