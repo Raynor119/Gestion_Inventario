@@ -21,14 +21,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v39.5 arreglo en el model verificaciones de codigos caja">
+    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v39.5.1 arreglo en el model verificaciones de codigos caja">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/VerVentas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_ver_ventas.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/Model/Basededatos/MYSQL/Consultas/Caja/VerificarCodigoCajaMYSQL.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/Model/Basededatos/MYSQL/Consultas/Caja/VerificarCodigoCajaMYSQL.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/Model/Basededatos/SQLite/BaseDatos/Consultas/Caja/VerificarCodigoCajaSQLite.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/Model/Basededatos/SQLite/BaseDatos/Consultas/Caja/VerificarCodigoCajaSQLite.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/Model/Basededatos/MYSQL/Consultas/Caja/VerificarCodigoCajaMYSQL.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/Model/Basededatos/MYSQL/Consultas/Caja/VerificarCodigoCajaMYSQL.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/Model/Basededatos/SQLite/BaseDatos/Consultas/Caja/VerificarCodigoCajaSQLite.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/Model/Basededatos/SQLite/BaseDatos/Consultas/Caja/VerificarCodigoCajaSQLite.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +72,9 @@
       <recent name="C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\res\layout-w800dp" />
       <recent name="C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\res\layout-w1900dp" />
       <recent name="C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\res\layout-w1600dp" />
+    </key>
+    <key name="android.template.-1359305566">
+      <recent name="com.pixels.Inventario.View.Gestion_Ventas" />
     </key>
   </component>
   <component name="RunManager">
@@ -381,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662503373258</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="copia de seguridad v39.5.1 arreglo en el model verificaciones de codigos caja">
+      <created>1662503831086</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1662503831086</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -400,7 +409,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="copia de seguridad v37 arreglo en el total de la factura" />
     <MESSAGE value="copia de seguridad v38 arreglo en devoluciones" />
     <MESSAGE value="copia de seguridad v38.1 arreglo en devoluciones" />
     <MESSAGE value="copia de seguridad v38.2 arreglo en devoluciones" />
@@ -425,6 +433,7 @@
     <MESSAGE value="copia de seguridad v39.4 arreglo en el model verificaciones de codigos" />
     <MESSAGE value="copia de seguridad v39.4 arreglo en el model verificaciones de codigos mysql" />
     <MESSAGE value="copia de seguridad v39.5 arreglo en el model verificaciones de codigos caja" />
-    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v39.5 arreglo en el model verificaciones de codigos caja" />
+    <MESSAGE value="copia de seguridad v39.5.1 arreglo en el model verificaciones de codigos caja" />
+    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v39.5.1 arreglo en el model verificaciones de codigos caja" />
   </component>
 </project>
