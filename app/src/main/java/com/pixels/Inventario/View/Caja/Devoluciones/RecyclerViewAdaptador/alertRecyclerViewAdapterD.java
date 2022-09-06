@@ -19,6 +19,8 @@ import com.pixels.Inventario.View.Caja.Devoluciones.AlertDialog.alertCantidadD;
 import com.pixels.Inventario.View.Caja.Devoluciones.AlertDialog.alertbuscarPV;
 import com.pixels.Inventario.View.Caja.Devoluciones.devoluciones;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.text.NumberFormat;
 import java.util.List;
 
@@ -51,12 +53,16 @@ public class alertRecyclerViewAdapterD extends RecyclerView.Adapter<alertRecycle
             holder.cantidadV.setText(""+((int)(Productos.get(position).getCantidadV())));
             holder.cantidadD.setText(""+((int)(Productos.get(position).getCantidadD())));
         }else{
+            BigDecimal bd = new BigDecimal(Productos.get(position).getCantidadV());
+            bd = bd.setScale(3, RoundingMode.HALF_UP);
+            BigDecimal bd1 = new BigDecimal(Productos.get(position).getCantidadD());
+            bd1 = bd1.setScale(3, RoundingMode.HALF_UP);
             if(Productos.get(position).getTipoC().equals("peso")){
-                holder.cantidadV.setText(""+Productos.get(position).getCantidadV()+" Kg");
-                holder.cantidadD.setText(""+Productos.get(position).getCantidadD()+" Kg");
+                holder.cantidadV.setText(""+bd.doubleValue()+" Kg");
+                holder.cantidadD.setText(""+bd1.doubleValue()+" Kg");
             }else{
-                holder.cantidadV.setText(""+Productos.get(position).getCantidadV());
-                holder.cantidadD.setText(""+Productos.get(position).getCantidadD());
+                holder.cantidadV.setText(""+bd.doubleValue());
+                holder.cantidadD.setText(""+bd1.doubleValue());
             }
         }
         if(Productos.get(position).getEstadoDevolucion().equals("si") && (Productos.get(position).getCantidadD()==Productos.get(position).getCantidadV())){

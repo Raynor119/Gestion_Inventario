@@ -8,6 +8,9 @@ import com.pixels.Inventario.Model.Basededatos.SQLite.BaseDatos.BaseDatosSQLite;
 import com.pixels.Inventario.View.Caja.Devoluciones.devoluciones;
 import com.pixels.Inventario.ViewModel.Caja.Devoluciones.RealizarDevolucionViewModel;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class RealizarDevolucionSQLite extends BaseDatosSQLite implements MediadorBaseDatos{
     private devoluciones Context;
     private RealizarDevolucionViewModel ViewModel;
@@ -28,7 +31,9 @@ public class RealizarDevolucionSQLite extends BaseDatosSQLite implements Mediado
         {
             try{
                 for(int i=0;i<Context.Productos.size();i++){
-                    bd.execSQL("UPDATE VentasProductos SET CantidadD="+Context.Productos.get(i).getCantidadD()+",EstadoDevolucion='si', ObservacionD='"+Context.Productos.get(i).getObservacionD()+"' WHERE codigoV="+CodigoV+" AND Id="+Context.Productos.get(i).getId()+"");
+                    BigDecimal bdd = new BigDecimal(Context.Productos.get(i).getCantidadD());
+                    bdd = bdd.setScale(3, RoundingMode.HALF_UP);
+                    bd.execSQL("UPDATE VentasProductos SET CantidadD=CantidadD+"+bdd.doubleValue()+",EstadoDevolucion='si', ObservacionD='"+Context.Productos.get(i).getObservacionD()+"' WHERE codigoV="+CodigoV+" AND Id="+Context.Productos.get(i).getId()+"");
                 }
                 ConsultaBaseDatos();
             }catch (Exception e){

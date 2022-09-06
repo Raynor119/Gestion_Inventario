@@ -33,8 +33,15 @@ public class productoRecyclesViewAdapterD extends RecyclerView.Adapter<productoR
     public void onBindViewHolder(final productoRecyclesViewAdapterD.ViewHolder holder, int position) {
         holder.codigo.setText(""+activity.Productos.get(position).getCodigoP());
         holder.nombre.setText(""+activity.Productos.get(position).getNombre());
-        holder.cantidad.setText(""+activity.Productos.get(position).getCantidadD()+"");
-
+        if(activity.Productos.get(position).getTipoC().equals("unitario")){
+            holder.cantidad.setText(""+((int)activity.Productos.get(position).getCantidadD())+"");
+        }else{
+            if(activity.Productos.get(position).getTipoC().equals("peso")){
+                holder.cantidad.setText(""+activity.Productos.get(position).getCantidadD()+" Kg");
+            }else{
+                holder.cantidad.setText(""+activity.Productos.get(position).getCantidadD()+"");
+            }
+        }
 
         NumberFormat formato= NumberFormat.getNumberInstance();
         holder.precio.setText("$ "+formato.format(activity.Productos.get(position).getPrecioPV()));

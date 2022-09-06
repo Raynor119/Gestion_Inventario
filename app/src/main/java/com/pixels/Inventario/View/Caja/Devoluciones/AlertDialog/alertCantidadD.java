@@ -37,6 +37,9 @@ public class alertCantidadD {
                 builder.setMessage("(La cantidad devuelta no puede ser mayor de "+((int)(cantidadMax))+")");
                 tipoc=true;
             }else{
+                BigDecimal bd = new BigDecimal(cantidadMax);
+                bd = bd.setScale(3, RoundingMode.HALF_UP);
+                cantidadMax=bd.doubleValue();
                 if(Context.ProductosV.get(index).getTipoC().equals("peso")){
                     builder.setMessage("(La cantidad devuelta no puede ser mayor de "+cantidadMax+" Kg)");
                 }else{
@@ -49,6 +52,9 @@ public class alertCantidadD {
                 builder.setMessage("(La cantidad devuelta no puede ser mayor de "+((int)(cantidadMax))+")");
                 tipoc=true;
             }else{
+                BigDecimal bd = new BigDecimal(cantidadMax);
+                bd = bd.setScale(3, RoundingMode.HALF_UP);
+                cantidadMax=bd.doubleValue();
                 if(Context.ProductosV.get(Context.indexProducto).getTipoC().equals("peso")){
                     builder.setMessage("(La cantidad devuelta no puede ser mayor de "+cantidadMax+" Kg)");
                 }else{

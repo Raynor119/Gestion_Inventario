@@ -8,6 +8,8 @@ import com.pixels.Inventario.Model.Basededatos.MYSQL.Conexion;
 import com.pixels.Inventario.Model.Basededatos.MediadorBaseDatos;
 
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
@@ -50,7 +52,9 @@ public class RealizarDevolucionMYSQL extends Conexion implements MediadorBaseDat
             }else{
                 Statement st = connection.createStatement();
                 for(int i=0;i<Context.Productos.size();i++){
-                    st.executeUpdate("UPDATE VentasProductos SET CantidadD="+Context.Productos.get(i).getCantidadD()+",EstadoDevolucion='si', ObservacionD='"+Context.Productos.get(i).getObservacionD()+"' WHERE codigoV="+CodigoV+" AND Id="+Context.Productos.get(i).getId()+"");
+                    BigDecimal bd = new BigDecimal(Context.Productos.get(i).getCantidadD());
+                    bd = bd.setScale(3, RoundingMode.HALF_UP);
+                    st.executeUpdate("UPDATE VentasProductos SET CantidadD=CantidadD+"+bd.doubleValue()+",EstadoDevolucion='si', ObservacionD='"+Context.Productos.get(i).getObservacionD()+"' WHERE codigoV="+CodigoV+" AND Id="+Context.Productos.get(i).getId()+"");
                 }
                 return "";
             }
