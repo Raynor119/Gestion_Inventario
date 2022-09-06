@@ -26,6 +26,7 @@ import com.pixels.Inventario.View.Caja.Devoluciones.AlertDialog.alertCantidadD;
 import com.pixels.Inventario.View.Caja.Devoluciones.AlertDialog.alertDevolucion;
 import com.pixels.Inventario.View.Caja.Devoluciones.AlertDialog.alertbuscarPV;
 import com.pixels.Inventario.View.Caja.Devoluciones.RecyclerViewAdaptador.productoRecyclesViewAdapterD;
+import com.pixels.Inventario.View.Caja.Devoluciones.VerificacionCodigo.VerificarCodigoDP;
 import com.pixels.Inventario.View.Caja.TextWatcher.TextCodigoCaja;
 import com.pixels.Inventario.ViewModel.Caja.Devoluciones.RealizarDevolucionViewModel;
 
@@ -81,7 +82,7 @@ public class devoluciones extends AppCompatActivity {
                             verificarEnter=true;
                         }
                     }else{
-                        boolean vercodigo=false;
+
                         if(Codigo.getText().toString().equals("null")){
                             Codigo.setText("");
                             CCodigo.setError("El codigo no es valido");
@@ -90,67 +91,9 @@ public class devoluciones extends AppCompatActivity {
                             Codigo.requestFocus();
                             i[0]++;
                         }else{
-                            for(int b=0;b<ProductosV.size();b++){
-                                if(ProductosV.get(b).getCodigoP().equals(Codigo.getText().toString())){
-                                    vercodigo=true;
-                                    indexProducto=b;
-                                }
-                            }
+                            VerificarCodigoDP codigo=new VerificarCodigoDP(devoluciones.this);
+                            codigo.verificarcodigo(false);
                         }
-
-                        if(vercodigo){
-                            if(i[0]==0){
-                                i[0]++;
-                                boolean productorepi=false;
-                                int indexP=0;
-                                for (int b=0;b<Productos.size();b++){
-                                    if(Productos.get(b).getCodigoP().equals(ProductosV.get(indexProducto).getCodigoP())){
-                                        productorepi=true;
-                                        indexP=b;
-                                    }
-                                }
-                                if(productorepi){
-                                    int aux=indexProducto;
-                                    indexProducto=indexP;
-                                    indexP=aux;
-                                    verificarEnter=false;
-                                    alertCantidadD alert=new alertCantidadD(devoluciones.this);
-                                    alert.pedirCantidadD(true,indexP);
-                                    Codigo.setText("");
-                                    Codigo.setFocusableInTouchMode(true);
-                                    Codigo.requestFocus();
-                                }else{
-                                    if(ProductosV.get(indexProducto).getEstadoDevolucion().equals("si") && (ProductosV.get(indexProducto).getCantidadD()==ProductosV.get(indexProducto).getCantidadV())){
-                                        verificarEnter=false;
-                                        Codigo.setText("");
-                                        CCodigo.setError("El producto ya ha sido devuelto en su totalidad");
-                                        Codigo.setFocusableInTouchMode(true);
-                                        Codigo.requestFocus();
-                                    }else{
-                                        verificarEnter=false;
-                                        alertCantidadD alert=new alertCantidadD(devoluciones.this);
-                                        alert.pedirCantidadD(false,indexProducto);
-                                        Codigo.setText("");
-                                        Codigo.setFocusableInTouchMode(true);
-                                        Codigo.requestFocus();
-                                    }
-                                }
-                            }else{
-                                i[0]=0;
-                            }
-                        }else{
-                            if(i[0]==0){
-                                i[0]++;
-                                Codigo.setText("");
-                                CCodigo.setError("El Codigo del Producto no esta Registrado en la Venta");
-                                Codigo.setFocusableInTouchMode(true);
-                                verificarEnter=false;
-                                Codigo.requestFocus();
-                            }else{
-                                i[0]=0;
-                            }
-                        }
-
                     }
                     return true;
                 }
@@ -236,61 +179,8 @@ public class devoluciones extends AppCompatActivity {
                     Codigo.requestFocus();
                     i[0]++;
                 }else{
-                    for(int i=0;i<ProductosV.size();i++){
-                        if(ProductosV.get(i).getCodigoP().equals(Codigo.getText().toString())){
-                            vercodigo=true;
-                            indexProducto=i;
-                        }
-                    }
-                }
-
-                if(vercodigo){
-                    if(i[0]==0){
-                        i[0]++;
-                        boolean productorepi=false;
-                        int indexP=0;
-                        for (int b=0;b<Productos.size();b++){
-                            if(Productos.get(b).getCodigoP().equals(ProductosV.get(indexProducto).getCodigoP())){
-                                productorepi=true;
-                                indexP=b;
-                            }
-                        }
-                        if(productorepi){
-                            int aux=indexProducto;
-                            indexProducto=indexP;
-                            indexP=aux;
-                            alertCantidadD alert=new alertCantidadD(devoluciones.this);
-                            alert.pedirCantidadD(true,indexP);
-                            Codigo.setText("");
-                            Codigo.setFocusableInTouchMode(true);
-                            Codigo.requestFocus();
-                        }else{
-                            if(ProductosV.get(indexProducto).getEstadoDevolucion().equals("si")){
-                                Codigo.setText("");
-                                CCodigo.setError("El producto ya ha sido devuelto en su totalidad");
-                                Codigo.setFocusableInTouchMode(true);
-                                Codigo.requestFocus();
-                            }else{
-                                alertCantidadD alert=new alertCantidadD(devoluciones.this);
-                                alert.pedirCantidadD(false,indexProducto);
-                                Codigo.setText("");
-                                Codigo.setFocusableInTouchMode(true);
-                                Codigo.requestFocus();
-                            }
-                        }
-                    }else{
-                        i[0]=0;
-                    }
-                }else{
-                    if(i[0]==0){
-                        i[0]++;
-                        Codigo.setText("");
-                        CCodigo.setError("El Codigo del Producto no esta Registrado en la Venta");
-                        Codigo.setFocusableInTouchMode(true);
-                        Codigo.requestFocus();
-                    }else{
-                        i[0]=0;
-                    }
+                    VerificarCodigoDP codigo=new VerificarCodigoDP(devoluciones.this);
+                    codigo.verificarcodigo(true);
                 }
             }else{
                 CCodigo.setError("Error al escanear el código de barras");
