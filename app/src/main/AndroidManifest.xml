@@ -20,7 +20,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".VerVentas"
+            android:name=".View.Gestion_Ventas.VerVentas"
             android:exported="false" />
 
         <provider

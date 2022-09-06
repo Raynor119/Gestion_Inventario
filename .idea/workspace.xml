@@ -21,13 +21,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v39.5.1 arreglo en el model verificaciones de codigos caja">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/VerVentas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_ver_ventas.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" afterDir="false" />
+    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v40 inicigo de la funcionalidad de gestion de ventas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -390,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662503831086</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="copia de seguridad v40 inicigo de la funcionalidad de gestion de ventas">
+      <created>1662504229400</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1662504229400</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -409,7 +412,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="copia de seguridad v38 arreglo en devoluciones" />
     <MESSAGE value="copia de seguridad v38.1 arreglo en devoluciones" />
     <MESSAGE value="copia de seguridad v38.2 arreglo en devoluciones" />
     <MESSAGE value="copia de seguridad v38.2.1 arreglo en devoluciones" />
@@ -434,6 +436,7 @@
     <MESSAGE value="copia de seguridad v39.4 arreglo en el model verificaciones de codigos mysql" />
     <MESSAGE value="copia de seguridad v39.5 arreglo en el model verificaciones de codigos caja" />
     <MESSAGE value="copia de seguridad v39.5.1 arreglo en el model verificaciones de codigos caja" />
-    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v39.5.1 arreglo en el model verificaciones de codigos caja" />
+    <MESSAGE value="copia de seguridad v40 inicigo de la funcionalidad de gestion de ventas" />
+    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v40 inicigo de la funcionalidad de gestion de ventas" />
   </component>
 </project>
