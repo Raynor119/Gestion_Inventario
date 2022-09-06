@@ -53,7 +53,7 @@ public class VerificarCodigoMYSQL extends Conexion implements MediadorBaseDatos 
                 return "Error en la conexion";
             }else{
                 Statement st = connection.createStatement();
-                ResultSet rs = st.executeQuery("SELECT * FROM Producto");
+                ResultSet rs = st.executeQuery("SELECT * FROM Producto WHERE codigo='"+Codigo+"'");
                 productos=new ArrayList<>();
                 while (rs.next()) {
                     productos.add(new Producto(rs.getString(1),rs.getString(2),rs.getDouble(3),rs.getString(4),rs.getInt(5),rs.getInt(6),rs.getInt(7)));
@@ -79,11 +79,9 @@ public class VerificarCodigoMYSQL extends Conexion implements MediadorBaseDatos 
     }
     @Override
     public void ConsultaBaseDatos() {
-        boolean verificar=true;
-        for(int i=0;i<productos.size();i++){
-            if(productos.get(i).getCodigo().equals(Codigo)){
-                verificar=false;
-            }
+        boolean verificar=false;
+        if(productos.size()==0){
+            verificar=true;
         }
         ViewModel.resultado.setValue(verificar);
     }

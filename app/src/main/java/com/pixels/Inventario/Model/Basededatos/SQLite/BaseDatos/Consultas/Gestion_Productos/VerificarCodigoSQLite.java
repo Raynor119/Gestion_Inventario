@@ -32,7 +32,7 @@ public class VerificarCodigoSQLite extends BaseDatosSQLite implements MediadorBa
     public List<Producto> DatosProductos(){
         List<Producto> datos=new ArrayList<>();
         SQLiteDatabase bd=getReadableDatabase();
-        Cursor cursor=bd.rawQuery("SELECT * FROM Producto",null);
+        Cursor cursor=bd.rawQuery("SELECT * FROM Producto WHERE codigo='"+Codigo+"'",null);
         if(cursor.moveToFirst()){
             do{
                 datos.add(new Producto(cursor.getString(0),cursor.getString(1),cursor.getDouble(2),cursor.getString(3),cursor.getInt(4),cursor.getInt(5),cursor.getInt(6)));
@@ -42,12 +42,10 @@ public class VerificarCodigoSQLite extends BaseDatosSQLite implements MediadorBa
     }
     @Override
     public void ConsultaBaseDatos() {
-        boolean verificar=true;
+        boolean verificar=false;
         List<Producto> productos=DatosProductos();
-        for(int i=0;i<productos.size();i++){
-            if(productos.get(i).getCodigo().equals(Codigo)){
-                verificar=false;
-            }
+        if(productos.size()==0){
+                verificar=true;
         }
         ViewModel.resultado.setValue(verificar);
     }
