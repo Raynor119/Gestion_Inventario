@@ -30,13 +30,24 @@
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:toolbarId="@+id/toolbar">
-
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/detail_toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/cargar"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="50dp"
+                    android:src="@mipmap/cargat_adaptive_fore"
+                    android:layout_height="50dp">
+                </ImageView>
+            </LinearLayout>
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 
@@ -64,17 +75,5 @@
             android:layout_margin="15dp"
             app:layout_anchorGravity="top|end"
             app:srcCompat="@mipmap/mas_adaptive_fore" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:gravity="right"
-        android:layout_height="match_parent">
-        <ImageView
-            android:id="@+id/cargar"
-            android:layout_marginRight="10dp"
-            android:layout_width="50dp"
-            android:src="@mipmap/cargat_adaptive_fore"
-            android:layout_height="50dp">
-        </ImageView>
     </LinearLayout>
 </RelativeLayout>
