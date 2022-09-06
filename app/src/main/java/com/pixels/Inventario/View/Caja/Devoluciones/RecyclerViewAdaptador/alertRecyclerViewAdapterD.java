@@ -47,8 +47,18 @@ public class alertRecyclerViewAdapterD extends RecyclerView.Adapter<alertRecycle
         holder.nombre.setText(""+Productos.get(position).getNombre());
         NumberFormat formato= NumberFormat.getNumberInstance();
         holder.titulo.setText("Total: ");
-        holder.cantidadV.setText(""+Productos.get(position).getCantidadV());
-        holder.cantidadD.setText(""+Productos.get(position).getCantidadD());
+        if(Productos.get(position).getTipoC().equals("unitario")){
+            holder.cantidadV.setText(""+((int)(Productos.get(position).getCantidadV())));
+            holder.cantidadD.setText(""+((int)(Productos.get(position).getCantidadD())));
+        }else{
+            if(Productos.get(position).getTipoC().equals("peso")){
+                holder.cantidadV.setText(""+Productos.get(position).getCantidadV()+" Kg");
+                holder.cantidadD.setText(""+Productos.get(position).getCantidadD()+" Kg");
+            }else{
+                holder.cantidadV.setText(""+Productos.get(position).getCantidadV());
+                holder.cantidadD.setText(""+Productos.get(position).getCantidadD());
+            }
+        }
         if(Productos.get(position).getEstadoDevolucion().equals("si") && (Productos.get(position).getCantidadD()==Productos.get(position).getCantidadV())){
             holder.titulo.setText("");
             holder.precio.setText(" Ya todo se Devolvio");
@@ -57,7 +67,6 @@ public class alertRecyclerViewAdapterD extends RecyclerView.Adapter<alertRecycle
         }else {
             holder.precio.setText("$ "+formato.format(Productos.get(position).getPrecioPV()*Productos.get(position).getCantidadV()));
         }
-        //modificar tipo c
         int positionn=position;
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
