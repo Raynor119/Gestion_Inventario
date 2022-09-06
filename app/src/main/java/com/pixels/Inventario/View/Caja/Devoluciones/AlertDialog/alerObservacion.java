@@ -39,6 +39,11 @@ public class alerObservacion {
         TextCodigoCaja verificarC=new TextCodigoCaja(Context);
         if(verifi){
             observacion.setText(Context.Productos.get(Context.indexProducto).getObservacionD());
+        }else{
+            // si ya a sido devuelto se colocara las observaciones que se dieron en la anterior devolucion
+            if(Context.ProductosV.get(Context.indexProducto).getEstadoDevolucion().equals("si")){
+                observacion.setText(Context.ProductosV.get(Context.indexProducto).getObservacionD());
+            }
         }
         observacion.addTextChangedListener(verificarC.codigo(observacion,CObservacion));
         buton.setOnClickListener(new View.OnClickListener() {
