@@ -16,6 +16,8 @@ import com.pixels.Inventario.View.Ajustes.Ajustes;
 import com.pixels.Inventario.View.Caja.Caja;
 import com.pixels.Inventario.View.Gestion_Productos.Fragment.VerInventarioFragment;
 import com.pixels.Inventario.View.Gestion_Productos.VerInventario;
+import com.pixels.Inventario.View.Gestion_Ventas.Fragment.VerVentasFragment;
+import com.pixels.Inventario.View.Gestion_Ventas.VerVentas;
 import com.pixels.Inventario.View.Menu_Inicio.MenuInicio;
 
 import java.util.List;
@@ -26,6 +28,7 @@ public class SimpleItemRecyclerViewAdapter extends RecyclerView.Adapter<SimpleIt
     private final List<OpcionesContent> mValues;
     private final boolean mTwoPane;
     private VerInventarioFragment fragment;
+    private VerVentasFragment fragment1;
     private final View.OnClickListener mOnClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
@@ -48,7 +51,16 @@ public class SimpleItemRecyclerViewAdapter extends RecyclerView.Adapter<SimpleIt
                 }
             }
             if(Id==3){
-
+                if (mTwoPane) {
+                    fragment1 = new VerVentasFragment(mParentActivity);
+                    mParentActivity.getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.opcion_detail_container, fragment1)
+                            .commit();
+                } else {
+                    Context context = view.getContext();
+                    Intent intent = new Intent(context, VerVentas.class);
+                    context.startActivity(intent);
+                }
             }
             if(Id==4){
                 Context context = view.getContext();

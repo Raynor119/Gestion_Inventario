@@ -21,8 +21,8 @@
         android:theme="@style/Theme.MyApplication">
         <activity
             android:name=".View.Gestion_Ventas.VerVentas"
+            android:theme="@style/Theme.MyApplication.NoActionBar"
             android:exported="false" />
-
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.pixels.Inventario.fileprovider"
