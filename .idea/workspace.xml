@@ -21,16 +21,20 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v40 inicigo de la funcionalidad de gestion de ventas">
+    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v40.1 inicigo de la funcionalidad de gestion de ventas arreglo en el manifest">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/Fragment/VerVentasFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_ver_ventas.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/VerVentas.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/VerVentas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_ver_ventas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_ver_ventas.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[127.0.0.1:58526]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -39,8 +43,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="layoutResourceFile" />
         <option value="Class" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -393,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662504229400</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="copia de seguridad v40.1 inicigo de la funcionalidad de gestion de ventas arreglo en el manifest">
+      <created>1662504287264</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1662504287264</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -412,7 +423,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="copia de seguridad v38.1 arreglo en devoluciones" />
     <MESSAGE value="copia de seguridad v38.2 arreglo en devoluciones" />
     <MESSAGE value="copia de seguridad v38.2.1 arreglo en devoluciones" />
     <MESSAGE value="copia de seguridad v38.2.1.1 arreglo en devoluciones" />
@@ -437,6 +447,7 @@
     <MESSAGE value="copia de seguridad v39.5 arreglo en el model verificaciones de codigos caja" />
     <MESSAGE value="copia de seguridad v39.5.1 arreglo en el model verificaciones de codigos caja" />
     <MESSAGE value="copia de seguridad v40 inicigo de la funcionalidad de gestion de ventas" />
-    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v40 inicigo de la funcionalidad de gestion de ventas" />
+    <MESSAGE value="copia de seguridad v40.1 inicigo de la funcionalidad de gestion de ventas arreglo en el manifest" />
+    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v40.1 inicigo de la funcionalidad de gestion de ventas arreglo en el manifest" />
   </component>
 </project>
