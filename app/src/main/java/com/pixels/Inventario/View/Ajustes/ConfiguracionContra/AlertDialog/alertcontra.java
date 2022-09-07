@@ -87,6 +87,10 @@ public class alertcontra {
                        if(cont.getText().toString().equals(contrasena)){
                            EliminarContraViewModel eliminar=ViewModelProviders.of(Context).get(EliminarContraViewModel.class);
                            eliminar.Eliminarcontra(Context);
+                           SharedPreferences myPreferences = PreferenceManager.getDefaultSharedPreferences(Context.Context);
+                           SharedPreferences.Editor myEditor = myPreferences.edit();
+                           myEditor.putBoolean("bloqueoA", false);
+                           myEditor.commit();
                            Context.Context.reiniciarRecyclerView();
                            Context.finish();
                        }else{

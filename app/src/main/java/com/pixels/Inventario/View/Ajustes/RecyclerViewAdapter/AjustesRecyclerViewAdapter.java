@@ -6,8 +6,10 @@ import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.preference.PreferenceManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -27,6 +29,7 @@ import java.util.List;
 public class AjustesRecyclerViewAdapter extends RecyclerView.Adapter<AjustesRecyclerViewAdapter.ViewHolder> {
     private final Ajustes mParentActivity;
     private final List<AjustesContent> mValues;
+
     private final View.OnClickListener mOnClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
@@ -70,6 +73,19 @@ public class AjustesRecyclerViewAdapter extends RecyclerView.Adapter<AjustesRecy
             if(Id==7){
                 alertModificarDatos modatos=new alertModificarDatos(mParentActivity);
                 modatos.PreguntaModificarDatos();
+            }
+            if(Id==8){
+                SharedPreferences myPreferences = PreferenceManager.getDefaultSharedPreferences(mParentActivity);
+                boolean bloqueo = myPreferences.getBoolean("bloqueoA",false);
+                SharedPreferences.Editor myEditor = myPreferences.edit();
+                if(bloqueo){
+                    myEditor.putBoolean("bloqueoA", false);
+                    myEditor.commit();
+                }else{
+                    myEditor.putBoolean("bloqueoA", true);
+                    myEditor.commit();
+                }
+                mParentActivity.reiniciarRecyclerView();
             }
         }
     };

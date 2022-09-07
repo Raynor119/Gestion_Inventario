@@ -2464,6 +2464,7 @@ int layout activity_inicio 0x7f0b0025
 int layout activity_inventario_productos 0x7f0b0026
 int layout activity_menuinicio 0x7f0b0027
 int layout activity_ver_factura 0x7f0b0028
+int layout activity_ver_ventas 0x7f0b00b3
 int layout ajustes_list_content 0x7f0b0029
 int layout alertcambiobasedatos 0x7f0b002a
 int layout alertcantidadd 0x7f0b002b
@@ -2499,6 +2500,7 @@ int layout fragment_inicio_blanco 0x7f0b0048
 int layout fragment_inventario_productos 0x7f0b0049
 int layout fragment_modificarcontra 0x7f0b004a
 int layout fragment_registrar_base_datos 0x7f0b004b
+int layout fragment_ver_ventas 0x7f0b00b4
 int layout image_frame 0x7f0b004c
 int layout material_chip_input_combo 0x7f0b004d
 int layout material_clock_display 0x7f0b004e

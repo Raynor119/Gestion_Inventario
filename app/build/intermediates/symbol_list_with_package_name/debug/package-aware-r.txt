@@ -2465,6 +2465,7 @@ layout activity_inicio
 layout activity_inventario_productos
 layout activity_menuinicio
 layout activity_ver_factura
+layout activity_ver_ventas
 layout ajustes_list_content
 layout alertcambiobasedatos
 layout alertcantidadd
@@ -2500,6 +2501,7 @@ layout fragment_inicio_blanco
 layout fragment_inventario_productos
 layout fragment_modificarcontra
 layout fragment_registrar_base_datos
+layout fragment_ver_ventas
 layout image_frame
 layout material_chip_input_combo
 layout material_clock_display

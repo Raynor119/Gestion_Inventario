@@ -5,11 +5,11 @@
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
-7-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:6:5-72
+7-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:6:5-73
 8        android:minSdkVersion="23"
-8-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:6:5-72
+8-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:6:5-73
 9        android:targetSdkVersion="32" />
-9-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:6:5-72
+9-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:6:5-73
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
 11-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:8:5-67
@@ -65,15 +65,15 @@
 34-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:44:9-33
 35
 36    <application
-36-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:14:5-102:19
+36-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:13:5-105:19
 37        android:allowBackup="true"
-37-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:15:9-35
+37-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:14:9-35
 38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 38-->[androidx.core:core:1.7.0] C:\Users\saibo\.gradle\caches\transforms-3\90c70f0e9b779f3812f40b7c13ccdef6\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 39        android:debuggable="true"
 40        android:extractNativeLibs="false"
 41        android:grantUriPermissions="true"
-41-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:20:9-43
+41-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:15:9-43
 42        android:hardwareAccelerated="true"
 42-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:16:9-43
 43        android:icon="@mipmap/iconic"
@@ -83,190 +83,198 @@
 45        android:resizeableActivity="true"
 45-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:19:9-42
 46        android:supportsRtl="true"
-46-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:21:9-35
+46-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:20:9-35
 47        android:testOnly="true"
 48        android:theme="@style/Theme.MyApplication" >
-48-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:22:9-51
-49        <provider
-49-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:23:9-31:20
-50            android:name="androidx.core.content.FileProvider"
-50-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:24:13-62
-51            android:authorities="com.pixels.Inventario.fileprovider"
-51-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:25:13-69
-52            android:exported="false"
-52-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:26:13-37
-53            android:grantUriPermissions="true" >
-53-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:27:13-47
-54            <meta-data
-54-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:28:13-30:53
-55                android:name="android.support.FILE_PROVIDER_PATHS"
-55-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:29:17-67
-56                android:resource="@xml/filepaths" />
-56-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:30:17-50
-57        </provider>
-58
-59        <activity
-59-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:32:9-35:39
-60            android:name="com.pixels.Inventario.View.Caja.Devoluciones.devoluciones"
-60-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:33:13-64
-61            android:exported="false"
-61-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:35:13-37
-62            android:theme="@style/Theme.MyApplication.NoActionBar" />
-62-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:34:13-67
-63        <activity
-63-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:36:9-39:20
-64            android:name="com.pixels.Inventario.View.Caja.Factura.VerFactura"
-64-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:37:13-57
-65            android:exported="false" >
-65-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:38:13-37
-66        </activity>
-67        <activity
-67-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:40:9-43:70
-68            android:name="com.pixels.Inventario.View.Caja.Caja"
-68-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:41:13-43
-69            android:exported="false"
-69-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:42:13-37
-70            android:theme="@style/Theme.MyApplication.NoActionBar" />
-70-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:43:13-67
+48-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:21:9-51
+49        <activity
+49-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:22:9-25:40
+50            android:name="com.pixels.Inventario.View.Gestion_Ventas.VerVentas"
+50-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:23:13-58
+51            android:exported="false"
+51-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:25:13-37
+52            android:theme="@style/Theme.MyApplication.NoActionBar" />
+52-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:24:13-67
+53
+54        <provider
+54-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:26:9-34:20
+55            android:name="androidx.core.content.FileProvider"
+55-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:27:13-62
+56            android:authorities="com.pixels.Inventario.fileprovider"
+56-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:28:13-69
+57            android:exported="false"
+57-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:29:13-37
+58            android:grantUriPermissions="true" >
+58-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:30:13-47
+59            <meta-data
+59-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:31:13-33:53
+60                android:name="android.support.FILE_PROVIDER_PATHS"
+60-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:32:17-67
+61                android:resource="@xml/filepaths" />
+61-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:33:17-50
+62        </provider>
+63
+64        <activity
+64-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:36:9-39:70
+65            android:name="com.pixels.Inventario.View.Caja.Devoluciones.devoluciones"
+65-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:37:13-64
+66            android:exported="false"
+66-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:38:13-37
+67            android:theme="@style/Theme.MyApplication.NoActionBar" />
+67-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:39:13-67
+68        <activity
+68-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:40:9-42:49
+69            android:name="com.pixels.Inventario.View.Caja.Factura.VerFactura"
+69-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:41:13-57
+70            android:exported="false" />
+70-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:42:13-37
 71        <activity
-71-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:44:9-47:70
-72            android:name="com.pixels.Inventario.View.Gestion_Productos.EditarProductos.EditarProducto"
-72-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:45:13-82
+71-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:43:9-46:70
+72            android:name="com.pixels.Inventario.View.Caja.Caja"
+72-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:44:13-43
 73            android:exported="false"
-73-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:46:13-37
+73-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:45:13-37
 74            android:theme="@style/Theme.MyApplication.NoActionBar" />
-74-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:47:13-67
+74-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:46:13-67
 75        <activity
-75-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:48:9-51:70
-76            android:name="com.pixels.Inventario.View.Gestion_Productos.AgregarProductos.AgregarProductos"
-76-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:49:13-85
+75-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:47:9-50:70
+76            android:name="com.pixels.Inventario.View.Gestion_Productos.EditarProductos.EditarProducto"
+76-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:48:13-82
 77            android:exported="false"
-77-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:50:13-37
+77-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:49:13-37
 78            android:theme="@style/Theme.MyApplication.NoActionBar" />
-78-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:51:13-67
+78-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:50:13-67
 79        <activity
-79-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:52:9-55:70
-80            android:name="com.pixels.Inventario.View.Ajustes.ConfiguracionBaseDatos.CrearBaseDatosMYSQL"
-80-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:53:13-84
+79-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:51:9-54:70
+80            android:name="com.pixels.Inventario.View.Gestion_Productos.AgregarProductos.AgregarProductos"
+80-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:52:13-85
 81            android:exported="false"
-81-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:54:13-37
+81-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:53:13-37
 82            android:theme="@style/Theme.MyApplication.NoActionBar" />
-82-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:55:13-67
-83        <activity android:name="com.pixels.Inventario.View.Ajustes.ExportarDatos.ExportarDatos" >
-83-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:56:9-60:20
-83-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:56:19-75
-84            <meta-data
-84-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:57:13-59:57
-85                android:name="android.support.PARENT_ACTIVITY"
-85-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:58:17-63
-86                android:value=".View.Ajustes.Ajustes" />
-86-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:59:17-54
-87        </activity>
-88        <activity android:name="com.pixels.Inventario.View.Ajustes.ImportarDatos.ImportarDatos" >
-88-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:61:9-65:20
-88-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:61:19-75
-89            <meta-data
-89-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:57:13-59:57
-90                android:name="android.support.PARENT_ACTIVITY"
-90-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:58:17-63
-91                android:value=".View.Ajustes.Ajustes" />
-91-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:59:17-54
-92        </activity>
-93        <activity
-93-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:66:9-69:70
-94            android:name="com.pixels.Inventario.View.Ajustes.ConfiguracionBaseDatos.cambiarMySQL"
-94-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:67:13-77
-95            android:exported="false"
-95-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:68:13-37
-96            android:theme="@style/Theme.MyApplication.NoActionBar" />
-96-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:69:13-67
-97        <activity android:name="com.pixels.Inventario.View.Ajustes.ConfiguracionContra.configContra" >
-97-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:70:9-74:20
-97-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:70:19-80
-98            <meta-data
-98-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:57:13-59:57
-99                android:name="android.support.PARENT_ACTIVITY"
-99-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:58:17-63
-100                android:value=".View.Ajustes.Ajustes" />
-100-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:59:17-54
-101        </activity>
-102        <activity
-102-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:75:9-77:70
-103            android:name="com.pixels.Inventario.View.Ajustes.Ajustes"
-103-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:76:13-49
-104            android:theme="@style/Theme.MyApplication.NoActionBar" />
-104-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:77:13-67
-105        <activity
-105-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:78:9-80:70
-106            android:name="com.pixels.Inventario.View.Menu_Inicio.MenuInicio"
-106-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:79:13-56
-107            android:theme="@style/Theme.MyApplication.NoActionBar" />
-107-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:80:13-67
-108        <activity
-108-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:81:9-88:20
-109            android:name="com.pixels.Inventario.View.Gestion_Productos.VerInventario"
-109-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:82:13-65
-110            android:parentActivityName="com.pixels.Inventario.View.Menu_Inicio.MenuInicio"
-110-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:83:13-70
-111            android:theme="@style/Theme.MyApplication.NoActionBar" >
-111-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:84:13-67
-112            <meta-data
-112-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:57:13-59:57
-113                android:name="android.support.PARENT_ACTIVITY"
-113-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:58:17-63
-114                android:value=".View.Menu_Inicio.MenuInicio" />
-114-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:59:17-54
-115        </activity>
-116        <activity
-116-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:89:9-91:40
-117            android:name="com.pixels.Inventario.View.InicioA.Configuracion_Inicial.configuracionI"
-117-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:90:13-78
-118            android:exported="false" />
-118-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:91:13-37
-119        <activity
-119-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:92:9-101:20
-120            android:name="com.pixels.Inventario.View.InicioA.Inicio"
-120-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:93:13-48
-121            android:exported="true"
-121-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:94:13-36
-122            android:theme="@style/Theme.MyApplication.NoActionBar" >
-122-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:95:13-67
-123            <intent-filter>
-123-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:96:13-100:29
-124                <action android:name="android.intent.action.MAIN" />
-124-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:97:17-69
-124-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:97:25-66
-125
-126                <category android:name="android.intent.category.LAUNCHER" />
-126-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:99:17-77
-126-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:99:27-74
-127            </intent-filter>
-128        </activity>
-129        <activity
-129-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:47:9-53:63
-130            android:name="com.journeyapps.barcodescanner.CaptureActivity"
-130-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:48:13-74
-131            android:clearTaskOnLaunch="true"
-131-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:49:13-45
-132            android:screenOrientation="sensorLandscape"
-132-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:50:13-56
-133            android:stateNotNeeded="true"
-133-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:51:13-42
-134            android:theme="@style/zxing_CaptureTheme"
-134-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:52:13-54
-135            android:windowSoftInputMode="stateAlwaysHidden" />
-135-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:53:13-60
-136
-137        <provider
-137-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\saibo\.gradle\caches\transforms-3\9ae512f0c9cb413ecc503703ea68a535\transformed\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
-138            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-138-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\saibo\.gradle\caches\transforms-3\9ae512f0c9cb413ecc503703ea68a535\transformed\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
-139            android:authorities="com.pixels.Inventario.lifecycle-process"
-139-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\saibo\.gradle\caches\transforms-3\9ae512f0c9cb413ecc503703ea68a535\transformed\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
-140            android:exported="false"
-140-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\saibo\.gradle\caches\transforms-3\9ae512f0c9cb413ecc503703ea68a535\transformed\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
-141            android:multiprocess="true" />
-141-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\saibo\.gradle\caches\transforms-3\9ae512f0c9cb413ecc503703ea68a535\transformed\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
-142    </application>
-143
-144</manifest>
+82-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:54:13-67
+83        <activity
+83-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:55:9-58:70
+84            android:name="com.pixels.Inventario.View.Ajustes.ConfiguracionBaseDatos.CrearBaseDatosMYSQL"
+84-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:56:13-84
+85            android:exported="false"
+85-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:57:13-37
+86            android:theme="@style/Theme.MyApplication.NoActionBar" />
+86-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:58:13-67
+87        <activity android:name="com.pixels.Inventario.View.Ajustes.ExportarDatos.ExportarDatos" >
+87-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:59:9-63:20
+87-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:59:19-75
+88            <meta-data
+88-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:60:13-62:57
+89                android:name="android.support.PARENT_ACTIVITY"
+89-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:61:17-63
+90                android:value=".View.Ajustes.Ajustes" />
+90-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:62:17-54
+91        </activity>
+92        <activity android:name="com.pixels.Inventario.View.Ajustes.ImportarDatos.ImportarDatos" >
+92-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:64:9-68:20
+92-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:64:19-75
+93            <meta-data
+93-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:60:13-62:57
+94                android:name="android.support.PARENT_ACTIVITY"
+94-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:61:17-63
+95                android:value=".View.Ajustes.Ajustes" />
+95-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:62:17-54
+96        </activity>
+97        <activity
+97-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:69:9-72:70
+98            android:name="com.pixels.Inventario.View.Ajustes.ConfiguracionBaseDatos.cambiarMySQL"
+98-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:70:13-77
+99            android:exported="false"
+99-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:71:13-37
+100            android:theme="@style/Theme.MyApplication.NoActionBar" />
+100-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:72:13-67
+101        <activity android:name="com.pixels.Inventario.View.Ajustes.ConfiguracionContra.configContra" >
+101-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:73:9-77:20
+101-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:73:19-80
+102            <meta-data
+102-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:60:13-62:57
+103                android:name="android.support.PARENT_ACTIVITY"
+103-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:61:17-63
+104                android:value=".View.Ajustes.Ajustes" />
+104-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:62:17-54
+105        </activity>
+106        <activity
+106-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:78:9-80:70
+107            android:name="com.pixels.Inventario.View.Ajustes.Ajustes"
+107-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:79:13-49
+108            android:theme="@style/Theme.MyApplication.NoActionBar" />
+108-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:80:13-67
+109        <activity
+109-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:81:9-83:70
+110            android:name="com.pixels.Inventario.View.Menu_Inicio.MenuInicio"
+110-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:82:13-56
+111            android:theme="@style/Theme.MyApplication.NoActionBar" />
+111-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:83:13-67
+112        <activity
+112-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:84:9-91:20
+113            android:name="com.pixels.Inventario.View.Gestion_Productos.VerInventario"
+113-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:85:13-65
+114            android:parentActivityName="com.pixels.Inventario.View.Menu_Inicio.MenuInicio"
+114-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:86:13-70
+115            android:theme="@style/Theme.MyApplication.NoActionBar" >
+115-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:87:13-67
+116            <meta-data
+116-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:60:13-62:57
+117                android:name="android.support.PARENT_ACTIVITY"
+117-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:61:17-63
+118                android:value=".View.Menu_Inicio.MenuInicio" />
+118-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:62:17-54
+119        </activity>
+120        <activity
+120-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:92:9-94:40
+121            android:name="com.pixels.Inventario.View.InicioA.Configuracion_Inicial.configuracionI"
+121-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:93:13-78
+122            android:exported="false" />
+122-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:94:13-37
+123        <activity
+123-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:95:9-104:20
+124            android:name="com.pixels.Inventario.View.InicioA.Inicio"
+124-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:96:13-48
+125            android:exported="true"
+125-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:97:13-36
+126            android:theme="@style/Theme.MyApplication.NoActionBar" >
+126-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:98:13-67
+127            <intent-filter>
+127-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:99:13-103:29
+128                <action android:name="android.intent.action.MAIN" />
+128-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:100:17-69
+128-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:100:25-66
+129
+130                <category android:name="android.intent.category.LAUNCHER" />
+130-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:102:17-77
+130-->C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:102:27-74
+131            </intent-filter>
+132        </activity>
+133        <activity
+133-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:47:9-53:63
+134            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+134-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:48:13-74
+135            android:clearTaskOnLaunch="true"
+135-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:49:13-45
+136            android:screenOrientation="sensorLandscape"
+136-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:50:13-56
+137            android:stateNotNeeded="true"
+137-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:51:13-42
+138            android:theme="@style/zxing_CaptureTheme"
+138-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:52:13-54
+139            android:windowSoftInputMode="stateAlwaysHidden" />
+139-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:53:13-60
+140
+141        <provider
+141-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\saibo\.gradle\caches\transforms-3\9ae512f0c9cb413ecc503703ea68a535\transformed\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+142            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+142-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\saibo\.gradle\caches\transforms-3\9ae512f0c9cb413ecc503703ea68a535\transformed\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+143            android:authorities="com.pixels.Inventario.lifecycle-process"
+143-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\saibo\.gradle\caches\transforms-3\9ae512f0c9cb413ecc503703ea68a535\transformed\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+144            android:exported="false"
+144-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\saibo\.gradle\caches\transforms-3\9ae512f0c9cb413ecc503703ea68a535\transformed\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+145            android:multiprocess="true" />
+145-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\saibo\.gradle\caches\transforms-3\9ae512f0c9cb413ecc503703ea68a535\transformed\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+146    </application>
+147
+148</manifest>
