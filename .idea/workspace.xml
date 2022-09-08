@@ -21,44 +21,48 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v41.1 agregacion de bloqueo de administrador">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Ajustes/AlertDialog/AlertContrasenaB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/alertdialogcontrab.xml" afterDir="false" />
+    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v41.2.1 alert en ajustes bloqueo">
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/apk/debug/app-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/14/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/14/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/2/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/2/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/out" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/9/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/9/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Ajustes/Ajustes$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Ajustes/Ajustes$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Ajustes/Ajustes.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Ajustes/Ajustes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/layout_alertdialogcontra.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/layout_alertdialogcontra.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/666d7dbb96862a27fea56fbe92bdad3113106948103b5bd8cc6d1e1fec739b34_0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/666d7dbb96862a27fea56fbe92bdad3113106948103b5bd8cc6d1e1fec739b34_1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/666d7dbb96862a27fea56fbe92bdad3113106948103b5bd8cc6d1e1fec739b34_2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/666d7dbb96862a27fea56fbe92bdad3113106948103b5bd8cc6d1e1fec739b34_3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Ajustes/AlertDialog/AlertContrasenaB$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Ajustes/AlertDialog/AlertContrasenaB$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Ajustes/AlertDialog/AlertContrasenaB$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Ajustes/AlertDialog/AlertContrasenaB$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Ajustes/AlertDialog/AlertContrasenaB.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Ajustes/AlertDialog/AlertContrasenaB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Productos/Fragment/VerInventarioFragment$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Productos/Fragment/VerInventarioFragment$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Productos/Fragment/VerInventarioFragment$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Productos/Fragment/VerInventarioFragment$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Productos/Fragment/VerInventarioFragment$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Productos/Fragment/VerInventarioFragment$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Productos/Fragment/VerInventarioFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Productos/Fragment/VerInventarioFragment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Productos/VerInventario$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Productos/VerInventario$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Productos/VerInventario.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Productos/VerInventario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Menu_Inicio/RecyclerViewAdaptador/SimpleItemRecyclerViewAdapter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Menu_Inicio/RecyclerViewAdaptador/SimpleItemRecyclerViewAdapter$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Ajustes/Ajustes$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Ajustes/Ajustes$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Ajustes/Ajustes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Ajustes/Ajustes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/stable_resource_ids_file/debug/stableIds.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/stable_resource_ids_file/debug/stableIds.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Ajustes/AlertDialog/AlertContrasenaB$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Ajustes/AlertDialog/AlertContrasenaB$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Ajustes/AlertDialog/AlertContrasenaB$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Ajustes/AlertDialog/AlertContrasenaB$2.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Ajustes/AlertDialog/AlertContrasenaB.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Ajustes/AlertDialog/AlertContrasenaB.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Productos/Fragment/VerInventarioFragment$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Productos/Fragment/VerInventarioFragment$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Productos/Fragment/VerInventarioFragment$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Productos/Fragment/VerInventarioFragment$2.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Productos/Fragment/VerInventarioFragment$3.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Productos/Fragment/VerInventarioFragment$3.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Productos/Fragment/VerInventarioFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Productos/Fragment/VerInventarioFragment.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Productos/VerInventario$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Productos/VerInventario$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Productos/VerInventario.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Productos/VerInventario.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Menu_Inicio/RecyclerViewAdaptador/SimpleItemRecyclerViewAdapter$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Menu_Inicio/RecyclerViewAdaptador/SimpleItemRecyclerViewAdapter$1.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Ajustes/Ajustes.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Ajustes/Ajustes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/alertdialogcontra.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/alertdialogcontra.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Ajustes/AlertDialog/AlertContrasenaB.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Ajustes/AlertDialog/AlertContrasenaB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Productos/Fragment/VerInventarioFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Productos/Fragment/VerInventarioFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Menu_Inicio/RecyclerViewAdaptador/SimpleItemRecyclerViewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Menu_Inicio/RecyclerViewAdaptador/SimpleItemRecyclerViewAdapter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -463,7 +467,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662529263342</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="copia de seguridad v41.2 alert en ajustes bloqueo">
+      <created>1662612855530</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1662612855530</updated>
+    </task>
+    <task id="LOCAL-00043" summary="copia de seguridad v41.2.1 alert en ajustes bloqueo">
+      <created>1662612865598</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1662612865598</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -482,8 +500,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="copia de seguridad v38.2.1.1.1.1 arreglo en devoluciones" />
-    <MESSAGE value="copia de seguridad v38.2.2 arreglo en devoluciones" />
     <MESSAGE value="copia de seguridad v38.2.2.1 arreglo de errores en caja alertpeso" />
     <MESSAGE value="copia de seguridad v38.3 arreglo de devoluciones" />
     <MESSAGE value="copia de seguridad v38.3.2 arreglo de devoluciones" />
@@ -507,6 +523,8 @@
     <MESSAGE value="copia de seguridad v40.3 activity creado" />
     <MESSAGE value="copia de seguridad v41 agregacion de bloqueo de administrador" />
     <MESSAGE value="copia de seguridad v41.1 agregacion de bloqueo de administrador" />
-    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v41.1 agregacion de bloqueo de administrador" />
+    <MESSAGE value="copia de seguridad v41.2 alert en ajustes bloqueo" />
+    <MESSAGE value="copia de seguridad v41.2.1 alert en ajustes bloqueo" />
+    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v41.2.1 alert en ajustes bloqueo" />
   </component>
 </project>

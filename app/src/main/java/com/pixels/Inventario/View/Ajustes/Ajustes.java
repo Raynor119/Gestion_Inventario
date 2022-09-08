@@ -42,7 +42,7 @@ public class Ajustes extends AppCompatActivity {
             final Observer<String> observer=new Observer<String>() {
                 @Override
                 public void onChanged(String s) {
-                    contra.pedircontra(s);
+                    contra.pedircontra(s,false,false);
                 }
             };
             obtenercontra.getResultado().observe(Context,observer);

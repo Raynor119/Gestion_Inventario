@@ -2,12 +2,14 @@ package com.pixels.Inventario.View.Menu_Inicio.RecyclerViewAdaptador;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.preference.PreferenceManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.pixels.Inventario.Model.DatosE.OpcionesContent;
@@ -18,6 +20,7 @@ import com.pixels.Inventario.View.Gestion_Productos.Fragment.VerInventarioFragme
 import com.pixels.Inventario.View.Gestion_Productos.VerInventario;
 import com.pixels.Inventario.View.Gestion_Ventas.Fragment.VerVentasFragment;
 import com.pixels.Inventario.View.Gestion_Ventas.VerVentas;
+import com.pixels.Inventario.View.InicioA.Configuracion_Inicial.Fragment.InicioBlanco;
 import com.pixels.Inventario.View.Menu_Inicio.MenuInicio;
 
 import java.util.List;
@@ -34,6 +37,16 @@ public class SimpleItemRecyclerViewAdapter extends RecyclerView.Adapter<SimpleIt
         public void onClick(View view) {
             int Id=Integer.parseInt((view.getTag()+""));
             if(Id==1){
+                SharedPreferences myPreferences = PreferenceManager.getDefaultSharedPreferences(mParentActivity);
+                boolean bloqueo = myPreferences.getBoolean("bloqueoA",false);
+                if(bloqueo){
+                    if (mTwoPane) {
+                        InicioBlanco fragment=new InicioBlanco();
+                        mParentActivity.getSupportFragmentManager().beginTransaction()
+                                .replace(R.id.opcion_detail_container, fragment)
+                                .commit();
+                    }
+                }
                 Context context = view.getContext();
                 Intent intent = new Intent(context, Caja.class);
                 context.startActivity(intent);
@@ -63,6 +76,16 @@ public class SimpleItemRecyclerViewAdapter extends RecyclerView.Adapter<SimpleIt
                 }
             }
             if(Id==4){
+                SharedPreferences myPreferences = PreferenceManager.getDefaultSharedPreferences(mParentActivity);
+                boolean bloqueo = myPreferences.getBoolean("bloqueoA",false);
+                if(bloqueo){
+                    if (mTwoPane) {
+                        InicioBlanco fragment=new InicioBlanco();
+                        mParentActivity.getSupportFragmentManager().beginTransaction()
+                                .replace(R.id.opcion_detail_container, fragment)
+                                .commit();
+                    }
+                }
                 Context context = view.getContext();
                 Intent intent = new Intent(context, Ajustes.class);
                 context.startActivity(intent);
