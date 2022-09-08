@@ -18,6 +18,7 @@ import com.pixels.Inventario.Model.DatosE.AjustesContent;
 
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Ajustes.Ajustes;
+import com.pixels.Inventario.View.Ajustes.AlertDialog.AlertDesactivar;
 import com.pixels.Inventario.View.Ajustes.ConfiguracionBaseDatos.AlertDialog.alertcambiarbasedatos;
 import com.pixels.Inventario.View.Ajustes.ConfiguracionContra.configContra;
 import com.pixels.Inventario.View.Ajustes.ConfiguracionDatos.alertModificarDatos;
@@ -83,8 +84,8 @@ public class AjustesRecyclerViewAdapter extends RecyclerView.Adapter<AjustesRecy
                 boolean bloqueo = myPreferences.getBoolean("bloqueoA",false);
                 SharedPreferences.Editor myEditor = myPreferences.edit();
                 if(bloqueo){
-                    myEditor.putBoolean("bloqueoA", false);
-                    myEditor.commit();
+                    AlertDesactivar alertDesactivar=new AlertDesactivar(mParentActivity);
+                    alertDesactivar.desactivar();
                 }else{
                     myEditor.putBoolean("bloqueoA", true);
                     myEditor.commit();
