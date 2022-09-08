@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.preference.PreferenceManager;
@@ -23,11 +24,14 @@ import com.pixels.Inventario.View.Ajustes.ConfiguracionDatos.alertModificarDatos
 import com.pixels.Inventario.View.Ajustes.EliminarBaseDatos.alertEliminarBD;
 import com.pixels.Inventario.View.Ajustes.ExportarDatos.ExportarDatos;
 import com.pixels.Inventario.View.Ajustes.ImportarDatos.ImportarDatos;
+import com.pixels.Inventario.View.InicioA.Configuracion_Inicial.Fragment.InicioBlanco;
+import com.pixels.Inventario.View.Menu_Inicio.MenuInicio;
 
 import java.util.List;
 
 public class AjustesRecyclerViewAdapter extends RecyclerView.Adapter<AjustesRecyclerViewAdapter.ViewHolder> {
     private final Ajustes mParentActivity;
+    private final MenuInicio MenuInicioA;
     private final List<AjustesContent> mValues;
 
     private final View.OnClickListener mOnClickListener = new View.OnClickListener() {
@@ -84,6 +88,7 @@ public class AjustesRecyclerViewAdapter extends RecyclerView.Adapter<AjustesRecy
                 }else{
                     myEditor.putBoolean("bloqueoA", true);
                     myEditor.commit();
+                    MenuInicioA.recreate();
                 }
                 mParentActivity.reiniciarRecyclerView();
             }
@@ -91,9 +96,10 @@ public class AjustesRecyclerViewAdapter extends RecyclerView.Adapter<AjustesRecy
     };
 
     public AjustesRecyclerViewAdapter(Ajustes parent,
-                                         List<AjustesContent> items) {
+                                         List<AjustesContent> items,MenuInicio menuInicioA) {
         mValues = items;
         mParentActivity = parent;
+        MenuInicioA= menuInicioA;
     }
 
     @Override

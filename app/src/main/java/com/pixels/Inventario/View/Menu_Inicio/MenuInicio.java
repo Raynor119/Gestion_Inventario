@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.pixels.Inventario.Model.DatosE.OpcionesContent;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Gestion_Productos.VerInventario;
+import com.pixels.Inventario.View.InicioA.Configuracion_Inicial.Fragment.InicioBlanco;
 import com.pixels.Inventario.View.Menu_Inicio.RecyclerViewAdaptador.SimpleItemRecyclerViewAdapter;
 
 import java.util.ArrayList;

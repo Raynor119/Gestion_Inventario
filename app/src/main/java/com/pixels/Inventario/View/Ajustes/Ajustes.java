@@ -13,6 +13,7 @@ import com.pixels.Inventario.Model.DatosE.AjustesContent;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Ajustes.AlertDialog.AlertContrasenaB;
 import com.pixels.Inventario.View.Ajustes.RecyclerViewAdapter.AjustesRecyclerViewAdapter;
+import com.pixels.Inventario.View.Menu_Inicio.MenuInicio;
 import com.pixels.Inventario.ViewModel.Ajustes.ConfiguracionContra.obtenerContraViewModel;
 import com.pixels.Inventario.ViewModel.Ajustes.VerificacionContraViewModel;
 
@@ -21,6 +22,7 @@ import java.util.List;
 
 public class Ajustes extends AppCompatActivity {
     public Ajustes Context=Ajustes.this;
+    public static MenuInicio MenuInicioA;
     private List<AjustesContent> ajustes= new ArrayList<>();
     public VerificacionContraViewModel verificacion;
     public RecyclerView reci;
@@ -78,7 +80,7 @@ public class Ajustes extends AppCompatActivity {
                 ajustes.add(new AjustesContent(4,"Exportar datos de la Aplicacion","Permite mover los datos de la Aplicacion hacia una base de datos local (MYSQL)"));
                 ajustes.add(new AjustesContent(5,"Eliminar datos de la Aplicacion","Elimina los datos almacenados que estan en la Aplicaion"));
                 ajustes.add(new AjustesContent(7,"Modificar datos del Usuario","Permite modificar los datos del usuario (Nit o Nombre-Razon Social)"));
-                recyclerView.setAdapter(new AjustesRecyclerViewAdapter(Ajustes.this, ajustes));
+                recyclerView.setAdapter(new AjustesRecyclerViewAdapter(Ajustes.this, ajustes,MenuInicioA));
             }
         };
         verificacion.getResultado().observe(Ajustes.this,observer);

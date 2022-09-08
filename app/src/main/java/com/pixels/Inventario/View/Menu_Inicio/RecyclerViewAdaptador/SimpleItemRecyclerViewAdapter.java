@@ -89,6 +89,7 @@ public class SimpleItemRecyclerViewAdapter extends RecyclerView.Adapter<SimpleIt
                 Context context = view.getContext();
                 Intent intent = new Intent(context, Ajustes.class);
                 context.startActivity(intent);
+                Ajustes.MenuInicioA=mParentActivity;
             }
             if(Id==5){
                 android.os.Process.killProcess(android.os.Process.myPid());
