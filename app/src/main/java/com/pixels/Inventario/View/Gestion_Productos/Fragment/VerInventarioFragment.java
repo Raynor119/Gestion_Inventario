@@ -105,7 +105,7 @@ public class VerInventarioFragment extends Fragment {
             fab.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(Context, AgregarProductos.class);
+                    Intent intent = new Intent(getActivity(), AgregarProductos.class);
                     startActivity(intent);
                     AgregarProductos.verproductos=VerInventarioFragment.this;
                 }
