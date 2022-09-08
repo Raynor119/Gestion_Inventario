@@ -11,7 +11,9 @@ import androidx.preference.PreferenceManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.pixels.Inventario.Model.DatosE.AjustesContent;
 import com.pixels.Inventario.R;
+import com.pixels.Inventario.View.Ajustes.AlertDialog.AlertContrasenaB;
 import com.pixels.Inventario.View.Ajustes.RecyclerViewAdapter.AjustesRecyclerViewAdapter;
+import com.pixels.Inventario.ViewModel.Ajustes.ConfiguracionContra.obtenerContraViewModel;
 import com.pixels.Inventario.ViewModel.Ajustes.VerificacionContraViewModel;
 
 import java.util.ArrayList;
@@ -30,7 +32,22 @@ public class Ajustes extends AppCompatActivity {
         assert recyclerView != null;
         reci=(RecyclerView) recyclerView;
         setupRecyclerView(reci);
+        SharedPreferences myPreferences = PreferenceManager.getDefaultSharedPreferences(Context);
+        boolean bloqueo = myPreferences.getBoolean("bloqueoA",false);
+        if(bloqueo){
+            AlertContrasenaB contra=new AlertContrasenaB(Ajustes.this);
+            obtenerContraViewModel obtenercontra= ViewModelProviders.of(Context).get(obtenerContraViewModel.class);
+            obtenercontra.reset();
+            obtenercontra.ObtenerContra(Context);
+            final Observer<String> observer=new Observer<String>() {
+                @Override
+                public void onChanged(String s) {
+                    contra.pedircontra(s);
+                }
+            };
+            obtenercontra.getResultado().observe(Context,observer);
 
+        }
     }
     public void reiniciarRecyclerView(){
         reci.setAdapter(null);

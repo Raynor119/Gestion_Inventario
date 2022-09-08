@@ -1874,6 +1874,7 @@ id BOTTOM_START
 id Buscar
 id ButtonG
 id CCantidad
+id CContra
 id CEfectivo
 id CObservacion
 id CTRL
@@ -2471,6 +2472,7 @@ layout alertcambiobasedatos
 layout alertcantidadd
 layout alertdevolucion
 layout alertdialogcontra
+layout alertdialogcontrab
 layout alertdialogonitnombre
 layout alertefectivo
 layout alertiva

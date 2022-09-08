@@ -1873,6 +1873,7 @@ int id BOTTOM_START 0x7f080002
 int id Buscar 0x7f080003
 int id ButtonG 0x7f080004
 int id CCantidad 0x7f080005
+int id CContra 0x7f080206
 int id CEfectivo 0x7f080006
 int id CObservacion 0x7f080007
 int id CTRL 0x7f080008
@@ -2470,6 +2471,7 @@ int layout alertcambiobasedatos 0x7f0b002a
 int layout alertcantidadd 0x7f0b002b
 int layout alertdevolucion 0x7f0b002c
 int layout alertdialogcontra 0x7f0b002d
+int layout alertdialogcontrab 0x7f0b00b5
 int layout alertdialogonitnombre 0x7f0b002e
 int layout alertefectivo 0x7f0b002f
 int layout alertiva 0x7f0b0030
