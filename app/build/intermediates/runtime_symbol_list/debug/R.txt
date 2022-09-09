@@ -1900,6 +1900,7 @@ int id SYM 0x7f08001c
 int id SubTotal 0x7f08001d
 int id TOP_END 0x7f08001e
 int id TOP_START 0x7f08001f
+int id Tablayout 0x7f080207
 int id Total 0x7f080020
 int id VerFactura 0x7f080021
 int id accelerate 0x7f080022
@@ -2363,6 +2364,7 @@ int id useLogo 0x7f0801eb
 int id username 0x7f0801ec
 int id view_offset_helper 0x7f0801ed
 int id view_tree_lifecycle_owner 0x7f0801ee
+int id viewpager 0x7f080208
 int id visible 0x7f0801ef
 int id visible_removing_fragment_view_tag 0x7f0801f0
 int id withText 0x7f0801f1

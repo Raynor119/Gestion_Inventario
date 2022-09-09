@@ -1901,6 +1901,7 @@ id SYM
 id SubTotal
 id TOP_END
 id TOP_START
+id Tablayout
 id Total
 id VerFactura
 id accelerate
@@ -2364,6 +2365,7 @@ id useLogo
 id username
 id view_offset_helper
 id view_tree_lifecycle_owner
+id viewpager
 id visible
 id visible_removing_fragment_view_tag
 id withText
