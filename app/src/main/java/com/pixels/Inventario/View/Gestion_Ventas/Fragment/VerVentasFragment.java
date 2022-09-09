@@ -50,34 +50,9 @@ public class VerVentasFragment extends Fragment {
         verificarBloqueo();
         tabLayout= rootView.findViewById(R.id.Tablayout);
         viewPager= rootView.findViewById(R.id.viewpager);
-        pagerController= new PagerController(getChildFragmentManager(), tabLayout.getTabCount());
+        pagerController= new PagerController(getChildFragmentManager(), 3);
         viewPager.setAdapter(pagerController);
-        tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                viewPager.setCurrentItem(tab.getPosition());
-                if(tab.getPosition()==0){
-                    pagerController.notifyDataSetChanged();
-                }
-                if(tab.getPosition()==1){
-                    pagerController.notifyDataSetChanged();
-                }
-                if(tab.getPosition()==2){
-                    pagerController.notifyDataSetChanged();
-                }
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
-            }
-        });
-        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+        tabLayout.setupWithViewPager(viewPager);
         return rootView;
     }
     public void verificarBloqueo(){

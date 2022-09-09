@@ -32,6 +32,20 @@ public class PagerController extends FragmentPagerAdapter {
                 return null;
         }
     }
+    @Override
+    public CharSequence getPageTitle(int position) {
+        switch (position){
+            case 0:
+                return "DIARIAS";
+            case 1:
+                return "MENSUALES";
+            case 2:
+                return "ANUALES";
+            default:
+                return null;
+        }
+    }
+
 
     @Override
     public int getCount() {
