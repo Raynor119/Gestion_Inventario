@@ -1,5 +1,9 @@
 [
     {
+        "merged": "com.pixels.Inventario.app-merged_res-23:/layout_fragment_mensuales.xml.flat",
+        "source": "com.pixels.Inventario.app-main-25:/layout/fragment_mensuales.xml"
+    },
+    {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\mipmap-xhdpi_compartirmas_adaptive_fore.png.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\mipmap-xhdpi\\compartirmas_adaptive_fore.png"
     },
@@ -16,12 +20,12 @@
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout-w1400dp\\fragment_inventario_productos.xml"
     },
     {
-        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout_alertcantidadd.xml.flat",
-        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout\\alertcantidadd.xml"
-    },
-    {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\mipmap-xhdpi_ventas.png.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\mipmap-xhdpi\\ventas.png"
+    },
+    {
+        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout_alertcantidadd.xml.flat",
+        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout\\alertcantidadd.xml"
     },
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout_tipocantidad.xml.flat",
@@ -182,6 +186,10 @@
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout-w1900dp_producto_caja.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout-w1900dp\\producto_caja.xml"
+    },
+    {
+        "merged": "com.pixels.Inventario.app-merged_res-23:/layout_fragment_diarias.xml.flat",
+        "source": "com.pixels.Inventario.app-main-25:/layout/fragment_diarias.xml"
     },
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\drawable_menufondo.xml.flat",
@@ -446,6 +454,10 @@
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout-w800dp_activity_caja.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout-w800dp\\activity_caja.xml"
+    },
+    {
+        "merged": "com.pixels.Inventario.app-merged_res-23:/layout_fragment_anuales.xml.flat",
+        "source": "com.pixels.Inventario.app-main-25:/layout/fragment_anuales.xml"
     },
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout_opcion_list_content.xml.flat",

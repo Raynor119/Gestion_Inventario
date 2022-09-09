@@ -13,15 +13,25 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.preference.PreferenceManager;
+import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.appbar.CollapsingToolbarLayout;
+import com.google.android.material.tabs.TabItem;
+import com.google.android.material.tabs.TabLayout;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Ajustes.AlertDialog.AlertContrasenaB;
+import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.PagerController;
 import com.pixels.Inventario.ViewModel.Ajustes.ConfiguracionContra.obtenerContraViewModel;
 
 public class VerVentasFragment extends Fragment {
     public AppCompatActivity Context;
     public boolean verventas=true;
+
+    private TabLayout tabLayout;
+    private ViewPager viewPager;
+    private TabItem tab1,tab2,tab3;
+    private PagerController pagerController;
+
     public VerVentasFragment(){
 
     }
@@ -41,6 +51,43 @@ public class VerVentasFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_ver_ventas, container, false);
+        verificarBloqueo();
+        tabLayout= rootView.findViewById(R.id.Tablayout);
+        viewPager= rootView.findViewById(R.id.viewpager);
+        tab1= rootView.findViewById(R.id.diarias);
+        tab2= rootView.findViewById(R.id.mensuales);
+        tab3= rootView.findViewById(R.id.anuales);
+        pagerController= new PagerController(getActivity().getSupportFragmentManager(), tabLayout.getTabCount());
+        viewPager.setAdapter(pagerController);
+        tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                viewPager.setCurrentItem(tab.getPosition());
+                if(tab.getPosition()==0){
+                    pagerController.notifyDataSetChanged();
+                }
+                if(tab.getPosition()==1){
+                    pagerController.notifyDataSetChanged();
+                }
+                if(tab.getPosition()==2){
+                    pagerController.notifyDataSetChanged();
+                }
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
+        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+        return rootView;
+    }
+    public void verificarBloqueo(){
         SharedPreferences myPreferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
         boolean bloqueo = myPreferences.getBoolean("bloqueoA",false);
         if(bloqueo){
@@ -62,6 +109,5 @@ public class VerVentasFragment extends Fragment {
             };
             obtenercontra.getResultado().observe(getActivity(),observer);
         }
-        return rootView;
     }
 }
