@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1000dp/activity_caja.xml" value="0.15416666666666667" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1000dp/fragment_ver_ventas.xml" value="0.21328125" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1000dp/producto_caja.xml" value="0.27317708333333335" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1400dp/activity_caja.xml" value="0.15" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1400dp/fragment_agsinarcontrasena.xml" value="0.18211805555555555" />
@@ -20,6 +21,7 @@
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w800dp/fragment_agsinarcontrasena.xml" value="0.2" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w800dp/fragment_inventario_productos.xml" value="0.29768518518518516" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w800dp/fragment_modificarcontra.xml" value="0.22" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w800dp/fragment_ver_ventas.xml" value="0.18125" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w800dp/producto_caja.xml" value="0.33" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_caja.xml" value="0.26403641881638845" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/activity_inicio.xml" value="0.32222222222222224" />

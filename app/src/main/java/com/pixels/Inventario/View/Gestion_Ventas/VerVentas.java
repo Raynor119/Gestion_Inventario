@@ -10,13 +10,13 @@ import com.pixels.Inventario.View.Gestion_Productos.VerInventario;
 import com.pixels.Inventario.View.Gestion_Ventas.Fragment.VerVentasFragment;
 
 public class VerVentas extends AppCompatActivity {
-    private VerVentasFragment fragment= new VerVentasFragment(VerVentas.this);;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ver_ventas);
+        VerVentasFragment fragment= new VerVentasFragment();
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.opcion_detail_container, fragment)
+                .add(R.id.opcion_detail_container, fragment)
                 .commit();
     }
 }

@@ -10,8 +10,8 @@ MERGED from [androidx.preference:preference:1.1.1] C:\Users\saibo\.gradle\caches
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\saibo\.gradle\caches\transforms-3\a9ad5b5a84f7c594776c70f7521af456\transformed\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\saibo\.gradle\caches\transforms-3\c8a2094444aa101959e16d71c36ae1fe\transformed\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:17:1-56:12
-MERGED from [com.github.barteksc:android-pdf-viewer:2.8.1] C:\Users\saibo\.gradle\caches\transforms-3\6140c936f18ec99e8a9558181b042114\transformed\jetified-android-pdf-viewer-2.8.1\AndroidManifest.xml:2:1-11:12
-MERGED from [com.github.barteksc:pdfium-android:1.7.1] C:\Users\saibo\.gradle\caches\transforms-3\f202e6ebe13d8840fe81bb5cc8d09af7\transformed\jetified-pdfium-android-1.7.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.barteksc:android-pdf-viewer:2.8.1] C:\Users\saibo\.gradle\caches\transforms-3\1639eb46f3f9fb9c0e983052539d5a74\transformed\jetified-android-pdf-viewer-2.8.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.barteksc:pdfium-android:1.7.1] C:\Users\saibo\.gradle\caches\transforms-3\00397d7e96869d2f5f3da817eeae8a47\transformed\jetified-pdfium-android-1.7.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\saibo\.gradle\caches\transforms-3\9bc6f0fca3a242624b195b9e2e5506ab\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\saibo\.gradle\caches\transforms-3\85f9e5877a350279fc37354eb16bce17\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\saibo\.gradle\caches\transforms-3\df04b464485d585955da7f033fa1b638\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -87,10 +87,10 @@ MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\saibo\.gradle\caches\t
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\saibo\.gradle\caches\transforms-3\c8a2094444aa101959e16d71c36ae1fe\transformed\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:20:5-44
 MERGED from [com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\saibo\.gradle\caches\transforms-3\8737cc03599a5fa78eafe2514c038020\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:20:5-44
-MERGED from [com.github.barteksc:android-pdf-viewer:2.8.1] C:\Users\saibo\.gradle\caches\transforms-3\6140c936f18ec99e8a9558181b042114\transformed\jetified-android-pdf-viewer-2.8.1\AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.barteksc:android-pdf-viewer:2.8.1] C:\Users\saibo\.gradle\caches\transforms-3\6140c936f18ec99e8a9558181b042114\transformed\jetified-android-pdf-viewer-2.8.1\AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.barteksc:pdfium-android:1.7.1] C:\Users\saibo\.gradle\caches\transforms-3\f202e6ebe13d8840fe81bb5cc8d09af7\transformed\jetified-pdfium-android-1.7.1\AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.barteksc:pdfium-android:1.7.1] C:\Users\saibo\.gradle\caches\transforms-3\f202e6ebe13d8840fe81bb5cc8d09af7\transformed\jetified-pdfium-android-1.7.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:android-pdf-viewer:2.8.1] C:\Users\saibo\.gradle\caches\transforms-3\1639eb46f3f9fb9c0e983052539d5a74\transformed\jetified-android-pdf-viewer-2.8.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:android-pdf-viewer:2.8.1] C:\Users\saibo\.gradle\caches\transforms-3\1639eb46f3f9fb9c0e983052539d5a74\transformed\jetified-android-pdf-viewer-2.8.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:pdfium-android:1.7.1] C:\Users\saibo\.gradle\caches\transforms-3\00397d7e96869d2f5f3da817eeae8a47\transformed\jetified-pdfium-android-1.7.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:pdfium-android:1.7.1] C:\Users\saibo\.gradle\caches\transforms-3\00397d7e96869d2f5f3da817eeae8a47\transformed\jetified-pdfium-android-1.7.1\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\saibo\.gradle\caches\transforms-3\9bc6f0fca3a242624b195b9e2e5506ab\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\saibo\.gradle\caches\transforms-3\9bc6f0fca3a242624b195b9e2e5506ab\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\saibo\.gradle\caches\transforms-3\85f9e5877a350279fc37354eb16bce17\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41

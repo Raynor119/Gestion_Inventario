@@ -25,7 +25,6 @@ import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.PagerController;
 import com.pixels.Inventario.ViewModel.Ajustes.ConfiguracionContra.obtenerContraViewModel;
 
 public class VerVentasFragment extends Fragment {
-    public AppCompatActivity Context;
     public boolean verventas=true;
 
     private TabLayout tabLayout;
@@ -34,9 +33,6 @@ public class VerVentasFragment extends Fragment {
 
     public VerVentasFragment(){
 
-    }
-    public VerVentasFragment(AppCompatActivity context){
-        this.Context=context;
     }
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -54,10 +50,34 @@ public class VerVentasFragment extends Fragment {
         verificarBloqueo();
         tabLayout= rootView.findViewById(R.id.Tablayout);
         viewPager= rootView.findViewById(R.id.viewpager);
-        pagerController= new PagerController(getActivity().getSupportFragmentManager(), 3);
+        pagerController= new PagerController(getChildFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(pagerController);
-        tabLayout.setupWithViewPager(viewPager);
+        tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                viewPager.setCurrentItem(tab.getPosition());
+                if(tab.getPosition()==0){
+                    pagerController.notifyDataSetChanged();
+                }
+                if(tab.getPosition()==1){
+                    pagerController.notifyDataSetChanged();
+                }
+                if(tab.getPosition()==2){
+                    pagerController.notifyDataSetChanged();
+                }
+            }
 
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
+        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         return rootView;
     }
     public void verificarBloqueo(){
