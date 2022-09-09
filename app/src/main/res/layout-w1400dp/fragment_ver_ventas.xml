@@ -32,7 +32,7 @@
             android:layout_gravity=""
             android:layout_marginTop="35dp"
             android:text="Ventas Realizadas"
-            android:layout_marginLeft="85dp"
+            android:layout_marginLeft="155dp"
             android:textSize="28dp"
             android:textColor="#FFFFFF"
             android:layout_height="wrap_content"
@@ -45,8 +45,8 @@
                 android:layout_marginTop="90dp"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginRight="150dp"
-                android:layout_marginLeft="150dp"
+                android:layout_marginRight="260dp"
+                android:layout_marginLeft="260dp"
                 android:background="@color/whiteCardColor"
                 app:cardCornerRadius="10dp"
                 android:layout_gravity="center">
@@ -65,8 +65,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="20dp"
-                android:layout_marginRight="100dp"
-                android:layout_marginLeft="100dp"
+                android:layout_marginRight="210dp"
+                android:layout_marginLeft="210dp"
                 app:cardCornerRadius="20dp"
                 android:layout_gravity="center">
                 <LinearLayout
