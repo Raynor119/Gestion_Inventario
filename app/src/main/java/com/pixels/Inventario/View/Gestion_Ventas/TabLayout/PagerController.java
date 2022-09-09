@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.AnualesFragment;
 import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.DiariasFragment;
 import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.MensualesFragment;
@@ -12,7 +13,7 @@ import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.MensualesFra
 public class PagerController extends FragmentPagerAdapter {
     private int numeroTab;
 
-    public PagerController(@NonNull FragmentManager fm, int behavior) {
+    public PagerController(FragmentManager fm, int behavior) {
         super(fm);
         this.numeroTab=behavior;
     }
@@ -31,6 +32,20 @@ public class PagerController extends FragmentPagerAdapter {
                 return null;
         }
     }
+    @Override
+    public CharSequence getPageTitle(int position) {
+        switch (position){
+            case 0:
+                return "DIARIAS";
+            case 1:
+                return "MENSUALES";
+            case 2:
+                return "ANUALES";
+            default:
+                return null;
+        }
+    }
+
 
     @Override
     public int getCount() {

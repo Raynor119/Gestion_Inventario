@@ -57,21 +57,7 @@
                         android:id="@+id/Tablayout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                        <com.google.android.material.tabs.TabItem
-                            android:id="@+id/diarias"
-                            android:layout_width="wrap_content"
-                            android:text="Diarias"
-                            android:layout_height="wrap_content"/>
-                        <com.google.android.material.tabs.TabItem
-                            android:id="@+id/mensuales"
-                            android:layout_width="wrap_content"
-                            android:text="Mensuales"
-                            android:layout_height="wrap_content"/>
-                        <com.google.android.material.tabs.TabItem
-                            android:id="@+id/anuales"
-                            android:layout_width="wrap_content"
-                            android:text="Anuales"
-                            android:layout_height="wrap_content"/>
+
                     </com.google.android.material.tabs.TabLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

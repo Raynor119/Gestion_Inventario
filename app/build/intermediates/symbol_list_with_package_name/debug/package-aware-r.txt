@@ -1968,7 +1968,6 @@ id always
 id anim
 id animateToEnd
 id animateToStart
-id anuales
 id app_bar
 id arc
 id asConfigured
@@ -2042,7 +2041,6 @@ id design_menu_item_text
 id design_navigation_view
 id detail_toolbar
 id dialog_button
-id diarias
 id dimensions
 id direct
 id disableHome
@@ -2154,7 +2152,6 @@ id material_timepicker_view
 id material_value_index
 id media_actions
 id menos
-id mensuales
 id message
 id middle
 id mini

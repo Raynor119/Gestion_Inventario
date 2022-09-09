@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -29,7 +30,6 @@ public class VerVentasFragment extends Fragment {
 
     private TabLayout tabLayout;
     private ViewPager viewPager;
-    private TabItem tab1,tab2,tab3;
     private PagerController pagerController;
 
     public VerVentasFragment(){
@@ -54,37 +54,10 @@ public class VerVentasFragment extends Fragment {
         verificarBloqueo();
         tabLayout= rootView.findViewById(R.id.Tablayout);
         viewPager= rootView.findViewById(R.id.viewpager);
-        tab1= rootView.findViewById(R.id.diarias);
-        tab2= rootView.findViewById(R.id.mensuales);
-        tab3= rootView.findViewById(R.id.anuales);
-        pagerController= new PagerController(getActivity().getSupportFragmentManager(), tabLayout.getTabCount());
+        pagerController= new PagerController(getActivity().getSupportFragmentManager(), 3);
         viewPager.setAdapter(pagerController);
-        tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                viewPager.setCurrentItem(tab.getPosition());
-                if(tab.getPosition()==0){
-                    pagerController.notifyDataSetChanged();
-                }
-                if(tab.getPosition()==1){
-                    pagerController.notifyDataSetChanged();
-                }
-                if(tab.getPosition()==2){
-                    pagerController.notifyDataSetChanged();
-                }
-            }
+        tabLayout.setupWithViewPager(viewPager);
 
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
-            }
-        });
-        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         return rootView;
     }
     public void verificarBloqueo(){
