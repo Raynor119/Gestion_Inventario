@@ -76,7 +76,8 @@ public class Inicio extends AppCompatActivity {
                                 datosinicio.getResultado().observe(Inicio.this,observer);
                                 break;
                             case 2:
-                                Toast.makeText(getApplicationContext(), "2", Toast.LENGTH_LONG).show();
+                                Toast.makeText(getApplicationContext(), "se Actualizo", Toast.LENGTH_LONG).show();
+                                finish();
                                 break;
                         }
                     }

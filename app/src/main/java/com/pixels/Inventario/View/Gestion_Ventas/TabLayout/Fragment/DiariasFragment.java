@@ -34,7 +34,6 @@ public class DiariasFragment extends Fragment {
         Bcalendario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Calendar calendar= Calendar.getInstance();
                 DatePickerDialog datePickerDialog= new DatePickerDialog(getActivity(), new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker datePicker, int year, int Mes, int Dia) {

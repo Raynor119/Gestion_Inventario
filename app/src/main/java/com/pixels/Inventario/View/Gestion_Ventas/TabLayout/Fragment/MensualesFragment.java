@@ -37,7 +37,6 @@ public class MensualesFragment extends Fragment {
         Bcalendario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Calendar calendar= Calendar.getInstance();
                 MesAnnoPickerDialog pd = new MesAnnoPickerDialog();
                 pd.setListener(new DatePickerDialog.OnDateSetListener() {
                     @Override
