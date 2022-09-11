@@ -1884,6 +1884,7 @@ id EditCodigo
 id Efectivo
 id Escaner
 id FUNCTION
+id Ffecha
 id Iva
 id META
 id NO_DEBUG
@@ -1984,6 +1985,7 @@ id blocking
 id bottom
 id bounce
 id buttonPanel
+id calendario
 id cambio
 id cancel_action
 id cancel_button
@@ -2071,6 +2073,7 @@ id expand_activities_button
 id expanded_menu
 id fab
 id fade
+id fecha
 id fill
 id fill_horizontal
 id fill_vertical
@@ -2222,6 +2225,8 @@ id pathRelative
 id peekHeight
 id percent
 id peso
+id picker_month
+id picker_year
 id pin
 id position
 id postLayout
@@ -2483,6 +2488,7 @@ layout alertpedircantidad
 layout alertventafinalizada
 layout alertverproductos
 layout custom_dialog
+layout date_picker_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -2625,6 +2631,9 @@ mipmap ajustes_adaptive_fore
 mipmap caja
 mipmap caja_adaptive_back
 mipmap caja_adaptive_fore
+mipmap calendarios
+mipmap calendarios_adaptive_back
+mipmap calendarios_adaptive_fore
 mipmap cargat
 mipmap cargat_adaptive_back
 mipmap cargat_adaptive_fore
