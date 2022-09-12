@@ -39,8 +39,21 @@ public class MensualesFragment extends Fragment {
         Bcalendario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                int cont=0;
+                String date="";
+                for(int i=0;i<calendarioEditText.getText().length();i++){
+                    if((calendarioEditText.getText().charAt(i)+"").equals("/")){
+                        if (cont==0){
+                            mes=Integer.parseInt(date);
+                            date="";
+                        }
+                        cont++;
+                    }else {
+                        date = date + (calendarioEditText.getText().charAt(i));
+                    }
+                }
+                anno=Integer.parseInt(date);
                 pd = new MesAnnoPickerDialog(MensualesFragment.this);
-                pd.Context=MensualesFragment.this;
                 pd.SelectFecha();
             }
         });
