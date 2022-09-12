@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.NumberPicker;
+import android.widget.TextView;
 
 
 import androidx.fragment.app.DialogFragment;
@@ -35,6 +36,9 @@ public class MesAnnoPickerDialog extends DialogFragment {
         final NumberPicker mesPicker = (NumberPicker) dialog.findViewById(R.id.picker_month);
         final NumberPicker annoPicker = (NumberPicker) dialog.findViewById(R.id.picker_year);
 
+        TextView mesTextView=(TextView) dialog.findViewById(R.id.mes);
+        TextView annonTextView=(TextView) dialog.findViewById(R.id.annon);
+
         mesPicker.setMinValue(1);
         mesPicker.setMaxValue(12);
         mesPicker.setValue(mes);
@@ -42,6 +46,23 @@ public class MesAnnoPickerDialog extends DialogFragment {
         annoPicker.setMinValue(1900);
         annoPicker.setMaxValue(2099);
         annoPicker.setValue(anno);
+
+        VerificarMes(mesTextView,mesPicker);
+        annonTextView.setText(""+annoPicker.getValue());
+
+        annoPicker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
+            @Override
+            public void onValueChange(NumberPicker numberPicker, int i, int i1) {
+                annonTextView.setText(""+numberPicker.getValue());
+            }
+        });
+
+        mesPicker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
+            @Override
+            public void onValueChange(NumberPicker numberPicker, int i, int i1) {
+                VerificarMes(mesTextView,numberPicker);
+            }
+        });
 
         builder.setView(dialog)
                 .setPositiveButton("aceptar", new DialogInterface.OnClickListener() {
@@ -57,4 +78,42 @@ public class MesAnnoPickerDialog extends DialogFragment {
                 });
         return builder.create();
     }
+     public void VerificarMes(TextView m,NumberPicker n){
+         if(n.getValue()==1){
+             m.setText("Enero");
+         }
+         if(n.getValue()==2){
+             m.setText("Febrero");
+         }
+         if(n.getValue()==3){
+             m.setText("Marzo");
+         }
+         if(n.getValue()==4){
+             m.setText("Abril");
+         }
+         if(n.getValue()==5){
+             m.setText("Mayo");
+         }
+         if(n.getValue()==6){
+             m.setText("Junio");
+         }
+         if(n.getValue()==7){
+             m.setText("Julio");
+         }
+         if(n.getValue()==8){
+             m.setText("Agosto");
+         }
+         if(n.getValue()==9){
+             m.setText("Septiembre");
+         }
+         if(n.getValue()==10){
+             m.setText("Octubre");
+         }
+         if(n.getValue()==11){
+             m.setText("Noviembre");
+         }
+         if(n.getValue()==12){
+             m.setText("Diciembre");
+         }
+     }
 }
