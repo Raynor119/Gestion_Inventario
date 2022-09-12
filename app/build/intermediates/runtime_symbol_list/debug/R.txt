@@ -2488,6 +2488,7 @@ int layout alertobservaciones 0x7f0b0033
 int layout alertpedircantidad 0x7f0b0034
 int layout alertventafinalizada 0x7f0b0035
 int layout alertverproductos 0x7f0b0036
+int layout anno_picker_dialog 0x7f0b00ba
 int layout custom_dialog 0x7f0b0037
 int layout date_picker_dialog 0x7f0b0038
 int layout design_bottom_navigation_item 0x7f0b0039

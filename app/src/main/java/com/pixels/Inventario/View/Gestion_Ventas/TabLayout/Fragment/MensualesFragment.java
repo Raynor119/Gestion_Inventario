@@ -1,13 +1,10 @@
 package com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment;
 
-import android.app.DatePickerDialog;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.DatePicker;
-import android.widget.Toast;
+
 
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;

@@ -2489,6 +2489,7 @@ layout alertobservaciones
 layout alertpedircantidad
 layout alertventafinalizada
 layout alertverproductos
+layout anno_picker_dialog
 layout custom_dialog
 layout date_picker_dialog
 layout design_bottom_navigation_item
