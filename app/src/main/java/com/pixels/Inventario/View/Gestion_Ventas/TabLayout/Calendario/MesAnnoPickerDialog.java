@@ -31,17 +31,13 @@ public class MesAnnoPickerDialog{
     private NumberPicker annoPicker;
     private int anno,mes;
 
-    public MesAnnoPickerDialog(MensualesFragment context){
+    public MesAnnoPickerDialog(MensualesFragment context,int Mes,int Anno){
         this.Context=context;
-        this.mes=Context.mes;
-        this.anno=Context.anno;
+        this.mes=Mes;
+        this.anno=Anno;
         this.listener=new DatePickerDialog.OnDateSetListener() {
             @Override
-            public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
-                mes=mesPicker.getValue();
-                anno=annoPicker.getValue();
-                Context.mes=mes;
-                Context.anno=anno;
+            public void onDateSet(DatePicker datePicker, int anno, int mes, int i2) {
                 Context.calendarioEditText.setText(mes+"/"+anno);
             }
         };

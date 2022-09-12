@@ -16,7 +16,7 @@ import com.pixels.Inventario.R;
 import java.util.Calendar;
 
 public class DiariasFragment extends Fragment {
-    private int dia,mes,anno;
+
     private TextInputEditText calendarioEditText;
     public DiariasFragment(){
 
@@ -35,6 +35,7 @@ public class DiariasFragment extends Fragment {
         Bcalendario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                int dia=1,mes=1,anno;
                 int cont=0;
                 String date="";
                 for(int i=0;i<calendarioEditText.getText().length();i++){
@@ -56,9 +57,7 @@ public class DiariasFragment extends Fragment {
                 DatePickerDialog datePickerDialog= new DatePickerDialog(getActivity(), new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker datePicker, int year, int Mes, int Dia) {
-                        dia=Dia;
-                        mes=Mes+1;
-                        anno=year;
+                        int mes=Mes+1;
                         calendarioEditText.setText(Dia+"/"+(mes)+"/"+year);
                     }
                 },anno,mes-1,dia);
@@ -70,9 +69,9 @@ public class DiariasFragment extends Fragment {
 
     public String getDia(){
         Calendar calendar= Calendar.getInstance();
-        dia=calendar.get(Calendar.DAY_OF_MONTH);
-        mes=calendar.get(Calendar.MONTH)+1;
-        anno=calendar.get(Calendar.YEAR);
+        int dia=calendar.get(Calendar.DAY_OF_MONTH);
+        int mes=calendar.get(Calendar.MONTH)+1;
+        int anno=calendar.get(Calendar.YEAR);
         return dia+"/"+(mes)+"/"+anno;
     }
 }

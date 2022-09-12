@@ -19,7 +19,6 @@ import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Calendario.MesAnnoPic
 import java.util.Calendar;
 
 public class MensualesFragment extends Fragment {
-    public int mes,anno;
     public MesAnnoPickerDialog pd;
     public TextInputEditText calendarioEditText;
     public MensualesFragment(){
@@ -39,6 +38,7 @@ public class MensualesFragment extends Fragment {
         Bcalendario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                int mes=1,anno;
                 int cont=0;
                 String date="";
                 for(int i=0;i<calendarioEditText.getText().length();i++){
@@ -53,7 +53,7 @@ public class MensualesFragment extends Fragment {
                     }
                 }
                 anno=Integer.parseInt(date);
-                pd = new MesAnnoPickerDialog(MensualesFragment.this);
+                pd = new MesAnnoPickerDialog(MensualesFragment.this,mes,anno);
                 pd.SelectFecha();
             }
         });
@@ -61,8 +61,8 @@ public class MensualesFragment extends Fragment {
     }
     public String getMes(){
         Calendar calendar= Calendar.getInstance();
-        mes=(calendar.get(Calendar.MONTH)+1);
-        anno=calendar.get(Calendar.YEAR);
+        int mes=(calendar.get(Calendar.MONTH)+1);
+        int anno=calendar.get(Calendar.YEAR);
         return mes+"/"+anno;
     }
 
