@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1000dp/activity_caja.xml" value="0.15416666666666667" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1000dp/date_picker_dialog.xml" value="0.2606837606837607" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1000dp/fragment_ver_ventas.xml" value="0.15" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1000dp/producto_caja.xml" value="0.27317708333333335" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1400dp/activity_caja.xml" value="0.15" />
@@ -36,7 +37,7 @@
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/alertdialogcontra.xml" value="0.32222222222222224" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/alertdialogcontrab.xml" value="0.25" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/alertobservaciones.xml" value="0.32222222222222224" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/date_picker_dialog.xml" value="0.32222222222222224" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/date_picker_dialog.xml" value="0.26079521162890124" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/fragment_anuales.xml" value="0.3212962962962963" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/fragment_diarias.xml" value="0.33" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/fragment_inventario_productos.xml" value="0.32222222222222224" />

@@ -19,7 +19,9 @@ import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Calendario.MesAnnoPic
 import java.util.Calendar;
 
 public class MensualesFragment extends Fragment {
-    private int mes,anno;
+    public int mes,anno;
+    public MesAnnoPickerDialog pd;
+    public TextInputEditText calendarioEditText;
     public MensualesFragment(){
 
     }
@@ -30,23 +32,16 @@ public class MensualesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_mensuales, container, false);
-        TextInputEditText calendarioEditText=(TextInputEditText) rootView.findViewById(R.id.fecha);
+        calendarioEditText=(TextInputEditText) rootView.findViewById(R.id.fecha);
         calendarioEditText.setEnabled(false);
         calendarioEditText.setText(getMes());
         CardView Bcalendario=(CardView) rootView.findViewById(R.id.calendario);
         Bcalendario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MesAnnoPickerDialog pd = new MesAnnoPickerDialog();
-                pd.setListener(new DatePickerDialog.OnDateSetListener() {
-                    @Override
-                    public void onDateSet(DatePicker datePicker, int Anno, int Mes, int i2) {
-                        mes=Mes;
-                        anno=Anno;
-                        calendarioEditText.setText(mes+"/"+anno);
-                    }
-                },anno,mes);
-                pd.show(getChildFragmentManager(), "MonthYearPickerDialog");
+                pd = new MesAnnoPickerDialog(MensualesFragment.this);
+                pd.Context=MensualesFragment.this;
+                pd.SelectFecha();
             }
         });
         return rootView;

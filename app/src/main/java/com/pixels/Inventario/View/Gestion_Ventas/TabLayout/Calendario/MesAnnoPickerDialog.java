@@ -1,40 +1,58 @@
 package com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Calendario;
 
+
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.DatePicker;
 import android.widget.NumberPicker;
 import android.widget.TextView;
+import android.widget.Toast;
+
 
 
 import androidx.fragment.app.DialogFragment;
 
 import com.pixels.Inventario.R;
+import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.MensualesFragment;
 
 import java.util.Calendar;
 
-public class MesAnnoPickerDialog extends DialogFragment {
+public class MesAnnoPickerDialog{
 
     private DatePickerDialog.OnDateSetListener listener;
+    public static MensualesFragment Context;
+    private NumberPicker mesPicker;
+    private NumberPicker annoPicker;
     private int anno,mes;
 
-    public void setListener(DatePickerDialog.OnDateSetListener listener,int Anno,int Mes) {
-        this.listener = listener;
-        this.anno=Anno;
-        this.mes=Mes;
+    public MesAnnoPickerDialog(MensualesFragment context){
+        this.Context=context;
+        this.mes=Context.mes;
+        this.anno=Context.anno;
+        this.listener=new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
+                mes=mesPicker.getValue();
+                anno=annoPicker.getValue();
+                Context.mes=mes;
+                Context.anno=anno;
+                Context.calendarioEditText.setText(mes+"/"+anno);
+            }
+        };
     }
 
-    @Override
-    public Dialog onCreateDialog(Bundle savedInstanceState) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        LayoutInflater inflater = getActivity().getLayoutInflater();
+    public void  SelectFecha() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(Context.getActivity());
+        LayoutInflater inflater = Context.getActivity().getLayoutInflater();
         View dialog = inflater.inflate(R.layout.date_picker_dialog, null);
-        final NumberPicker mesPicker = (NumberPicker) dialog.findViewById(R.id.picker_month);
-        final NumberPicker annoPicker = (NumberPicker) dialog.findViewById(R.id.picker_year);
+        mesPicker = (NumberPicker) dialog.findViewById(R.id.picker_month);
+        annoPicker = (NumberPicker) dialog.findViewById(R.id.picker_year);
 
         TextView mesTextView=(TextView) dialog.findViewById(R.id.mes);
         TextView annonTextView=(TextView) dialog.findViewById(R.id.annon);
@@ -46,6 +64,7 @@ public class MesAnnoPickerDialog extends DialogFragment {
         annoPicker.setMinValue(1900);
         annoPicker.setMaxValue(2099);
         annoPicker.setValue(anno);
+
 
         VerificarMes(mesTextView,mesPicker);
         annonTextView.setText(""+annoPicker.getValue());
@@ -68,15 +87,16 @@ public class MesAnnoPickerDialog extends DialogFragment {
                 .setPositiveButton("aceptar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
-                        listener.onDateSet(null, annoPicker.getValue(), mesPicker.getValue(), 0);
+                       listener.onDateSet(null, annoPicker.getValue(), mesPicker.getValue(), 0);
                     }
                 })
                 .setNegativeButton("cancelar", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        MesAnnoPickerDialog.this.getDialog().cancel();
+
                     }
                 });
-        return builder.create();
+        AlertDialog alert =builder.create();
+        alert.show();
     }
      public void VerificarMes(TextView m,NumberPicker n){
          if(n.getValue()==1){
