@@ -21,16 +21,15 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v44.8 modificaciones en el dienno">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/venta_ver.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v45 ver ventas iniciado">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ventad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ventad_adaptive_back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ventad_adaptive_fore.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/login_button_bk.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/login_button_bk.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_diarias.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_diarias.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/venta_ver.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/venta_ver.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,13 +146,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661834586125</updated>
-    </task>
-    <task id="LOCAL-00020" summary="copia de seguridad v38.3 arreglo de devoluciones">
-      <created>1662020058396</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1662020058396</updated>
     </task>
     <task id="LOCAL-00021" summary="copia de seguridad v38.3.2 arreglo de devoluciones">
       <created>1662420638794</created>
@@ -491,7 +483,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663008285657</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="copia de seguridad v45 ver ventas iniciado">
+      <created>1663030776977</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1663030776979</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -510,7 +509,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="copia de seguridad v41.2 alert en ajustes bloqueo" />
     <MESSAGE value="copia de seguridad v41.2.1 alert en ajustes bloqueo" />
     <MESSAGE value="copia de seguridad v41.3 alert en menu de opciones bloqueo hecho inestable" />
     <MESSAGE value="copia de seguridad v41.4 alert en menu de opciones bloqueo hecho inestable" />
@@ -535,6 +533,7 @@
     <MESSAGE value="copia de seguridad v44.5 agregar fechas" />
     <MESSAGE value="copia de seguridad v44.6 agregar fechas inestable" />
     <MESSAGE value="copia de seguridad v44.8 modificaciones en el dienno" />
-    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v44.8 modificaciones en el dienno" />
+    <MESSAGE value="copia de seguridad v45 ver ventas iniciado" />
+    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v45 ver ventas iniciado" />
   </component>
 </project>

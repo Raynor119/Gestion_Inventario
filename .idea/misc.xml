@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/drawable/ic_login_nk.xml" value="0.311" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/drawable/login_button_bk.xml" value="0.311" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/drawable/menufondo.xml" value="0.311" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1000dp/activity_caja.xml" value="0.15416666666666667" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1000dp/anno_picker_dialog.xml" value="0.14" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1000dp/date_picker_dialog.xml" value="0.2606837606837607" />
