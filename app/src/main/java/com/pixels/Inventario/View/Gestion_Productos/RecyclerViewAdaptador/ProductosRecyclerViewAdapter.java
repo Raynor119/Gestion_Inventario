@@ -19,6 +19,8 @@ import com.pixels.Inventario.View.Gestion_Productos.AlertDialog.alertEliminar;
 import com.pixels.Inventario.View.Gestion_Productos.EditarProductos.EditarProducto;
 import com.pixels.Inventario.View.Gestion_Productos.Fragment.VerInventarioFragment;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.text.NumberFormat;
 import java.util.List;
 
@@ -45,7 +47,9 @@ public class ProductosRecyclerViewAdapter extends RecyclerView.Adapter<Productos
         holder.nombre.setText(""+Productos.get(position).getNombre());
         if(Productos.get(position).getTipoC().equals("peso")){
             holder.unidad.setText(" Kg");
-            holder.cantidad.setText(""+Productos.get(position).getCantidad());
+            BigDecimal bd = new BigDecimal(Productos.get(position).getCantidad());
+            bd = bd.setScale(3, RoundingMode.HALF_UP);
+            holder.cantidad.setText(""+bd.doubleValue());
         }
         if(Productos.get(position).getTipoC().equals("unitario")){
             holder.unidad.setText("");

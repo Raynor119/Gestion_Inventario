@@ -1877,6 +1877,7 @@ id CCantidad
 id CContra
 id CEfectivo
 id CObservacion
+id CPV
 id CTRL
 id Cantidad
 id CosteP
@@ -1904,6 +1905,7 @@ id TOP_END
 id TOP_START
 id Tablayout
 id Total
+id TotalV
 id VerFactura
 id accelerate
 id accessibility_action_clickable_span
@@ -2089,6 +2091,7 @@ id forever
 id fragment_container_view_tag
 id frameLayout
 id frameLayout1
+id ganaN
 id ghost_view
 id ghost_view_holder
 id gone
@@ -2370,6 +2373,7 @@ id unlabeled
 id up
 id useLogo
 id username
+id venta_list
 id view_offset_helper
 id view_tree_lifecycle_owner
 id viewpager
@@ -2619,6 +2623,7 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 layout tipocantidad
+layout venta_ver
 layout zxing_barcode_scanner
 layout zxing_capture
 menu example_menu
@@ -2672,6 +2677,9 @@ mipmap salir
 mipmap salir_adaptive_back
 mipmap salir_adaptive_fore
 mipmap scaner
+mipmap ventad
+mipmap ventad_adaptive_back
+mipmap ventad_adaptive_fore
 mipmap ventas
 mipmap ventas_adaptive_back
 mipmap ventas_adaptive_fore
