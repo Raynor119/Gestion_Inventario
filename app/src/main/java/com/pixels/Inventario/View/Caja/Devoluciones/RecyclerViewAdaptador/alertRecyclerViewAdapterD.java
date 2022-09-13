@@ -65,7 +65,7 @@ public class alertRecyclerViewAdapterD extends RecyclerView.Adapter<alertRecycle
                 holder.cantidadD.setText(""+bd1.doubleValue());
             }
         }
-        if(Productos.get(position).getEstadoDevolucion().equals("si") && (Productos.get(position).getCantidadD()==Productos.get(position).getCantidadV())){
+        if((Productos.get(position).getCantidadD()==Productos.get(position).getCantidadV())){
             holder.titulo.setText("");
             holder.precio.setText(" Ya todo se Devolvio");
             holder.LcantidadD.setVisibility(ConstraintLayout.GONE);
@@ -93,7 +93,7 @@ public class alertRecyclerViewAdapterD extends RecyclerView.Adapter<alertRecycle
                     Fragment.Codigo.setFocusableInTouchMode(true);
                     Fragment.Codigo.requestFocus();
                 }else{
-                    if(Productos.get(positionn).getEstadoDevolucion().equals("si") && (Productos.get(positionn).getCantidadD()==Productos.get(positionn).getCantidadV())){
+                    if((Productos.get(positionn).getCantidadD()==Productos.get(positionn).getCantidadV())){
                         Fragment.Codigo.setText("");
                         Fragment.CCodigo.setError("El producto ya ha sido devuelto en su totalidad");
                         Fragment.Codigo.setFocusableInTouchMode(true);

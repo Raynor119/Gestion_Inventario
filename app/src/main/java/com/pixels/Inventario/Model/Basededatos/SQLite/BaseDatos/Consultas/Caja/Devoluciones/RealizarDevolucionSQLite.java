@@ -33,7 +33,7 @@ public class RealizarDevolucionSQLite extends BaseDatosSQLite implements Mediado
                 for(int i=0;i<Context.Productos.size();i++){
                     BigDecimal bdd = new BigDecimal(Context.Productos.get(i).getCantidadD());
                     bdd = bdd.setScale(3, RoundingMode.HALF_UP);
-                    bd.execSQL("UPDATE VentasProductos SET CantidadD=CantidadD+"+bdd.doubleValue()+",EstadoDevolucion='si', ObservacionD='"+Context.Productos.get(i).getObservacionD()+"' WHERE codigoV="+CodigoV+" AND Id="+Context.Productos.get(i).getId()+"");
+                    bd.execSQL("UPDATE VentasProductos SET CantidadD=CantidadD+"+bdd.doubleValue()+", ObservacionD='"+Context.Productos.get(i).getObservacionD()+"' WHERE codigoV="+CodigoV+" AND Id="+Context.Productos.get(i).getId()+"");
                 }
                 ConsultaBaseDatos();
             }catch (Exception e){

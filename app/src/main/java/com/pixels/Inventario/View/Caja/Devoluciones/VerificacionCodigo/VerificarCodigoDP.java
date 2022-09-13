@@ -40,7 +40,7 @@ public class VerificarCodigoDP {
                     Context.Codigo.setFocusableInTouchMode(true);
                     Context.Codigo.requestFocus();
                 }else{
-                    if(Context.ProductosV.get(Context.indexProducto).getEstadoDevolucion().equals("si") && (Context.ProductosV.get(Context.indexProducto).getCantidadD()==Context.ProductosV.get(Context.indexProducto).getCantidadV())){
+                    if((Context.ProductosV.get(Context.indexProducto).getCantidadD()==Context.ProductosV.get(Context.indexProducto).getCantidadV())){
                         Context.verificarEnter=editext;
                         Context.Codigo.setText("");
                         Context.CCodigo.setError("El producto ya ha sido devuelto en su totalidad");

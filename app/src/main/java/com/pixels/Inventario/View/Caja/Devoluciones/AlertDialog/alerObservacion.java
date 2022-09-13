@@ -41,7 +41,7 @@ public class alerObservacion {
             observacion.setText(Context.Productos.get(Context.indexProducto).getObservacionD());
         }else{
             // si ya a sido devuelto se colocara las observaciones que se dieron en la anterior devolucion
-            if(Context.ProductosV.get(Context.indexProducto).getEstadoDevolucion().equals("si")){
+            if(Context.ProductosV.get(Context.indexProducto).getCantidadD()>0){
                 observacion.setText(Context.ProductosV.get(Context.indexProducto).getObservacionD());
             }
         }
@@ -57,7 +57,7 @@ public class alerObservacion {
                         Context.Productos.get(Context.indexProducto).setObservacionD(observacion.getText().toString());
                         Context.iniciarRecyclerView();
                     }else{
-                        Context.Productos.add(new VentasProductoD(Context.ProductosV.get(Context.indexProducto).getId(),Context.ProductosV.get(Context.indexProducto).getCodigoV(),Context.ProductosV.get(Context.indexProducto).getCodigoP(),Context.ProductosV.get(Context.indexProducto).getNombre(),Context.ProductosV.get(Context.indexProducto).getCantidadV(),CantidadD,Context.ProductosV.get(Context.indexProducto).getTipoC(),Context.ProductosV.get(Context.indexProducto).getCostePV(),Context.ProductosV.get(Context.indexProducto).getPrecioPV(),Context.ProductosV.get(Context.indexProducto).getIva(),"si",observacion.getText().toString()));
+                        Context.Productos.add(new VentasProductoD(Context.ProductosV.get(Context.indexProducto).getId(),Context.ProductosV.get(Context.indexProducto).getCodigoV(),Context.ProductosV.get(Context.indexProducto).getCodigoP(),Context.ProductosV.get(Context.indexProducto).getNombre(),Context.ProductosV.get(Context.indexProducto).getCantidadV(),CantidadD,Context.ProductosV.get(Context.indexProducto).getTipoC(),Context.ProductosV.get(Context.indexProducto).getCostePV(),Context.ProductosV.get(Context.indexProducto).getPrecioPV(),Context.ProductosV.get(Context.indexProducto).getIva(),observacion.getText().toString()));
                         Context.iniciarRecyclerView();
                     }
                     dialog.cancel();

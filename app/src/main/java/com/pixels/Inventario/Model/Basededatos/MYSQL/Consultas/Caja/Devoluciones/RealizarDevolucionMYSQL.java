@@ -54,7 +54,7 @@ public class RealizarDevolucionMYSQL extends Conexion implements MediadorBaseDat
                 for(int i=0;i<Context.Productos.size();i++){
                     BigDecimal bd = new BigDecimal(Context.Productos.get(i).getCantidadD());
                     bd = bd.setScale(3, RoundingMode.HALF_UP);
-                    st.executeUpdate("UPDATE VentasProductos SET CantidadD=CantidadD+"+bd.doubleValue()+",EstadoDevolucion='si', ObservacionD='"+Context.Productos.get(i).getObservacionD()+"' WHERE codigoV="+CodigoV+" AND Id="+Context.Productos.get(i).getId()+"");
+                    st.executeUpdate("UPDATE VentasProductos SET CantidadD=CantidadD+"+bd.doubleValue()+", ObservacionD='"+Context.Productos.get(i).getObservacionD()+"' WHERE codigoV="+CodigoV+" AND Id="+Context.Productos.get(i).getId()+"");
                 }
                 return "";
             }
