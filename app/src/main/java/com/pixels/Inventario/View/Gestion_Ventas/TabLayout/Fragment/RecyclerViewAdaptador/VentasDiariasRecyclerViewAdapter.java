@@ -21,6 +21,8 @@ import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.DiariasFragm
 import com.pixels.Inventario.View.Gestion_Ventas.VerVentas;
 
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.text.NumberFormat;
 import java.util.List;
 
@@ -45,7 +47,9 @@ public class VentasDiariasRecyclerViewAdapter extends RecyclerView.Adapter<Venta
         holder.Fecha.setText(VentasTotales.get(position).getFecha()+"");
         holder.CantidadPV.setText(VentasTotales.get(position).getCProductoV()+"");
         NumberFormat formato= NumberFormat.getNumberInstance();
-        holder.GananciaN.setText("$ "+formato.format(VentasTotales.get(position).getGananciaNeta()));
+        BigDecimal bd = new BigDecimal(VentasTotales.get(position).getGananciaNeta());
+        bd = bd.setScale(0, RoundingMode.HALF_UP);
+        holder.GananciaN.setText("$ "+formato.format(bd.doubleValue()));
         if(VentasTotales.get(position).getTotalD()>0){
             holder.TotalP.setText("$ "+formato.format(VentasTotales.get(position).getPerdidaD()));
             holder.TotalD.setText("$ "+formato.format(VentasTotales.get(position).getTotalD()));
