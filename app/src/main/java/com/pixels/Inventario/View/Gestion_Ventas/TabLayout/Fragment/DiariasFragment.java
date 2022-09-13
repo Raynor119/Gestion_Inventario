@@ -148,7 +148,6 @@ public class DiariasFragment extends Fragment {
                     GananN=GananN+ventasD.get(i).getGananciaNeta();
                     totalV=totalV+ventasD.get(i).getTotalV();
                 }
-                totalPerdida=totalDevolu-totalPerdida;
                 NumberFormat formato= NumberFormat.getNumberInstance();
                 BigDecimal bdIva = new BigDecimal(impuestoiva);
                 bdIva = bdIva.setScale(0, RoundingMode.HALF_UP);

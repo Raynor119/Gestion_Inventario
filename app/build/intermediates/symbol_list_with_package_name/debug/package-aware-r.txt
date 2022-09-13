@@ -1881,12 +1881,15 @@ id CPV
 id CTRL
 id Cantidad
 id CosteP
+id CostoTotal
 id EditCodigo
 id Efectivo
 id Escaner
 id FUNCTION
 id Ffecha
+id GananN
 id Iva
+id IvaP
 id LtotaD
 id LtotaP
 id META
@@ -1894,6 +1897,7 @@ id NO_DEBUG
 id Nit
 id NombreR
 id Observacion
+id Perdida
 id Precio
 id RadioMysqlButton
 id RadioSQLiteButton
@@ -1908,8 +1912,10 @@ id TOP_START
 id Tablayout
 id Total
 id TotalD
+id TotalDevolu
 id TotalP
 id TotalV
+id TotalVendido
 id VerFactura
 id accelerate
 id accessibility_action_clickable_span
