@@ -9,6 +9,7 @@ import android.widget.DatePicker;
 
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.pixels.Inventario.R;
@@ -18,6 +19,8 @@ import java.util.Calendar;
 public class DiariasFragment extends Fragment {
 
     private TextInputEditText calendarioEditText;
+    public RecyclerView reciclerView;
+
     public DiariasFragment(){
 
     }
@@ -28,6 +31,7 @@ public class DiariasFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_diarias, container, false);
+        reciclerView= rootView.findViewById(R.id.venta_list);
         calendarioEditText=(TextInputEditText) rootView.findViewById(R.id.fecha);
         calendarioEditText.setEnabled(false);
         calendarioEditText.setText(getDia());
@@ -65,9 +69,13 @@ public class DiariasFragment extends Fragment {
             }
         });
 
+        iniciarRecyclerView();
 
 
         return rootView;
+    }
+    public void iniciarRecyclerView(){
+        reciclerView.setAdapter(null);
     }
 
     public String getDia(){

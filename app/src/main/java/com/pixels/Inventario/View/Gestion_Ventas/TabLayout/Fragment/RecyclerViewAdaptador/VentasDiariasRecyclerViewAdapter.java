@@ -8,16 +8,20 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.Model.DatosE.TotalVentas;
+import com.pixels.Inventario.Model.DatosE.Venta;
 import com.pixels.Inventario.R;
 
 
 import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.DiariasFragment;
+import com.pixels.Inventario.View.Gestion_Ventas.VerVentas;
 
 
+import java.text.NumberFormat;
 import java.util.List;
 
 public class VentasDiariasRecyclerViewAdapter extends RecyclerView.Adapter<VentasDiariasRecyclerViewAdapter.ViewHolder> {
@@ -37,7 +41,19 @@ public class VentasDiariasRecyclerViewAdapter extends RecyclerView.Adapter<Venta
     }
     @Override
     public void onBindViewHolder(final VentasDiariasRecyclerViewAdapter.ViewHolder holder, int position) {
-
+        holder.CodigoV.setText(VentasTotales.get(position).getCodigoV()+"");
+        holder.Fecha.setText(VentasTotales.get(position).getFecha()+"");
+        holder.CantidadPV.setText(VentasTotales.get(position).getCProductoV()+"");
+        NumberFormat formato= NumberFormat.getNumberInstance();
+        holder.GananciaN.setText("$ "+formato.format(VentasTotales.get(position).getGananciaNeta()));
+        if(VentasTotales.get(position).getTotalD()>0){
+            holder.TotalP.setText("$ "+formato.format(VentasTotales.get(position).getPerdidaD()));
+            holder.TotalD.setText("$ "+formato.format(VentasTotales.get(position).getTotalD()));
+        }else{
+            holder.LTotalD.setVisibility(ConstraintLayout.GONE);
+            holder.LTotalP.setVisibility(ConstraintLayout.GONE);
+        }
+        holder.TotalV.setText("$ "+formato.format(VentasTotales.get(position).getTotalV()));
     }
     @Override
     public int getItemCount() {
@@ -49,6 +65,16 @@ public class VentasDiariasRecyclerViewAdapter extends RecyclerView.Adapter<Venta
         final LinearLayout LTotalP,LTotalD;
         ViewHolder(View view) {
             super(view);
+            CodigoV=(TextView) view.findViewById(R.id.codigo);
+            Fecha=(TextView) view.findViewById(R.id.fecha);
+            CantidadPV=(TextView) view.findViewById(R.id.CPV);
+            GananciaN=(TextView) view.findViewById(R.id.ganaN);
+            TotalP=(TextView) view.findViewById(R.id.TotalP);
+            TotalD=(TextView) view.findViewById(R.id.TotalD);
+            TotalV=(TextView) view.findViewById(R.id.TotalV);
+
+            LTotalD=(LinearLayout) view.findViewById(R.id.LtotaD);
+            LTotalP=(LinearLayout) view.findViewById(R.id.LtotaP);
 
         }
     }

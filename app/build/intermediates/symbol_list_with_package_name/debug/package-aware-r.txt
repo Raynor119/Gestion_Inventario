@@ -1887,6 +1887,8 @@ id Escaner
 id FUNCTION
 id Ffecha
 id Iva
+id LtotaD
+id LtotaP
 id META
 id NO_DEBUG
 id Nit
@@ -1905,6 +1907,8 @@ id TOP_END
 id TOP_START
 id Tablayout
 id Total
+id TotalD
+id TotalP
 id TotalV
 id VerFactura
 id accelerate
