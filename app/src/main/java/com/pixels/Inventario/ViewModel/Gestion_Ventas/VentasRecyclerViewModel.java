@@ -19,7 +19,9 @@ import com.pixels.Inventario.ViewModel.Gestion_Productos.ProductosRecyclerViewMo
 import java.util.List;
 
 public class VentasRecyclerViewModel extends ViewModel {
+
     public MutableLiveData<List<TotalVentas>> resultado;
+
     public VentasRecyclerViewModel(){
         resultado=new MutableLiveData<>();
     }
@@ -29,14 +31,22 @@ public class VentasRecyclerViewModel extends ViewModel {
     public LiveData<List<TotalVentas>> getResultado(){
         return resultado;
     }
+
     public void buscarVentas(Context context,String Consulta){
+        String ConsultaP="SELECT venta.codigo,COUNT(ventasproductos.codigoV) as CProductosV,sum(ventasproductos.CantidadV*ventasproductos.PrecioPV) as TotalV," +
+                "(sum(((ventasproductos.CantidadV-ventasproductos.CantidadD)*ventasproductos.PrecioPV)/(1.0+(ventasproductos.IvaPV*0.01)))-sum((ventasproductos.CantidadV-ventasproductos.CantidadD)*ventasproductos.CostePV)) as GananciaNeta," +
+                "(sum((((ventasproductos.CantidadV-ventasproductos.CantidadD)*ventasproductos.PrecioPV)/(1.0+(ventasproductos.IvaPV*0.01))*ventasproductos.IvaPV*0.01))) as TotalIvaP," +
+                "(sum((ventasproductos.CantidadV)*ventasproductos.CostePV)) as CostoV," +
+                "(SUM(ventasproductos.CantidadD*ventasproductos.CostePV)) as PerdidaD," +
+                "(SUM(ventasproductos.CantidadD*ventasproductos.PrecioPV)) as TotalD" +
+                ",venta.Fecha FROM ventasproductos INNER JOIN venta ON ventasproductos.codigov=venta.codigo "+Consulta;
         consultasDatos dinici=new consultasDatos(context);
         MediadorBaseDatos BD;
         if(dinici.obtenerD().get(0).getBasedatos().equals("SQLITE")){
-            BD= new VerVentasSQLite(context,VentasRecyclerViewModel.this,Consulta);
+            BD= new VerVentasSQLite(context,VentasRecyclerViewModel.this,ConsultaP);
         }
         if(dinici.obtenerD().get(0).getBasedatos().equals("MYSQL")){
-            BD= new VerVentasMYSQL(context,VentasRecyclerViewModel.this,Consulta);
+            BD= new VerVentasMYSQL(context,VentasRecyclerViewModel.this,ConsultaP);
         }
     }
 }
