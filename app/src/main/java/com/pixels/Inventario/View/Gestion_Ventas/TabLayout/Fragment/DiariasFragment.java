@@ -16,6 +16,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.Model.DatosE.TotalVentas;
@@ -100,6 +101,14 @@ public class DiariasFragment extends Fragment {
         });
 
         iniciarRecyclerView(calendarioEditText.getText().toString());
+
+        FloatingActionButton fab = rootView.findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                iniciarRecyclerView(calendarioEditText.getText().toString());
+            }
+        });
 
 
         return rootView;
