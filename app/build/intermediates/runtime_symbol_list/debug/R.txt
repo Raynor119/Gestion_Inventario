@@ -2679,6 +2679,9 @@ int mipmap scaner 0x7f0d002f
 int mipmap ventad 0x7f0d0030
 int mipmap ventad_adaptive_back 0x7f0d0031
 int mipmap ventad_adaptive_fore 0x7f0d0032
+int mipmap ventaid 0x7f0d0036
+int mipmap ventaid_adaptive_back 0x7f0d0037
+int mipmap ventaid_adaptive_fore 0x7f0d0038
 int mipmap ventas 0x7f0d0033
 int mipmap ventas_adaptive_back 0x7f0d0034
 int mipmap ventas_adaptive_fore 0x7f0d0035

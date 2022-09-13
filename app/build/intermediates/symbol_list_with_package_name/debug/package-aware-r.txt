@@ -2680,6 +2680,9 @@ mipmap scaner
 mipmap ventad
 mipmap ventad_adaptive_back
 mipmap ventad_adaptive_fore
+mipmap ventaid
+mipmap ventaid_adaptive_back
+mipmap ventaid_adaptive_fore
 mipmap ventas
 mipmap ventas_adaptive_back
 mipmap ventas_adaptive_fore
