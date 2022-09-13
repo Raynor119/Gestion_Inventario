@@ -201,12 +201,12 @@
                                 android:layout_width="wrap_content"
                                 android:text="Ganancia Neta Total: "
                                 android:textColor="#000000"
-                                android:textSize="17sp"
+                                android:textSize="20sp"
                                 android:layout_height="wrap_content"/>
                             <TextView
                                 android:id="@+id/GananN"
                                 android:textColor="#000000"
-                                android:textSize="17sp"
+                                android:textSize="20sp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"/>
                         </LinearLayout>
@@ -219,12 +219,12 @@
                                 android:layout_width="wrap_content"
                                 android:text="Total Vendido: "
                                 android:textColor="#000000"
-                                android:textSize="17sp"
+                                android:textSize="24sp"
                                 android:layout_height="wrap_content"/>
                             <TextView
                                 android:id="@+id/TotalVendido"
                                 android:textColor="#000000"
-                                android:textSize="17sp"
+                                android:textSize="24sp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"/>
                         </LinearLayout>
