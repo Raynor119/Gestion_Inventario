@@ -10,6 +10,7 @@ import com.pixels.Inventario.Model.Basededatos.MYSQL.Consultas.Gestion_Productos
 import com.pixels.Inventario.Model.Basededatos.MYSQL.Consultas.Gestion_Ventas.VerVentasMYSQL;
 import com.pixels.Inventario.Model.Basededatos.MediadorBaseDatos;
 
+import com.pixels.Inventario.Model.Basededatos.SQLite.BaseDatos.Consultas.Gestion_Ventas.VerVentasSQLite;
 import com.pixels.Inventario.Model.Basededatos.SQLite.DatosInicio.consultasDatos;
 
 import com.pixels.Inventario.Model.DatosE.TotalVentas;
@@ -32,7 +33,7 @@ public class VentasRecyclerViewModel extends ViewModel {
         consultasDatos dinici=new consultasDatos(context);
         MediadorBaseDatos BD;
         if(dinici.obtenerD().get(0).getBasedatos().equals("SQLITE")){
-           // BD= new VerProductosSQLite(context, ProductosRecyclerViewModel.this);
+            BD= new VerVentasSQLite(context,VentasRecyclerViewModel.this,Consulta);
         }
         if(dinici.obtenerD().get(0).getBasedatos().equals("MYSQL")){
             BD= new VerVentasMYSQL(context,VentasRecyclerViewModel.this,Consulta);
