@@ -5,6 +5,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -51,6 +52,11 @@ public class VentasDiariasRecyclerViewAdapter extends RecyclerView.Adapter<Venta
         bd = bd.setScale(0, RoundingMode.HALF_UP);
         holder.GananciaN.setText("$ "+formato.format(bd.doubleValue()));
         if(VentasTotales.get(position).getTotalD()>0){
+            try{
+                holder.imagen.setImageResource(R.mipmap.ventaid_adaptive_fore);
+            }catch (Exception e){
+
+            }
             holder.TotalP.setText("$ "+formato.format(VentasTotales.get(position).getPerdidaD()));
             holder.TotalD.setText("$ "+formato.format(VentasTotales.get(position).getTotalD()));
         }else{
@@ -67,6 +73,7 @@ public class VentasDiariasRecyclerViewAdapter extends RecyclerView.Adapter<Venta
     class ViewHolder extends RecyclerView.ViewHolder {
         final TextView CodigoV,Fecha,CantidadPV,GananciaN,TotalP,TotalD,TotalV;
         final LinearLayout LTotalP,LTotalD;
+        ImageView imagen=null;
         ViewHolder(View view) {
             super(view);
             CodigoV=(TextView) view.findViewById(R.id.codigo);
@@ -79,6 +86,12 @@ public class VentasDiariasRecyclerViewAdapter extends RecyclerView.Adapter<Venta
 
             LTotalD=(LinearLayout) view.findViewById(R.id.LtotaD);
             LTotalP=(LinearLayout) view.findViewById(R.id.LtotaP);
+
+            try{
+                imagen=(ImageView) view.findViewById(R.id.imagen);
+            }catch (Exception e){
+
+            }
 
         }
     }

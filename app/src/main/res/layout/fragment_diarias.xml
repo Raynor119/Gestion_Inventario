@@ -109,7 +109,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_width="match_parent"
                     android:layout_marginBottom="30dp"
-                    android:layout_height="150dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
                     android:layout_marginLeft="10dp"
                     app:cardCornerRadius="10dp"
@@ -117,6 +117,8 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:background="@color/black"
+                        android:layout_margin="20dp"
+                        android:orientation="vertical"
                         android:layout_height="match_parent">
 
                        <LinearLayout
@@ -125,13 +127,107 @@
                            android:layout_height="wrap_content">
                            <TextView
                                android:layout_width="wrap_content"
-                               android:text=""
+                               android:text="Costo Total: "
+                               android:textColor="#000000"
+                               android:textSize="17sp"
                                android:layout_height="wrap_content"/>
                            <TextView
+                               android:id="@+id/CostoTotal"
+                               android:textColor="#000000"
+                               android:textSize="17sp"
                                android:layout_width="wrap_content"
-
                                android:layout_height="wrap_content"/>
                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Total de Perdidas: "
+                                android:textColor="#000000"
+                                android:textSize="17sp"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/Perdida"
+                                android:textColor="@color/error"
+                                android:textSize="17sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Total de las Devoluciones: "
+                                android:textColor="#000000"
+                                android:textSize="17sp"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/TotalDevolu"
+                                android:textColor="#000000"
+                                android:textSize="17sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Impuesto por Iva: "
+                                android:textColor="#000000"
+                                android:textSize="17sp"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/IvaP"
+                                android:textColor="#000000"
+                                android:textSize="17sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Ganancia Neta Total: "
+                                android:textColor="#000000"
+                                android:textSize="17sp"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/GananN"
+                                android:textColor="#000000"
+                                android:textSize="17sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Total Vendido: "
+                                android:textColor="#000000"
+                                android:textSize="17sp"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/TotalVendido"
+                                android:textColor="#000000"
+                                android:textSize="17sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>

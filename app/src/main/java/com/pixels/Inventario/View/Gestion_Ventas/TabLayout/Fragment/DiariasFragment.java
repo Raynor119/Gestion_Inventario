@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.DatePicker;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.cardview.widget.CardView;
@@ -28,6 +29,9 @@ import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.RecyclerView
 import com.pixels.Inventario.ViewModel.Gestion_Productos.ProductosRecyclerViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Ventas.VentasRecyclerViewModel;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.text.NumberFormat;
 import java.util.Calendar;
 import java.util.List;
 
@@ -35,6 +39,7 @@ public class DiariasFragment extends Fragment {
 
     private TextInputEditText calendarioEditText;
     public RecyclerView reciclerView;
+    private TextView costototal,totalP,totalDevo,impuesto,totalGananNeta,TotalVendido;
 
     public DiariasFragment(){
 
@@ -48,6 +53,12 @@ public class DiariasFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_diarias, container, false);
         reciclerView= rootView.findViewById(R.id.venta_list);
         calendarioEditText=(TextInputEditText) rootView.findViewById(R.id.fecha);
+        costototal=(TextView) rootView.findViewById(R.id.CostoTotal);
+        totalP=(TextView) rootView.findViewById(R.id.Perdida);
+        totalDevo=(TextView) rootView.findViewById(R.id.TotalDevolu);
+        impuesto=(TextView) rootView.findViewById(R.id.IvaP);
+        totalGananNeta=(TextView) rootView.findViewById(R.id.GananN);
+        TotalVendido=(TextView) rootView.findViewById(R.id.TotalVendido);
         calendarioEditText.setEnabled(false);
         calendarioEditText.setText(getDia());
         calendarioEditText.addTextChangedListener(new TextWatcher() {
@@ -123,6 +134,32 @@ public class DiariasFragment extends Fragment {
             @Override
             public void onChanged(List<TotalVentas> ventasD) {
                 reciclerView.setAdapter(new VentasDiariasRecyclerViewAdapter(ventasD,DiariasFragment.this));
+                int costototalIndex=0;
+                int totalPerdida=0;
+                int totalDevolu=0;
+                double impuestoiva=0;
+                double GananN=0;
+                int totalV=0;
+                for(int i=0;i<ventasD.size();i++){
+                    costototalIndex=costototalIndex+ventasD.get(i).getCostoV();
+                    totalPerdida=totalPerdida+ventasD.get(i).getPerdidaD();
+                    totalDevolu=totalDevolu+ventasD.get(i).getTotalD();
+                    impuestoiva=impuestoiva+ventasD.get(i).getTotalIvaP();
+                    GananN=GananN+ventasD.get(i).getGananciaNeta();
+                    totalV=totalV+ventasD.get(i).getTotalV();
+                }
+                totalPerdida=totalDevolu-totalPerdida;
+                NumberFormat formato= NumberFormat.getNumberInstance();
+                BigDecimal bdIva = new BigDecimal(impuestoiva);
+                bdIva = bdIva.setScale(0, RoundingMode.HALF_UP);
+                BigDecimal bdGN = new BigDecimal(GananN);
+                bdGN = bdGN.setScale(0, RoundingMode.HALF_UP);
+                costototal.setText("$ "+formato.format(costototalIndex));
+                totalP.setText("$ "+formato.format(totalPerdida));
+                totalDevo.setText("$ "+formato.format(totalDevolu));
+                impuesto.setText("$ "+formato.format(bdIva.doubleValue()));
+                totalGananNeta.setText("$ "+formato.format(bdGN.doubleValue()));
+                TotalVendido.setText("$ "+formato.format(totalV));
             }
         };
         ventas.getResultado().observe(getActivity(),observer);
