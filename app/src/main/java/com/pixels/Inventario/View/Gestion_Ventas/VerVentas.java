@@ -16,7 +16,7 @@ public class VerVentas extends AppCompatActivity {
         setContentView(R.layout.activity_ver_ventas);
         VerVentasFragment fragment= new VerVentasFragment();
         getSupportFragmentManager().beginTransaction()
-                .add(R.id.opcion_detail_container, fragment)
+                .replace(R.id.opcion_detail_container, fragment)
                 .commit();
     }
 }

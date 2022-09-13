@@ -2,10 +2,13 @@ package com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment;
 
 import android.app.DatePickerDialog;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.DatePicker;
+import android.widget.Toast;
 
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
@@ -45,6 +48,22 @@ public class DiariasFragment extends Fragment {
         calendarioEditText=(TextInputEditText) rootView.findViewById(R.id.fecha);
         calendarioEditText.setEnabled(false);
         calendarioEditText.setText(getDia());
+        calendarioEditText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                iniciarRecyclerView(calendarioEditText.getText().toString());
+            }
+        });
         CardView Bcalendario=(CardView) rootView.findViewById(R.id.calendario);
         Bcalendario.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,23 +92,23 @@ public class DiariasFragment extends Fragment {
                     public void onDateSet(DatePicker datePicker, int year, int Mes, int Dia) {
                         int mes=Mes+1;
                         calendarioEditText.setText(Dia+"/"+(mes)+"/"+year);
-                        iniciarRecyclerView();
+                        iniciarRecyclerView(calendarioEditText.getText().toString());
                     }
                 },anno,mes-1,dia);
                 datePickerDialog.show();
             }
         });
 
-        iniciarRecyclerView();
+        iniciarRecyclerView(calendarioEditText.getText().toString());
 
 
         return rootView;
     }
-    public void iniciarRecyclerView(){
+    public void iniciarRecyclerView(String Ffecha){
         reciclerView.setAdapter(null);
         VentasRecyclerViewModel ventas= ViewModelProviders.of(getActivity()).get(VentasRecyclerViewModel.class);
         ventas.reset();
-        ventas.buscarVentas(getActivity(),getConsulta());
+        ventas.buscarVentas(getActivity(),getConsulta(Ffecha));
         final Observer<List<TotalVentas>> observer= new Observer<List<TotalVentas>>() {
             @Override
             public void onChanged(List<TotalVentas> ventasD) {
@@ -99,12 +118,12 @@ public class DiariasFragment extends Fragment {
         ventas.getResultado().observe(getActivity(),observer);
     }
 
-    public String getConsulta(){
+    public String getConsulta(String fechaE){
         int dia=1,mes=1,anno;
         int cont=0;
         String date="";
-        for(int i=0;i<calendarioEditText.getText().length();i++){
-            if((calendarioEditText.getText().charAt(i)+"").equals("/")){
+        for(int i=0;i<fechaE.length();i++){
+            if((fechaE.charAt(i)+"").equals("/")){
                 if(cont==0){
                     dia=Integer.parseInt(date);
                     date="";
@@ -115,7 +134,7 @@ public class DiariasFragment extends Fragment {
                 }
                 cont++;
             }else {
-                date = date + (calendarioEditText.getText().charAt(i));
+                date = date + (fechaE.charAt(i));
             }
         }
         anno=Integer.parseInt(date);
