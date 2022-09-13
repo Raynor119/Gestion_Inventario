@@ -64,6 +64,9 @@ public class DiariasFragment extends Fragment {
                 datePickerDialog.show();
             }
         });
+
+
+
         return rootView;
     }
 
