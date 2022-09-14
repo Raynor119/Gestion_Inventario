@@ -6,19 +6,17 @@ import android.database.sqlite.SQLiteDatabase;
 
 import com.pixels.Inventario.Model.Basededatos.MediadorBaseDatos;
 import com.pixels.Inventario.Model.Basededatos.SQLite.BaseDatos.BaseDatosSQLite;
-import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.Model.DatosE.TotalVentas;
-import com.pixels.Inventario.ViewModel.Gestion_Productos.ProductosRecyclerViewModel;
-import com.pixels.Inventario.ViewModel.Gestion_Ventas.VentasRecyclerViewModel;
+import com.pixels.Inventario.ViewModel.Gestion_Ventas.VentasDiariasRecyclerViewModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class VerVentasSQLite extends BaseDatosSQLite implements MediadorBaseDatos {
+public class VerVentasDiariasSQLite extends BaseDatosSQLite implements MediadorBaseDatos {
 
-    public VentasRecyclerViewModel ViewModel;
+    public VentasDiariasRecyclerViewModel ViewModel;
     private String Consulta="";
-    public VerVentasSQLite(Context context, VentasRecyclerViewModel viewModel,String consulta) {
+    public VerVentasDiariasSQLite(Context context, VentasDiariasRecyclerViewModel viewModel, String consulta) {
         super(context);
         this.ViewModel=viewModel;
         this.Consulta=consulta;

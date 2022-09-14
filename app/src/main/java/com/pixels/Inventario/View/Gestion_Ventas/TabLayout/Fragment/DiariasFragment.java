@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.DatePicker;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
@@ -20,14 +19,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.pixels.Inventario.Model.Basededatos.SQLite.DatosInicio.consultasDatos;
-import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.Model.DatosE.TotalVentas;
 import com.pixels.Inventario.R;
-import com.pixels.Inventario.View.Gestion_Productos.Fragment.VerInventarioFragment;
-import com.pixels.Inventario.View.Gestion_Productos.RecyclerViewAdaptador.ProductosRecyclerViewAdapter;
 import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.RecyclerViewAdaptador.VentasDiariasRecyclerViewAdapter;
-import com.pixels.Inventario.ViewModel.Gestion_Productos.ProductosRecyclerViewModel;
-import com.pixels.Inventario.ViewModel.Gestion_Ventas.VentasRecyclerViewModel;
+import com.pixels.Inventario.ViewModel.Gestion_Ventas.VentasDiariasRecyclerViewModel;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -127,13 +122,15 @@ public class DiariasFragment extends Fragment {
     }
     public void iniciarRecyclerView(String Ffecha){
         reciclerView.setAdapter(null);
-        VentasRecyclerViewModel ventas= ViewModelProviders.of(getActivity()).get(VentasRecyclerViewModel.class);
+
+        VentasDiariasRecyclerViewModel ventas= ViewModelProviders.of(getActivity()).get(VentasDiariasRecyclerViewModel.class);
         ventas.reset();
         ventas.buscarVentas(getActivity(),getConsulta(Ffecha));
         final Observer<List<TotalVentas>> observer= new Observer<List<TotalVentas>>() {
             @Override
             public void onChanged(List<TotalVentas> ventasD) {
-                reciclerView.setAdapter(new VentasDiariasRecyclerViewAdapter(ventasD,DiariasFragment.this));
+
+                reciclerView.setAdapter(new VentasDiariasRecyclerViewAdapter(ventasD,DiariasFragment.this.getActivity()));
                 int costototalIndex=0;
                 int totalPerdida=0;
                 int totalDevolu=0;

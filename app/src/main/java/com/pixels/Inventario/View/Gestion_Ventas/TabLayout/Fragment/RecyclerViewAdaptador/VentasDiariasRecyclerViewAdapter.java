@@ -30,11 +30,11 @@ import java.util.List;
 public class VentasDiariasRecyclerViewAdapter extends RecyclerView.Adapter<VentasDiariasRecyclerViewAdapter.ViewHolder> {
 
     private List<TotalVentas> VentasTotales;
-    private DiariasFragment Fragment;
+    private Context Context;
 
-    public VentasDiariasRecyclerViewAdapter(List<TotalVentas> ventasTotales,DiariasFragment fragment){
+    public VentasDiariasRecyclerViewAdapter(List<TotalVentas> ventasTotales,Context fragment){
         this.VentasTotales=ventasTotales;
-        this.Fragment=fragment;
+        this.Context=fragment;
     }
     @Override
     public VentasDiariasRecyclerViewAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {

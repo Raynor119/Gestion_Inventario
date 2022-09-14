@@ -5,10 +5,9 @@ import android.widget.Toast;
 
 import com.pixels.Inventario.Model.Basededatos.MYSQL.Conexion;
 import com.pixels.Inventario.Model.Basededatos.MediadorBaseDatos;
-import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.Model.DatosE.TotalVentas;
-import com.pixels.Inventario.ViewModel.Gestion_Productos.ProductosRecyclerViewModel;
-import com.pixels.Inventario.ViewModel.Gestion_Ventas.VentasRecyclerViewModel;
+import com.pixels.Inventario.ViewModel.Gestion_Ventas.VentasDiariasRecyclerViewModel;
+import com.pixels.Inventario.ViewModel.Gestion_Ventas.VentasMensualesRecyclerViewModel;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -17,12 +16,12 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class VerVentasMYSQL extends Conexion implements MediadorBaseDatos {
-    public VentasRecyclerViewModel ViewModel;
+public class VerVentasMensualesMYSQL extends Conexion implements MediadorBaseDatos {
+    public VentasMensualesRecyclerViewModel ViewModel;
     public List<TotalVentas> ventas;
     private boolean verificarE=false;
     private String Consulta="";
-    public VerVentasMYSQL(Context context, VentasRecyclerViewModel viewModel,String consulta) {
+    public VerVentasMensualesMYSQL(Context context, VentasMensualesRecyclerViewModel viewModel, String consulta) {
         super(context);
         this.ViewModel=viewModel;
         this.Consulta=consulta;

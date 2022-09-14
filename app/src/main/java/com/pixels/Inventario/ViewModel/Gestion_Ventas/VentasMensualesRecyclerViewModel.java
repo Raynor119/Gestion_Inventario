@@ -6,23 +6,21 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.pixels.Inventario.Model.Basededatos.MYSQL.Consultas.Gestion_Productos.VerProductosMYSQL;
-import com.pixels.Inventario.Model.Basededatos.MYSQL.Consultas.Gestion_Ventas.VerVentasMYSQL;
+import com.pixels.Inventario.Model.Basededatos.MYSQL.Consultas.Gestion_Ventas.VerVentasDiariasMYSQL;
+import com.pixels.Inventario.Model.Basededatos.MYSQL.Consultas.Gestion_Ventas.VerVentasMensualesMYSQL;
 import com.pixels.Inventario.Model.Basededatos.MediadorBaseDatos;
-
-import com.pixels.Inventario.Model.Basededatos.SQLite.BaseDatos.Consultas.Gestion_Ventas.VerVentasSQLite;
+import com.pixels.Inventario.Model.Basededatos.SQLite.BaseDatos.Consultas.Gestion_Ventas.VerVentasDiariasSQLite;
+import com.pixels.Inventario.Model.Basededatos.SQLite.BaseDatos.Consultas.Gestion_Ventas.VerVentasMensualesSQLite;
 import com.pixels.Inventario.Model.Basededatos.SQLite.DatosInicio.consultasDatos;
-
 import com.pixels.Inventario.Model.DatosE.TotalVentas;
-import com.pixels.Inventario.ViewModel.Gestion_Productos.ProductosRecyclerViewModel;
 
 import java.util.List;
 
-public class VentasRecyclerViewModel extends ViewModel {
+public class VentasMensualesRecyclerViewModel extends ViewModel {
 
     public MutableLiveData<List<TotalVentas>> resultado;
 
-    public VentasRecyclerViewModel(){
+    public VentasMensualesRecyclerViewModel(){
         resultado=new MutableLiveData<>();
     }
     public void reset(){
@@ -32,7 +30,7 @@ public class VentasRecyclerViewModel extends ViewModel {
         return resultado;
     }
 
-    public void buscarVentas(Context context,String Consulta){
+    public void buscarVentas(Context context, String Consulta){
         String ConsultaP="SELECT venta.codigo,COUNT(ventasproductos.codigoV) as CProductosV,sum(ventasproductos.CantidadV*ventasproductos.PrecioPV) as TotalV," +
                 "(sum(((ventasproductos.CantidadV-ventasproductos.CantidadD)*ventasproductos.PrecioPV)/(1.0+(ventasproductos.IvaPV*0.01)))-sum((ventasproductos.CantidadV-ventasproductos.CantidadD)*ventasproductos.CostePV)) as GananciaNeta," +
                 "(sum((((ventasproductos.CantidadV-ventasproductos.CantidadD)*ventasproductos.PrecioPV)/(1.0+(ventasproductos.IvaPV*0.01))*ventasproductos.IvaPV*0.01))) as TotalIvaP," +
@@ -43,10 +41,10 @@ public class VentasRecyclerViewModel extends ViewModel {
         consultasDatos dinici=new consultasDatos(context);
         MediadorBaseDatos BD;
         if(dinici.obtenerD().get(0).getBasedatos().equals("SQLITE")){
-            BD= new VerVentasSQLite(context,VentasRecyclerViewModel.this,ConsultaP);
+            BD= new VerVentasMensualesSQLite(context, VentasMensualesRecyclerViewModel.this,ConsultaP);
         }
         if(dinici.obtenerD().get(0).getBasedatos().equals("MYSQL")){
-            BD= new VerVentasMYSQL(context,VentasRecyclerViewModel.this,ConsultaP);
+            BD= new VerVentasMensualesMYSQL(context, VentasMensualesRecyclerViewModel.this,ConsultaP);
         }
     }
 }
