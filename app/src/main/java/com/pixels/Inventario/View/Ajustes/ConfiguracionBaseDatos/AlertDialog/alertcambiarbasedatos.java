@@ -69,6 +69,7 @@ public class alertcambiarbasedatos {
                 }else if(i == R.id.RadioSQLiteButton){
                     modificarbasedatosViewModel modificar= ViewModelProviders.of(Context).get(modificarbasedatosViewModel.class);
                     modificar.ModificarBaseDatos(Context,"SQLITE","","","","");
+                    Context.MenuInicioA.recreate();
                     dialog.cancel();
                 }
             }
@@ -85,6 +86,7 @@ public class alertcambiarbasedatos {
                 Intent intent=new Intent(Context, cambiarMySQL.class);
                 Context.startActivity(intent);
                 cambiarMySQL.alert=dialog;
+                cambiarMySQL.ContextA=Context;
             }
         });
         builder.setNegativeButton("Crear Base de Datos", new DialogInterface.OnClickListener() {
@@ -93,6 +95,7 @@ public class alertcambiarbasedatos {
                 Intent intent=new Intent(Context, CrearBaseDatosMYSQL.class);
                 Context.startActivity(intent);
                 CrearBaseDatosMYSQL.alert=dialog;
+                CrearBaseDatosMYSQL.ContextA=Context;
             }
         });
         AlertDialog dialog2 = builder.create();

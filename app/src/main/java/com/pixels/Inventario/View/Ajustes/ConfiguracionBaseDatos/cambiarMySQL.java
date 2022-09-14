@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.pixels.Inventario.R;
+import com.pixels.Inventario.View.Ajustes.Ajustes;
 import com.pixels.Inventario.ViewModel.Ajustes.ConfiguracionBaseDatos.modificarbasedatosViewModel;
 import com.pixels.Inventario.ViewModel.InicioA.ConfiguracionInicial.VerificarConexionViewModel;
 
@@ -21,6 +22,8 @@ public class cambiarMySQL extends AppCompatActivity {
     private EditText ip,Nbasedatos,username,password;
     private VerificarConexionViewModel veriMYSQL;
     private Button boton;
+
+    public static Ajustes ContextA;
 
     public static AlertDialog alert;
     @Override
@@ -77,6 +80,7 @@ public class cambiarMySQL extends AppCompatActivity {
                             if(aBoolean){
                                 modificarbasedatosViewModel modificar=ViewModelProviders.of(cambiarMySQL.this).get(modificarbasedatosViewModel.class);
                                 modificar.ModificarBaseDatos(cambiarMySQL.this,"MYSQL",ip.getText().toString(),Nbasedatos.getText().toString(),username.getText().toString(),password.getText().toString());
+                                ContextA.MenuInicioA.recreate();
                                 finish();
                             }else{
                                 ip.setError("No se puede conectar a La Base Datos");

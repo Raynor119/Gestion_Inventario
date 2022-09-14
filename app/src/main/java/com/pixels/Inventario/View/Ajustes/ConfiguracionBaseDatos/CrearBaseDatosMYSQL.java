@@ -12,6 +12,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import com.pixels.Inventario.R;
+import com.pixels.Inventario.View.Ajustes.Ajustes;
 import com.pixels.Inventario.ViewModel.Ajustes.ConfiguracionBaseDatos.modificarbasedatosViewModel;
 import com.pixels.Inventario.ViewModel.InicioA.ConfiguracionInicial.CrearBaseVerificarViewModel;
 
@@ -20,6 +21,7 @@ public class CrearBaseDatosMYSQL extends AppCompatActivity {
     private EditText ip,Nbasedatos,username,password;
     private CrearBaseVerificarViewModel veriMYSQL;
     private Button boton;
+    public static Ajustes ContextA;
 
 
     @Override
@@ -85,6 +87,7 @@ public class CrearBaseDatosMYSQL extends AppCompatActivity {
                                 modificarbasedatosViewModel modificar=ViewModelProviders.of(CrearBaseDatosMYSQL.this).get(modificarbasedatosViewModel.class);
                                 modificar.ModificarBaseDatos(CrearBaseDatosMYSQL.this,"MYSQL",ip.getText().toString(),Nbasedatos.getText().toString(),username.getText().toString(),password.getText().toString());
                                 veriMYSQL.TerminarProceso();
+                                ContextA.MenuInicioA.recreate();
                                 finish();
                             }else{
                                 Toast.makeText(getApplicationContext(), "No se puede Crear la Base de Datos", Toast.LENGTH_LONG).show();
