@@ -151,15 +151,15 @@ public class MensualesFragment extends Fragment {
         int mes=1,anno;
         int cont=0;
         String date="";
-        for(int i=0;i<calendarioEditText.getText().length();i++){
-            if((calendarioEditText.getText().charAt(i)+"").equals("/")){
+        for(int i=0;i<fechaE.length();i++){
+            if((fechaE.charAt(i)+"").equals("/")){
                 if (cont==0){
                     mes=Integer.parseInt(date);
                     date="";
                 }
                 cont++;
             }else {
-                date = date + (calendarioEditText.getText().charAt(i));
+                date = date + (fechaE.charAt(i));
             }
         }
         anno=Integer.parseInt(date);
@@ -168,9 +168,9 @@ public class MensualesFragment extends Fragment {
         consultasDatos dinici=new consultasDatos(getActivity());
         if(dinici.obtenerD().get(0).getBasedatos().equals("SQLITE")){
             if(mes<10){
-                c="WHERE YEAR(venta.Fecha) = '"+anno+"' AND MONTH(venta.Fecha) = '"+("0"+mes)+"' GROUP BY venta.codigo";
+                c="WHERE strftime('%Y', venta.Fecha) = '"+anno+"' AND strftime('%m', venta.Fecha) = '"+("0"+mes)+"' GROUP BY venta.codigo";
             }else{
-                c="WHERE YEAR(venta.Fecha) = '"+anno+"' AND MONTH(venta.Fecha) = '"+mes+"' GROUP BY venta.codigo";
+                c="WHERE strftime('%Y', venta.Fecha) = '"+anno+"' AND strftime('%m', venta.Fecha) = '"+mes+"' GROUP BY venta.codigo";
             }
 
         }

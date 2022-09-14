@@ -21,10 +21,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v47.8.2 recicler view verificar datos">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/MYSQL/Consultas/Gestion_Ventas/VerVentasMensualesMYSQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/SQLite/BaseDatos/Consultas/Gestion_Ventas/VerVentasMensualesSQLite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/ViewModel/Gestion_Ventas/VentasMensualesRecyclerViewModel.java" afterDir="false" />
+    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v47.8.3 recicler view verificar datos">
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.bin" afterDir="false" />
@@ -33,74 +30,19 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/apk/debug/app-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/2/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/2/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/5/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/5/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/8/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/8/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/compile-file-map.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/Model/Basededatos/MYSQL/Consultas/Gestion_Ventas/VerVentasMYSQL$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/Model/Basededatos/MYSQL/Consultas/Gestion_Ventas/VerVentasMYSQL.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/Model/Basededatos/SQLite/BaseDatos/Consultas/Gestion_Ventas/VerVentasSQLite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Calendario/MesAnnoPickerDialog$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Calendario/MesAnnoPickerDialog$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Calendario/MesAnnoPickerDialog$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Calendario/MesAnnoPickerDialog$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Calendario/MesAnnoPickerDialog$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Calendario/MesAnnoPickerDialog$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Calendario/MesAnnoPickerDialog$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Calendario/MesAnnoPickerDialog$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Calendario/MesAnnoPickerDialog$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Calendario/MesAnnoPickerDialog$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Calendario/MesAnnoPickerDialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Calendario/MesAnnoPickerDialog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment$2$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/MensualesFragment$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/MensualesFragment$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/MensualesFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/MensualesFragment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/RecyclerViewAdaptador/VentasDiariasRecyclerViewAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/RecyclerViewAdaptador/VentasDiariasRecyclerViewAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/ViewModel/Gestion_Ventas/VentasRecyclerViewModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/layout_fragment_diarias.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/layout_fragment_diarias.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/layout_fragment_mensuales.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/layout_fragment_mensuales.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/Model/Basededatos/MYSQL/Consultas/Gestion_Ventas/VerVentasMYSQL$1.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/Model/Basededatos/MYSQL/Consultas/Gestion_Ventas/VerVentasMYSQL.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/Model/Basededatos/SQLite/BaseDatos/Consultas/Gestion_Ventas/VerVentasSQLite.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Calendario/MesAnnoPickerDialog$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Calendario/MesAnnoPickerDialog$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Calendario/MesAnnoPickerDialog$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Calendario/MesAnnoPickerDialog$2.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Calendario/MesAnnoPickerDialog$3.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Calendario/MesAnnoPickerDialog$3.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Calendario/MesAnnoPickerDialog$4.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Calendario/MesAnnoPickerDialog$4.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Calendario/MesAnnoPickerDialog$5.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Calendario/MesAnnoPickerDialog$5.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Calendario/MesAnnoPickerDialog.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Calendario/MesAnnoPickerDialog.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment$2$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment$2$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment$2.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment$3.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment$3.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment$4.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment$4.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/MensualesFragment$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/MensualesFragment$1.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/MensualesFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/MensualesFragment.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/RecyclerViewAdaptador/VentasDiariasRecyclerViewAdapter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/RecyclerViewAdaptador/VentasDiariasRecyclerViewAdapter.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/ViewModel/Gestion_Ventas/VentasRecyclerViewModel.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/stable_resource_ids_file/debug/stableIds.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/stable_resource_ids_file/debug/stableIds.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/MYSQL/Consultas/Gestion_Ventas/VerVentasMYSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/MYSQL/Consultas/Gestion_Ventas/VerVentasDiariasMYSQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/SQLite/BaseDatos/Consultas/Gestion_Ventas/VerVentasSQLite.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/SQLite/BaseDatos/Consultas/Gestion_Ventas/VerVentasDiariasSQLite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Calendario/MesAnnoPickerDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Calendario/MesAnnoPickerDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/MensualesFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/MensualesFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/RecyclerViewAdaptador/VentasDiariasRecyclerViewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/RecyclerViewAdaptador/VentasDiariasRecyclerViewAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/ViewModel/Gestion_Ventas/VentasRecyclerViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/ViewModel/Gestion_Ventas/VentasDiariasRecyclerViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_mensuales.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_mensuales.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[127.0.0.1:58526]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[192.168.20.105:5555]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -210,13 +152,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661834586125</updated>
-    </task>
-    <task id="LOCAL-00034" summary="copia de seguridad v39.5 arreglo en el model verificaciones de codigos caja">
-      <created>1662503373258</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1662503373258</updated>
     </task>
     <task id="LOCAL-00035" summary="copia de seguridad v39.5.1 arreglo en el model verificaciones de codigos caja">
       <created>1662503831086</created>
@@ -554,7 +489,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663111018462</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="copia de seguridad v47.8.3 recicler view verificar datos">
+      <created>1663114499550</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1663114499551</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -573,7 +515,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="copia de seguridad v43.4 creacion de interfaz de ventas DEX" />
     <MESSAGE value="copia de seguridad v43.5 creacion de interfaz de ventas DEX" />
     <MESSAGE value="copia de seguridad v43.6 creacion de interfaz de ventas DEX" />
     <MESSAGE value="copia de seguridad v44 agregar fechas" />
@@ -598,6 +539,7 @@
     <MESSAGE value="copia de seguridad v47.8 recicler view verificar datos" />
     <MESSAGE value="copia de seguridad v47.8.1 recicler view verificar datos" />
     <MESSAGE value="copia de seguridad v47.8.2 recicler view verificar datos" />
-    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v47.8.2 recicler view verificar datos" />
+    <MESSAGE value="copia de seguridad v47.8.3 recicler view verificar datos" />
+    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v47.8.3 recicler view verificar datos" />
   </component>
 </project>
