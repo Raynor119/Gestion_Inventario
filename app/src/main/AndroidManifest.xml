@@ -12,8 +12,8 @@
 
     <application
         android:allowBackup="true"
-        android:grantUriPermissions="true"
         android:calendarViewShown="false"
+        android:grantUriPermissions="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/iconic"
         android:label="@string/app_name"
@@ -21,9 +21,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".View.Gestion_Ventas.VerVentas"
-            android:theme="@style/Theme.MyApplication.NoActionBar"
+            android:name=".View.Gestion_Ventas.DetallesVentas.DetallesVentas"
             android:exported="false" />
+        <activity
+            android:name=".View.Gestion_Ventas.VerVentas"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.pixels.Inventario.fileprovider"
@@ -40,7 +44,7 @@
             android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
             android:name=".View.Caja.Factura.VerFactura"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".View.Caja.Caja"
             android:exported="false"
