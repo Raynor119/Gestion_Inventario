@@ -24,6 +24,7 @@ public class AnnoPickerDialog {
             @Override
             public void onDateSet(DatePicker datePicker, int anno, int mes, int i2) {
                 Context.calendarioEditText.setText(anno+"");
+                Context.iniciarRecyclerView(Context.calendarioEditText.getText().toString());
             }
         };
     }
