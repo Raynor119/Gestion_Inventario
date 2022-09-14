@@ -2,6 +2,7 @@ package com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.RecyclerVie
 
 import android.content.Context;
 
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,6 +55,11 @@ public class VentasDiariasRecyclerViewAdapter extends RecyclerView.Adapter<Venta
         if(VentasTotales.get(position).getTotalD()>0){
             try{
                 holder.imagen.setImageResource(R.mipmap.ventaid_adaptive_fore);
+               if(VentasTotales.get(position).getGananciaNeta()==0){
+                   holder.imagen.setBackgroundResource(R.drawable.login_button_bkdt);
+               }else{
+                   holder.imagen.setBackgroundResource(R.drawable.login_button_bkerror);
+               }
             }catch (Exception e){
 
             }
