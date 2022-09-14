@@ -122,7 +122,7 @@ public class DiariasFragment extends Fragment {
     }
     public void iniciarRecyclerView(String Ffecha){
         reciclerView.setAdapter(null);
-
+        resertTextView();
         VentasDiariasRecyclerViewModel ventas= ViewModelProviders.of(getActivity()).get(VentasDiariasRecyclerViewModel.class);
         ventas.reset();
         ventas.buscarVentas(getActivity(),getConsulta(Ffecha));
@@ -159,6 +159,15 @@ public class DiariasFragment extends Fragment {
             }
         };
         ventas.getResultado().observe(getActivity(),observer);
+    }
+
+    public void resertTextView(){
+        costototal.setText("$ 0");
+        totalP.setText("$ 0");
+        totalDevo.setText("$ 0");
+        impuesto.setText("$ 0");
+        totalGananNeta.setText("$ 0");
+        TotalVendido.setText("$ 0");
     }
 
     public String getConsulta(String fechaE){

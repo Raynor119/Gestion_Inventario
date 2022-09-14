@@ -97,6 +97,7 @@ public class AnualesFragment extends Fragment {
     }
     public void iniciarRecyclerView(String Ffecha){
         reciclerView.setAdapter(null);
+        resertTextView();
         VentasAnualesRecyclerViewModel ventas= ViewModelProviders.of(getActivity()).get(VentasAnualesRecyclerViewModel.class);
         ventas.reset();
         ventas.buscarVentas(getActivity(),getConsulta(Ffecha));
@@ -132,6 +133,15 @@ public class AnualesFragment extends Fragment {
             }
         };
         ventas.getResultado().observe(getActivity(),observer);
+    }
+
+    public void resertTextView(){
+        costototal.setText("$ 0");
+        totalP.setText("$ 0");
+        totalDevo.setText("$ 0");
+        impuesto.setText("$ 0");
+        totalGananNeta.setText("$ 0");
+        TotalVendido.setText("$ 0");
     }
 
     public String getConsulta(String fechaE){
