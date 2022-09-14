@@ -35,13 +35,13 @@ public class VerVentasAnualesMYSQL extends Conexion implements MediadorBaseDatos
                     verificarE=true;
                 }
             }
-        },11000);
+        },31000);
     }
     @Override
     protected String doInBackground(String... params) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            DriverManager.setLoginTimeout(10);
+            DriverManager.setLoginTimeout(30);
             Connection connection= DriverManager.getConnection(Url,Usuario,Contra);
             if(verificarE){
                 return "Error en la conexion";
