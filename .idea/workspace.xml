@@ -21,22 +21,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v47.8.9 recicler view verificar datos arreglos menores">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/DetallesVentas/DetallesVentas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_detalles_ventas.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.lock" afterDir="false" />
+    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v47.9 recicler view verificar datos arreglos menores">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Ajustes/ConfiguracionBaseDatos/AlertDialog/alertcambiarbasedatos$4.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Ajustes/ConfiguracionBaseDatos/AlertDialog/alertcambiarbasedatos$4.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Ajustes/ConfiguracionBaseDatos/AlertDialog/alertcambiarbasedatos$5.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Ajustes/ConfiguracionBaseDatos/AlertDialog/alertcambiarbasedatos$5.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Ajustes/ConfiguracionBaseDatos/CrearBaseDatosMYSQL$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Ajustes/ConfiguracionBaseDatos/CrearBaseDatosMYSQL$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Ajustes/ConfiguracionBaseDatos/CrearBaseDatosMYSQL$2$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Ajustes/ConfiguracionBaseDatos/CrearBaseDatosMYSQL$2$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Ajustes/ConfiguracionBaseDatos/CrearBaseDatosMYSQL$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Ajustes/ConfiguracionBaseDatos/CrearBaseDatosMYSQL$2.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Ajustes/ConfiguracionBaseDatos/cambiarMySQL$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Ajustes/ConfiguracionBaseDatos/cambiarMySQL$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Ajustes/ConfiguracionBaseDatos/cambiarMySQL$2$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Ajustes/ConfiguracionBaseDatos/cambiarMySQL$2$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Ajustes/ConfiguracionBaseDatos/cambiarMySQL$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Ajustes/ConfiguracionBaseDatos/cambiarMySQL$2.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_detalles_ventas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_detalles_ventas.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,13 +145,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661834586125</updated>
-    </task>
-    <task id="LOCAL-00042" summary="copia de seguridad v41.2 alert en ajustes bloqueo">
-      <created>1662612855530</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1662612855530</updated>
     </task>
     <task id="LOCAL-00043" summary="copia de seguridad v41.2.1 alert en ajustes bloqueo">
       <created>1662612865598</created>
@@ -501,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663127137944</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="copia de seguridad v47.9 recicler view verificar datos arreglos menores">
+      <created>1663195524523</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1663195524525</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -520,7 +508,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="copia de seguridad v44.5 agregar fechas" />
     <MESSAGE value="copia de seguridad v44.6 agregar fechas inestable" />
     <MESSAGE value="copia de seguridad v44.8 modificaciones en el dienno" />
     <MESSAGE value="copia de seguridad v45 ver ventas iniciado" />
@@ -545,6 +532,7 @@
     <MESSAGE value="copia de seguridad v47.8.7 recicler view verificar datos" />
     <MESSAGE value="copia de seguridad v47.8.8 recicler view verificar datos arreglos menores" />
     <MESSAGE value="copia de seguridad v47.8.9 recicler view verificar datos arreglos menores" />
-    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v47.8.9 recicler view verificar datos arreglos menores" />
+    <MESSAGE value="copia de seguridad v47.9 recicler view verificar datos arreglos menores" />
+    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v47.9 recicler view verificar datos arreglos menores" />
   </component>
 </project>
