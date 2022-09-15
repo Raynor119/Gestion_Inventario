@@ -21,8 +21,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v47.9 recicler view verificar datos arreglos menores">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v48 Creacion del Activity Detalles de Venta">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_detalles_ventas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_detalles_ventas.xml" afterDir="false" />
     </list>
@@ -145,13 +144,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661834586125</updated>
-    </task>
-    <task id="LOCAL-00043" summary="copia de seguridad v41.2.1 alert en ajustes bloqueo">
-      <created>1662612865598</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1662612865598</updated>
     </task>
     <task id="LOCAL-00044" summary="copia de seguridad v41.3 alert en menu de opciones bloqueo hecho inestable">
       <created>1662616071643</created>
@@ -489,7 +481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663195524525</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="copia de seguridad v48 Creacion del Activity Detalles de Venta">
+      <created>1663212860778</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1663212860778</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -508,7 +507,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="copia de seguridad v44.6 agregar fechas inestable" />
     <MESSAGE value="copia de seguridad v44.8 modificaciones en el dienno" />
     <MESSAGE value="copia de seguridad v45 ver ventas iniciado" />
     <MESSAGE value="copia de seguridad v45.1 ver ventas iniciado" />
@@ -533,6 +531,7 @@
     <MESSAGE value="copia de seguridad v47.8.8 recicler view verificar datos arreglos menores" />
     <MESSAGE value="copia de seguridad v47.8.9 recicler view verificar datos arreglos menores" />
     <MESSAGE value="copia de seguridad v47.9 recicler view verificar datos arreglos menores" />
-    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v47.9 recicler view verificar datos arreglos menores" />
+    <MESSAGE value="copia de seguridad v48 Creacion del Activity Detalles de Venta" />
+    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v48 Creacion del Activity Detalles de Venta" />
   </component>
 </project>
