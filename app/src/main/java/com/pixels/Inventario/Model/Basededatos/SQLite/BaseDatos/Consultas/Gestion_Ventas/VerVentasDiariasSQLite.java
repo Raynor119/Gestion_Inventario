@@ -28,7 +28,7 @@ public class VerVentasDiariasSQLite extends BaseDatosSQLite implements MediadorB
         Cursor cursor=bd.rawQuery(Consulta,null);
         if(cursor.moveToFirst()){
             do{
-                datos.add(new TotalVentas(cursor.getInt(0),cursor.getInt(1),cursor.getInt(2),cursor.getDouble(3),cursor.getDouble(4),cursor.getInt(5),cursor.getInt(6),cursor.getInt(7),cursor.getString(8)));
+                datos.add(new TotalVentas(cursor.getInt(0),cursor.getInt(1),cursor.getInt(2),cursor.getDouble(3),cursor.getDouble(4),cursor.getInt(5),cursor.getInt(6),cursor.getInt(7),cursor.getString(8),cursor.getInt(9)));
             }while(cursor.moveToNext());
         }
         return datos;

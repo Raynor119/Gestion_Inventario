@@ -49,7 +49,7 @@ public class VerVentasDiariasMYSQL extends Conexion implements MediadorBaseDatos
                 ResultSet rs = st.executeQuery(Consulta);
                 ventas=new ArrayList<>();
                 while (rs.next()) {
-                    ventas.add(new TotalVentas(rs.getInt(1),rs.getInt(2),rs.getInt(3),rs.getDouble(4),rs.getDouble(5),rs.getInt(6),rs.getInt(7),rs.getInt(8),rs.getString(9)));
+                    ventas.add(new TotalVentas(rs.getInt(1),rs.getInt(2),rs.getInt(3),rs.getDouble(4),rs.getDouble(5),rs.getInt(6),rs.getInt(7),rs.getInt(8),rs.getString(9),rs.getInt(10)));
                 }
                 return "";
             }

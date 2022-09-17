@@ -37,7 +37,7 @@ public class VentasDiariasRecyclerViewModel extends ViewModel {
                 "(sum((ventasproductos.CantidadV)*ventasproductos.CostePV)) as CostoV," +
                 "(SUM(ventasproductos.CantidadD*ventasproductos.CostePV)) as PerdidaD," +
                 "(SUM(ventasproductos.CantidadD*ventasproductos.PrecioPV)) as TotalD" +
-                ",venta.Fecha FROM ventasproductos INNER JOIN venta ON ventasproductos.codigov=venta.codigo "+Consulta;
+                ",venta.Fecha,venta.Efectivo FROM ventasproductos INNER JOIN venta ON ventasproductos.codigov=venta.codigo "+Consulta;
         consultasDatos dinici=new consultasDatos(context);
         MediadorBaseDatos BD;
         if(dinici.obtenerD().get(0).getBasedatos().equals("SQLITE")){

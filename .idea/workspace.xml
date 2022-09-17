@@ -21,16 +21,27 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v48 Creacion del Activity Detalles de Venta">
+    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v48.1 Creacion del Activity Detalles de Venta">
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_detalles_ventas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_detalles_ventas.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/MYSQL/Consultas/Gestion_Ventas/VerVentasAnualesMYSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/MYSQL/Consultas/Gestion_Ventas/VerVentasAnualesMYSQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/MYSQL/Consultas/Gestion_Ventas/VerVentasDiariasMYSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/MYSQL/Consultas/Gestion_Ventas/VerVentasDiariasMYSQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/MYSQL/Consultas/Gestion_Ventas/VerVentasMensualesMYSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/MYSQL/Consultas/Gestion_Ventas/VerVentasMensualesMYSQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/SQLite/BaseDatos/Consultas/Gestion_Ventas/VerVentasAnualesSQLite.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/SQLite/BaseDatos/Consultas/Gestion_Ventas/VerVentasAnualesSQLite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/SQLite/BaseDatos/Consultas/Gestion_Ventas/VerVentasDiariasSQLite.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/SQLite/BaseDatos/Consultas/Gestion_Ventas/VerVentasDiariasSQLite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/SQLite/BaseDatos/Consultas/Gestion_Ventas/VerVentasMensualesSQLite.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/SQLite/BaseDatos/Consultas/Gestion_Ventas/VerVentasMensualesSQLite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/DatosE/TotalVentas.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/DatosE/TotalVentas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/ViewModel/Gestion_Ventas/VentasAnualesRecyclerViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/ViewModel/Gestion_Ventas/VentasAnualesRecyclerViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/ViewModel/Gestion_Ventas/VentasDiariasRecyclerViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/ViewModel/Gestion_Ventas/VentasDiariasRecyclerViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/ViewModel/Gestion_Ventas/VentasMensualesRecyclerViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/ViewModel/Gestion_Ventas/VentasMensualesRecyclerViewModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[127.0.0.1:58526]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -144,13 +155,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661834586125</updated>
-    </task>
-    <task id="LOCAL-00044" summary="copia de seguridad v41.3 alert en menu de opciones bloqueo hecho inestable">
-      <created>1662616071643</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1662616071645</updated>
     </task>
     <task id="LOCAL-00045" summary="copia de seguridad v41.4 alert en menu de opciones bloqueo hecho inestable">
       <created>1662616890182</created>
@@ -488,7 +492,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663212860778</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="copia de seguridad v48.1 Creacion del Activity Detalles de Venta">
+      <created>1663214833737</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1663214833737</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -507,7 +518,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="copia de seguridad v44.8 modificaciones en el dienno" />
     <MESSAGE value="copia de seguridad v45 ver ventas iniciado" />
     <MESSAGE value="copia de seguridad v45.1 ver ventas iniciado" />
     <MESSAGE value="copia de seguridad v46 Eliminacion de estado de devolucion" />
@@ -532,6 +542,7 @@
     <MESSAGE value="copia de seguridad v47.8.9 recicler view verificar datos arreglos menores" />
     <MESSAGE value="copia de seguridad v47.9 recicler view verificar datos arreglos menores" />
     <MESSAGE value="copia de seguridad v48 Creacion del Activity Detalles de Venta" />
-    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v48 Creacion del Activity Detalles de Venta" />
+    <MESSAGE value="copia de seguridad v48.1 Creacion del Activity Detalles de Venta" />
+    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v48.1 Creacion del Activity Detalles de Venta" />
   </component>
 </project>

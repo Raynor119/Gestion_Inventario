@@ -1,10 +1,10 @@
 package com.pixels.Inventario.Model.DatosE;
 
 public class TotalVentas {
-    private int CodigoV,CProductoV,TotalV,CostoV,PerdidaD,TotalD;
+    private int CodigoV,CProductoV,TotalV,CostoV,PerdidaD,TotalD,Efectivo;
     private String Fecha;
     private double GananciaNeta,TotalIvaP;
-    public TotalVentas(int codigoV,int cProductoV,int totalV,double gananciaNeta,double totalIvaP,int costoV,int perdidaD,int totalD,String fecha){
+    public TotalVentas(int codigoV,int cProductoV,int totalV,double gananciaNeta,double totalIvaP,int costoV,int perdidaD,int totalD,String fecha,int efectivo){
         this.CodigoV=codigoV;
         this.CProductoV=cProductoV;
         this.TotalV=totalV;
@@ -14,6 +14,15 @@ public class TotalVentas {
         this.PerdidaD=perdidaD;
         this.TotalD=totalD;
         this.Fecha=fecha;
+        this.Efectivo=efectivo;
+    }
+
+    public int getEfectivo() {
+        return Efectivo;
+    }
+
+    public void setEfectivo(int efectivo) {
+        Efectivo = efectivo;
     }
 
     public int getCodigoV() {
