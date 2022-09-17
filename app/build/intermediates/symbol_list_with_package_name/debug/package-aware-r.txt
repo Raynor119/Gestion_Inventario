@@ -1882,6 +1882,7 @@ id CObservacion
 id CPV
 id CTRL
 id Cantidad
+id CodigoV
 id CosteP
 id CostoTotal
 id EditCodigo
@@ -1892,6 +1893,7 @@ id Ffecha
 id GananN
 id Iva
 id IvaP
+id LDetalles
 id LtotaD
 id LtotaP
 id META
@@ -2002,6 +2004,7 @@ id bounce
 id buttonPanel
 id calendario
 id cambio
+id cambioT
 id cancel_action
 id cancel_button
 id canti
@@ -2030,6 +2033,7 @@ id clip_horizontal
 id clip_vertical
 id clockwise
 id codigo
+id codigoBarras
 id collapseActionView
 id configFragments
 id confirm_button
@@ -2149,6 +2153,7 @@ id linear
 id listMode
 id list_item
 id mas
+id masdetalles
 id masked
 id material_clock_display
 id material_clock_face
@@ -2485,6 +2490,7 @@ layout activity_cambiar_my_sql
 layout activity_config_contra
 layout activity_configuracion_i
 layout activity_crear_base_datos_mysql
+layout activity_detalles_ventas
 layout activity_exportar_datos
 layout activity_importar_datos
 layout activity_inicio

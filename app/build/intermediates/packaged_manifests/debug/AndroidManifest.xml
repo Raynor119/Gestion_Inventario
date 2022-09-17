@@ -48,6 +48,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.MyApplication" >
         <activity
+            android:name="com.pixels.Inventario.View.Gestion_Ventas.DetallesVentas.DetallesVentas"
+            android:exported="false" />
+        <activity
             android:name="com.pixels.Inventario.View.Gestion_Ventas.VerVentas"
             android:exported="false"
             android:theme="@style/Theme.MyApplication.NoActionBar" />
