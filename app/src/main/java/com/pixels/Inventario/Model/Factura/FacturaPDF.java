@@ -141,10 +141,17 @@ public class FacturaPDF {
                     cell.setHorizontalAlignment(Element.ALIGN_CENTER);
                     table.addCell(cell);
                 }else{
-                    int cantidad=(int) Productos.get(i).getCantidad();
-                    cell=new PdfPCell(new Phrase(cantidad+"",Ftext));
-                    cell.setHorizontalAlignment(Element.ALIGN_CENTER);
-                    table.addCell(cell);
+                    if(Productos.get(i).getTipoC().equals("unitario")){
+                        int cantidad=(int) Productos.get(i).getCantidad();
+                        cell=new PdfPCell(new Phrase(cantidad+"",Ftext));
+                        cell.setHorizontalAlignment(Element.ALIGN_CENTER);
+                        table.addCell(cell);
+                    }else{
+                        cell=new PdfPCell(new Phrase(Productos.get(i).getCantidad()+"",Ftext));
+                        cell.setHorizontalAlignment(Element.ALIGN_CENTER);
+                        table.addCell(cell);
+                    }
+
                 }
                 NumberFormat formato= NumberFormat.getNumberInstance();
                 cell=new PdfPCell(new Phrase(formato.format(Productos.get(i).getPrecio()),Ftext));
