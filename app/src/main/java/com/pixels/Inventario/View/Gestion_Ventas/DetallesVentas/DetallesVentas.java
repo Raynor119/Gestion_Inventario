@@ -5,6 +5,7 @@ import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.RecyclerView;
 
 
 import android.graphics.Bitmap;
@@ -19,6 +20,7 @@ import com.google.zxing.BarcodeFormat;
 import com.journeyapps.barcodescanner.BarcodeEncoder;
 import com.pixels.Inventario.Model.DatosE.detallesPV;
 import com.pixels.Inventario.R;
+import com.pixels.Inventario.View.Gestion_Ventas.DetallesVentas.RecyclerViewAdaptador.ProductosDRecyclerViewAdapter;
 import com.pixels.Inventario.ViewModel.Gestion_Ventas.DetallesVentas.DetallesVentasViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Ventas.VentasAnualesRecyclerViewModel;
 
@@ -36,11 +38,13 @@ public class DetallesVentas extends AppCompatActivity {
     private CardView Masdetalles;
     private ImageView IcodigoBarras;
     private NumberFormat formato= NumberFormat.getNumberInstance();
+    private RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalles_ventas);
+        recyclerView=(RecyclerView) findViewById(R.id.opcion_list);
         Fecha=getIntent().getExtras().getString("fecha");
         Efectivo=getIntent().getExtras().getString("efectivo");
         Codigo=getIntent().getExtras().getString("codigo");
@@ -110,6 +114,8 @@ public class DetallesVentas extends AppCompatActivity {
                     TDevolu.setText("$ "+formato.format(TDevuel));
                     LDevoluciones.setVisibility(ConstraintLayout.VISIBLE);
                 }
+                recyclerView.setAdapter(null);
+                recyclerView.setAdapter(new ProductosDRecyclerViewAdapter(DetallesVentas.this,detallesPVS));
             }
         };
         productos.getResultado().observe(DetallesVentas.this,observer);
