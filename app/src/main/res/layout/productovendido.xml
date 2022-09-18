@@ -26,17 +26,19 @@
 
             <ImageView
                 android:id="@+id/imagen"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
+                android:background="@drawable/login_button_bk"
                 android:layout_marginRight="10dp"
-                android:src="@mipmap/list_products" />
+                android:src="@mipmap/caja_adaptive_fore" />
         </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_marginRight="120dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginLeft="10dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
@@ -55,6 +57,7 @@
                         android:textSize="17sp" />
                     <TextView
                         android:id="@+id/codigo"
+                        android:layout_gravity="bottom"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:state_hovered="true"
@@ -78,6 +81,7 @@
                     <TextView
                         android:id="@+id/nombre"
                         android:layout_width="match_parent"
+                        android:layout_gravity="bottom"
                         android:layout_height="wrap_content"
                         android:state_hovered="true"
                         android:text=""
@@ -99,6 +103,7 @@
                         android:textSize="17sp" />
                     <TextView
                         android:id="@+id/CantidadV"
+                        android:layout_gravity="bottom"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:state_hovered="true"
@@ -125,6 +130,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:state_hovered="true"
+                        android:layout_gravity="bottom"
                         android:text=""
                         android:textColor="#000000"
                         android:textSize="17sp" />
@@ -170,6 +176,7 @@
                         android:textSize="17sp" />
                     <TextView
                         android:id="@+id/precio"
+                        android:layout_gravity="bottom"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:state_hovered="true"

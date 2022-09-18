@@ -2628,7 +2628,7 @@ int layout producto_caja 0x7f0b00a2
 int layout producto_detail_container 0x7f0b00a3
 int layout producto_ver 0x7f0b00a4
 int layout productod_ver 0x7f0b00a5
-int layout productoventido 0x7f0b00bd
+int layout productovendido 0x7f0b00be
 int layout select_dialog_item_material 0x7f0b00a6
 int layout select_dialog_multichoice_material 0x7f0b00a7
 int layout select_dialog_singlechoice_material 0x7f0b00a8

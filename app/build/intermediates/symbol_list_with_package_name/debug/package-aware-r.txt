@@ -2629,7 +2629,7 @@ layout producto_caja
 layout producto_detail_container
 layout producto_ver
 layout productod_ver
-layout productoventido
+layout productovendido
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
