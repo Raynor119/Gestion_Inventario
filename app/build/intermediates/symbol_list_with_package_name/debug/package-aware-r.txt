@@ -1885,6 +1885,7 @@ id Cantidad
 id CodigoV
 id CosteP
 id CostoTotal
+id Devolu
 id EditCodigo
 id Efectivo
 id Escaner
@@ -1894,6 +1895,7 @@ id GananN
 id Iva
 id IvaP
 id LDetalles
+id LDevoluciones
 id LtotaD
 id LtotaP
 id META

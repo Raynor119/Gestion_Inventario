@@ -23,14 +23,16 @@ import com.pixels.Inventario.ViewModel.Gestion_Ventas.DetallesVentas.DetallesVen
 import com.pixels.Inventario.ViewModel.Gestion_Ventas.VentasAnualesRecyclerViewModel;
 
 import java.io.ByteArrayOutputStream;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.text.NumberFormat;
 import java.util.List;
 
 public class DetallesVentas extends AppCompatActivity {
 
     private String Fecha,Efectivo,Codigo;
-    private TextView TCodigo,TFecha,TEfectivo,TCambio,TSubTotal,TIva,TTotalV,TTextMas;
-    private LinearLayout LDetalles;
+    private TextView TCodigo,TFecha,TEfectivo,TCambio,TSubTotal,TIva,TTotalV,TTextMas,TDevolu;
+    private LinearLayout LDetalles,LDevoluciones;
     private CardView Masdetalles;
     private ImageView IcodigoBarras;
     private NumberFormat formato= NumberFormat.getNumberInstance();
@@ -60,8 +62,11 @@ public class DetallesVentas extends AppCompatActivity {
         TSubTotal=(TextView) findViewById(R.id.SubTotal);
         TIva=(TextView) findViewById(R.id.Iva);
         TTotalV=(TextView) findViewById(R.id.TotalV);
+        TDevolu=(TextView) findViewById(R.id.Devolu);
         LDetalles=(LinearLayout) findViewById(R.id.LDetalles);
+        LDevoluciones=(LinearLayout) findViewById(R.id.LDevoluciones);
         LDetalles.setVisibility(ConstraintLayout.GONE);
+        LDevoluciones.setVisibility(ConstraintLayout.GONE);
         Masdetalles=(CardView) findViewById(R.id.masdetalles);
         TTextMas=(TextView) findViewById(R.id.TextMas);
         Masdetalles.setOnClickListener(new View.OnClickListener() {
@@ -85,16 +90,26 @@ public class DetallesVentas extends AppCompatActivity {
         Observer<List<detallesPV>> observer=new Observer<List<detallesPV>>() {
             @Override
             public void onChanged(List<detallesPV> detallesPVS){
-                int Total=0,SubT=0,IvaT=0;
+                int Total=0,SubT=0,IvaT=0,TDevuel=0;
                 for(int i=0;i<detallesPVS.size();i++){
                     Total=Total+((int)(detallesPVS.get(i).getCantidadV()*detallesPVS.get(i).getPrecioPV()));
-                    SubT=SubT+((int)(detallesPVS.get(i).getCantidadV()*(detallesPVS.get(i).getPrecioPV()/(1.0+(detallesPVS.get(i).getIvaPV()*0.01)))));
-                    IvaT=IvaT+((int)((detallesPVS.get(i).getCantidadV()*(detallesPVS.get(i).getPrecioPV()/(1.0+(detallesPVS.get(i).getIvaPV()*0.01))))*(detallesPVS.get(i).getIvaPV()*0.01)));
+                    double SubTList= (detallesPVS.get(i).getCantidadV()*(detallesPVS.get(i).getPrecioPV()/(1.0+(detallesPVS.get(i).getIvaPV()*0.01))));
+                    BigDecimal precionSub = new BigDecimal(SubTList).setScale(0, RoundingMode.HALF_UP);
+                    SubT=SubT+((int) precionSub.doubleValue());
+                    double ivaList= (detallesPVS.get(i).getCantidadV()*(detallesPVS.get(i).getPrecioPV()/(1.0+(detallesPVS.get(i).getIvaPV()*0.01))))*(detallesPVS.get(i).getIvaPV()*0.01);
+                    BigDecimal precionIva = new BigDecimal(ivaList).setScale(0, RoundingMode.HALF_UP);
+                    IvaT=IvaT+((int) precionIva.doubleValue());
+                    BigDecimal precionDevo = new BigDecimal(detallesPVS.get(i).getCantidadD()*detallesPVS.get(i).getPrecioPV()).setScale(0, RoundingMode.HALF_UP);
+                    TDevuel=TDevuel+((int)precionDevo.doubleValue());
                 }
                 TSubTotal.setText("$ "+formato.format(SubT));
                 TIva.setText("$ "+formato.format(IvaT));
                 TTotalV.setText("$ "+formato.format(Total));
                 TCambio.setText("$ "+formato.format((Integer.parseInt(Efectivo)-Total)));
+                if(TDevuel>0){
+                    TDevolu.setText("$ "+formato.format(TDevuel));
+                    LDevoluciones.setVisibility(ConstraintLayout.VISIBLE);
+                }
             }
         };
         productos.getResultado().observe(DetallesVentas.this,observer);
