@@ -1874,6 +1874,7 @@ int id BOTTOM_END 0x7f080001
 int id BOTTOM_START 0x7f080002
 int id Buscar 0x7f080003
 int id ButtonG 0x7f080004
+int id CAntidadD 0x7f080223
 int id CCantidad 0x7f080005
 int id CContra 0x7f080006
 int id CEfectivo 0x7f080007
@@ -1881,6 +1882,7 @@ int id CObservacion 0x7f080008
 int id CPV 0x7f080009
 int id CTRL 0x7f08000a
 int id Cantidad 0x7f08000b
+int id CantidadV 0x7f080224
 int id CodigoV 0x7f08000c
 int id CosteP 0x7f08000d
 int id CostoTotal 0x7f08000e
@@ -1894,6 +1896,8 @@ int id GananN 0x7f080014
 int id Iva 0x7f080015
 int id IvaP 0x7f080016
 int id LDetalles 0x7f080017
+int id LDevoC 0x7f080225
+int id LDevoObser 0x7f080226
 int id LDevoluciones 0x7f080222
 int id LtotaD 0x7f080018
 int id LtotaP 0x7f080019
@@ -1902,6 +1906,7 @@ int id NO_DEBUG 0x7f08001b
 int id Nit 0x7f08001c
 int id NombreR 0x7f08001d
 int id Observacion 0x7f08001e
+int id ObservacionD 0x7f080227
 int id Perdida 0x7f08001f
 int id Precio 0x7f080020
 int id RadioMysqlButton 0x7f080021
@@ -2623,6 +2628,7 @@ int layout producto_caja 0x7f0b00a2
 int layout producto_detail_container 0x7f0b00a3
 int layout producto_ver 0x7f0b00a4
 int layout productod_ver 0x7f0b00a5
+int layout productoventido 0x7f0b00bd
 int layout select_dialog_item_material 0x7f0b00a6
 int layout select_dialog_multichoice_material 0x7f0b00a7
 int layout select_dialog_singlechoice_material 0x7f0b00a8

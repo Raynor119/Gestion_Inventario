@@ -1875,6 +1875,7 @@ id BOTTOM_END
 id BOTTOM_START
 id Buscar
 id ButtonG
+id CAntidadD
 id CCantidad
 id CContra
 id CEfectivo
@@ -1882,6 +1883,7 @@ id CObservacion
 id CPV
 id CTRL
 id Cantidad
+id CantidadV
 id CodigoV
 id CosteP
 id CostoTotal
@@ -1895,6 +1897,8 @@ id GananN
 id Iva
 id IvaP
 id LDetalles
+id LDevoC
+id LDevoObser
 id LDevoluciones
 id LtotaD
 id LtotaP
@@ -1903,6 +1907,7 @@ id NO_DEBUG
 id Nit
 id NombreR
 id Observacion
+id ObservacionD
 id Perdida
 id Precio
 id RadioMysqlButton
@@ -2624,6 +2629,7 @@ layout producto_caja
 layout producto_detail_container
 layout producto_ver
 layout productod_ver
+layout productoventido
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
