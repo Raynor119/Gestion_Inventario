@@ -2,6 +2,7 @@ package com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.RecyclerVie
 
 import android.content.Context;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,6 +20,7 @@ import com.pixels.Inventario.Model.DatosE.Venta;
 import com.pixels.Inventario.R;
 
 
+import com.pixels.Inventario.View.Gestion_Ventas.DetallesVentas.DetallesVentas;
 import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.DiariasFragment;
 import com.pixels.Inventario.View.Gestion_Ventas.VerVentas;
 
@@ -70,6 +72,17 @@ public class VentasDiariasRecyclerViewAdapter extends RecyclerView.Adapter<Venta
             holder.LTotalP.setVisibility(ConstraintLayout.GONE);
         }
         holder.TotalV.setText("$ "+formato.format(VentasTotales.get(position).getTotalV()));
+        int possition=position;
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(Context, DetallesVentas.class);
+                intent.putExtra("fecha",VentasTotales.get(possition).getFecha());
+                intent.putExtra("efectivo",""+VentasTotales.get(possition).getEfectivo());
+                intent.putExtra("codigo",""+VentasTotales.get(possition).getCodigoV());
+                Context.startActivity(intent);
+            }
+        });
     }
     @Override
     public int getItemCount() {

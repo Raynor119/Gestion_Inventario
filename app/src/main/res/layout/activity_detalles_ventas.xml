@@ -3,10 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:animateLayoutChanges="true"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
     <RelativeLayout
         android:layout_width="match_parent"
+        android:animateLayoutChanges="true"
         android:layout_height="wrap_content">
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,6 +26,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
+            android:animateLayoutChanges="true"
             android:layout_height="match_parent"
             android:layout_alignParentTop="true"
             android:layout_marginTop="20dp"
@@ -37,6 +40,7 @@
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="50dp"
                 android:layout_marginRight="40dp"
+                android:animateLayoutChanges="true"
                 android:background="@color/whiteCardColor"
                 app:cardCornerRadius="15dp">
 
@@ -47,6 +51,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="40dp"
+                    android:animateLayoutChanges="true"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -217,16 +222,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_gravity="bottom"
+                    android:animateLayoutChanges="true"
                     android:background="@color/black"
                     app:cardCornerRadius="0dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:animateLayoutChanges="true"
                         android:background="@color/colorPrimary"
                         android:gravity="center">
 
                         <TextView
+                            android:id="@+id/TextMas"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Mas detalles"
@@ -237,8 +245,7 @@
 
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                xmlns:android="http://schemas.android.com/apk/res/android"
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

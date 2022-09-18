@@ -22,6 +22,7 @@
         android:theme="@style/Theme.MyApplication">
         <activity
             android:name=".View.Gestion_Ventas.DetallesVentas.DetallesVentas"
+            android:theme="@style/Theme.MyApplication.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".View.Gestion_Ventas.VerVentas"
