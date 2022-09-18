@@ -3,17 +3,17 @@
   <component name="AndroidLayouts">
     <shared>
       <config>
+        <device id="_device_class_tablet" />
         <device id="pixel_3a_xl" />
         <device id="Nexus 5X" />
         <device id="4.7in WXGA" />
         <device id="_device_class_phone" />
         <device id="_device_class_foldable" />
         <device id="_device_class_desktop" />
-        <device id="_device_class_tablet" />
         <device id="Nexus 9" />
         <device id="pixel_4_xl" />
         <device id="13.5in Freeform" />
-        <option name="nonWearDeviceLastStateName" value="Portrait" />
+        <option name="nonWearDeviceLastStateName" value="portrait" />
       </config>
     </shared>
   </component>
@@ -21,12 +21,26 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v48.5.8 Creacion del Activity Detalles de Venta">
+    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v48.5.8.1 Creacion del Activity Detalles de Venta arreglo en los producto eliminados">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout-w800dp/activity_detalles_ventas.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/ViewModel/Caja/Venta/RealizarFacturaViewModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/ViewModel/Caja/Venta/RealizarFacturaViewModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/ViewModel/Caja/Venta/RealizarFacturaViewModel.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/ViewModel/Caja/Venta/RealizarFacturaViewModel.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Factura/FacturaPDF.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Factura/FacturaPDF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/apk/debug/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/Model/Factura/FacturaPDF.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/Model/Factura/FacturaPDF.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/Model/Factura/FacturaPDF.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/Model/Factura/FacturaPDF.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/stable_resource_ids_file/debug/stableIds.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/stable_resource_ids_file/debug/stableIds.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,16 +84,16 @@
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout-w330dp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout-w800dp" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\res\layout-w800dp" />
       <recent name="C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\res\layout-w330dp" />
       <recent name="C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\res\layout-w1700dp" />
       <recent name="C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\res\layout-w1000dp" />
       <recent name="C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\res\layout-w1900dp" />
-      <recent name="C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\res\layout-w1400dp" />
     </key>
     <key name="android.template.-1359305566">
       <recent name="com.pixels.Inventario.View.Gestion_Ventas" />
@@ -155,13 +169,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661834586125</updated>
-    </task>
-    <task id="LOCAL-00064" summary="copia de seguridad v44.3 agregar fechas">
-      <created>1662948099208</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1662948099208</updated>
     </task>
     <task id="LOCAL-00065" summary="copia de seguridad v44.4 agregar fechas">
       <created>1662956163218</created>
@@ -499,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663534721678</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="copia de seguridad v48.5.8.1 Creacion del Activity Detalles de Venta arreglo en los producto eliminados">
+      <created>1663535753422</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1663535753424</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -518,7 +532,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="copia de seguridad v47.8.6 recicler view verificar datos" />
     <MESSAGE value="copia de seguridad v47.8.7 recicler view verificar datos" />
     <MESSAGE value="copia de seguridad v47.8.8 recicler view verificar datos arreglos menores" />
     <MESSAGE value="copia de seguridad v47.8.9 recicler view verificar datos arreglos menores" />
@@ -543,6 +556,7 @@
     <MESSAGE value="copia de seguridad v48.5.7 Creacion del Activity Detalles de Venta" />
     <MESSAGE value="copia de seguridad v48.5.7.1 Creacion del Activity Detalles de Venta" />
     <MESSAGE value="copia de seguridad v48.5.8 Creacion del Activity Detalles de Venta" />
-    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v48.5.8 Creacion del Activity Detalles de Venta" />
+    <MESSAGE value="copia de seguridad v48.5.8.1 Creacion del Activity Detalles de Venta arreglo en los producto eliminados" />
+    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v48.5.8.1 Creacion del Activity Detalles de Venta arreglo en los producto eliminados" />
   </component>
 </project>
