@@ -183,7 +183,7 @@ public class FacturaPDF {
                 cell.setVerticalAlignment(Element.ALIGN_CENTER);
                 table.addCell(cell);
 
-                double porcentajeiva=Double.parseDouble("1."+Productos.get(i).getIva());
+                double porcentajeiva=1.0+(Productos.get(i).getIva()*0.01);
                 int total=(int) (Productos.get(i).getPrecio()*Productos.get(i).getCantidad());
                 BigDecimal precionS = new BigDecimal((Productos.get(i).getPrecio()*Productos.get(i).getCantidad())/porcentajeiva).setScale(0, RoundingMode.HALF_UP);
                 int base=(int)(precionS.doubleValue());

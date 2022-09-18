@@ -53,7 +53,7 @@ public class RealizarFacturaViewModel extends ViewModel {
             int Total=0;
             for(int i=0;i<Productos.size();i++){
                 Total=(int)(Total+(Productos.get(i).getPrecio()*Productos.get(i).getCantidad()));
-                double porcentajeiva=Double.parseDouble("1."+Productos.get(i).getIva());
+                double porcentajeiva=1.0+(Productos.get(i).getIva()*0.01);
                 BigDecimal precionS = new BigDecimal((Productos.get(i).getPrecio()*Productos.get(i).getCantidad())/porcentajeiva).setScale(0, RoundingMode.HALF_UP);
                 int suptotal=(int)(precionS.doubleValue());
                 Subtotal=Subtotal+suptotal;

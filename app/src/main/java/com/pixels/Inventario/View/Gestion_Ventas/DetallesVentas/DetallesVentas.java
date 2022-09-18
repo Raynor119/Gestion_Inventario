@@ -85,11 +85,16 @@ public class DetallesVentas extends AppCompatActivity {
         Observer<List<detallesPV>> observer=new Observer<List<detallesPV>>() {
             @Override
             public void onChanged(List<detallesPV> detallesPVS){
-                int Total=0;
+                int Total=0,SubT=0,IvaT=0;
                 for(int i=0;i<detallesPVS.size();i++){
                     Total=Total+((int)(detallesPVS.get(i).getCantidadV()*detallesPVS.get(i).getPrecioPV()));
+                    SubT=SubT+((int)(detallesPVS.get(i).getCantidadV()*(detallesPVS.get(i).getPrecioPV()/(1.0+(detallesPVS.get(i).getIvaPV()*0.01)))));
+                    IvaT=IvaT+((int)((detallesPVS.get(i).getCantidadV()*(detallesPVS.get(i).getPrecioPV()/(1.0+(detallesPVS.get(i).getIvaPV()*0.01))))*(detallesPVS.get(i).getIvaPV()*0.01)));
                 }
+                TSubTotal.setText("$ "+formato.format(SubT));
+                TIva.setText("$ "+formato.format(IvaT));
                 TTotalV.setText("$ "+formato.format(Total));
+                TCambio.setText("$ "+formato.format((Integer.parseInt(Efectivo)-Total)));
             }
         };
         productos.getResultado().observe(DetallesVentas.this,observer);
