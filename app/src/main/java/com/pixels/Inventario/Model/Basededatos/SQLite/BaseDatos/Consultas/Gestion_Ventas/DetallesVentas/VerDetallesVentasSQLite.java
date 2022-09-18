@@ -45,6 +45,6 @@ public class VerDetallesVentasSQLite extends BaseDatosSQLite implements Mediador
 
     @Override
     public void ConsultaBaseDatos() {
-
+        ViewModel.resultado.setValue(DatosProductos());
     }
 }

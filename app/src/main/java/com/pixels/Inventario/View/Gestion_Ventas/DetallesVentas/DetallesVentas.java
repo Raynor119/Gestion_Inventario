@@ -3,6 +3,8 @@ package com.pixels.Inventario.View.Gestion_Ventas.DetallesVentas;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProviders;
 
 
 import android.graphics.Bitmap;
@@ -15,10 +17,14 @@ import android.widget.TextView;
 import com.google.zxing.BarcodeFormat;
 
 import com.journeyapps.barcodescanner.BarcodeEncoder;
+import com.pixels.Inventario.Model.DatosE.detallesPV;
 import com.pixels.Inventario.R;
+import com.pixels.Inventario.ViewModel.Gestion_Ventas.DetallesVentas.DetallesVentasViewModel;
+import com.pixels.Inventario.ViewModel.Gestion_Ventas.VentasAnualesRecyclerViewModel;
 
 import java.io.ByteArrayOutputStream;
 import java.text.NumberFormat;
+import java.util.List;
 
 public class DetallesVentas extends AppCompatActivity {
 
@@ -27,6 +33,7 @@ public class DetallesVentas extends AppCompatActivity {
     private LinearLayout LDetalles;
     private CardView Masdetalles;
     private ImageView IcodigoBarras;
+    private NumberFormat formato= NumberFormat.getNumberInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +55,6 @@ public class DetallesVentas extends AppCompatActivity {
         }
         TCodigo.setText(""+Codigo);
         TFecha.setText(""+Fecha);
-        NumberFormat formato= NumberFormat.getNumberInstance();
         TEfectivo.setText("$ "+formato.format(Integer.parseInt(Efectivo)));
         TCambio=(TextView) findViewById(R.id.cambioT);
         TSubTotal=(TextView) findViewById(R.id.SubTotal);
@@ -70,8 +76,22 @@ public class DetallesVentas extends AppCompatActivity {
                 }
             }
         });
+        iniciarReciclerView();
     }
     public void iniciarReciclerView(){
-
+        DetallesVentasViewModel productos= ViewModelProviders.of(DetallesVentas.this).get(DetallesVentasViewModel.class);
+        productos.reset();
+        productos.VerDetallerVentas(DetallesVentas.this,Codigo);
+        Observer<List<detallesPV>> observer=new Observer<List<detallesPV>>() {
+            @Override
+            public void onChanged(List<detallesPV> detallesPVS){
+                int Total=0;
+                for(int i=0;i<detallesPVS.size();i++){
+                    Total=Total+((int)(detallesPVS.get(i).getCantidadV()*detallesPVS.get(i).getPrecioPV()));
+                }
+                TTotalV.setText("$ "+formato.format(Total));
+            }
+        };
+        productos.getResultado().observe(DetallesVentas.this,observer);
     }
 }
