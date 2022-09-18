@@ -2666,6 +2666,9 @@ mipmap ajustes_adaptive_fore
 mipmap caja
 mipmap caja_adaptive_back
 mipmap caja_adaptive_fore
+mipmap cajad
+mipmap cajad_adaptive_back
+mipmap cajad_adaptive_fore
 mipmap calendarios
 mipmap calendarios_adaptive_back
 mipmap calendarios_adaptive_fore

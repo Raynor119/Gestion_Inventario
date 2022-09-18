@@ -61,6 +61,13 @@ public class ProductosDRecyclerViewAdapter extends RecyclerView.Adapter<Producto
         if(ProductosTotales.get(position).getCantidadD()==0){
             holder.LDevoC.setVisibility(ConstraintLayout.GONE);
             holder.LDevoObser.setVisibility(ConstraintLayout.GONE);
+        }else{
+            holder.icono.setImageResource(R.mipmap.cajad_adaptive_fore);
+            if(ProductosTotales.get(position).getCantidadD()==ProductosTotales.get(position).getCantidadV()){
+                holder.icono.setBackgroundResource(R.drawable.login_button_bkdt);
+            }else{
+                holder.icono.setBackgroundResource(R.drawable.login_button_bkerror);
+            }
         }
         NumberFormat formato= NumberFormat.getNumberInstance();
         holder.Tprecio.setText("$ "+formato.format(ProductosTotales.get(position).getPrecioPV()));
