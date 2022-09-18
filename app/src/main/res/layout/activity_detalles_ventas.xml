@@ -294,4 +294,17 @@
     </RelativeLayout>
 
     </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="end|bottom"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:layout_anchorGravity="top|end"
+            app:srcCompat="@mipmap/recivo_adaptive_fore" />
+    </LinearLayout>
 </RelativeLayout>

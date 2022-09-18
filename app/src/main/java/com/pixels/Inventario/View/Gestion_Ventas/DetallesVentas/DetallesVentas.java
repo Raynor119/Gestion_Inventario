@@ -8,19 +8,25 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.zxing.BarcodeFormat;
 
 import com.journeyapps.barcodescanner.BarcodeEncoder;
+import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.Model.DatosE.detallesPV;
 import com.pixels.Inventario.R;
+import com.pixels.Inventario.View.Gestion_Productos.AgregarProductos.AgregarProductos;
 import com.pixels.Inventario.View.Gestion_Ventas.DetallesVentas.RecyclerViewAdaptador.ProductosDRecyclerViewAdapter;
+import com.pixels.Inventario.ViewModel.Caja.Venta.RealizarFacturaViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Ventas.DetallesVentas.DetallesVentasViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Ventas.VentasAnualesRecyclerViewModel;
 
@@ -28,6 +34,7 @@ import java.io.ByteArrayOutputStream;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.NumberFormat;
+import java.util.ArrayList;
 import java.util.List;
 
 public class DetallesVentas extends AppCompatActivity {
@@ -39,6 +46,7 @@ public class DetallesVentas extends AppCompatActivity {
     private ImageView IcodigoBarras;
     private NumberFormat formato= NumberFormat.getNumberInstance();
     private RecyclerView recyclerView;
+    private FloatingActionButton fab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +93,13 @@ public class DetallesVentas extends AppCompatActivity {
                 }
             }
         });
+        fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "no se a cargado los datos de la Venta", Toast.LENGTH_LONG).show();
+            }
+        });
         iniciarReciclerView();
     }
     public void iniciarReciclerView(){
@@ -116,6 +131,17 @@ public class DetallesVentas extends AppCompatActivity {
                 }
                 recyclerView.setAdapter(null);
                 recyclerView.setAdapter(new ProductosDRecyclerViewAdapter(DetallesVentas.this,detallesPVS));
+                fab.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        RealizarFacturaViewModel Venta= ViewModelProviders.of(DetallesVentas.this).get(RealizarFacturaViewModel.class);
+                        List<Producto> Productos=new ArrayList<>();
+                        for(int i=0;i<detallesPVS.size();i++){
+                            Productos.add(new Producto(detallesPVS.get(i).getCodigoP(),detallesPVS.get(i).getNombre(),detallesPVS.get(i).getCantidadV(),detallesPVS.get(i).getTipoC(),detallesPVS.get(i).getCostePV(),detallesPVS.get(i).getPrecioPV(),detallesPVS.get(i).getIvaPV()));
+                        }
+                        Venta.crearFacturaVer(DetallesVentas.this,Productos,Codigo,Fecha,Integer.parseInt(Efectivo),"no");
+                    }
+                });
             }
         };
         productos.getResultado().observe(DetallesVentas.this,observer);

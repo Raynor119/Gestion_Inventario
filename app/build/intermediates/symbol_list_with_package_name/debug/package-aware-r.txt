@@ -2703,6 +2703,9 @@ mipmap menos_adaptive_fore
 mipmap productos
 mipmap productos_adaptive_back
 mipmap productos_adaptive_fore
+mipmap recivo
+mipmap recivo_adaptive_back
+mipmap recivo_adaptive_fore
 mipmap salir
 mipmap salir_adaptive_back
 mipmap salir_adaptive_fore

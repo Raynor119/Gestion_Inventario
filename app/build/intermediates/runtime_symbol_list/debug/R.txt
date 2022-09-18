@@ -2702,6 +2702,9 @@ int mipmap menos_adaptive_fore 0x7f0d002b
 int mipmap productos 0x7f0d002c
 int mipmap productos_adaptive_back 0x7f0d002d
 int mipmap productos_adaptive_fore 0x7f0d002e
+int mipmap recivo 0x7f0d003c
+int mipmap recivo_adaptive_back 0x7f0d003d
+int mipmap recivo_adaptive_fore 0x7f0d003e
 int mipmap salir 0x7f0d002f
 int mipmap salir_adaptive_back 0x7f0d0030
 int mipmap salir_adaptive_fore 0x7f0d0031
