@@ -1913,6 +1913,7 @@ int id SubTotal 0x7f080028
 int id TOP_END 0x7f080029
 int id TOP_START 0x7f08002a
 int id Tablayout 0x7f08002b
+int id TextMas 0x7f080220
 int id Total 0x7f08002c
 int id TotalD 0x7f08002d
 int id TotalDevolu 0x7f08002e

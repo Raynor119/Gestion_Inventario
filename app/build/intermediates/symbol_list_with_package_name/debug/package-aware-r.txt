@@ -1914,6 +1914,7 @@ id SubTotal
 id TOP_END
 id TOP_START
 id Tablayout
+id TextMas
 id Total
 id TotalD
 id TotalDevolu

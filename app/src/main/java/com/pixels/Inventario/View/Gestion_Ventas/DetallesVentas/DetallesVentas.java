@@ -4,13 +4,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.google.zxing.BarcodeFormat;
+
+import com.journeyapps.barcodescanner.BarcodeEncoder;
 import com.pixels.Inventario.R;
 
+import java.io.ByteArrayOutputStream;
 import java.text.NumberFormat;
 
 public class DetallesVentas extends AppCompatActivity {
@@ -19,6 +26,7 @@ public class DetallesVentas extends AppCompatActivity {
     private TextView TCodigo,TFecha,TEfectivo,TCambio,TSubTotal,TIva,TTotalV,TTextMas;
     private LinearLayout LDetalles;
     private CardView Masdetalles;
+    private ImageView IcodigoBarras;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +38,14 @@ public class DetallesVentas extends AppCompatActivity {
         TCodigo=(TextView) findViewById(R.id.CodigoV);
         TFecha=(TextView) findViewById(R.id.fecha);
         TEfectivo=(TextView) findViewById(R.id.Efectivo);
+        IcodigoBarras=(ImageView) findViewById(R.id.codigoBarras);
+        BarcodeEncoder barcodeEncoder=new BarcodeEncoder();
+        try {
+            Bitmap bitmap=barcodeEncoder.encodeBitmap(Codigo, BarcodeFormat.CODE_128,580,80);
+            IcodigoBarras.setImageBitmap(bitmap);
+        } catch (Exception e) {
+
+        }
         TCodigo.setText(""+Codigo);
         TFecha.setText(""+Fecha);
         NumberFormat formato= NumberFormat.getNumberInstance();
