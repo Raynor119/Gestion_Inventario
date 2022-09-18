@@ -21,16 +21,17 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v48.5 Creacion del Activity Detalles de Venta">
+    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v48.5.2 Creacion del Activity Detalles de Venta">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/SQLite/BaseDatos/Consultas/Gestion_Ventas/DetallesVentas/VerDetallesVentasSQLite.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/SQLite/BaseDatos/Consultas/Gestion_Ventas/DetallesVentas/VerDetallesVentasSQLite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/DetallesVentas/DetallesVentas.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/DetallesVentas/DetallesVentas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/ViewModel/Gestion_Ventas/DetallesVentas/DetallesVentasViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/ViewModel/Gestion_Ventas/DetallesVentas/DetallesVentasViewModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[127.0.0.1:58526]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -144,13 +145,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661834586125</updated>
-    </task>
-    <task id="LOCAL-00049" summary="copia de seguridad v41.6 Bloqueo de adminstrador hecho">
-      <created>1662620359285</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1662620359285</updated>
     </task>
     <task id="LOCAL-00050" summary="copia de seguridad v42 mejoras en la interfaz">
       <created>1662620605464</created>
@@ -488,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663386103441</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="copia de seguridad v48.5.1 Creacion del Activity Detalles de Venta">
+      <created>1663386927535</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1663386927536</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -507,8 +508,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="copia de seguridad v47 recicler view copia" />
-    <MESSAGE value="copia de seguridad v47.1 recicler view copia" />
     <MESSAGE value="copia de seguridad v47.2 recicler view copia" />
     <MESSAGE value="copia de seguridad v47.4 recicler view copia" />
     <MESSAGE value="copia de seguridad v47.5 recicler view copia boton de cargar" />
@@ -532,6 +531,8 @@
     <MESSAGE value="copia de seguridad v48.3 Creacion del Activity Detalles de Venta" />
     <MESSAGE value="copia de seguridad v48.4 Creacion del Activity Detalles de Venta" />
     <MESSAGE value="copia de seguridad v48.5 Creacion del Activity Detalles de Venta" />
-    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v48.5 Creacion del Activity Detalles de Venta" />
+    <MESSAGE value="copia de seguridad v48.5.1 Creacion del Activity Detalles de Venta" />
+    <MESSAGE value="copia de seguridad v48.5.2 Creacion del Activity Detalles de Venta" />
+    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v48.5.2 Creacion del Activity Detalles de Venta" />
   </component>
 </project>
