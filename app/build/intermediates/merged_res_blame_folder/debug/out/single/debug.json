@@ -144,10 +144,6 @@
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\mipmap-xhdpi\\ajustes_adaptive_back.png"
     },
     {
-        "merged": "com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_cajad.png.flat",
-        "source": "com.pixels.Inventario.app-main-25:/mipmap-xhdpi/cajad.png"
-    },
-    {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout_fragment_modificarcontra.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout\\fragment_modificarcontra.xml"
     },
@@ -420,6 +416,10 @@
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout-w1700dp\\fragment_inventario_productos.xml"
     },
     {
+        "merged": "com.pixels.Inventario.app-merged_res-23:/layout_productovendido.xml.flat",
+        "source": "com.pixels.Inventario.app-main-25:/layout/productovendido.xml"
+    },
+    {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\mipmap-xhdpi_mas_adaptive_back.png.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\mipmap-xhdpi\\mas_adaptive_back.png"
     },
@@ -506,10 +506,6 @@
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout_alertdialogcontrab.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout\\alertdialogcontrab.xml"
-    },
-    {
-        "merged": "com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_cajad_adaptive_fore.png.flat",
-        "source": "com.pixels.Inventario.app-main-25:/mipmap-xhdpi/cajad_adaptive_fore.png"
     },
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\mipmap-xhdpi_ic_launcher.png.flat",
