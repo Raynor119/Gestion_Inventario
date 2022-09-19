@@ -21,21 +21,20 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v49.2 Creacion de la grafica de productor mas vendidos">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/MYSQL/Consultas/Gestion_Ventas/GraficasFragment/GColumnas/ProductosVendidosMYSQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/SQLite/BaseDatos/Consultas/Gestion_Ventas/GraficasFragment/GColumnas/ProductosVendidosSQLite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/DatosE/DatosColumn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/GraficasFragment/GColumnas/GraficaColumnaD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/ViewModel/Gestion_Ventas/GraficasFragment/GColumnas/GraficaColumnDRecyclerViewModel.java" afterDir="false" />
+    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v49.2.1 Creacion de la grafica de productor mas vendidos">
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/GraficasFragment/GraficaColumna.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/DiariasFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/GraficasFragment/GColumnas/GraficaColumnaD.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/GraficasFragment/GColumnas/GraficaColumnaD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/ViewModel/Gestion_Ventas/GraficasFragment/GColumnas/GraficaColumnDRecyclerViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/ViewModel/Gestion_Ventas/GraficasFragment/GColumnas/GraficaColumnDRecyclerViewModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[127.0.0.1:58526]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -156,13 +155,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661834586125</updated>
-    </task>
-    <task id="LOCAL-00073" summary="copia de seguridad v47 recicler view copia">
-      <created>1663047699360</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1663047699360</updated>
     </task>
     <task id="LOCAL-00074" summary="copia de seguridad v47.1 recicler view copia">
       <created>1663049618718</created>
@@ -500,7 +492,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663567237164</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="copia de seguridad v49.2.1 Creacion de la grafica de productor mas vendidos">
+      <created>1663618572333</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1663618572333</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -519,7 +518,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="copia de seguridad v48.4 Creacion del Activity Detalles de Venta" />
     <MESSAGE value="copia de seguridad v48.5 Creacion del Activity Detalles de Venta" />
     <MESSAGE value="copia de seguridad v48.5.1 Creacion del Activity Detalles de Venta" />
     <MESSAGE value="copia de seguridad v48.5.2 Creacion del Activity Detalles de Venta" />
@@ -544,6 +542,7 @@
     <MESSAGE value="copia de seguridad v49 Creacion de la grafica de productor mas vendidos" />
     <MESSAGE value="copia de seguridad v49.1 Creacion de la grafica de productor mas vendidos" />
     <MESSAGE value="copia de seguridad v49.2 Creacion de la grafica de productor mas vendidos" />
-    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v49.2 Creacion de la grafica de productor mas vendidos" />
+    <MESSAGE value="copia de seguridad v49.2.1 Creacion de la grafica de productor mas vendidos" />
+    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v49.2.1 Creacion de la grafica de productor mas vendidos" />
   </component>
 </project>

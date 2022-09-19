@@ -23,6 +23,7 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.pixels.Inventario.Model.Basededatos.SQLite.DatosInicio.consultasDatos;
 import com.pixels.Inventario.Model.DatosE.TotalVentas;
 import com.pixels.Inventario.R;
+import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.GraficasFragment.GColumnas.GraficaColumnaD;
 import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.RecyclerViewAdaptador.VentasDiariasRecyclerViewAdapter;
 import com.pixels.Inventario.View.InicioA.Configuracion_Inicial.Fragment.InicioBlanco;
 import com.pixels.Inventario.ViewModel.Gestion_Ventas.VentasDiariasRecyclerViewModel;
@@ -88,6 +89,9 @@ public class DiariasFragment extends Fragment {
             @Override
             public void afterTextChanged(Editable editable) {
                 iniciarRecyclerView(calendarioEditText.getText().toString());
+                GraficaColumnaD graficaColumna=new GraficaColumnaD(calendarioEditText.getText().toString());
+                graficaColumna.Fecha=calendarioEditText.getText().toString();
+                getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
             }
         });
         CardView Bcalendario=(CardView) rootView.findViewById(R.id.calendario);
@@ -119,6 +123,9 @@ public class DiariasFragment extends Fragment {
                         int mes=Mes+1;
                         calendarioEditText.setText(Dia+"/"+(mes)+"/"+year);
                         iniciarRecyclerView(calendarioEditText.getText().toString());
+                        GraficaColumnaD graficaColumna=new GraficaColumnaD(calendarioEditText.getText().toString());
+                        graficaColumna.Fecha=calendarioEditText.getText().toString();
+                        getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
                     }
                 },anno,mes-1,dia);
                 datePickerDialog.show();
@@ -132,10 +139,14 @@ public class DiariasFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 iniciarRecyclerView(calendarioEditText.getText().toString());
+                GraficaColumnaD graficaColumna=new GraficaColumnaD(calendarioEditText.getText().toString());
+                graficaColumna.Fecha=calendarioEditText.getText().toString();
+                getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
             }
         });
-
-        getChildFragmentManager().beginTransaction().replace(R.id.container, new InicioBlanco()).commit();
+        GraficaColumnaD graficaColumna=new GraficaColumnaD(calendarioEditText.getText().toString());
+        graficaColumna.Fecha=calendarioEditText.getText().toString();
+        getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
 
         return rootView;
     }

@@ -28,7 +28,7 @@ public class GraficaColumnDRecyclerViewModel extends ViewModel {
     }
     public void buscarVProductos(Context context, String Consulta){
         String ConsultaP="SELECT VentasProductos.codigoP,Producto.nombre,SUM((VentasProductos.CantidadV-VentasProductos.CantidadD)*VentasProductos.PrecioPV)as TotalV "+
-                         "FROM (VentasProductos INNER JOIN Venta ON VentasProductos.codigov=Venta.codigo) INNER JOIN Producto ON VentasProductos.codigoP=Producto.codigo"+
+                         "FROM (VentasProductos INNER JOIN Venta ON VentasProductos.codigov=Venta.codigo) INNER JOIN Producto ON VentasProductos.codigoP=Producto.codigo "+
                          Consulta;
         consultasDatos dinici=new consultasDatos(context);
         MediadorBaseDatos BD;
