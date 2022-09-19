@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout_fragmentgraficacolumna.xml.flat",
+        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout\\fragmentgraficacolumna.xml"
+    },
+    {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\mipmap-xhdpi_compartirmas_adaptive_fore.png.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\mipmap-xhdpi\\compartirmas_adaptive_fore.png"
     },
@@ -12,12 +16,12 @@
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout-w800dp\\activity_menuinicio.xml"
     },
     {
-        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout_alertventafinalizada.xml.flat",
-        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout\\alertventafinalizada.xml"
-    },
-    {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\drawable_login_button_bkdt.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\drawable\\login_button_bkdt.xml"
+    },
+    {
+        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout_alertventafinalizada.xml.flat",
+        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout\\alertventafinalizada.xml"
     },
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout-w1400dp_fragment_inventario_productos.xml.flat",
@@ -202,6 +206,10 @@
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\mipmap-xhdpi_eliminar_adaptive_back.png.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\mipmap-xhdpi\\eliminar_adaptive_back.png"
+    },
+    {
+        "merged": "com.pixels.Inventario.app-merged_res-23:/layout_fragmentgraficacolumna.xml.flat",
+        "source": "com.pixels.Inventario.app-main-25:/layout/fragmentgraficacolumna.xml"
     },
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\mipmap-xhdpi_calendarios_adaptive_fore.png.flat",

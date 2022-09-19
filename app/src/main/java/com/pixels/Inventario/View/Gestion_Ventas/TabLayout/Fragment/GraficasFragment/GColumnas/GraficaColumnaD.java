@@ -1,5 +1,6 @@
 package com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.GraficasFragment.GColumnas;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,17 +17,23 @@ import com.pixels.Inventario.R;
 import com.pixels.Inventario.ViewModel.Gestion_Ventas.GraficasFragment.GColumnas.GraficaColumnDRecyclerViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Ventas.VentasDiariasRecyclerViewModel;
 
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
 
+import lecho.lib.hellocharts.gesture.ZoomType;
+import lecho.lib.hellocharts.listener.ColumnChartOnValueSelectListener;
+import lecho.lib.hellocharts.model.Axis;
 import lecho.lib.hellocharts.model.AxisValue;
 import lecho.lib.hellocharts.model.Column;
+import lecho.lib.hellocharts.model.ColumnChartData;
 import lecho.lib.hellocharts.model.SubcolumnValue;
 import lecho.lib.hellocharts.view.ColumnChartView;
 
 public class GraficaColumnaD extends Fragment {
     public static String Fecha;
     private ColumnChartView GColumna;
+    private ColumnChartData columnData;
     public GraficaColumnaD(){
 
     }
@@ -51,8 +58,33 @@ public class GraficaColumnaD extends Fragment {
                 List<Column> columns = new ArrayList<Column>();
                 List<SubcolumnValue> values;
                 for(int i=0;i<datosColumns.size();i++){
-
+                    values = new ArrayList<SubcolumnValue>();
+                    values.add(new SubcolumnValue((float) (datosColumns.get(i).getTotalV()), Color.parseColor("#0090FD")));
+                    axisValues.add(new AxisValue(i).setLabel(""+datosColumns.get(i).getNombre()));
+                    columns.add(new Column(values).setHasLabelsOnlyForSelected(true));
                 }
+                columnData = new ColumnChartData(columns);
+
+                columnData.setAxisXBottom(new Axis(axisValues).setHasLines(true).setName("Productos"));
+                columnData.setAxisYLeft(new Axis().setHasLines(true).setMaxLabelChars(5).setName("Total Vendido"));
+
+
+                GColumna.setColumnChartData(columnData);
+
+                GColumna.setOnValueTouchListener(new ColumnChartOnValueSelectListener() {
+                    @Override
+                    public void onValueSelected(int columnIndex, int subcolumnIndex, SubcolumnValue value) {
+                        NumberFormat formato= NumberFormat.getNumberInstance();
+                        Toast.makeText(getActivity(), "$ "+formato.format(value.getValue()), Toast.LENGTH_LONG).show();
+                    }
+
+                    @Override
+                    public void onValueDeselected() {
+
+                    }
+                });
+                GColumna.setValueSelectionEnabled(true);
+                GColumna.setZoomEnabled(false);
             }
         };
         productos.getResultado().observe(getActivity(),observer);

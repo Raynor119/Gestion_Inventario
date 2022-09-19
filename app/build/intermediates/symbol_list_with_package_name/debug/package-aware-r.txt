@@ -2028,6 +2028,7 @@ id center_horizontal
 id center_vertical
 id chain
 id chains
+id chart_bottom
 id checkbox
 id checked
 id chip
@@ -2550,6 +2551,7 @@ layout fragment_mensuales
 layout fragment_modificarcontra
 layout fragment_registrar_base_datos
 layout fragment_ver_ventas
+layout fragmentgraficacolumna
 layout image_frame
 layout material_chip_input_combo
 layout material_clock_display
