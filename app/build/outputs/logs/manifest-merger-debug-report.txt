@@ -4,6 +4,7 @@ ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManif
 INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:2:1-113:12
 INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:2:1-113:12
 INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:2:1-113:12
+MERGED from [com.github.lecho:hellocharts-library:1.5.8] C:\Users\saibo\.gradle\caches\transforms-3\a2c9b112b1d6f0af4716160d9dcba562\transformed\jetified-hellocharts-library-1.5.8\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\saibo\.gradle\caches\transforms-3\037164efd180b1a759f85bd80e940c8b\transformed\material-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\saibo\.gradle\caches\transforms-3\476b29e0ad710acb6cc42ccfb2c8e71c\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.preference:preference:1.1.1] C:\Users\saibo\.gradle\caches\transforms-3\7b0ae9bbb037b5073aff861e26f1fc2b\transformed\preference-1.1.1\AndroidManifest.xml:17:1-24:12
@@ -75,6 +76,8 @@ uses-sdk
 ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:6:5-73
 INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:6:5-73
 INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:6:5-73
+MERGED from [com.github.lecho:hellocharts-library:1.5.8] C:\Users\saibo\.gradle\caches\transforms-3\a2c9b112b1d6f0af4716160d9dcba562\transformed\jetified-hellocharts-library-1.5.8\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.lecho:hellocharts-library:1.5.8] C:\Users\saibo\.gradle\caches\transforms-3\a2c9b112b1d6f0af4716160d9dcba562\transformed\jetified-hellocharts-library-1.5.8\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\saibo\.gradle\caches\transforms-3\037164efd180b1a759f85bd80e940c8b\transformed\material-1.4.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\saibo\.gradle\caches\transforms-3\037164efd180b1a759f85bd80e940c8b\transformed\material-1.4.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\saibo\.gradle\caches\transforms-3\476b29e0ad710acb6cc42ccfb2c8e71c\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
