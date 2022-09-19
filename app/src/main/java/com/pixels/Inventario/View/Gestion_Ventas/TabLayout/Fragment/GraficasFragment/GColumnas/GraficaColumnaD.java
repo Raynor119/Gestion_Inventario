@@ -21,6 +21,7 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
 
+import lecho.lib.hellocharts.gesture.ContainerScrollType;
 import lecho.lib.hellocharts.gesture.ZoomType;
 import lecho.lib.hellocharts.listener.ColumnChartOnValueSelectListener;
 import lecho.lib.hellocharts.model.Axis;
@@ -58,16 +59,17 @@ public class GraficaColumnaD extends Fragment {
                 List<Column> columns = new ArrayList<Column>();
                 List<SubcolumnValue> values;
                 for(int i=0;i<datosColumns.size();i++){
-                    values = new ArrayList<SubcolumnValue>();
-                    values.add(new SubcolumnValue((float) (datosColumns.get(i).getTotalV()), Color.parseColor("#0090FD")));
-                    axisValues.add(new AxisValue(i).setLabel(""+datosColumns.get(i).getNombre()));
-                    columns.add(new Column(values).setHasLabelsOnlyForSelected(true));
+                   if(datosColumns.get(i).getTotalV()!=0){
+                       values = new ArrayList<SubcolumnValue>();
+                       values.add(new SubcolumnValue((float) (datosColumns.get(i).getTotalV()), Color.parseColor("#0090FD")));
+                       axisValues.add(new AxisValue(i).setLabel(""+datosColumns.get(i).getNombre()));
+                       columns.add(new Column(values).setHasLabelsOnlyForSelected(true));
+                   }
                 }
                 columnData = new ColumnChartData(columns);
 
-                columnData.setAxisXBottom(new Axis(axisValues).setHasLines(true).setName("Productos"));
-                columnData.setAxisYLeft(new Axis().setHasLines(true).setMaxLabelChars(5).setName("Total Vendido"));
-
+                columnData.setAxisXBottom(new Axis(axisValues).setHasLines(true).setName("Productos").setTextColor(Color.parseColor("#000000")));
+                columnData.setAxisYLeft(new Axis().setHasLines(true).setMaxLabelChars(5).setName("Total Vendido").setTextColor(Color.parseColor("#000000")));
 
                 GColumna.setColumnChartData(columnData);
 
@@ -75,7 +77,7 @@ public class GraficaColumnaD extends Fragment {
                     @Override
                     public void onValueSelected(int columnIndex, int subcolumnIndex, SubcolumnValue value) {
                         NumberFormat formato= NumberFormat.getNumberInstance();
-                        Toast.makeText(getActivity(), "Total Vendido por el Produto es de: $ "+formato.format(value.getValue()), Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity(), "Total Vendido por el Produto es de:\n $ "+formato.format(value.getValue()), Toast.LENGTH_LONG).show();
                     }
 
                     @Override
