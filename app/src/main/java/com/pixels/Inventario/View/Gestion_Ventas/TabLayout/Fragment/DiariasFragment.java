@@ -135,7 +135,7 @@ public class DiariasFragment extends Fragment {
             }
         });
 
-        getChildFragmentManager().beginTransaction().replace(R.id.container, new AnualesFragment()).commit();
+        getChildFragmentManager().beginTransaction().replace(R.id.container, new InicioBlanco()).commit();
 
         return rootView;
     }
