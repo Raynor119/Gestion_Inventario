@@ -75,7 +75,7 @@ public class GraficaColumnaD extends Fragment {
                     @Override
                     public void onValueSelected(int columnIndex, int subcolumnIndex, SubcolumnValue value) {
                         NumberFormat formato= NumberFormat.getNumberInstance();
-                        Toast.makeText(getActivity(), "$ "+formato.format(value.getValue()), Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity(), "Total Vendido por el Produto es de: $ "+formato.format(value.getValue()), Toast.LENGTH_LONG).show();
                     }
 
                     @Override

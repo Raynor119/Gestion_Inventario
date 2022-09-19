@@ -61,7 +61,7 @@ public class DiariasFragment extends Fragment {
         totalGananNeta=(TextView) rootView.findViewById(R.id.GananN);
         TotalVendido=(TextView) rootView.findViewById(R.id.TotalVendido);
         LGrafica=(LinearLayout) rootView.findViewById(R.id.LGrafica);
-        LGrafica.setVisibility(ConstraintLayout.GONE);
+        LGrafica.setVisibility(ConstraintLayout.VISIBLE);
         BGraficaC=(CardView) rootView.findViewById(R.id.mostrar);
         BGraficaC.setOnClickListener(new View.OnClickListener() {
             @Override
