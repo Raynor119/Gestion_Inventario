@@ -1899,6 +1899,7 @@ int id LDetalles 0x7f08001a
 int id LDevoC 0x7f08001b
 int id LDevoObser 0x7f08001c
 int id LDevoluciones 0x7f08001d
+int id LGrafica 0x7f080228
 int id LtotaD 0x7f08001e
 int id LtotaP 0x7f08001f
 int id META 0x7f080020
@@ -2193,6 +2194,7 @@ int id month_navigation_fragment_toggle 0x7f080140
 int id month_navigation_next 0x7f080141
 int id month_navigation_previous 0x7f080142
 int id month_title 0x7f080143
+int id mostrar 0x7f080229
 int id motion_base 0x7f080144
 int id mtrl_anchor_parent 0x7f080145
 int id mtrl_calendar_day_selector_frame 0x7f080146

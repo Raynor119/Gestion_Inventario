@@ -1900,6 +1900,7 @@ id LDetalles
 id LDevoC
 id LDevoObser
 id LDevoluciones
+id LGrafica
 id LtotaD
 id LtotaP
 id META
@@ -2194,6 +2195,7 @@ id month_navigation_fragment_toggle
 id month_navigation_next
 id month_navigation_previous
 id month_title
+id mostrar
 id motion_base
 id mtrl_anchor_parent
 id mtrl_calendar_day_selector_frame
