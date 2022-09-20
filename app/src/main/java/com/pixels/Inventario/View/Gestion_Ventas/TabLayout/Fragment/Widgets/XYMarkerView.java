@@ -1,4 +1,4 @@
-package com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.Custom;
+package com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.Widgets;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

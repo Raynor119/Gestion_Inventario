@@ -63,16 +63,6 @@ public class DiariasFragment extends Fragment {
         LGrafica=(LinearLayout) rootView.findViewById(R.id.LGrafica);
         LGrafica.setVisibility(ConstraintLayout.VISIBLE);
         BGraficaC=(CardView) rootView.findViewById(R.id.mostrar);
-        BGraficaC.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(LGrafica.getVisibility()==ConstraintLayout.GONE){
-                    LGrafica.setVisibility(ConstraintLayout.VISIBLE);
-                }else{
-                    LGrafica.setVisibility(ConstraintLayout.GONE);
-                }
-            }
-        });
         calendarioEditText.setEnabled(false);
         calendarioEditText.setText(getDia());
         calendarioEditText.addTextChangedListener(new TextWatcher() {
@@ -147,7 +137,19 @@ public class DiariasFragment extends Fragment {
         GraficaColumnaD graficaColumna=new GraficaColumnaD(calendarioEditText.getText().toString());
         graficaColumna.Fecha=calendarioEditText.getText().toString();
         getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
-
+        BGraficaC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(LGrafica.getVisibility()==ConstraintLayout.GONE){
+                    LGrafica.setVisibility(ConstraintLayout.VISIBLE);
+                    GraficaColumnaD graficaColumna=new GraficaColumnaD(calendarioEditText.getText().toString());
+                    graficaColumna.Fecha=calendarioEditText.getText().toString();
+                    getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
+                }else{
+                    LGrafica.setVisibility(ConstraintLayout.GONE);
+                }
+            }
+        });
         return rootView;
     }
     public void iniciarRecyclerView(String Ffecha){
