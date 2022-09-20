@@ -140,14 +140,14 @@ public class GraficaColumnaD extends Fragment {
         consultasDatos dinici=new consultasDatos(getActivity());
         if(dinici.obtenerD().get(0).getBasedatos().equals("SQLITE")){
             if(mes<10){
-                c="WHERE DATE(Venta.Fecha) = '"+anno+"-"+("0"+mes)+"-"+dia+"' GROUP BY VentasProductos.codigoP ORDER BY TotalV DESC";
+                c="WHERE DATE(Venta.Fecha) = '"+anno+"-"+("0"+mes)+"-"+dia+"' GROUP BY VentasProductos.codigoP ORDER BY TotalV DESC LIMIT 10";
             }else{
-                c="WHERE DATE(Venta.Fecha) = '"+anno+"-"+mes+"-"+dia+"' GROUP BY VentasProductos.codigoP ORDER BY TotalV DESC";
+                c="WHERE DATE(Venta.Fecha) = '"+anno+"-"+mes+"-"+dia+"' GROUP BY VentasProductos.codigoP ORDER BY TotalV DESC LIMIT 10";
             }
 
         }
         if(dinici.obtenerD().get(0).getBasedatos().equals("MYSQL")){
-            c="WHERE CAST(Fecha AS DATE) = '"+anno+"-"+mes+"-"+dia+"' GROUP BY VentasProductos.codigoP ORDER BY TotalV DESC";
+            c="WHERE CAST(Fecha AS DATE) = '"+anno+"-"+mes+"-"+dia+"' GROUP BY VentasProductos.codigoP ORDER BY TotalV DESC LIMIT 10";
         }
 
         return c;
