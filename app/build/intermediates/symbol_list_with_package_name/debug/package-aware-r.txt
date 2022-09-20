@@ -1832,6 +1832,7 @@ drawable ic_mtrl_chip_close_circle
 drawable login_button_bk
 drawable login_button_bkdt
 drawable login_button_bkerror
+drawable marker2
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -2394,6 +2395,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvContent
 id unchecked
 id unidad
 id uniform
@@ -2553,6 +2555,7 @@ layout fragment_registrar_base_datos
 layout fragment_ver_ventas
 layout fragmentgraficacolumna
 layout image_frame
+layout marker_view
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
