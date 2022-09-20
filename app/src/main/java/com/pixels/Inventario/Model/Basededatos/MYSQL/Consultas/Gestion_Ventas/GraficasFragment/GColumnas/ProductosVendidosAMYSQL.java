@@ -6,7 +6,7 @@ import android.widget.Toast;
 import com.pixels.Inventario.Model.Basededatos.MYSQL.Conexion;
 import com.pixels.Inventario.Model.Basededatos.MediadorBaseDatos;
 import com.pixels.Inventario.Model.DatosE.DatosColumn;
-import com.pixels.Inventario.ViewModel.Gestion_Ventas.GraficasFragment.GColumnas.GraficaColumnDRecyclerViewModel;
+import com.pixels.Inventario.ViewModel.Gestion_Ventas.GraficasFragment.GColumnas.GraficaColumnARecyclerViewModel;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -16,11 +16,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProductosVendidosAMYSQL extends Conexion implements MediadorBaseDatos {
-    public GraficaColumnDRecyclerViewModel ViewModel;
+    public GraficaColumnARecyclerViewModel ViewModel;
     public List<DatosColumn> ProductosV;
     private boolean verificarE=false;
     private String Consulta="";
-    public ProductosVendidosAMYSQL(android.content.Context context, GraficaColumnDRecyclerViewModel viewModel, String consulta) {
+    public ProductosVendidosAMYSQL(android.content.Context context, GraficaColumnARecyclerViewModel viewModel, String consulta) {
         super(context);
         this.ViewModel=viewModel;
         this.Consulta=consulta;

@@ -7,16 +7,16 @@ import android.database.sqlite.SQLiteDatabase;
 import com.pixels.Inventario.Model.Basededatos.MediadorBaseDatos;
 import com.pixels.Inventario.Model.Basededatos.SQLite.BaseDatos.BaseDatosSQLite;
 import com.pixels.Inventario.Model.DatosE.DatosColumn;
-import com.pixels.Inventario.ViewModel.Gestion_Ventas.GraficasFragment.GColumnas.GraficaColumnDRecyclerViewModel;
+import com.pixels.Inventario.ViewModel.Gestion_Ventas.GraficasFragment.GColumnas.GraficaColumnARecyclerViewModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ProductosVendidosASQLite extends BaseDatosSQLite implements MediadorBaseDatos {
 
-    public GraficaColumnDRecyclerViewModel ViewModel;
+    public GraficaColumnARecyclerViewModel ViewModel;
     private String Consulta="";
-    public ProductosVendidosASQLite(Context context, GraficaColumnDRecyclerViewModel viewModel, String consulta) {
+    public ProductosVendidosASQLite(Context context, GraficaColumnARecyclerViewModel viewModel, String consulta) {
         super(context);
         this.ViewModel=viewModel;
         this.Consulta=consulta;
