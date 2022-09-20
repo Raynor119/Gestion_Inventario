@@ -17,12 +17,12 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProductosVendidosMYSQL extends Conexion implements MediadorBaseDatos {
+public class ProductosVendidosDMYSQL extends Conexion implements MediadorBaseDatos {
     public GraficaColumnDRecyclerViewModel ViewModel;
     public List<DatosColumn> ProductosV;
     private boolean verificarE=false;
     private String Consulta="";
-    public ProductosVendidosMYSQL(Context context, GraficaColumnDRecyclerViewModel viewModel, String consulta) {
+    public ProductosVendidosDMYSQL(Context context, GraficaColumnDRecyclerViewModel viewModel, String consulta) {
         super(context);
         this.ViewModel=viewModel;
         this.Consulta=consulta;

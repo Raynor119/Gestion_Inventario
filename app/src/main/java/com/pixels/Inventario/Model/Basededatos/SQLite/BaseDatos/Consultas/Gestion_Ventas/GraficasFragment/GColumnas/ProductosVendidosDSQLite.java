@@ -14,11 +14,11 @@ import com.pixels.Inventario.ViewModel.Gestion_Ventas.VentasDiariasRecyclerViewM
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProductosVendidosSQLite extends BaseDatosSQLite implements MediadorBaseDatos {
+public class ProductosVendidosDSQLite extends BaseDatosSQLite implements MediadorBaseDatos {
 
     public GraficaColumnDRecyclerViewModel ViewModel;
     private String Consulta="";
-    public ProductosVendidosSQLite(Context context, GraficaColumnDRecyclerViewModel viewModel, String consulta) {
+    public ProductosVendidosDSQLite(Context context, GraficaColumnDRecyclerViewModel viewModel, String consulta) {
         super(context);
         this.ViewModel=viewModel;
         this.Consulta=consulta;

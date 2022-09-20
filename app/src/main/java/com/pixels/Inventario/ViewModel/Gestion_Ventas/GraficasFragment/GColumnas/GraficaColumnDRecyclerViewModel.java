@@ -6,9 +6,9 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.pixels.Inventario.Model.Basededatos.MYSQL.Consultas.Gestion_Ventas.GraficasFragment.GColumnas.ProductosVendidosMYSQL;
+import com.pixels.Inventario.Model.Basededatos.MYSQL.Consultas.Gestion_Ventas.GraficasFragment.GColumnas.ProductosVendidosDMYSQL;
 import com.pixels.Inventario.Model.Basededatos.MediadorBaseDatos;
-import com.pixels.Inventario.Model.Basededatos.SQLite.BaseDatos.Consultas.Gestion_Ventas.GraficasFragment.GColumnas.ProductosVendidosSQLite;
+import com.pixels.Inventario.Model.Basededatos.SQLite.BaseDatos.Consultas.Gestion_Ventas.GraficasFragment.GColumnas.ProductosVendidosDSQLite;
 import com.pixels.Inventario.Model.Basededatos.SQLite.DatosInicio.consultasDatos;
 import com.pixels.Inventario.Model.DatosE.DatosColumn;
 
@@ -33,10 +33,10 @@ public class GraficaColumnDRecyclerViewModel extends ViewModel {
         consultasDatos dinici=new consultasDatos(context);
         MediadorBaseDatos BD;
         if(dinici.obtenerD().get(0).getBasedatos().equals("SQLITE")){
-            BD= new ProductosVendidosSQLite(context, GraficaColumnDRecyclerViewModel.this,ConsultaP);
+            BD= new ProductosVendidosDSQLite(context, GraficaColumnDRecyclerViewModel.this,ConsultaP);
         }
         if(dinici.obtenerD().get(0).getBasedatos().equals("MYSQL")){
-            BD= new ProductosVendidosMYSQL(context, GraficaColumnDRecyclerViewModel.this,ConsultaP);
+            BD= new ProductosVendidosDMYSQL(context, GraficaColumnDRecyclerViewModel.this,ConsultaP);
         }
     }
 }
