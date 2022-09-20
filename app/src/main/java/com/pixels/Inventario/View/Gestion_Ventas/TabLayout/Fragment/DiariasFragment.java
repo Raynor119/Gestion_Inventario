@@ -24,6 +24,7 @@ import com.pixels.Inventario.Model.Basededatos.SQLite.DatosInicio.consultasDatos
 import com.pixels.Inventario.Model.DatosE.TotalVentas;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.GraficasFragment.GColumnas.GraficaColumnaD;
+import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.GraficasFragment.GLineas.GraficaLinearD;
 import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.RecyclerViewAdaptador.VentasRecyclerViewAdapter;
 import com.pixels.Inventario.ViewModel.Gestion_Ventas.VentasDiariasRecyclerViewModel;
 
@@ -40,6 +41,8 @@ public class DiariasFragment extends Fragment {
     private TextView costototal,totalP,totalDevo,impuesto,totalGananNeta,TotalVendido;
     private CardView BGraficaC;
     private LinearLayout LGrafica;
+    private CardView BGraficaL;
+    private LinearLayout LGraficaL;
 
     public DiariasFragment(){
 
@@ -62,6 +65,9 @@ public class DiariasFragment extends Fragment {
         LGrafica=(LinearLayout) rootView.findViewById(R.id.LGrafica);
         LGrafica.setVisibility(ConstraintLayout.VISIBLE);
         BGraficaC=(CardView) rootView.findViewById(R.id.mostrar);
+        LGraficaL=(LinearLayout) rootView.findViewById(R.id.LGraficaL);
+        LGraficaL.setVisibility(ConstraintLayout.GONE);
+        BGraficaL=(CardView) rootView.findViewById(R.id.mostrarL);
         calendarioEditText.setEnabled(false);
         calendarioEditText.setText(getDia());
         calendarioEditText.addTextChangedListener(new TextWatcher() {
@@ -139,6 +145,16 @@ public class DiariasFragment extends Fragment {
                 }
             }
         });
+        BGraficaL.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(LGraficaL.getVisibility()==ConstraintLayout.GONE){
+                    LGraficaL.setVisibility(ConstraintLayout.VISIBLE);
+                }else{
+                    LGraficaL.setVisibility(ConstraintLayout.GONE);
+                }
+            }
+        });
         return rootView;
     }
     public void iniciarGraficaColumnas(String Ffecha){
@@ -182,6 +198,11 @@ public class DiariasFragment extends Fragment {
                 impuesto.setText("$ "+formato.format(bdIva.doubleValue()));
                 totalGananNeta.setText("$ "+formato.format(bdGN.doubleValue()));
                 TotalVendido.setText("$ "+formato.format(totalV));
+
+                LGraficaL.setVisibility(ConstraintLayout.VISIBLE);
+                GraficaLinearD graficaColumna=new GraficaLinearD(ventasD);
+                graficaColumna.VentasD=ventasD;
+                getChildFragmentManager().beginTransaction().replace(R.id.containerL,graficaColumna).commit();
             }
         };
         ventas.getResultado().observe(getActivity(),observer);

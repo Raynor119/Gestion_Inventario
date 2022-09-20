@@ -1902,6 +1902,7 @@ id LDevoC
 id LDevoObser
 id LDevoluciones
 id LGrafica
+id LGraficaL
 id LtotaD
 id LtotaP
 id META
@@ -2049,6 +2050,7 @@ id collapseActionView
 id configFragments
 id confirm_button
 id container
+id containerL
 id contenedirFragments
 id content
 id contentPanel
@@ -2198,6 +2200,7 @@ id month_navigation_next
 id month_navigation_previous
 id month_title
 id mostrar
+id mostrarL
 id motion_base
 id mtrl_anchor_parent
 id mtrl_calendar_day_selector_frame
@@ -2554,6 +2557,7 @@ layout fragment_modificarcontra
 layout fragment_registrar_base_datos
 layout fragment_ver_ventas
 layout fragmentgraficacolumna
+layout fragmentgraficalinear
 layout image_frame
 layout marker_view
 layout material_chip_input_combo
