@@ -87,12 +87,17 @@ public class GraficaColumnaD extends Fragment {
 
                 XAxis xAxis= GColumna.getXAxis();
                 xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
+                xAxis.setValueFormatter(new ValueFormatter() {
+                    @Override
+                    public String getFormattedValue(float value) {
+                        return "#"+((int)value+1);
+                    }
+                });
                 xAxis.setDrawGridLines(false);
                 xAxis.setDrawAxisLine(false);
                 xAxis.setGranularity(1f);
                 xAxis.setLabelCount(datosColumns.size());
                 xAxis.setLabelRotationAngle(0);
-                xAxis.setEnabled(false);
 
 
                 YAxis leftAxis = GColumna.getAxisLeft();

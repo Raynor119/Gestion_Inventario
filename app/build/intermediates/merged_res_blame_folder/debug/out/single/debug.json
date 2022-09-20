@@ -12,6 +12,10 @@
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout-w1600dp\\activity_detalles_ventas.xml"
     },
     {
+        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\drawable_marker2.png.flat",
+        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\drawable\\marker2.png"
+    },
+    {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout-w800dp_activity_menuinicio.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout-w800dp\\activity_menuinicio.xml"
     },
@@ -50,10 +54,6 @@
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout-w1400dp_fragment_registrar_base_datos.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout-w1400dp\\fragment_registrar_base_datos.xml"
-    },
-    {
-        "merged": "com.pixels.Inventario.app-merged_res-23:/drawable_marker2.png.flat",
-        "source": "com.pixels.Inventario.app-main-25:/drawable/marker2.png"
     },
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout-w1000dp_date_picker_dialog.xml.flat",
@@ -578,6 +578,10 @@
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout_alertobservaciones.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout\\alertobservaciones.xml"
+    },
+    {
+        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout_marker_view.xml.flat",
+        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout\\marker_view.xml"
     },
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout-w1900dp_activity_caja.xml.flat",
