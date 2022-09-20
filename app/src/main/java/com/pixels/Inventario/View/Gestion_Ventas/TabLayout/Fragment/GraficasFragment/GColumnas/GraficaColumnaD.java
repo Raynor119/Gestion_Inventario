@@ -98,11 +98,12 @@ public class GraficaColumnaD extends Fragment {
                         return "$ "+mFormat.format(value);
                     }
                 });
+                GColumna.animateX(900);
 
                 YAxis rigthAxis = GColumna.getAxisRight();
                 rigthAxis.setEnabled(false);
 
-                GColumna.animateY(500);
+                GColumna.animateY(900);
                 GColumna.invalidate();
                 GColumna.setDoubleTapToZoomEnabled(false);
                 XYMarkerView mv = new XYMarkerView(getActivity(),datosColumns);
