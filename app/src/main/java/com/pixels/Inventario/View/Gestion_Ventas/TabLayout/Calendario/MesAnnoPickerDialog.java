@@ -19,6 +19,7 @@ import android.widget.Toast;
 import androidx.fragment.app.DialogFragment;
 
 import com.pixels.Inventario.R;
+import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.GraficasFragment.GColumnas.GraficaColumnaM;
 import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.MensualesFragment;
 
 import java.util.Calendar;
@@ -40,6 +41,9 @@ public class MesAnnoPickerDialog{
             public void onDateSet(DatePicker datePicker, int anno, int mes, int i2) {
                 Context.calendarioEditText.setText(mes+"/"+anno);
                 Context.iniciarRecyclerView(Context.calendarioEditText.getText().toString());
+                GraficaColumnaM graficaColumna=new GraficaColumnaM(Context.calendarioEditText.getText().toString());
+                graficaColumna.Fecha=Context.calendarioEditText.getText().toString();
+                Context.getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
             }
         };
     }
