@@ -23,10 +23,8 @@ import com.pixels.Inventario.Model.Basededatos.SQLite.DatosInicio.consultasDatos
 import com.pixels.Inventario.Model.DatosE.TotalVentas;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Calendario.MesAnnoPickerDialog;
-import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.GraficasFragment.GColumnas.GraficaColumnaD;
 import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.GraficasFragment.GColumnas.GraficaColumnaM;
-import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.RecyclerViewAdaptador.VentasDiariasRecyclerViewAdapter;
-import com.pixels.Inventario.ViewModel.Gestion_Ventas.VentasDiariasRecyclerViewModel;
+import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.RecyclerViewAdaptador.VentasRecyclerViewAdapter;
 import com.pixels.Inventario.ViewModel.Gestion_Ventas.VentasMensualesRecyclerViewModel;
 
 import java.math.BigDecimal;
@@ -145,7 +143,7 @@ public class MensualesFragment extends Fragment {
         final Observer<List<TotalVentas>> observer= new Observer<List<TotalVentas>>() {
             @Override
             public void onChanged(List<TotalVentas> ventasD) {
-                reciclerView.setAdapter(new VentasDiariasRecyclerViewAdapter(ventasD,MensualesFragment.this.getActivity()));
+                reciclerView.setAdapter(new VentasRecyclerViewAdapter(ventasD,MensualesFragment.this.getActivity()));
                 int costototalIndex=0;
                 int totalPerdida=0;
                 int totalDevolu=0;

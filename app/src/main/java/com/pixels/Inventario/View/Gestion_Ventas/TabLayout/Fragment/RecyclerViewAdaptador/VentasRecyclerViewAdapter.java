@@ -3,7 +3,6 @@ package com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.RecyclerVie
 import android.content.Context;
 
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,15 +13,11 @@ import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.Model.DatosE.TotalVentas;
-import com.pixels.Inventario.Model.DatosE.Venta;
 import com.pixels.Inventario.R;
 
 
 import com.pixels.Inventario.View.Gestion_Ventas.DetallesVentas.DetallesVentas;
-import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.DiariasFragment;
-import com.pixels.Inventario.View.Gestion_Ventas.VerVentas;
 
 
 import java.math.BigDecimal;
@@ -30,23 +25,23 @@ import java.math.RoundingMode;
 import java.text.NumberFormat;
 import java.util.List;
 
-public class VentasDiariasRecyclerViewAdapter extends RecyclerView.Adapter<VentasDiariasRecyclerViewAdapter.ViewHolder> {
+public class VentasRecyclerViewAdapter extends RecyclerView.Adapter<VentasRecyclerViewAdapter.ViewHolder> {
 
     private List<TotalVentas> VentasTotales;
     private Context Context;
 
-    public VentasDiariasRecyclerViewAdapter(List<TotalVentas> ventasTotales,Context fragment){
+    public VentasRecyclerViewAdapter(List<TotalVentas> ventasTotales, Context fragment){
         this.VentasTotales=ventasTotales;
         this.Context=fragment;
     }
     @Override
-    public VentasDiariasRecyclerViewAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public VentasRecyclerViewAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.venta_ver, parent, false);
-        return new VentasDiariasRecyclerViewAdapter.ViewHolder(view);
+        return new VentasRecyclerViewAdapter.ViewHolder(view);
     }
     @Override
-    public void onBindViewHolder(final VentasDiariasRecyclerViewAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(final VentasRecyclerViewAdapter.ViewHolder holder, int position) {
         holder.CodigoV.setText(VentasTotales.get(position).getCodigoV()+"");
         holder.Fecha.setText(VentasTotales.get(position).getFecha()+"");
         holder.CantidadPV.setText(VentasTotales.get(position).getCProductoV()+"");
@@ -67,7 +62,16 @@ public class VentasDiariasRecyclerViewAdapter extends RecyclerView.Adapter<Venta
             }
             holder.TotalP.setText("$ "+formato.format(VentasTotales.get(position).getPerdidaD()));
             holder.TotalD.setText("$ "+formato.format(VentasTotales.get(position).getTotalD()));
+            holder.LTotalD.setVisibility(ConstraintLayout.VISIBLE);
+            holder.LTotalP.setVisibility(ConstraintLayout.VISIBLE);
         }else{
+            try {
+                holder.imagen.setImageResource(R.mipmap.ventad_adaptive_fore);
+                holder.imagen.setBackgroundResource(R.drawable.login_button_bk);
+
+            }catch (Exception e) {
+
+            }
             holder.LTotalD.setVisibility(ConstraintLayout.GONE);
             holder.LTotalP.setVisibility(ConstraintLayout.GONE);
         }

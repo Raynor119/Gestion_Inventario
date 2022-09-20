@@ -24,8 +24,7 @@ import com.pixels.Inventario.Model.Basededatos.SQLite.DatosInicio.consultasDatos
 import com.pixels.Inventario.Model.DatosE.TotalVentas;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.GraficasFragment.GColumnas.GraficaColumnaD;
-import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.RecyclerViewAdaptador.VentasDiariasRecyclerViewAdapter;
-import com.pixels.Inventario.View.InicioA.Configuracion_Inicial.Fragment.InicioBlanco;
+import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.RecyclerViewAdaptador.VentasRecyclerViewAdapter;
 import com.pixels.Inventario.ViewModel.Gestion_Ventas.VentasDiariasRecyclerViewModel;
 
 import java.math.BigDecimal;
@@ -157,7 +156,7 @@ public class DiariasFragment extends Fragment {
             @Override
             public void onChanged(List<TotalVentas> ventasD) {
 
-                reciclerView.setAdapter(new VentasDiariasRecyclerViewAdapter(ventasD,DiariasFragment.this.getActivity()));
+                reciclerView.setAdapter(new VentasRecyclerViewAdapter(ventasD,DiariasFragment.this.getActivity()));
                 int costototalIndex=0;
                 int totalPerdida=0;
                 int totalDevolu=0;
