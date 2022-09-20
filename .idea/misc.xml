@@ -7,6 +7,7 @@
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/drawable/login_button_bk.xml" value="0.311" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/drawable/login_button_bkdt.xml" value="0.1935" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/drawable/login_button_bkerror.xml" value="0.1935" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/drawable/marker.xml" value="0.155" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/drawable/menufondo.xml" value="0.311" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1000dp/activity_caja.xml" value="0.15416666666666667" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1000dp/activity_detalles_ventas.xml" value="0.12" />
@@ -64,7 +65,7 @@
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/fragment_registrar_base_datos.xml" value="0.32222222222222224" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/fragment_ver_ventas.xml" value="0.33" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/fragmentgraficacolumna.xml" value="0.23445945945945945" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/marker_view.xml" value="0.23445945945945945" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/marker_view.xml" value="0.33" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/producto_detail_container.xml" value="0.32222222222222224" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/producto_ver.xml" value="0.32222222222222224" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/productod_ver.xml" value="0.32222222222222224" />

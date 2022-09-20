@@ -1831,7 +1831,7 @@ int drawable ic_mtrl_chip_close_circle 0x7f070076
 int drawable login_button_bk 0x7f070077
 int drawable login_button_bkdt 0x7f070078
 int drawable login_button_bkerror 0x7f070079
-int drawable marker2 0x7f0700a0
+int drawable marker 0x7f0700a1
 int drawable material_cursor_drawable 0x7f07007a
 int drawable material_ic_calendar_black_24dp 0x7f07007b
 int drawable material_ic_clear_black_24dp 0x7f07007c

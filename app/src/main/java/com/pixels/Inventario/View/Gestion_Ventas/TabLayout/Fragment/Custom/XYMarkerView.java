@@ -11,7 +11,7 @@ import com.github.mikephil.charting.utils.MPPointF;
 import com.pixels.Inventario.Model.DatosE.DatosColumn;
 import com.pixels.Inventario.R;
 
-import java.util.ArrayList;
+import java.text.NumberFormat;
 import java.util.List;
 
 
@@ -31,7 +31,8 @@ public class XYMarkerView extends MarkerView {
     public void refreshContent(Entry e, Highlight highlight) {
 
         int i=(int) e.getX();
-        tvContent.setText("x:"+DatosP.get(i).getNombre()+" y:"+ e.getY());
+        NumberFormat mFormat = NumberFormat.getNumberInstance();
+        tvContent.setText(""+DatosP.get(i).getNombre()+"\n"+DatosP.get(i).getCodigo()+"\nTotal Vendido: $ "+mFormat.format(e.getY()));
 
         super.refreshContent(e, highlight);
     }
