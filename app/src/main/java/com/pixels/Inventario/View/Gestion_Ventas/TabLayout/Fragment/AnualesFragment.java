@@ -6,9 +6,11 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.cardview.widget.CardView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
@@ -21,6 +23,8 @@ import com.pixels.Inventario.Model.DatosE.TotalVentas;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Calendario.AnnoPickerDialog;
 import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Calendario.MesAnnoPickerDialog;
+import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.GraficasFragment.GColumnas.GraficaColumnaA;
+import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.GraficasFragment.GColumnas.GraficaColumnaM;
 import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.RecyclerViewAdaptador.VentasDiariasRecyclerViewAdapter;
 import com.pixels.Inventario.ViewModel.Gestion_Ventas.VentasAnualesRecyclerViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Ventas.VentasMensualesRecyclerViewModel;
@@ -36,6 +40,8 @@ public class AnualesFragment extends Fragment {
     public TextInputEditText calendarioEditText;
     public RecyclerView reciclerView;
     private TextView costototal,totalP,totalDevo,impuesto,totalGananNeta,TotalVendido;
+    private CardView BGraficaC;
+    private LinearLayout LGrafica;
 
     public AnualesFragment(){
 
@@ -57,6 +63,9 @@ public class AnualesFragment extends Fragment {
         impuesto=(TextView) rootView.findViewById(R.id.IvaP);
         totalGananNeta=(TextView) rootView.findViewById(R.id.GananN);
         TotalVendido=(TextView) rootView.findViewById(R.id.TotalVendido);
+        LGrafica=(LinearLayout) rootView.findViewById(R.id.LGrafica);
+        LGrafica.setVisibility(ConstraintLayout.VISIBLE);
+        BGraficaC=(CardView) rootView.findViewById(R.id.mostrar);
         calendarioEditText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -71,6 +80,7 @@ public class AnualesFragment extends Fragment {
             @Override
             public void afterTextChanged(Editable editable) {
                 iniciarRecyclerView(calendarioEditText.getText().toString());
+                iniciarGraficaColumnas(calendarioEditText.getText().toString());
             }
         });
         CardView Bcalendario=(CardView) rootView.findViewById(R.id.calendario);
@@ -85,15 +95,34 @@ public class AnualesFragment extends Fragment {
         });
 
         iniciarRecyclerView(calendarioEditText.getText().toString());
+        iniciarGraficaColumnas(calendarioEditText.getText().toString());
 
         FloatingActionButton fab = rootView.findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 iniciarRecyclerView(calendarioEditText.getText().toString());
+                iniciarGraficaColumnas(calendarioEditText.getText().toString());
+            }
+        });
+
+        BGraficaC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(LGrafica.getVisibility()==ConstraintLayout.GONE){
+                    LGrafica.setVisibility(ConstraintLayout.VISIBLE);
+                    iniciarGraficaColumnas(calendarioEditText.getText().toString());
+                }else{
+                    LGrafica.setVisibility(ConstraintLayout.GONE);
+                }
             }
         });
         return rootView;
+    }
+    public void iniciarGraficaColumnas(String Ffecha){
+        GraficaColumnaA graficaColumna=new GraficaColumnaA(Ffecha);
+        graficaColumna.Fecha=Ffecha;
+        getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
     }
     public void iniciarRecyclerView(String Ffecha){
         reciclerView.setAdapter(null);
