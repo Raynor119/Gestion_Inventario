@@ -79,9 +79,7 @@ public class DiariasFragment extends Fragment {
             @Override
             public void afterTextChanged(Editable editable) {
                 iniciarRecyclerView(calendarioEditText.getText().toString());
-                GraficaColumnaD graficaColumna=new GraficaColumnaD(calendarioEditText.getText().toString());
-                graficaColumna.Fecha=calendarioEditText.getText().toString();
-                getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
+                iniciarGraficaColumnas(calendarioEditText.getText().toString());
             }
         });
         CardView Bcalendario=(CardView) rootView.findViewById(R.id.calendario);
@@ -113,9 +111,7 @@ public class DiariasFragment extends Fragment {
                         int mes=Mes+1;
                         calendarioEditText.setText(Dia+"/"+(mes)+"/"+year);
                         iniciarRecyclerView(calendarioEditText.getText().toString());
-                        GraficaColumnaD graficaColumna=new GraficaColumnaD(calendarioEditText.getText().toString());
-                        graficaColumna.Fecha=calendarioEditText.getText().toString();
-                        getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
+                        iniciarGraficaColumnas(calendarioEditText.getText().toString());
                     }
                 },anno,mes-1,dia);
                 datePickerDialog.show();
@@ -129,28 +125,27 @@ public class DiariasFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 iniciarRecyclerView(calendarioEditText.getText().toString());
-                GraficaColumnaD graficaColumna=new GraficaColumnaD(calendarioEditText.getText().toString());
-                graficaColumna.Fecha=calendarioEditText.getText().toString();
-                getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
+                iniciarGraficaColumnas(calendarioEditText.getText().toString());
             }
         });
-        GraficaColumnaD graficaColumna=new GraficaColumnaD(calendarioEditText.getText().toString());
-        graficaColumna.Fecha=calendarioEditText.getText().toString();
-        getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
+        iniciarGraficaColumnas(calendarioEditText.getText().toString());
         BGraficaC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(LGrafica.getVisibility()==ConstraintLayout.GONE){
                     LGrafica.setVisibility(ConstraintLayout.VISIBLE);
-                    GraficaColumnaD graficaColumna=new GraficaColumnaD(calendarioEditText.getText().toString());
-                    graficaColumna.Fecha=calendarioEditText.getText().toString();
-                    getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
+                    iniciarGraficaColumnas(calendarioEditText.getText().toString());
                 }else{
                     LGrafica.setVisibility(ConstraintLayout.GONE);
                 }
             }
         });
         return rootView;
+    }
+    public void iniciarGraficaColumnas(String Ffecha){
+        GraficaColumnaD graficaColumna=new GraficaColumnaD(Ffecha);
+        graficaColumna.Fecha=Ffecha;
+        getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
     }
     public void iniciarRecyclerView(String Ffecha){
         reciclerView.setAdapter(null);

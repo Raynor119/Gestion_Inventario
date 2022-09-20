@@ -41,9 +41,7 @@ public class MesAnnoPickerDialog{
             public void onDateSet(DatePicker datePicker, int anno, int mes, int i2) {
                 Context.calendarioEditText.setText(mes+"/"+anno);
                 Context.iniciarRecyclerView(Context.calendarioEditText.getText().toString());
-                GraficaColumnaM graficaColumna=new GraficaColumnaM(Context.calendarioEditText.getText().toString());
-                graficaColumna.Fecha=Context.calendarioEditText.getText().toString();
-                Context.getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
+                Context.iniciarGraficaColumnas(Context.calendarioEditText.getText().toString());
             }
         };
     }

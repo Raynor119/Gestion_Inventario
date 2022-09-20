@@ -80,9 +80,7 @@ public class MensualesFragment extends Fragment {
             @Override
             public void afterTextChanged(Editable editable) {
                 iniciarRecyclerView(calendarioEditText.getText().toString());
-                GraficaColumnaM graficaColumna=new GraficaColumnaM(calendarioEditText.getText().toString());
-                graficaColumna.Fecha=calendarioEditText.getText().toString();
-                getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
+                iniciarGraficaColumnas(calendarioEditText.getText().toString());
             }
         });
         CardView Bcalendario=(CardView) rootView.findViewById(R.id.calendario);
@@ -115,28 +113,27 @@ public class MensualesFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 iniciarRecyclerView(calendarioEditText.getText().toString());
-                GraficaColumnaM graficaColumna=new GraficaColumnaM(calendarioEditText.getText().toString());
-                graficaColumna.Fecha=calendarioEditText.getText().toString();
-                getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
+                iniciarGraficaColumnas(calendarioEditText.getText().toString());
             }
         });
-        GraficaColumnaM graficaColumna=new GraficaColumnaM(calendarioEditText.getText().toString());
-        graficaColumna.Fecha=calendarioEditText.getText().toString();
-        getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
+        iniciarGraficaColumnas(calendarioEditText.getText().toString());
         BGraficaC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(LGrafica.getVisibility()==ConstraintLayout.GONE){
                     LGrafica.setVisibility(ConstraintLayout.VISIBLE);
-                    GraficaColumnaM graficaColumna=new GraficaColumnaM(calendarioEditText.getText().toString());
-                    graficaColumna.Fecha=calendarioEditText.getText().toString();
-                    getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
+                    iniciarGraficaColumnas(calendarioEditText.getText().toString());
                 }else{
                     LGrafica.setVisibility(ConstraintLayout.GONE);
                 }
             }
         });
         return rootView;
+    }
+    public void iniciarGraficaColumnas(String Ffecha){
+        GraficaColumnaM graficaColumna=new GraficaColumnaM(Ffecha);
+        graficaColumna.Fecha=Ffecha;
+        getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
     }
 
     public void iniciarRecyclerView(String Ffecha){
