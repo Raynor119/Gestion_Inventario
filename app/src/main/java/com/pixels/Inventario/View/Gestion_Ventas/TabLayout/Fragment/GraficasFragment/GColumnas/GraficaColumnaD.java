@@ -65,8 +65,7 @@ public class GraficaColumnaD extends Fragment {
                 barDataSet.setValueFormatter(new ValueFormatter() {
                     @Override
                     public String getFormattedValue(float value) {
-                        NumberFormat mFormat = NumberFormat.getNumberInstance();
-                        return "$ "+mFormat.format(value);
+                        return "";
                     }
                 });
                 Description description=new Description();
@@ -106,9 +105,13 @@ public class GraficaColumnaD extends Fragment {
                 GColumna.animateY(900);
                 GColumna.invalidate();
                 GColumna.setDoubleTapToZoomEnabled(false);
-                XYMarkerView mv = new XYMarkerView(getActivity(),datosColumns);
-                mv.setChartView(GColumna);
-                GColumna.setMarker(mv);
+               try {
+                   XYMarkerView mv = new XYMarkerView(getActivity(),datosColumns);
+                   mv.setChartView(GColumna);
+                   GColumna.setMarker(mv);
+               }catch (Exception e){
+
+               }
 
             }
         };
