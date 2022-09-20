@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:animateLayoutChanges="true"
     android:layout_height="wrap_content">
-    <ScrollView
+    <HorizontalScrollView
         android:layout_width="match_parent"
         android:animateLayoutChanges="true"
         android:layout_height="match_parent">
@@ -15,11 +15,11 @@
                 android:id="@+id/chart_bottom"
                 android:animateLayoutChanges="true"
                 android:layout_margin="0dp"
-                android:layout_width="match_parent"
+                android:layout_width="600dp"
                 android:layout_height="300dp"
                 >
             </lecho.lib.hellocharts.view.ColumnChartView>
         </LinearLayout>
-    </ScrollView>
+    </HorizontalScrollView>
 
 </LinearLayout>

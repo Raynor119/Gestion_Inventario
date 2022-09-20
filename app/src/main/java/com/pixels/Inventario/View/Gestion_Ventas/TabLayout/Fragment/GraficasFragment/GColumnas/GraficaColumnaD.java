@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
@@ -56,20 +57,21 @@ public class GraficaColumnaD extends Fragment {
             @Override
             public void onChanged(List<DatosColumn> datosColumns) {
                 List<AxisValue> axisValues = new ArrayList<AxisValue>();
+                List<AxisValue> axisValuesY = new ArrayList<AxisValue>();
                 List<Column> columns = new ArrayList<Column>();
                 List<SubcolumnValue> values;
                 for(int i=0;i<datosColumns.size();i++){
                    if(datosColumns.get(i).getTotalV()!=0){
                        values = new ArrayList<SubcolumnValue>();
-                       values.add(new SubcolumnValue((float) (datosColumns.get(i).getTotalV()), Color.parseColor("#0090FD")));
-                       axisValues.add(new AxisValue(i).setLabel(""+datosColumns.get(i).getNombre()));
-                       columns.add(new Column(values).setHasLabelsOnlyForSelected(true));
+                       values.add(new SubcolumnValue((float) (datosColumns.get(i).getTotalV()), Color.parseColor("#0090FD")).setLabel(""+datosColumns.get(i).getNombre()));
+                       axisValues.add(new AxisValue(i).setLabel(""));
+                       axisValuesY.add(new AxisValue(i).setLabel("$ "+datosColumns.get(i).getTotalV()).setValue((float) (datosColumns.get(i).getTotalV())));
+                       columns.add(new Column(values).setHasLabelsOnlyForSelected(true).setHasLabels(true));
                    }
                 }
                 columnData = new ColumnChartData(columns);
-
-                columnData.setAxisXBottom(new Axis(axisValues).setHasLines(true).setName("Productos").setTextColor(Color.parseColor("#000000")));
-                columnData.setAxisYLeft(new Axis().setHasLines(true).setMaxLabelChars(5).setName("Total Vendido").setTextColor(Color.parseColor("#000000")));
+                columnData.setAxisXBottom(new Axis(axisValues).setHasLines(false).setName("Productos").setTextColor(Color.parseColor("#000000")));
+                columnData.setAxisYLeft(new Axis(axisValuesY).setHasLines(true).setName("Total Vendido").setTextColor(Color.parseColor("#000000")));
 
                 GColumna.setColumnChartData(columnData);
 
@@ -87,6 +89,14 @@ public class GraficaColumnaD extends Fragment {
                 });
                 GColumna.setValueSelectionEnabled(true);
                 GColumna.setZoomEnabled(false);
+                if(datosColumns.size()>=7){
+                    int Widtch=(int)((1100/7)*datosColumns.size());
+                    GColumna.setLayoutParams(new LinearLayout.LayoutParams(Widtch,LinearLayout.LayoutParams.MATCH_PARENT));
+                    GColumna.setZoomEnabled(true);
+                    GColumna.setContainerScrollEnabled(true,ContainerScrollType.HORIZONTAL);
+                }else{
+                    GColumna.setLayoutParams(new LinearLayout.LayoutParams(580,LinearLayout.LayoutParams.MATCH_PARENT));
+                }
             }
         };
         productos.getResultado().observe(getActivity(),observer);
