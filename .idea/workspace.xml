@@ -21,11 +21,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v49.6 probadas">
+    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v49.6.1 agregando a las otros viewpagers">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/MYSQL/Consultas/Gestion_Ventas/GraficasFragment/GColumnas/ProductosVendidosAMYSQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/MYSQL/Consultas/Gestion_Ventas/GraficasFragment/GColumnas/ProductosVendidosMMYSQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/SQLite/BaseDatos/Consultas/Gestion_Ventas/GraficasFragment/GColumnas/ProductosVendidosASQLite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/SQLite/BaseDatos/Consultas/Gestion_Ventas/GraficasFragment/GColumnas/ProductosVendidosMSQLite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/MYSQL/Consultas/Gestion_Ventas/GraficasFragment/GColumnas/ProductosVendidosMYSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/MYSQL/Consultas/Gestion_Ventas/GraficasFragment/GColumnas/ProductosVendidosDMYSQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/SQLite/BaseDatos/Consultas/Gestion_Ventas/GraficasFragment/GColumnas/ProductosVendidosSQLite.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/Model/Basededatos/SQLite/BaseDatos/Consultas/Gestion_Ventas/GraficasFragment/GColumnas/ProductosVendidosDSQLite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/ViewModel/Gestion_Ventas/GraficasFragment/GColumnas/GraficaColumnDRecyclerViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/ViewModel/Gestion_Ventas/GraficasFragment/GColumnas/GraficaColumnDRecyclerViewModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +42,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="layoutResourceFile" />
         <option value="resourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -158,13 +159,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661834586125</updated>
-    </task>
-    <task id="LOCAL-00087" summary="copia de seguridad v47.8.6 recicler view verificar datos">
-      <created>1663124668130</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1663124668130</updated>
     </task>
     <task id="LOCAL-00088" summary="copia de seguridad v47.8.7 recicler view verificar datos">
       <created>1663125051026</created>
@@ -502,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663653799930</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="copia de seguridad v49.6.1 agregando a las otros viewpagers">
+      <created>1663654023487</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1663654023487</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -521,7 +522,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="copia de seguridad v48.5.7.1 Creacion del Activity Detalles de Venta" />
     <MESSAGE value="copia de seguridad v48.5.8 Creacion del Activity Detalles de Venta" />
     <MESSAGE value="copia de seguridad v48.5.8.1 Creacion del Activity Detalles de Venta arreglo en los producto eliminados" />
     <MESSAGE value="copia de seguridad v48.5.9 Creacion del Activity Detalles de Venta arreglo en los producto eliminados" />
@@ -546,6 +546,7 @@
     <MESSAGE value="copia de seguridad v49.5.4 usando las nuevas librerias" />
     <MESSAGE value="copia de seguridad v49.5.5 usando las nuevas librerias" />
     <MESSAGE value="copia de seguridad v49.6 probadas" />
-    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v49.6 probadas" />
+    <MESSAGE value="copia de seguridad v49.6.1 agregando a las otros viewpagers" />
+    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v49.6.1 agregando a las otros viewpagers" />
   </component>
 </project>
