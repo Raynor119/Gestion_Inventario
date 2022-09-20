@@ -51,7 +51,6 @@
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.5.31" level="project" />
     <orderEntry type="library" name="Gradle: com.google.zxing:core:3.4.0" level="project" />
     <orderEntry type="library" name="Gradle: com.itextpdf:itextg:5.5.10" level="project" />
-    <orderEntry type="library" name="Gradle: com.github.lecho:hellocharts-library:1.5.8@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.material:material:1.4.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.appcompat:appcompat:1.2.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.core:core:1.7.0@aar" level="project" />
@@ -100,5 +99,6 @@
     <orderEntry type="library" name="Gradle: com.journeyapps:zxing-android-embedded:4.2.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.github.barteksc:android-pdf-viewer:2.8.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.github.barteksc:pdfium-android:1.7.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.PhilJay:MPAndroidChart:v3.1.0@aar" level="project" />
   </component>
 </module>

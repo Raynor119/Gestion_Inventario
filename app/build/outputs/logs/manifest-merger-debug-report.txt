@@ -4,7 +4,6 @@ ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManif
 INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:2:1-113:12
 INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:2:1-113:12
 INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:2:1-113:12
-MERGED from [com.github.lecho:hellocharts-library:1.5.8] C:\Users\saibo\.gradle\caches\transforms-3\a2c9b112b1d6f0af4716160d9dcba562\transformed\jetified-hellocharts-library-1.5.8\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\saibo\.gradle\caches\transforms-3\037164efd180b1a759f85bd80e940c8b\transformed\material-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\saibo\.gradle\caches\transforms-3\476b29e0ad710acb6cc42ccfb2c8e71c\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.preference:preference:1.1.1] C:\Users\saibo\.gradle\caches\transforms-3\7b0ae9bbb037b5073aff861e26f1fc2b\transformed\preference-1.1.1\AndroidManifest.xml:17:1-24:12
@@ -18,6 +17,7 @@ MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\saibo\.gradle\caches
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\saibo\.gradle\caches\transforms-3\df04b464485d585955da7f033fa1b638\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\saibo\.gradle\caches\transforms-3\cdb51f972ab47c226b5cb968dfc26b99\transformed\lifecycle-extensions-2.0.0\AndroidManifest.xml:17:1-25:12
 MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\saibo\.gradle\caches\transforms-3\1aa5a09a5410716d3a349bc3eee05e5d\transformed\jetified-core-ktx-1.7.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] C:\Users\saibo\.gradle\caches\transforms-3\0f1859858ef98b9370fb4dee4cfd46a9\transformed\jetified-MPAndroidChart-v3.1.0\AndroidManifest.xml:2:1-20:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\saibo\.gradle\caches\transforms-3\038af010e25d75dcaa81723f875c5705\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\saibo\.gradle\caches\transforms-3\19eb8dce3ae6c1c269de56fecc6db1a9\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.transition:transition:1.2.0] C:\Users\saibo\.gradle\caches\transforms-3\abb4c169e398315788efbc7981fefd9c\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
@@ -76,8 +76,6 @@ uses-sdk
 ADDED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:6:5-73
 INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:6:5-73
 INJECTED from C:\Users\saibo\Documents\Gestion_Inventario\app\src\main\AndroidManifest.xml:6:5-73
-MERGED from [com.github.lecho:hellocharts-library:1.5.8] C:\Users\saibo\.gradle\caches\transforms-3\a2c9b112b1d6f0af4716160d9dcba562\transformed\jetified-hellocharts-library-1.5.8\AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.lecho:hellocharts-library:1.5.8] C:\Users\saibo\.gradle\caches\transforms-3\a2c9b112b1d6f0af4716160d9dcba562\transformed\jetified-hellocharts-library-1.5.8\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\saibo\.gradle\caches\transforms-3\037164efd180b1a759f85bd80e940c8b\transformed\material-1.4.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\saibo\.gradle\caches\transforms-3\037164efd180b1a759f85bd80e940c8b\transformed\material-1.4.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\saibo\.gradle\caches\transforms-3\476b29e0ad710acb6cc42ccfb2c8e71c\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
@@ -104,6 +102,8 @@ MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\saibo\.grad
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\saibo\.gradle\caches\transforms-3\cdb51f972ab47c226b5cb968dfc26b99\transformed\lifecycle-extensions-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\saibo\.gradle\caches\transforms-3\1aa5a09a5410716d3a349bc3eee05e5d\transformed\jetified-core-ktx-1.7.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\saibo\.gradle\caches\transforms-3\1aa5a09a5410716d3a349bc3eee05e5d\transformed\jetified-core-ktx-1.7.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] C:\Users\saibo\.gradle\caches\transforms-3\0f1859858ef98b9370fb4dee4cfd46a9\transformed\jetified-MPAndroidChart-v3.1.0\AndroidManifest.xml:16:5-18:41
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] C:\Users\saibo\.gradle\caches\transforms-3\0f1859858ef98b9370fb4dee4cfd46a9\transformed\jetified-MPAndroidChart-v3.1.0\AndroidManifest.xml:16:5-18:41
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\saibo\.gradle\caches\transforms-3\038af010e25d75dcaa81723f875c5705\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\saibo\.gradle\caches\transforms-3\038af010e25d75dcaa81723f875c5705\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\saibo\.gradle\caches\transforms-3\19eb8dce3ae6c1c269de56fecc6db1a9\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
