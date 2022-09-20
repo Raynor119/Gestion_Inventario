@@ -43,7 +43,7 @@ public class GraficaColumnaD extends Fragment {
     public static String Fecha;
     private BarChart GColumna;
     private ArrayList<BarEntry> barEntryArrayList;
-    private ArrayList<String> LabelNombre;
+
     public GraficaColumnaD(){
 
     }
@@ -65,10 +65,9 @@ public class GraficaColumnaD extends Fragment {
             @Override
             public void onChanged(List<DatosColumn> datosColumns) {
                 barEntryArrayList=new ArrayList<>();
-                LabelNombre=new ArrayList<>();
                 for(int i=0;i<datosColumns.size();i++){
                     barEntryArrayList.add(new BarEntry(i,datosColumns.get(i).getTotalV()));
-                    LabelNombre.add(""+datosColumns.get(i).getNombre());
+
                 }
                 BarDataSet barDataSet = new BarDataSet(barEntryArrayList,"Productos Vendidos");
                 barDataSet.setColors(ColorTemplate.rgb("0090FD"));
@@ -87,13 +86,13 @@ public class GraficaColumnaD extends Fragment {
                 GColumna.setData(barData);
 
                 XAxis xAxis= GColumna.getXAxis();
-                xAxis.setValueFormatter(new IndexAxisValueFormatter(LabelNombre));
                 xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
                 xAxis.setDrawGridLines(false);
                 xAxis.setDrawAxisLine(false);
                 xAxis.setGranularity(1f);
-                xAxis.setLabelCount(LabelNombre.size());
+                xAxis.setLabelCount(datosColumns.size());
                 xAxis.setLabelRotationAngle(0);
+                xAxis.setEnabled(false);
 
 
                 YAxis leftAxis = GColumna.getAxisLeft();
@@ -111,7 +110,7 @@ public class GraficaColumnaD extends Fragment {
                 GColumna.animateY(500);
                 GColumna.invalidate();
                 GColumna.setDoubleTapToZoomEnabled(false);
-                XYMarkerView mv = new XYMarkerView(getActivity());
+                XYMarkerView mv = new XYMarkerView(getActivity(),datosColumns);
                 mv.setChartView(GColumna);
                 GColumna.setMarker(mv);
 
