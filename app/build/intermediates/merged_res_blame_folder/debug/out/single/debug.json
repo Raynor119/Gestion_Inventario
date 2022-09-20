@@ -1,31 +1,27 @@
 [
     {
-        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout_fragmentgraficacolumna.xml.flat",
-        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout\\fragmentgraficacolumna.xml"
-    },
-    {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\mipmap-xhdpi_compartirmas_adaptive_fore.png.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\mipmap-xhdpi\\compartirmas_adaptive_fore.png"
+    },
+    {
+        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout_fragmentgraficacolumna.xml.flat",
+        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout\\fragmentgraficacolumna.xml"
     },
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout-w1600dp_activity_detalles_ventas.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout-w1600dp\\activity_detalles_ventas.xml"
     },
     {
-        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\drawable_marker2.png.flat",
-        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\drawable\\marker2.png"
-    },
-    {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout-w800dp_activity_menuinicio.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout-w800dp\\activity_menuinicio.xml"
     },
     {
-        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\drawable_login_button_bkdt.xml.flat",
-        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\drawable\\login_button_bkdt.xml"
-    },
-    {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout_alertventafinalizada.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout\\alertventafinalizada.xml"
+    },
+    {
+        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\drawable_login_button_bkdt.xml.flat",
+        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\drawable\\login_button_bkdt.xml"
     },
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout-w1400dp_fragment_inventario_productos.xml.flat",
@@ -188,12 +184,12 @@
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout\\activity_ver_factura.xml"
     },
     {
-        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\mipmap-xhdpi_salir_adaptive_fore.png.flat",
-        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\mipmap-xhdpi\\salir_adaptive_fore.png"
-    },
-    {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout-w1900dp_activity_detalles_ventas.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout-w1900dp\\activity_detalles_ventas.xml"
+    },
+    {
+        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\mipmap-xhdpi_salir_adaptive_fore.png.flat",
+        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\mipmap-xhdpi\\salir_adaptive_fore.png"
     },
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout_activity_inicio.xml.flat",
@@ -284,12 +280,12 @@
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout\\producto_detail_container.xml"
     },
     {
-        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\mipmap-xhdpi_cajad.png.flat",
-        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\mipmap-xhdpi\\cajad.png"
-    },
-    {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\mipmap-xhdpi_caja_adaptive_back.png.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\mipmap-xhdpi\\caja_adaptive_back.png"
+    },
+    {
+        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\mipmap-xhdpi_cajad.png.flat",
+        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\mipmap-xhdpi\\cajad.png"
     },
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\mipmap-xhdpi_calendarios_adaptive_back.png.flat",
@@ -320,12 +316,12 @@
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\mipmap-xhdpi\\calendarios.png"
     },
     {
-        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout-w1400dp_fragment_agsinarcontrasena.xml.flat",
-        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout-w1400dp\\fragment_agsinarcontrasena.xml"
-    },
-    {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout-w2100dp_fragment_ver_ventas.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout-w2100dp\\fragment_ver_ventas.xml"
+    },
+    {
+        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout-w1400dp_fragment_agsinarcontrasena.xml.flat",
+        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout-w1400dp\\fragment_agsinarcontrasena.xml"
     },
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout_fragment_ver_ventas.xml.flat",
@@ -360,24 +356,24 @@
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout-w1400dp\\activity_detalles_ventas.xml"
     },
     {
-        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout-w1700dp_fragment_modificarcontra.xml.flat",
-        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout-w1700dp\\fragment_modificarcontra.xml"
-    },
-    {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout_activity_detalles_ventas.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout\\activity_detalles_ventas.xml"
+    },
+    {
+        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout-w1700dp_fragment_modificarcontra.xml.flat",
+        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout-w1700dp\\fragment_modificarcontra.xml"
     },
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\drawable_ic_login_nk.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\drawable\\ic_login_nk.xml"
     },
     {
-        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout-w1000dp_activity_detalles_ventas.xml.flat",
-        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout-w1000dp\\activity_detalles_ventas.xml"
-    },
-    {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout_alertpedircantidad.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout\\alertpedircantidad.xml"
+    },
+    {
+        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout-w1000dp_activity_detalles_ventas.xml.flat",
+        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout-w1000dp\\activity_detalles_ventas.xml"
     },
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout_producto_ver.xml.flat",
@@ -556,8 +552,8 @@
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout\\alertdevolucion.xml"
     },
     {
-        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout_productoventido.xml.flat",
-        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout\\productoventido.xml"
+        "merged": "com.pixels.Inventario.app-merged_res-23:/drawable_marker.xml.flat",
+        "source": "com.pixels.Inventario.app-main-25:/drawable/marker.xml"
     },
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout_fragment_inventario_productos.xml.flat",
@@ -670,10 +666,6 @@
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\mipmap-xhdpi_cargat_adaptive_back.png.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\mipmap-xhdpi\\cargat_adaptive_back.png"
-    },
-    {
-        "merged": "com.pixels.Inventario.app-merged_res-23:/layout_marker_view.xml.flat",
-        "source": "com.pixels.Inventario.app-main-25:/layout/marker_view.xml"
     },
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout-w800dp_activity_detalles_ventas.xml.flat",
