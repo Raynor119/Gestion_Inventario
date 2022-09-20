@@ -7,6 +7,7 @@ import com.pixels.Inventario.Model.Basededatos.MYSQL.Conexion;
 import com.pixels.Inventario.Model.Basededatos.MediadorBaseDatos;
 import com.pixels.Inventario.Model.DatosE.DatosColumn;
 import com.pixels.Inventario.ViewModel.Gestion_Ventas.GraficasFragment.GColumnas.GraficaColumnDRecyclerViewModel;
+import com.pixels.Inventario.ViewModel.Gestion_Ventas.GraficasFragment.GColumnas.GraficaColumnMRecyclerViewModel;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -16,11 +17,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProductosVendidosMMYSQL extends Conexion implements MediadorBaseDatos {
-    public GraficaColumnDRecyclerViewModel ViewModel;
+    public GraficaColumnMRecyclerViewModel ViewModel;
     public List<DatosColumn> ProductosV;
     private boolean verificarE=false;
     private String Consulta="";
-    public ProductosVendidosMMYSQL(Context context, GraficaColumnDRecyclerViewModel viewModel, String consulta) {
+    public ProductosVendidosMMYSQL(Context context, GraficaColumnMRecyclerViewModel viewModel, String consulta) {
         super(context);
         this.ViewModel=viewModel;
         this.Consulta=consulta;

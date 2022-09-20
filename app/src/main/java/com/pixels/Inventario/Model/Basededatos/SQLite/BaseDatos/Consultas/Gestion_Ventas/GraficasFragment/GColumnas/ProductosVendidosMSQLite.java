@@ -8,15 +8,16 @@ import com.pixels.Inventario.Model.Basededatos.MediadorBaseDatos;
 import com.pixels.Inventario.Model.Basededatos.SQLite.BaseDatos.BaseDatosSQLite;
 import com.pixels.Inventario.Model.DatosE.DatosColumn;
 import com.pixels.Inventario.ViewModel.Gestion_Ventas.GraficasFragment.GColumnas.GraficaColumnDRecyclerViewModel;
+import com.pixels.Inventario.ViewModel.Gestion_Ventas.GraficasFragment.GColumnas.GraficaColumnMRecyclerViewModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ProductosVendidosMSQLite extends BaseDatosSQLite implements MediadorBaseDatos {
 
-    public GraficaColumnDRecyclerViewModel ViewModel;
+    public GraficaColumnMRecyclerViewModel ViewModel;
     private String Consulta="";
-    public ProductosVendidosMSQLite(Context context, GraficaColumnDRecyclerViewModel viewModel, String consulta) {
+    public ProductosVendidosMSQLite(Context context, GraficaColumnMRecyclerViewModel viewModel, String consulta) {
         super(context);
         this.ViewModel=viewModel;
         this.Consulta=consulta;
