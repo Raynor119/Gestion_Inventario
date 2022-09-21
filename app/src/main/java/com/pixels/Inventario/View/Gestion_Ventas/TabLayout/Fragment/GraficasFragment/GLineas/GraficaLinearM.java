@@ -72,10 +72,9 @@ public class GraficaLinearM extends Fragment {
         calendar.set(anno,mes-1,1);
 
         data = new ArrayList<Entry>();
-        data.add(new Entry(0,0));
+        data.add(new Entry(1,0));
         boolean verificar=true;
         boolean verificarI=false;
-        String nn="";
         for(int i=0;i<VentasD.size();i++){
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             try {
@@ -84,7 +83,6 @@ public class GraficaLinearM extends Fragment {
                 simpleDateFormat = new SimpleDateFormat("dd");
                 float dia=(float)(Integer.parseInt(simpleDateFormat.format(date))+(hora*0.0416667));
                 data.add(new Entry(dia,((float)VentasD.get(i).getTotalV())));
-                nn="|"+dia+":"+i+"|";
                 if(dia>28){
                     verificar=false;
                 }
@@ -102,7 +100,7 @@ public class GraficaLinearM extends Fragment {
         if(verificar){
             data.add(new Entry(calendar.getActualMaximum(Calendar.DAY_OF_MONTH),0));
         }
-        LineDataSet lineDataSet=new LineDataSet(data,nn);
+        LineDataSet lineDataSet=new LineDataSet(data,"Total Vendido");
         lineDataSet.setColors(ColorTemplate.rgb("0090FD"));
         lineDataSet.setCircleColors(ColorTemplate.rgb("0090FD"));
         lineDataSet.setCircleRadius(6f);
@@ -159,22 +157,22 @@ public class GraficaLinearM extends Fragment {
                         if(minutos>9){
                             if(segundos>0){
                                 if (segundos>9){
-                                    formato=dias+"/ "+horas+":"+minutos+":"+segundos;
+                                    formato=dias+" /"+horas+":"+minutos+":"+segundos;
                                 }else{
-                                    formato=dias+"/ "+horas+":"+minutos+":0"+segundos;
+                                    formato=dias+" /"+horas+":"+minutos+":0"+segundos;
                                 }
                             }else{
-                                formato=dias+"/ "+horas+":"+minutos;
+                                formato=dias+" /"+horas+":"+minutos;
                             }
                         }else{
                             if(segundos>0){
                                 if(segundos>9){
-                                    formato=dias+"/ "+horas+":0"+minutos+":"+segundos;
+                                    formato=dias+" /"+horas+":0"+minutos+":"+segundos;
                                 }else{
-                                    formato=dias+"/ "+horas+":0"+minutos+":0"+segundos;
+                                    formato=dias+" /"+horas+":0"+minutos+":0"+segundos;
                                 }
                             }else{
-                                formato=dias+"/ "+horas+":0"+minutos;
+                                formato=dias+" /"+horas+":0"+minutos;
                             }
                         }
                     }else{
@@ -185,22 +183,22 @@ public class GraficaLinearM extends Fragment {
                         if(minutos>9){
                             if(segundos>0){
                                 if (segundos>9){
-                                    formato="0"+dias+"/ "+horas+":"+minutos+":"+segundos;
+                                    formato="0"+dias+" /"+horas+":"+minutos+":"+segundos;
                                 }else{
-                                    formato="0"+dias+"/ "+horas+":"+minutos+":0"+segundos;
+                                    formato="0"+dias+" /"+horas+":"+minutos+":0"+segundos;
                                 }
                             }else{
-                                formato="0"+dias+"/ "+horas+":"+minutos;
+                                formato="0"+dias+" /"+horas+":"+minutos;
                             }
                         }else{
                             if(segundos>0){
                                 if(segundos>9){
-                                    formato="0"+dias+"/ "+horas+":0"+minutos+":"+segundos;
+                                    formato="0"+dias+" /"+horas+":0"+minutos+":"+segundos;
                                 }else{
-                                    formato="0"+dias+"/ "+horas+":0"+minutos+":0"+segundos;
+                                    formato="0"+dias+" /"+horas+":0"+minutos+":0"+segundos;
                                 }
                             }else{
-                                formato="0"+dias+"/ "+horas+":0"+minutos;
+                                formato="0"+dias+" /"+horas+":0"+minutos;
                             }
                         }
                     }else{
