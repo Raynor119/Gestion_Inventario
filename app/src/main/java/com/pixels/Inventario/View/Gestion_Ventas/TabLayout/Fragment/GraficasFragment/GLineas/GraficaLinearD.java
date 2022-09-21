@@ -124,7 +124,8 @@ public class GraficaLinearD extends Fragment {
             public String getFormattedValue(float value) {
                 int horas=((int) value);
                 int minutos=((int) (60 * (value - horas)));
-                int segundos=((int) (60 * ((60 * (value - horas) - minutos))));
+                float auxm=(60 * (value - horas));
+                int segundos=((int) (60 * ( auxm - minutos)));
                 String formato="";
                 if(minutos>9){
                     if(segundos>0){

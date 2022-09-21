@@ -144,37 +144,72 @@ public class GraficaLinearM extends Fragment {
         xAxis.setDrawAxisLine(true);
         xAxis.setAxisMaximum(calendar.getActualMaximum(Calendar.DAY_OF_MONTH));
         xAxis.setAxisMinimum(1);
-        /**xAxis.setValueFormatter(new ValueFormatter() {
+        xAxis.setValueFormatter(new ValueFormatter() {
             @Override
             public String getFormattedValue(float value) {
-                int horas=((int) value);
-                int minutos=((int) (60 * (value - horas)));
-                int segundos=((int) (60 * ((60 * (value - horas) - minutos))));
+                int dias=((int) value);
+                int horas=((int) (24 * (value - dias)));
+                float auxH=(24 * (value - dias));
+                int minutos=((int) (60 * ( auxH - horas)));
+                float auxm=60 * ( auxH - horas);
+                int segundos=((int) (60 * ( auxm - minutos)));
                 String formato="";
-                if(minutos>9){
-                    if(segundos>0){
-                        if (segundos>9){
-                            formato=""+horas+":"+minutos+":"+segundos;
+                if(dias>9){
+                    if(minutos>0){
+                        if(minutos>9){
+                            if(segundos>0){
+                                if (segundos>9){
+                                    formato=dias+"/ "+horas+":"+minutos+":"+segundos;
+                                }else{
+                                    formato=dias+"/ "+horas+":"+minutos+":0"+segundos;
+                                }
+                            }else{
+                                formato=dias+"/ "+horas+":"+minutos;
+                            }
                         }else{
-                            formato=""+horas+":"+minutos+":0"+segundos;
+                            if(segundos>0){
+                                if(segundos>9){
+                                    formato=dias+"/ "+horas+":0"+minutos+":"+segundos;
+                                }else{
+                                    formato=dias+"/ "+horas+":0"+minutos+":0"+segundos;
+                                }
+                            }else{
+                                formato=dias+"/ "+horas+":0"+minutos;
+                            }
                         }
                     }else{
-                        formato=""+horas+":"+minutos;
+                        formato=dias+"";
                     }
                 }else{
-                    if(segundos>0){
-                        if(segundos>9){
-                            formato=""+horas+":0"+minutos+":"+segundos;
+                    if(minutos>0){
+                        if(minutos>9){
+                            if(segundos>0){
+                                if (segundos>9){
+                                    formato="0"+dias+"/ "+horas+":"+minutos+":"+segundos;
+                                }else{
+                                    formato="0"+dias+"/ "+horas+":"+minutos+":0"+segundos;
+                                }
+                            }else{
+                                formato="0"+dias+"/ "+horas+":"+minutos;
+                            }
                         }else{
-                            formato=""+horas+":0"+minutos+":0"+segundos;
+                            if(segundos>0){
+                                if(segundos>9){
+                                    formato="0"+dias+"/ "+horas+":0"+minutos+":"+segundos;
+                                }else{
+                                    formato="0"+dias+"/ "+horas+":0"+minutos+":0"+segundos;
+                                }
+                            }else{
+                                formato="0"+dias+"/ "+horas+":0"+minutos;
+                            }
                         }
                     }else{
-                        formato=""+horas+":0"+minutos;
+                        formato="0"+dias+"";
                     }
                 }
                 return formato;
             }
-        });**/
+        });
 
         YAxis LeftAxis = GLinear.getAxisLeft();
         LeftAxis.setDrawGridLines(false);
