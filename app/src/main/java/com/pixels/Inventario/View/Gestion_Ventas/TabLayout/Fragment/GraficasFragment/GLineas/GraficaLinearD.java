@@ -49,15 +49,31 @@ public class GraficaLinearD extends Fragment {
     }
     public void GenerarGrafica(){
         data = new ArrayList<Entry>();
+        data.add(new Entry(0,0));
+        boolean verificar=true;
+        boolean verificarI=false;
         for(int i=0;i<VentasD.size();i++){
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             try {
                 Date date = simpleDateFormat.parse(VentasD.get(i).getFecha());
-                date.getHours();
-                data.add(new Entry(((float) (date.getHours()+(date.getMinutes()*0.0166667))),((float)VentasD.get(i).getTotalV())));
+                float hora = (float) (date.getHours()+(date.getMinutes()*0.0166667)+(date.getSeconds()*0.000277778));
+                data.add(new Entry(hora,((float)VentasD.get(i).getTotalV())));
+                if(hora>22){
+                    verificar=false;
+                }
+                if(date.getHours()<1){
+                    verificarI=true;
+                }
             }catch (Exception e){
 
             }
+        }
+
+        if(verificarI){
+            data.remove(0);
+        }
+        if(verificar){
+            data.add(new Entry(24,0));
         }
         LineDataSet lineDataSet=new LineDataSet(data,"Total Vendido");
         lineDataSet.setColors(ColorTemplate.rgb("0090FD"));
@@ -68,7 +84,11 @@ public class GraficaLinearD extends Fragment {
             @Override
             public String getFormattedValue(float value) {
                 NumberFormat mFormat = NumberFormat.getNumberInstance();
-                return "$ "+mFormat.format(value);
+                if(value==0){
+                    return "";
+                }else{
+                    return "$ "+mFormat.format(value);
+                }
             }
         });
         ArrayList<ILineDataSet> dataSets=new ArrayList<>();
@@ -76,7 +96,7 @@ public class GraficaLinearD extends Fragment {
 
         LineData Ldata=new LineData(dataSets);
         Description description=new Description();
-        description.setText("Total Vendido");
+        description.setText("");
         GLinear.setData(Ldata);
         GLinear.setDescription(description);
         //Para que las lineas sean Curbas
