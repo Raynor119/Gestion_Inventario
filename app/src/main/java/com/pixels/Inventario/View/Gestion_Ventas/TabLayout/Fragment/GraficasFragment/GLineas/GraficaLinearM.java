@@ -157,22 +157,22 @@ public class GraficaLinearM extends Fragment {
                         if(minutos>9){
                             if(segundos>0){
                                 if (segundos>9){
-                                    formato=dias+" /"+horas+":"+minutos+":"+segundos;
+                                    formato=dias+" ["+horas+":"+minutos+":"+segundos+"]";
                                 }else{
-                                    formato=dias+" /"+horas+":"+minutos+":0"+segundos;
+                                    formato=dias+" ["+horas+":"+minutos+":0"+segundos+"]";
                                 }
                             }else{
-                                formato=dias+" /"+horas+":"+minutos;
+                                formato=dias+" ["+horas+":"+minutos+"]";
                             }
                         }else{
                             if(segundos>0){
                                 if(segundos>9){
-                                    formato=dias+" /"+horas+":0"+minutos+":"+segundos;
+                                    formato=dias+" ["+horas+":0"+minutos+":"+segundos+"]";
                                 }else{
-                                    formato=dias+" /"+horas+":0"+minutos+":0"+segundos;
+                                    formato=dias+" ["+horas+":0"+minutos+":0"+segundos+"]";
                                 }
                             }else{
-                                formato=dias+" /"+horas+":0"+minutos;
+                                formato=dias+" ["+horas+":0"+minutos+"]";
                             }
                         }
                     }else{
@@ -183,22 +183,22 @@ public class GraficaLinearM extends Fragment {
                         if(minutos>9){
                             if(segundos>0){
                                 if (segundos>9){
-                                    formato="0"+dias+" /"+horas+":"+minutos+":"+segundos;
+                                    formato="0"+dias+" ["+horas+":"+minutos+":"+segundos+"]";
                                 }else{
-                                    formato="0"+dias+" /"+horas+":"+minutos+":0"+segundos;
+                                    formato="0"+dias+" ["+horas+":"+minutos+":0"+segundos+"]";
                                 }
                             }else{
-                                formato="0"+dias+" /"+horas+":"+minutos;
+                                formato="0"+dias+" ["+horas+":"+minutos;
                             }
                         }else{
                             if(segundos>0){
                                 if(segundos>9){
-                                    formato="0"+dias+" /"+horas+":0"+minutos+":"+segundos;
+                                    formato="0"+dias+" ["+horas+":0"+minutos+":"+segundos+"]";
                                 }else{
-                                    formato="0"+dias+" /"+horas+":0"+minutos+":0"+segundos;
+                                    formato="0"+dias+" ["+horas+":0"+minutos+":0"+segundos+"]";
                                 }
                             }else{
-                                formato="0"+dias+" /"+horas+":0"+minutos;
+                                formato="0"+dias+" ["+horas+":0"+minutos+"]";
                             }
                         }
                     }else{
