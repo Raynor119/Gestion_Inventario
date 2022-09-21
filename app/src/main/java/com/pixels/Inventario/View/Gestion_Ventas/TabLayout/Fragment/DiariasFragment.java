@@ -164,9 +164,7 @@ public class DiariasFragment extends Fragment {
            graficaColumna.Fecha=Ffecha;
            getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
        }catch (Exception e){
-           GraficaColumnaD graficaColumna=new GraficaColumnaD(Ffecha);
-           graficaColumna.Fecha=Ffecha;
-           getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
+
        }
     }
     public void iniciarRecyclerView(String Ffecha){

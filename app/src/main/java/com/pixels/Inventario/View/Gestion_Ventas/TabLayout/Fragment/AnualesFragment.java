@@ -117,9 +117,13 @@ public class AnualesFragment extends Fragment {
         return rootView;
     }
     public void iniciarGraficaColumnas(String Ffecha){
-        GraficaColumnaA graficaColumna=new GraficaColumnaA(Ffecha);
-        graficaColumna.Fecha=Ffecha;
-        getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
+       try{
+           GraficaColumnaA graficaColumna=new GraficaColumnaA(Ffecha);
+           graficaColumna.Fecha=Ffecha;
+           getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
+       }catch (Exception e){
+
+       }
     }
     public void iniciarRecyclerView(String Ffecha){
         reciclerView.setAdapter(null);

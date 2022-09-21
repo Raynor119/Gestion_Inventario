@@ -129,9 +129,13 @@ public class MensualesFragment extends Fragment {
         return rootView;
     }
     public void iniciarGraficaColumnas(String Ffecha){
-        GraficaColumnaM graficaColumna=new GraficaColumnaM(Ffecha);
-        graficaColumna.Fecha=Ffecha;
-        getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
+        try{
+            GraficaColumnaM graficaColumna=new GraficaColumnaM(Ffecha);
+            graficaColumna.Fecha=Ffecha;
+            getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
+        }catch (Exception e){
+
+        }
     }
 
     public void iniciarRecyclerView(String Ffecha){
