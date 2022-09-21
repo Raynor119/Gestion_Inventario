@@ -150,6 +150,7 @@ public class DiariasFragment extends Fragment {
             public void onClick(View view) {
                 if(LGraficaL.getVisibility()==ConstraintLayout.GONE){
                     LGraficaL.setVisibility(ConstraintLayout.VISIBLE);
+                    iniciarRecyclerView(calendarioEditText.getText().toString());
                 }else{
                     LGraficaL.setVisibility(ConstraintLayout.GONE);
                 }
@@ -158,9 +159,15 @@ public class DiariasFragment extends Fragment {
         return rootView;
     }
     public void iniciarGraficaColumnas(String Ffecha){
-        GraficaColumnaD graficaColumna=new GraficaColumnaD(Ffecha);
-        graficaColumna.Fecha=Ffecha;
-        getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
+       try{
+           GraficaColumnaD graficaColumna=new GraficaColumnaD(Ffecha);
+           graficaColumna.Fecha=Ffecha;
+           getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
+       }catch (Exception e){
+           GraficaColumnaD graficaColumna=new GraficaColumnaD(Ffecha);
+           graficaColumna.Fecha=Ffecha;
+           getChildFragmentManager().beginTransaction().replace(R.id.container,graficaColumna).commit();
+       }
     }
     public void iniciarRecyclerView(String Ffecha){
         reciclerView.setAdapter(null);
@@ -200,9 +207,13 @@ public class DiariasFragment extends Fragment {
                 TotalVendido.setText("$ "+formato.format(totalV));
 
                 LGraficaL.setVisibility(ConstraintLayout.VISIBLE);
-                GraficaLinearD graficaColumna=new GraficaLinearD(ventasD);
-                graficaColumna.VentasD=ventasD;
-                getChildFragmentManager().beginTransaction().replace(R.id.containerL,graficaColumna).commit();
+                try{
+                    GraficaLinearD graficaColumna=new GraficaLinearD(ventasD);
+                    graficaColumna.VentasD=ventasD;
+                    getChildFragmentManager().beginTransaction().replace(R.id.containerL,graficaColumna).commit();
+                }catch (Exception e){
+
+                }
             }
         };
         ventas.getResultado().observe(getActivity(),observer);
