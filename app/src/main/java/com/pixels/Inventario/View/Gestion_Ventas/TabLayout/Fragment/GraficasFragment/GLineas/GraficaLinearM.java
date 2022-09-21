@@ -75,16 +75,20 @@ public class GraficaLinearM extends Fragment {
         data.add(new Entry(0,0));
         boolean verificar=true;
         boolean verificarI=false;
+        String nn="";
         for(int i=0;i<VentasD.size();i++){
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             try {
                 Date date = simpleDateFormat.parse(VentasD.get(i).getFecha());
                 float hora = (float) (date.getHours()+(date.getMinutes()*0.0166667)+(date.getSeconds()*0.000277778));
-                data.add(new Entry(hora,((float)VentasD.get(i).getTotalV())));
-                if(hora>28){
+                simpleDateFormat = new SimpleDateFormat("dd");
+                float dia=(float)(Integer.parseInt(simpleDateFormat.format(date))+(hora*0.0416667));
+                data.add(new Entry(dia,((float)VentasD.get(i).getTotalV())));
+                nn="|"+dia+":"+i+"|";
+                if(dia>28){
                     verificar=false;
                 }
-                if(date.getHours()<1){
+                if(dia<1){
                     verificarI=true;
                 }
             }catch (Exception e){
@@ -98,7 +102,7 @@ public class GraficaLinearM extends Fragment {
         if(verificar){
             data.add(new Entry(calendar.getActualMaximum(Calendar.DAY_OF_MONTH),0));
         }
-        LineDataSet lineDataSet=new LineDataSet(data,"Total Vendido");
+        LineDataSet lineDataSet=new LineDataSet(data,nn);
         lineDataSet.setColors(ColorTemplate.rgb("0090FD"));
         lineDataSet.setCircleColors(ColorTemplate.rgb("0090FD"));
         lineDataSet.setCircleRadius(6f);
