@@ -52,25 +52,6 @@ public class GraficaLinearA extends Fragment {
         return rootView;
     }
     public void GenerarGrafica(){
-        int mes=1,anno;
-        int cont=0;
-        String dateT="";
-        for(int i=0;i<FechaM.length();i++){
-            if((FechaM.charAt(i)+"").equals("/")){
-                if (cont==0){
-                    mes=Integer.parseInt(dateT);
-                    dateT="";
-                }
-                cont++;
-            }else {
-                dateT = dateT + (FechaM.charAt(i));
-            }
-        }
-        anno=Integer.parseInt(dateT);
-
-        Calendar calendar=new GregorianCalendar();
-        calendar.set(anno,mes-1,1);
-
         data = new ArrayList<Entry>();
         data.add(new Entry(1,0));
         boolean verificar=true;
@@ -82,8 +63,10 @@ public class GraficaLinearA extends Fragment {
                 float hora = (float) (date.getHours()+(date.getMinutes()*0.0166667)+(date.getSeconds()*0.000277778));
                 simpleDateFormat = new SimpleDateFormat("dd");
                 float dia=(float)(Integer.parseInt(simpleDateFormat.format(date))+(hora*0.0416667));
-                data.add(new Entry(dia,((float)VentasD.get(i).getTotalV())));
-                if(dia>28){
+                simpleDateFormat = new SimpleDateFormat("mm");
+                float mes=(float)(Integer.parseInt(simpleDateFormat.format(date))+(dia*0.0328767));
+                data.add(new Entry(mes,((float)VentasD.get(i).getTotalV())));
+                if(dia>10){
                     verificar=false;
                 }
                 if(dia<1){
@@ -98,7 +81,7 @@ public class GraficaLinearA extends Fragment {
             data.remove(0);
         }
         if(verificar){
-            data.add(new Entry(calendar.getActualMaximum(Calendar.DAY_OF_MONTH),0));
+            data.add(new Entry(12,0));
         }
         LineDataSet lineDataSet=new LineDataSet(data,"Total Vendido");
         lineDataSet.setColors(ColorTemplate.rgb("0090FD"));
@@ -140,9 +123,9 @@ public class GraficaLinearA extends Fragment {
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
         xAxis.setDrawGridLines(false);
         xAxis.setDrawAxisLine(true);
-        xAxis.setAxisMaximum(calendar.getActualMaximum(Calendar.DAY_OF_MONTH));
+        xAxis.setAxisMaximum(12);
         xAxis.setAxisMinimum(1);
-        xAxis.setValueFormatter(new ValueFormatter() {
+        /**xAxis.setValueFormatter(new ValueFormatter() {
             @Override
             public String getFormattedValue(float value) {
                 int dias=((int) value);
@@ -207,7 +190,7 @@ public class GraficaLinearA extends Fragment {
                 }
                 return formato;
             }
-        });
+        });**/
 
         YAxis LeftAxis = GLinear.getAxisLeft();
         LeftAxis.setDrawGridLines(false);
