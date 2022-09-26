@@ -21,6 +21,7 @@ import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 import com.github.mikephil.charting.utils.ColorTemplate;
 import com.pixels.Inventario.Model.DatosE.TotalVentas;
 import com.pixels.Inventario.R;
+import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.Widgets.XYMarkerViewLA;
 import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.Widgets.XYMarkerViewLM;
 
 import java.text.NumberFormat;
@@ -298,7 +299,7 @@ public class GraficaLinearA extends Fragment {
 
         GLinear.animateY(900);
         try {
-            XYMarkerViewLM mv = new XYMarkerViewLM(getActivity());
+            XYMarkerViewLA mv = new XYMarkerViewLA(getActivity());
             mv.setChartView(GLinear);
             GLinear.setMarker(mv);
         }catch (Exception e){
