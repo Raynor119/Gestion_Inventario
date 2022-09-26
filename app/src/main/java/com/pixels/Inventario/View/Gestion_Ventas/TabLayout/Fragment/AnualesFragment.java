@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -23,6 +24,8 @@ import com.pixels.Inventario.Model.DatosE.TotalVentas;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Calendario.AnnoPickerDialog;
 import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.GraficasFragment.GColumnas.GraficaColumnaA;
+import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.GraficasFragment.GLineas.GraficaLinearA;
+import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.GraficasFragment.GLineas.GraficaLinearM;
 import com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.RecyclerViewAdaptador.VentasRecyclerViewAdapter;
 import com.pixels.Inventario.ViewModel.Gestion_Ventas.VentasAnualesRecyclerViewModel;
 
@@ -119,6 +122,18 @@ public class AnualesFragment extends Fragment {
                 }
             }
         });
+
+        BGraficaL.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(LGraficaL.getVisibility()==ConstraintLayout.GONE){
+                    LGraficaL.setVisibility(ConstraintLayout.VISIBLE);
+                    iniciarRecyclerView(calendarioEditText.getText().toString());
+                }else{
+                    LGraficaL.setVisibility(ConstraintLayout.GONE);
+                }
+            }
+        });
         return rootView;
     }
     public void iniciarGraficaColumnas(String Ffecha){
@@ -165,6 +180,15 @@ public class AnualesFragment extends Fragment {
                 impuesto.setText("$ "+formato.format(bdIva.doubleValue()));
                 totalGananNeta.setText("$ "+formato.format(bdGN.doubleValue()));
                 TotalVendido.setText("$ "+formato.format(totalV));
+                LGraficaL.setVisibility(ConstraintLayout.VISIBLE);
+                try{
+                    GraficaLinearA graficaColumna=new GraficaLinearA(ventasD,getActivity());
+                    graficaColumna.VentasD=ventasD;
+                    graficaColumna.Context=getActivity();
+                    getChildFragmentManager().beginTransaction().replace(R.id.containerL,graficaColumna).commit();
+                }catch (Exception e){
+
+                }
             }
         };
         ventas.getResultado().observe(getActivity(),observer);

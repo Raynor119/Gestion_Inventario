@@ -21,9 +21,32 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v49.9.8 agregar a los demas">
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+    <list default="true" id="2f10ebe6-343c-4931-83fb-9164bb71d5fe" name="Changes" comment="copia de seguridad v49.9.8.1 agregar a los demas">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/apk/debug/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment$2.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment$3.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment$3.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment$4.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment$4.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment$5.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment$5.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/GraficasFragment/GLineas/GraficaLinearA.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/GraficasFragment/GLineas/GraficaLinearA.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -161,20 +184,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661834586125</updated>
-    </task>
-    <task id="LOCAL-00111" summary="copia de seguridad v48.5.7.1 Creacion del Activity Detalles de Venta">
-      <created>1663532037495</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1663532037507</updated>
-    </task>
-    <task id="LOCAL-00112" summary="copia de seguridad v48.5.8 Creacion del Activity Detalles de Venta">
-      <created>1663534721678</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1663534721678</updated>
     </task>
     <task id="LOCAL-00113" summary="copia de seguridad v48.5.8.1 Creacion del Activity Detalles de Venta arreglo en los producto eliminados">
       <created>1663535753422</created>
@@ -505,7 +514,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664225899277</updated>
     </task>
-    <option name="localTasksCounter" value="160" />
+    <task id="LOCAL-00160" summary="copia de seguridad v49.9.8.1 agregar a los demas">
+      <created>1664227604766</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1664227604767</updated>
+    </task>
+    <task id="LOCAL-00161" summary="copia de seguridad v49.9.8.1 agregar a los demas">
+      <created>1664227617784</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1664227617784</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -524,7 +547,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="copia de seguridad v49.5.5 usando las nuevas librerias" />
     <MESSAGE value="copia de seguridad v49.6 probadas" />
     <MESSAGE value="copia de seguridad v49.6.1 agregando a las otros viewpagers" />
     <MESSAGE value="copia de seguridad v49.6.2 agregando a las otros viewpagers" />
@@ -549,6 +571,7 @@
     <MESSAGE value="copia de seguridad v49.9.6 agregar a los demas" />
     <MESSAGE value="copia de seguridad v49.9.7 agregar a los demas" />
     <MESSAGE value="copia de seguridad v49.9.8 agregar a los demas" />
-    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v49.9.8 agregar a los demas" />
+    <MESSAGE value="copia de seguridad v49.9.8.1 agregar a los demas" />
+    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v49.9.8.1 agregar a los demas" />
   </component>
 </project>

@@ -1,9 +1,11 @@
 package com.pixels.Inventario.View.Gestion_Ventas.TabLayout.Fragment.GraficasFragment.GLineas;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
@@ -32,17 +34,18 @@ import java.util.List;
 
 public class GraficaLinearA extends Fragment {
     public static List<TotalVentas> VentasD;
-    public static String FechaM;
 
     private LineChart GLinear;
     private ArrayList<Entry> data;
 
+    public static Context Context;
+
     public GraficaLinearA(){
 
     }
-    public GraficaLinearA(List<TotalVentas> ventasD, String fechaM){
+    public GraficaLinearA(List<TotalVentas> ventasD,Context context){
         this.VentasD=ventasD;
-        this.FechaM=fechaM;
+        this.Context=context;
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -63,13 +66,12 @@ public class GraficaLinearA extends Fragment {
                 float hora = (float) (date.getHours()+(date.getMinutes()*0.0166667)+(date.getSeconds()*0.000277778));
                 simpleDateFormat = new SimpleDateFormat("dd");
                 float dia=(float)(Integer.parseInt(simpleDateFormat.format(date))+(hora*0.0416667));
-                simpleDateFormat = new SimpleDateFormat("mm");
-                float mes=(float)(Integer.parseInt(simpleDateFormat.format(date))+(dia*0.0328767));
+                float mes=(float)((date.getMonth()+1)+(dia*0.0328767));
                 data.add(new Entry(mes,((float)VentasD.get(i).getTotalV())));
-                if(dia>10){
+                if(mes>10){
                     verificar=false;
                 }
-                if(dia<1){
+                if(mes<1){
                     verificarI=true;
                 }
             }catch (Exception e){
