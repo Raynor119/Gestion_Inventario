@@ -162,8 +162,10 @@ public class GraficaLinearM extends Fragment {
                                 }else{
                                     formato=dias+" ["+horas+":"+minutos+":0"+segundos+"]";
                                 }
+                                xAxis.setTextSize(7);
                             }else{
                                 formato=dias+" ["+horas+":"+minutos+"]";
+                                xAxis.setTextSize(9);
                             }
                         }else{
                             if(segundos>0){
@@ -172,12 +174,15 @@ public class GraficaLinearM extends Fragment {
                                 }else{
                                     formato=dias+" ["+horas+":0"+minutos+":0"+segundos+"]";
                                 }
+                                xAxis.setTextSize(7);
                             }else{
                                 formato=dias+" ["+horas+":0"+minutos+"]";
+                                xAxis.setTextSize(9);
                             }
                         }
                     }else{
                         formato=dias+"";
+                        xAxis.setTextSize(11);
                     }
                 }else{
                     if(minutos>0){
@@ -188,8 +193,10 @@ public class GraficaLinearM extends Fragment {
                                 }else{
                                     formato="0"+dias+" ["+horas+":"+minutos+":0"+segundos+"]";
                                 }
+                                xAxis.setTextSize(7);
                             }else{
                                 formato="0"+dias+" ["+horas+":"+minutos;
+                                xAxis.setTextSize(9);
                             }
                         }else{
                             if(segundos>0){
@@ -198,12 +205,15 @@ public class GraficaLinearM extends Fragment {
                                 }else{
                                     formato="0"+dias+" ["+horas+":0"+minutos+":0"+segundos+"]";
                                 }
+                                xAxis.setTextSize(7);
                             }else{
                                 formato="0"+dias+" ["+horas+":0"+minutos+"]";
+                                xAxis.setTextSize(9);
                             }
                         }
                     }else{
                         formato="0"+dias+"";
+                        xAxis.setTextSize(11);
                     }
                 }
                 return formato;
