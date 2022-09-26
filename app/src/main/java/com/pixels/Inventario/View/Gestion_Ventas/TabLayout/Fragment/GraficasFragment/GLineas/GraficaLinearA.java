@@ -89,7 +89,7 @@ public class GraficaLinearA extends Fragment {
         lineDataSet.setColors(ColorTemplate.rgb("0090FD"));
         lineDataSet.setCircleColors(ColorTemplate.rgb("0090FD"));
         lineDataSet.setCircleRadius(6f);
-        lineDataSet.setValueTextSize(11);
+        lineDataSet.setValueTextSize(9);
         lineDataSet.setValueFormatter(new ValueFormatter() {
             @Override
             public String getFormattedValue(float value) {
@@ -127,72 +127,149 @@ public class GraficaLinearA extends Fragment {
         xAxis.setDrawAxisLine(true);
         xAxis.setAxisMaximum(12);
         xAxis.setAxisMinimum(1);
-        /**xAxis.setValueFormatter(new ValueFormatter() {
+        xAxis.setValueFormatter(new ValueFormatter() {
             @Override
             public String getFormattedValue(float value) {
-                int dias=((int) value);
-                int horas=((int) (24 * (value - dias)));
-                float auxH=(24 * (value - dias));
+                int mes=((int) value);
+                int dias=((int) (30.4167 *(value - mes)));
+                double auxD=(30.4167 *(value - mes));
+                int horas=((int) (24 * (auxD - dias)));
+                double auxH=(24 * (auxD - dias));
                 int minutos=((int) (60 * ( auxH - horas)));
-                float auxm=60 * ( auxH - horas);
+                double auxm=60 * ( auxH - horas);
                 int segundos=((int) (60 * ( auxm - minutos)));
                 String formato="";
-                if(dias>9){
-                    if(minutos>0){
-                        if(minutos>9){
-                            if(segundos>0){
-                                if (segundos>9){
-                                    formato=dias+" ["+horas+":"+minutos+":"+segundos+"]";
+                if(dias>0){
+                    if(dias>9){
+                        if(minutos>0){
+                            if(minutos>9){
+                                if(segundos>0){
+                                    if (segundos>9){
+                                        formato=dias+" ["+horas+":"+minutos+":"+segundos+"]";
+                                    }else{
+                                        formato=dias+" ["+horas+":"+minutos+":0"+segundos+"]";
+                                    }
                                 }else{
-                                    formato=dias+" ["+horas+":"+minutos+":0"+segundos+"]";
+                                    formato=dias+" ["+horas+":"+minutos+"]";
                                 }
                             }else{
-                                formato=dias+" ["+horas+":"+minutos+"]";
+                                if(segundos>0){
+                                    if(segundos>9){
+                                        formato=dias+" ["+horas+":0"+minutos+":"+segundos+"]";
+                                    }else{
+                                        formato=dias+" ["+horas+":0"+minutos+":0"+segundos+"]";
+                                    }
+                                }else{
+                                    formato=dias+" ["+horas+":0"+minutos+"]";
+                                }
                             }
                         }else{
-                            if(segundos>0){
-                                if(segundos>9){
-                                    formato=dias+" ["+horas+":0"+minutos+":"+segundos+"]";
-                                }else{
-                                    formato=dias+" ["+horas+":0"+minutos+":0"+segundos+"]";
-                                }
-                            }else{
-                                formato=dias+" ["+horas+":0"+minutos+"]";
-                            }
+                            formato=dias+"";
                         }
                     }else{
-                        formato=dias+"";
+                        if(minutos>0){
+                            if(minutos>9){
+                                if(segundos>0){
+                                    if (segundos>9){
+                                        formato="0"+dias+" ["+horas+":"+minutos+":"+segundos+"]";
+                                    }else{
+                                        formato="0"+dias+" ["+horas+":"+minutos+":0"+segundos+"]";
+                                    }
+                                }else{
+                                    formato="0"+dias+" ["+horas+":"+minutos;
+                                }
+                            }else{
+                                if(segundos>0){
+                                    if(segundos>9){
+                                        formato="0"+dias+" ["+horas+":0"+minutos+":"+segundos+"]";
+                                    }else{
+                                        formato="0"+dias+" ["+horas+":0"+minutos+":0"+segundos+"]";
+                                    }
+                                }else{
+                                    formato="0"+dias+" ["+horas+":0"+minutos+"]";
+                                }
+                            }
+                        }else{
+                            formato="0"+dias+"";
+                        }
+                    }
+                    if(mes==1){
+                        formato="Ene"+" "+formato;
+                    }
+                    if(mes==2){
+                        formato="Feb"+" "+formato;
+                    }
+                    if(mes==3){
+                        formato="Mar"+" "+formato;
+                    }
+                    if(mes==4){
+                        formato="Abr"+" "+formato;
+                    }
+                    if(mes==5){
+                        formato="May"+" "+formato;
+                    }
+                    if(mes==6){
+                        formato="Jun"+" "+formato;
+                    }
+                    if(mes==7){
+                        formato="Jul"+" "+formato;
+                    }
+                    if(mes==8){
+                        formato="Ago"+" "+formato;
+                    }
+                    if(mes==9){
+                        formato="Sep"+" "+formato;
+                    }
+                    if(mes==10){
+                        formato="Oct"+" "+formato;
+                    }
+                    if(mes==11){
+                        formato="Nov"+" "+formato;
+                    }
+                    if(mes==12){
+                        formato="Dic"+" "+formato;
                     }
                 }else{
-                    if(minutos>0){
-                        if(minutos>9){
-                            if(segundos>0){
-                                if (segundos>9){
-                                    formato="0"+dias+" ["+horas+":"+minutos+":"+segundos+"]";
-                                }else{
-                                    formato="0"+dias+" ["+horas+":"+minutos+":0"+segundos+"]";
-                                }
-                            }else{
-                                formato="0"+dias+" ["+horas+":"+minutos;
-                            }
-                        }else{
-                            if(segundos>0){
-                                if(segundos>9){
-                                    formato="0"+dias+" ["+horas+":0"+minutos+":"+segundos+"]";
-                                }else{
-                                    formato="0"+dias+" ["+horas+":0"+minutos+":0"+segundos+"]";
-                                }
-                            }else{
-                                formato="0"+dias+" ["+horas+":0"+minutos+"]";
-                            }
-                        }
-                    }else{
-                        formato="0"+dias+"";
+                    if(mes==1){
+                        formato="Ene";
+                    }
+                    if(mes==2){
+                        formato="Feb";
+                    }
+                    if(mes==3){
+                        formato="Mar";
+                    }
+                    if(mes==4){
+                        formato="Abr";
+                    }
+                    if(mes==5){
+                        formato="May";
+                    }
+                    if(mes==6){
+                        formato="Jun";
+                    }
+                    if(mes==7){
+                        formato="Jul";
+                    }
+                    if(mes==8){
+                        formato="Ago";
+                    }
+                    if(mes==9){
+                        formato="Sep";
+                    }
+                    if(mes==10){
+                        formato="Oct";
+                    }
+                    if(mes==11){
+                        formato="Nov";
+                    }
+                    if(mes==12){
+                        formato="Dic";
                     }
                 }
                 return formato;
             }
-        });**/
+        });
 
         YAxis LeftAxis = GLinear.getAxisLeft();
         LeftAxis.setDrawGridLines(false);
