@@ -39,6 +39,8 @@ public class AnualesFragment extends Fragment {
     private TextView costototal,totalP,totalDevo,impuesto,totalGananNeta,TotalVendido;
     private CardView BGraficaC;
     private LinearLayout LGrafica;
+    private CardView BGraficaL;
+    private LinearLayout LGraficaL;
 
     public AnualesFragment(){
 
@@ -63,6 +65,9 @@ public class AnualesFragment extends Fragment {
         LGrafica=(LinearLayout) rootView.findViewById(R.id.LGrafica);
         LGrafica.setVisibility(ConstraintLayout.VISIBLE);
         BGraficaC=(CardView) rootView.findViewById(R.id.mostrar);
+        LGraficaL=(LinearLayout) rootView.findViewById(R.id.LGraficaL);
+        LGraficaL.setVisibility(ConstraintLayout.GONE);
+        BGraficaL=(CardView) rootView.findViewById(R.id.mostrarL);
         calendarioEditText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
