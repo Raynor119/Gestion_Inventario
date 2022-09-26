@@ -3930,6 +3930,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-3\\f5f3321944f2fcc0ad9a9ff3b491e27c\\transformed\\jetified-android-pdf-viewer-2.8.1\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "288",
+                        "endOffsets": "339"
+                    },
+                    "to": {
+                        "startLines": "7689",
+                        "startColumns": "4",
+                        "startOffsets": "447945",
+                        "endColumns": "288",
+                        "endOffsets": "448229"
+                    }
+                },
+                {
                     "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-3\\df04b464485d585955da7f033fa1b638\\transformed\\recyclerview-1.1.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
@@ -4198,23 +4215,6 @@
                         "startOffsets": "60397,60437,61384,61566,61621,63052,63106,63158,63207,63268",
                         "endColumns": "39,46,42,54,46,53,51,48,60,49",
                         "endOffsets": "60432,60479,61422,61616,61663,63101,63153,63202,63263,63313"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-3\\1639eb46f3f9fb9c0e983052539d5a74\\transformed\\jetified-android-pdf-viewer-2.8.1\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "288",
-                        "endOffsets": "339"
-                    },
-                    "to": {
-                        "startLines": "7689",
-                        "startColumns": "4",
-                        "startOffsets": "447945",
-                        "endColumns": "288",
-                        "endOffsets": "448229"
                     }
                 },
                 {

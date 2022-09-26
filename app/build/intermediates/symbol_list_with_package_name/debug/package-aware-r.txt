@@ -2012,6 +2012,7 @@ id beginning
 id blocking
 id bottom
 id bounce
+id buscarRecivo
 id buttonPanel
 id calendario
 id cambio
@@ -2674,6 +2675,9 @@ mipmap agregar_adaptive_fore
 mipmap ajustes
 mipmap ajustes_adaptive_back
 mipmap ajustes_adaptive_fore
+mipmap buscar_re
+mipmap buscar_re_adaptive_back
+mipmap buscar_re_adaptive_fore
 mipmap caja
 mipmap caja_adaptive_back
 mipmap caja_adaptive_fore

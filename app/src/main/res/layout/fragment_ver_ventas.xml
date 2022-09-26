@@ -28,7 +28,7 @@
                     <ImageView
                         android:id="@+id/buscarRecivo"
                         android:layout_width="40dp"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="25dp"
                         android:layout_marginRight="10dp"
                         android:layout_gravity="right"
                         android:src="@mipmap/buscar_re_adaptive_fore"
