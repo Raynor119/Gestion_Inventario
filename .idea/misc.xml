@@ -20,7 +20,7 @@
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1400dp/fragment_agsinarcontrasena.xml" value="0.18211805555555555" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1400dp/fragment_inventario_productos.xml" value="0.11163194444444445" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1400dp/fragment_modificarcontra.xml" value="0.18211805555555555" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1400dp/fragment_ver_ventas.xml" value="0.1" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1400dp/fragment_ver_ventas.xml" value="0.25" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1400dp/producto_caja.xml" value="0.33877551020408164" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1600dp/activity_caja.xml" value="0.18" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout-w1600dp/activity_detalles_ventas.xml" value="0.1" />
@@ -64,7 +64,7 @@
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/fragment_mensuales.xml" value="0.32222222222222224" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/fragment_modificarcontra.xml" value="0.32222222222222224" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/fragment_registrar_base_datos.xml" value="0.32222222222222224" />
-        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/fragment_ver_ventas.xml" value="0.33" />
+        <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/fragment_ver_ventas.xml" value="0.25" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/fragmentgraficacolumna.xml" value="0.23445945945945945" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/fragmentgraficalinear.xml" value="0.23445945945945945" />
         <entry key="..\:/Users/saibo/Documents/Gestion_Inventario/app/src/main/res/layout/marker_view.xml" value="0.33" />
