@@ -14,6 +14,7 @@ import com.google.zxing.integration.android.IntentResult;
 import com.pixels.Inventario.Model.DatosE.OpcionesContent;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Gestion_Productos.VerInventario;
+import com.pixels.Inventario.View.Gestion_Ventas.AlertDialog.VerificarCodigo.VerificarCodigoFV;
 import com.pixels.Inventario.View.Gestion_Ventas.AlertDialog.alertVentaCodigo;
 import com.pixels.Inventario.View.InicioA.Configuracion_Inicial.Fragment.InicioBlanco;
 import com.pixels.Inventario.View.Menu_Inicio.RecyclerViewAdaptador.SimpleItemRecyclerViewAdapter;
@@ -70,6 +71,8 @@ public class MenuInicio extends AppCompatActivity {
         if (result != null) {
             if (result.getContents() != null){
                 alertdialog.Codigo.setText(""+result.getContents());
+                VerificarCodigoFV codigo=new VerificarCodigoFV(alertdialog);
+                codigo.verificarcodigo(false);
             }else{
                 alertdialog.CCodigo.setError("Error al escanear el código de barras");
                 alertdialog.Codigo.setText("");
