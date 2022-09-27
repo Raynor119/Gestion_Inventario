@@ -162,7 +162,7 @@ public class GraficaLinearM extends Fragment {
                                 }else{
                                     formato=dias+" ["+horas+":"+minutos+":0"+segundos+"]";
                                 }
-                                xAxis.setTextSize(7);
+                                xAxis.setTextSize(9);
                             }else{
                                 formato=dias+" ["+horas+":"+minutos+"]";
                                 xAxis.setTextSize(9);
@@ -174,7 +174,7 @@ public class GraficaLinearM extends Fragment {
                                 }else{
                                     formato=dias+" ["+horas+":0"+minutos+":0"+segundos+"]";
                                 }
-                                xAxis.setTextSize(7);
+                                xAxis.setTextSize(8);
                             }else{
                                 formato=dias+" ["+horas+":0"+minutos+"]";
                                 xAxis.setTextSize(9);
@@ -193,7 +193,7 @@ public class GraficaLinearM extends Fragment {
                                 }else{
                                     formato="0"+dias+" ["+horas+":"+minutos+":0"+segundos+"]";
                                 }
-                                xAxis.setTextSize(7);
+                                xAxis.setTextSize(9);
                             }else{
                                 formato="0"+dias+" ["+horas+":"+minutos;
                                 xAxis.setTextSize(9);
@@ -205,7 +205,7 @@ public class GraficaLinearM extends Fragment {
                                 }else{
                                     formato="0"+dias+" ["+horas+":0"+minutos+":0"+segundos+"]";
                                 }
-                                xAxis.setTextSize(7);
+                                xAxis.setTextSize(8);
                             }else{
                                 formato="0"+dias+" ["+horas+":0"+minutos+"]";
                                 xAxis.setTextSize(9);

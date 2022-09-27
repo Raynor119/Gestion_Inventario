@@ -150,10 +150,10 @@ public class GraficaLinearA extends Fragment {
                                     }else{
                                         formato=dias+" ["+horas+":"+minutos+":0"+segundos+"]";
                                     }
-                                    xAxis.setTextSize(6);
+                                    xAxis.setTextSize(7);
                                 }else{
                                     formato=dias+" ["+horas+":"+minutos+"]";
-                                    xAxis.setTextSize(7);
+                                    xAxis.setTextSize(8);
                                 }
                             }else{
                                 if(segundos>0){
@@ -162,15 +162,15 @@ public class GraficaLinearA extends Fragment {
                                     }else{
                                         formato=dias+" ["+horas+":0"+minutos+":0"+segundos+"]";
                                     }
-                                    xAxis.setTextSize(6);
+                                    xAxis.setTextSize(7);
                                 }else{
                                     formato=dias+" ["+horas+":0"+minutos+"]";
-                                    xAxis.setTextSize(7);
+                                    xAxis.setTextSize(8);
                                 }
                             }
                         }else{
                             formato=dias+"";
-                            xAxis.setTextSize(8);
+                            xAxis.setTextSize(9);
                         }
                     }else{
                         if(minutos>0){
@@ -181,10 +181,10 @@ public class GraficaLinearA extends Fragment {
                                     }else{
                                         formato="0"+dias+" ["+horas+":"+minutos+":0"+segundos+"]";
                                     }
-                                    xAxis.setTextSize(6);
+                                    xAxis.setTextSize(7);
                                 }else{
                                     formato="0"+dias+" ["+horas+":"+minutos;
-                                    xAxis.setTextSize(7);
+                                    xAxis.setTextSize(8);
                                 }
                             }else{
                                 if(segundos>0){
@@ -193,15 +193,15 @@ public class GraficaLinearA extends Fragment {
                                     }else{
                                         formato="0"+dias+" ["+horas+":0"+minutos+":0"+segundos+"]";
                                     }
-                                    xAxis.setTextSize(6);
+                                    xAxis.setTextSize(7);
                                 }else{
                                     formato="0"+dias+" ["+horas+":0"+minutos+"]";
-                                    xAxis.setTextSize(7);
+                                    xAxis.setTextSize(8);
                                 }
                             }
                         }else{
                             formato="0"+dias+"";
-                            xAxis.setTextSize(8);
+                            xAxis.setTextSize(9);
                         }
                     }
                     if(mes==1){
@@ -241,7 +241,7 @@ public class GraficaLinearA extends Fragment {
                         formato="Dic"+" "+formato;
                     }
                 }else{
-                    xAxis.setTextSize(10);
+                    xAxis.setTextSize(11);
                     if(mes==1){
                         formato="Ene";
                     }
