@@ -1,14 +1,20 @@
 package com.pixels.Inventario.View.Menu_Inicio;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
 import com.pixels.Inventario.Model.DatosE.OpcionesContent;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Gestion_Productos.VerInventario;
+import com.pixels.Inventario.View.Gestion_Ventas.AlertDialog.alertVentaCodigo;
 import com.pixels.Inventario.View.InicioA.Configuracion_Inicial.Fragment.InicioBlanco;
 import com.pixels.Inventario.View.Menu_Inicio.RecyclerViewAdaptador.SimpleItemRecyclerViewAdapter;
 
@@ -32,6 +38,7 @@ public class MenuInicio extends AppCompatActivity {
      */
     private boolean mTwoPane;
     private List<OpcionesContent> menuopciones= new ArrayList<>();
+    public static alertVentaCodigo alertdialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +63,19 @@ public class MenuInicio extends AppCompatActivity {
         menuopciones.add(new OpcionesContent(5,"Salir"));
         recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(this, menuopciones, mTwoPane));
     }
-
-
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
+        if (result != null) {
+            if (result.getContents() != null){
+                alertdialog.Codigo.setText(""+result.getContents());
+            }else{
+                alertdialog.CCodigo.setError("Error al escanear el código de barras");
+                alertdialog.Codigo.setText("");
+                alertdialog.Codigo.setFocusableInTouchMode(true);
+                alertdialog.Codigo.requestFocus();
+            }
+        }
+    }
 }
