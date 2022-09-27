@@ -1,26 +1,25 @@
 package com.pixels.Inventario.View.Gestion_Ventas.AlertDialog;
 
-import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.Context;
+
 import android.content.DialogInterface;
-import android.content.Intent;
-import android.os.Bundle;
+
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 
-import androidx.annotation.Nullable;
+
 import androidx.cardview.widget.CardView;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.zxing.integration.android.IntentIntegrator;
-import com.google.zxing.integration.android.IntentResult;
+
 import com.pixels.Inventario.R;
-import com.pixels.Inventario.View.Caja.Caja;
+
 import com.pixels.Inventario.View.Caja.TextWatcher.TextCodigoCaja;
 import com.pixels.Inventario.View.Caja.VerificacionCodigo.VerificarCodigoD;
+import com.pixels.Inventario.View.Gestion_Ventas.AlertDialog.VerificarCodigo.VerificarCodigoFV;
 import com.pixels.Inventario.View.Gestion_Ventas.Fragment.VerVentasFragment;
 
 public class alertVentaCodigo {
@@ -77,8 +76,8 @@ public class alertVentaCodigo {
                         if(controlador==0){
                             i[0]=0;
                             controlador++;
-                           // VerificarCodigoD codigo=new VerificarCodigoD(alertVentaCodigo.this);
-                          //  codigo.verificarcodigo(true);
+                            VerificarCodigoFV codigo=new VerificarCodigoFV(alertVentaCodigo.this);
+                            codigo.verificarcodigo(true);
                         }else{
                             controlador=0;
                         }
