@@ -59,27 +59,24 @@ public class alertVentaDevolucion {
         Codigo.setOnKeyListener(new View.OnKeyListener() {
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 // si presiona enter
-                if (((event.getAction() == KeyEvent.ACTION_DOWN) &&
-                        (keyCode == KeyEvent.KEYCODE_ENTER)) || (keyCode == KeyEvent.KEYCODE_ENTER)) {
+                if (((event.getAction() ==  KeyEvent.ACTION_DOWN) &&
+                        (keyCode == KeyEvent.KEYCODE_ENTER))) {
                     if(Codigo.getText().toString().equals("")){
-                        if(verificarEnter){
+
                             CCodigo.setError("Digite el Codigo de la Factura");
                             Codigo.setFocusableInTouchMode(true);
                             Codigo.requestFocus();
-                        }else{
-                            verificarEnter=true;
-                        }
                     }else{
-                        if(controlador==0){
-                            i[0]=0;
-                            controlador++;
-                            VerificarCodigoD codigo=new VerificarCodigoD(alertVentaDevolucion.this);
-                            codigo.verificarcodigo(true);
-                        }else{
-                            controlador=0;
-                        }
+                        i[0]=0;
+                        VerificarCodigoD codigo=new VerificarCodigoD(alertVentaDevolucion.this);
+                        codigo.verificarcodigo(true);
                     }
                     return true;
+                }
+                if ((keyCode == KeyEvent.KEYCODE_ENTER)){
+                    Codigo.setFocusableInTouchMode(true);
+                    Codigo.requestFocus();
+                    return  true;
                 }
                 return false;
             }
