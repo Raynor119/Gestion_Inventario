@@ -67,7 +67,8 @@ public class Caja extends AppCompatActivity {
         Codigo.setOnKeyListener(new View.OnKeyListener() {
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 // si presiona enter
-                if ((event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER) || (keyCode == KeyEvent.KEYCODE_ENTER)) {
+                if (((event.getAction() == KeyEvent.ACTION_DOWN) &&
+                        (keyCode == KeyEvent.KEYCODE_ENTER)) || (keyCode == KeyEvent.KEYCODE_ENTER)) {
                     if(Codigo.getText().toString().equals("")){
                         if(verificarEnter){
                             CCodigo.setError("Digite el Codigo del Producto");
