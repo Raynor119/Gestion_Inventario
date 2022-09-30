@@ -79,6 +79,7 @@ public class Caja extends AppCompatActivity {
                             verificarEnter=true;
                         }
                     }else{
+
                         if(verificarEnter){
                             if(i[0]==0) {
                                 i[0]++;
@@ -90,18 +91,31 @@ public class Caja extends AppCompatActivity {
                                 verificarEnter=true;
                             }
                         }else{
-                            verificarEnter=true;
+                            if(i[0]==1){
+                                i[0]=0;
+                                if(i[0]==0) {
+                                    i[0]++;
+                                    VerificarCodigoC codigo=new VerificarCodigoC(Caja.this);
+                                    codigo.verificarCodigo(true);
+                                    verificarEnter=false;
+                                }else{
+                                    i[0]=0;
+                                    verificarEnter=true;
+                                }
+                            }else {
+                                verificarEnter=true;
+                            }
                         }
-
                     }
-
                     return true;
                 }else{
                     if(verificarEnter){
 
                     }else {
                         verificarEnter = true;
+                        Toast.makeText(getApplicationContext(), "se Actualizo1", Toast.LENGTH_LONG).show();
                     }
+                    Toast.makeText(getApplicationContext(), "se Actualizo1"+keyCode, Toast.LENGTH_LONG).show();
                 }
                 return false;
             }
