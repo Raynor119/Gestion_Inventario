@@ -68,53 +68,25 @@ public class Caja extends AppCompatActivity {
         Codigo.setOnKeyListener(new View.OnKeyListener() {
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 // si presiona enter
-                if ((keyCode == KeyEvent.KEYCODE_ENTER)) {
+                if (((event.getAction() ==  KeyEvent.ACTION_DOWN) &&
+                        (keyCode == KeyEvent.KEYCODE_ENTER))) {
 
-                    if(Codigo.getText().toString().equals("")){
-                        if(verificarEnter){
-                            CCodigo.setError("Digite el Codigo del Producto");
-                            Codigo.setFocusableInTouchMode(true);
-                            Codigo.requestFocus();
-                        }else{
-                            verificarEnter=true;
-                        }
-                    }else{
-
-                        if(verificarEnter){
-                            if(i[0]==0) {
-                                i[0]++;
+                            if(Codigo.getText().toString().equals("")){
+                                CCodigo.setError("Digite el Codigo del Producto");
+                                Codigo.setFocusableInTouchMode(true);
+                                Codigo.requestFocus();
+                            }else{
                                 VerificarCodigoC codigo=new VerificarCodigoC(Caja.this);
                                 codigo.verificarCodigo(true);
-                                verificarEnter=false;
-                            }else{
                                 i[0]=0;
-                                verificarEnter=true;
                             }
-                        }else{
-                            if(i[0]==1){
-                                i[0]=0;
-                                if(i[0]==0) {
-                                    i[0]++;
-                                    VerificarCodigoC codigo=new VerificarCodigoC(Caja.this);
-                                    codigo.verificarCodigo(true);
-                                    verificarEnter=false;
-                                }else{
-                                    i[0]=0;
-                                    verificarEnter=true;
-                                }
-                            }else {
-                                verificarEnter=true;
-                            }
-                        }
-                    }
+
                     return true;
-                }else{
-                    if(verificarEnter){
-
-                    }else {
-                        verificarEnter = true;
-
-                    }
+                }
+                if ((keyCode == KeyEvent.KEYCODE_ENTER)){
+                    Codigo.setFocusableInTouchMode(true);
+                    Codigo.requestFocus();
+                    return  true;
                 }
                 return false;
             }
