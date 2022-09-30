@@ -251,14 +251,14 @@ public class DiariasFragment extends Fragment {
         consultasDatos dinici=new consultasDatos(getActivity());
         if(dinici.obtenerD().get(0).getBasedatos().equals("SQLITE")){
             if(mes<10){
-                c="WHERE DATE(venta.Fecha) = '"+anno+"-"+("0"+mes)+"-"+dia+"' GROUP BY venta.codigo";
+                c="WHERE DATE(Venta.Fecha) = '"+anno+"-"+("0"+mes)+"-"+dia+"' GROUP BY Venta.codigo";
             }else{
-                c="WHERE DATE(venta.Fecha) = '"+anno+"-"+mes+"-"+dia+"' GROUP BY venta.codigo";
+                c="WHERE DATE(Venta.Fecha) = '"+anno+"-"+mes+"-"+dia+"' GROUP BY Venta.codigo";
             }
 
         }
         if(dinici.obtenerD().get(0).getBasedatos().equals("MYSQL")){
-            c="WHERE CAST(Fecha AS DATE) = '"+anno+"-"+mes+"-"+dia+"' GROUP BY venta.codigo";
+            c="WHERE CAST(Fecha AS DATE) = '"+anno+"-"+mes+"-"+dia+"' GROUP BY Venta.codigo";
         }
 
         return c;

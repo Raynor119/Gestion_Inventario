@@ -31,13 +31,13 @@ public class VentasAnualesRecyclerViewModel extends ViewModel {
     }
 
     public void buscarVentas(Context context, String Consulta){
-        String ConsultaP="SELECT venta.codigo,COUNT(ventasproductos.codigoV) as CProductosV,sum(ventasproductos.CantidadV*ventasproductos.PrecioPV) as TotalV," +
-                "(sum(((ventasproductos.CantidadV-ventasproductos.CantidadD)*ventasproductos.PrecioPV)/(1.0+(ventasproductos.IvaPV*0.01)))-sum((ventasproductos.CantidadV-ventasproductos.CantidadD)*ventasproductos.CostePV)) as GananciaNeta," +
-                "(sum((((ventasproductos.CantidadV-ventasproductos.CantidadD)*ventasproductos.PrecioPV)/(1.0+(ventasproductos.IvaPV*0.01))*ventasproductos.IvaPV*0.01))) as TotalIvaP," +
-                "(sum((ventasproductos.CantidadV)*ventasproductos.CostePV)) as CostoV," +
-                "(SUM(ventasproductos.CantidadD*ventasproductos.CostePV)) as PerdidaD," +
-                "(SUM(ventasproductos.CantidadD*ventasproductos.PrecioPV)) as TotalD" +
-                ",venta.Fecha,venta.Efectivo FROM ventasproductos INNER JOIN venta ON ventasproductos.codigov=venta.codigo "+Consulta;
+        String ConsultaP="SELECT Venta.codigo,COUNT(VentasProductos.codigoV) as CProductosV,sum(VentasProductos.CantidadV*VentasProductos.PrecioPV) as TotalV," +
+                "(sum(((VentasProductos.CantidadV-VentasProductos.CantidadD)*VentasProductos.PrecioPV)/(1.0+(VentasProductos.IvaPV*0.01)))-sum((VentasProductos.CantidadV-VentasProductos.CantidadD)*VentasProductos.CostePV)) as GananciaNeta," +
+                "(sum((((VentasProductos.CantidadV-VentasProductos.CantidadD)*VentasProductos.PrecioPV)/(1.0+(VentasProductos.IvaPV*0.01))*VentasProductos.IvaPV*0.01))) as TotalIvaP," +
+                "(sum((VentasProductos.CantidadV)*VentasProductos.CostePV)) as CostoV," +
+                "(SUM(VentasProductos.CantidadD*VentasProductos.CostePV)) as PerdidaD," +
+                "(SUM(VentasProductos.CantidadD*VentasProductos.PrecioPV)) as TotalD" +
+                ",Venta.Fecha,Venta.Efectivo FROM VentasProductos INNER JOIN Venta ON VentasProductos.codigov=Venta.codigo "+Consulta;
         consultasDatos dinici=new consultasDatos(context);
         MediadorBaseDatos BD;
         if(dinici.obtenerD().get(0).getBasedatos().equals("SQLITE")){

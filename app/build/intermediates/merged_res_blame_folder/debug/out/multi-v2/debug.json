@@ -3930,23 +3930,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-3\\f5f3321944f2fcc0ad9a9ff3b491e27c\\transformed\\jetified-android-pdf-viewer-2.8.1\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "288",
-                        "endOffsets": "339"
-                    },
-                    "to": {
-                        "startLines": "7689",
-                        "startColumns": "4",
-                        "startOffsets": "447945",
-                        "endColumns": "288",
-                        "endOffsets": "448229"
-                    }
-                },
-                {
                     "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-3\\df04b464485d585955da7f033fa1b638\\transformed\\recyclerview-1.1.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
@@ -4019,6 +4002,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-3\\4883de190c12cfa09918465621164ffa\\transformed\\jetified-android-pdf-viewer-2.8.1\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "288",
+                        "endOffsets": "339"
+                    },
+                    "to": {
+                        "startLines": "7689",
+                        "startColumns": "4",
+                        "startOffsets": "447945",
+                        "endColumns": "288",
+                        "endOffsets": "448229"
+                    }
+                },
+                {
                     "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-3\\476b29e0ad710acb6cc42ccfb2c8e71c\\transformed\\cardview-1.0.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,35,36,37,38,45,47,50,7",
@@ -4042,9 +4042,9 @@
                     "from": {
                         "startLines": "5,1,6,4,3,2",
                         "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "233,16,275,171,116,75",
+                        "startOffsets": "238,17,281,175,119,77",
                         "endColumns": "41,58,67,61,54,40",
-                        "endOffsets": "270,70,338,228,166,111"
+                        "endOffsets": "275,71,344,232,169,113"
                     },
                     "to": {
                         "startLines": "1136,1164,1165,1261,1262,1265",
