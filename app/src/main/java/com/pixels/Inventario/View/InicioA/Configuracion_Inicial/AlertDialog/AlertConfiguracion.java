@@ -75,7 +75,7 @@ public class AlertConfiguracion {
         AlertDialog.Builder builder = new AlertDialog.Builder(Context);
         builder.setCancelable(false);
         builder.setTitle("Base de Datos que Usara");
-        builder.setMessage("Puede Elegir entre SQLite (Guardar los datos en la Aplicacion) y MYSQL (Guardar los datos en una base de datos Local MYSQL)");
+        builder.setMessage("Puede Elegir entre Almacenamiento Interno (Guardar los datos en la Aplicacion) y MYSQL (Guardar los datos en una base de datos Local MYSQL)");
         builder.setPositiveButton("MYSQL", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
@@ -83,7 +83,7 @@ public class AlertConfiguracion {
                 PreguntarBaseDatosMYSQL();
             }
         });
-        builder.setNegativeButton("SQLITE", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton("Almacenamiento Interno", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 Context.basedatos="SQLITE";
