@@ -209,10 +209,10 @@ public class AnualesFragment extends Fragment {
         String c="";
         consultasDatos dinici=new consultasDatos(getActivity());
         if(dinici.obtenerD().get(0).getBasedatos().equals("SQLITE")){
-            c="WHERE strftime('%Y', venta.Fecha) = '"+anno+"' GROUP BY venta.codigo";
+            c="WHERE strftime('%Y', Venta.Fecha) = '"+anno+"' GROUP BY Venta.codigo";
         }
         if(dinici.obtenerD().get(0).getBasedatos().equals("MYSQL")){
-            c="WHERE YEAR(Fecha) = '"+anno+"' GROUP BY venta.codigo";
+            c="WHERE YEAR(Fecha) = '"+anno+"' GROUP BY Venta.codigo";
         }
         return c;
     }

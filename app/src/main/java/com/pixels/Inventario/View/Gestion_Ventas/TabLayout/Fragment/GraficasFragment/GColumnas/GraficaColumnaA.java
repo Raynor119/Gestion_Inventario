@@ -123,7 +123,7 @@ public class GraficaColumnaA extends Fragment {
         String c="";
         consultasDatos dinici=new consultasDatos(getActivity());
         if(dinici.obtenerD().get(0).getBasedatos().equals("SQLITE")){
-            c="WHERE strftime('%Y', venta.Fecha) = '"+anno+"' GROUP BY VentasProductos.codigoP ORDER BY TotalV DESC LIMIT 10";
+            c="WHERE strftime('%Y', Venta.Fecha) = '"+anno+"' GROUP BY VentasProductos.codigoP ORDER BY TotalV DESC LIMIT 10";
         }
         if(dinici.obtenerD().get(0).getBasedatos().equals("MYSQL")){
             c="WHERE YEAR(Fecha) = '"+anno+"' GROUP BY VentasProductos.codigoP ORDER BY TotalV DESC LIMIT 10";

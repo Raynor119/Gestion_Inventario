@@ -235,14 +235,14 @@ public class MensualesFragment extends Fragment {
         consultasDatos dinici=new consultasDatos(getActivity());
         if(dinici.obtenerD().get(0).getBasedatos().equals("SQLITE")){
             if(mes<10){
-                c="WHERE strftime('%Y', venta.Fecha) = '"+anno+"' AND strftime('%m', venta.Fecha) = '"+("0"+mes)+"' GROUP BY venta.codigo";
+                c="WHERE strftime('%Y', Venta.Fecha) = '"+anno+"' AND strftime('%m', Venta.Fecha) = '"+("0"+mes)+"' GROUP BY Venta.codigo";
             }else{
-                c="WHERE strftime('%Y', venta.Fecha) = '"+anno+"' AND strftime('%m', venta.Fecha) = '"+mes+"' GROUP BY venta.codigo";
+                c="WHERE strftime('%Y', Venta.Fecha) = '"+anno+"' AND strftime('%m', Venta.Fecha) = '"+mes+"' GROUP BY Venta.codigo";
             }
 
         }
         if(dinici.obtenerD().get(0).getBasedatos().equals("MYSQL")){
-            c="WHERE YEAR(Fecha) = '"+anno+"' AND MONTH(Fecha) = '"+mes+"' GROUP BY venta.codigo";
+            c="WHERE YEAR(Fecha) = '"+anno+"' AND MONTH(Fecha) = '"+mes+"' GROUP BY Venta.codigo";
         }
 
         return c;

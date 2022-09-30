@@ -1,10 +1,10 @@
 com.pixels.Inventario.app-material-1.4.0-0 C:\Users\saibo\.gradle\caches\transforms-3\037164efd180b1a759f85bd80e940c8b\transformed\material-1.4.0\res
-com.pixels.Inventario.app-coordinatorlayout-1.1.0-1 C:\Users\saibo\.gradle\caches\transforms-3\19eb8dce3ae6c1c269de56fecc6db1a9\transformed\coordinatorlayout-1.1.0\res
-com.pixels.Inventario.app-jetified-core-ktx-1.7.0-2 C:\Users\saibo\.gradle\caches\transforms-3\1aa5a09a5410716d3a349bc3eee05e5d\transformed\jetified-core-ktx-1.7.0\res
-com.pixels.Inventario.app-jetified-appcompat-resources-1.2.0-3 C:\Users\saibo\.gradle\caches\transforms-3\1da0f001d59605eb45f2342933a0e61a\transformed\jetified-appcompat-resources-1.2.0\res
-com.pixels.Inventario.app-lifecycle-runtime-2.3.1-4 C:\Users\saibo\.gradle\caches\transforms-3\3f90e1ed846774feaee6ec5588f3fa04\transformed\lifecycle-runtime-2.3.1\res
-com.pixels.Inventario.app-cardview-1.0.0-5 C:\Users\saibo\.gradle\caches\transforms-3\476b29e0ad710acb6cc42ccfb2c8e71c\transformed\cardview-1.0.0\res
-com.pixels.Inventario.app-jetified-android-pdf-viewer-2.8.1-6 C:\Users\saibo\.gradle\caches\transforms-3\4883de190c12cfa09918465621164ffa\transformed\jetified-android-pdf-viewer-2.8.1\res
+com.pixels.Inventario.app-jetified-android-pdf-viewer-2.8.1-1 C:\Users\saibo\.gradle\caches\transforms-3\0df4cd503e142a02c8e621d7c7576092\transformed\jetified-android-pdf-viewer-2.8.1\res
+com.pixels.Inventario.app-coordinatorlayout-1.1.0-2 C:\Users\saibo\.gradle\caches\transforms-3\19eb8dce3ae6c1c269de56fecc6db1a9\transformed\coordinatorlayout-1.1.0\res
+com.pixels.Inventario.app-jetified-core-ktx-1.7.0-3 C:\Users\saibo\.gradle\caches\transforms-3\1aa5a09a5410716d3a349bc3eee05e5d\transformed\jetified-core-ktx-1.7.0\res
+com.pixels.Inventario.app-jetified-appcompat-resources-1.2.0-4 C:\Users\saibo\.gradle\caches\transforms-3\1da0f001d59605eb45f2342933a0e61a\transformed\jetified-appcompat-resources-1.2.0\res
+com.pixels.Inventario.app-lifecycle-runtime-2.3.1-5 C:\Users\saibo\.gradle\caches\transforms-3\3f90e1ed846774feaee6ec5588f3fa04\transformed\lifecycle-runtime-2.3.1\res
+com.pixels.Inventario.app-cardview-1.0.0-6 C:\Users\saibo\.gradle\caches\transforms-3\476b29e0ad710acb6cc42ccfb2c8e71c\transformed\cardview-1.0.0\res
 com.pixels.Inventario.app-media-1.0.0-7 C:\Users\saibo\.gradle\caches\transforms-3\4bfe644091be6e4308a3d28e2dbf3517\transformed\media-1.0.0\res
 com.pixels.Inventario.app-preference-1.1.1-8 C:\Users\saibo\.gradle\caches\transforms-3\7b0ae9bbb037b5073aff861e26f1fc2b\transformed\preference-1.1.1\res
 com.pixels.Inventario.app-jetified-viewpager2-1.0.0-9 C:\Users\saibo\.gradle\caches\transforms-3\85f9e5877a350279fc37354eb16bce17\transformed\jetified-viewpager2-1.0.0\res
