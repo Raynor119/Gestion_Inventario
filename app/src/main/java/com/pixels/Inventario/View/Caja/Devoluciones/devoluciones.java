@@ -72,30 +72,31 @@ public class devoluciones extends AppCompatActivity {
         Codigo.setOnKeyListener(new View.OnKeyListener() {
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 // si presiona enter
-                if ((event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER) || (keyCode == KeyEvent.KEYCODE_ENTER)) {
+                if (((event.getAction() ==  KeyEvent.ACTION_DOWN) &&
+                        (keyCode == KeyEvent.KEYCODE_ENTER))) {
+
                     if(Codigo.getText().toString().equals("")){
-                        if(verificarEnter){
                             CCodigo.setError("Digite el Codigo del Producto");
                             Codigo.setFocusableInTouchMode(true);
                             Codigo.requestFocus();
-                        }else{
-                            verificarEnter=true;
-                        }
                     }else{
-
                         if(Codigo.getText().toString().equals("null")){
                             Codigo.setText("");
                             CCodigo.setError("El codigo no es valido");
                             Codigo.setFocusableInTouchMode(true);
-                            verificarEnter=false;
                             Codigo.requestFocus();
-                            i[0]++;
                         }else{
+                            i[0]=0;
                             VerificarCodigoDP codigo=new VerificarCodigoDP(devoluciones.this);
                             codigo.verificarcodigo(false);
                         }
                     }
                     return true;
+                }
+                if ((keyCode == KeyEvent.KEYCODE_ENTER)){
+                    Codigo.setFocusableInTouchMode(true);
+                    Codigo.requestFocus();
+                    return  true;
                 }
                 return false;
             }
