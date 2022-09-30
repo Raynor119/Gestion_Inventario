@@ -68,8 +68,8 @@ public class Caja extends AppCompatActivity {
         Codigo.setOnKeyListener(new View.OnKeyListener() {
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 // si presiona enter
-                if (((event.getAction() == KeyEvent.ACTION_DOWN) &&
-                        (keyCode == KeyEvent.KEYCODE_ENTER)) || (keyCode == KeyEvent.KEYCODE_ENTER)) {
+                if ((keyCode == KeyEvent.KEYCODE_ENTER)) {
+
                     if(Codigo.getText().toString().equals("")){
                         if(verificarEnter){
                             CCodigo.setError("Digite el Codigo del Producto");
@@ -84,7 +84,7 @@ public class Caja extends AppCompatActivity {
                                 i[0]++;
                                 VerificarCodigoC codigo=new VerificarCodigoC(Caja.this);
                                 codigo.verificarCodigo(true);
-                                Toast.makeText(getApplicationContext(), "entro", Toast.LENGTH_LONG).show();
+                                verificarEnter=false;
                             }else{
                                 i[0]=0;
                                 verificarEnter=true;
@@ -94,7 +94,16 @@ public class Caja extends AppCompatActivity {
                         }
 
                     }
+
                     return true;
+                }else{
+                    if(keyCode==59){
+                        if(verificarEnter){
+
+                        }else{
+                            verificarEnter=true;
+                        }
+                    }
                 }
                 return false;
             }

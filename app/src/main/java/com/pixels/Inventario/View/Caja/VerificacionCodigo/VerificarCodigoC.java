@@ -30,7 +30,6 @@ public class VerificarCodigoC {
                         Context.CCodigo.setError("El Codigo del Producto no esta Registrado en la Base de Datos");
                         Context.Codigo.setFocusableInTouchMode(true);
                         Context.Codigo.requestFocus();
-                        Context.verificarEnter=false;
                     }
                 }
             };
@@ -67,7 +66,6 @@ public class VerificarCodigoC {
                     }
                     Context.iniciarRecyclerView();
                     Context.Codigo.setText("");
-                    Context.verificarEnter=false;
                     Context.Codigo.setFocusableInTouchMode(true);
                     Context.Codigo.requestFocus();
 
@@ -75,7 +73,6 @@ public class VerificarCodigoC {
             };
             verificar.getResultado().observe(Context,observer);
             verificar.getProductos().observe(Context,observer1);
-            Context.verificarEnter=false;
         }else{
             VerificarCodigoCajaViewModel verificar= ViewModelProviders.of(Context).get(VerificarCodigoCajaViewModel.class);
             verificar.reset();
