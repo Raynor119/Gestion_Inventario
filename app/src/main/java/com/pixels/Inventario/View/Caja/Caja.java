@@ -97,12 +97,10 @@ public class Caja extends AppCompatActivity {
 
                     return true;
                 }else{
-                    if(keyCode==59){
-                        if(verificarEnter){
+                    if(verificarEnter){
 
-                        }else{
-                            verificarEnter=true;
-                        }
+                    }else {
+                        verificarEnter = true;
                     }
                 }
                 return false;
