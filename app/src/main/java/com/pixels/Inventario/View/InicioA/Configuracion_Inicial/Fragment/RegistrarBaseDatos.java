@@ -20,7 +20,7 @@ public class RegistrarBaseDatos extends Fragment {
     private EditText ip,Nbasedatos,username,password;
     private VerificarConexionViewModel veriMYSQL;
     private Button boton;
-    private configuracionI Context;
+    public static configuracionI Context;
 
     public RegistrarBaseDatos(configuracionI context) {
         this.Context=context;

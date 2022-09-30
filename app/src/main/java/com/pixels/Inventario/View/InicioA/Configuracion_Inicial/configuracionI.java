@@ -17,7 +17,10 @@ import com.pixels.Inventario.ViewModel.InicioA.ConfiguracionInicial.datosInicioV
 
 public class configuracionI extends AppCompatActivity {
     private FragmentTransaction transaction;
-    private Fragment fragmentAContrasena,fragmentRBaseDatos,Inicio,fragmentCrear;
+    private AsignarContrasena fragmentAContrasena;
+    private RegistrarBaseDatos fragmentRBaseDatos;
+    private Fragment Inicio;
+    private CrearBaseDatos fragmentCrear;
     private datosInicioViewModel Mdatosincio;
     public AlertConfiguracion alert;
 
@@ -36,16 +39,22 @@ public class configuracionI extends AppCompatActivity {
     }
     public void AparecerFragmentContra(){
         fragmentAContrasena= new AsignarContrasena(configuracionI.this);
+        fragmentAContrasena.Context=configuracionI.this;
+        AsignarContrasena.Context=configuracionI.this;
         transaction=getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.contenedirFragments,fragmentAContrasena).commit();
     }
     public void AparecerFragmentBase(){
         fragmentRBaseDatos= new RegistrarBaseDatos(configuracionI.this);
+        fragmentRBaseDatos.Context=configuracionI.this;
+        RegistrarBaseDatos.Context=configuracionI.this;
         transaction=getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.contenedirFragments,fragmentRBaseDatos).commit();
     }
     public void AparecerFragmentCrearBase(){
         fragmentCrear= new CrearBaseDatos(configuracionI.this);
+        fragmentCrear.Context=configuracionI.this;
+        CrearBaseDatos.Context=configuracionI.this;
         transaction=getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.contenedirFragments,fragmentCrear).commit();
     }

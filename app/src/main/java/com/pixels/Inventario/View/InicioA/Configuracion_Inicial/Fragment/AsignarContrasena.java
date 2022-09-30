@@ -15,7 +15,7 @@ public class AsignarContrasena extends Fragment {
 
     private EditText password;
     private Button boton;
-    private configuracionI Context;
+    public static configuracionI Context;
 
     public AsignarContrasena(configuracionI context) {
         this.Context=context;

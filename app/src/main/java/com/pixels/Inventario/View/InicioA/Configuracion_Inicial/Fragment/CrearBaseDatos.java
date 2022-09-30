@@ -19,7 +19,7 @@ public class CrearBaseDatos extends Fragment {
     private EditText ip,Nbasedatos,username,password;
     private CrearBaseVerificarViewModel veriMYSQL;
     private Button boton;
-    private configuracionI Context;
+    public static configuracionI Context;
 
     public CrearBaseDatos(configuracionI context) {
         this.Context=context;
