@@ -113,9 +113,8 @@ public class Caja extends AppCompatActivity {
 
                     }else {
                         verificarEnter = true;
-                        Toast.makeText(getApplicationContext(), "se Actualizo1", Toast.LENGTH_LONG).show();
+
                     }
-                    Toast.makeText(getApplicationContext(), "se Actualizo1"+keyCode, Toast.LENGTH_LONG).show();
                 }
                 return false;
             }
