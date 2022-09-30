@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
@@ -78,8 +79,20 @@ public class Caja extends AppCompatActivity {
                             verificarEnter=true;
                         }
                     }else{
-                        VerificarCodigoC codigo=new VerificarCodigoC(Caja.this);
-                        codigo.verificarCodigo(true);
+                        if(verificarEnter){
+                            if(i[0]==0) {
+                                i[0]++;
+                                VerificarCodigoC codigo=new VerificarCodigoC(Caja.this);
+                                codigo.verificarCodigo(true);
+                                Toast.makeText(getApplicationContext(), "entro", Toast.LENGTH_LONG).show();
+                            }else{
+                                i[0]=0;
+                                verificarEnter=true;
+                            }
+                        }else{
+                            verificarEnter=true;
+                        }
+
                     }
                     return true;
                 }
