@@ -23,23 +23,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-3\\0df4cd503e142a02c8e621d7c7576092\\transformed\\jetified-android-pdf-viewer-2.8.1\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "288",
-                        "endOffsets": "339"
-                    },
-                    "to": {
-                        "startLines": "7689",
-                        "startColumns": "4",
-                        "startOffsets": "447945",
-                        "endColumns": "288",
-                        "endOffsets": "448229"
-                    }
-                },
-                {
                     "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-3\\85f9e5877a350279fc37354eb16bce17\\transformed\\jetified-viewpager2-1.0.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -276,6 +259,23 @@
                         "endLines": "49,5318,6618,6702",
                         "endColumns": "60,12,24,24",
                         "endOffsets": "2492,344474,401991,406507"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\saibo\\.gradle\\caches\\transforms-3\\3d8167ddd9beb4a91f201c23a35606a0\\transformed\\jetified-android-pdf-viewer-2.8.1\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "288",
+                        "endOffsets": "339"
+                    },
+                    "to": {
+                        "startLines": "7689",
+                        "startColumns": "4",
+                        "startOffsets": "447945",
+                        "endColumns": "288",
+                        "endOffsets": "448229"
                     }
                 },
                 {
