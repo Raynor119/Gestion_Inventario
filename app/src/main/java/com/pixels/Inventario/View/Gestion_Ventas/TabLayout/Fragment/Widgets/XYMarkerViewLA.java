@@ -165,7 +165,7 @@ public class XYMarkerViewLA extends MarkerView {
             }
         }
         NumberFormat mFormat = NumberFormat.getNumberInstance();
-        formato="Fecha: "+formato+"\n$ "+mFormat.format(e.getY());
+        formato="Fecha: "+formato+"\nTotal Vendido: $ "+mFormat.format(e.getY());
         tvContent.setText(""+formato);
 
         super.refreshContent(e, highlight);

@@ -94,12 +94,7 @@ public class GraficaLinearA extends Fragment {
         lineDataSet.setValueFormatter(new ValueFormatter() {
             @Override
             public String getFormattedValue(float value) {
-                NumberFormat mFormat = NumberFormat.getNumberInstance();
-                if(value==0){
-                    return "";
-                }else{
-                    return "$ "+mFormat.format(value);
-                }
+                return "";
             }
         });
         ArrayList<ILineDataSet> dataSets=new ArrayList<>();

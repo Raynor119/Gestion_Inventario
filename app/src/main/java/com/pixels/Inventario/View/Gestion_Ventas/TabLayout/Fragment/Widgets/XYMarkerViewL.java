@@ -38,7 +38,7 @@ public class XYMarkerViewL extends MarkerView {
             formato=""+horas+":0"+minutos;
         }
         NumberFormat mFormat = NumberFormat.getNumberInstance();
-        formato="Hora: "+formato+"\n$ "+mFormat.format(e.getY());
+        formato="Hora: "+formato+"\nTotal Vendido: $ "+mFormat.format(e.getY());
         tvContent.setText(""+formato);
 
         super.refreshContent(e, highlight);
