@@ -81,10 +81,11 @@ public class cambiarMySQL extends AppCompatActivity {
                                 modificarbasedatosViewModel modificar=ViewModelProviders.of(cambiarMySQL.this).get(modificarbasedatosViewModel.class);
                                 modificar.ModificarBaseDatos(cambiarMySQL.this,"MYSQL",ip.getText().toString(),Nbasedatos.getText().toString(),username.getText().toString(),password.getText().toString());
                                 ContextA.MenuInicioA.recreate();
+                                Toast.makeText(getApplicationContext(), "Se conecto a la Base de Datos", Toast.LENGTH_LONG).show();
                                 finish();
                             }else{
                                 ip.setError("No se puede conectar a La Base Datos");
-                                Toast.makeText(cambiarMySQL.this, "No se puede conectar a La Base Datos", Toast.LENGTH_LONG).show();
+                                Toast.makeText(cambiarMySQL.this, "No se puede conectar a la Base de Datos", Toast.LENGTH_LONG).show();
                             }
                         }
                     };

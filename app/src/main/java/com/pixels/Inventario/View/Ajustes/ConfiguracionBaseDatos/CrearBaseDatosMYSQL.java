@@ -88,6 +88,7 @@ public class CrearBaseDatosMYSQL extends AppCompatActivity {
                                 modificar.ModificarBaseDatos(CrearBaseDatosMYSQL.this,"MYSQL",ip.getText().toString(),Nbasedatos.getText().toString(),username.getText().toString(),password.getText().toString());
                                 veriMYSQL.TerminarProceso();
                                 ContextA.MenuInicioA.recreate();
+                                Toast.makeText(getApplicationContext(), "Se Creo la Base de Datos", Toast.LENGTH_LONG).show();
                                 finish();
                             }else{
                                 Toast.makeText(getApplicationContext(), "No se puede Crear la Base de Datos", Toast.LENGTH_LONG).show();

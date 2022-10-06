@@ -78,7 +78,7 @@ public class CrearBaseDatos extends Fragment {
                                 Context.usuario = username.getText().toString();
                                 Context.ucontra = password.getText().toString();
                                 veriMYSQL.TerminarProceso();
-                                Toast.makeText(getActivity(), "Se Creo La Base Datos", Toast.LENGTH_LONG).show();
+                                Toast.makeText(getActivity(), "Se Creo la Base de Datos", Toast.LENGTH_LONG).show();
                                 Context.guardarDatos();
                             }else{
                                 Toast.makeText(getActivity(), "No se puede Crear la Base de Datos", Toast.LENGTH_LONG).show();

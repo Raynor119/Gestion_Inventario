@@ -71,11 +71,11 @@ public class RegistrarBaseDatos extends Fragment {
                                 Context.usuario = username.getText().toString();
                                 Context.ucontra = password.getText().toString();
                                 veriMYSQL.TerminarProceso();
-                                Toast.makeText(getActivity(), "Se conecto a La Base Datos", Toast.LENGTH_LONG).show();
+                                Toast.makeText(getActivity(), "Se conecto a la Base de Datos", Toast.LENGTH_LONG).show();
                                 Context.guardarDatos();
                             }else{
                                 ip.setError("No se puede conectar a La Base Datos");
-                                Toast.makeText(getActivity(), "No se puede conectar a La Base Datos", Toast.LENGTH_LONG).show();
+                                Toast.makeText(getActivity(), "No se puede conectar a la Base de Datos", Toast.LENGTH_LONG).show();
                             }
                         }
                     };

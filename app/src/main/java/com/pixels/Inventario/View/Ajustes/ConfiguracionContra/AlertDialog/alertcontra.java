@@ -73,7 +73,7 @@ public class alertcontra {
        builder.setView(view);
        builder.setCancelable(false);
        builder.setTitle("Digite la Contraseña");
-       builder.setPositiveButton("Iniciar", new DialogInterface.OnClickListener() {
+       builder.setPositiveButton("Eliminar", new DialogInterface.OnClickListener() {
            @Override
            public void onClick(DialogInterface dialogInterface, int i) {
                if(cont.getText().toString().equals("")){
