@@ -1904,7 +1904,6 @@ id LDevoluciones
 id LGrafica
 id LGraficaL
 id LtotaD
-id LtotaP
 id META
 id NO_DEBUG
 id Nit
@@ -1927,7 +1926,6 @@ id TextMas
 id Total
 id TotalD
 id TotalDevolu
-id TotalP
 id TotalV
 id TotalVendido
 id VerFactura

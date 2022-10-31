@@ -60,10 +60,10 @@ public class VentasRecyclerViewAdapter extends RecyclerView.Adapter<VentasRecycl
             }catch (Exception e){
 
             }
-            holder.TotalP.setText("$ "+formato.format(VentasTotales.get(position).getPerdidaD()));
+           // holder.TotalP.setText("$ "+formato.format(VentasTotales.get(position).getPerdidaD()));
             holder.TotalD.setText("$ "+formato.format(VentasTotales.get(position).getTotalD()));
             holder.LTotalD.setVisibility(ConstraintLayout.VISIBLE);
-            holder.LTotalP.setVisibility(ConstraintLayout.VISIBLE);
+            //holder.LTotalP.setVisibility(ConstraintLayout.VISIBLE);
         }else{
             try {
                 holder.imagen.setImageResource(R.mipmap.ventad_adaptive_fore);
@@ -73,7 +73,7 @@ public class VentasRecyclerViewAdapter extends RecyclerView.Adapter<VentasRecycl
 
             }
             holder.LTotalD.setVisibility(ConstraintLayout.GONE);
-            holder.LTotalP.setVisibility(ConstraintLayout.GONE);
+           // holder.LTotalP.setVisibility(ConstraintLayout.GONE);
         }
         holder.TotalV.setText("$ "+formato.format(VentasTotales.get(position).getTotalV()));
         int possition=position;
@@ -94,8 +94,8 @@ public class VentasRecyclerViewAdapter extends RecyclerView.Adapter<VentasRecycl
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
-        final TextView CodigoV,Fecha,CantidadPV,GananciaN,TotalP,TotalD,TotalV;
-        final LinearLayout LTotalP,LTotalD;
+        final TextView CodigoV,Fecha,CantidadPV,GananciaN,TotalD,TotalV;
+        final LinearLayout LTotalD;
         ImageView imagen=null;
         ViewHolder(View view) {
             super(view);
@@ -103,12 +103,12 @@ public class VentasRecyclerViewAdapter extends RecyclerView.Adapter<VentasRecycl
             Fecha=(TextView) view.findViewById(R.id.fecha);
             CantidadPV=(TextView) view.findViewById(R.id.CPV);
             GananciaN=(TextView) view.findViewById(R.id.ganaN);
-            TotalP=(TextView) view.findViewById(R.id.TotalP);
+            //TotalP=(TextView) view.findViewById(R.id.TotalP);
             TotalD=(TextView) view.findViewById(R.id.TotalD);
             TotalV=(TextView) view.findViewById(R.id.TotalV);
 
             LTotalD=(LinearLayout) view.findViewById(R.id.LtotaD);
-            LTotalP=(LinearLayout) view.findViewById(R.id.LtotaP);
+           // LTotalP=(LinearLayout) view.findViewById(R.id.LtotaP);
 
             try{
                 imagen=(ImageView) view.findViewById(R.id.imagen);

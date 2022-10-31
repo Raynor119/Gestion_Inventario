@@ -1903,7 +1903,6 @@ int id LDevoluciones 0x7f08001d
 int id LGrafica 0x7f08001e
 int id LGraficaL 0x7f08001f
 int id LtotaD 0x7f080020
-int id LtotaP 0x7f080021
 int id META 0x7f080022
 int id NO_DEBUG 0x7f080023
 int id Nit 0x7f080024
@@ -1926,7 +1925,6 @@ int id TextMas 0x7f080035
 int id Total 0x7f080036
 int id TotalD 0x7f080037
 int id TotalDevolu 0x7f080038
-int id TotalP 0x7f080039
 int id TotalV 0x7f08003a
 int id TotalVendido 0x7f08003b
 int id VerFactura 0x7f08003c
