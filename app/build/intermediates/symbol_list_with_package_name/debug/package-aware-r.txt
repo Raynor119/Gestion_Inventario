@@ -1928,6 +1928,7 @@ id TotalD
 id TotalDevolu
 id TotalV
 id TotalVendido
+id TotalVendidoN
 id VerFactura
 id accelerate
 id accessibility_action_clickable_span

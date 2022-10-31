@@ -38,7 +38,7 @@ public class DiariasFragment extends Fragment {
 
     private TextInputEditText calendarioEditText;
     public RecyclerView reciclerView;
-    private TextView costototal,totalP,totalDevo,impuesto,totalGananNeta,TotalVendido;
+    private TextView costototal,totalP,totalVn,totalDevo,impuesto,totalGananNeta,TotalVendido;
     private CardView BGraficaC;
     private LinearLayout LGrafica;
     private CardView BGraficaL;
@@ -61,6 +61,7 @@ public class DiariasFragment extends Fragment {
         totalDevo=(TextView) rootView.findViewById(R.id.TotalDevolu);
         impuesto=(TextView) rootView.findViewById(R.id.IvaP);
         totalGananNeta=(TextView) rootView.findViewById(R.id.GananN);
+        totalVn=(TextView) rootView.findViewById(R.id.TotalVendidoN);
         TotalVendido=(TextView) rootView.findViewById(R.id.TotalVendido);
         LGrafica=(LinearLayout) rootView.findViewById(R.id.LGrafica);
         LGrafica.setVisibility(ConstraintLayout.VISIBLE);
@@ -183,6 +184,7 @@ public class DiariasFragment extends Fragment {
                 int totalDevolu=0;
                 double impuestoiva=0;
                 double GananN=0;
+                int totalVN=0;
                 int totalV=0;
                 for(int i=0;i<ventasD.size();i++){
                     costototalIndex=costototalIndex+ventasD.get(i).getCostoV();
@@ -191,6 +193,7 @@ public class DiariasFragment extends Fragment {
                     totalDevolu=totalDevolu+ventasD.get(i).getTotalD();
                     impuestoiva=impuestoiva+ventasD.get(i).getTotalIvaP();
                     GananN=GananN+ventasD.get(i).getGananciaNeta();
+                    totalVN=totalVN+(ventasD.get(i).getTotalV()-ventasD.get(i).getTotalD());
                     totalV=totalV+ventasD.get(i).getTotalV();
                 }
                 NumberFormat formato= NumberFormat.getNumberInstance();
@@ -199,10 +202,10 @@ public class DiariasFragment extends Fragment {
                 BigDecimal bdGN = new BigDecimal(GananN);
                 bdGN = bdGN.setScale(0, RoundingMode.HALF_UP);
                 costototal.setText("$ "+formato.format(costototalIndex));
-
                 totalDevo.setText("$ "+formato.format(totalDevolu));
                 impuesto.setText("$ "+formato.format(bdIva.doubleValue()));
                 totalGananNeta.setText("$ "+formato.format(bdGN.doubleValue()));
+                totalVn.setText("$ "+formato.format(totalVN));
                 TotalVendido.setText("$ "+formato.format(totalV));
 
                 LGraficaL.setVisibility(ConstraintLayout.VISIBLE);
@@ -224,6 +227,7 @@ public class DiariasFragment extends Fragment {
         totalDevo.setText("$ 0");
         impuesto.setText("$ 0");
         totalGananNeta.setText("$ 0");
+        totalVn.setText("$ 0");
         TotalVendido.setText("$ 0");
     }
 

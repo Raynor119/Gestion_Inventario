@@ -1927,6 +1927,7 @@ int id TotalD 0x7f080037
 int id TotalDevolu 0x7f080038
 int id TotalV 0x7f08003a
 int id TotalVendido 0x7f08003b
+int id TotalVendidoN 0x7f080230
 int id VerFactura 0x7f08003c
 int id accelerate 0x7f08003d
 int id accessibility_action_clickable_span 0x7f08003e
