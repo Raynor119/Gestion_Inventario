@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="agregar_margin_cantidad">150dp</dimen>
-    <dimen name="agregar_margin_espacio">7dp</dimen>
-    <dimen name="agregar_margin_spinner">140dp</dimen>
-</resources>
