@@ -9,10 +9,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4744bf36-53ef-4cbd-8a1d-92c633b0e80e" name="Changes" comment="copia de seguridad v47  agregacionde venta neta">
+    <list default="true" id="4744bf36-53ef-4cbd-8a1d-92c633b0e80e" name="Changes" comment="copia de seguridad v47.1  agregacionde venta neta">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/MensualesFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/MensualesFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_mensuales.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_mensuales.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Inventario/View/Gestion_Ventas/TabLayout/Fragment/AnualesFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_anuales.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_anuales.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667196863740</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="copia de seguridad v47.1  agregacionde venta neta">
+      <created>1667197569630</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667197569630</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,6 +190,7 @@
     <MESSAGE value="copia de seguridad v46.2 eliminarcion de perdida total" />
     <MESSAGE value="copia de seguridad v46.3 eliminarcion de perdida total" />
     <MESSAGE value="copia de seguridad v47  agregacionde venta neta" />
-    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v47  agregacionde venta neta" />
+    <MESSAGE value="copia de seguridad v47.1  agregacionde venta neta" />
+    <option name="LAST_COMMIT_MESSAGE" value="copia de seguridad v47.1  agregacionde venta neta" />
   </component>
 </project>
