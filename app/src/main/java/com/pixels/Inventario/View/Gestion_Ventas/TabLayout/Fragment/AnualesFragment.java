@@ -60,7 +60,7 @@ public class AnualesFragment extends Fragment {
         calendarioEditText.setEnabled(false);
         calendarioEditText.setText(getAnno());
         costototal=(TextView) rootView.findViewById(R.id.CostoTotal);
-        totalP=(TextView) rootView.findViewById(R.id.Perdida);
+        //totalP=(TextView) rootView.findViewById(R.id.Perdida);
         totalDevo=(TextView) rootView.findViewById(R.id.TotalDevolu);
         impuesto=(TextView) rootView.findViewById(R.id.IvaP);
         totalGananNeta=(TextView) rootView.findViewById(R.id.GananN);
@@ -163,7 +163,8 @@ public class AnualesFragment extends Fragment {
                 int totalV=0;
                 for(int i=0;i<ventasD.size();i++){
                     costototalIndex=costototalIndex+ventasD.get(i).getCostoV();
-                    totalPerdida=totalPerdida+ventasD.get(i).getPerdidaD();
+                    //total de perdidas se quita por que un producto devuelto no es necesariamente es una perdida
+                    //totalPerdida=totalPerdida+ventasD.get(i).getPerdidaD();
                     totalDevolu=totalDevolu+ventasD.get(i).getTotalD();
                     impuestoiva=impuestoiva+ventasD.get(i).getTotalIvaP();
                     GananN=GananN+ventasD.get(i).getGananciaNeta();
@@ -175,7 +176,7 @@ public class AnualesFragment extends Fragment {
                 BigDecimal bdGN = new BigDecimal(GananN);
                 bdGN = bdGN.setScale(0, RoundingMode.HALF_UP);
                 costototal.setText("$ "+formato.format(costototalIndex));
-                totalP.setText("$ "+formato.format(totalPerdida));
+                //totalP.setText("$ "+formato.format(totalPerdida));
                 totalDevo.setText("$ "+formato.format(totalDevolu));
                 impuesto.setText("$ "+formato.format(bdIva.doubleValue()));
                 totalGananNeta.setText("$ "+formato.format(bdGN.doubleValue()));
@@ -196,7 +197,7 @@ public class AnualesFragment extends Fragment {
 
     public void resertTextView(){
         costototal.setText("$ 0");
-        totalP.setText("$ 0");
+        //totalP.setText("$ 0");
         totalDevo.setText("$ 0");
         impuesto.setText("$ 0");
         totalGananNeta.setText("$ 0");

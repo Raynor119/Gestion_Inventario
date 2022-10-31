@@ -1911,7 +1911,6 @@ id Nit
 id NombreR
 id Observacion
 id ObservacionD
-id Perdida
 id Precio
 id RadioMysqlButton
 id RadioSQLiteButton
