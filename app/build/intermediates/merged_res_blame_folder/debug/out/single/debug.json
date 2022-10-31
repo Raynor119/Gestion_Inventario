@@ -1,15 +1,19 @@
 [
     {
-        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\mipmap-xhdpi_compartirmas_adaptive_fore.png.flat",
-        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\mipmap-xhdpi\\compartirmas_adaptive_fore.png"
+        "merged": "com.pixels.Inventario.app-merged_res-23:/layout_fragment_mensuales.xml.flat",
+        "source": "com.pixels.Inventario.app-main-25:/layout/fragment_mensuales.xml"
+    },
+    {
+        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout-w1600dp_activity_detalles_ventas.xml.flat",
+        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout-w1600dp\\activity_detalles_ventas.xml"
     },
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout_fragmentgraficacolumna.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout\\fragmentgraficacolumna.xml"
     },
     {
-        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout-w1600dp_activity_detalles_ventas.xml.flat",
-        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout-w1600dp\\activity_detalles_ventas.xml"
+        "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\mipmap-xhdpi_compartirmas_adaptive_fore.png.flat",
+        "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\mipmap-xhdpi\\compartirmas_adaptive_fore.png"
     },
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout-w800dp_activity_menuinicio.xml.flat",
@@ -266,10 +270,6 @@
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout-w1900dp_producto_caja.xml.flat",
         "source": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-main-25:\\layout-w1900dp\\producto_caja.xml"
-    },
-    {
-        "merged": "com.pixels.Inventario.app-merged_res-23:/layout_fragment_diarias.xml.flat",
-        "source": "com.pixels.Inventario.app-main-25:/layout/fragment_diarias.xml"
     },
     {
         "merged": "C:\\Users\\saibo\\.gradle\\daemon\\7.5\\com.pixels.Inventario.app-merged_res-23:\\layout-w1700dp_fragment_ver_ventas.xml.flat",
