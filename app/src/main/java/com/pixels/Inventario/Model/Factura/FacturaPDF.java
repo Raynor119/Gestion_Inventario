@@ -38,7 +38,7 @@ public class FacturaPDF {
     private Document document;
     private PdfWriter FacturaEscribir;
     private Paragraph paragraph;
-    private Font Ftitulo,FsubTitulo,Ftext,FhighText;
+    private Font Ftitulo,FsubTitulo,Ftext,FhighText,FCode;
 
     public FacturaPDF(Context context, String codigoV,String fechaV,String basedatos) {
         this.Context=context;
@@ -48,6 +48,7 @@ public class FacturaPDF {
         this.Ftitulo=new Font(Font.FontFamily.TIMES_ROMAN,20,Font.BOLD);
         this.FsubTitulo=new Font(Font.FontFamily.TIMES_ROMAN,20,Font.BOLD);
         this.Ftext=new Font(Font.FontFamily.TIMES_ROMAN,20,Font.BOLD);
+        this.FCode=new Font(Font.FontFamily.TIMES_ROMAN,22,Font.BOLD);
         this.FhighText=new Font(Font.FontFamily.TIMES_ROMAN,20,Font.BOLD, BaseColor.BLUE);
     }
 
@@ -258,8 +259,11 @@ public class FacturaPDF {
             Paragraph paragraph1=new Paragraph();
             paragraph1.add(imagen);
             paragraph1.setAlignment(Element.ALIGN_CENTER);
+            Paragraph paragraph2=new Paragraph(CodigoV,FCode);
+            paragraph2.setAlignment(Element.ALIGN_CENTER);
             paragraph=new Paragraph();
             paragraph.add(paragraph1);
+            paragraph.add(paragraph2);
             paragraph.setSpacingAfter(20);
             paragraph.setSpacingBefore(20);
             document.add(paragraph);
