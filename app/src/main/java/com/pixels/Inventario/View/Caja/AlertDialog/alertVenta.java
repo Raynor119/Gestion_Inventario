@@ -78,7 +78,7 @@ public class alertVenta {
                         if(permisos== PackageManager.PERMISSION_GRANTED){
                             vcerificar=true;
                         }else{
-                            Toast.makeText(Context, "Error al realizar la venta conceda los permosos de almacenamiento", Toast.LENGTH_LONG).show();
+                            Toast.makeText(Context, "Error al realizar la venta conceda los permisos de almacenamiento", Toast.LENGTH_LONG).show();
                             Context.requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},code);
                         }
                         if(vcerificar){

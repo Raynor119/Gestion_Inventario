@@ -40,7 +40,7 @@ import java.util.List;
 public class DetallesVentas extends AppCompatActivity {
 
     private String Fecha,Efectivo,Codigo;
-    private TextView TCodigo,TFecha,TEfectivo,TCambio,TSubTotal,TIva,TTotalV,TTextMas,TDevolu;
+    private TextView TCodigo,TFecha,TEfectivo,TCambio,TSubTotal,TIva,TTotalV,TTextMas,TDevolu,codebar;
     private LinearLayout LDetalles,LDevoluciones;
     private CardView Masdetalles;
     private ImageView IcodigoBarras;
@@ -60,10 +60,12 @@ public class DetallesVentas extends AppCompatActivity {
         TFecha=(TextView) findViewById(R.id.fecha);
         TEfectivo=(TextView) findViewById(R.id.Efectivo);
         IcodigoBarras=(ImageView) findViewById(R.id.codigoBarras);
+        codebar=(TextView) findViewById(R.id.codiobar);
         BarcodeEncoder barcodeEncoder=new BarcodeEncoder();
         try {
             Bitmap bitmap=barcodeEncoder.encodeBitmap(Codigo, BarcodeFormat.CODE_128,580,80);
             IcodigoBarras.setImageBitmap(bitmap);
+            codebar.setText(""+Codigo);
         } catch (Exception e) {
 
         }

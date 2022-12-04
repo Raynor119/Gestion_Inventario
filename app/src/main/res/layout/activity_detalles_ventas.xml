@@ -237,11 +237,25 @@
                                android:textSize="23sp" />
                        </LinearLayout>
 
-                       <ImageView
-                           android:id="@+id/codigoBarras"
+                       <LinearLayout
+                           android:layout_marginTop="20dp"
+                           android:orientation="vertical"
                            android:layout_width="match_parent"
-                           android:layout_height="50dp"
-                           android:layout_marginTop="10dp"/>
+                           android:layout_height="wrap_content">
+                           <ImageView
+                               android:id="@+id/codigoBarras"
+                               android:layout_width="match_parent"
+                               android:layout_height="50dp" />
+                           <TextView
+                               android:id="@+id/codiobar"
+                               android:layout_width="match_parent"
+                               android:textColor="#000000"
+                               android:gravity="center"
+                               android:textSize="16dp"
+                               android:layout_height="wrap_content"
+                               android:text="1"/>
+                       </LinearLayout>
+
                    </LinearLayout>
 
                    <androidx.cardview.widget.CardView
