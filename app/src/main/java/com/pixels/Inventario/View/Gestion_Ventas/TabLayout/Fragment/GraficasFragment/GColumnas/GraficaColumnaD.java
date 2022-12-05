@@ -142,10 +142,16 @@ public class GraficaColumnaD extends Fragment {
         String c="";
         consultasDatos dinici=new consultasDatos(getActivity());
         if(dinici.obtenerD().get(0).getBasedatos().equals("SQLITE")){
-            if(mes<10){
-                c="WHERE DATE(Venta.Fecha) = '"+anno+"-"+("0"+mes)+"-"+dia+"' GROUP BY VentasProductos.codigoP ORDER BY TotalV DESC LIMIT 10";
+            String diaa="";
+            if(dia<10){
+                diaa="0"+dia;
             }else{
-                c="WHERE DATE(Venta.Fecha) = '"+anno+"-"+mes+"-"+dia+"' GROUP BY VentasProductos.codigoP ORDER BY TotalV DESC LIMIT 10";
+                diaa=""+dia;
+            }
+            if(mes<10){
+                c="WHERE strftime('%Y', Venta.Fecha) = '"+anno+"' AND strftime('%m', Venta.Fecha) = '"+("0"+mes)+"' AND strftime('%d', Venta.Fecha) = '"+diaa+"' GROUP BY VentasProductos.codigoP ORDER BY TotalV DESC LIMIT 10";
+            }else{
+                c="WHERE strftime('%Y', Venta.Fecha) = '"+anno+"' AND strftime('%m', Venta.Fecha) = '"+mes+"' AND strftime('%d', Venta.Fecha) = '"+diaa+"' GROUP BY VentasProductos.codigoP ORDER BY TotalV DESC LIMIT 10";
             }
 
         }
