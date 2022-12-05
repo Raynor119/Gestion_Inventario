@@ -60,6 +60,7 @@ public class GraficaLinearA extends Fragment {
         data.add(new Entry(1,0));
         boolean verificar=true;
         boolean verificarI=false;
+        boolean verificarD=false;
         for(int i=0;i<VentasD.size();i++){
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             try {
@@ -71,6 +72,10 @@ public class GraficaLinearA extends Fragment {
                 data.add(new Entry(mes,((float)VentasD.get(i).getTotalV())));
                 if(mes>10){
                     verificar=false;
+                }
+                if(mes>11.9){
+                    verificarD=true;
+                    System.out.println("mes: "+mes);
                 }
                 if(mes<1){
                     verificarI=true;
@@ -85,6 +90,13 @@ public class GraficaLinearA extends Fragment {
         }
         if(verificar){
             data.add(new Entry(12,0));
+        }else{
+            if(verificarD){
+                data.add(new Entry(13,0));
+                System.out.println("verificar verdadero");
+            }else{
+                data.add(new Entry(12,0));
+            }
         }
         LineDataSet lineDataSet=new LineDataSet(data,"Total Vendido");
         lineDataSet.setColors(ColorTemplate.rgb("0090FD"));
@@ -121,7 +133,11 @@ public class GraficaLinearA extends Fragment {
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
         xAxis.setDrawGridLines(false);
         xAxis.setDrawAxisLine(true);
-        xAxis.setAxisMaximum(12);
+        if(verificarD){
+            xAxis.setAxisMaximum(13);
+        }else{
+            xAxis.setAxisMaximum(12);
+        }
         xAxis.setAxisMinimum(1);
         xAxis.setValueFormatter(new ValueFormatter() {
             @Override
