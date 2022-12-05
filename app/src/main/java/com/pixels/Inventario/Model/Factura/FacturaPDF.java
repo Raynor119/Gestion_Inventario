@@ -263,9 +263,13 @@ public class FacturaPDF {
             paragraph2.setAlignment(Element.ALIGN_CENTER);
             paragraph=new Paragraph();
             paragraph.add(paragraph1);
-            paragraph.add(paragraph2);
             paragraph.setSpacingAfter(20);
             paragraph.setSpacingBefore(20);
+            document.add(paragraph);
+            paragraph=new Paragraph();
+            paragraph.add(paragraph2);
+            paragraph.setSpacingAfter(20);
+            paragraph.setSpacingBefore(0);
             document.add(paragraph);
         }catch (Exception e){
             Toast.makeText(Context, "Error al Cargar la Factura Codgio de Barras", Toast.LENGTH_LONG).show();
