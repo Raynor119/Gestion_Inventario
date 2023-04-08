@@ -51,27 +51,9 @@ public class BuscarProductos {
                     ReciclerView.setAdapter(null);
                     for (int ii=0;ii<Productos.size();ii++){
                         String codigo=Productos.get(ii).getCodigo();
-                        String auxiliarc="";
                         String nombre=Productos.get(ii).getNombre();
-                        String auxiliar="";
-                        boolean verificarC=false;
-                        boolean verificarN=false;
-                        if(codigo.length()>=Sfiltro.length()){
-                            for(int b=0;b<Sfiltro.length();b++){
-                                auxiliarc=auxiliarc+codigo.charAt(b);
-                            }
-                            if(Sfiltro.equals(auxiliarc+"")){
-                                verificarC=true;
-                            }
-                        }
-                        if(nombre.length()>=Sfiltro.length()){
-                            for(int b=0;b<Sfiltro.length();b++){
-                                auxiliar=auxiliar+nombre.charAt(b);
-                            }
-                            if (Sfiltro.equals(auxiliar+"")){
-                                verificarN=true;
-                            }
-                        }
+                        boolean verificarC=codigo.contains(Sfiltro);
+                        boolean verificarN=nombre.contains(Sfiltro);
                         if(verificarC || verificarN){
                             listaF.add(new Producto(Productos.get(ii).getCodigo(),Productos.get(ii).getNombre(),Productos.get(ii).getCantidad(),Productos.get(ii).getTipoC(),Productos.get(ii).getCosteP(),Productos.get(ii).getPrecio(),Productos.get(ii).getIva()));
                         }
@@ -87,27 +69,9 @@ public class BuscarProductos {
         ReciclerView.setAdapter(null);
         for (int ii=0;ii<Productos.size();ii++){
             String codigo=Productos.get(ii).getCodigo();
-            String auxiliarc="";
             String nombre=Productos.get(ii).getNombre();
-            String auxiliar="";
-            boolean verificarC=false;
-            boolean verificarN=false;
-            if(codigo.length()>=Sfiltro.length()){
-                for(int b=0;b<Sfiltro.length();b++){
-                    auxiliarc=auxiliarc+codigo.charAt(b);
-                }
-                if(Sfiltro.equals(auxiliarc+"")){
-                    verificarC=true;
-                }
-            }
-            if(nombre.length()>=Sfiltro.length()){
-                for(int b=0;b<Sfiltro.length();b++){
-                    auxiliar=auxiliar+nombre.charAt(b);
-                }
-                if (Sfiltro.equals(auxiliar+"")){
-                    verificarN=true;
-                }
-            }
+            boolean verificarC=codigo.contains(Sfiltro);
+            boolean verificarN=nombre.contains(Sfiltro);
             if(verificarC || verificarN){
                 listaF.add(new Producto(Productos.get(ii).getCodigo(),Productos.get(ii).getNombre(),Productos.get(ii).getCantidad(),Productos.get(ii).getTipoC(),Productos.get(ii).getCosteP(),Productos.get(ii).getPrecio(),Productos.get(ii).getIva()));
             }
