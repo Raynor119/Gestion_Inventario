@@ -133,10 +133,15 @@ public class VerInventarioFragment extends Fragment {
         final Observer<List<Producto>> observer= new Observer<List<Producto>>() {
             @Override
             public void onChanged(List<Producto> productos) {
-                Buscardor.setText("");
-                reciclerView.setAdapter(new ProductosRecyclerViewAdapter(getActivity(),productos,VerInventarioFragment.this));
-                BuscarProductos buscar=new BuscarProductos(getActivity(),productos,VerInventarioFragment.this,reciclerView);
-                Buscardor.addTextChangedListener(buscar.buscador(Buscardor));
+                if(Buscardor.getText().toString().equals("")){
+                    reciclerView.setAdapter(new ProductosRecyclerViewAdapter(getActivity(),productos,VerInventarioFragment.this));
+                    BuscarProductos buscar=new BuscarProductos(getActivity(),productos,VerInventarioFragment.this,reciclerView);
+                    Buscardor.addTextChangedListener(buscar.buscador(Buscardor));
+                }else{
+                    BuscarProductos buscar=new BuscarProductos(getActivity(),productos,VerInventarioFragment.this,reciclerView);
+                    buscar.filtro(Buscardor);
+                    Buscardor.addTextChangedListener(buscar.buscador(Buscardor));
+                }
             }
         };
         productos.getResultado().observe(getActivity(),observer);
