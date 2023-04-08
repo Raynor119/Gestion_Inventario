@@ -19,7 +19,7 @@
             android:weightSum="12">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
+                android:layout_height="210dp"
                 android:background="@color/colorPrimary"
                 android:orientation="vertical">
                 <LinearLayout
@@ -47,8 +47,48 @@
         android:textColor="#FFFFFF"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"/>
+
     <androidx.cardview.widget.CardView
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="125dp"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginRight="218dp"
+        android:layout_marginLeft="218dp"
+        android:background="@color/whiteCardColor"
+        app:cardCornerRadius="10dp"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            xmlns:card_view="http://schemas.android.com/tools"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_marginTop="0dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:id="@+id/EditCodigoB"
+                    android:layout_height="wrap_content"
+                    android:hint="Buscar Productos"
+                    app:endIconMode="clear_text">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/codigoB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="200dp"
         android:layout_width="match_parent"
         android:layout_marginBottom="30dp"
         android:layout_height="match_parent"
