@@ -1890,6 +1890,7 @@ id CosteP
 id CostoTotal
 id Devolu
 id EditCodigo
+id EditCodigoB
 id Efectivo
 id Escaner
 id FUNCTION
@@ -2044,6 +2045,7 @@ id clip_horizontal
 id clip_vertical
 id clockwise
 id codigo
+id codigoB
 id codigoBarras
 id codiobar
 id collapseActionView

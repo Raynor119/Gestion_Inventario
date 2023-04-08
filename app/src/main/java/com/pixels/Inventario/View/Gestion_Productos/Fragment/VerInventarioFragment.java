@@ -20,12 +20,15 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.R;
 import com.pixels.Inventario.View.Ajustes.Ajustes;
 import com.pixels.Inventario.View.Ajustes.AlertDialog.AlertContrasenaB;
 import com.pixels.Inventario.View.Gestion_Productos.AgregarProductos.AgregarProductos;
 import com.pixels.Inventario.View.Gestion_Productos.RecyclerViewAdaptador.ProductosRecyclerViewAdapter;
+import com.pixels.Inventario.View.Gestion_Productos.TextWatcher.BuscarProductos;
 import com.pixels.Inventario.View.Gestion_Productos.VerInventario;
 import com.pixels.Inventario.View.InicioA.Configuracion_Inicial.Fragment.InicioBlanco;
 import com.pixels.Inventario.View.Menu_Inicio.MenuInicio;
@@ -44,6 +47,8 @@ public class VerInventarioFragment extends Fragment {
 
     public AppCompatActivity Context;
     public RecyclerView reciclerView;
+    public TextInputEditText Buscardor;
+    public TextInputLayout BBuscador;
     public boolean verInventario=true;
 
     public VerInventarioFragment(){
@@ -66,6 +71,8 @@ public class VerInventarioFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_inventario_productos, container, false);
+        Buscardor = rootView.findViewById(R.id.codigoB);
+        BBuscador = rootView.findViewById(R.id.EditCodigoB);
         reciclerView= rootView.findViewById(R.id.opcion_list);
         try {
             ImageView cargar=(ImageView) rootView.findViewById(R.id.cargar);
@@ -126,7 +133,10 @@ public class VerInventarioFragment extends Fragment {
         final Observer<List<Producto>> observer= new Observer<List<Producto>>() {
             @Override
             public void onChanged(List<Producto> productos) {
+                Buscardor.setText("");
                 reciclerView.setAdapter(new ProductosRecyclerViewAdapter(getActivity(),productos,VerInventarioFragment.this));
+                BuscarProductos buscar=new BuscarProductos(getActivity(),productos,VerInventarioFragment.this,reciclerView);
+                Buscardor.addTextChangedListener(buscar.buscador(Buscardor));
             }
         };
         productos.getResultado().observe(getActivity(),observer);

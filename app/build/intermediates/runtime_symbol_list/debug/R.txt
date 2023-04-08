@@ -1889,6 +1889,7 @@ int id CosteP 0x7f08000f
 int id CostoTotal 0x7f080010
 int id Devolu 0x7f080011
 int id EditCodigo 0x7f080012
+int id EditCodigoB 0x7f08022f
 int id Efectivo 0x7f080013
 int id Escaner 0x7f080014
 int id FUNCTION 0x7f080015
@@ -2043,6 +2044,7 @@ int id clip_horizontal 0x7f0800a9
 int id clip_vertical 0x7f0800aa
 int id clockwise 0x7f0800ab
 int id codigo 0x7f0800ac
+int id codigoB 0x7f080231
 int id codigoBarras 0x7f0800ad
 int id codiobar 0x7f0800ae
 int id collapseActionView 0x7f0800af
