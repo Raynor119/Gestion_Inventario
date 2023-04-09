@@ -8,8 +8,11 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import com.pixels.Inventario.Model.DatosE.Producto;
 import com.pixels.Inventario.R;
+import com.pixels.Inventario.View.Caja.AlertDialog.TextWatcher.Buscarproduct;
 import com.pixels.Inventario.View.Caja.Caja;
 import com.pixels.Inventario.View.Caja.RecyclerViewAdaptador.alertRecyclerViewAdapter;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.ProductosRecyclerViewModel;
@@ -19,6 +22,9 @@ import java.util.List;
 public class alertbuscar {
     public Caja Context;
     public RecyclerView recycler;
+
+    public TextInputEditText Buscardor;
+    public TextInputLayout BBuscador;
 
     public alertbuscar(Caja context){
         this.Context=context;
@@ -32,6 +38,8 @@ public class alertbuscar {
         builder.setTitle("Buscar Productos");
         AlertDialog dialog = builder.create();
         recycler= view.findViewById(R.id.opcion_list);
+        Buscardor = view.findViewById(R.id.codigoB);
+        BBuscador = view.findViewById(R.id.EditCodigoB);
         ProductosRecyclerViewModel productos= ViewModelProviders.of(Context).get(ProductosRecyclerViewModel.class);
         productos.reset();
         productos.buscarProductos(Context);
@@ -42,8 +50,16 @@ public class alertbuscar {
 
                     @Override
                     public void run() {
-                        recycler.setAdapter(new alertRecyclerViewAdapter(productos,Context,dialog,alertbuscar.this));
-                        reiniciar(productos,dialog);
+                        if(Buscardor.getText().toString().equals("")){
+                            recycler.setAdapter(new alertRecyclerViewAdapter(productos,Context,dialog,alertbuscar.this));
+                            Buscarproduct buscar=new Buscarproduct(Context,productos,alertbuscar.this,recycler,dialog);
+                            Buscardor.addTextChangedListener(buscar.buscador(Buscardor));
+                            reiniciar(productos,dialog);
+                        }else{
+                            Buscarproduct buscar=new Buscarproduct(Context,productos,alertbuscar.this,recycler,dialog);
+                            Buscardor.addTextChangedListener(buscar.buscador(Buscardor));
+                            reiniciar(productos,dialog);
+                        }
                     }
                 },100);
             }
@@ -54,5 +70,7 @@ public class alertbuscar {
     }
     public void reiniciar(List<Producto> Productos,AlertDialog dialog){
         recycler.setAdapter(new alertRecyclerViewAdapter(Productos,Context,dialog,alertbuscar.this));
+        Buscarproduct buscar=new Buscarproduct(Context,Productos,alertbuscar.this,recycler,dialog);
+        Buscardor.addTextChangedListener(buscar.buscador(Buscardor));
     }
 }
