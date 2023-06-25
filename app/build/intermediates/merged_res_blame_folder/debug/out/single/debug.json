@@ -1,694 +1,694 @@
 [
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_productovendido.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/productovendido.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_buscar_re.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/buscar_re.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_cambiar_my_sql.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_cambiar_my_sql.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_inventario_productos.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_inventario_productos.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertiva.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertiva.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_productos.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/productos.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_productos_adaptive_fore.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/productos_adaptive_fore.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_fragment_modificarcontra.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/fragment_modificarcontra.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1000dp_date_picker_dialog.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1000dp/date_picker_dialog.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_iconic_adaptive_fore.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/iconic_adaptive_fore.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_editar_adaptive_fore.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/editar_adaptive_fore.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_config_contra.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_config_contra.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_activity_caja.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/activity_caja.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_fragment_inventario_productos.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/fragment_inventario_productos.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_fragmentgraficacolumna.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/fragmentgraficacolumna.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1600dp_producto_caja.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1600dp/producto_caja.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_inicio.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_inicio.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1700dp_fragment_agsinarcontrasena.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1700dp/fragment_agsinarcontrasena.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_buscar_re_adaptive_fore.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/buscar_re_adaptive_fore.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_salir_adaptive_fore.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/salir_adaptive_fore.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_detalles_ventas.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_detalles_ventas.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_buscar_re_adaptive_back.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/buscar_re_adaptive_back.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_activity_menuinicio.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/activity_menuinicio.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1400dp_activity_detalles_ventas.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1400dp/activity_detalles_ventas.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1400dp_fragment_registrar_base_datos.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1400dp/fragment_registrar_base_datos.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1700dp_fragment_modificarcontra.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1700dp/fragment_modificarcontra.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1900dp_activity_detalles_ventas.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1900dp/activity_detalles_ventas.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_crear_base_datos_mysql.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_crear_base_datos_mysql.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_buscar_re_adaptive_back.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/buscar_re_adaptive_back.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_editar.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/editar.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_calendarios_adaptive_back.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/calendarios_adaptive_back.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_productos_adaptive_fore.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/productos_adaptive_fore.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_recivo.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/recivo.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ajustes_adaptive_back.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/ajustes_adaptive_back.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w400dp_venta_ver.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w400dp/venta_ver.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_agregar_adaptive_fore.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/agregar_adaptive_fore.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_importar_datos.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_importar_datos.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_exportar_datos.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_exportar_datos.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_fragment_diarias.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/fragment_diarias.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_productos_adaptive_back.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/productos_adaptive_back.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertdevolucion.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertdevolucion.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/drawable_ic_login_nk.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/drawable/ic_login_nk.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/drawable_ic_login_nk.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/drawable/ic_login_nk.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1700dp_fragment_ver_ventas.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1700dp/fragment_ver_ventas.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_editar_adaptive_back.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/editar_adaptive_back.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_menuinicio.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_menuinicio.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_ajustes.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_ajustes.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ventas.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/ventas.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_producto_detail_container.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/producto_detail_container.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_agregar.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/agregar.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertdialogonitnombre.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertdialogonitnombre.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_fragment_agsinarcontrasena.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/fragment_agsinarcontrasena.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertefectivo.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertefectivo.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_tipocantidad.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/tipocantidad.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_eliminar_adaptive_fore.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/eliminar_adaptive_fore.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1000dp_activity_detalles_ventas.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1000dp/activity_detalles_ventas.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertcambiobasedatos.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertcambiobasedatos.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_agregar_productos.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_agregar_productos.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_fragment_ver_ventas.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/fragment_ver_ventas.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_activity_inventario_productos.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/activity_inventario_productos.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_fragment_registrar_base_datos.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/fragment_registrar_base_datos.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_iconic_adaptive_back.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/iconic_adaptive_back.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_cajad_adaptive_fore.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/cajad_adaptive_fore.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_buscar_re_adaptive_fore.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/buscar_re_adaptive_fore.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ventaid.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/ventaid.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_activity_ajustes.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/activity_ajustes.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_list_products_adaptive_back.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/list_products_adaptive_back.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_agregar_adaptive_back.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/agregar_adaptive_back.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertcantidadd.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertcantidadd.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_anno_picker_dialog.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/anno_picker_dialog.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/drawable_login_button_bkdt.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/drawable/login_button_bkdt.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1400dp_activity_caja.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1400dp/activity_caja.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_fragment_modificarcontra.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/fragment_modificarcontra.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1900dp_fragment_ver_ventas.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1900dp/fragment_ver_ventas.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1700dp_fragment_inventario_productos.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1700dp/fragment_inventario_productos.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1000dp_producto_caja.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1000dp/producto_caja.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ventas_adaptive_back.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/ventas_adaptive_back.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_compartirmas.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/compartirmas.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_fragment_ver_ventas.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/fragment_ver_ventas.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_mas_adaptive_fore.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/mas_adaptive_fore.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_fragmentgraficalinear.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/fragmentgraficalinear.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_mas.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/mas.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ventad_adaptive_back.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/ventad_adaptive_back.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertpedircantidad.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertpedircantidad.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1400dp_producto_caja.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1400dp/producto_caja.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1900dp_activity_caja.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1900dp/activity_caja.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/drawable_login_button_bk.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/drawable/login_button_bk.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_fragment_ver_ventas.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/fragment_ver_ventas.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_iconic_adaptive_fore.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/iconic_adaptive_fore.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/drawable_login_button_bk.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/drawable/login_button_bk.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ventaid_adaptive_fore.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/ventaid_adaptive_fore.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ajustes.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/ajustes.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_caja_adaptive_back.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/caja_adaptive_back.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_cambiar_my_sql.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_cambiar_my_sql.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_producto_ver.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/producto_ver.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1400dp_activity_menuinicio.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1400dp/activity_menuinicio.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_eliminar.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/eliminar.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_ver_factura.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_ver_factura.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_crear_base_datos_mysql.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_crear_base_datos_mysql.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_salir.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/salir.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_salir_adaptive_fore.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/salir_adaptive_fore.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1400dp_fragment_inventario_productos.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1400dp/fragment_inventario_productos.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertdialogcontra.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertdialogcontra.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_fragmentgraficacolumna.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/fragmentgraficacolumna.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_eliminar_adaptive_back.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/eliminar_adaptive_back.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_cargat_adaptive_fore.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/cargat_adaptive_fore.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_agregar_adaptive_fore.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/agregar_adaptive_fore.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_fragment_ver_ventas.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/fragment_ver_ventas.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_caja_adaptive_fore.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/caja_adaptive_fore.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertdialogcontra.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertdialogcontra.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_marker_view.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/marker_view.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_caja.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/caja.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1900dp_producto_caja.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1900dp/producto_caja.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1600dp_activity_caja.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1600dp/activity_caja.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertdialogcontrab.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertdialogcontrab.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_activity_caja.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/activity_caja.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1700dp_fragment_ver_ventas.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1700dp/fragment_ver_ventas.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_cargat.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/cargat.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ventaid_adaptive_back.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/ventaid_adaptive_back.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_ajustes_list_content.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/ajustes_list_content.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_fragment_crear_base_datos.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/fragment_crear_base_datos.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_activity_detalles_ventas.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/activity_detalles_ventas.xml"
+    },
+    {
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertefectivo.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertefectivo.xml"
+    },
+    {
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ajustes_adaptive_fore.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/ajustes_adaptive_fore.png"
+    },
+    {
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_caja_adaptive_back.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/caja_adaptive_back.png"
+    },
+    {
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1400dp_fragment_ver_ventas.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1400dp/fragment_ver_ventas.xml"
+    },
+    {
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1000dp_anno_picker_dialog.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1000dp/anno_picker_dialog.xml"
+    },
+    {
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1400dp_activity_ajustes.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1400dp/activity_ajustes.xml"
     },
     {
         "merged": "com.pixels.Inventario.app-merged_res-23:/layout_alertverproductos.xml.flat",
         "source": "com.pixels.Inventario.app-main-25:/layout/alertverproductos.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertobservaciones.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertobservaciones.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_fragment_registrar_base_datos.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/fragment_registrar_base_datos.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1000dp_activity_caja.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1000dp/activity_caja.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_menos.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/menos.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w2100dp_fragment_ver_ventas.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w2100dp/fragment_ver_ventas.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/drawable_login_button_bkdt.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/drawable/login_button_bkdt.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ventad_adaptive_fore.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/ventad_adaptive_fore.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1700dp_activity_agregar_productos.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1700dp/activity_agregar_productos.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_agregar_adaptive_back.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/agregar_adaptive_back.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/drawable_marker.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/drawable/marker.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_productod_ver.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/productod_ver.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_calendarios.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/calendarios.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_ajustes_list_content.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/ajustes_list_content.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1400dp_fragment_agsinarcontrasena.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1400dp/fragment_agsinarcontrasena.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1600dp_activity_caja.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1600dp/activity_caja.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertdevolucion.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertdevolucion.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_cargat.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/cargat.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertcantidadd.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertcantidadd.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_scaner.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/scaner.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertiva.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertiva.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/xml_filepaths.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/xml/filepaths.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_iconic.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/iconic.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_salir.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/salir.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_fragment_crear_base_datos.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/fragment_crear_base_datos.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_agregar.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/agregar.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/xml_filepaths.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/xml/filepaths.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_menos_adaptive_fore.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/menos_adaptive_fore.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ventaid_adaptive_fore.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/ventaid_adaptive_fore.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_inventario_productos.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_inventario_productos.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1000dp_activity_caja.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1000dp/activity_caja.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_date_picker_dialog.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/date_picker_dialog.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_lupa_adaptive_back.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/lupa_adaptive_back.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_lupa.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/lupa.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_fragment_diarias.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/fragment_diarias.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1700dp_fragment_modificarcontra.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1700dp/fragment_modificarcontra.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_producto_ver.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/producto_ver.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1400dp_fragment_modificarcontra.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1400dp/fragment_modificarcontra.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1600dp_activity_detalles_ventas.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1600dp/activity_detalles_ventas.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1400dp_fragment_ver_ventas.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1400dp/fragment_ver_ventas.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1900dp_activity_detalles_ventas.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1900dp/activity_detalles_ventas.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_activity_ajustes.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/activity_ajustes.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1400dp_fragment_registrar_base_datos.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1400dp/fragment_registrar_base_datos.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_fragment_agsinarcontrasena.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/fragment_agsinarcontrasena.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_configuracion_i.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_configuracion_i.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_cajad_adaptive_back.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/cajad_adaptive_back.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_fragment_modificarcontra.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/fragment_modificarcontra.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1700dp_activity_agregar_productos.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1700dp/activity_agregar_productos.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/drawable_login_button_bkerror.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/drawable/login_button_bkerror.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_iconic.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/iconic.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_scaner.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/scaner.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1700dp_fragment_registrar_base_datos.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1700dp/fragment_registrar_base_datos.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_list_products_adaptive_fore.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/list_products_adaptive_fore.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_list_products.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/list_products.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_recivo_adaptive_back.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/recivo_adaptive_back.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_lupa_adaptive_fore.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/lupa_adaptive_fore.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w400dp_venta_ver.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w400dp/venta_ver.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ventas_adaptive_fore.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/ventas_adaptive_fore.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_caja.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_caja.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_mas.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/mas.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_compartirmas_adaptive_back.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/compartirmas_adaptive_back.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_activity_inventario_productos.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/activity_inventario_productos.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ventad_adaptive_back.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/ventad_adaptive_back.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1900dp_fragment_ver_ventas.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1900dp/fragment_ver_ventas.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1700dp_fragment_inventario_productos.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1700dp/fragment_inventario_productos.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_cargat_adaptive_fore.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/cargat_adaptive_fore.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_add_adaptive_fore.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/add_adaptive_fore.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1400dp_activity_caja.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1400dp/activity_caja.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_producto_caja.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/producto_caja.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1400dp_fragment_agsinarcontrasena.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1400dp/fragment_agsinarcontrasena.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_recivo.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/recivo.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_opcion_list.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/opcion_list.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1700dp_fragment_registrar_base_datos.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1700dp/fragment_registrar_base_datos.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ajustes_adaptive_fore.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/ajustes_adaptive_fore.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_menos_adaptive_back.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/menos_adaptive_back.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_ver_ventas.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_ver_ventas.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_productovendido.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/productovendido.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_compartirmas.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/compartirmas.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_list_products.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/list_products.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_buscar_re.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/buscar_re.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertcambiobasedatos.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertcambiobasedatos.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ajustes_adaptive_back.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/ajustes_adaptive_back.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertverproductos.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertverproductos.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertpedircantidad.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertpedircantidad.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_fragment_agsinarcontrasena.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/fragment_agsinarcontrasena.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/drawable_menufondo.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/drawable/menufondo.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1900dp_producto_caja.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1900dp/producto_caja.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_cargat_adaptive_back.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/cargat_adaptive_back.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_cajad_adaptive_fore.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/cajad_adaptive_fore.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_caja.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_caja.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_cajad_adaptive_back.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/cajad_adaptive_back.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_activity_agregar_productos.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/activity_agregar_productos.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_lupa.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/lupa.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertventafinalizada.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertventafinalizada.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_cajad.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/cajad.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_iconic_adaptive_back.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/iconic_adaptive_back.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_inicio.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_inicio.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_calendarios.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/calendarios.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_marker_view.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/marker_view.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_caja.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/caja.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_date_picker_dialog.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/date_picker_dialog.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_fragment_inicio_blanco.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/fragment_inicio_blanco.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_opcion_list.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/opcion_list.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_fragment_modificarcontra.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/fragment_modificarcontra.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_eliminar_adaptive_back.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/eliminar_adaptive_back.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_activity_detalles_ventas.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/activity_detalles_ventas.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_recivo_adaptive_fore.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/recivo_adaptive_fore.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_editar.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/editar.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_menos_adaptive_fore.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/menos_adaptive_fore.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_mas_adaptive_back.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/mas_adaptive_back.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_lupa_adaptive_fore.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/lupa_adaptive_fore.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_menos.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/menos.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_compartirmas_adaptive_fore.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/compartirmas_adaptive_fore.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_fragment_mensuales.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/fragment_mensuales.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_fragmentgraficalinear.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/fragmentgraficalinear.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1000dp_anno_picker_dialog.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1000dp/anno_picker_dialog.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_ajustes.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_ajustes.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_lupa_adaptive_back.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/lupa_adaptive_back.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_activity_menuinicio.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/activity_menuinicio.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_ajustes_list_content.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/ajustes_list_content.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ventad_adaptive_fore.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/ventad_adaptive_fore.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_producto_caja.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/producto_caja.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_ver_ventas.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_ver_ventas.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_recivo_adaptive_back.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/recivo_adaptive_back.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_calendarios_adaptive_fore.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/calendarios_adaptive_fore.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_fragment_agsinarcontrasena.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/fragment_agsinarcontrasena.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertventafinalizada.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertventafinalizada.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_exportar_datos.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_exportar_datos.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_list_products_adaptive_back.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/list_products_adaptive_back.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_configuracion_i.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_configuracion_i.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_fragment_inicio_blanco.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/fragment_inicio_blanco.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1400dp_activity_ajustes.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1400dp/activity_ajustes.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_ajustes_list_content.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/ajustes_list_content.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/menu_menud.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/menu/menud.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ventas_adaptive_back.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/ventas_adaptive_back.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_fragment_registrar_base_datos.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/fragment_registrar_base_datos.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_producto_caja.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/producto_caja.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_fragment_anuales.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/fragment_anuales.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1000dp_date_picker_dialog.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1000dp/date_picker_dialog.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1400dp_activity_agregar_productos.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1400dp/activity_agregar_productos.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_activity_agregar_productos.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/activity_agregar_productos.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/drawable_marker.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/drawable/marker.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_eliminar_adaptive_fore.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/eliminar_adaptive_fore.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_venta_ver.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/venta_ver.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_productod_ver.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/productod_ver.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1600dp_activity_detalles_ventas.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1600dp/activity_detalles_ventas.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ventaid_adaptive_back.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/ventaid_adaptive_back.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_salir_adaptive_back.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/salir_adaptive_back.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1400dp_activity_agregar_productos.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1400dp/activity_agregar_productos.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ventad.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/ventad.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1000dp_fragment_ver_ventas.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1000dp/fragment_ver_ventas.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_add_adaptive_fore.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/add_adaptive_fore.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_opcion_list_content.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/opcion_list_content.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_calendarios_adaptive_fore.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/calendarios_adaptive_fore.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ventad.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/ventad.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_compartirmas_adaptive_fore.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/compartirmas_adaptive_fore.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_caja_adaptive_fore.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/caja_adaptive_fore.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1000dp_fragment_ver_ventas.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1000dp/fragment_ver_ventas.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_fragment_inventario_productos.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/fragment_inventario_productos.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_menos_adaptive_back.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/menos_adaptive_back.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ventas_adaptive_fore.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/ventas_adaptive_fore.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_tipocantidad.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/tipocantidad.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w2100dp_fragment_ver_ventas.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w2100dp/fragment_ver_ventas.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1400dp_fragment_inventario_productos.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1400dp/fragment_inventario_productos.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1400dp_fragment_modificarcontra.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1400dp/fragment_modificarcontra.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_compartirmas_adaptive_back.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/compartirmas_adaptive_back.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_editar_adaptive_fore.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/editar_adaptive_fore.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/ic_launcher.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_editar_adaptive_back.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/editar_adaptive_back.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ventas.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/ventas.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertdialogcontrab.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertdialogcontrab.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_ver_factura.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_ver_factura.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_venta_ver.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/venta_ver.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_cajad.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/cajad.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_productos_adaptive_back.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/productos_adaptive_back.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_fragment_mensuales.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/fragment_mensuales.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/drawable_login_button_bkerror.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/drawable/login_button_bkerror.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/menu_menud.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/menu/menud.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_mas_adaptive_fore.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/mas_adaptive_fore.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/drawable_menufondo.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/drawable/menufondo.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_menuinicio.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_menuinicio.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_producto_detail_container.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/producto_detail_container.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1600dp_producto_caja.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1600dp/producto_caja.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1400dp_producto_caja.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1400dp/producto_caja.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_opcion_list_content.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/opcion_list_content.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_fragment_registrar_base_datos.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/fragment_registrar_base_datos.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_recivo_adaptive_fore.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/recivo_adaptive_fore.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_importar_datos.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_importar_datos.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_fragment_inventario_productos.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/fragment_inventario_productos.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_salir_adaptive_back.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/salir_adaptive_back.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_fragment_inventario_productos.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/fragment_inventario_productos.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_calendarios_adaptive_back.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/calendarios_adaptive_back.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertverproductos.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertverproductos.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_eliminar.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/eliminar.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1900dp_activity_caja.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1900dp/activity_caja.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertobservaciones.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertobservaciones.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_list_products_adaptive_fore.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/list_products_adaptive_fore.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_cargat_adaptive_back.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/cargat_adaptive_back.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1400dp_activity_detalles_ventas.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1400dp/activity_detalles_ventas.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_alertdialogonitnombre.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/alertdialogonitnombre.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1400dp_activity_menuinicio.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1400dp/activity_menuinicio.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_detalles_ventas.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_detalles_ventas.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_agregar_productos.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_agregar_productos.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_mas_adaptive_back.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/mas_adaptive_back.png"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ajustes.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/ajustes.png"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_fragment_anuales.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/fragment_anuales.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_activity_config_contra.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/activity_config_contra.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w800dp_opcion_list.xml.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w800dp/opcion_list.xml"
     },
     {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_producto_caja.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/producto_caja.xml"
-    },
-    {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1000dp_producto_caja.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1000dp/producto_caja.xml"
-    },
-    {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1700dp_fragment_agsinarcontrasena.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1700dp/fragment_agsinarcontrasena.xml"
-    },
-    {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_anno_picker_dialog.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/anno_picker_dialog.xml"
-    },
-    {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_productos.png.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/productos.png"
-    },
-    {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout-w1000dp_activity_detalles_ventas.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout-w1000dp/activity_detalles_ventas.xml"
-    },
-    {
-        "merged": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/layout_opcion_list.xml.flat",
-        "source": "/home/raynor/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/layout/opcion_list.xml"
+        "merged": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-merged_res-23:/mipmap-xhdpi_ventaid.png.flat",
+        "source": "/home/n0c7u4/.gradle/daemon/7.5/com.pixels.Inventario.app-main-25:/mipmap-xhdpi/ventaid.png"
     }
 ]

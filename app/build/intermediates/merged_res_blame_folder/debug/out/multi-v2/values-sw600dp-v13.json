@@ -4,7 +4,7 @@
             "outputFile": "com.pixels.Inventario.app-mergeDebugResources-21:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/raynor/.gradle/caches/transforms-3/c8a2094444aa101959e16d71c36ae1fe/transformed/appcompat-1.2.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/home/n0c7u4/.gradle/caches/transforms-3/c8a2094444aa101959e16d71c36ae1fe/transformed/appcompat-1.2.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/raynor/.gradle/caches/transforms-3/037164efd180b1a759f85bd80e940c8b/transformed/material-1.4.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/home/n0c7u4/.gradle/caches/transforms-3/037164efd180b1a759f85bd80e940c8b/transformed/material-1.4.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",

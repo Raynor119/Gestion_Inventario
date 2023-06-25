@@ -73,7 +73,7 @@
                     android:layout_width="match_parent"
                     android:id="@+id/EditCodigoB"
                     android:layout_height="wrap_content"
-                    android:hint="Buscar Productos"
+                    android:hint="Buscar Productos (Codigo o Nombre)"
                     app:endIconMode="clear_text">
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/codigoB"
