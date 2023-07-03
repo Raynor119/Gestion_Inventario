@@ -1,26 +1,26 @@
-com.pixels.Inventario.app-material-1.4.0-0 /home/n0c7u4/.gradle/caches/transforms-3/037164efd180b1a759f85bd80e940c8b/transformed/material-1.4.0/res
-com.pixels.Inventario.app-coordinatorlayout-1.1.0-1 /home/n0c7u4/.gradle/caches/transforms-3/19eb8dce3ae6c1c269de56fecc6db1a9/transformed/coordinatorlayout-1.1.0/res
-com.pixels.Inventario.app-jetified-core-ktx-1.7.0-2 /home/n0c7u4/.gradle/caches/transforms-3/1aa5a09a5410716d3a349bc3eee05e5d/transformed/jetified-core-ktx-1.7.0/res
-com.pixels.Inventario.app-jetified-appcompat-resources-1.2.0-3 /home/n0c7u4/.gradle/caches/transforms-3/1da0f001d59605eb45f2342933a0e61a/transformed/jetified-appcompat-resources-1.2.0/res
-com.pixels.Inventario.app-jetified-zxing-android-embedded-4.3.0-4 /home/n0c7u4/.gradle/caches/transforms-3/3b41a84efc88b271c47b8731cf26da3c/transformed/jetified-zxing-android-embedded-4.3.0/res
-com.pixels.Inventario.app-lifecycle-runtime-2.3.1-5 /home/n0c7u4/.gradle/caches/transforms-3/3f90e1ed846774feaee6ec5588f3fa04/transformed/lifecycle-runtime-2.3.1/res
-com.pixels.Inventario.app-cardview-1.0.0-6 /home/n0c7u4/.gradle/caches/transforms-3/476b29e0ad710acb6cc42ccfb2c8e71c/transformed/cardview-1.0.0/res
-com.pixels.Inventario.app-media-1.0.0-7 /home/n0c7u4/.gradle/caches/transforms-3/4bfe644091be6e4308a3d28e2dbf3517/transformed/media-1.0.0/res
-com.pixels.Inventario.app-preference-1.1.1-8 /home/n0c7u4/.gradle/caches/transforms-3/7b0ae9bbb037b5073aff861e26f1fc2b/transformed/preference-1.1.1/res
-com.pixels.Inventario.app-jetified-viewpager2-1.0.0-9 /home/n0c7u4/.gradle/caches/transforms-3/85f9e5877a350279fc37354eb16bce17/transformed/jetified-viewpager2-1.0.0/res
-com.pixels.Inventario.app-core-1.7.0-10 /home/n0c7u4/.gradle/caches/transforms-3/90c70f0e9b779f3812f40b7c13ccdef6/transformed/core-1.7.0/res
-com.pixels.Inventario.app-fragment-1.2.4-11 /home/n0c7u4/.gradle/caches/transforms-3/9525d449607a2d200091f109859f499f/transformed/fragment-1.2.4/res
-com.pixels.Inventario.app-constraintlayout-2.0.1-12 /home/n0c7u4/.gradle/caches/transforms-3/a9ad5b5a84f7c594776c70f7521af456/transformed/constraintlayout-2.0.1/res
-com.pixels.Inventario.app-transition-1.2.0-13 /home/n0c7u4/.gradle/caches/transforms-3/abb4c169e398315788efbc7981fefd9c/transformed/transition-1.2.0/res
-com.pixels.Inventario.app-appcompat-1.2.0-14 /home/n0c7u4/.gradle/caches/transforms-3/c8a2094444aa101959e16d71c36ae1fe/transformed/appcompat-1.2.0/res
-com.pixels.Inventario.app-jetified-annotation-experimental-1.1.0-15 /home/n0c7u4/.gradle/caches/transforms-3/d0f7f822c4f13843cf01bc46a02c3749/transformed/jetified-annotation-experimental-1.1.0/res
-com.pixels.Inventario.app-recyclerview-1.1.0-16 /home/n0c7u4/.gradle/caches/transforms-3/df04b464485d585955da7f033fa1b638/transformed/recyclerview-1.1.0/res
-com.pixels.Inventario.app-jetified-android-pdf-viewer-2.8.1-17 /home/n0c7u4/.gradle/caches/transforms-3/e33e0c5b7ab749da0af2752410b05d99/transformed/jetified-android-pdf-viewer-2.8.1/res
-com.pixels.Inventario.app-pngs-18 /run/media/n0c7u4/2778-6CAD/Android y varios/Gestion_Inventario/app/build/generated/res/pngs/debug
-com.pixels.Inventario.app-resValues-19 /run/media/n0c7u4/2778-6CAD/Android y varios/Gestion_Inventario/app/build/generated/res/resValues/debug
-com.pixels.Inventario.app-rs-20 /run/media/n0c7u4/2778-6CAD/Android y varios/Gestion_Inventario/app/build/generated/res/rs/debug
-com.pixels.Inventario.app-mergeDebugResources-21 /run/media/n0c7u4/2778-6CAD/Android y varios/Gestion_Inventario/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
-com.pixels.Inventario.app-mergeDebugResources-22 /run/media/n0c7u4/2778-6CAD/Android y varios/Gestion_Inventario/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
-com.pixels.Inventario.app-merged_res-23 /run/media/n0c7u4/2778-6CAD/Android y varios/Gestion_Inventario/app/build/intermediates/merged_res/debug
-com.pixels.Inventario.app-debug-24 /run/media/n0c7u4/2778-6CAD/Android y varios/Gestion_Inventario/app/src/debug/res
-com.pixels.Inventario.app-main-25 /run/media/n0c7u4/2778-6CAD/Android y varios/Gestion_Inventario/app/src/main/res
+com.pixels.Inventario.app-material-1.4.0-0 /home/raynor/.gradle/caches/transforms-3/037164efd180b1a759f85bd80e940c8b/transformed/material-1.4.0/res
+com.pixels.Inventario.app-coordinatorlayout-1.1.0-1 /home/raynor/.gradle/caches/transforms-3/19eb8dce3ae6c1c269de56fecc6db1a9/transformed/coordinatorlayout-1.1.0/res
+com.pixels.Inventario.app-jetified-core-ktx-1.7.0-2 /home/raynor/.gradle/caches/transforms-3/1aa5a09a5410716d3a349bc3eee05e5d/transformed/jetified-core-ktx-1.7.0/res
+com.pixels.Inventario.app-jetified-appcompat-resources-1.2.0-3 /home/raynor/.gradle/caches/transforms-3/1da0f001d59605eb45f2342933a0e61a/transformed/jetified-appcompat-resources-1.2.0/res
+com.pixels.Inventario.app-jetified-zxing-android-embedded-4.3.0-4 /home/raynor/.gradle/caches/transforms-3/3b41a84efc88b271c47b8731cf26da3c/transformed/jetified-zxing-android-embedded-4.3.0/res
+com.pixels.Inventario.app-lifecycle-runtime-2.3.1-5 /home/raynor/.gradle/caches/transforms-3/3f90e1ed846774feaee6ec5588f3fa04/transformed/lifecycle-runtime-2.3.1/res
+com.pixels.Inventario.app-cardview-1.0.0-6 /home/raynor/.gradle/caches/transforms-3/476b29e0ad710acb6cc42ccfb2c8e71c/transformed/cardview-1.0.0/res
+com.pixels.Inventario.app-media-1.0.0-7 /home/raynor/.gradle/caches/transforms-3/4bfe644091be6e4308a3d28e2dbf3517/transformed/media-1.0.0/res
+com.pixels.Inventario.app-preference-1.1.1-8 /home/raynor/.gradle/caches/transforms-3/7b0ae9bbb037b5073aff861e26f1fc2b/transformed/preference-1.1.1/res
+com.pixels.Inventario.app-jetified-viewpager2-1.0.0-9 /home/raynor/.gradle/caches/transforms-3/85f9e5877a350279fc37354eb16bce17/transformed/jetified-viewpager2-1.0.0/res
+com.pixels.Inventario.app-core-1.7.0-10 /home/raynor/.gradle/caches/transforms-3/90c70f0e9b779f3812f40b7c13ccdef6/transformed/core-1.7.0/res
+com.pixels.Inventario.app-fragment-1.2.4-11 /home/raynor/.gradle/caches/transforms-3/9525d449607a2d200091f109859f499f/transformed/fragment-1.2.4/res
+com.pixels.Inventario.app-constraintlayout-2.0.1-12 /home/raynor/.gradle/caches/transforms-3/a9ad5b5a84f7c594776c70f7521af456/transformed/constraintlayout-2.0.1/res
+com.pixels.Inventario.app-jetified-android-pdf-viewer-2.8.1-13 /home/raynor/.gradle/caches/transforms-3/ab9ff0b870b28ca7a3df1bdda8fd5792/transformed/jetified-android-pdf-viewer-2.8.1/res
+com.pixels.Inventario.app-transition-1.2.0-14 /home/raynor/.gradle/caches/transforms-3/abb4c169e398315788efbc7981fefd9c/transformed/transition-1.2.0/res
+com.pixels.Inventario.app-appcompat-1.2.0-15 /home/raynor/.gradle/caches/transforms-3/c8a2094444aa101959e16d71c36ae1fe/transformed/appcompat-1.2.0/res
+com.pixels.Inventario.app-jetified-annotation-experimental-1.1.0-16 /home/raynor/.gradle/caches/transforms-3/d0f7f822c4f13843cf01bc46a02c3749/transformed/jetified-annotation-experimental-1.1.0/res
+com.pixels.Inventario.app-recyclerview-1.1.0-17 /home/raynor/.gradle/caches/transforms-3/df04b464485d585955da7f033fa1b638/transformed/recyclerview-1.1.0/res
+com.pixels.Inventario.app-pngs-18 /home/raynor/Documentos/Gestion_Inventario/app/build/generated/res/pngs/debug
+com.pixels.Inventario.app-resValues-19 /home/raynor/Documentos/Gestion_Inventario/app/build/generated/res/resValues/debug
+com.pixels.Inventario.app-rs-20 /home/raynor/Documentos/Gestion_Inventario/app/build/generated/res/rs/debug
+com.pixels.Inventario.app-mergeDebugResources-21 /home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
+com.pixels.Inventario.app-mergeDebugResources-22 /home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+com.pixels.Inventario.app-merged_res-23 /home/raynor/Documentos/Gestion_Inventario/app/build/intermediates/merged_res/debug
+com.pixels.Inventario.app-debug-24 /home/raynor/Documentos/Gestion_Inventario/app/src/debug/res
+com.pixels.Inventario.app-main-25 /home/raynor/Documentos/Gestion_Inventario/app/src/main/res

@@ -2123,6 +2123,8 @@ id fragment_container_view_tag
 id frameLayout
 id frameLayout1
 id ganaN
+id ganacia
+id ganan
 id ghost_view
 id ghost_view_holder
 id gone

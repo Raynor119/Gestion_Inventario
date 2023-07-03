@@ -4,7 +4,7 @@
             "outputFile": "com.pixels.Inventario.app-mergeDebugResources-21:/values-w400dp-v13/values-w400dp-v13.xml",
             "map": [
                 {
-                    "source": "/run/media/n0c7u4/2778-6CAD/Android y varios/Gestion_Inventario/app/src/main/res/values-w400dp/dimens.xml",
+                    "source": "/home/raynor/Documentos/Gestion_Inventario/app/src/main/res/values-w400dp/dimens.xml",
                     "from": {
                         "startLines": "3,2,4",
                         "startColumns": "4,4,4",

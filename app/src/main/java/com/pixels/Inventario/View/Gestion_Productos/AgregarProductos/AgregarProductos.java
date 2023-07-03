@@ -30,6 +30,7 @@ import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.Verific
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.text.NumberFormat;
 
 
 public class AgregarProductos extends AppCompatActivity {
@@ -235,12 +236,12 @@ public class AgregarProductos extends AppCompatActivity {
                 }
                 if(verifica){
                     ConvertirModenaINT convertir=new ConvertirModenaINT();
-
+                    NumberFormat formato= NumberFormat.getNumberInstance();
                     int costoq=convertir.Convertir(Costop.getText().toString());
                     int precii=convertir.Convertir(Precio.getText().toString());
                     double ivapor=Double.parseDouble("1."+Iva.getText().toString());
                     double preciosin=precii/ivapor;
-                    ganacia.setText("La ganancia del Producto es: $"+((int) preciosin-costoq));
+                    ganacia.setText("La ganancia del Producto es: $"+formato.format((int) preciosin-costoq));
                 }
             }
         });

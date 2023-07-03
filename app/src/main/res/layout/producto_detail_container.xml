@@ -164,7 +164,6 @@
             </LinearLayout>
             <LinearLayout
                 android:layout_marginTop="5dp"
-                android:layout_marginBottom="15dp"
                 android:layout_width="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:orientation="horizontal"
@@ -184,6 +183,29 @@
                     android:text=""
                     android:textColor="#000000"
                     android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:state_hovered="true"
+                        android:text="Ganancia: "
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                <TextView
+                        android:id="@+id/ganan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:state_hovered="true"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

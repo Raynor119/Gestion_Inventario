@@ -60,6 +60,11 @@ public class ProductosRecyclerViewAdapter extends RecyclerView.Adapter<Productos
         holder.costo.setText("$ "+formato.format(Productos.get(position).getCosteP()));
         holder.precio.setText("$ "+formato.format(Productos.get(position).getPrecio()));
         holder.iva.setText(Productos.get(position).getIva()+"%");
+        int costoq=Productos.get(position).getCosteP();
+        int precii=Productos.get(position).getPrecio();
+        double ivapor=Double.parseDouble("1."+Productos.get(position).getIva());
+        double preciosin=precii/ivapor;
+        holder.ganna.setText("$ "+formato.format(((int) preciosin-costoq)));
         holder.opciones.setVisibility(ConstraintLayout.GONE);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,7 +106,7 @@ public class ProductosRecyclerViewAdapter extends RecyclerView.Adapter<Productos
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
-        final TextView codigo,nombre,cantidad,unidad,costo,precio,iva;
+        final TextView codigo,nombre,cantidad,unidad,costo,precio,iva,ganna;
         final LinearLayout opciones;
         final CardView eliminar,editar;
         ViewHolder(View view) {
@@ -116,6 +121,7 @@ public class ProductosRecyclerViewAdapter extends RecyclerView.Adapter<Productos
             eliminar= (CardView) view.findViewById(R.id.eliminar);
             editar= (CardView) view.findViewById(R.id.editar);
             iva=(TextView) view.findViewById(R.id.iva);
+            ganna=(TextView) view.findViewById(R.id.ganan);
         }
     }
 

@@ -36,6 +36,7 @@ import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.Verific
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.text.NumberFormat;
 import java.util.List;
 
 public class EditarProducto extends AppCompatActivity {
@@ -224,12 +225,12 @@ public class EditarProducto extends AppCompatActivity {
                 }
                 if(verifica){
                     ConvertirModenaINT convertir=new ConvertirModenaINT();
-
+                    NumberFormat formato= NumberFormat.getNumberInstance();
                     int costoq=convertir.Convertir(Costop.getText().toString());
                     int precii=convertir.Convertir(Precio.getText().toString());
                     double ivapor=Double.parseDouble("1."+Iva.getText().toString());
                     double preciosin=precii/ivapor;
-                    ganacia.setText("La ganancia del Producto es: $"+((int) preciosin-costoq));
+                    ganacia.setText("La ganancia del Producto es: $"+formato.format((int) preciosin-costoq));
                 }
             }
         });
@@ -360,12 +361,12 @@ public class EditarProducto extends AppCompatActivity {
                 PrecioG=Precio.getText().toString();
                 IvaG=productos.get(0).getIva()+"";
                 ConvertirModenaINT convertir=new ConvertirModenaINT();
-
+                NumberFormat formato= NumberFormat.getNumberInstance();
                 int costoq=convertir.Convertir(Costop.getText().toString());
                 int precii=convertir.Convertir(Precio.getText().toString());
                 double ivapor=Double.parseDouble("1."+Iva.getText().toString());
                 double preciosin=precii/ivapor;
-                ganacia.setText("La ganancia del Producto es: $"+((int) preciosin-costoq));
+                ganacia.setText("La ganancia del Producto es: $"+formato.format((int) preciosin-costoq));
             }
         };
         datosproducto.getResultado().observe(EditarProducto.this,observer);
