@@ -28,6 +28,7 @@ import com.pixels.Inventario.View.Gestion_Productos.AgregarProductos.TextWatcher
 import com.pixels.Inventario.View.Gestion_Productos.AgregarProductos.TextWatcher.TextMoneda;
 import com.pixels.Inventario.View.Gestion_Productos.EditarProductos.VerificacionCodigo.VerificacionCodigoE;
 import com.pixels.Inventario.View.Gestion_Productos.Fragment.VerInventarioFragment;
+import com.pixels.Inventario.ViewModel.Gestion_Productos.AgregarProductos.ConvertirModenaINT;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.EditarProducto.EditarDatosViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.EditarProducto.VerDatosProductoViewModel;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.VerificarCodigoEditarViewModel;
@@ -39,6 +40,7 @@ import java.util.List;
 
 public class EditarProducto extends AppCompatActivity {
     public AutoCompleteTextView spinner;
+    public TextView ganacia;
     public TextView Titulo;
     public EditText Codigo,Nombre,Cantidad,Costop,Precio,Iva;
     public android.widget.Button Button;
@@ -71,6 +73,7 @@ public class EditarProducto extends AppCompatActivity {
         Costop=(EditText)findViewById(R.id.CosteP);
         Precio=(EditText)findViewById(R.id.Precio);
         Iva=(EditText)findViewById(R.id.Iva);
+        ganacia=(TextView) findViewById(R.id.ganacia);
         Button=(Button)findViewById(R.id.ButtonG);
         Titulo.setText("Editar Producto");
         Codigo.setText(""+codigo);
@@ -202,6 +205,34 @@ public class EditarProducto extends AppCompatActivity {
                 new IntentIntegrator(EditarProducto.this).initiateScan();
             }
         });
+
+        ganacia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                boolean verifica=true;
+                if(Costop.getText().toString().equals("")){
+                    Costop.setError("Digite el Costo del Producto");
+                    verifica=false;
+                }
+                if(Precio.getText().toString().equals("")){
+                    Precio.setError("Digite el Precio del Producto");
+                    verifica=false;
+                }
+                if(Iva.getText().toString().equals("")){
+                    Iva.setError("Digite la Tasa de IVA(%)");
+                    verifica=false;
+                }
+                if(verifica){
+                    ConvertirModenaINT convertir=new ConvertirModenaINT();
+
+                    int costoq=convertir.Convertir(Costop.getText().toString());
+                    int precii=convertir.Convertir(Precio.getText().toString());
+                    double ivapor=Double.parseDouble("1."+Iva.getText().toString());
+                    double preciosin=precii/ivapor;
+                    ganacia.setText("La ganancia del Producto es: $"+((int) preciosin-costoq));
+                }
+            }
+        });
         Button.setText("Modificar Datos");
         Button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -328,6 +359,13 @@ public class EditarProducto extends AppCompatActivity {
                 CostePG=Costop.getText().toString();
                 PrecioG=Precio.getText().toString();
                 IvaG=productos.get(0).getIva()+"";
+                ConvertirModenaINT convertir=new ConvertirModenaINT();
+
+                int costoq=convertir.Convertir(Costop.getText().toString());
+                int precii=convertir.Convertir(Precio.getText().toString());
+                double ivapor=Double.parseDouble("1."+Iva.getText().toString());
+                double preciosin=precii/ivapor;
+                ganacia.setText("La ganancia del Producto es: $"+((int) preciosin-costoq));
             }
         };
         datosproducto.getResultado().observe(EditarProducto.this,observer);

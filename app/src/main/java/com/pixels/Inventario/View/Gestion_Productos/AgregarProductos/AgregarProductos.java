@@ -1,5 +1,6 @@
 package com.pixels.Inventario.View.Gestion_Productos.AgregarProductos;
 
+import android.widget.*;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -13,12 +14,6 @@ import android.os.Bundle;
 import android.text.InputType;
 import android.view.KeyEvent;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
@@ -30,6 +25,7 @@ import com.pixels.Inventario.View.Gestion_Productos.AgregarProductos.TextWatcher
 import com.pixels.Inventario.View.Gestion_Productos.AgregarProductos.VerificacionCodigo.VerificacionCodigoA;
 import com.pixels.Inventario.View.Gestion_Productos.Fragment.VerInventarioFragment;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.AgregarProductos.AgregarProductosViewModel;
+import com.pixels.Inventario.ViewModel.Gestion_Productos.AgregarProductos.ConvertirModenaINT;
 import com.pixels.Inventario.ViewModel.Gestion_Productos.VerificarCodigo.VerificarCodigoViewModel;
 
 import java.math.BigDecimal;
@@ -43,6 +39,7 @@ public class AgregarProductos extends AppCompatActivity {
     public Button Button;
     public TextInputEditText Codigo;
     public TextInputLayout CCodigo,TipoC;
+    public TextView ganacia;
     public CardView Escaner;
     public static VerInventarioFragment verproductos;
     public boolean[] verificarspinnerU = {true};
@@ -63,6 +60,7 @@ public class AgregarProductos extends AppCompatActivity {
         Costop=(EditText)findViewById(R.id.CosteP);
         Precio=(EditText)findViewById(R.id.Precio);
         Iva=(EditText)findViewById(R.id.Iva);
+        ganacia=(TextView) findViewById(R.id.ganacia);
         Button=(Button)findViewById(R.id.ButtonG);
         String [] tipoC={"Unitario(U)","Peso(Kg)","Peso(g)"};
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, R.layout.tipocantidad,tipoC);
@@ -216,6 +214,34 @@ public class AgregarProductos extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 new IntentIntegrator(AgregarProductos.this).initiateScan();
+            }
+        });
+        ganacia.setText("Calcular Ganancia");
+        ganacia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                boolean verifica=true;
+                if(Costop.getText().toString().equals("")){
+                    Costop.setError("Digite el Costo del Producto");
+                    verifica=false;
+                }
+                if(Precio.getText().toString().equals("")){
+                    Precio.setError("Digite el Precio del Producto");
+                    verifica=false;
+                }
+                if(Iva.getText().toString().equals("")){
+                    Iva.setError("Digite la Tasa de IVA(%)");
+                    verifica=false;
+                }
+                if(verifica){
+                    ConvertirModenaINT convertir=new ConvertirModenaINT();
+
+                    int costoq=convertir.Convertir(Costop.getText().toString());
+                    int precii=convertir.Convertir(Precio.getText().toString());
+                    double ivapor=Double.parseDouble("1."+Iva.getText().toString());
+                    double preciosin=precii/ivapor;
+                    ganacia.setText("La ganancia del Producto es: $"+((int) preciosin-costoq));
+                }
             }
         });
         Button.setOnClickListener(new View.OnClickListener() {
