@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pixels.Inventario"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="32" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:calendarViewShown="false"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:grantUriPermissions="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/iconic"
+        android:label="@string/app_name"
+        android:resizeableActivity="true"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/Theme.MyApplication" >
+        <activity
+            android:name="com.pixels.Inventario.View.Gestion_Ventas.DetallesVentas.DetallesVentas"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name="com.pixels.Inventario.View.Gestion_Ventas.VerVentas"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.pixels.Inventario.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <activity
+            android:name="com.pixels.Inventario.View.Caja.Devoluciones.devoluciones"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name="com.pixels.Inventario.View.Caja.Factura.VerFactura"
+            android:exported="false" />
+        <activity
+            android:name="com.pixels.Inventario.View.Caja.Caja"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name="com.pixels.Inventario.View.Gestion_Productos.EditarProductos.EditarProducto"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name="com.pixels.Inventario.View.Gestion_Productos.AgregarProductos.AgregarProductos"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name="com.pixels.Inventario.View.Ajustes.ConfiguracionBaseDatos.CrearBaseDatosMYSQL"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity android:name="com.pixels.Inventario.View.Ajustes.ExportarDatos.ExportarDatos" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.Ajustes.Ajustes" />
+        </activity>
+        <activity android:name="com.pixels.Inventario.View.Ajustes.ImportarDatos.ImportarDatos" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.Ajustes.Ajustes" />
+        </activity>
+        <activity
+            android:name="com.pixels.Inventario.View.Ajustes.ConfiguracionBaseDatos.cambiarMySQL"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity android:name="com.pixels.Inventario.View.Ajustes.ConfiguracionContra.configContra" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.Ajustes.Ajustes" />
+        </activity>
+        <activity
+            android:name="com.pixels.Inventario.View.Ajustes.Ajustes"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name="com.pixels.Inventario.View.Menu_Inicio.MenuInicio"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name="com.pixels.Inventario.View.Gestion_Productos.VerInventario"
+            android:parentActivityName="com.pixels.Inventario.View.Menu_Inicio.MenuInicio"
+            android:theme="@style/Theme.MyApplication.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.Menu_Inicio.MenuInicio" />
+        </activity>
+        <activity
+            android:name="com.pixels.Inventario.View.InicioA.Configuracion_Inicial.configuracionI"
+            android:exported="false" />
+        <activity
+            android:name="com.pixels.Inventario.View.InicioA.Inicio"
+            android:exported="true"
+            android:theme="@style/Theme.MyApplication.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="sensorLandscape"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.pixels.Inventario.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

@@ -1,10 +1,14 @@
 buildscript {
+    ext {
+        agp_version = '8.9.3'
+    }
     repositories {
         google()
+        maven { url "https://jcenter.bintray.com"}
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.2.2'
+        classpath "com.android.tools.build:gradle:$agp_version"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -12,10 +16,7 @@ buildscript {
 }
 
 allprojects {
-    repositories {
-        google()
-        jcenter()
-    }
+
 }
 
 task clean (type: Delete) {

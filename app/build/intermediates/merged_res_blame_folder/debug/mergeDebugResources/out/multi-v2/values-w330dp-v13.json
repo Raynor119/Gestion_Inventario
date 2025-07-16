@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.pixels.Inventario.app-mergeDebugResources-20:/values-w330dp-v13/values-w330dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\PC\\StudioProjects\\Gestion_Inventario\\app\\src\\main\\res\\values-w330dp\\dimens.xml",
+                    "from": {
+                        "startLines": "2,4,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "57,170,114",
+                        "endColumns": "55,53,54",
+                        "endOffsets": "108,219,164"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,111,165",
+                        "endColumns": "55,53,54",
+                        "endOffsets": "106,160,215"
+                    }
+                }
+            ]
+        }
+    ]
+}

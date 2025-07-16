@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.pixels.Inventario.app-mergeDebugResources-20:/values-sw360dp-v13/values-sw360dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\PC\\.gradle\\caches\\8.14.3\\transforms\\6b34ce1e66cbd0315b8c7e26e513eb19\\transformed\\preference-1.1.1\\res\\values-sw360dp-v13\\values-sw360dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "71",
+                        "endOffsets": "122"
+                    }
+                }
+            ]
+        }
+    ]
+}
